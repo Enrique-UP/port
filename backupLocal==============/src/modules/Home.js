@@ -13,10 +13,17 @@ function Home() {
               <hgroup> 
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit veritatis totam</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam.</p>
-                <div className="btns"> <a href="#" target="_blank"><i className="icon">&#xa041; </i><span>0000000000</span></a></div>
+                <div className="btns">
+                  <a href="#" target="_blank">
+                    <i className="icon">&#xa041;</i>
+                    <span>0000000000</span>
+                  </a>
+                </div>
               </hgroup>
             </div>
-            <div className="col-lg-6 col-xl-7"><img className="img" src="./assets/images/logo.png" alt="" width="100%" /></div>
+            <div className="col-lg-6 col-xl-7">
+              <img className="img" src="./assets/images/logo.png" alt="" width="100%" />
+            </div>
           </div>
         </div>
       </section>
@@ -56,7 +63,9 @@ function Home() {
           <hgroup className="center"> 
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit veritatis totam</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam</p>
-            <div className="btns center"> <a href="#" target="_blank">Call Us</a></div>
+            <div className="btns center">
+              <a href="#" target="_blank">Call Us</a>
+            </div>
           </hgroup>
         </div>
       </section>

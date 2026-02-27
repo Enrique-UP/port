@@ -6,9 +6,11 @@ function RenderTop({ children }) {
  
   useEffect(() => {
     //if (pathname != "/contact") window.scrollTo(0, 0);
-    if (pathname) window.scrollTo(0, 0);
-    // if (pathname) document.getElementById("header_right").classList.remove("active");
-    // if (pathname) document.getElementById("menu").classList.remove("active");
+    if (pathname){
+      window.scrollTo(0, 0);
+      document.body.classList.remove("back");
+      document.querySelector("header").classList.remove("active");
+    }
   }, [pathname]);
  
   return children;

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import Logo from '../../images/logo.png';
 
 function Footer() {
   return (
@@ -7,16 +8,16 @@ function Footer() {
       <footer>
         <div className="top">
           <div className="container">
-            <div className="row"> 
+            <div className="row">
               <div className="col-sm-6 col-md-12 col-lg-3">
                 <a className="logo" href="#">
-                  <img src="./assets/images/logo.png" alt=""/>
+                  <img src={Logo} alt="" />
                 </a>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet consectetur adipisicing elit libero minima fugit explicabo possimus hic animi culpa dolorum.</p>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Quick Links</p>
-                <ul className="links"> 
+                <ul className="links">
                   <li><a href="about">About Us</a></li>
                   <li><a href="#">How It Works</a></li>
                   <li><a href="tel:000000" target="_blank">Contact Us</a></li>
@@ -28,7 +29,7 @@ function Footer() {
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Useful Links</p>
-                <ul className="links"> 
+                <ul className="links">
                   <li><a href="#">Bookkeeping Pricing Structure</a></li>
                   <li><a href="#">Bookkeeping</a></li>
                   <li><a href="#">Accounting</a></li>
@@ -42,7 +43,9 @@ function Footer() {
                 <ul className="contacts">
                   <li data-icon="&#xa001;"><a href="tel:0000000000" target="_blank">0000000000</a></li>
                   <li data-icon="&#xa003;"><a href="mailto:#" target="_blank">demo@gmail.com</a></li>
-                  <li data-icon="&#xa004;"><a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">LOrem</a></li>
+                  <li data-icon="&#xa004;">
+                    <a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lorem</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -54,7 +57,10 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <a className="fixNum" href="tel:000000000" target="_blank"><i className="icon">&#xa001;</i>Call Us 0000000000</a>
+      <a className="fixNum" href="tel:000000000" target="_blank">
+        <i className="icon">&#xa001;</i>
+        Call Us 0000000000
+      </a>
       <nav>
         <Link to="/">Home</Link>
         <br />

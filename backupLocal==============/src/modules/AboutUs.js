@@ -1,28 +1,35 @@
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 function AboutUs() {
   return (
     <>
       <Helmet>
-          <title>About Us</title>
+        <title>About Us</title>
       </Helmet>
       <section className="section banner">
         <div className="container">
-          <div className="row"> 
+          <div className="row">
             <div className="col-lg-6 col-xl-5">
-              <hgroup> 
+              <hgroup>
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit veritatis totam</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam.</p>
-                <div className="btns"> <a href="#" target="_blank"><i className="icon">&#xa041; </i><span>0000000000</span></a></div>
+                <div className="btns">
+                  <a href="#" target="_blank">
+                    <i className="icon">&#xa041; </i>
+                    <span>0000000000</span>
+                  </a>
+                </div>
               </hgroup>
             </div>
-            <div className="col-lg-6 col-xl-7 imgEnd"><img src="./assets/images/banner1.webp" alt="" width="600" /></div>
+            <div className="col-lg-6 col-xl-7 imgEnd">
+              <img src="./assets/images/banner1.webp" alt="" width="600" />
+            </div>
           </div>
         </div>
       </section>
-      <section className="breadcrumbs"> 
-        <div className="container"> 
-          <ul> 
+      <section className="breadcrumbs">
+        <div className="container">
+          <ul>
             <li> <a href="#">Home</a></li>
             <li>About Us</li>
           </ul>
@@ -38,7 +45,7 @@ function AboutUs() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facere eius atque sequi aliquam optio totam doloribus modi praesentium temporibus deserunt illo facilis quia nesciunt veritatis unde voluptate minima itaque rem.</p>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit excepturi eum quas quisquam exercitationem ex hic magni ut repellat accusamus deserunt</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facere eius atque sequi aliquam optio totam doloribus modi praesentium temporibus deserunt illo facilis quia nesciunt veritatis unde voluptate minima itaque rem.</p>
-            <ul> 
+            <ul>
               <li>Lorem ipsum dolor sit amet, consectetur <a href="#">facere eius atque sequi aliquam</a> adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
@@ -48,7 +55,7 @@ function AboutUs() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facere eius atque sequi aliquam optio totam doloribus modi praesentium temporibus deserunt illo facilis quia nesciunt veritatis unde voluptate minima itaque rem.</p>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit excepturi eum quas quisquam exercitationem ex hic magni ut repellat accusamus deserunt</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facere eius atque sequi aliquam optio totam doloribus modi praesentium temporibus deserunt illo facilis quia nesciunt veritatis unde voluptate minima itaque rem.</p>
-            <ol> 
+            <ol>
               <li><b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
               <li><b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
               <li><b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit libero ullam porro quos et fugiat molestias velit ipsum voluptatem eos quae facere praesentium aliquam odit iste blanditiis dolores mollitia maiores sint iure reiciendis cupiditate necessitatibus ab dolore totam quod iste quo itaque voluptatibus earum doloremque accusantium excepturi quaerat quibusdam eligendi praesentium.</li>
