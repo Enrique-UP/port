@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from 'react-router-dom';
 
 // import '../sass/modules/Header.scss';
@@ -6,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <>
-      {/* Navigation */}
       <nav>
         <NavLink to="/">Home</NavLink>
         <br />
@@ -14,7 +12,7 @@ function Header() {
         <br />
         <NavLink to="/lifestyle">Life Style</NavLink>
         <br />
-        <NavLink to="#">Contact Us</NavLink>
+        <NavLink to="/contactus">Contact Us</NavLink>
       </nav>
     </>
   );

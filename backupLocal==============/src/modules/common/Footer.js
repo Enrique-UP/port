@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from 'react-router-dom';
 
 // import '../sass/modules/footer.scss';
@@ -13,7 +12,7 @@ function Footer() {
         <br />
         <Link to="/lifestyle">Life Style</Link>
         <br />
-        <Link to="#">Contact Us</Link>
+        <Link to="/contactus">Contact Us</Link>
       </nav>
     </>
   );
