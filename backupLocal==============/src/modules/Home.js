@@ -4,15 +4,15 @@ import {Helmet} from "react-helmet";
 // import '../sass/modules/aboutUs.scss';
 // import img0 from '../images/gallery/0.jpg';
 
-function AboutUs() {
+function Home() {
   return (
     <>
       <Helmet>
-          <title>About Us</title>
+          <title>Home</title>
       </Helmet>
-      <section className="section">About Us</section>
+      <section className="section">Home</section>
     </>
   );
 }
 
-export default AboutUs;
+export default Home;
