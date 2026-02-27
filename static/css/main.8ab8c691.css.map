@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.8ab8c691.css","mappings":"AAAA,gBAAgB,eAAhB","sources":["sass/style.scss"],"sourcesContent":["section.section{background: #ccc;height: 200vh;display: flex;width: 100%;}"],"names":[],"sourceRoot":""}

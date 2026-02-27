@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ScrollTop = () => {
+const Scrolltotop = () => {
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -14,7 +14,7 @@ const ScrollTop = () => {
   }, []);
 
   // This function will scroll the window to the top 
-  const ScrollTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth' // for smoothly scrolling
@@ -24,10 +24,10 @@ const ScrollTop = () => {
   return (
     <>
 		{showButton && (
-			<button onClick={ScrollTop} className="scrollTop">&#8679;</button>
+			<button onClick={scrollToTop} className="scroll_top">&#8679;</button>
 		)}
     </>
   );
 };
 
-export default ScrollTop;
+export default Scrolltotop;
