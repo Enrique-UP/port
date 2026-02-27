@@ -1,10 +1,11 @@
-@import "./common/fonts.scss";
-@import "./common/variables.scss";
-@import "./common/heading.scss";
-@import "./common/buttons.scss";
-@import "./common/grid.scss";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/heading";
+@import "./common/buttons";
+@import "./common/grid";
 
-
+@import "./modules/header";
+@import "./modules/footer";
 
 // html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;}
@@ -152,4 +153,4 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     & > i{margin-right: 4px;}
 }
 
-@import "./res.scss";
+@import "./res";

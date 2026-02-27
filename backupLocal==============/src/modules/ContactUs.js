@@ -1,8 +1,5 @@
 import {Helmet} from "react-helmet";
 
-// import '../sass/modules/contactUs.scss';
-// import img0 from '../images/gallery/0.jpg';
-
 function ContactUs() {
   return (
     <>

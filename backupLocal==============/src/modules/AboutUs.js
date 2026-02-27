@@ -1,8 +1,5 @@
 import {Helmet} from "react-helmet";
 
-// import '../sass/modules/aboutUs.scss';
-// import img0 from '../images/gallery/0.jpg';
-
 function AboutUs() {
   return (
     <>
@@ -34,7 +31,7 @@ function AboutUs() {
       <section className="section">
         <div className="container">
           <hgroup className="tc">
-            <h1 className="wow bounceInDown">About Us</h1>
+            <h1>About Us</h1>
           </hgroup>
           <div className="content">
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit excepturi eum quas quisquam exercitationem ex hic magni ut repellat accusamus deserunt</h2>

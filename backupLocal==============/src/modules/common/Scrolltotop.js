@@ -1,31 +1,34 @@
 import { useEffect, useState } from "react";
 
 const Scrolltotop = () => {
-  // The back-to-top button is hidden at the beginning
-  const [showButton, setShowButton] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
+    const handleScroll = () => {
+      setIsFixed(window.scrollY >= 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // This function will scroll the window to the top 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // for smoothly scrolling
+      behavior: "smooth",
     });
   };
 
   return (
     <>
-		{showButton && (
-			<button onClick={scrollToTop} className="scroll_top">&#8679;</button>
-		)}
+      <a className="callRight icon" href="tel:000000">&#xa001;</a>
+
+      <button
+        onClick={scrollToTop}
+        className={`scrollTop icon ${isFixed ? "fixed" : ""}`}
+      >
+        &#xa022;
+      </button>
     </>
   );
 };
