@@ -21,9 +21,6 @@ function ContactUs() {
                 </div>
               </hgroup>
             </div>
-            <div className="col-lg-6 col-xl-7 imgEnd">
-              <img src="./assets/images/banner1.webp" alt="" width="600" />
-            </div>
           </div>
         </div>
       </section>
