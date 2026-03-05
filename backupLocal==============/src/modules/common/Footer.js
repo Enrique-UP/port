@@ -10,32 +10,29 @@ function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-md-12 col-lg-3">
-                <a className="logo" href="#">
+                <Link className="logo" to="/">
                   <img src={Logo} alt="" />
-                </a>
+                </Link>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet consectetur adipisicing elit libero minima fugit explicabo possimus hic animi culpa dolorum.</p>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Quick Links</p>
                 <ul className="links">
-                  <li><a href="about">About Us</a></li>
-                  <li><a href="#">How It Works</a></li>
-                  <li><a href="tel:000000" target="_blank">Contact Us</a></li>
-                  <li><a href="privacy">Privacy Policy</a></li>
-                  <li><a href="refund">Refund Policy</a></li>
-                  <li><a href="terms">Terms And Conditions</a></li>
-                  <li><a href="lay">Layout</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/aboutus">About Us</Link></li>
+                  <li><Link to="/lifestyle">Life Style</Link></li>
+                  <li><Link to="/contactus">Contact Us</Link></li>
                 </ul>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Useful Links</p>
                 <ul className="links">
-                  <li><a href="#">Bookkeeping Pricing Structure</a></li>
-                  <li><a href="#">Bookkeeping</a></li>
-                  <li><a href="#">Accounting</a></li>
-                  <li><a href="#">Financial Reporting</a></li>
-                  <li><a href="#">Taxation Services</a></li>
-                  <li><a href="#">QuickBooks Data Conversion Services</a></li>
+                  <li><Link to="#">Bookkeeping Pricing Structure</Link></li>
+                  <li><Link to="#">Bookkeeping</Link></li>
+                  <li><Link to="#">Accounting</Link></li>
+                  <li><Link to="#">Financial Reporting</Link></li>
+                  <li><Link to="#">Taxation Services</Link></li>
+                  <li><Link to="#">QuickBooks Data Conversion Services</Link></li>
                 </ul>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">
@@ -61,15 +58,6 @@ function Footer() {
         <i className="icon">&#xa001;</i>
         Call Us 0000000000
       </a>
-      <nav>
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/aboutus">About Us</Link>
-        <br />
-        <Link to="/lifestyle">Life Style</Link>
-        <br />
-        <Link to="/contactus">Contact Us</Link>
-      </nav>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import Logo from '../../images/logo.png';
 
@@ -25,18 +25,19 @@ function Header() {
         <div className="container">
           <div className="fw">
             <div className="logoArea">
-              <a className="logo" href="/">
+              <Link className="logo" to="/">              
                 <img src={Logo} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="navbar">
               <navbar>
-                <a className="logoMob" href="/">
+                <Link className="logoMob" to="/">
                   <img src={Logo} alt="" />
-                </a>
+                </Link>
                 <menu>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#">Lorem ipsum</a>
+                  <li><NavLink to="/">Home</NavLink></li>
+                  <li><NavLink to="/aboutus">About Us</NavLink></li>
+                  {/* <li><a href="#">Lorem ipsum</a>
                     <menu>
                       <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
                       <li><a href="#">Lorem ipsum dolor</a></li>
@@ -44,28 +45,9 @@ function Header() {
                       <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
                       <li><a href="#">Lorem ipsum dolor sit</a></li>
                     </menu>
-                  </li>
-                  <li><a href="#">Lorem ipsum</a>
-                    <menu>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit</a></li>
-                    </menu>
-                  </li>
-                  <li><a href="#">Lorem ipsum</a>
-                    <menu>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>
-                      <li><a href="#">Lorem ipsum dolor sit</a></li>
-                    </menu>
-                  </li>
-                  <li><a href="#">Lorem ipsum</a></li>
-                  <li><a href="#">Lorem ipsum</a></li>
-                  <li><a href="#">Lorem ipsum</a></li>
+                  </li> */}
+                  <li><NavLink to="/lifestyle">Life Style</NavLink></li>
+                  <li><NavLink to="/contactus">Contact Us</NavLink></li>
                 </menu>
               </navbar>
               <i className="icon close" onClick={closeMenu}>&#xa011;</i>
@@ -80,15 +62,6 @@ function Header() {
           </div>
         </div>
       </header>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <br />
-        <NavLink to="/aboutus">About Us</NavLink>
-        <br />
-        <NavLink to="/lifestyle">Life Style</NavLink>
-        <br />
-        <NavLink to="/contactus">Contact Us</NavLink>
-      </nav>
     </>
   );
 }
