@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./sass/style.scss";
 
@@ -9,13 +9,13 @@ import Header from "./modules/common/Header";
 import Footer from "./modules/common/Footer";
 
 import Home from "./modules/Home";
-import LifeStyle from "./modules/LifeStyle";
+import LifeStyle from "./modules/LifeStyle/LifeStyle";
 import AboutUs from "./modules/AboutUs";
 import ContactUs from "./modules/ContactUs";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <RenderTop />
       <CommonScript />
       <Header />
@@ -30,7 +30,7 @@ function App() {
       <Footer />
       <Scrolltotop />
 
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
