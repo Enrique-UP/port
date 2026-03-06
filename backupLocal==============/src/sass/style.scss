@@ -68,11 +68,23 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
+.outlineBox {width: 100%;border: 1px solid var(--b1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
+    > b{font-size: 24px;font-weight: 900;line-height: 1.2;}
+    > span{color:var(--f2);}
+}
+
 .lifeStyle{
     figure{@extend %fc;width: 100%;
         > *{width: 100%;}
-        figcaption{display: flex;justify-content: space-between;}
+        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:10px 12px;color:#fff;column-gap: 12px;}
     }
+    .setHeight{
+        .row{height: 100%;}
+        figure{height: 100%;
+            > img{height: 100%;}
+        }
+    }
+    .df{display: flex;}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;

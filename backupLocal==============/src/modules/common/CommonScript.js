@@ -13,7 +13,7 @@ function CommonScript() {
       let i = 1;
       items.forEach((li) => {
         if (i > totalClasses) i = 1;
-        li.style.setProperty("--bk1", `var(--b${i})`);
+        li.style.setProperty("--c2", `var(--cb${i})`);
         i++;
       });
     }

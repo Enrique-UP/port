@@ -27,12 +27,12 @@ function Footer() {
               <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Useful Links</p>
                 <ul className="links">
-                  <li><Link to="#">Bookkeeping Pricing Structure</Link></li>
-                  <li><Link to="#">Bookkeeping</Link></li>
-                  <li><Link to="#">Accounting</Link></li>
-                  <li><Link to="#">Financial Reporting</Link></li>
-                  <li><Link to="#">Taxation Services</Link></li>
-                  <li><Link to="#">QuickBooks Data Conversion Services</Link></li>
+                  <li><Link to="#">Lorem ipsum dolor sit amet</Link></li>
+                  <li><Link to="#">Lorem ipsum dolor sit</Link></li>
+                  <li><Link to="#">Lorem ipsum dolor</Link></li>
+                  <li><Link to="#">Lorem ipsum dolor sit</Link></li>
+                  <li><Link to="#">Lorem ipsum</Link></li>
+                  <li><Link to="#">Lorem ipsum dolor</Link></li>
                 </ul>
               </div>
               <div className="col-sm-6 col-md-4 col-lg-3">

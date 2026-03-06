@@ -16,10 +16,8 @@ import ContactUs from "./modules/ContactUs";
 function App() {
   return (
     <HashRouter>
-
-      <CommonScript />
-
       <RenderTop />
+      <CommonScript />
       <Header />
 
       <Routes>

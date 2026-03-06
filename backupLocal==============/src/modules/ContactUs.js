@@ -4,7 +4,7 @@ function ContactUs() {
   return (
     <>
       <Helmet>
-          <title>About Us</title>
+          <title>Contact Us</title>
       </Helmet>
       <section className="section banner">
         <div className="container">

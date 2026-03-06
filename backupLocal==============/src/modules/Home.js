@@ -32,12 +32,15 @@ function Home() {
                 <h2>Lorem <span>ipsum</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
               </hgroup>
-            </div>
-            <div className="col-md-6">
+            </div>{/* cols */}
+            <div className="col-md-6 setHeight">
               <div className="row">
-                <div className="col-12">
-                  Lorem
-                </div>
+                <div className="col-12 df">
+                  <div className="outlineBox">
+                    <b>Heading</b>
+                    <span>Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.</span>
+                  </div>
+                </div>{/* cols */}
                 <data className="col-12">
                   <figure>
                     <img src={ls1} />
@@ -46,12 +49,12 @@ function Home() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>
-              </div>
-            </div>
-            <div className="col-md-3">
+                </data>{/* cols */}
+              </div>{/* row */}
+            </div>{/* cols */}
+            <div className="col-md-6 setHeight">
               <div className="row">
-                <data className="col-12">
+                <data className="col-6">
                   <figure>
                     <img src={ls1} />
                     <figcaption>
@@ -59,8 +62,8 @@ function Home() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>
-                <data className="col-12">
+                </data>{/* cols */}
+                <data className="col-6">
                   <figure>
                     <img src={ls1} />
                     <figcaption>
@@ -68,12 +71,8 @@ function Home() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="row">
-                <data className="col-12">
+                </data>{/* cols */}
+                <data className="col-6">
                   <figure>
                     <img src={ls1} />
                     <figcaption>
@@ -81,8 +80,8 @@ function Home() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>
-                <data className="col-12">
+                </data>{/* cols */}
+                <data className="col-6">
                   <figure>
                     <img src={ls1} />
                     <figcaption>
@@ -90,10 +89,10 @@ function Home() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>
-              </div>
-            </div>
-            <data className="col-md-3">
+                </data>{/* cols */}
+              </div>{/* row */}
+            </div>{/* cols */}
+            <data className="col-6 col-md-3">
               <figure>
                 <img src={ls1} />
                 <figcaption>
@@ -101,8 +100,8 @@ function Home() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>
-            <data className="col-md-3">
+            </data>{/* cols */}
+            <data className="col-6 col-md-3">
               <figure>
                 <img src={ls1} />
                 <figcaption>
@@ -110,8 +109,8 @@ function Home() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>
-            <data className="col-md-3">
+            </data>{/* <!--cols--> */}
+            <data className="col-6 col-md-3">
               <figure>
                 <img src={ls1} />
                 <figcaption>
@@ -119,8 +118,8 @@ function Home() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>
-            <data className="col-md-3">
+            </data>{/* cols */}
+            <data className="col-6 col-md-3">
               <figure>
                 <img src={ls1} />
                 <figcaption>
@@ -128,9 +127,9 @@ function Home() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>
-          </div>
-        </div>
+            </data>{/* cols */}
+          </div>{/* row */}
+        </div>{/* container */}
       </section>
     </>
   );
