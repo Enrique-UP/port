@@ -25,10 +25,20 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     > *{width:100%;@extend %fc;}
     > hr{height: 1px;border: none;background: var(--b1);}
     > .banner{
-        // background: url(../images/logo.png) no-repeat center center / cover;
+        background: var(--c2);
         position: relative;
-        &::before{width: 100%;height: 100%;content: "";position: absolute;top:0;left:0;background: rgba(0,0,0,0.75);}
-        .container{position: relative;}
+        // &::before{width: 100%;height: 100%;content: "";position: absolute;top:0;left:0;background: rgba(0,0,0,0.75);}
+        .container{position: relative;
+            .row{justify-content: flex-start;}
+        }
+        .hd, .txt{color:#fff;width: 100%;display: flex;}
+        .hd{font-weight: 900;font-size: 48px;line-height: 1.2;margin-bottom: 16px;}
+        .txt{margin-bottom: 24px;font-size: 20px;}
+        .btns{
+            > a{
+                &:hover, &:active, &:focus{background: var(--c1);}
+            }
+        }
     }
     > .b1{background-color: var(--g1);}
     > .b2{background-color: var(--g2);}

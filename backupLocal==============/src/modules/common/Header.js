@@ -54,7 +54,7 @@ function Header() {
             </div>
             <div className="callMenu">
               <a className="callBtn" href="tel:0000000000" target="_blank">
-                <i className="icon">&#xa041;</i>
+                <i className="icon">&#xa001;</i>
                 <span>0000000000</span>
               </a>
               <i className="icon menu" onClick={openMenu}>&#xa005;</i>
