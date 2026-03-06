@@ -67,6 +67,14 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
     }
 }
+
+.lifeStyle{
+    figure{@extend %fc;width: 100%;
+        > *{width: 100%;}
+        figcaption{display: flex;justify-content: space-between;}
+    }
+}
+
 .unlist, .list{@extend %fc;margin-bottom:24px;
     > li{list-style: none;position: relative;padding-left:28px;
         &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: bold;}

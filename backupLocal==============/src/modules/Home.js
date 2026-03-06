@@ -1,5 +1,7 @@
 import {Helmet} from "react-helmet";
 
+import ls1 from "../images/lifeStyle/ls-1.jpg";
+
 function Home() {
   return (
     <>
@@ -22,7 +24,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="section lifeStyle">
+      <section className="section lifeStyle colors">
         <div className="container">
           <div className="row"> 
             <div className="col-12">
@@ -31,6 +33,102 @@ function Home() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
               </hgroup>
             </div>
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-12">
+                  Lorem
+                </div>
+                <data className="col-12">
+                  <figure>
+                    <img src={ls1} />
+                    <figcaption>
+                      <b>Lorem</b>
+                      <span>Ipsum</span>
+                    </figcaption>
+                  </figure>
+                </data>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="row">
+                <data className="col-12">
+                  <figure>
+                    <img src={ls1} />
+                    <figcaption>
+                      <b>Lorem</b>
+                      <span>Ipsum</span>
+                    </figcaption>
+                  </figure>
+                </data>
+                <data className="col-12">
+                  <figure>
+                    <img src={ls1} />
+                    <figcaption>
+                      <b>Lorem</b>
+                      <span>Ipsum</span>
+                    </figcaption>
+                  </figure>
+                </data>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="row">
+                <data className="col-12">
+                  <figure>
+                    <img src={ls1} />
+                    <figcaption>
+                      <b>Lorem</b>
+                      <span>Ipsum</span>
+                    </figcaption>
+                  </figure>
+                </data>
+                <data className="col-12">
+                  <figure>
+                    <img src={ls1} />
+                    <figcaption>
+                      <b>Lorem</b>
+                      <span>Ipsum</span>
+                    </figcaption>
+                  </figure>
+                </data>
+              </div>
+            </div>
+            <data className="col-md-3">
+              <figure>
+                <img src={ls1} />
+                <figcaption>
+                  <b>Lorem</b>
+                  <span>Ipsum</span>
+                </figcaption>
+              </figure>
+            </data>
+            <data className="col-md-3">
+              <figure>
+                <img src={ls1} />
+                <figcaption>
+                  <b>Lorem</b>
+                  <span>Ipsum</span>
+                </figcaption>
+              </figure>
+            </data>
+            <data className="col-md-3">
+              <figure>
+                <img src={ls1} />
+                <figcaption>
+                  <b>Lorem</b>
+                  <span>Ipsum</span>
+                </figcaption>
+              </figure>
+            </data>
+            <data className="col-md-3">
+              <figure>
+                <img src={ls1} />
+                <figcaption>
+                  <b>Lorem</b>
+                  <span>Ipsum</span>
+                </figcaption>
+              </figure>
+            </data>
           </div>
         </div>
       </section>
