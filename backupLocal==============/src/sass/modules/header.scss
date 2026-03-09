@@ -4,7 +4,7 @@ header{padding-block: 12px;@extend %trans;border-bottom:1px solid var(--b1);back
     .navbar{width: 100%;@extend %center;@extend %transl;@extend %transd;
         .logoMob{display: none;max-width: 180px;flex-shrink: 0;}
     }
-    navbar{@extend %fc;padding-inline: 16px;width: 100%;align-items: center;}
+    nav{@extend %fc;padding-inline: 16px;width: 100%;align-items: center;}
     menu{display: flex;
         li{list-style: none;display:flex;}
         &:not(menu menu){flex-wrap: wrap;
@@ -71,7 +71,7 @@ header{padding-block: 12px;@extend %trans;border-bottom:1px solid var(--b1);back
     header .fw {display: flex;justify-content: space-between;align-items: center;}
     header .navbar .logoMob{display: flex;margin-block: 12px;}
     header .callMenu .menu{display: flex;}
-    header navbar{padding: 0 8px;align-items: flex-start;height: 100vh;}
+    header nav{padding: 0 8px;align-items: flex-start;height: 100vh;}
     header menu:not(menu menu){flex-direction: column;border-top:1px solid var(--b1);padding-block: 16px;flex-wrap: nowrap;overflow-y: auto;width: 100%;}
     header menu:not(menu menu)>li:not(:last-child) {margin-right: 0;margin-bottom: 16px;}
     header menu>li{flex-direction: column;}

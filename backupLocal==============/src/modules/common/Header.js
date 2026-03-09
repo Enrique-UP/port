@@ -30,7 +30,7 @@ function Header() {
               </Link>
             </div>
             <div className="navbar">
-              <navbar>
+              <nav>
                 <Link className="logoMob" to="/">
                   <img src={Logo} alt="" />
                 </Link>
@@ -49,7 +49,7 @@ function Header() {
                   <li><NavLink to="/lifestyle">Life Style</NavLink></li>
                   <li><NavLink to="/contactus">Contact Us</NavLink></li>
                 </menu>
-              </navbar>
+              </nav>
               <i className="icon close" onClick={closeMenu}>&#xa011;</i>
             </div>
             <div className="callMenu">
