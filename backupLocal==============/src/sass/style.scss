@@ -33,8 +33,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .container{position: relative;
             .row{justify-content: flex-start;}
         }
+        .img{width: 100%;border:10px solid var(--c1);}
         .hd, .txt{color:#fff;width: 100%;display: flex;}
-        .hd{font-weight: 900;font-size: 48px;line-height: 1.2;margin-bottom: 16px;}
+        .hd{font-weight: 900;font-size: 60px;line-height: 1.2;margin-bottom: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
         .btns{
             > a{
