@@ -36,7 +36,7 @@ function Lifestyle() {
                 return (
                   <data key={ind}>
                     <figure>
-                      <img src={LifeStyleImages[imgIndex]} alt={val.hd} />
+                      <img className="lazy" data-src={LifeStyleImages[imgIndex]} alt={val.hd} />
                       <figcaption>
                         <b>{val.hd}</b>
                         <span>{val.txt}</span>

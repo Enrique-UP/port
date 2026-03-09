@@ -23,7 +23,7 @@ function LifeStyleHome() {
                 </div>{/* cols */}
                 <data className="col-12">
                   <figure>
-                    <img src={ls1} />
+                    <img class="lazy" data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -36,7 +36,7 @@ function LifeStyleHome() {
               <div className="row">
                 <data className="col-6">
                   <figure>
-                    <img src={ls1} />
+                    <img class="lazy" data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -45,7 +45,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ls1} />
+                    <img class="lazy" data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -54,7 +54,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ls1} />
+                    <img class="lazy" data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -63,7 +63,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ls1} />
+                    <img class="lazy" data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -74,7 +74,7 @@ function LifeStyleHome() {
             </div>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ls1} />
+                <img class="lazy" data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -83,7 +83,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ls1} />
+                <img class="lazy" data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -92,7 +92,7 @@ function LifeStyleHome() {
             </data>{/* <!--cols--> */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ls1} />
+                <img class="lazy" data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -101,7 +101,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ls1} />
+                <img class="lazy" data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
