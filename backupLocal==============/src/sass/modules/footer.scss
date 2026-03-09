@@ -13,12 +13,12 @@ footer{margin-top: auto;background: var(--f1);color:#fff;@extend %fc;
         }
     }
     .links{
-        > li{padding-left:16px;
+        > li{padding-left:12px;
             &::before{content:"\a021";}            
         }
     }
     .contacts{
-        > li{padding-left:24px;
+        > li{padding-left:20px;
             &::before{content:attr(data-icon);}
         }
     }

@@ -36,7 +36,7 @@ function Header() {
                 </Link>
                 <menu>
                   <li><NavLink to="/">Home</NavLink></li>
-                  <li><NavLink to="/aboutus">About Us</NavLink></li>
+                  {/* <li><NavLink to="/aboutus">About Us</NavLink></li> */}
                   {/* <li><a href="#">Lorem ipsum</a>
                     <menu>
                       <li><a href="#">Lorem ipsum dolor sit ameet lorem ipsum dolor</a></li>

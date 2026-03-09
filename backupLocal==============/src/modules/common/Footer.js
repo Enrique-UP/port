@@ -9,22 +9,22 @@ function Footer() {
         <div className="top">
           <div className="container">
             <div className="row">
-              <div className="col-sm-6 col-md-12 col-lg-3">
+              <div className="col-lg-4">
                 <Link className="logo" to="/">
                   <img src={Logo} alt="" />
                 </Link>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet consectetur adipisicing elit libero minima fugit explicabo possimus hic animi culpa dolorum.</p>
               </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className="col-6 col-lg-4">
                 <p className="hd">Quick Links</p>
                 <ul className="links">
                   <li><Link to="/">Home</Link></li>
-                  <li><Link to="/aboutus">About Us</Link></li>
+                  {/* <li><Link to="/aboutus">About Us</Link></li> */}
                   <li><Link to="/lifestyle">Life Style</Link></li>
                   <li><Link to="/contactus">Contact Us</Link></li>
                 </ul>
               </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
+              {/* <div className="col-sm-6 col-md-4 col-lg-3">
                 <p className="hd">Useful Links</p>
                 <ul className="links">
                   <li><Link to="#">Lorem ipsum dolor sit amet</Link></li>
@@ -34,8 +34,8 @@ function Footer() {
                   <li><Link to="#">Lorem ipsum</Link></li>
                   <li><Link to="#">Lorem ipsum dolor</Link></li>
                 </ul>
-              </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
+              </div> */}
+              <div className="col-6 col-lg-4">
                 <p className="hd">Get in Touch</p>
                 <ul className="contacts">
                   <li data-icon="&#xa001;"><a href="tel:0000000000" target="_blank">0000000000</a></li>
