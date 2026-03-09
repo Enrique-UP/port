@@ -4,8 +4,10 @@
 @import "./common/buttons";
 @import "./common/grid";
 
-@import "./modules/header";
-@import "./modules/footer";
+@import "./modules/Header";
+@import "./modules/Footer";
+@import "./modules/LifeStyle";
+@import "./modules/ContactUs.scss";
 
 // html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;}
@@ -71,20 +73,6 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .outlineBox {width: 100%;border: 1px solid var(--b1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
     > b{font-size: 24px;font-weight: 900;line-height: 1.2;}
     > span{color:var(--f2);}
-}
-
-.lifeStyle{
-    figure{@extend %fc;width: 100%;
-        > *{width: 100%;}
-        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:10px 12px;color:#fff;column-gap: 12px;}
-    }
-    .setHeight{
-        .row{height: 100%;}
-        figure{height: 100%;
-            > img{height: 100%;}
-        }
-    }
-    .df{display: flex;}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;
@@ -155,21 +143,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         textarea{resize: vertical;height: 129px;min-height: 129px;}
     }
 }
-.contactPage{
-    .form{background: var(--g1);padding: 32px;border-radius: 4px;border:1px solid var(--b1);
-        .btns{width: 100%;
-            > *{width: 100%;justify-content:center;}
-        }
-    }
-    .contactBox{width: 100%;@extend %fc;gap:32px 32px;
-        > li{width: 100%;display: flex;list-style:none;
-            .icon{width: 77px;height: 77px;background: var(--c1);color: #fff;@extend %center;flex-shrink: 0;border-radius: 4px;font-size: 24px;align-self: flex-start;}
-            > a{width: 100%;display: flex;align-items: center;background: var(--g1);border-radius: 4px;padding: 32px;border:1px solid var(--b1);column-gap: 24px;cursor: pointer;}
-            b{color: var(--f1);font-size: 20px;}
-            span{width:100%;@extend %fc;color:var(--f2);font-size: 16px;}
-        }
-    }
-}
+
 .scrollTop, .callRight{position: fixed;right:8px;z-index: 999;background: var(--c1);color:#fff;@extend %trans;cursor: pointer;border-radius:4px;width: 36px;height: 36px;@extend %center;@extend %trans;@extend %userSelect;border:1px solid #fff;
     &.fixed{transform: scale(1);-webkit-transform: scale(1);-moz-transform: scale(1);}
     &:hover{background: var(--c2);}

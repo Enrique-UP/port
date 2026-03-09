@@ -59,8 +59,6 @@
     main > .banner .hd, main > .banner .txt{text-align: center;}
     main > .banner .txt {margin-bottom: 16px;}
 
-    .contactPage .contactBox{gap:16px;}
-
     .fixNum{font-size: 14px;display: flex;}
 
     .outlineBox {padding: 16px 12px;}
@@ -88,16 +86,7 @@
     .faqs .faqsArea:not(:first-child){padding-top: 16px;}
     .faqs .faqsArea:not(:last-child){padding-bottom: 16px;}
 
-    .contactPage .form{padding:24px 16px;}
-    .contactPage .contactBox > li > a{padding: 16px;column-gap: 12px;}
-
     .note{font-size: 18px;}
 
     main > .bd hgroup ul > li > a, main > .bd hgroup ol > li > a{font-size: 16px;}
-}
-@media (max-width:460px){
-    .contactPage .contactBox > li > a{column-gap: 12px;}
-    .contactPage .contactBox > li .icon{width: 60px;height: 60px;}
-    .contactPage .contactBox > li b{font-size: 18px;}
-    .contactPage .contactBox > li span{font-size: 14px;}
 }

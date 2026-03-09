@@ -6,8 +6,8 @@ function Banner(props) {
         <div className="container">
           <div className="row"> 
             <div className="col-lg-6 col-xl-5">
-              <h1 className="hd">{props.PageName}</h1>
-              <p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam.</p>
+              <h1 className="hd">{props.pageName}</h1>
+              <p className="txt">{props.pageText}</p>
               <div className="btns">
                 <a href="#" target="_blank">
                   <i className="icon">&#xa001;</i>
@@ -18,14 +18,16 @@ function Banner(props) {
           </div>
         </div>
       </section>
+      {props.showBreadcrumbs && (
       <section className="breadcrumbs">
         <div className="container">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li>{props.PageName}</li>
+            <li>{props.pageName}</li>
           </ul>
         </div>
       </section>
+      )}
     </>
   );
 }

@@ -7,8 +7,12 @@ function ContactUs() {
       <Helmet>
           <title>Contact Us</title>
       </Helmet>
-      <Banner pageName="About Us" />
-      <section className="section contactPage">
+      <Banner
+        pageName="Contact Us" 
+        pageText="Contact Us page content here lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam."
+        showBreadcrumbs={true}
+      />
+      <section className="section contactUs">
         <div className="container">
           <div className="row">
             <div className="col-12">

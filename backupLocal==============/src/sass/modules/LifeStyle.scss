@@ -1,0 +1,13 @@
+.lifeStyle{
+    figure{@extend %fc;width: 100%;
+        > *{width: 100%;}
+        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:10px 12px;color:#fff;column-gap: 12px;}
+    }
+    .setHeight{
+        .row{height: 100%;}
+        figure{height: 100%;
+            > img{height: 100%;}
+        }
+    }
+    .df{display: flex;}
+}

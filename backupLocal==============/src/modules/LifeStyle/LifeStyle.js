@@ -7,7 +7,11 @@ function Lifestyle() {
       <Helmet>
         <title>Life Style</title>
       </Helmet>
-      <Banner pageName="About Us" />
+      <Banner
+        pageName="Life Style" 
+        pageText="Life Style page content here lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam."
+        showBreadcrumbs={true}
+      />
       <section className="section">
         <div className="container">
           <hgroup className="tc">
