@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "./sass/style.scss";
 
@@ -15,7 +15,7 @@ import ContactUs from "./modules/ContactUs";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <RenderTop />
       <CommonScript />
       <Header />
@@ -30,7 +30,7 @@ function App() {
       <Footer />
       <Scrolltotop />
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

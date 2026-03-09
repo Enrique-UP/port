@@ -1,4 +1,4 @@
-import ls1 from "../../images/lifeStyle/ls-1.jpg";
+import ls1 from "../../images/lifeStyle/1.jpg";
 import { Link } from "react-router-dom";
 
 function LifeStyleHome() {
