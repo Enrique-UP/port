@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./sass/style.scss";
 
@@ -12,10 +12,11 @@ import Home from "./modules/Home";
 import LifeStyle from "./modules/LifeStyle/LifeStyle";
 import AboutUs from "./modules/AboutUs";
 import ContactUs from "./modules/ContactUs";
+import ThankYou from "./modules/ThankYou";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <RenderTop />
       <CommonScript />
       <Header />
@@ -25,12 +26,13 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/lifestyle" element={<LifeStyle />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
 
       <Footer />
       <Scrolltotop />
 
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

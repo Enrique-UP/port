@@ -6,7 +6,7 @@ function CommonScript() {
   useEffect(() => {
 
 
-
+    // For colors
     {
       const items = document.querySelectorAll(".colors data");
       const totalClasses = 10;
@@ -17,6 +17,8 @@ function CommonScript() {
         i++;
       });
     }
+    
+    // For image lazy load
     {
       function lazyLoadImage() {
           var scroll = document.documentElement.scrollTop;
@@ -43,12 +45,14 @@ function CommonScript() {
       window.addEventListener("scroll", lazyLoadImage);
       window.addEventListener("resize", lazyLoadImage);
     }
-    {
-      console.log(500);
-    }
+    // For masonry grid
+    // {}
+    // {}
+    // {}
+    // {}
+    // {}
+    // {}
 
-
-    
   }, [location]);
   return null;
 }

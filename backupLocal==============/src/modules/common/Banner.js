@@ -10,13 +10,23 @@ function Banner(props) {
             <div className="col-lg-6">
               <h1 className="hd">{props.pageName}</h1>
               <p className="txt">{props.pageText}</p>
+
               <div className="btns">
-                <a href="#" target="_blank">
-                  <i className="icon">&#xa001;</i>
-                  <span>0000000000</span>
-                </a>
+                {props.pageName === "Thank You!" ? (
+                  <Link to="/">
+                    <i className="icon">&#xa071;</i>
+                    <span>Go to Home</span>
+                  </Link>
+                ) : (
+                  <a href="#" target="_blank" rel="noreferrer">
+                    <i className="icon">&#xa001;</i>
+                    <span>0000000000</span>
+                  </a>
+                )}
               </div>
+
             </div>
+
             <div className="col-lg-6">
               <img src={props.otherImg || defaultBannerImg} className="banner img" />
             </div>
@@ -34,7 +44,6 @@ function Banner(props) {
           </div>
         </section>
       )}
-      
     </>
   );
 }

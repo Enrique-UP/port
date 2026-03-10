@@ -4,16 +4,19 @@
             > *{width: 100%;justify-content:center;}
         }
     }
-    .contactBox{width: 100%;@extend %fc;gap:32px 32px;
+    .contactBox{width: 100%;display: grid;grid-template-columns: repeat(1, 1fr);gap: 32px;
         > li{width: 100%;display: flex;list-style:none;
             .icon{width: 77px;height: 77px;background: var(--c1);color: #fff;@extend %center;flex-shrink: 0;border-radius: 4px;font-size: 24px;align-self: flex-start;}
-            > a{width: 100%;display: flex;align-items: center;background: var(--g1);border-radius: 4px;padding: 32px;border:1px solid var(--b1);column-gap: 24px;cursor: pointer;}
+            > a{width: 100%;display: flex;align-items: center;background: var(--g1);border-radius: 4px;padding: 25px 32px;border:1px solid var(--b1);column-gap: 24px;cursor: pointer;}
             b{color: var(--f1);font-size: 20px;}
             span{width:100%;@extend %fc;color:var(--f2);font-size: 16px;}
         }
     }
 }
 
+@media (min-width:768px) and (max-width:991px){
+    .contactUs .contactBox{grid-template-columns: repeat(2, 1fr);}
+}
 @media (max-width:767px){
     .contactUs .contactBox{gap:16px;}
 }

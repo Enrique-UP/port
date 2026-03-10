@@ -11,7 +11,12 @@
     }
     .df{display: flex;}
 
-    .partition{display: grid;grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));grid-gap: 8px;
-        // data{}
+    .partition{
+        column-count:5;column-gap:16px;
+        // display: grid;grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));grid-gap: 8px;
+        data{
+            break-inside: avoid-column !important;
+            // figure::after{width: 100%;height: 16px;display: flex;content:"";}
+        }
     }
 }

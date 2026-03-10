@@ -1,5 +1,6 @@
 import {Helmet} from "react-helmet";
 import Banner from "./common/Banner";
+import FormArea from "./common/FormArea";
 
 function ContactUs() {
   return (
@@ -20,38 +21,18 @@ function ContactUs() {
                 <p>Get in touch &mdash; we respond quickly.</p>
               </hgroup>
             </div>
-            <div className="col-lg-7">
-              <form className="form" action="#">
-                <div className="field">
-                  <label htmlFor="name">Full Name*</label>
-                  <input className="inputText" id="name" type="text" placeholder="Enter your full name" required="" />
-                </div>
-                {/* field */}
-                <div className="field">
-                  <label htmlFor="email">Email Address*</label>
-                  <input className="inputText" id="email" type="email" placeholder="Enter your email address" required="" />
-                </div>
-                {/* field */}
-                <div className="field">
-                  <label htmlFor="message">Message*</label>
-                  <textarea className="inputText" id="message" rows="4" placeholder="Write your message here..." required=""></textarea>
-                </div>
-                {/* field */}
-                <div className="btns">
-                  <button>
-                    <span>Submit</span>
-                    <i className="icon">&#xA021;</i>
-                  </button>
-                </div>
-                {/* btns */}
-              </form>
-            </div>
             <div className="col-lg-5">
               <ul className="contactBox">
                 <li>
                   <a href="#" target="_blank">
                     <i className="icon">&#xA001;</i>
                     <span><b>Phone Number</b>0000000000</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i className="icon">&#xA070;</i>
+                    <span><b>WhatsApp Number</b>0000000000</span>
                   </a>
                 </li>
                 <li>
@@ -67,6 +48,9 @@ function ContactUs() {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="col-lg-7">
+              <FormArea />
             </div>
           </div>
         </div>

@@ -143,6 +143,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         input, textarea, select{width: 100%;border-radius: 4px;border: 1px solid var(--b1);outline: none;padding: 8px 12px;background: #fff;}
         textarea{resize: vertical;height: 129px;min-height: 129px;}
     }
+    .error{width: 100%;color:red;font-size: 12px;}
 }
 
 .scrollTop, .callRight{position: fixed;right:8px;z-index: 999;background: var(--c1);color:#fff;@extend %trans;cursor: pointer;border-radius:4px;width: 36px;height: 36px;@extend %center;@extend %trans;@extend %userSelect;border:1px solid #fff;
@@ -159,5 +160,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .mb0{margin-bottom: 0 !important;}
+
+// main:has(> .thankYou) > :not(.thankYou) {
+//   display: none;
+// }
 
 @import "./res";
