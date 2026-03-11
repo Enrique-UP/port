@@ -5,7 +5,6 @@ function CommonScript() {
   const location = useLocation();
   useEffect(() => {
 
-
     // For colors
     {
       const items = document.querySelectorAll(".colors data");
@@ -17,6 +16,7 @@ function CommonScript() {
         i++;
       });
     }
+
     
     // For image lazy load
     {
@@ -26,9 +26,7 @@ function CommonScript() {
             if (entry.isIntersecting) {
               const img = entry.target;
               const realSrc = img.getAttribute("data-src");
-              if (realSrc) {
-                img.src = realSrc;
-              }
+              if (realSrc) img.src = realSrc;
               img.removeAttribute("data-src");
               observer.unobserve(img);
             }
@@ -40,22 +38,24 @@ function CommonScript() {
       }
       else alert("This API is not supported by your browser, so you can't see the effect.");
     }
+
+
     // For masonry grid
     {
       function resizeImage(){
-          document.querySelectorAll(".partition data").forEach(function(e){
-              const h = e.querySelector("figure").getBoundingClientRect().height;
-              const style = window.getComputedStyle(e);
-              const marginBottom = parseFloat(style.marginBottom);
-              e.style.setProperty("--num", parseInt(h + marginBottom));
-          });
-          //alert();
+        document.querySelectorAll(".partition data").forEach(function(e){
+          const h = e.querySelector("figure").getBoundingClientRect().height;
+          const style = window.getComputedStyle(e);
+          const marginBottom = parseFloat(style.marginBottom);
+          e.style.setProperty("--num", parseInt(h + marginBottom));
+        });
       }
       window.addEventListener("load", resizeImage);
-      window.addEventListener("scroll", resizeImage);
       window.addEventListener("resize", resizeImage);
-      setInterval(resizeImage, 3000);
+      document.querySelectorAll(".partition img").forEach(img => img.addEventListener("load", resizeImage));
     }
+
+    
     // {}
     // {}
     // {}
