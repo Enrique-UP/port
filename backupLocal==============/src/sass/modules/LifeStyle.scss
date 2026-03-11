@@ -28,8 +28,11 @@
 @media (min-width:576px) and (max-width:991px){
     .lifeStyle .partition {grid-template-columns: repeat(3, 1fr);}
 }
-@media (max-width:575px){
-    .lifeStyle .partition {grid-template-columns: repeat(2, 1fr);grid-column-gap: 8px;}
+@media (max-width:767px){
+    .lifeStyle .partition {grid-column-gap: 8px;}
     .lifeStyle .partition data{margin-bottom: 8px;}
     .lifeStyle figure figcaption{padding: 6px 10px;}
+}
+@media (max-width:575px){
+    .lifeStyle .partition {grid-template-columns: repeat(2, 1fr);}
 }
