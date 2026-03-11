@@ -35,7 +35,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
         .img{width: 100%;border:10px solid var(--c1);}
         .hd, .txt{color:#fff;width: 100%;display: flex;}
-        .hd{font-weight: 900;font-size: 60px;line-height: 1.2;margin-bottom: 16px;}
+        .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-bottom: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
         .btns{
             > a{
@@ -72,7 +72,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--b1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
-    > b{font-size: 24px;font-weight: 900;line-height: 1.2;}
+    > b{font-size: 24px;font-weight: bold;line-height: 1.2;}
     > span{color:var(--f2);}
 }
 
