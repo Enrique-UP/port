@@ -20,33 +20,42 @@ function CommonScript() {
     
     // For image lazy load
     {
-      function lazyLoadImage() {
-          var scroll = document.documentElement.scrollTop;
-          var windowBottom = scroll + window.innerHeight;      
-          var lazy = document.querySelectorAll(".lazy");
-          for(var i = 0; i < lazy.length; i++){
-            var lazyBottom = lazy[i].offsetTop + lazy[i].offsetHeight;        
-    
-            if(scroll <= lazyBottom && lazy[i].offsetTop <= windowBottom){
-              var dataSrc = lazy[i].getAttribute("data-src");
-              var dataStyle = lazy[i].getAttribute("data-style");
-              if(dataSrc){
-                lazy[i].setAttribute("src", dataSrc);
-                lazy[i].removeAttribute("data-src");
+      if (!!window.IntersectionObserver) {
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              const realSrc = img.getAttribute("data-src");
+              if (realSrc) {
+                img.src = realSrc;
               }
-              if(dataStyle){
-                lazy[i].setAttribute("style", "background-image:url("+ dataStyle +")");
-                lazy[i].removeAttribute("data-style");
-              }
+              img.removeAttribute("data-src");
+              observer.unobserve(img);
             }
-          }
+          });
+        }, { rootMargin: "0px 0px 0px 0px" });
+        document.querySelectorAll('img[data-src]').forEach(img => { 
+          observer.observe(img);
+        });
       }
-      window.addEventListener("load", lazyLoadImage());
-      window.addEventListener("scroll", lazyLoadImage);
-      window.addEventListener("resize", lazyLoadImage);
+      else alert("This API is not supported by your browser, so you can't see the effect.");
     }
     // For masonry grid
-    // {}
+    {
+      function resizeImage(){
+          document.querySelectorAll(".partition data").forEach(function(e){
+              const h = e.querySelector("figure").getBoundingClientRect().height;
+              const style = window.getComputedStyle(e);
+              const marginBottom = parseFloat(style.marginBottom);
+              e.style.setProperty("--num", parseInt(h + marginBottom));
+          });
+          //alert();
+      }
+      window.addEventListener("load", resizeImage);
+      window.addEventListener("scroll", resizeImage);
+      window.addEventListener("resize", resizeImage);
+      setInterval(resizeImage, 3000);
+    }
     // {}
     // {}
     // {}

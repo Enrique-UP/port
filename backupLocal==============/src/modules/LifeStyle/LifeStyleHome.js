@@ -1,5 +1,7 @@
-import ls1 from "../../images/lifeStyle/1.jpg";
 import { Link } from "react-router-dom";
+import ls1 from "../../images/lifeStyle/1.jpg";
+const ImagePlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
 
 function LifeStyleHome() {
   return (
@@ -23,7 +25,7 @@ function LifeStyleHome() {
                 </div>{/* cols */}
                 <data className="col-12">
                   <figure>
-                    <img className="lazy" data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -36,7 +38,7 @@ function LifeStyleHome() {
               <div className="row">
                 <data className="col-6">
                   <figure>
-                    <img className="lazy" data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -45,7 +47,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img className="lazy" data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -54,7 +56,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img className="lazy" data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -63,7 +65,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img className="lazy" data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={ls1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -74,7 +76,7 @@ function LifeStyleHome() {
             </div>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img className="lazy" data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -83,7 +85,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img className="lazy" data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -92,7 +94,7 @@ function LifeStyleHome() {
             </data>{/* <!--cols--> */}
             <data className="col-6 col-md-3">
               <figure>
-                <img className="lazy" data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -101,7 +103,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img className="lazy" data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={ls1} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>

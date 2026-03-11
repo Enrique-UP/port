@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Banner from "../common/Banner";
 import LifeStyleData from "./LifestyleData";
+const ImagePlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
 const r = require.context("../../images/lifeStyle", false, /./);
 const LifeStyleImages = r.keys().map(r);
@@ -32,14 +33,13 @@ function Lifestyle() {
             <div className="col-12 partition">
               {[...LifeStyleData].reverse().map((val, ind) => {
                 const imgIndex = LifeStyleData.length - ind - 1;
-
                 return (
                   <data key={ind}>
                     <figure>
-                      <img className="lazy" data-src={LifeStyleImages[imgIndex]} alt={val.hd} />
+                      <img src={ImagePlaceholder} data-src={LifeStyleImages[imgIndex]} alt={val.hd} />
                       <figcaption>
-                        <b>{val.hd}</b>
-                        <span>{val.txt}</span>
+                        <b>{val.place}</b>
+                        <span>{val.date}</span>
                       </figcaption>
                     </figure>
                   </data>

@@ -11,8 +11,25 @@
     }
     .df{display: flex;}
 
-    .partition{display: grid;gap: 8px;grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: auto;
-        data{ display: flex;}
+    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;counter-reset: section;
+        data{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;
+            figure{
+                figcaption{
+                    b::after{counter-increment: section;content: " " counter(section);}
+                }
+            }
+        }
     }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .lifeStyle .partition {grid-template-columns: repeat(4, 1fr);}
+}
+@media (min-width:576px) and (max-width:991px){
+    .lifeStyle .partition {grid-template-columns: repeat(3, 1fr);}
+}
+@media (max-width:575px){
+    .lifeStyle .partition {grid-template-columns: repeat(2, 1fr);grid-column-gap: 8px;}
+    .lifeStyle .partition data{margin-bottom: 8px;}
+    .lifeStyle figure figcaption{padding: 6px 10px;}
 }
