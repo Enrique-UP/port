@@ -25,7 +25,7 @@ body{font-size: 16px;line-height: 1.7;}
 }
 img{max-width: 100%;}
 :has(> .fw){display: flex;flex-wrap: wrap;}
-.fw{width: 100%;}
+.fw{width: 100%;position: relative;}
 
 .section, .sectionT, .sectionB{display: flex;flex-direction: column;}
 

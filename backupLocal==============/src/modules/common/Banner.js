@@ -12,17 +12,20 @@ function Banner(props) {
               <p className="txt">{props.pageText}</p>
 
               <div className="btns">
-                {props.pageName === "Thank You!" ? (
-                  <Link to="/">
-                    <i className="icon">&#xa071;</i>
-                    <span>Go to Home</span>
-                  </Link>
-                ) : (
-                  <a href="#" target="_blank" rel="noreferrer">
-                    <i className="icon">&#xa001;</i>
-                    <span>0000000000</span>
-                  </a>
-                )}
+                {
+                  props.pageName === "Thank You!" ? (
+                  // props.pageName !== "" ? (
+                    <Link to="/">
+                      <i className="icon">&#xa074;</i>
+                      <span>Go to Home</span>
+                    </Link>
+                  ) : (
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <i className="icon">&#xa001;</i>
+                      <span>0000000000</span>
+                    </a>
+                  )
+                }
               </div>
 
             </div>
@@ -34,6 +37,13 @@ function Banner(props) {
         </div>
       </section>
 
+      <ul className="colorsLine">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
       {props.showBreadcrumbs !== false && (
         <section className="breadcrumbs">
           <div className="container">
@@ -44,6 +54,8 @@ function Banner(props) {
           </div>
         </section>
       )}
+
+      
     </>
   );
 }

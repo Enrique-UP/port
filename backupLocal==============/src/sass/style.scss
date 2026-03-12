@@ -35,7 +35,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
         .img{width: 100%;border:10px solid var(--c1);}
         .hd, .txt{color:#fff;width: 100%;display: flex;}
-        .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-bottom: 16px;}
+        .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-block: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
         .btns{
             > a{
@@ -67,6 +67,14 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
                     }
                 }
             }
+        }
+    }
+    > .colorsLine{display: flex;padding: 0;margin: 0;flex-direction:row;
+        > li{list-style: none;height: 12px;
+            &:nth-child(1){background: var(--cb1);width: 55%;}
+            &:nth-child(2){background: var(--cb2);width: 15%;}
+            &:nth-child(3){background: var(--cb4);width: 15%;}
+            &:nth-child(4){background: var(--cb7);width: 15%;}
         }
     }
 }
@@ -108,9 +116,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .breadcrumbs{padding-block: 12px;background:var(--g1);
     ul{width: 100%;display: flex;flex-wrap: wrap;padding: 0;margin: 0;gap: 4px 11px;
         > li{list-style: none;line-height: 1.1;display:flex;
-            > a{color: var(--c1);font-weight: bold;}
+            > a{color: var(--c2);font-weight: bold;}
             &:not(:last-child){position: relative;padding-right: 16px;
-                &::after{font-family: fontello;content:"\a021";position: absolute;right: 0;}
+                &::after{font-family: fontello;content:"\a030";position: absolute;right: 0;}
             }
         }
     }

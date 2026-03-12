@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/port/static/css/main.bfa50888.css",
-    "main.js": "/port/static/js/main.10e3dfaf.js",
+    "main.css": "/port/static/css/main.fffbf11d.css",
+    "main.js": "/port/static/js/main.c6a5bc57.js",
     "static/js/453.89d48eb7.chunk.js": "/port/static/js/453.89d48eb7.chunk.js",
     "static/media/home.jpg": "/port/static/media/home.b90ceae23150a59960a3.jpg",
     "static/media/inner.jpg": "/port/static/media/inner.991d82090e9a03b51d42.jpg",
-    "static/media/fontello.svg?54731107": "/port/static/media/fontello.2f3d7a511c358885f405.svg",
-    "static/media/fontello.eot?54731107": "/port/static/media/fontello.ee5f4973c71a3e9e70ae.eot",
-    "static/media/fontello.ttf?54731107": "/port/static/media/fontello.4c878c8e02f0588ed00d.ttf",
-    "static/media/fontello.woff?54731107": "/port/static/media/fontello.0f61361a0f27b3f84bf6.woff",
+    "static/media/fontello.svg?54731107": "/port/static/media/fontello.45fce1524b0ebc7df2eb.svg",
+    "static/media/fontello.eot?54731107": "/port/static/media/fontello.22d5b26dede43ce9da91.eot",
+    "static/media/fontello.ttf?54731107": "/port/static/media/fontello.a8e27cc93f5f6a821838.ttf",
+    "static/media/fontello.woff?54731107": "/port/static/media/fontello.02785368f516764c971b.woff",
     "static/media/14.jpg": "/port/static/media/14.a45003c1964542391a75.jpg",
     "static/media/20.jpg": "/port/static/media/20.a45003c1964542391a75.jpg",
     "static/media/24.jpg": "/port/static/media/24.a45003c1964542391a75.jpg",
@@ -56,12 +56,12 @@
     "static/media/46.jpg": "/port/static/media/46.2965718d831e135e0258.jpg",
     "static/media/6.jpg": "/port/static/media/6.2965718d831e135e0258.jpg",
     "index.html": "/port/index.html",
-    "main.bfa50888.css.map": "/port/static/css/main.bfa50888.css.map",
-    "main.10e3dfaf.js.map": "/port/static/js/main.10e3dfaf.js.map",
+    "main.fffbf11d.css.map": "/port/static/css/main.fffbf11d.css.map",
+    "main.c6a5bc57.js.map": "/port/static/js/main.c6a5bc57.js.map",
     "453.89d48eb7.chunk.js.map": "/port/static/js/453.89d48eb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa50888.css",
-    "static/js/main.10e3dfaf.js"
+    "static/css/main.fffbf11d.css",
+    "static/js/main.c6a5bc57.js"
   ]
 }

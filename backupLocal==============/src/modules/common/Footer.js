@@ -20,7 +20,7 @@ function Footer() {
                 <ul className="links">
                   <li><Link to="/">Home</Link></li>
                   {/* <li><Link to="/aboutus">About Us</Link></li> */}
-                  <li><Link to="/lifestyle">Life Style</Link></li>
+                  <li><Link to="/lifestyle">Gallery</Link></li>
                   <li><Link to="/contactus">Contact Us</Link></li>
                 </ul>
               </div>
@@ -39,8 +39,8 @@ function Footer() {
                 <p className="hd">Get in Touch</p>
                 <ul className="contacts">
                   <li data-icon="&#xa001;"><a href="tel:0000000000" target="_blank">0000000000</a></li>
-                  <li data-icon="&#xa003;"><a href="mailto:#" target="_blank">demo@gmail.com</a></li>
-                  <li data-icon="&#xa004;">
+                  <li data-icon="&#xa004;"><a href="mailto:demo@gmail.com" target="_blank">demo@gmail.com</a></li>
+                  <li data-icon="&#xa007;" target="_blank">
                     <a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lorem</a>
                   </li>
                 </ul>
@@ -50,7 +50,7 @@ function Footer() {
         </div>
         <div className="bottom">
           <div className="container">
-            <p className="copy">Copyright &copy; with all rights reserved.</p>
+            <p className="copy">Copyright &copy; <span>2026</span> with all rights reserved.</p>
           </div>
         </div>
       </footer>

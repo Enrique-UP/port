@@ -22,12 +22,7 @@ const Scrolltotop = () => {
   return (
     <>
       <a className="callRight icon" href="tel:000000">&#xa001;</a>
-      <button
-        onClick={scrollToTop}
-        className={`scrollTop icon ${isFixed ? "fixed" : ""}`}
-      >
-        &#xa022;
-      </button>
+      <button onClick={scrollToTop} className={`scrollTop icon ${isFixed ? "fixed" : ""}`}>&#xa031;</button>
     </>
   );
 };

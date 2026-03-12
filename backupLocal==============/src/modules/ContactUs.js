@@ -31,19 +31,19 @@ function ContactUs() {
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <i className="icon">&#xA070;</i>
+                    <i className="icon">&#xA025;</i>
                     <span><b>WhatsApp Number</b>0000000000</span>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <i className="icon">&#xA003;</i>
+                    <i className="icon">&#xA004;</i>
                     <span><b>Email Address</b>demo@gmail.com</span>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                    <i className="icon">&#xA039;</i>
+                    <i className="icon">&#xA007;</i>
                     <span><b>Address</b>Lorem</span>
                   </a>
                 </li>
