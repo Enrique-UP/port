@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Global } from "./Global";
 import defaultBannerImg from "../../images/banners/inner.jpg";
 
 function Banner(props) {
@@ -19,8 +20,8 @@ function Banner(props) {
                       <span>Go to Home</span>
                     </Link>
                   ) : (
-                    <a href="#" target="_blank" rel="noreferrer" data-icon="&#xa001;">
-                      <span>0000000000</span>
+                    <a href={Global.numTel} target="_blank" data-icon="&#xa001;">
+                      <span>{Global.num}</span>
                     </a>
                   )
                 }

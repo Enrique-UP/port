@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { Global } from "../common/Global";
+
 const Scrolltotop = () => {
   const [isFixed, setIsFixed] = useState(false);
 
@@ -21,7 +23,7 @@ const Scrolltotop = () => {
 
   return (
     <>
-      <a className="callRight icon" href="tel:000000">&#xa001;</a>
+      <a className="callRight icon" href={Global.numTel}>&#xa001;</a>
       <button onClick={scrollToTop} className={`scrollTop icon ${isFixed ? "fixed" : ""}`}>&#xa031;</button>
     </>
   );

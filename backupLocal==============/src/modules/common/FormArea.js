@@ -107,7 +107,7 @@ function FormArea() {
             />
             {formik.errors.user_message && formik.touched.user_message && <small className="error">{formik.errors.user_message}</small>}
         </div>{/* field */}
-        <div className="btns">
+        <div className="btns bsn">
             <button type="submit">
               <span>Submit</span>
               {/* <i className="icon">&#xA021;</i> */}

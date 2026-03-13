@@ -5,6 +5,8 @@ import Logo from "../../images/logo.png";
 import LogoMob from "../../images/logo.png";
 import LifeStyle from "../../images/icons/lifeStyle.png";
 
+import { Global } from "../common/Global";
+
 function Header() {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,15 +29,15 @@ function Header() {
         <div className="headerTop">
           <div className="container">
             <div className="fw">
-              <a className="mail">
+              <a className="mail" href={`mailto:${Global.email}`} target="_blank">
                 <i className="icon">&#xa004;</i>
                 <b>Email Id:-</b>
-                <span className="txt">demo@gmail.com</span>
+                <span className="txt">{Global.email}</span>
               </a>
-              <a className="number">
+              <a className="number" href={Global.numTel} target="_blank">
                 <i className="icon">&#xa001;</i>
                 <b>Phone No:-</b>
-                <span className="txt">0000000000</span>
+                <span className="txt">{Global.num}</span>
               </a>
             </div>{/* fw */}
           </div>{/* container */}
@@ -59,7 +61,7 @@ function Header() {
                   <span>
                     <a className="ins" target="_blank" href="#"><i className="icon">&#xa023;</i></a>
                     <a className="skype" target="_blank" href="#"><i className="icon">&#xa026;</i></a>
-                    <a className="wapp" target="_blank" href="#"><i className="icon fwt">&#xa025;</i></a>
+                    <a className="wapp" target="_blank" href={Global.whatsappLink}><i className="icon fwt">&#xa025;</i></a>
                   </span>
                 </p>
               </div>

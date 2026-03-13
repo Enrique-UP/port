@@ -2,6 +2,8 @@ import {Helmet} from "react-helmet";
 import Banner from "./common/Banner";
 import FormArea from "./common/FormArea";
 
+import { Global } from "./common/Global";
+
 function ContactUs() {
   return (
     <>
@@ -24,27 +26,27 @@ function ContactUs() {
             <div className="col-lg-5">
               <ul className="contactBox">
                 <li>
-                  <a href="#" target="_blank">
+                  <a href={Global.numTel} target="_blank">
                     <i className="icon">&#xA001;</i>
-                    <span><b>Phone Number</b>0000000000</span>
+                    <span><b>Phone Number</b>{Global.num}</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
+                  <a href={Global.whatsappLink} target="_blank">
                     <i className="icon">&#xA025;</i>
-                    <span><b>WhatsApp Number</b>0000000000</span>
+                    <span><b>WhatsApp Number</b>{Global.whatsapp}</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
+                  <a href={`mailto:${Global.email}`} target="_blank">
                     <i className="icon">&#xA004;</i>
-                    <span><b>Email Address</b>demo@gmail.com</span>
+                    <span><b>Email Address</b>{Global.email}</span>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                     <i className="icon">&#xA007;</i>
-                    <span><b>Address</b>Lorem</span>
+                    <span><b>Address</b>{Global.address}</span>
                   </a>
                 </li>
               </ul>

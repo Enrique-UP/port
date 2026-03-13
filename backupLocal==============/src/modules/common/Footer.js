@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../images/logo.png';
 
+import { Global } from "../common/Global";
+
 function Footer() {
   return (
     <>
@@ -82,26 +84,26 @@ function Footer() {
             <div className="col-sm-6 col-md-6 col-xl-3">
               <p className="head">Contact Us</p>
               <div className="contact">
-                <a className="number">
+                <a className="number" href={Global.numTel} target="_blank">
                   <span>
                     <b className="icon">&#xa001;</b>
                     <em>Phone No.</em>
                   </span>
-                  <em className="txt">000</em>
+                  <em className="txt">{Global.num}</em>
                 </a>
-                <a className="mail">
+                <a className="mail" href={`mailto:${Global.email}`} target="_blank">
                   <span>
                     <b className="icon">&#xa004;</b>
                     <em>Email ID.</em>
                   </span>
-                  <em className="txt">000</em>
+                  <em className="txt">{Global.email}</em>
                 </a>
-                <a className="address">
+                <a className="address" href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                   <span>
                     <b className="icon">&#xa007;</b>
                     <em>Address</em>
                   </span>
-                  <em className="txt">000</em>
+                  <em className="txt">{Global.address}</em>
                 </a>
               </div>
               <p className="head">Social Links</p>
@@ -111,7 +113,7 @@ function Footer() {
                 <a className="icon" href="javascript:;" target="_blank">&#xa021;</a>
                 <a className="icon" href="javascript:;" target="_blank">&#xa023;</a>
                 <a className="icon" href="javascript:;" target="_blank">&#xa026;</a>
-                <a className="icon fwt" href="javascript:;" target="_blank">&#xa025;</a>
+                <a className="icon fwt" href={Global.whatsappLink} target="_blank">&#xa025;</a>
               </div>
             </div>
           </div>
