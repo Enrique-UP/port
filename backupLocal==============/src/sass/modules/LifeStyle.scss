@@ -11,14 +11,8 @@
     }
     .df{display: flex;}
 
-    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;counter-reset: section;
-        data{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;
-            figure{
-                figcaption{
-                    b::after{counter-increment: section;content: " " counter(section);}
-                }
-            }
-        }
+    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;
+        data{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;}
     }
 }
 

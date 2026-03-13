@@ -1,188 +1,29 @@
 const LifeStyleData = [
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    {
-        place: "Place",
-        date: "Date"
-    },
-    
-]
-export default LifeStyleData;
+    { place: "Place 01", date: "Date" },
+    { place: "Place 02", date: "Date" },
+    { place: "Place 03", date: "Date" },
+    { place: "Place 04", date: "Date" },
+    { place: "Place 05", date: "Date" },
+    { place: "Place 06", date: "Date" },
+    { place: "Place 07", date: "Date" },
+    { place: "Place 08", date: "Date" },
+    { place: "Place 09", date: "Date" },
+    { place: "Place 10", date: "Date" },
+    { place: "Place 11", date: "Date" },
+    { place: "Place 12", date: "Date" },
+    { place: "Place 13", date: "Date" },
+    { place: "Place 14", date: "Date" },
+    { place: "Place 15", date: "Date" },
+    { place: "Place 16", date: "Date" },
+    { place: "Place 17", date: "Date" },
+    { place: "Place 18", date: "Date" },
+    { place: "Place 19", date: "Date" },
+    { place: "Place 20", date: "Date" },
+    { place: "Place 21", date: "Date" },
+    { place: "Place 22", date: "Date" },
+    { place: "Place 23", date: "Date" },
+    { place: "Place 24", date: "Date" },
+    { place: "Place 25", date: "Date" },
+];
+
+export default LifeStyleData.reverse();

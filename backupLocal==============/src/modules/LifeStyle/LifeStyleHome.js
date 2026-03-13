@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import ls1 from "../../images/lifeStyle/1.jpg";
+import Best1 from "../../images/lifeStyle/home1.jpg";
+import Best2 from "../../images/lifeStyle/home2.jpg";
+import Best3 from "../../images/lifeStyle/home3.jpg";
+import Best4 from "../../images/lifeStyle/home4.jpg";
+import Best5 from "../../images/lifeStyle/home5.jpg";
+import Best6 from "../../images/lifeStyle/home6.jpg";
+import Best7 from "../../images/lifeStyle/home7.jpg";
+import Best8 from "../../images/lifeStyle/home8.jpg";
+import Best9 from "../../images/lifeStyle/home9.jpg";
 const ImagePlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
 
@@ -25,7 +33,7 @@ function LifeStyleHome() {
                 </div>{/* cols */}
                 <data className="col-12">
                   <figure>
-                    <img src={ImagePlaceholder} data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={Best1} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -38,7 +46,7 @@ function LifeStyleHome() {
               <div className="row">
                 <data className="col-6">
                   <figure>
-                    <img src={ImagePlaceholder} data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={Best2} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -47,7 +55,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ImagePlaceholder} data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={Best3} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -56,7 +64,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ImagePlaceholder} data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={Best4} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -65,7 +73,7 @@ function LifeStyleHome() {
                 </data>{/* cols */}
                 <data className="col-6">
                   <figure>
-                    <img src={ImagePlaceholder} data-src={ls1} />
+                    <img src={ImagePlaceholder} data-src={Best5} />
                     <figcaption>
                       <b>Lorem</b>
                       <span>Ipsum</span>
@@ -76,7 +84,7 @@ function LifeStyleHome() {
             </div>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ImagePlaceholder} data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={Best6} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -85,7 +93,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ImagePlaceholder} data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={Best7} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -94,7 +102,7 @@ function LifeStyleHome() {
             </data>{/* <!--cols--> */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ImagePlaceholder} data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={Best8} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
@@ -103,7 +111,7 @@ function LifeStyleHome() {
             </data>{/* cols */}
             <data className="col-6 col-md-3">
               <figure>
-                <img src={ImagePlaceholder} data-src={ls1} />
+                <img src={ImagePlaceholder} data-src={Best9} />
                 <figcaption>
                   <b>Lorem</b>
                   <span>Ipsum</span>
