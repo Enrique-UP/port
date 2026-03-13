@@ -15,13 +15,11 @@ function Banner(props) {
                 {
                   props.pageName === "Thank You!" ? (
                   // props.pageName !== "" ? (
-                    <Link to="/">
-                      <i className="icon">&#xa074;</i>
+                    <Link to="/" data-icon="&#xa074;">
                       <span>Go to Home</span>
                     </Link>
                   ) : (
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <i className="icon">&#xa001;</i>
+                    <a href="#" target="_blank" rel="noreferrer" data-icon="&#xa001;">
                       <span>0000000000</span>
                     </a>
                   )

@@ -5,22 +5,22 @@ import Logo from '../../images/logo.png';
 function Footer() {
   return (
     <>
-      <footer class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="logo">
+      <footer className="section">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="logo">
                 <Link to="/"><img src={Logo} /></Link>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-xl-3">
-              <p class="head">About Us</p>
-              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque neque vel, molestias officiis, laboriosam doloribus architecto quas sed animi itaque dolorem accusantium rerum sit quod inventore eveniet labore quam ad illo delectus voluptatibus ut. Rem numquam modi, quis quas quos sed? Sit explicabo repellat molestias.</p>
-              <p class="text mt0"><b>Id nesciunt reiciendis,</b> amet! Quibusdam ab tenetur autem nihil ratione illo. Eum, voluptatum ratione voluptatum ratione voluptatum ratione voluptatum ratione dicta vel accusamus, esse.</p>
+            <div className="col-sm-6 col-md-6 col-xl-3">
+              <p className="head">About Us</p>
+              <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque neque vel, molestias officiis, laboriosam doloribus architecto quas sed animi itaque dolorem accusantium rerum sit quod inventore eveniet labore quam ad illo delectus voluptatibus ut. Rem numquam modi, quis quas quos sed? Sit explicabo repellat molestias.</p>
+              <p className="text mt0"><b>Id nesciunt reiciendis,</b> amet! Quibusdam ab tenetur autem nihil ratione illo. Eum, voluptatum ratione voluptatum ratione voluptatum ratione voluptatum ratione dicta vel accusamus, esse.</p>
             </div>
-            <div class="col-sm-6 col-md-6 col-xl-3">
-              <p class="head">Main Links</p>
-              <ul class="links">
+            <div className="col-sm-6 col-md-6 col-xl-3">
+              <p className="head">Main Links</p>
+              <ul className="links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/lifestyle">Gallery</Link></li>
                 <li><Link to="/contactus">Contact Us</Link></li>
@@ -39,9 +39,9 @@ function Footer() {
                 <li><a href="javascript:;">Lorem Amit</a></li>
               </ul>
             </div>
-            <div class="col-sm-6 col-md-6 col-xl-3">
-              <p class="head">Social Posts</p>
-              <div class="social">
+            <div className="col-sm-6 col-md-6 col-xl-3">
+              <p className="head">Social Posts</p>
+              <div className="social">
                 <a href="javascript:;" target="_blank">
                   <span>
                     <b>00 Jan</b>
@@ -79,46 +79,46 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-xl-3">
-              <p class="head">Contact Us</p>
-              <div class="contact">
-                <a class="number">
+            <div className="col-sm-6 col-md-6 col-xl-3">
+              <p className="head">Contact Us</p>
+              <div className="contact">
+                <a className="number">
                   <span>
-                    <b class="icon">&#xa001;</b>
+                    <b className="icon">&#xa001;</b>
                     <em>Phone No.</em>
                   </span>
-                  <em class="txt">000</em>
+                  <em className="txt">000</em>
                 </a>
-                <a class="mail">
+                <a className="mail">
                   <span>
-                    <b class="icon">&#xa004;</b>
+                    <b className="icon">&#xa004;</b>
                     <em>Email ID.</em>
                   </span>
-                  <em class="txt">000</em>
+                  <em className="txt">000</em>
                 </a>
-                <a class="address">
+                <a className="address">
                   <span>
-                    <b class="icon">&#xa007;</b>
+                    <b className="icon">&#xa007;</b>
                     <em>Address</em>
                   </span>
-                  <em class="txt">000</em>
+                  <em className="txt">000</em>
                 </a>
               </div>
-              <p class="head">Social Links</p>
-              <div class="media">
-                <a class="icon" href="javascript:;" target="_blank">&#xa019;</a>
-                <a class="icon" href="javascript:;" target="_blank">&#xa020;</a>
-                <a class="icon" href="javascript:;" target="_blank">&#xa021;</a>
-                <a class="icon" href="javascript:;" target="_blank">&#xa023;</a>
-                <a class="icon" href="javascript:;" target="_blank">&#xa026;</a>
-                <a class="icon fwt" href="javascript:;" target="_blank">&#xa025;</a>
+              <p className="head">Social Links</p>
+              <div className="media">
+                <a className="icon" href="javascript:;" target="_blank">&#xa019;</a>
+                <a className="icon" href="javascript:;" target="_blank">&#xa020;</a>
+                <a className="icon" href="javascript:;" target="_blank">&#xa021;</a>
+                <a className="icon" href="javascript:;" target="_blank">&#xa023;</a>
+                <a className="icon" href="javascript:;" target="_blank">&#xa026;</a>
+                <a className="icon fwt" href="javascript:;" target="_blank">&#xa025;</a>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <div class="copyright">
-        <div class="container">Copyright &copy; 2026 with all rights reserved.</div>
+      <div className="copyright">
+        <div className="container">Copyright &copy; 2026 with all rights reserved.</div>
       </div>
       <a className="fixNum" href="tel:000000000" target="_blank">
         <i className="icon">&#xa001;</i>

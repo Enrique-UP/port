@@ -37,11 +37,11 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .hd, .txt{color:#fff;width: 100%;display: flex;}
         .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-block: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
-        .btns{
-            > a{
-                &:hover, &:active, &:focus{background: var(--c1);}
-            }
-        }
+        // .btns{
+        //     > a{
+        //         &:hover, &:active, &:focus{background: var(--c1);}
+        //     }
+        // }
     }
     > .b1{background-color: var(--g1);}
     > .b2{background-color: var(--g2);}
