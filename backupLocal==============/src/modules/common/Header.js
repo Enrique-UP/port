@@ -9,19 +9,14 @@ import { Global } from "../common/Global";
 
 function Header() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add("back");
-    } else {
-      document.body.classList.remove("back");
-    }
-  }, [menuOpen]);
+  function openMenu() {
+    document.querySelector("body").classList.add("back");
+    document.querySelector("header .headerBottom .navBar").classList.add("active");
+  }
+  function closeMenu() {
+    document.querySelector("body").classList.remove("back");
+    document.querySelector("header .headerBottom .navBar").classList.remove("active");
+  }
 
   return (
     <>
@@ -72,12 +67,12 @@ function Header() {
         <div className="headerBottom">
           <div className="container">
             <div className="fw">
-              <i className="icon close" onClick={toggleMenu}>&#xa018;</i>
+              <i className="icon close" onClick={closeMenu}>&#xa018;</i>
               <p className="menu">
                   <b>Menu</b>
-                  <label className="icon" onClick={toggleMenu}>&#xa009;</label>
+                  <span className="icon" onClick={openMenu}>&#xa009;</span>
               </p>
-              <ul className={`navBar ${menuOpen ? "active" : ""}`}>
+              <ul className="navBar">
                   <li>
                     <Link className="logo" to="/">
                       <img src={LogoMob} alt="" />

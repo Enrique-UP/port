@@ -8,8 +8,12 @@ function RenderTop({ children }) {
     //if (pathname != "/contact") window.scrollTo(0, 0);
     if (pathname){
       window.scrollTo(0, 0);
-      document.body.classList.remove("back");
-      document.querySelector("header").classList.remove("active");
+      
+      const back = document.body;
+      if (back) back.classList.remove("back");
+      
+      const nav = document.querySelector("header .headerBottom .navBar");
+      if (nav) nav.classList.remove("active");
     }
   }, [pathname]);
  

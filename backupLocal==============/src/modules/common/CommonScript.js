@@ -5,7 +5,9 @@ function CommonScript() {
   const location = useLocation();
   useEffect(() => {
 
-    // For colors
+    /* ==============================
+    For colors
+    ============================== */
     {
       const items = document.querySelectorAll(".colors data");
       const totalClasses = 10;
@@ -17,8 +19,9 @@ function CommonScript() {
       });
     }
 
-    
-    // For image lazy load
+    /* ==============================
+    For image lazy load
+    ============================== */ 
     {
       if (!!window.IntersectionObserver) {
         const observer = new IntersectionObserver((entries, observer) => {
@@ -31,16 +34,18 @@ function CommonScript() {
               observer.unobserve(img);
             }
           });
-        }, { rootMargin: "0px 0px -100px 0px" });
+        }, { rootMargin: "0px 0px 100px 0px" });
         document.querySelectorAll('img[data-src]').forEach(img => { 
           observer.observe(img);
         });
       }
-      else alert("This API is not supported by your browser, so you can't see the effect.");
+      else console.warn("This API is not supported by your browser, so you can't see the effect.");
     }
 
 
-    // For masonry grid
+    /* ==============================
+    For masonry grid
+    ============================== */
     {
       function resizeImage(){
         document.querySelectorAll(".partition data").forEach(function(e){

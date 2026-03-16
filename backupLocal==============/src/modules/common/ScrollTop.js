@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { Global } from "../common/Global";
+import { Global } from "./Global";
 
 const Scrolltotop = () => {
   const [isFixed, setIsFixed] = useState(false);

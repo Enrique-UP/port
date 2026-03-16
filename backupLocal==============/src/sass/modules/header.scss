@@ -1,5 +1,5 @@
 header{display:flex;flex-direction:column;
-    .headerTop{background:var(--c2);padding-top:5px;
+    .headerTop{background:var(--f1);padding-top:5px;
         .fw{display: flex;justify-content: space-between;}
         a{display: flex;align-items: center;color: white;margin-bottom:5px;
             > *:not(:last-child){margin-right: 3px;}
@@ -7,7 +7,7 @@ header{display:flex;flex-direction:column;
     }
     .headerMiddle{
         .fw{display: flex;justify-content: flex-end;}
-        .logo{position: absolute;top:0;left:0;background: var(--c1);display: flex;padding:35px 55px;z-index: 99;
+        .logo{position: absolute;top:0;left:0;background: var(--c2);display: flex;padding:35px 55px;z-index: 99;
             > img{width:150px;height: 140px;}
         }
         .follow{display: flex;background: var(--c1);padding:15px;align-items:center;
@@ -27,7 +27,7 @@ header{display:flex;flex-direction:column;
         .close{position: fixed;top: -32px;right: 0;background: red;color: #fff;width: 32px;height: 32px;cursor: pointer;z-index: 9999;@extend %trans;@extend %center;}
         .menu{margin-bottom: 0;justify-content: space-between;align-items:center;color:white;display: none;width:100%;padding:2px 0;
             b{font-size: 24px;line-height: 1;}
-            label{font-size:30px;cursor: pointer;}
+            span{font-size:28px;cursor: pointer;}
         }
         .navBar{display: flex;padding:0;margin:0;@extend %trans;
             > li{border-right: 1px solid white;
@@ -37,7 +37,7 @@ header{display:flex;flex-direction:column;
             li{list-style: none;display: flex;
                 a{display: flex;color:white;padding: 12px 15px;font-size: 16px;text-transform: capitalize;align-items:center;@extend %trans;line-height:1.2;
                     .icon{margin-right: 5px;font-size: 18px;line-height: 1;display: flex;}
-                    &.active, &:hover, &:active, &:focus{background: var(--c1);}
+                    &.active, &:hover, &:active, &:focus{background: var(--c2);}
                 }
                 &.tabs{flex-direction: column;justify-content: center;position: relative;
                     > a{cursor: pointer;line-height: 1;font-size: 24px;height: 100%;}
@@ -118,7 +118,7 @@ header{display:flex;flex-direction:column;
                 }
                 .headerMiddle{
                     .logo {padding:20px;
-                        img{width:120px;}
+                        img{width:120px;height: 120px;}
                     }
                     .follow{padding: 10px 10px 5px;
                         b {display: none;}
@@ -133,7 +133,6 @@ header{display:flex;flex-direction:column;
                     .fw{padding-left: 175px;}
                     .menu{padding:0;
                         b{font-size: 18px;}
-                        label{font-size: 28px;}
                     }
                     .navBar{width:260px;
                         > li{
@@ -146,7 +145,9 @@ header{display:flex;flex-direction:column;
     }
 }
 @media (min-width:992px){
-    body:has(header .headerBottom .navBar.active)::before{left: 100% !important;}
+    body.back:has(header .headerBottom .navBar.active){overflow-y: auto;
+        &::before{left: 100% !important;}
+    }
 }
 @media (max-width:991px){
     header .headerBottom:has(.navBar.active) .close{top: 0;}

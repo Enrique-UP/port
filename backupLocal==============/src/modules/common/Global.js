@@ -6,6 +6,7 @@ export const Global = {
   whatsappLink: "https://wa.me/10000000000?text=Hi!%20I%20would%20like%20to%20activate%20my%20bonus",
 
   email: "office@example.com",
+  emailTag: "mailto:office@example.com",
   address: "25-Lorem ipsum dolor sit ameet."
 
 

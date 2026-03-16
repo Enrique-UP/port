@@ -3,7 +3,7 @@ import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./sass/style.scss";
 
 import RenderTop from "./modules/common/RenderTop";
-import Scrolltotop from "./modules/common/Scrolltotop";
+import ScrollTop from "./modules/common/ScrollTop";
 import CommonScript from "./modules/common/CommonScript";
 import Header from "./modules/common/Header";
 import Footer from "./modules/common/Footer";
@@ -30,7 +30,7 @@ function App() {
       </Routes>
 
       <Footer />
-      <Scrolltotop />
+      <ScrollTop />
 
     </BrowserRouter>
   );
