@@ -33,7 +33,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .container{position: relative;
             .row{justify-content: flex-start;}
         }
-        .img{width: 100%;border:10px solid var(--c1);}
+        .img{width: 100%;border:10px solid var(--c2);}
         .hd, .txt{color:#fff;width: 100%;display: flex;}
         .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-block: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
@@ -70,7 +70,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
     }
     > .colorsLine{display: flex;padding: 0;margin: 0;flex-direction:row;
-        > li{list-style: none;height: 12px;
+        > li{list-style: none;height: 10px;
             &:nth-child(1){background: var(--cb1);width: 60%;}
             &:nth-child(2){background: var(--cb2);width: 10%;}
             &:nth-child(3){background: var(--cb4);width: 20%;}

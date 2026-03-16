@@ -18,6 +18,15 @@ function Header() {
     document.querySelector("header .headerBottom .navBar").classList.remove("active");
   }
 
+  function addRemoveClass() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 40) header.classList.add("fixed");
+    else header.classList.remove("fixed");
+  }
+  window.addEventListener("scroll", addRemoveClass);
+  window.addEventListener("resize", addRemoveClass);
+  window.addEventListener("load", addRemoveClass);
+
   return (
     <>
       <header>
@@ -49,17 +58,20 @@ function Header() {
                 <b>Follow Us</b>
                 <p>
                   <span>
-                    <a className="fb" target="_blank" href="#"><i className="icon">&#xa019;</i></a>
-                    <a className="tw" target="_blank" href="#"><i className="icon">&#xa020;</i></a>
-                    <a className="lin" target="_blank" href="#"><i className="icon">&#xa021;</i></a>
+                    <a target="_blank" href="#"><i className="icon">&#xa019;</i></a>
+                    <a target="_blank" href="#"><i className="icon">&#xa020;</i></a>
+                    <a target="_blank" href="#"><i className="icon">&#xa021;</i></a>
+                    <a className="contact" target="_blank" href={Global.numTel}><i className="icon">&#xa001;</i></a>
                   </span>
                   <span>
-                    <a className="ins" target="_blank" href="#"><i className="icon">&#xa023;</i></a>
-                    <a className="skype" target="_blank" href="#"><i className="icon">&#xa026;</i></a>
-                    <a className="wapp" target="_blank" href={Global.whatsappLink}><i className="icon fwt">&#xa025;</i></a>
+                    <a target="_blank" href="#"><i className="icon">&#xa023;</i></a>
+                    <a target="_blank" href="#"><i className="icon">&#xa026;</i></a>
+                    <a target="_blank" href={Global.whatsappLink}><i className="icon fwt">&#xa025;</i></a>
+                    <a className="contact" target="_blank" href={Global.emailTag}><i className="icon">&#xa004;</i></a>
                   </span>
                 </p>
               </div>
+
             </div>
           </div>
         </div>

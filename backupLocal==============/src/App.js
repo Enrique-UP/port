@@ -16,7 +16,7 @@ import ThankYou from "./modules/ThankYou";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <RenderTop />
       <CommonScript />
       <Header />
@@ -32,7 +32,7 @@ function App() {
       <Footer />
       <ScrollTop />
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
