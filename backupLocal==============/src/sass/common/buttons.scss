@@ -1,7 +1,7 @@
 .btns{display: flex;flex-wrap:wrap;align-items: flex-start;gap:8px;margin-bottom:32px;
     a{@extend %transl;}
     &.center, &.tc{justify-content: center;}
-    a, button{position:relative;display: flex;padding: 12px 70px 12px 15px;border-radius:4px;font-weight:700;overflow: hidden;white-space:nowrap;box-shadow:0 0 3px rgba(0,0,0,0.7);background:#000;color:white;cursor: pointer;border:none;outline:none;
+    a, button{position:relative;display: flex;padding: 12px 70px 12px 15px;border-radius:4px;font-weight:800;overflow: hidden;white-space:nowrap;box-shadow:0 0 3px rgba(0,0,0,0.7);background:#000;color:white;cursor: pointer;border:none;outline:none;
         &::before{position:absolute;top:0;right:0;width:50px;height:100%;display: flex;justify-content: center;align-items: center;font-family:fontello;border-radius:0 4px 4px 0;line-height: 0;font-size:16px;@extend %trans;background: white;color:var(--c1);}
 
         &:not([data-icon])::before{content:"\a038";}

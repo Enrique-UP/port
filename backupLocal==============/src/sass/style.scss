@@ -14,7 +14,7 @@
 body{font-family: Arial, Helvetica, sans-serif;}
 
 a, button{@extend %trans;text-decoration: none;}
-b, strong{font-weight: bold;}
+b, strong{font-weight: 800;}
 img{@extend %userSelect;}
 
 body{color:var(--f1);
@@ -36,7 +36,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
         .img{width: 100%;border:10px solid var(--c2);}
         .hd, .txt{color:#fff;width: 100%;display: flex;}
-        .hd{font-weight: bold;font-size: 60px;line-height: 1.2;margin-block: 16px;}
+        .hd{font-weight: 800;font-size: 60px;line-height: 1.2;margin-block: 16px;}
         .txt{margin-bottom: 24px;font-size: 20px;}
         // .btns{
         //     > a{
@@ -81,15 +81,15 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--b1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
-    > b{font-size: 24px;font-weight: bold;line-height: 1.2;}
+    > b{font-size: 24px;font-weight: 800;line-height: 1.2;}
     > span{color:var(--f2);}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;
     > li{list-style: none;position: relative;padding-left:28px;
-        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: bold;}
+        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: 800;}
         &:not(:last-child){margin-bottom: 12px;}
-        b, strong{font-weight: bold;}
+        b, strong{font-weight: 800;}
         > a{color:inherit;}
     }
 }
@@ -100,13 +100,13 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .content{@extend %fc;width: 100%;
     ul, ol{@extend %fc;}
-    h1, h2, h3, h4, h5, h6 {font-size: 24px;font-weight: bold;line-height: 1.2;margin-bottom: 12px;color:var(--font);
+    h1, h2, h3, h4, h5, h6 {font-size: 24px;font-weight: 800;line-height: 1.2;margin-bottom: 12px;color:var(--font);
         &:not(:first-child) {margin-top: 18px;}
     }
     p, ul, ol {margin-bottom: 12px;}
     i, em {font-style: italic;}
     u {text-decoration: underline;}
-    b, strong {font-weight: bold;}
+    b, strong {font-weight: 800;}
     a:not(.btns > a) {display: inline-block;color: var(--c1) !important;text-decoration: underline;
         &:hover, &:active, &:focus {text-decoration: none;}
     }
@@ -117,7 +117,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .breadcrumbs{padding-block: 12px;background:var(--g1);
     ul{width: 100%;display: flex;flex-wrap: wrap;padding: 0;margin: 0;gap: 4px 11px;
         > li{list-style: none;line-height: 1.1;display:flex;
-            > a{color: var(--c2);font-weight: bold;}
+            > a{color: var(--c2);font-weight: 800;}
             &:not(:last-child){position: relative;padding-right: 16px;
                 &::after{font-family: fontello;content:"\a030";position: absolute;right: 0;}
             }
@@ -130,7 +130,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         > *{padding-left: 32px;}
         &:not(:first-child){padding-top: 24px;}
         &:not(:last-child){border-bottom: 1px solid var(--b1);padding-bottom: 24px;}
-        .hd{font-weight: bold;font-size: 18px;position: relative;cursor: pointer;line-height:1.3;
+        .hd{font-weight: 800;font-size: 18px;position: relative;cursor: pointer;line-height:1.3;
             &::before, &::after{position: absolute;content:"";background: var(--f1);}
             &::before{top:9px;left:0;width: 16px;height: 4px;}
             &::after{top:3px;left:6px;width: 4px;height: 16px;@extend %trans;}
@@ -146,9 +146,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .note{text-align: center;display: flex;justify-content: center;font-size: 22px;color: var(--f1);margin-bottom: 16px;line-height: 1.5;}
 
 .form{width: 100%;@extend %fc;row-gap:24px;
-    .hd{width: 100%;font-weight: bold;font-size: 24px;color: var(--c1);text-align: center;}
+    .hd{width: 100%;font-weight: 800;font-size: 24px;color: var(--c1);text-align: center;}
     .field{width: 100%;@extend %fc;row-gap:8px;
-        label{font-weight: bold;}
+        label{font-weight: 800;}
         input, textarea, select{width: 100%;border-radius: 4px;border: 1px solid var(--b1);outline: none;padding: 8px 12px;background: #fff;}
         textarea{resize: vertical;height: 129px;min-height: 129px;}
     }
@@ -159,11 +159,11 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     &.fixed{transform: scale(1);-webkit-transform: scale(1);-moz-transform: scale(1);}
     &:hover{background: var(--c2);}
 }
-.scrollTop{bottom:82px;transform: scale(0);-webkit-transform: scale(0);-moz-transform: scale(0);font-weight: bold;}
+.scrollTop{bottom:82px;transform: scale(0);-webkit-transform: scale(0);-moz-transform: scale(0);font-weight: 800;}
 .callRight{bottom: 122px;}
 
 
-.fixNum{width: 100%;background: var(--c2);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;
+.fixNum{width: 100%;background: var(--c2);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: 800;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;
     &:hover, &:active, &:focus{background: var(--f1);}
     & > i{margin-right: 4px;}
 }
