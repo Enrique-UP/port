@@ -11,6 +11,10 @@
     }
     .df{display: flex;}
 
+    .row{margin-inline: -8px;row-gap: 16px !important;
+        [class*="col-"]{padding-inline: 8px;}
+    }
+
     .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;
         data{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;}
     }
@@ -26,6 +30,10 @@
     .lifeStyle .partition {grid-column-gap: 8px;}
     .lifeStyle .partition data{margin-bottom: 8px;}
     .lifeStyle figure figcaption{padding: 6px 10px;}
+
+    .lifeStyle .row{margin-inline: -4px;row-gap: 8px !important;
+        [class*="col-"]{padding-inline: 4px;}
+    }
 }
 @media (max-width:575px){
     .lifeStyle .partition {grid-template-columns: repeat(2, 1fr);}

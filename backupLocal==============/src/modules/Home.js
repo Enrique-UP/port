@@ -4,6 +4,7 @@ import Banner from "./common/Banner";
 import HomeBanner from "../images/banners/home.jpg";
 import LifeStyleHome from "./LifeStyle/LifeStyleHome";
 import { Counter } from "yet-another-react-lightbox/plugins";
+import Childhood from "./AboutUs/Childhood";
 
 
 
@@ -20,6 +21,7 @@ function Home() {
         showBreadcrumbs={false}
       />
       <LifeStyleHome />
+      <Childhood />
       {/* <CounterNum /> */}
     </>
   );

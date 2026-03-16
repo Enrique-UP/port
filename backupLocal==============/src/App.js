@@ -10,7 +10,7 @@ import Footer from "./modules/common/Footer";
 
 import Home from "./modules/Home";
 import LifeStyle from "./modules/LifeStyle/LifeStyle";
-import AboutUs from "./modules/AboutUs";
+import AboutUs from "./modules/AboutUs/AboutUs";
 import ContactUs from "./modules/ContactUs";
 import ThankYou from "./modules/ThankYou";
 

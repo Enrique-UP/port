@@ -8,6 +8,7 @@
 @import "./modules/Footer";
 @import "./modules/LifeStyle";
 @import "./modules/ContactUs.scss";
+@import "./modules/Childhood.scss";
 
 // html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;}
@@ -24,7 +25,7 @@ body{color:var(--f1);
 }
 
 main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit-fill-available;min-height: 100dvh;
-    > *{width:100%;@extend %fc;}
+    > *{width:100%;@extend %fc;position: relative;}
     > hr{height: 1px;border: none;background: var(--b1);}
     > .banner{
         background: var(--c1);

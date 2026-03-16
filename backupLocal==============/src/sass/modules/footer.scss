@@ -1,5 +1,6 @@
 footer{background: var(--f1);
-    .logo{@extend .center;padding-bottom:32px;display:flex;justify-content:center;
+    .row{row-gap: 32px !important;}
+    .logo{@extend .center;display:flex;justify-content:center;padding-bottom: 16px;
         a{display: flex;}
     }
     .head{color:var(--c2);display: flex;font-weight: 700;font-size:30px;border-bottom:4px solid var(--c2);padding-bottom: 5px;margin-bottom: 16px;}
@@ -42,9 +43,7 @@ footer{background: var(--f1);
         @media (min-width:1200px) and (max-width:1399px){}
         @media (min-width:992px) and (max-width:1199px){}
         @media (max-width:767px){
-            .container{
-                .row{}
-            }
+            .logo{padding-bottom: 0;}
         }
         @media (min-width:768px) and (max-width:991px){
             &{}

@@ -16,20 +16,22 @@ function LifeStyleHome() {
     <>
       <section className="section lifeStyle colors">
         <div className="container">
-          <hgroup> 
-            <h2>Lorem <span>ipsum</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
-          </hgroup>
           <div className="row"> 
-            <div className="col-xl-6 setHeight">
+            <div className="col-12">
+              <hgroup> 
+                <h2>Lorem <span>ipsum</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
+              </hgroup>
+            </div>{/* cols */}
+            <div className="col-md-6 setHeight">
               <div className="row">
-                <div className="col-sm-6 col-xl-12 df">
+                <div className="col-12 df">
                   <div className="outlineBox">
                     <b>Heading</b>
                     <span>Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.</span>
                   </div>
                 </div>{/* cols */}
-                <data className="col-sm-6 col-xl-12">
+                <data className="col-12">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best1} />
                     <figcaption>
@@ -40,9 +42,9 @@ function LifeStyleHome() {
                 </data>{/* cols */}
               </div>{/* row */}
             </div>{/* cols */}
-            <div className="col-xl-6 setHeight">
+            <div className="col-md-6 setHeight">
               <div className="row">
-                <data className="col-6 col-md-3 col-xl-6">
+                <data className="col-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best2} />
                     <figcaption>
@@ -51,7 +53,7 @@ function LifeStyleHome() {
                     </figcaption>
                   </figure>
                 </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                <data className="col-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best3} />
                     <figcaption>
@@ -60,7 +62,7 @@ function LifeStyleHome() {
                     </figcaption>
                   </figure>
                 </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                <data className="col-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best4} />
                     <figcaption>
@@ -69,7 +71,7 @@ function LifeStyleHome() {
                     </figcaption>
                   </figure>
                 </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                <data className="col-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best5} />
                     <figcaption>

@@ -45,15 +45,11 @@ function Lifestyle() {
 
       <section className="section lifeStyle colors">
         <div className="container">
+          <hgroup>
+            <h2>Lorem <span>ipsum</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
+          </hgroup>
           <div className="row">
-            <div className="col-12">
-              <hgroup>
-                <h2>
-                  Lorem <span>ipsum</span>
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
-              </hgroup>
-            </div>
             <div className="col-12 partition">
               {slides.map((val, ind) => (
                 <data key={ind} className="galleryItem">

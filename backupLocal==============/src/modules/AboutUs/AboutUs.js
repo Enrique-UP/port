@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import Banner from "./common/Banner";
+import Banner from "../common/Banner";
 
 function AboutUs() {
   return (
