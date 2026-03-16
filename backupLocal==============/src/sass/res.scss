@@ -26,6 +26,7 @@
 @media (min-width:576px) and (max-width:991px){
     hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 36px;}
     hgroup p{font-size: 20px;}
+    main > .banner .container{margin-block: 0 60px;}
 }
 
 
@@ -63,7 +64,7 @@
 
     main > .banner .hd, main > .banner .txt{justify-content: center;}
     main > .banner .hd, main > .banner .txt{text-align: center;}
-    main > .banner .txt {margin-bottom: 16px;}
+    main > .banner .txt {margin-bottom: 16px;}    
 
     .fixNum{font-size: 14px;display: flex;}
 
@@ -82,6 +83,7 @@
 
     main > .banner .hd{font-size: 40px;}
     main > .banner .txt{font-size: 18px;}
+    main > .banner .container{margin-block: 0;}
     
     .list>li::before, .unlist>li::before{top:2px;}
 

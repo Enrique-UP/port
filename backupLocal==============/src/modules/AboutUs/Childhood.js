@@ -15,7 +15,7 @@ function Childhood() {
 
   return (
     <>
-      <section className="sectionT childhood">
+      <section className="sectionT childhood" id="childhood">
         <div className="childhoodText">
           <div className="container">
             <div className="row">

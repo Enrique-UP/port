@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 import Logo from "../../images/logo.png";
 import LogoMob from "../../images/logo.png";
@@ -20,12 +21,13 @@ function Header() {
 
   function addRemoveClass() {
     const header = document.querySelector("header");
-    if (window.scrollY > 50) header.classList.add("fixed");
+    if (window.scrollY > 80) header.classList.add("fixed");
     else header.classList.remove("fixed");
   }
   window.addEventListener("scroll", addRemoveClass);
   window.addEventListener("resize", addRemoveClass);
   window.addEventListener("load", addRemoveClass);
+
 
   return (
     <>
@@ -91,6 +93,7 @@ function Header() {
                     </Link>
                   </li>
                   <li><NavLink to="/"><i className="icon">&#xa074;</i><b>Home</b></NavLink></li>
+                  {/* <li><HashLink to="/#childhood" className="hashLink"><i className="icon">&#xa088;</i><b>Childhood</b></HashLink></li> */}
                   {/* <li><NavLink to="/aboutus"><i className="icon">&#xa043;</i><b>About Us</b></NavLink></li>
                   <li><NavLink to="/projects"><i className="icon">&#xa058;</i><b>Branding Projects</b></NavLink></li>
                   <li><NavLink to="/know"><i className="icon">&#xa078;</i><b>I Know</b></NavLink></li>
