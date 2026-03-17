@@ -38,7 +38,7 @@ function Footer() {
                 <li><a href="javascript:;">Lorem</a></li>
                 <li><a href="javascript:;">Lorem</a></li>
                 <li><a href="javascript:;">Lorem</a></li>
-                <li><a href="javascript:;">Lorem Amit</a></li>
+                <li><a href="javascript:;">Lorem Ameet</a></li>
               </ul>
             </div>
             <div className="col-sm-6 col-md-6 col-xl-3">
@@ -120,11 +120,11 @@ function Footer() {
         </div>
       </footer>
       <div className="copyright">
-        <div className="container">Copyright &copy; 2026 with all rights reserved.</div>
+        <div className="container">Copyright &copy; {new Date().getFullYear()} with all rights reserved.</div>
       </div>
-      <a className="fixNum" href="tel:000000000" target="_blank">
+      <a className="fixNum" href={Global.numTel} target="_blank">
         <i className="icon">&#xa001;</i>
-        Call Us 0000000000
+        Call Us {Global.num}
       </a>
     </>
   );
