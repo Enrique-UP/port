@@ -78,7 +78,7 @@
         }
     }
 }
-.childhoodImg{display: flex;
+.childhoodImg{display: flex;background: var(--cb9);position: relative;
     .container{flex-direction: row;flex-wrap: wrap;}
     img{width:25%;}
     &{

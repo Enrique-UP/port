@@ -159,7 +159,7 @@ function AboutUsHome() {
                     <div className="cnt count-box">
                       <i className="icon">&#xa044;</i>
                       <b>LoremIpsum</b>
-                      <CounterNum className="count-text" end={5000} />
+                      <CounterNum className="count-text" end={10000} />
                     </div>{/* cnt */}
                   </div>{/* cols */}
                   <div className="col-6 col-md-3">
@@ -173,14 +173,14 @@ function AboutUsHome() {
                     <div className="cnt count-box">
                       <i className="icon">&#xa071;</i>
                       <b>LoremIpsum</b>
-                      <CounterNum className="count-text" end={5000} prefix="$ " suffix="+" />
+                      <CounterNum className="count-text" end={15000} prefix="$ " suffix="+" />
                     </div>{/* cnt */}
                   </div>{/* cols */}
                   <div className="col-6 col-md-3">
                     <div className="cnt count-box">
                       <i className="icon">&#xa053;</i>
                       <b>LoremIpsum</b>
-                      <CounterNum className="count-text" end={5000} prefix="$ " suffix="+" />
+                      <CounterNum className="count-text" end={100} prefix="$ " suffix="+" />
                     </div>{/* cnt */}
                   </div>{/* cols */}
                 </div>{/* row */}

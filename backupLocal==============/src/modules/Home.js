@@ -6,6 +6,8 @@ import LifeStyleHome from "./LifeStyle/LifeStyleHome";
 import { Counter } from "yet-another-react-lightbox/plugins";
 import Childhood from "./AboutUs/Childhood";
 import AboutUsHome from "./AboutUs/AboutUsHome";
+import Ads1 from "./Ads/Ads1";
+import Ads2 from "./Ads/Ads2";
 
 
 
@@ -13,7 +15,7 @@ function Home() {
   return (
     <>
       <Helmet>
-          <title>Home</title>
+        <title>Home</title>
       </Helmet>
       <Banner
         pageName="Welcome to our website" 
@@ -33,8 +35,10 @@ function Home() {
         </div>{/* container */}
       </section>
       <AboutUsHome />
+      <Ads2 />
       <LifeStyleHome />
       <Childhood />
+      <Ads1 />
     </>
   );
 }
