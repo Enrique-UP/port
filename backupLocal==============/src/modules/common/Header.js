@@ -21,7 +21,7 @@ function Header() {
 
   function addRemoveClass() {
     const header = document.querySelector("header");
-    if (window.scrollY > 80) header.classList.add("fixed");
+    if (window.scrollY > 0) header.classList.add("fixed");
     else header.classList.remove("fixed");
   }
   window.addEventListener("scroll", addRemoveClass);
