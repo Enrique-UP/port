@@ -1,11 +1,11 @@
 import {Helmet} from "react-helmet";
 import { useEffect } from "react";
-import CounterNum from './common/CounterNum';
 import Banner from "./common/Banner";
 import HomeBanner from "../images/banners/home.jpg";
 import LifeStyleHome from "./LifeStyle/LifeStyleHome";
 import { Counter } from "yet-another-react-lightbox/plugins";
 import Childhood from "./AboutUs/Childhood";
+import AboutUsHome from "./AboutUs/AboutUsHome";
 
 
 
@@ -32,9 +32,9 @@ function Home() {
           </div>{/* fw */}
         </div>{/* container */}
       </section>
+      <AboutUsHome />
       <LifeStyleHome />
       <Childhood />
-      {/* <CounterNum /> */}
     </>
   );
 }

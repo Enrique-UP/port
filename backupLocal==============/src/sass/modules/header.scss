@@ -1,7 +1,7 @@
 header{display:flex;flex-direction:column;position: sticky;top: 0;z-index: 9;background:#fff;
     &:has(.navBar.active){position: relative;z-index: auto;}
     &.fixed{
-        .headerTop{padding-block: 0;opacity: 0;visibility: hidden;height: 0;}
+        .headerTop{display: none;}
         .headerMiddle .follow span > a.contact{display: flex;}
     }
     .headerTop{background:var(--f1);padding-block:6px;@extend %transl;

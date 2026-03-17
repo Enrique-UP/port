@@ -14,7 +14,7 @@ const ImagePlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAA
 function LifeStyleHome() {
   return (
     <>
-      <section className="section lifeStyle colors">
+      <section className="section lifeStyle colors bgt">
         <div className="container">
           <hgroup> 
             <h2>Lorem <span>ipsum</span></h2>
