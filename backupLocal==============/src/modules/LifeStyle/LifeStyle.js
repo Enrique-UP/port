@@ -64,7 +64,7 @@ function Lifestyle() {
                       }}
                     />
                     <figcaption>
-                      <b>{val.ttl}</b>
+                      <b>{val.ttl} {ind + 1}</b>
                       <span>{val.date}</span>
                     </figcaption>
                   </figure>
