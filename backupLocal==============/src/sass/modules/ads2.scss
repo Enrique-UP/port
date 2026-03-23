@@ -8,8 +8,11 @@
         @media (min-width:992px){
             .hd{font-size: 48px;}
         }
-        @media (min-width:576px) and (max-width:767px){
-            &{}
+        @media (max-width:767px){
+            &{
+                .subHead, .text {margin-bottom: 12px;}
+                .head {margin-bottom: 16px;}
+            }
         }
         @media (max-width:575px){
             &{
