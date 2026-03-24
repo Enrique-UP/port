@@ -1,4 +1,5 @@
-import Ads from "../../images/lifeStyle/11.jpg";
+import Ads from "../../../images/lifeStyle/beach/11.jpg";
+import { Global } from "../common/Global";
 
 function Ads1() {
   return (
@@ -11,7 +12,7 @@ function Ads1() {
                         <p className="head">Lorem ipsum dolor sit</p>
                         <p className="text">Lorem ipsum dolor sit amet</p>
                         <div className="btns center">
-                            <a href="" target="_blank">View More</a>
+                            <a href={Global.numTel} target="_blank">View More</a>
                         </div>
                     </li>
                     <li><img src={Ads} /></li>

@@ -9,7 +9,7 @@ function CommonScript() {
     For colors
     ============================== */
     {
-      const items = document.querySelectorAll(".colors data");
+      const items = document.querySelectorAll(".colors article");
       const totalClasses = 10;
       let i = 1;
       items.forEach((li) => {
@@ -48,7 +48,7 @@ function CommonScript() {
     ============================== */
     {
       function resizeImage(){
-        document.querySelectorAll(".partition data").forEach(function(e){
+        document.querySelectorAll(".partition article").forEach(function(e){
           const h = e.querySelector("figure").getBoundingClientRect().height;
           const style = window.getComputedStyle(e);
           const marginBottom = parseFloat(style.marginBottom);

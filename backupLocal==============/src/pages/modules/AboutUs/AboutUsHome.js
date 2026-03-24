@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import CounterNum from './CounterNum';
 import SkillBar from './SkillBar';
 import { Global } from '../common/Global';
-import img1 from "../../images/lifeStyle/5.jpg";
-import img2 from "../../images/lifeStyle/1.jpg";
+import img1 from "../../../images/lifeStyle/forest/6.jpg";
+import img2 from "../../../images/lifeStyle/forest/3.jpg";
+import img3 from "../../../images/lifeStyle/mountains/3.jpg";
 import TextSlider from './TextSlider';
 
 const ListContent = () => {
@@ -54,19 +55,19 @@ function AboutUsHome() {
               <div className="row">
                 <div className="col-sm-12">
                   <figure className="heightImg1">
-                    <img src={img2} />
+                    <img src={img1} />
                   </figure>
                 </div>{/* cols */}
                 <div className="col-sm-12">
                   <div className="row">
                     <div className="col-6">
                       <figure className="heightImg2">
-                        <img src={img1} />
+                        <img src={img2} />
                       </figure>
                     </div>{/* cols */}
                     <div className="col-6">
                       <figure className="heightImg2">
-                        <img src={img1} />
+                        <img src={img3} />
                       </figure>
                     </div>{/* cols */}
                   </div>{/* row */}

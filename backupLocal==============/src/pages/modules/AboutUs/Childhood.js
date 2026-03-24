@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import img1 from "../../images/lifeStyle/home1.jpg";
-import img2 from "../../images/lifeStyle/home2.jpg";
-import img3 from "../../images/lifeStyle/home3.jpg";
-import img4 from "../../images/lifeStyle/home4.jpg";
+import img1 from "../../../images/lifeStyle/childhood/1.jpg";
+import img2 from "../../../images/lifeStyle/childhood/2.jpg";
+import img3 from "../../../images/lifeStyle/childhood/3.jpg";
+import img4 from "../../../images/lifeStyle/childhood/4.jpg";
 
 function Childhood() {
   const [active, setActive] = useState(false);

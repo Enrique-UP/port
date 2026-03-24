@@ -1,8 +1,8 @@
 import {Helmet} from "react-helmet";
-import Banner from "./common/Banner";
-import FormArea from "./common/FormArea";
+import Banner from "./modules/common/Banner";
+import FormArea from "./modules/common/FormArea";
 
-import { Global } from "./common/Global";
+import { Global } from "./modules/common/Global";
 
 function ContactUs() {
   return (

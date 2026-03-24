@@ -1,13 +1,13 @@
 import {Helmet} from "react-helmet";
 import { useEffect } from "react";
-import Banner from "./common/Banner";
+import Banner from "./modules/common/Banner";
 import HomeBanner from "../images/banners/home.jpg";
-import LifeStyleHome from "./LifeStyle/LifeStyleHome";
+import LifeStyleHome from "./modules/LifeStyle/LifeStyleHome";
 import { Counter } from "yet-another-react-lightbox/plugins";
-import Childhood from "./AboutUs/Childhood";
-import AboutUsHome from "./AboutUs/AboutUsHome";
-import Ads1 from "./Ads/Ads1";
-import Ads2 from "./Ads/Ads2";
+import Childhood from "./modules/AboutUs/Childhood";
+import AboutUsHome from "./modules/AboutUs/AboutUsHome";
+import Ads1 from "./modules/Ads/Ads1";
+import Ads2 from "./modules/Ads/Ads2";
 
 
 
@@ -34,6 +34,9 @@ function Home() {
           </div>{/* fw */}
         </div>{/* container */}
       </section>
+      <ul className="colorsLine reverse">
+        <li></li>
+      </ul>
       <AboutUsHome />
       <Ads2 />
       <LifeStyleHome />

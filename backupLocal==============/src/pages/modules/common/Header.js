@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 
-import Logo from "../../images/logo.png";
-import LogoMob from "../../images/logo.png";
-import LifeStyle from "../../images/icons/lifeStyle.png";
+import Logo from "../../../images/logo.png";
+import LogoMob from "../../../images/logo.png";
+import LifeStyle from "../../../images/icons/lifeStyle.png";
 
 import { Global } from "../common/Global";
 

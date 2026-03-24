@@ -1,7 +1,8 @@
 .lifeStyle{
     figure{@extend %fc;width: 100%;
         > *{width: 100%;}
-        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:10px 12px;color:#fff;column-gap: 12px;}
+        > img{cursor: pointer;}
+        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:6px 12px;color:#fff;column-gap: 12px;font-size: 14px;text-transform: capitalize;}
     }
     .setHeight{
         .row{height: 100%;}
@@ -15,20 +16,20 @@
         [class*="col-"]{padding-inline: 8px;}
     }
 
-    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;
-        data{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;}
+    .partition {display: grid;grid-template-columns: repeat(4, 1fr);grid-column-gap: 16px;
+        article{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;}
     }
 }
 
-@media (min-width:992px) and (max-width:1199px){
-    .lifeStyle .partition {grid-template-columns: repeat(4, 1fr);}
-}
+// @media (min-width:992px) and (max-width:1199px){
+//     .lifeStyle .partition {grid-template-columns: repeat(4, 1fr);}
+// }
 @media (min-width:576px) and (max-width:991px){
     .lifeStyle .partition {grid-template-columns: repeat(3, 1fr);}
 }
 @media (max-width:767px){
     .lifeStyle .partition {grid-column-gap: 8px;}
-    .lifeStyle .partition data{margin-bottom: 8px;}
+    .lifeStyle .partition article{margin-bottom: 8px;}
     .lifeStyle figure figcaption{padding: 6px 10px;}
 
     .lifeStyle .row{margin-inline: -4px;row-gap: 8px !important;

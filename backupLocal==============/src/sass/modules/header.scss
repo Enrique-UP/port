@@ -4,7 +4,7 @@ header{display:flex;flex-direction:column;position: sticky;top: 0;z-index: 9;bac
         .headerTop{display: none;}
         .headerMiddle .follow span > a.contact{display: flex;}
     }
-    .headerTop{background:var(--f1);padding-block:6px;@extend %transl;
+    .headerTop{background:var(--f3);padding-block:6px;@extend %transl;
         .fw{display: flex;justify-content: space-between;}
         a{display: flex;align-items: center;color: white;
             > *:not(:last-child){margin-right: 3px;}
@@ -28,7 +28,7 @@ header{display:flex;flex-direction:column;position: sticky;top: 0;z-index: 9;bac
             }
         }
     }
-    .headerBottom{background:var(--f1);
+    .headerBottom{background:var(--f3);
         .fw{padding-left: 290px;display: flex;justify-content: flex-end;}
         .close{position: fixed;top: -32px;right: 0;background: red;color: #fff;width: 32px;height: 32px;cursor: pointer;z-index: 9999;@extend %trans;@extend %center;}
         .menu{margin-bottom: 0;justify-content: space-between;align-items:center;color:white;display: none;width:100%;padding:2px 0;

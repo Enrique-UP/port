@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import Best1 from "../../images/lifeStyle/home1.jpg";
-import Best2 from "../../images/lifeStyle/home2.jpg";
-import Best3 from "../../images/lifeStyle/home3.jpg";
-import Best4 from "../../images/lifeStyle/home4.jpg";
-import Best5 from "../../images/lifeStyle/home5.jpg";
-import Best6 from "../../images/lifeStyle/home6.jpg";
-import Best7 from "../../images/lifeStyle/home7.jpg";
-import Best8 from "../../images/lifeStyle/home8.jpg";
-import Best9 from "../../images/lifeStyle/home9.jpg";
+import Best1 from "../../../images/lifeStyle/home1.jpg";
+import Best2 from "../../../images/lifeStyle/home2.jpg";
+import Best3 from "../../../images/lifeStyle/home3.jpg";
+import Best4 from "../../../images/lifeStyle/home4.jpg";
+import Best5 from "../../../images/lifeStyle/home5.jpg";
+import Best6 from "../../../images/lifeStyle/home6.jpg";
+import Best7 from "../../../images/lifeStyle/home7.jpg";
+import Best8 from "../../../images/lifeStyle/home8.jpg";
+import Best9 from "../../../images/lifeStyle/home9.jpg";
 const ImagePlaceholder = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
 
@@ -29,7 +29,7 @@ function LifeStyleHome() {
                     <span>Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.</span>
                   </div>
                 </div>{/* cols */}
-                <data className="col-sm-6 col-xl-12">
+                <article className="col-sm-6 col-xl-12">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best1} />
                     <figcaption>
@@ -37,12 +37,12 @@ function LifeStyleHome() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>{/* cols */}
+                </article>{/* cols */}
               </div>{/* row */}
             </div>{/* cols */}
             <div className="col-xl-6 setHeight">
               <div className="row">
-                <data className="col-6 col-md-3 col-xl-6">
+                <article className="col-6 col-md-3 col-xl-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best2} />
                     <figcaption>
@@ -50,8 +50,8 @@ function LifeStyleHome() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                </article>{/* cols */}
+                <article className="col-6 col-md-3 col-xl-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best3} />
                     <figcaption>
@@ -59,8 +59,8 @@ function LifeStyleHome() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                </article>{/* cols */}
+                <article className="col-6 col-md-3 col-xl-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best4} />
                     <figcaption>
@@ -68,8 +68,8 @@ function LifeStyleHome() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>{/* cols */}
-                <data className="col-6 col-md-3 col-xl-6">
+                </article>{/* cols */}
+                <article className="col-6 col-md-3 col-xl-6">
                   <figure>
                     <img src={ImagePlaceholder} data-src={Best5} />
                     <figcaption>
@@ -77,10 +77,10 @@ function LifeStyleHome() {
                       <span>Ipsum</span>
                     </figcaption>
                   </figure>
-                </data>{/* cols */}
+                </article>{/* cols */}
               </div>{/* row */}
             </div>{/* cols */}
-            <data className="col-6 col-md-3">
+            <article className="col-6 col-md-3">
               <figure>
                 <img src={ImagePlaceholder} data-src={Best6} />
                 <figcaption>
@@ -88,8 +88,8 @@ function LifeStyleHome() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>{/* cols */}
-            <data className="col-6 col-md-3">
+            </article>{/* cols */}
+            <article className="col-6 col-md-3">
               <figure>
                 <img src={ImagePlaceholder} data-src={Best7} />
                 <figcaption>
@@ -97,8 +97,8 @@ function LifeStyleHome() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>{/* <!--cols--> */}
-            <data className="col-6 col-md-3">
+            </article>{/* <!--cols--> */}
+            <article className="col-6 col-md-3">
               <figure>
                 <img src={ImagePlaceholder} data-src={Best8} />
                 <figcaption>
@@ -106,8 +106,8 @@ function LifeStyleHome() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>{/* cols */}
-            <data className="col-6 col-md-3">
+            </article>{/* cols */}
+            <article className="col-6 col-md-3">
               <figure>
                 <img src={ImagePlaceholder} data-src={Best9} />
                 <figcaption>
@@ -115,7 +115,7 @@ function LifeStyleHome() {
                   <span>Ipsum</span>
                 </figcaption>
               </figure>
-            </data>{/* cols */}
+            </article>{/* cols */}
             <div className="col-12 btns center mb0">
               <Link to="/lifestyle">Explore More</Link>
             </div>{/* cols */}
