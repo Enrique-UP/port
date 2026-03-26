@@ -88,15 +88,14 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.outlineBox {width: 100%;border: 1px solid var(--b1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
+.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
     > b{font-size: 24px;font-weight: bold;line-height: 1.2;}
     > span{color:var(--f2);}
 }
 
-.unlist, .list{@extend %fc;margin-bottom:24px;
+.unlist, .list{@extend %fc;margin-bottom:24px;row-gap:12px;
     > li{list-style: none;position: relative;padding-left:28px;
         &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: bold;}
-        &:not(:last-child){margin-bottom: 12px;}
         b, strong{font-weight: bold;}
         > a{color:inherit;}
     }

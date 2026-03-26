@@ -33,7 +33,7 @@ header{display:flex;flex-direction:column;position: sticky;top: 0;z-index: 9;bac
         .close{position: fixed;top: -32px;right: 0;background: red;color: #fff;width: 32px;height: 32px;cursor: pointer;z-index: 9999;@extend %trans;@extend %center;}
         .menu{margin-bottom: 0;justify-content: space-between;align-items:center;color:white;display: none;width:100%;padding:2px 0;
             b{font-size: 24px;line-height: 1;}
-            span{font-size:28px;cursor: pointer;}
+            span{font-size:28px;cursor: pointer;line-height: 1.55;}
         }
         .navBar{display: flex;padding:0;margin:0;@extend %trans;
             > li{border-right: 1px solid white;
@@ -124,9 +124,9 @@ header{display:flex;flex-direction:column;position: sticky;top: 0;z-index: 9;bac
                 }
                 .headerMiddle{
                     .logo {padding:16px 12px;
-                        img{width:142px;height: 120px;}
+                        img{width:142px;height: 112px;}
                     }
-                    .follow{padding: 10px 10px 5px;
+                    .follow{padding: 10px;
                         b {display: none;}
                         span{gap: 2px;
                             > a{padding:3px;

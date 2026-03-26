@@ -4,7 +4,7 @@ import SkillBar from './SkillBar';
 import { Global } from '../common/Global';
 import img1 from "../../../images/lifeStyle/forest/6.jpg";
 import img2 from "../../../images/lifeStyle/forest/3.jpg";
-import img3 from "../../../images/lifeStyle/mountains/3.jpg";
+import img3 from "../../../images/lifeStyle/forest/12.jpg";
 import TextSlider from './TextSlider';
 
 const ListContent = () => {

@@ -1,8 +1,8 @@
 .lifeStyle{
-    figure{@extend %fc;width: 100%;
+    figure{@extend %fc;width: 100%;border:1px solid var(--f1);
         > *{width: 100%;}
         > img{cursor: pointer;}
-        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:6px 12px;color:#fff;column-gap: 8px;font-size: 14px;text-transform: capitalize;
+        figcaption{display: flex;justify-content: space-between;background: var(--c2);padding:8px 12px;color:#fff;column-gap: 8px;font-size: 14px;text-transform: capitalize;border-top: 1px solid var(--f1);
             > span{white-space: nowrap;}
         }
     }
@@ -18,8 +18,8 @@
         [class*="col-"]{padding-inline: 8px;}
     }
 
-    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;
-        article{width: 100%;grid-row-end: span var(--num);margin-bottom: 16px;}
+    .partition {display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 16px;align-items: start;grid-auto-flow: dense;grid-auto-rows: 4px;
+        article{width: 100%;grid-row-end: span var(--num, 100);margin-bottom: 16px;@extend %fc;}
     }
 }
 
