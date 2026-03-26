@@ -5,7 +5,7 @@ import defaultBannerImg from "../../../images/banners/inner.jpg";
 function Banner(props) {
   return (
     <>
-      <section className="section banner">
+      <section className={`section banner ${props.isHome ? "homeBanner" : ""}`}>
         <div className="container">
           <div className="row"> 
             <div className="col-lg-6">

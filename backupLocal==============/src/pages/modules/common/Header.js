@@ -99,7 +99,7 @@ function Header() {
                   <li><NavLink to="/know"><i className="icon">&#xa078;</i><b>I Know</b></NavLink></li>
                   <li><NavLink to="/portfolio"><i className="icon">&#xa076;</i><b>Portfolio</b></NavLink></li> */}
                   <li><NavLink to="/lifestyle"><i className="icon"><img src={LifeStyle} /></i><b>Gallery</b></NavLink></li>
-
+                  <li><NavLink to="/inner"><i className="icon">&#xa052;</i><b>Inner Page</b></NavLink></li>
                   <li><NavLink to="/contactus"><i className="icon">&#xa007;</i><b>Contact Us</b></NavLink></li>
                   {/* <li className="tabs">
                       <a className="icon">&#xa009;</a>

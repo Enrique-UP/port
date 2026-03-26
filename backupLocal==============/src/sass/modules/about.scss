@@ -39,7 +39,6 @@
                 &:nth-child(14){
                     ~ *{display:block;}
                 }
-                &:nth-child(3n + 3){padding-right:0;}
             }
             & + p{margin-top: -20px;}
         }
@@ -146,10 +145,8 @@
                             }
                         }
                     }
-                    &.list2{
-                        >li{width:50%;
-                            &:nth-child(3n + 3){padding-right: 30px;}
-                            &:nth-child(odd){padding-right: 0;}
+                    &.list2{grid-template-columns: repeat(2, 1fr);
+                        >li{
                             &:nth-child(2){
                                 ~ *{display:block;}
                             }
@@ -195,8 +192,7 @@
                 }
                 .unlist{
                     &.list1{flex-direction: row;flex-wrap:wrap;
-                        >li{display: block;padding-right:30px;width:50%;
-                            &:nth-child(even){padding-right: 0;}
+                        >li{display: block;
                         }
                     }
                 }
@@ -228,9 +224,7 @@
                 }
                 .unlist{
                     &.list1{flex-direction: row;flex-wrap:wrap;
-                        >li{display: block;width:100%;
-                            &:nth-child(even){padding-right: 0;}
-                        }
+                        >li{display: block;width:100%;}
                     }
                     &.list2{display: none;}
                 }

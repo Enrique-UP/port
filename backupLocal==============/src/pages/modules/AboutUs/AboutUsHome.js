@@ -82,7 +82,7 @@ function AboutUsHome() {
                   <TextSlider />
                 </span>
               </p>
-              <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor pariatur repellat consequuntur. Neque officiis fuga quasi exercitationem et, iure ipsa sit natus debitis itaque odio consectetur nesciunt atque placeat totam hic ipsam minus consequuntur nemo quisquam alias eos laborum. Consectetur odio aperiam accusantium cum dolorum culpa minima ullam sint?</p>
+              <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor pariatur repellat consequuntur. Neque officiis fuga quasi exercitationem et, iure ipsa sit natus debitis itaque odio consectetur nesciunt atque placeat totam hic ipsam minus consequuntur nemo quisquam alias eos laborum. Consectetur odio aperiam accusantium cum dolorum culpa minima ullam sint.</p>
               <p className="head1">Lorem</p>
               <ul className="unlist list1">
                  <ListContent />
