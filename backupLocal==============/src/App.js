@@ -2,16 +2,16 @@ import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./sass/style.scss";
 
-import RenderTop from "./pages/modules/common/RenderTop";
-import ScrollTop from "./pages/modules/common/ScrollTop";
-import CommonScript from "./pages/modules/common/CommonScript";
-import Header from "./pages/modules/common/Header";
-import Footer from "./pages/modules/common/Footer";
+import RenderTop from "./pages/modules/Common/RenderTop";
+import ScrollTop from "./pages/modules/Common/ScrollTop";
+import CommonScript from "./pages/modules/Common/CommonScript";
+import Header from "./pages/modules/Common/Header";
+import Footer from "./pages/modules/Common/Footer";
 
 import Home from "./pages/Home";
 import LifeStyle from "./pages/modules/LifeStyle/LifeStyle";
 import AboutUs from "./pages/modules/AboutUs/AboutUs";
-import ContactUs from "./pages/ContactUs";
+import ContactUs from "./pages/modules/ContactUs/ContactUs";
 import Reviews from "./pages/Reviews";
 import InnerPage from "./pages/InnerPage";
 import Poetry from "./pages/modules/Poetry/Poetry";

@@ -14,6 +14,9 @@
 @import "./modules/ads1.scss";
 @import "./modules/ads2.scss";
 @import "./modules/sidebar.scss";
+@import "./modules/education.scss";
+@import "./modules/experience.scss";
+@import "./modules/skills.scss";
 
 
 // html {scroll-behavior: smooth;}
@@ -95,8 +98,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;
-    > b{font-size: 24px;font-weight: bold;line-height: 1.2;}
+.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;color: var(--f2);
+    > b{font-size: 24px;font-weight: bold;line-height: 1.2;color: var(--f1);}
     > span{color:var(--f2);}
 }
 

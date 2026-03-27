@@ -1,10 +1,9 @@
 import {Helmet} from "react-helmet";
-import Banner from "./modules/common/Banner";
-import LeftSidebar from "./modules/common/LeftSidebar";
-import RightSidebar from "./modules/common/RightSidebar";
-import FormArea from "./modules/common/FormArea";
-
-import { Global } from "./modules/common/Global";
+import Banner from "../Common/Banner";
+import LeftSidebar from "../Common/LeftSidebar";
+import RightSidebar from "../Common/RightSidebar";
+import { Global } from "../Common/Global";
+import FormArea from "./FormArea";
 function ContactUs() {
   return (
     <>

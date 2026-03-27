@@ -1,5 +1,5 @@
 import {Helmet} from "react-helmet";
-import Banner from "./modules/common/Banner";
+import Banner from "./modules/Common/Banner";
 import HomeBanner from "../images/banners/home.jpg";
 
 function ThankYou() {

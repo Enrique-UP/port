@@ -1,5 +1,5 @@
 import Ads from "../../../images/lifeStyle/beach/11.jpg";
-import { Global } from "../common/Global";
+import { Global } from "../Common/Global";
 
 function Ads1() {
   return (

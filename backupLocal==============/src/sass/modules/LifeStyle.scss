@@ -1,4 +1,5 @@
 .lifeStyle{
+    .outlineBox{background: #fff;}
     figure{@extend %fc;width: 100%;border:1px solid var(--f1);
         > *{width: 100%;}
         > img{cursor: pointer;}

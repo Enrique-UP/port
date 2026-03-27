@@ -6,7 +6,7 @@ import Logo from "../../../images/logo.png";
 import LogoMob from "../../../images/logo.png";
 import LifeStyle from "../../../images/icons/lifeStyle.png";
 
-import { Global } from "../common/Global";
+import { Global } from "./Global";
 
 function Header() {
 

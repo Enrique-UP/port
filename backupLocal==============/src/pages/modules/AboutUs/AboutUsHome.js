@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import CounterNum from './CounterNum';
 import SkillBar from './SkillBar';
-import { Global } from '../common/Global';
+import { Global } from '../Common/Global';
 import img1 from "../../../images/lifeStyle/forest/6.jpg";
 import img2 from "../../../images/lifeStyle/forest/3.jpg";
 import img3 from "../../../images/lifeStyle/forest/12.jpg";
