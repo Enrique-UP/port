@@ -35,8 +35,8 @@ function Home() {
       <Education />
       <Experience />
       <Know />
-      {/* <Wcu />
-      <Team /> */}
+      {/* <Wcu /> */}
+      <Team />
       <Ads2 />
       <Childhood />
       <Ads1 />
