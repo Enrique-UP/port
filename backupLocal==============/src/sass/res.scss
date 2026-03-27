@@ -75,9 +75,13 @@
     .outlineBox > b {font-size: 18px;}
 
     main > .innerPage .order {row-gap: 16px;}
+    .poetry {row-gap: 8px !important;}
 }
 @media (min-width:576px) and (max-width:767px){
     .list>li::before, .unlist>li::before{top:3px;}
+    .box1{
+        .head2 {font-size: 30px;}
+    }
 }
 
 
@@ -104,4 +108,20 @@
     .note{font-size: 18px;}
 
     main > .bd hgroup ul > li > a, main > .bd hgroup ol > li > a{font-size: 16px;}
+
+    .box1{padding:15px 10px;
+        .head2 {font-size: 24px;}
+        .texts{font-size: 14px;}
+    }
+
+    .reviews {row-gap: 16px;
+        .reviewsArea {column-gap: 8px;}
+        .iconArea .icon{width: 56px;height: 56px;font-size: 32px;}
+        .iconArea::after{height: 68px;}
+        .outlineBox b {flex-direction: column;align-items: flex-start;font-size:24px;
+            ~ i{font-size: 16px;}
+        }
+        .outlineBox .icon{font-size: 14px;}
+        ul{flex-direction: column;}
+    }
 }

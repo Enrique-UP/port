@@ -189,9 +189,9 @@ function AboutUsHome() {
             </div>{/* cols */}
 
             <div className="col-12">
-              <div className="fw outSideWork">
+              <div className="fw box1">
                 <p className="head2">Lorem</p>
-                <p className="texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis eaque quod earum et ex quasi doloribus impedit nemo, voluptatem deserunt cumque at asperiores repellat dolore vitae aliquam quae incidunt voluptas quas. Consequuntur magnam aut necessitatibus facilis quia deserunt, voluptas magni est blanditiis quos minima laborum quod? Quia atque sint explicabo animi temporibus! Ut necessitatibus ratione eius, nam reiciendis illo?</p>
+                <p className="texts it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis eaque quod earum et ex quasi doloribus impedit nemo, voluptatem deserunt cumque at asperiores repellat dolore vitae aliquam quae incidunt voluptas quas. Consequuntur magnam aut necessitatibus facilis quia deserunt, voluptas magni est blanditiis quos minima laborum quod? Quia atque sint explicabo animi temporibus! Ut necessitatibus ratione eius, nam reiciendis illo?</p>
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-12">

@@ -25,9 +25,10 @@ function Footer() {
               <ul className="links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/lifestyle">Gallery</Link></li>
+                <li><Link to="/reviews">Reviews</Link></li>
+                <li><Link to="/poetry">Poetry</Link></li>
                 <li><Link to="/inner">Inner Page</Link></li>
                 <li><Link to="/contactus">Contact Us</Link></li>
-                <li><a href="javascript:;">Lorem</a></li>
                 <li><a href="javascript:;">Lorem Dolor</a></li>
                 <li><a href="javascript:;">Lorem</a></li>
                 <li><a href="javascript:;">Lorem</a></li>

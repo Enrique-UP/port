@@ -88,10 +88,6 @@
             > i{font-style: normal;}
         }
     }
-    .outSideWork{background: var(--cb10);padding:32px;color:white;margin-bottom:30px;
-        .head2{font-weight: bold;font-size: 36px;line-height: 1;}
-        .texts{font-style: italic;font-size: 18px;}
-    }
     .btns{margin-bottom: 20px;}
 
     &{
@@ -196,9 +192,6 @@
                         }
                     }
                 }
-                .outSideWork{
-                    .head2 {font-size: 30px;}
-                }
             }
         }
         @media (max-width:575px){
@@ -232,10 +225,6 @@
                     .icon{font-size: 36px;}
                     > b{font-size: 18px;}
                     > span{font-size: 14px;}
-                }
-                .outSideWork{padding:15px 10px;margin-bottom:10px;
-                    .head2 {font-size: 24px;}
-                    .texts{font-size: 14px;}
                 }
                 .progress-bars{margin-bottom: 20px;
                     .bar-item{

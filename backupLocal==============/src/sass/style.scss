@@ -91,6 +91,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
     > .innerPage{position: relative;
         .order{@extend %fc;row-gap: 32px;}
+        .box1{text-align: center;}
     }
 }
 
@@ -183,6 +184,43 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .mb0{margin-bottom: 0 !important;}
 
+.box1{background: var(--cb10);padding:32px;color:white;row-gap:10px;@extend %fc;
+    p{margin-bottom: 0;}
+    .head2{font-weight: bold;font-size: 36px;line-height: 1;}
+    .texts{font-size: 18px;
+        &.it{font-style: italic;}
+    }
+}
+
+.poetry{row-gap: 16px !important;counter-reset: num;
+    article{width: 100%;display: flex;background: var(--g3);border: 1px solid var(--b1);padding:16px;flex-direction:column;row-gap:8px;
+        > span{color:var(--f2);}
+        > b{color:var(--c2);display:flex;align-items: center;
+            &::after{counter-increment: num;content: counter(num);background: var(--g1);color: var(--f2);height: 24px;margin-left: auto;text-align: center;line-height: 24px;padding-inline: 4px;border: 1px solid var(--b1);font-weight: normal;font-size: 14px;}
+        }
+    }
+}
+
+.reviews{width: 100%;@extend %fc;row-gap:32px;
+    ul{width: 100%;display: flex;padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--b1);gap:4px;
+        > li{list-style: none;
+            &:first-child{width: 100%;@extend %fc;row-gap: 4px;}
+        }
+    }
+    .reviewsArea{width: 100%;display: flex;column-gap: 16px;}
+    .iconArea{position: relative;display:flex;
+        &::before, &::after{width: 2px;content:"";position: absolute;top:0;left:0;right:0;margin-inline:auto;}
+        &::before{background: var(--f1);height: 100%;}
+        &::after{background: #fff;height: 100px;}
+        .icon{width: 80px;height: 80px;background: var(--cb3);color:#fff;position: relative;@extend %center;font-size: 48px;z-index: 1;}
+    }
+    .outlineBox{border-color: var(--b1);
+        b{display: flex;align-items: center;color:var(--cb1);font-size:30px;line-height: 1.2;
+            ~ i{font-style: normal;font-size: 18px;font-weight: bold;}
+        }
+        .icon{margin-left: auto;color: orange;font-size: 18px;white-space: nowrap;}
+    }
+}
 
 
 // main:has(> .thankYou) > :not(.thankYou) {

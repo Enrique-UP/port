@@ -12,7 +12,9 @@ import Home from "./pages/Home";
 import LifeStyle from "./pages/modules/LifeStyle/LifeStyle";
 import AboutUs from "./pages/modules/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Reviews from "./pages/Reviews";
 import InnerPage from "./pages/InnerPage";
+import Poetry from "./pages/modules/Poetry/Poetry";
 import ThankYou from "./pages/ThankYou";
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/lifestyle" element={<LifeStyle />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/reviews" element={<Reviews />} />
         <Route path="/inner" element={<InnerPage />} />
+        <Route path="/poetry" element={<Poetry />} />
         <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
 

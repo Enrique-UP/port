@@ -61,7 +61,7 @@ function RightSidebar() {
             </div>
           </aside>
           <aside className="tags">
-            <p class="hd">Tags</p>
+            <p className="hd">Tags</p>
             <ul>
               <li><a href="index.html#ads_one">Seasonal Deals</a></li>
               <li><a href="index.html#ads_two">Best Web Design Solutions</a></li>

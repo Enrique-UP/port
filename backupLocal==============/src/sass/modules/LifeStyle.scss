@@ -32,9 +32,7 @@
 @media (min-width:992px) and (max-width:1199px){
     .lifeStyle .partition {grid-template-columns: repeat(2, 1fr);}
 }
-@media (min-width:576px) and (max-width:991px){
-    .lifeStyle .partition {grid-template-columns: repeat(3, 1fr);}
-}
+// @media (min-width:576px) and (max-width:991px){}
 @media (max-width:767px){
     .lifeStyle .partition {grid-column-gap: 8px;}
     .lifeStyle .partition article{margin-bottom: 8px;}
