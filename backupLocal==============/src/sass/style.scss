@@ -89,7 +89,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
             > li{width: 100%;background: #000;}
         }
     }
-    > .innerPage{position: relative;}
+    > .innerPage{position: relative;
+        .order{@extend %fc;row-gap: 32px;}
+    }
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;

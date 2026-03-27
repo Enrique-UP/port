@@ -12,8 +12,8 @@ import Home from "./pages/Home";
 import LifeStyle from "./pages/modules/LifeStyle/LifeStyle";
 import AboutUs from "./pages/modules/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import ThankYou from "./pages/ThankYou";
 import InnerPage from "./pages/InnerPage";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (

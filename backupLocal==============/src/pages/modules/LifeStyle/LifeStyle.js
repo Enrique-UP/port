@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet";
 import Banner from "../common/Banner";
+import LeftSidebar from "../common/LeftSidebar";
+import RightSidebar from "../common/RightSidebar";
+
 import { useState } from "react";
 
 import LifeStyleData from "./LifeStyleData"; // ✅ FIXED NAME
@@ -69,15 +72,17 @@ function Lifestyle() {
         pageText="Dynamic lifestyle gallery with categories"
       />
 
-      <section className="section lifeStyle colors">
+      <section className="section lifeStyle colors innerPage">
         <div className="container">
-          <hgroup>
-            <h2>Lorem <span>ipsum</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit et error</p>
-          </hgroup>
-
           <div className="row">
-            <div className="col-12 partition">
+            <div className="col-12">
+              <hgroup>
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit ameet</p>
+              </hgroup>
+            </div>
+            <LeftSidebar />
+            <div className="col-lg-6 order partition">
               {LifeStyleAllData.flatMap((group, gIndex) =>
                 group.images.map((img, iIndex) => (
                   <article key={`${gIndex}-${iIndex}`}>
@@ -99,6 +104,7 @@ function Lifestyle() {
                 ))
               ).reverse()}
             </div>
+            <RightSidebar />
           </div>
         </div>
       </section>

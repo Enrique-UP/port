@@ -73,6 +73,8 @@
 
     .outlineBox {padding: 16px 12px;}
     .outlineBox > b {font-size: 18px;}
+
+    main > .innerPage .order {row-gap: 16px;}
 }
 @media (min-width:576px) and (max-width:767px){
     .list>li::before, .unlist>li::before{top:3px;}

@@ -1,9 +1,10 @@
 import {Helmet} from "react-helmet";
 import Banner from "./modules/common/Banner";
+import LeftSidebar from "./modules/common/LeftSidebar";
+import RightSidebar from "./modules/common/RightSidebar";
 import FormArea from "./modules/common/FormArea";
 
 import { Global } from "./modules/common/Global";
-
 function ContactUs() {
   return (
     <>
@@ -14,7 +15,7 @@ function ContactUs() {
         pageName="Contact Us" 
         pageText="Contact Us page content here lorem ipsum dolor sit amet consectetur adipisicing elit et error dolores aliquid eos quas sint voluptatum atque odit eaque nulla tempora provident quod earum id ea eum vero soluta numquam."
       />
-      <section className="section contactUs">
+      <section className="section contactUs innerPage">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -23,7 +24,8 @@ function ContactUs() {
                 <p>Get in touch &mdash; we respond quickly.</p>
               </hgroup>
             </div>
-            <div className="col-lg-5">
+            <LeftSidebar />
+            <div className="col-lg-6 order">
               <ul className="contactBox">
                 <li>
                   <a href={Global.numTel} target="_blank">
@@ -50,10 +52,10 @@ function ContactUs() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div className="col-lg-7">
               <FormArea />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55928250.58785387!2d-7.682147!3d31.176664!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sin!4v1774592467853!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <RightSidebar />
           </div>
         </div>
       </section>

@@ -23,7 +23,7 @@ function InnerPage() {
               </hgroup>
             </div>
             <LeftSidebar />
-            <div className="col-lg-6 mob">MainArea of Page</div>
+            <div className="col-lg-6 order">MainArea of Page</div>
             <RightSidebar />
           </div>
         </div>
