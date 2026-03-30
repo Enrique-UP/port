@@ -1,7 +1,7 @@
 import {Helmet} from "react-helmet";
-import Banner from "./modules/Common/Banner";
-import LeftSidebar from "./modules/Common/LeftSidebar";
-import RightSidebar from "./modules/Common/RightSidebar";
+import Banner from "./modules/common/Banner";
+import LeftSidebar from "./modules/common/LeftSidebar";
+import RightSidebar from "./modules/common/RightSidebar";
 
 function InnerPage() {
   return (

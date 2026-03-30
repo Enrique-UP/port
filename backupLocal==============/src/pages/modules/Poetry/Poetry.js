@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import {Helmet} from "react-helmet";
-import Banner from "../Common/Banner";
-import LeftSidebar from "../Common/LeftSidebar";
-import RightSidebar from "../Common/RightSidebar";
+import Banner from "../common/Banner";
+import LeftSidebar from "../common/LeftSidebar";
+import RightSidebar from "../common/RightSidebar";
 import PoetryData from "./PoetryData";
 
 // const PoetryTag = (props) => {

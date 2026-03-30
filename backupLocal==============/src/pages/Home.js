@@ -1,6 +1,6 @@
 import {Helmet} from "react-helmet";
 import { useEffect } from "react";
-import Banner from "./modules/Common/Banner";
+import Banner from "./modules/common/Banner";
 import HomeBanner from "../images/banners/home.jpg";
 import LifeStyleHome from "./modules/LifeStyle/LifeStyleHome";
 import Childhood from "./modules/Home/Childhood";
