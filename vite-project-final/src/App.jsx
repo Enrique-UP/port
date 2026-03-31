@@ -11,7 +11,7 @@ import ThankYou from './modules/ThankYou';
 
 export default function App() {
   return (
-    <HashRouter basename="/port/">
+    <HashRouter>
       
       <Header />
 

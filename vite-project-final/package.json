@@ -2,6 +2,7 @@
   "name": "React+Vite-Project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://enrique-up.github.io/port",
   "type": "module",
   "scripts": {
     "dev": "vite",
