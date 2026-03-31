@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+export default function Header() {
     return(
         <>
             <NavLink to="/">Home</NavLink>
@@ -14,5 +14,3 @@ const Header = () => {
         </>
     )
 }
-
-export default Header;

@@ -8,10 +8,10 @@ import LifeStyle from './pages/LifeStyle/LifeStyle'
 import Contact from './pages/Contact/Contact'
 import Header from './pages/Common/Header'
 
-const App = () =>  {
+export default function App() {
   return (
     <>
-      <HashRouter>
+      <HashRouter basename="/port/">
         <Header />        
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,5 +23,3 @@ const App = () =>  {
     </>
   )
 }
-
-export default App
