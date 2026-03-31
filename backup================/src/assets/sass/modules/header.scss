@@ -12,5 +12,5 @@ header{@extend %fc;background:var(--f1);padding-block:12px;
 
 @media (max-width:575px){
     header .logo > img {width: 160px;}
-    header nav{white-space: nowrap;flex-wrap: wrap;justify-content: flex-end;gap:8px 20px;}
+    header nav{white-space: nowrap;flex-wrap: wrap;justify-content: flex-end;gap:4px 20px;}
 }

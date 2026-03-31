@@ -5,9 +5,9 @@ import "./assets/sass/style.scss"
 import Header from './modules/common/Header';
 import Footer from './modules/common/Footer';
 
-import Home from './modules/Home';
+import Home from './modules/home/Home';
 import About from './modules/About';
-import Contact from './modules/Contact';
+import Contact from './modules/contact/Contact';
 import Reviews from './modules/Reviews';
 import ThankYou from './modules/ThankYou';
 

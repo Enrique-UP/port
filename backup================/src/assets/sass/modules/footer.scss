@@ -5,7 +5,9 @@ footer{background: var(--f1);margin-top: auto;
     }
     .links{width: 100%;display: flex;gap:4px 16px;justify-content:center;flex-wrap:wrap;
         > li{list-style: none;
-            > a{color:var(--f2);}
+            > a{color:var(--f2);
+                &:hover, &:active, &:focus{color:#fff;}
+            }
         }
     }
     + .copy{background: var(--f3);text-align: center;color:var(--f2);padding-block: 12px;
