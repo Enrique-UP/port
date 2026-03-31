@@ -1,0 +1,17 @@
+footer{background: var(--f1);margin-top: auto;
+    .logo{display: flex;justify-content: center;
+        a{display: flex;}
+        img{width: 160px;}
+    }
+    .links{width: 100%;display: flex;gap:4px 16px;justify-content:center;flex-wrap:wrap;
+        > li{list-style: none;
+            > a{color:var(--f2);}
+        }
+    }
+    + .copy{background: var(--f3);text-align: center;color:var(--f2);padding-block: 12px;
+        .fw{display: flex;flex-wrap: wrap;justify-content: center;column-gap:5px;}
+    }
+}
+@media (max-width:767px){
+    footer .links {margin-top: 16px;}
+}

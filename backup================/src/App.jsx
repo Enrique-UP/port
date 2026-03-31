@@ -1,5 +1,7 @@
 import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import "./assets/sass/style.scss"
+
 import Header from './modules/common/Header';
 import Footer from './modules/common/Footer';
 
@@ -11,9 +13,9 @@ import ThankYou from './modules/ThankYou';
 
 export default function App() {
   return (
-    <HashRouter>
-      
+    <HashRouter>      
       <Header />
+
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,8 +25,8 @@ export default function App() {
         <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
 
-      <Footer />
 
+      <Footer />
     </HashRouter>
   );
 }
