@@ -181,10 +181,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .mb0{margin-bottom: 0 !important;}
 
-.box1{background: var(--cb10);padding:32px;color:white;row-gap:10px;@extend %fc;
+.box1{background: var(--cb10);padding:32px;color:white;row-gap:10px;@extend %fc;width: 100%;
     p{margin-bottom: 0;}
     .head2{font-weight: bold;font-size: 36px;line-height: 1;}
-    .texts{font-size: 18px;
+    .texts{font-size: 18px;text-align:center;
         &.it{font-style: italic;}
     }
 }
