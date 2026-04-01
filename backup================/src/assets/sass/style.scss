@@ -8,6 +8,7 @@
 @import "./modules/footer.scss";
 
 @import "./modules/welcome.scss";
+@import "./modules/lifestyle.scss";
 
 html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;}
@@ -61,9 +62,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
     > .colorsLine{display: flex;padding: 0;margin: 0;flex-direction:row;
         > li{list-style: none;height: 10px;
-            &:nth-child(1){background: var(--c1);width: 60%;}
-            &:nth-child(2){background: var(--c3);width: 25%;}
-            &:nth-child(3){background: var(--c4);width: 15%;}
+            &:nth-child(1){background: var(--cb1);width: 65%;}
+            &:nth-child(2){background: var(--cb2);width: 20%;}
+            &:nth-child(3){background: var(--cb3);width: 15%;}
         }
         &.reverse{flex-direction: row-reverse;
             > li{width: 100%;background: #000;}
