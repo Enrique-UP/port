@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "./common/Banner";
+import HomeBanner from "../assets/images/banners/home.jpg";
+
 export default function ThankYou() {
   return (
     <>
@@ -10,6 +12,8 @@ export default function ThankYou() {
       <Banner
         pageName="Thank You!" 
         pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
+        otherImg={HomeBanner}
+        showBreadcrumbs={false}
       />
     </>
   );
