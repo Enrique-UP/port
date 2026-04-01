@@ -22,7 +22,9 @@
 
 
 @media (max-width:991px){}
-@media (min-width:768px) and (max-width:991px){}
+@media (min-width:768px) and (max-width:991px){
+    .banner.homeBanner{margin-bottom: 56px;}
+}
 @media (min-width:576px) and (max-width:991px){
     hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 36px;}
     hgroup p{font-size: 20px;}
@@ -50,6 +52,9 @@
         > .blb{margin-bottom: 56px;}
         > .bltb{margin-block: 56px;}
     }
+    main > .banner .cnt {text-align: center;}
+    main > .banner .hd {font-size: 48px;}
+    main > .banner .txt {font-size: 18px;}
     hgroup{text-align: center;}
     hgroup .btns{margin-top: 0;}
     .btns{justify-content: center;}
@@ -57,6 +62,8 @@
     .unlist, .list {margin-bottom: 12px;}
 
     .contactPage .contactBox{gap:16px;}
+
+    .banner.homeBanner{margin-bottom: 56px;}
 
     .fixNum{font-size: 14px;display: flex;}
 }

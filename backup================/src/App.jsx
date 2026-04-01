@@ -1,6 +1,6 @@
 import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import "./assets/sass/style.scss"
+import "./assets/sass/style.scss";
 
 import Header from './modules/common/Header';
 import Footer from './modules/common/Footer';

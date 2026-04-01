@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import Banner from "../common/Banner";
 import HomeBanner from "../../assets/images/banners/home.jpg";
+import Banner from "../common/Banner";
+import Welcome from "./Welcome";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         otherImg={HomeBanner}
         showBreadcrumbs={false}
       />
+      <Welcome />
     </>
   );
 }

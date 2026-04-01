@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import { Global } from "./Global";
 
 export default function Footer() {
   return (
     <>
-      <footer className="section">
+      <footer>
         <div className="container">
           <div className="row">
             <div className="col-12 logo">
@@ -27,6 +28,7 @@ export default function Footer() {
           <div className="fw">Copyright &copy; <span>{new Date().getFullYear()}</span> with all rights reserved.</div>
         </div>
       </section>
+      <a className="fixNum" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>Call Us {Global.num}</a>
     </>
   );
 }
