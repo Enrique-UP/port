@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../common/Banner";
-// import LeftSidebar from "../common/LeftSidebar";
-// import RightSidebar from "../common/RightSidebar";
+import LeftSidebar from "../common/LeftSidebar";
+import RightSidebar from "../common/RightSidebar";
 
 import { useState } from "react";
 
@@ -84,37 +84,39 @@ export default function Lifestyle() {
 
       <section className="section lifeStyle colors innerPage">
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <hgroup>
-                <h2>Gallery</h2>
-                <p>Lorem ipsum dolor sit ameet</p>
-              </hgroup>
+          <hgroup>
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit ameet</p>
+          </hgroup>
+          <div className="sideMid">
+            <LeftSidebar />
+
+            <div className="area-2">
+              <div className="partition">
+                {LifeStyleAllData.flatMap((group, gIndex) =>
+                  group.images.map((img, iIndex) => (
+                    <article key={`${gIndex}-${iIndex}`}>
+                      <figure>
+                        <img
+                          data-src={img.src}
+                          alt={img.place}
+                          onClick={() => {
+                            setIndex(getGlobalIndex(gIndex, iIndex));
+                            setOpen(true);
+                          }}
+                        />
+                        <figcaption>
+                          <b>{img.place}</b>
+                          <span>{img.date}</span>
+                        </figcaption>
+                      </figure>
+                    </article>
+                  ))
+                ).reverse()}
+              </div>
             </div>
-            {/* <LeftSidebar /> */}
-            <div className="col-lg-6 order partition">
-              {LifeStyleAllData.flatMap((group, gIndex) =>
-                group.images.map((img, iIndex) => (
-                  <article key={`${gIndex}-${iIndex}`}>
-                    <figure>
-                      <img
-                        data-src={img.src}
-                        alt={img.place}
-                        onClick={() => {
-                          setIndex(getGlobalIndex(gIndex, iIndex));
-                          setOpen(true);
-                        }}
-                      />
-                      <figcaption>
-                        <b>{img.place}</b>
-                        <span>{img.date}</span>
-                      </figcaption>
-                    </figure>
-                  </article>
-                ))
-              ).reverse()}
-            </div>
-            {/* <RightSidebar /> */}
+            
+            <RightSidebar />
           </div>
         </div>
       </section>

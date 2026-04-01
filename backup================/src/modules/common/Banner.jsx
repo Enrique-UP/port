@@ -8,7 +8,7 @@ export default function Banner(props) {
       <section className={`section banner ${props.isHome ? "homeBanner" : ""}`}>
         <div className="container">
           <div className="row"> 
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className="cnt">
                 <h1 className="hd">{props.pageName}</h1>
                 <p className="txt">{props.pageText}</p>
@@ -28,7 +28,7 @@ export default function Banner(props) {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <img src={props.otherImg || defaultImg} className="img" />
             </div>
           </div>

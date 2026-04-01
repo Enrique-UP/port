@@ -29,8 +29,8 @@ export default function Footer() {
         </div>
       </section>
       <a className="fixNum" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>Call Us {Global.num}</a>
-      <a class="icon callRight" href="tel:<?php echo $numberTel; ?>" target="_blank">&#xa041;</a>
-      <i class="icon scrollTop">&#xa022;</i>
+      <a className="icon callRight" href="tel:<?php echo $numberTel; ?>" target="_blank">&#xa041;</a>
+      <i className="icon scrollTop">&#xa022;</i>
     </>
   );
 }

@@ -7,8 +7,11 @@
 @import "./modules/header.scss";
 @import "./modules/footer.scss";
 
+@import "./modules/sidebar.scss";
+
 @import "./modules/welcome.scss";
 @import "./modules/lifestyle.scss";
+
 
 html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;}
@@ -102,10 +105,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .breadcrumbs{padding-block: 12px;background:var(--g1);
     ul{width: 100%;display: flex;flex-wrap: wrap;padding: 0;margin: 0;gap: 4px 11px;
-        > li{list-style: none;line-height: 1.1;display:flex;
-            > a{color: var(--c1);font-weight: bold;}
+        > li{list-style: none;line-height: 1.1;display:flex;color:var(--f2);
+            > a{color: var(--c2);font-weight: bold;}
             &:not(:last-child){position: relative;padding-right: 16px;
-                &::after{font-family: fontello;content:"\a021";position: absolute;right: 0;}
+                &::after{font-family: fontello;content:"\a030";position: absolute;right: 0;}
             }
         }
     }
@@ -154,6 +157,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
     }
 }
+
 .scrollTop, .callRight{position: fixed;right:8px;z-index: 999;background: var(--c1);color:#fff;@extend %trans;cursor: pointer;border-radius:4px;width: 36px;height: 36px;@extend %center;@extend %trans;@extend %userSelect;border:1px solid #fff;
     &.fixed{transform: scale(1);-webkit-transform: scale(1);-moz-transform: scale(1);}
     &:hover{background: var(--c2);}
