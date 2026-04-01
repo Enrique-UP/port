@@ -9,12 +9,12 @@ export default function RightSidebar() {
       <div className="area-3">
         <div className="sideBar">
           <aside className="contact">
+            <img src={call} />
             <a target="_blank" href={Global.numTel}>
               <b>Got a questions?</b>
               <span>Don't hesitate to call me</span>
               <i>{Global.num}</i>
             </a>
-            <img src={call} />
           </aside>
           <aside className="slider">
             <p className="hd">My Lifestyle</p>

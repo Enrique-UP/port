@@ -1,12 +1,12 @@
 .sideMid{width: 100%;display: flex;column-gap: 32px;row-gap: 32px;
     [class*="area-"]{@extend %fc;}
     .partition{width: 100%;}
-    .area-1, .area-3{width: 220px;}
+    .area-1, .area-3{width: 220px;flex-shrink: 0;}
     .area-2{width: 100%;}
 }
 .sideBar{width: 100%;@extend %fc;row-gap:16px;flex-shrink: 0;
     position: sticky;top:100px;
-    > aside{width: 100%;color:var(--f2);display:flex;flex-direction:column;
+    > aside{width: 100%;color:var(--f2);@extend %fc;
         p.hd{width: 100%;display: flex;font-weight: bold;background: var(--c1);color:#fff;padding:8px 16px;font-size: 18px;}
         a{line-height: 1.1;}
         &.about{background: var(--g1);@extend %fc;
@@ -29,13 +29,13 @@
 
             }
         }
-        &.contact{display: flex;background:var(--c2);flex-direction:row;
+        &.contact{background:var(--c2);flex-direction:row;position: relative;
             > a{width: 60%;flex-shrink: 0;@extend %fc;padding: 24px 16px;color:#fff;line-height: 1.2;row-gap: 12px;position: relative;}
             b{position: relative;font-size:18px;padding-bottom:8px;white-space: nowrap;
                 &::before{width: 40px;height: 2px;background: #fff;position: absolute;left: 0;bottom: 0;content: "";}
             }
-            i{font-style: normal;white-space: nowrap;}
-            > img{width: 40%;align-self: flex-end;padding:8px 16px 0 0;}
+            i{font-style: normal;white-space: nowrap;text-shadow: 0 0 2px #000;}
+            > img{width: 104px;align-self: flex-end;position: absolute;bottom:0;right:4px;}
         }
         &.slider{
             .sliderArea{@extend %fc;position: relative;
@@ -90,12 +90,12 @@
     .sideMid{row-gap: 16px;}
     .sideMid .area-1, .sideMid .area-3{width: 100%;}
     .sideBar > aside.links ul{display: grid;grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));white-space: nowrap;}
+    .sideBar > aside.links ul > li:nth-last-child(2):nth-child(odd) {border-bottom: none;}
 }
 @media (min-width:381px) and (max-width:575px){
     .sideBar{flex-direction: row;flex-wrap: wrap;column-gap: 16px;}
     .sideBar > aside.contact, .sideBar > aside.slider{width: calc(50% - 8px);}
     .sideBar > aside.slider:has(.testi){width: 100%;}
     .sideBar > aside.links ul{flex-direction: row;flex-wrap: wrap;}
-    .sideBar > aside.links ul > li:nth-last-child(2):nth-child(odd) {border-bottom: none;}
     .sideBar > aside.ads{padding-top: 400px;}
 }
