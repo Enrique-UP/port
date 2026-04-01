@@ -6,7 +6,6 @@ import Header from './modules/common/Header';
 import Footer from './modules/common/Footer';
 
 import Home from './modules/home/Home';
-import About from './modules/About';
 import LifeStyle from './modules/lifeStyle/LifeStyle';
 import Reviews from './modules/Reviews';
 import Contact from './modules/contact/Contact';
@@ -15,6 +14,7 @@ import ThankYou from './modules/ThankYou';
 import ScrollTop from './modules/common/ScrollTop';
 import RenderTop from './modules/common/RenderTop';
 import CommonScript from './modules/common/CommonScript';
+import InnerPage from './modules/InnerPage';
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<About />} />
+        <Route path="/inner" element={<InnerPage />} />
         <Route path="/lifestyle" element={<LifeStyle />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />

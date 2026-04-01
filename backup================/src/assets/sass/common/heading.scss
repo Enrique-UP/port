@@ -1,4 +1,4 @@
-hgroup{width: 100%;@extend %fc;margin-bottom:32px;row-gap:12px;text-align:center;text-transform:uppercase;position: relative;padding-bottom:32px;
+hgroup{width: 100%;@extend %fc;margin-bottom:32px;row-gap:12px;text-align:center;position: relative;padding-bottom:32px;
     &::before, &::after{content:"";position: absolute;left:0;right:0;margin-inline: auto;}
     &::before{width: 70px;height: 6px;bottom:8px;background: var(--c1);}
     &::after{width: 0;height: 0;bottom: 0;border-left: 10px solid rgba(0,0,0,0);border-right: 10px solid rgba(0,0,0,0);border-top: 10px solid var(--c1);}

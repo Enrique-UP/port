@@ -82,7 +82,7 @@ export default function Lifestyle() {
         pageText="Dynamic lifestyle gallery with categories"
       />
 
-      <section className="section lifeStyle colors innerPage">
+      <section className="section lifeStyle colors">
         <div className="container">
           <hgroup>
             <h2>Gallery</h2>
