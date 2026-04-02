@@ -189,20 +189,18 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-// .mansoryGrid{display:grid;align-items: start;grid-auto-flow: dense;grid-auto-rows: 4px;row-gap: 0 !important;grid-template-columns: repeat(1, 1fr);grid-column-gap: 8px;
-//     // article{grid-row-end: span var(--num, 100);}
-// }
-.poetry{counter-reset: num;display:grid;grid-template-columns: repeat(2, 1fr);grid-gap: 16px;
+.poetry{counter-reset: num;display:grid;grid-template-columns: repeat(1, 1fr);grid-gap: 16px;
     article{width: 100%;display: flex;border: 1px solid var(--b1);padding:16px;flex-direction:column;row-gap:8px;
         figcaption{width: 100%;@extend %fc;row-gap:8px;height: 100%;justify-content: space-between;
             > ul{width: 100%;@extend %fc;color:var(--f2);padding-left:14px;
                 > li{text-transform: capitalize;
                     &::marker{color: var(--f1);}
                     &:has(> span){list-style: none;font-weight: bold;color: var(--f1);}
+                    > span{display: flex;padding-block: 8px;}
                 }
             }
-            > b{color:var(--f1);display:flex;align-items: center;font-style: italic;
-                &::after{counter-increment: num;content: counter(num);background: var(--g1);color: var(--f2);height: 24px;margin-left: auto;text-align: center;line-height: 24px;padding-inline: 4px;border: 1px solid var(--b1);font-weight: normal;font-size: 14px;font-style: normal;}
+            > b{color:var(--unique);display:flex;align-items: center;font-style: italic;
+                &::after{counter-increment: num;content: counter(num);background: var(--unique);color: #fff;height: 24px;margin-left: auto;text-align: center;line-height: 24px;padding-inline: 4px;font-weight: normal;font-size: 14px;font-style: normal;}
             }
         }
     }

@@ -7,20 +7,22 @@ import PoetryData from "./PoetryData";
 
 const PoetryTag = ({ word, poet }) => {
   const wordsArray = word.split(",");
+
   return (
     <article>
       <figcaption>
         <ul>
-        {wordsArray.map((item, index) => (
-          <li key={index}>
-            {item.trim()}
-            {index < wordsArray.length - 1 && (
-              <>
-                ,<br />
-              </>
-            )}
-          </li>
-        ))}
+          {wordsArray.map((item, index) => {
+            const text = item.trim(); // ✅ important
+            const isOr = text.toLowerCase() === "or";
+
+            return (
+              <li key={index}>
+                {isOr ? <span>Or</span> : text}
+                {!isOr && index < wordsArray.length - 1 && ","}
+              </li>
+            );
+          })}
         </ul>
         <b>{poet}</b>
       </figcaption>
@@ -47,7 +49,7 @@ export default function Poetry() {
             <LeftSidebar />
 
             <div className="area-2">
-              <div className="poetry">
+              <div className="poetry colors">
                 {
                   PoetryData.map((val, ind) =>
                     val.words.map((word, i) => (

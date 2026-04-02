@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-function CommonScript() {
+export default function CommonScript() {
   const location = useLocation();
   useEffect(() => {
 
@@ -14,7 +14,7 @@ function CommonScript() {
       let i = 1;
       items.forEach((li) => {
         if (i > totalClasses) i = 1;
-        li.style.setProperty("--f2", `var(--cb${i})`);
+        li.style.setProperty("--unique", `var(--cb${i})`);
         i++;
       });
     }
@@ -22,38 +22,7 @@ function CommonScript() {
     /* ==============================
     For masonry grid
     ============================== */
-    // {
-    //   function mansoryGrid() {
-    //     const container = document.querySelector(".mansoryGrid");
-    //     if (!container) return;
-
-    //     const rowHeight = parseInt(
-    //       window.getComputedStyle(container).gridAutoRows
-    //     );
-
-    //     const articles = container.querySelectorAll("article");
-
-    //     articles.forEach(article => {
-    //       const figcaption = article.querySelector("figcaption");
-    //       if (!figcaption) return;
-
-    //       const resizeObserver = new ResizeObserver(() => {
-    //         const height = figcaption.offsetHeight;
-
-    //         const span = Math.ceil(height / rowHeight);
-    //         article.style.gridRowEnd = `span ${span}`;
-    //       });
-
-    //       resizeObserver.observe(figcaption);
-    //     });
-    //   }
-
-    //   // Run after everything loads (important)
-    //   window.addEventListener("load", () => {
-    //     setTimeout(mansoryGrid, 100); // allow rendering
-    //   });
-    // }
-
+    // {}
 
     {
       // 1. Single Element Resize (High Performance for 1000+ items)
@@ -73,9 +42,9 @@ function CommonScript() {
         }
       }
       function resizeAllArticles() {
-          document.querySelectorAll(".partition article").forEach(article => {
-            resizeSingleArticle(article);
-          });
+        document.querySelectorAll(".partition article").forEach(article => {
+          resizeSingleArticle(article);
+        });
       }
       if (!!window.IntersectionObserver) {
         let observer = new IntersectionObserver((entries, observer) => {
@@ -111,5 +80,3 @@ function CommonScript() {
   }, [location]);
   return null;
 }
-
-export default CommonScript;
