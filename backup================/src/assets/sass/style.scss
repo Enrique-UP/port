@@ -239,16 +239,26 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.port{width: 100%;@extend %fc;row-gap:32px;
-    .hd{font-weight: bold;padding-left:32px;}
+.port{width: 100%;@extend %fc;row-gap:80px;
+    .hd{font-weight: bold;padding-left:56px;position: relative;font-size: 32px;line-height: 1.1;
+        &::before, &::after{position: absolute;}
+        &::before{content:"";width: 0;height: 0;border-block: 24px solid transparent;border-left: 42px solid var(--cb1);top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);left:0;}
+        &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 20px;top:7px;left:6px;line-height: 1;}
+    }
     .portArea{width: 100%;@extend %fc;row-gap: 16px;border-left:1px solid var(--b1);}
-    article{display: flex;column-gap: 32px;border-bottom:1px solid var(--b1);align-items: flex-start;padding-bottom: 16px;padding-left: 32px;
+    article{display: flex;column-gap: 32px;border-bottom:1px solid var(--b1);align-items: flex-start;padding-bottom: 16px;padding-left: 32px;row-gap:16px;
         &:first-of-type{border-top:1px solid var(--b1);padding-top: 16px;}
     }
-    figcaption{width: 100%;@extend %fc;row-gap:12px;
-        > a{align-self: flex-start;}
+    figcaption{width: 100%;@extend %fc;row-gap:8px;
+        > span{color:var(--f2);position: relative;
+            &::before{width: 10px;height: 10px;content:"";position: absolute;left:-38px;background: var(--cb1);border-radius: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);}
+        }
+        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;}
+        > a.link{align-self: flex-start;color:var(--cb1);}
+        > p{color: var(--f4);}
+
     }
-    figure{width: 300px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;}
+    figure{width: 300px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;max-width: 100%;}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {

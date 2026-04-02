@@ -8,6 +8,7 @@
 }
 @media (min-width:1200px) and (max-width:1399px){
     header .fw {grid-template-columns: 20% 60% 20%;}
+    .port figure {width: 250px;}
 }
 
 
@@ -18,6 +19,8 @@
 }
 @media (min-width:992px) and (max-width:1199px){
     .form .field textarea {height:147px;min-height: 147px;}
+    .port article {flex-direction: column;}
+    .port figure{width: 100%;}
 }
 
 
@@ -28,7 +31,7 @@
     .banner.homeBanner{margin-bottom: 56px;}
 }
 @media (min-width:576px) and (max-width:991px){
-    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 36px;}
+    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 48px;}
     hgroup p{font-size: 20px;}
 }
 
@@ -90,13 +93,16 @@
         .head2 {font-size: 30px;}
     }
     main > .banner .hd {font-size: 48px;}
+    .port figure {width: 220px;}
 }
 
 
 
 
 @media (max-width:575px){
-    hgroup {margin-bottom: 24px;}
+    hgroup{margin-bottom: 24px;row-gap: 4px;}
+    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6{font-size: 40px;}
+    hgroup p{font-size: 18px;}
     
     main > .banner .cnt {row-gap: 8px;}
     main > .banner .hd{font-size: 40px;}
@@ -134,10 +140,22 @@
         .outlineBox .icon{font-size: 14px;}
         ul{flex-direction: column;}
     }
+
+    .port .hd{font-size: 24px;}
+    .port .hd::after{top:3px;}
+    .port article {padding-left: 16px;}
+    .port figcaption > span::before{left: -21px;}
+    
+}
+@media (min-width:461px) and (max-width:575px){
+    .port figure {width: 180px;}
+    .port article {column-gap: 12px;}
 }
 @media (max-width:460px){
     .contactPage .contactBox > li > a{column-gap: 12px;}
     .contactPage .contactBox > li .icon{width: 60px;height: 60px;}
     .contactPage .contactBox > li b{font-size: 18px;}
     .contactPage .contactBox > li span{font-size: 14px;}
+
+    .port article {flex-direction: column;}
 }
