@@ -10,8 +10,8 @@ export default function Header() {
             <Link to="/" className="logo"><img src={logo} /></Link>
             <nav>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/inner">Inner Page</NavLink>
-              <NavLink to="/lifestyle">Life Style</NavLink>
+              <NavLink to="/portfolio">Portfolio</NavLink>
+              <NavLink to="/lifestyle">Gallery</NavLink>
               <NavLink to="/contactus">Contact Us</NavLink>
             </nav>
           </div>

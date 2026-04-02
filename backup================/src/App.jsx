@@ -7,6 +7,7 @@ import Footer from './modules/common/Footer';
 
 import Home from './modules/home/Home';
 import LifeStyle from './modules/lifeStyle/LifeStyle';
+import Portfolio from './modules/portfolio/Portfolio';
 import Reviews from './modules/Reviews';
 import Contact from './modules/contact/Contact';
 import InnerPage from './modules/InnerPage';
@@ -16,6 +17,7 @@ import ThankYou from './modules/ThankYou';
 import ScrollTop from './modules/common/ScrollTop';
 import RenderTop from './modules/common/RenderTop';
 import CommonScript from './modules/common/CommonScript';
+
 
 
 export default function App() {
@@ -28,6 +30,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/inner" element={<InnerPage />} />
         <Route path="/lifestyle" element={<LifeStyle />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/poetry" element={<Poetry />} />

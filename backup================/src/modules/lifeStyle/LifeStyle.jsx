@@ -114,7 +114,7 @@ export default function Lifestyle() {
                   ))
                 ).reverse()}
               </div>
-            </div>
+            </div>{/* area-2 */}
             
             <RightSidebar />
           </div>

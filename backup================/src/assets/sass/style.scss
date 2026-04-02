@@ -227,6 +227,29 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
+.typeWriter{width: 100%;display:flex;justify-content:center;
+    &.one{color:var(--cb1);}
+    &.two{color:var(--cb2);}
+    &.three{color:var(--cb3);}
+    &.four{color:var(--cb4);}
+    .cursor {margin-left: 2px;animation: blink 1s infinite;}
+    @keyframes blink {
+        0%, 50%, 100% {opacity: 1;}
+        25%, 75% {opacity: 0;}
+    }
+}
+
+.port{width: 100%;@extend %fc;row-gap:32px;
+    .hd{font-weight: bold;padding-left:32px;}
+    .portArea{width: 100%;@extend %fc;row-gap: 16px;border-left:1px solid var(--b1);}
+    article{display: flex;column-gap: 32px;border-bottom:1px solid var(--b1);align-items: flex-start;padding-bottom: 16px;padding-left: 32px;
+        &:first-of-type{border-top:1px solid var(--b1);padding-top: 16px;}
+    }
+    figcaption{width: 100%;@extend %fc;row-gap:12px;
+        > a{align-self: flex-start;}
+    }
+    figure{width: 250px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;}
+}
 
 // main:has(> .thankYou) > :not(.thankYou) {
 //   display: none;

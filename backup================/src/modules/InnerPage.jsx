@@ -25,7 +25,7 @@ export default function InnerPage() {
 
             <div className="area-2">
               Lorem
-            </div>
+            </div>{/* area-2 */}
 
             <RightSidebar />
           </div>

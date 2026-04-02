@@ -128,7 +128,7 @@ export default function Reviews() {
                   <a href={Global.numTel} target="_blank">Hire Us</a>
                 </div>
               </div>
-            </div>
+            </div>{/* area-2 */}
 
             <RightSidebar />
           </div>

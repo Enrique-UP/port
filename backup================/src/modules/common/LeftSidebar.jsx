@@ -53,7 +53,7 @@ export default function LeftSidebar() {
               </li>
               <li>
                 <i className="icon">&#xa091;</i>
-                <span>Fond of Food</span>
+                <span>Food Lover</span>
               </li>
               <li>
                 <i className="icon">&#xa060;</i>
