@@ -20,44 +20,38 @@ function CommonScript() {
     }
 
     /* ==============================
-    For image lazy load
-    ============================== */ 
-    // {
-    //   if (!!window.IntersectionObserver) {
-    //     const observer = new IntersectionObserver((entries, observer) => {
-    //       entries.forEach(entry => {
-    //         if (entry.isIntersecting) {
-    //           const img = entry.target;
-    //           const realSrc = img.getAttribute("data-src");
-    //           if (realSrc) img.src = realSrc;
-    //           img.removeAttribute("data-src");
-    //           observer.unobserve(img);
-    //         }
-    //       });
-    //     }, { rootMargin: "0px 0px 100px 0px" });
-    //     document.querySelectorAll('img[data-src]').forEach(img => { 
-    //       observer.observe(img);
-    //     });
-    //   }
-    //   else console.warn("This API is not supported by your browser, so you can't see the effect.");
-    // }
-
-
-    /* ==============================
     For masonry grid
     ============================== */
     // {
-    //   function resizeImage(){
-    //     document.querySelectorAll(".partition article").forEach(function(e){
-    //       const h = e.querySelector("figure").getBoundingClientRect().height;
-    //       const style = window.getComputedStyle(e);
-    //       const marginBottom = parseFloat(style.marginBottom);
-    //       e.style.setProperty("--num", parseInt(h + marginBottom));
+    //   function mansoryGrid() {
+    //     const container = document.querySelector(".mansoryGrid");
+    //     if (!container) return;
+
+    //     const rowHeight = parseInt(
+    //       window.getComputedStyle(container).gridAutoRows
+    //     );
+
+    //     const articles = container.querySelectorAll("article");
+
+    //     articles.forEach(article => {
+    //       const figcaption = article.querySelector("figcaption");
+    //       if (!figcaption) return;
+
+    //       const resizeObserver = new ResizeObserver(() => {
+    //         const height = figcaption.offsetHeight;
+
+    //         const span = Math.ceil(height / rowHeight);
+    //         article.style.gridRowEnd = `span ${span}`;
+    //       });
+
+    //       resizeObserver.observe(figcaption);
     //     });
     //   }
-    //   window.addEventListener("load", resizeImage);
-    //   window.addEventListener("resize", resizeImage);
-    //   document.querySelectorAll(".partition img").forEach(img => img.addEventListener("load", resizeImage));
+
+    //   // Run after everything loads (important)
+    //   window.addEventListener("load", () => {
+    //     setTimeout(mansoryGrid, 100); // allow rendering
+    //   });
     // }
 
 

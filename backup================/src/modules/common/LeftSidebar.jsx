@@ -32,35 +32,35 @@ export default function LeftSidebar() {
             <p className="hd">Interests</p>
             <ul>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa066;</i>
                 <span>Listening Music</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa075;</i>
                 <span>Watching Movies</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
-                <span>Viewing Nature Scenes</span>
+                <i className="icon">&#xa051;</i>
+                <span>Nature Sightseeing</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa089;</i>
                 <span>Games & Sports</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa090;</i>
                 <span>Traveling</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa091;</i>
                 <span>Fond of Food</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa060;</i>
                 <span>Biking</span>
               </li>
               <li>
-                <i className="icon">&#xa008;</i>
+                <i className="icon">&#xa061;</i>
                 <span>Car Driving</span>
               </li>
             </ul>

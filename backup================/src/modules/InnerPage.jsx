@@ -14,7 +14,7 @@ export default function InnerPage() {
         pageName="Inner Page"
         pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
       />
-      <section className="section lifeStyle colors">
+      <section className="section">
         <div className="container">
           <hgroup>
             <h2>Inner Page</h2>

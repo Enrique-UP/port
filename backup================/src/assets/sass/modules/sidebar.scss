@@ -18,7 +18,7 @@
         }
         &.interests{@extend %fc;
             > ul{background: var(--g1);padding:16px;margin:0;text-align:center;display: grid;grid-template-columns: repeat(2, 1fr);gap:4px;
-                > li{border:1px solid var(--b1);padding: 8px 8px;line-height: 1.3;row-gap: 4px;background: #fff;@extend %fc;}
+                > li{border:1px solid var(--b1);padding: 10px 8px;line-height: 1.3;row-gap: 4px;background: #fff;@extend %fc;}
                 .icon{color:var(--cb1);font-size: 18px;}
                 span{font-size: 14px;}
             }
