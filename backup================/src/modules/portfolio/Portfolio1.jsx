@@ -10,7 +10,7 @@ const Temp = ({ date, site, link, about, img }) => {
     <article>
       <figcaption>
         <span>{date}</span>
-        <a href={link} target="_blank" rel="noopener noreferrer">{site}</a>
+        <a href={link} target="_blank">{site}</a>
         <p>{about}</p>
       </figcaption>
       <figure>

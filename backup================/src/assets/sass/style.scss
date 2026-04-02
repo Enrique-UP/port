@@ -248,7 +248,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     figcaption{width: 100%;@extend %fc;row-gap:12px;
         > a{align-self: flex-start;}
     }
-    figure{width: 250px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;}
+    figure{width: 300px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {
