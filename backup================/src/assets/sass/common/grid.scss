@@ -27,11 +27,10 @@ body{font-size: 16px;line-height: 1.7;}
 img{max-width: 100%;}
 */
 :has(> img[class*="img"]){display:flex;}
-img{max-width: 100%;
-    &.imgs{align-items: flex-start;}
-    &.imgc{align-self: center;}
-    &.imge{align-self: flex-end;}
-}
+:has(> img[class*="imgs"]){align-items: flex-start;}
+:has(> img[class*="imgc"]){align-items: center;}
+:has(> img[class*="imge"]){align-items: flex-end;}
+img{max-width: 100%;}
 
 :has(> .fw){display: flex;flex-wrap: wrap;}
 .fw{width: 100%;}

@@ -77,7 +77,6 @@
 
     main > .banner .hd, main > .banner .txt{justify-content: center;}
     main > .banner .hd, main > .banner .txt{text-align: center;}
-    .banner.homeBanner{margin-bottom: 56px;} 
 
     .fixNum{font-size: 14px;display: flex;}
 
@@ -86,6 +85,7 @@
 
     main > .innerPage .order {row-gap: 16px;}
     .poetry {row-gap: 8px !important;}
+    main > .banner.homeBanner .container {margin-bottom: 32px;}
 }
 @media (min-width:576px) and (max-width:767px){
     .list>li::before, .unlist>li::before{top:3px;}
@@ -94,6 +94,7 @@
     }
     main > .banner .hd {font-size: 48px;}
     .port figure {width: 220px;}
+    
 }
 
 
@@ -107,7 +108,6 @@
     main > .banner .cnt {row-gap: 8px;}
     main > .banner .hd{font-size: 40px;}
     main > .banner .txt{font-size: 18px;}
-    main > .banner.homeBanner .container {margin-bottom: 50px;}
     
     .list>li::before, .unlist>li::before{top:4px;}
 
