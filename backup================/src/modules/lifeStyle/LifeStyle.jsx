@@ -7,8 +7,6 @@ import { useState } from "react";
 
 import LifeStyleData from "./LifeStyleData";
 
-// import img from "../../assets/images/lifeStyle/home1.jpg";
-
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";

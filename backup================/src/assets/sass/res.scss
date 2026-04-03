@@ -142,7 +142,8 @@
     }
 
     .port .hd{font-size: 24px;}
-    .port .hd::after{top:3px;}
+    .port .hd::before{border-block:25px solid transparent;}
+    .port .hd::after{top:13px;left:6px;}
     .port article {padding-left: 16px;}
     .port figcaption > span::before{left: -21px;}
     
@@ -158,6 +159,7 @@
     .contactPage .contactBox > li span{font-size: 14px;}
 }
 @media (max-width:440px){
-    .port article {flex-direction: column;}
+    .port .portArea {border-right: 1px solid var(--b1);}
+    .port article {flex-direction: column;padding-bottom: 40px;padding-right: 16px;}
     .port figure {width: 100%;}
 }
