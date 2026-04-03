@@ -9,6 +9,7 @@
 @media (min-width:1200px) and (max-width:1399px){
     header .fw {grid-template-columns: 20% 60% 20%;}
     .port figure {width: 250px;}
+    .port article {padding-bottom: 32px;}
 }
 
 
@@ -21,6 +22,7 @@
     .form .field textarea {height:147px;min-height: 147px;}
     .port article {flex-direction: column;}
     .port figure{width: 100%;}
+    .port article {padding-bottom: 32px;}
 }
 
 
@@ -94,7 +96,7 @@
     }
     main > .banner .hd {font-size: 48px;}
     .port figure {width: 220px;}
-    
+    .port article {padding-bottom: 32px;}
 }
 
 
@@ -150,7 +152,7 @@
 }
 @media (min-width:441px) and (max-width:575px){
     .port figure {width: 180px;padding: 6px;}
-    .port article {column-gap: 12px;}
+    .port article {column-gap: 12px;padding-bottom: 32px;}
 }
 @media (max-width:460px){
     .contactPage .contactBox > li > a{column-gap: 12px;}
@@ -160,6 +162,6 @@
 }
 @media (max-width:440px){
     .port .portArea {border-right: 1px solid var(--b1);}
-    .port article {flex-direction: column;padding-bottom: 40px;padding-right: 16px;}
+    .port article {flex-direction: column;padding-bottom: 32px;padding-right: 16px;}
     .port figure {width: 100%;}
 }

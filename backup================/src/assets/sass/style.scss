@@ -248,7 +248,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     .portArea{width: 100%;@extend %fc;row-gap: 16px;border-left:1px solid var(--b1);}
     article{display: flex;column-gap: 32px;border-bottom:1px solid var(--b1);padding-bottom: 16px;padding-left: 32px;row-gap:16px;position: relative;
         &:first-of-type{border-top:1px solid var(--b1);padding-top: 16px;}
-        &::after{counter-increment: count;content: counter(count);background: var(--g1);color: var(--f4);border: 1px solid var(--b1);height: 24px;line-height: 24px;padding-inline: 4px;font-size: 14px;position: absolute;bottom: -1px;left: 0;right: 0;margin-inline: auto;display: flex;width: fit-content;text-align: center;justify-content: center;}
+        &::after{counter-increment: count;content: "Project No.:- " counter(count);background: var(--g1);color: var(--f4);border: 1px solid var(--b1);height: 24px;line-height: 24px;padding-inline: 4px;font-size: 14px;position: absolute;bottom: -1px;left: 0;right: 0;margin-inline: auto;display: flex;width: fit-content;text-align: center;justify-content: center;}
     }
     figcaption{width: 100%;@extend %fc;row-gap:8px;
         > span{color:var(--f2);position: relative;
