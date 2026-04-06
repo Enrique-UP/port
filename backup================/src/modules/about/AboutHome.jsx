@@ -3,9 +3,10 @@ import { TypeWriter } from "../typeWriter/TypeWriter";
 import img1 from "../../assets/images/lifeStyle/forest/2.jpg";
 import img2 from "../../assets/images/lifeStyle/forest/3.jpg";
 import img3 from "../../assets/images/lifeStyle/forest/52.jpg";
-import img4 from "../../assets/images/lifeStyle/forest/2.jpg";
+
 import { Global } from "../common/Global";
 import { Link } from "react-router-dom";
+import CounterNum from "./CounterNum";
 
 const words1 = [
   { text: "(India)", className: "one" },
@@ -66,107 +67,105 @@ export default function AboutHome() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
               </hgroup>
             </div>
-            <div className="col-md-6 mobSpace">
-              <div className="row">
-                <div className="col-12">
-                  <img className="one1" src={img1} alt="" />
-                </div>
-                <div className="col-6">
-                  <img className="img2" src={img2} alt="" />
-                </div>
-                <div className="col-6">
-                  <img className="one2" src={img3} alt="" />
-                </div>
-                <div className="col-12">
-                  <img className="one1" src={img4} alt="" />
-                </div>
-              </div>
-            </div>{/* cols */}
-            <div className="col-md-6">
+            <div className="col-12 space">
               <div className="fw">
-                <p className="int">Hello!</p>
-                <p className="int">P Lm Loremm Ipum,</p>
-                <p className="post"><TypeWriter words={words1} /></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia necessitatibus esse! Asperiores dolorum veritatis quam, praesentium incidunt excepturi neque perferendis totam, natus libero corporis sed aut temporibus, harum explicabo unde minus doloribus. Maxime totam distinctio aspernatur recusandae dolor fugit excepturi at, esse tenetur magni eos consequuntur ad iure optio.</p>
+                <ul className="images">
+                  <li><img className="img1" src={img1} alt="" /></li>
+                  <li><img className="img1" src={img2} alt="" /></li>
+                  <li><img className="img2" src={img3} alt="" /></li>
+                </ul>
+              </div>{/* fw */}
+              <div className="fw">
+                <div className="cnt">
+                  <p className="int">Hello!</p>
+                  <p className="int">P Lm Loremm Ipum,</p>
+                  <p className="post"><TypeWriter words={words1} /></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia necessitatibus esse! Asperiores dolorum veritatis quam, praesentium incidunt excepturi neque perferendis totam, natus libero corporis sed aut temporibus, harum explicabo unde minus doloribus. Maxime totam distinctio aspernatur recusandae dolor fugit excepturi at, esse tenetur magni eos consequuntur ad iure optio.</p>
+                </div>{/* cnt */}
+              
                 <div className="cnt">
                   <p className="hd">Heading</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                   <ul className="lists one">
                     <ListContent />
                   </ul>
-                </div>
-              </div>
-            </div>{/* cols */}
-            <div className="col-12">
-              <ul className="lists two">
-                <ListContent />
-              </ul>
-            </div>{/* cols */}
+                  <ul className="lists two">
+                    <ListContent />
+                  </ul>
+                </div>{/* cnt */}
+              </div>{/* fw */}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section about">
+        <div className="container">
+          <div className="row">
             <div className="col-12">
               <div className="cnt">
                 <p className="hd">Heading</p>
                 <div className="skillBar colors one">
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={80} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={85} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={60} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={65} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={70} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={75} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={76} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={80} suffix="%" />
+                    <i></i>
                   </article>
                 </div>
-              </div>
+              </div>{/* cnt */}
             </div>{/* cols */}
             <div className="col-12">
               <div className="cnt">
-                <p className="hd">Heading</p>
+                <p className="hd">Headingsss</p>
                 <div className="skillBar colors two">
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={70} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={65} suffix="%" />
+                    <i></i>
                   </article>
                   <article>
                     <b>Lorem</b>
-                    <i>00</i>
-                    <span></span>
+                    <CounterNum target={50} suffix="%" />
+                    <i></i>
                   </article>
                 </div>
               </div>
@@ -189,22 +188,22 @@ export default function AboutHome() {
                 <li>
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
-                  <span>0000</span>
+                  <CounterNum target={1000} suffix="+" />
                 </li>
                 <li>
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
-                  <span>0000</span>
+                  <CounterNum target={500} suffix="+" />
                 </li>
                 <li>
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
-                  <span>0000</span>
+                  <CounterNum target={10000} suffix="+" />
                 </li>
                 <li>
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
-                  <span>0000</span>
+                  <CounterNum target={20} suffix="+" />
                 </li>
               </ul>
             </div>{/* cols */}
