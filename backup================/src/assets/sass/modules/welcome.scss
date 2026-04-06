@@ -2,7 +2,9 @@
     .fw{position: relative;@extend %fc;row-gap:24px;
         &::before{width: 0;height: 0;position: absolute;left:0;@extend %cnt;top: -216px;border-inline: 250px solid transparent;border-bottom: 150px solid var(--c2);}
     }
-    .head{font-size: 100px;@extend %fc;line-height: 1.2;font-family: Bold;}
+    .head{font-size: 100px;@extend %fc;line-height: 1.2;font-family: Black;
+        > b{font-weight: normal;font-family: inherit;}
+    }
     .text{font-size: 22px;}
 }
 
