@@ -11,6 +11,7 @@
 @import "./modules/sidebar.scss";
 
 @import "./modules/welcome.scss";
+@import "./modules/about.scss";
 @import "./modules/lifestyle.scss";
 @import "./modules/contact.scss";
 
@@ -43,6 +44,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .hd{font-size: 72px;font-family: Black;line-height: 1.1;}
         .txt{font-size: 24px;}
         .img{width: 100%;border:10px solid var(--f1);object-fit: cover;}
+        .btns{margin-top: 8px;}
     }
     > .b1{background-color: var(--g1);}
     > .b2{background-color: var(--g2);}
@@ -83,8 +85,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;color: var(--f2);
-    > b{font-size: 24px;font-family: Bold;line-height: 1.2;color: var(--f1);}
-    > span{color:var(--f2);}
+    > b{font-size: 32px;font-family: Bold;line-height: 1.2;color: var(--f1);}
+    > span{color:var(--f2);font-size: 18px;}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;row-gap:12px;
@@ -187,7 +189,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .mb0{margin-bottom: 0 !important;}
 
-.box1{background: var(--cb10);padding:32px;color:white;row-gap:10px;@extend %fc;width: 100%;
+.box1{background: var(--c1);padding:32px;color:white;row-gap:10px;@extend %fc;width: 100%;
     p{margin-bottom: 0;}
     .head2{font-family: Bold;font-size: 36px;line-height: 1;}
     .texts{font-size: 18px;text-align:center;
@@ -233,12 +235,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.typeWriter{width: 100%;display:flex;justify-content:center;
-    &.one{color:var(--cb1);}
-    &.two{color:var(--cb2);}
-    &.three{color:var(--cb3);}
-    &.four{color:var(--cb4);}
-    .cursor {margin-left: 2px;animation: blink 1s infinite;}
+.typeWriter{width: 100%;display:flex;
+    .cursor {animation: blink 1s infinite;}
     @keyframes blink {
         0%, 50%, 100% {opacity: 1;}
         25%, 75% {opacity: 0;}

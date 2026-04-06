@@ -1,4 +1,4 @@
-.welcome{padding-block: 56px;background:var(--c2);color:#fff;
+.welcome{padding-block: 56px;background:var(--c2);color:#fff;position: relative;z-index: -1;
     .fw{position: relative;@extend %fc;row-gap:24px;
         &::before{width: 0;height: 0;position: absolute;left:0;@extend %cnt;top: -216px;border-inline: 250px solid transparent;border-bottom: 150px solid var(--c2);}
     }
@@ -21,6 +21,6 @@
     .welcome{padding-block: 44px;}
     .welcome .fw::before {border-inline-width: 120px;border-bottom-width: 80px;top:-134px;}
     .welcome .fw {row-gap: 16px;}
-    .welcome .head {font-size: 48px;white-space: nowrap;}
+    .welcome .head {font-size: 46px;white-space: nowrap;}
     .welcome .text {font-size: 16px;text-align: justify;}
 }

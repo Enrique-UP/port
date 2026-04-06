@@ -21,13 +21,13 @@ import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
 const LifeStyleAllData = LifeStyleData.map((folder) => {
-  if (folder.imgFn !== "others") {
+  if (folder.imgFdr !== "others") {
     return {
-      category: folder.imgFn,
+      category: folder.imgFdr,
       images: Array.from({ length: folder.items }, (_, i) => ({
-        // src: require(`../../assets/images/lifeStyle/${folder.imgFn}/${i + 1}.jpg`),
+        // src: require(`../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`),
         src: new URL(
-          `../../assets/images/lifeStyle/${folder.imgFn}/${i + 1}.jpg`,
+          `../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
           import.meta.url
         ).href,
         place: folder.place,
@@ -37,7 +37,7 @@ const LifeStyleAllData = LifeStyleData.map((folder) => {
   }
 
   return {
-    category: folder.imgFn,
+    category: folder.imgFdr,
     images: folder.images.map((img, i) => ({
       // src: require(`../../assets/images/lifeStyle/home${i + 1}.jpg`),
       src: new URL(

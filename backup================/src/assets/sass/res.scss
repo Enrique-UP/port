@@ -108,7 +108,7 @@
     hgroup p{font-size: 18px;}
     
     main > .banner .cnt {row-gap: 8px;}
-    main > .banner .hd{font-size: 40px;}
+    main > .banner .hd{font-size: 50px;}
     main > .banner .txt{font-size: 18px;}
     
     .list>li::before, .unlist>li::before{top:4px;}
@@ -149,6 +149,8 @@
     .port article {padding-left: 16px;}
     .port figcaption > span::before{left: -27px;width: 22px;height: 22px;font-size: 12px;border-radius: 0;}
     .port .hd{padding-left: 64px;}    
+
+    .about img {border-width: 4px;}
 }
 @media (min-width:441px) and (max-width:575px){
     .port figure {width: 180px;padding: 6px;}
