@@ -87,6 +87,7 @@
     main > .innerPage .order {row-gap: 16px;}
     .poetry {row-gap: 8px !important;}
     main > .banner.homeBanner .container {margin-bottom: 32px;}
+    .port {row-gap: 56px;}
 }
 @media (min-width:576px) and (max-width:767px){
     .list>li::before, .unlist>li::before{top:3px;}
@@ -147,7 +148,7 @@
     .port .hd::after{top:13px;left:6px;}
     .port article {padding-left: 16px;}
     .port figcaption > span::before{left: -27px;width: 22px;height: 22px;font-size: 12px;border-radius: 0;}
-    
+    .port .hd{padding-left: 64px;}    
 }
 @media (min-width:441px) and (max-width:575px){
     .port figure {width: 180px;padding: 6px;}

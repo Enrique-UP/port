@@ -1,4 +1,5 @@
-@import "./common/fonts.scss";
+@import "./common/fontFamily.scss";
+@import "./common/fontIcons.scss";
 @import "./common/variables.scss";
 @import "./common/heading.scss";
 @import "./common/buttons.scss";
@@ -16,13 +17,14 @@
 
 // html {scroll-behavior: smooth;}
 body{
-    // font-family: Arial, Helvetica, sans-serif;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Regular', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+               'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
 }
 
 a, button{@extend %trans;text-decoration: none;}
-b, strong{font-weight: bold;}
+b, strong{font-family: Bold;}
 img{@extend %userSelect;}
 
 body{color:var(--f1);
@@ -38,8 +40,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     > .banner{
         // background: var(--c2);color:#fff;
         .cnt{width: 100%;@extend %fc;row-gap:16px;}
-        .hd{font-size: 60px;font-weight: bold;line-height: 1.1;}
-        .txt{font-size: 20px;}
+        .hd{font-size: 72px;font-family: Black;line-height: 1.1;}
+        .txt{font-size: 24px;}
         .img{width: 100%;border:10px solid var(--f1);object-fit: cover;}
     }
     > .b1{background-color: var(--g1);}
@@ -81,15 +83,15 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;color: var(--f2);
-    > b{font-size: 24px;font-weight: bold;line-height: 1.2;color: var(--f1);}
+    > b{font-size: 24px;font-family: Bold;line-height: 1.2;color: var(--f1);}
     > span{color:var(--f2);}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;row-gap:12px;
     > li{list-style: none;position: relative;padding-left:28px;
-        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-weight: bold;}
+        &::before{width: 20px;height: 20px;border-radius: 100%;background: var(--c1);position: absolute;top:3px;left:0;color:#fff;font-size: 12px;@extend %center;font-family: Bold;}
         &:not(:last-child){margin-bottom: 12px;}
-        b, strong{font-weight: bold;}
+        b, strong{font-family: Bold;}
         > a{color:inherit;}
     }
 }
@@ -100,13 +102,13 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .content{@extend %fc;width: 100%;
     ul, ol{@extend %fc;}
-    h1, h2, h3, h4, h5, h6 {font-size: 24px;font-weight: bold;line-height: 1.2;margin-bottom: 12px;color:var(--font);
+    h1, h2, h3, h4, h5, h6 {font-size: 24px;font-family: Bold;line-height: 1.2;margin-bottom: 12px;color:var(--font);
         &:not(:first-child) {margin-top: 18px;}
     }
     p, ul, ol {margin-bottom: 12px;}
     i, em {font-style: italic;}
     u {text-decoration: underline;}
-    b, strong {font-weight: bold;}
+    b, strong {font-family: Bold;}
     a:not(.btns > a) {display: inline-block;color: var(--c1) !important;text-decoration: underline;
         &:hover, &:active, &:focus {text-decoration: none;}
     }
@@ -117,7 +119,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .breadcrumbs{padding-block: 12px;background:var(--g1);
     ul{width: 100%;display: flex;flex-wrap: wrap;padding: 0;margin: 0;gap: 4px 11px;
         > li{list-style: none;line-height: 1.1;display:flex;color:var(--f2);
-            > a{color: var(--c2);font-weight: bold;}
+            > a{color: var(--c2);font-family: Bold;}
             &:not(:last-child){position: relative;padding-right: 16px;
                 &::after{font-family: fontello;content:"\a030";position: absolute;right: 0;}
             }
@@ -130,7 +132,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         > *{padding-left: 32px;}
         &:not(:first-child){padding-top: 24px;}
         &:not(:last-child){border-bottom: 1px solid var(--b1);padding-bottom: 24px;}
-        .hd{font-weight: bold;font-size: 18px;position: relative;cursor: pointer;line-height:1.3;
+        .hd{font-family: Bold;font-size: 18px;position: relative;cursor: pointer;line-height:1.3;
             &::before, &::after{position: absolute;content:"";background: var(--f1);}
             &::before{top:9px;left:0;width: 16px;height: 4px;}
             &::after{top:3px;left:6px;width: 4px;height: 16px;@extend %trans;}
@@ -146,9 +148,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .note{text-align: center;display: flex;justify-content: center;font-size: 22px;color: var(--f1);margin-bottom: 16px;line-height: 1.5;}
 
 .form{width: 100%;@extend %fc;row-gap:24px;
-    .hd{width: 100%;font-weight: bold;font-size: 24px;color: var(--c1);text-align: center;}
+    .hd{width: 100%;font-family: Bold;font-size: 24px;color: var(--c1);text-align: center;}
     .field{width: 100%;@extend %fc;row-gap:8px;
-        label{font-weight: bold;}
+        label{font-family: Bold;}
         input, textarea, select{width: 100%;border-radius: 4px;border: 1px solid var(--b1);outline: none;padding: 8px 12px;background: #fff;}
         textarea{resize: vertical;height: 129px;min-height: 129px;}
     }
@@ -174,11 +176,11 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     &.fixed{transform: scale(1);-webkit-transform: scale(1);-moz-transform: scale(1);}
     &:hover{background: var(--c2);}
 }
-.scrollTop{bottom:82px;transform: scale(0);-webkit-transform: scale(0);-moz-transform: scale(0);font-weight: bold;}
+.scrollTop{bottom:82px;transform: scale(0);-webkit-transform: scale(0);-moz-transform: scale(0);font-family: Bold;}
 .callRight{bottom: 122px;}
 
 
-.fixNum{width: 100%;background: var(--c2);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
+.fixNum{width: 100%;background: var(--c2);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-family: Bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
     &:hover, &:active, &:focus{background: var(--f1);}
     & > i{margin-right: 4px;}
 }
@@ -187,7 +189,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 
 .box1{background: var(--cb10);padding:32px;color:white;row-gap:10px;@extend %fc;width: 100%;
     p{margin-bottom: 0;}
-    .head2{font-weight: bold;font-size: 36px;line-height: 1;}
+    .head2{font-family: Bold;font-size: 36px;line-height: 1;}
     .texts{font-size: 18px;text-align:center;
         &.it{font-style: italic;}
     }
@@ -199,12 +201,12 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
             > ul{width: 100%;@extend %fc;color:var(--f2);padding-left:14px;row-gap: 4px;
                 > li{text-transform: capitalize;
                     &::marker{color: var(--f1);}
-                    &:has(> span){list-style: none;font-weight: bold;color: var(--f1);}
+                    &:has(> span){list-style: none;font-family: Bold;color: var(--f1);}
                     > span{display: flex;padding-block: 8px;}
                 }
             }
             > b{color:var(--f1);display:flex;align-items: center;font-style: italic;
-                &::after{counter-increment: num;content: counter(num);background: var(--g1);color: var(--f4);border:1px solid var(--b1);height: 24px;margin-left: auto;text-align: center;line-height: 24px;padding-inline: 4px;font-weight: normal;font-size: 14px;font-style: normal;}
+                &::after{counter-increment: num;content: counter(num);background: var(--g1);color: var(--f4);border:1px solid var(--b1);height: 24px;margin-left: auto;text-align: center;line-height: 24px;padding-inline: 4px;font-weight: normal;font-family:Regular;font-size: 14px;font-style: normal;}
             }
         }
     }
@@ -225,7 +227,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
     .outlineBox{border-color: var(--b1);
         b{display: flex;align-items: center;color:var(--cb1);font-size:30px;line-height: 1.2;
-            ~ i{font-style: normal;font-size: 18px;font-weight: bold;}
+            ~ i{font-style: normal;font-size: 18px;font-family: Bold;}
         }
         .icon{margin-left: auto;color: orange;font-size: 18px;white-space: nowrap;}
     }
@@ -244,7 +246,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .port{width: 100%;@extend %fc;row-gap:80px;counter-reset: count;
-    .hd{position: relative;font-size: 36px;font-weight: bold;line-height: 1.1;padding-block: 12px;padding-left:72px;
+    .hd{position: relative;font-size: 36px;font-family: Black;line-height: 1.1;padding-block: 12px;padding-left:72px;
         &::before, &::after{position: absolute;}
         &::before{content:"";width: 0;height: 0;border-block: 32px solid transparent;border-left: 56px solid var(--cb1);top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);left:-1px;}
         &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 24px;top: 20px;left: 8px;line-height: 1;}
@@ -257,7 +259,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         > span{color:var(--f2);position: relative;
             &::before{width: 24px;height: 24px;position: absolute;left:-44px;background: var(--cb1);border-radius: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);@extend %center;border-radius: 100%;counter-increment: count;content: counter(count);color: #fff;font-size: 14px;}
         }
-        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;}
+        > a.site{align-self: flex-start;color:var(--f1);font-family: Bold;}
         .links{display: flex;
             > *{color:var(--cb1);cursor: pointer;color:var(--cb1);}
             > a{align-self: flex-start;
