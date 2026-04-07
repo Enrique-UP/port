@@ -17,8 +17,8 @@
             a{color:var(--c2);font-family: Bold;display: inline-block;}
         }
         &.interests{@extend %fc;
-            > ul{background: var(--g1);padding:16px;margin:0;gap:4px;@extend %fc;
-                > li{border:1px solid var(--b1);padding: 12px;line-height: 1.1;gap: 8px;background: #fff;display: flex;align-items: center;}
+            > ul{background: var(--g1);padding:16px;margin:0;gap:4px;display:grid;grid-template-columns:repeat(2, 1fr);
+                > li{border:1px solid var(--b1);padding: 12px 4px;line-height: 1.1;gap: 8px;background: #fff;@extend %fc;text-align: center;}
                 .icon{color:var(--cb1);font-size: 18px;
                     > img{display: flex;margin-inline: auto;height: 23px;}
                 }
