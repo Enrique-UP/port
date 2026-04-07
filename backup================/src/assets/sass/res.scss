@@ -30,6 +30,8 @@
 @media (max-width:991px){}
 @media (min-width:768px) and (max-width:991px){
     .banner.homeBanner{margin-bottom: 56px;}
+    main > .banner .hd {font-size: 56px;}
+    main > .banner .txt {font-size: 20px;}
 }
 @media (min-width:576px) and (max-width:991px){
     hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {font-size: 48px;}
