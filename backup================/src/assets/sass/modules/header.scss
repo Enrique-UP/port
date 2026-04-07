@@ -11,6 +11,6 @@ header{@extend %fc;background:var(--f1);padding-block:12px;position: sticky;top:
 }
 
 @media (max-width:575px){
-    header .logo > img {width: 160px;}
-    header nav{white-space: nowrap;flex-wrap: wrap;justify-content: flex-end;gap:0px 16px;line-height: 1.5;}
+    // header .logo > img {width: 160px;}
+    header nav{white-space: nowrap;flex-wrap: wrap;justify-content: flex-end;gap:2px 16px;line-height: 1.5;}
 }
