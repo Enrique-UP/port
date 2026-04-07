@@ -85,8 +85,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;background: var(--g1);@extend %fc;row-gap:8px;color: var(--f2);
-    > b{font-size: 32px;font-family: Bold;line-height: 1.2;color: var(--f1);}
-    > span{color:var(--f2);font-size: 18px;}
+    > b{font-size: 28px;font-family: Bold;line-height: 1.2;color: var(--f1);}
+    > span{color:var(--f2);font-size: 16px;}
 }
 
 .unlist, .list{@extend %fc;margin-bottom:24px;row-gap:12px;

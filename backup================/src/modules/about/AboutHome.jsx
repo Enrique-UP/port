@@ -158,7 +158,7 @@ export default function AboutHome() {
               </div>{/* cnt */}
               <div className="cnt">
                 <p className="hd">Heading</p>
-                <p>Lorem ipsum dolor sit <b>amet consectetur adipisicing</b> elit. Recusandae non quibusdam aliquid! Officia dolorem dolorum nesciunt illo voluptates itaque, iure, ipsam explicabo blanditiis eum maiores eos aut. Deserunt fuga, minima fugiat voluptatum ullam esse repellendus architecto repudiandae. Ratione neque impedit eaque ipsum consequatur, enim in corporis dolore veritatis atque, voluptatem recusandae et? Id illo doloribus, ullam aliquid quis placeat rerum hic voluptates et assumenda explicabo recusandae cupiditate repellendus numquam sed enim. Amet delectus cum nostrum sunt dolores distinctio similique commodi sequi suscipit ut. Exercitationem similique maxime, dicta obcaecati impedit eaque sed dignissimos rerum maiores numquam beatae quam libero tempore ipsam?</p>
+                <p>Lorem ipsum dolor sit <strong>amet consectetur adipisicing</strong> elit. Recusandae non quibusdam aliquid! Officia dolorem dolorum nesciunt illo voluptates itaque, iure, ipsam explicabo blanditiis eum maiores eos aut. Deserunt fuga, minima fugiat voluptatum ullam esse repellendus architecto repudiandae. Ratione neque impedit eaque ipsum consequatur, enim in corporis dolore veritatis atque, voluptatem recusandae et? Id illo doloribus, ullam aliquid quis placeat rerum hic voluptates et assumenda explicabo recusandae cupiditate repellendus numquam sed enim. Amet delectus cum nostrum sunt dolores distinctio similique commodi sequi suscipit ut. Exercitationem similique maxime, dicta obcaecati impedit eaque sed dignissimos rerum maiores numquam beatae quam libero tempore ipsam?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non quibusdam aliquid! Officia dolorem dolorum nesciunt illo voluptates itaque, iure, ipsam explicabo blanditiis eum maiores eos aut. Deserunt fuga, minima fugiat voluptatum ullam esse repellendus architecto repudiandae. Ratione neque impedit eaque ipsum consequatur, enim in corporis dolore veritatis atque, voluptatem recusandae et? Id illo doloribus, ullam aliquid quis placeat rerum hic voluptates et assumenda explicabo recusandae cupiditate repellendus numquam sed enim. Amet delectus cum nostrum sunt dolores distinctio similique commodi sequi suscipit ut. Exercitationem similique maxime, dicta obcaecati impedit eaque sed dignissimos rerum maiores numquam beatae quam libero tempore ipsam?</p>
               </div>{/* cnt */}
               <div className="cnt">
@@ -196,7 +196,7 @@ export default function AboutHome() {
 
               <div className="btns center">
                 <a href={Global.numTel} target="_blank">Hire Us</a>
-                <Link href="/contactus">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
           </div>{/* fw */}
