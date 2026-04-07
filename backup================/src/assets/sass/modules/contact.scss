@@ -56,7 +56,6 @@
     .contactUs .contactBox > li > a{column-gap: 12px;}
     .contactUs .contactBox > li{padding: 12px;}
     .contactUs .follow {grid-template-columns: repeat(2, 1fr);gap: 8px;}
-    .contactUs .contactArea .ca{padding: 12px;}
 }
 @media (max-width:460px){
     .contactUs .contactBox > li .icon{width: 60px;height: 60px;}
