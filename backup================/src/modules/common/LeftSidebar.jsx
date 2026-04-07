@@ -13,7 +13,7 @@ import socialMedia from "../../assets/images/icons/socialMedia.png";
 import socialWork from "../../assets/images/icons/socialWork.png";
 
 
-const InterestTagData = [
+const InterestData = [
     { int : "Fashion & Styling", icon : style },
     { int : "Nature Sightseeing", icon : "&#xa051;" },
     { int : "Photography", icon : "&#xa083;" },
@@ -75,7 +75,7 @@ export default function LeftSidebar() {
             <p className="hd">Interests</p>
             <ul>
               {
-                InterestTagData.map((val, ind) => {
+                InterestData.map((val, ind) => {
                   return <InterestTag key={ind} int={val.int} icon={val.icon} />
                 })
               }

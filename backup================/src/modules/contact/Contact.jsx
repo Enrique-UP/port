@@ -5,6 +5,43 @@ import RightSidebar from "../common/RightSidebar";
 import { Global } from "../common/Global";
 import FormArea from "./FormArea.jsx";
 
+const ContactData = [
+  { link: Global.numTel, icon: "&#xa001;", text: "Phone Number", contact: Global.num },
+  { link: Global.whatsappLink, icon: "&#xa025;", text: "WhatsApp Number", contact: Global.num },
+  { link: `mailto:${Global.email}`, icon: "&#xa004;", text: "Email Address", contact: Global.email },
+  { link: "https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D", icon: "&#xa007;", text: "Address", contact: Global.address }
+];
+const ContactTag = (props) => {
+  return (
+    <li>
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
+        <span><b>{props.text}</b> {props.contact}</span>
+      </a>
+    </li>
+  );
+};
+
+const FollowData = [
+  { link: Global.fb, icon: "&#xa019;", name: "Facebook" },
+  { link: Global.tw, icon: "&#xa020;", name: "Twitter" },
+  { link: Global.lin, icon: "&#xa021;", name: "Linkedin" },
+  { link: Global.skp, icon: "&#xa020;", name: "Skype" },
+  { link: Global.ins, icon: "&#xa023;", name: "Instagram" },
+  { link: Global.pnt, icon: "&#xa024;", name: "Pinterest" }
+];
+const FollowTag = (props) => {
+  return (
+    <li>
+      <a href={props.link} target="_blank">
+        <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
+        <b>Follow us on</b>
+        <span>{props.name}</span>
+      </a>
+    </li>
+  );
+};
+
 export default function Contact() {
   return (
     <>
@@ -38,30 +75,15 @@ export default function Contact() {
                   <p className="hd">Contact Details</p>
                   <div className="ca">
                     <ul className="contactBox">
-                      <li>
-                        <a href={Global.numTel} target="_blank">
-                          <i className="icon">&#xA001;</i>
-                          <span><b>Phone Number</b>{Global.num}</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.whatsappLink} target="_blank">
-                          <i className="icon">&#xA025;</i>
-                          <span><b>WhatsApp Number</b>{Global.num}</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={`mailto:${Global.email}`} target="_blank">
-                          <i className="icon">&#xA004;</i>
-                          <span><b>Email Address</b>{Global.email}</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                          <i className="icon">&#xA007;</i>
-                          <span><b>Address</b>{Global.address}</span>
-                        </a>
-                      </li>
+                      {ContactData.map((val, ind) => (
+                        <ContactTag
+                          key={ind}
+                          link={val.link}
+                          icon={val.icon}
+                          text={val.text}
+                          contact={val.contact}
+                        />
+                      ))}
                     </ul>
                   </div>{/* ca */}
                 </div>{/* contactArea */}
@@ -92,48 +114,14 @@ export default function Contact() {
                   <p className="hd">Follow Us</p>
                   <div className="ca">
                     <ul className="follow">
-                      <li>
-                        <a href={Global.fb} target="_blank">
-                          <i className="icon">&#xA019;</i>
-                          <b>Follow us on</b>
-                          <span>Facebook</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.tw} target="_blank">
-                          <i className="icon">&#xA020;</i>
-                          <b>Follow us on</b>
-                          <span>Twitter</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.lin} target="_blank">
-                          <i className="icon">&#xA021;</i>
-                          <b>Follow us on</b>
-                          <span>Linkedin</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.skp} target="_blank">
-                          <i className="icon">&#xA020;</i>
-                          <b>Follow us on</b>
-                          <span>Skype</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.ins} target="_blank">
-                          <i className="icon">&#xA023;</i>
-                          <b>Follow us on</b>
-                          <span>Instagram</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={Global.pnt} target="_blank">
-                          <i className="icon">&#xA024;</i>
-                          <b>Follow us on</b>
-                          <span>Pinterest</span>
-                        </a>
-                      </li>
+                      {FollowData.map((val, ind) => (
+                        <FollowTag
+                          key={ind}
+                          link={val.link}
+                          icon={val.icon}
+                          name={val.name}
+                        />
+                      ))}
                     </ul>  
                   </div>{/* ca */}
                 </div>{/* contactArea */}
