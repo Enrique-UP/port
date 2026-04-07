@@ -12,6 +12,39 @@ import interiorDesign from "../../assets/images/icons/interiorDesign.png";
 import socialMedia from "../../assets/images/icons/socialMedia.png";
 import socialWork from "../../assets/images/icons/socialWork.png";
 
+
+const InterestTagData = [
+    { int : "Fashion & Styling", icon : style },
+    { int : "Nature Sightseeing", icon : "&#xa051;" },
+    { int : "Photography", icon : "&#xa083;" },
+    { int : "Food Lover", icon : "&#xa091;" },
+    { int : "Road Trips", icon : "&#xa092;" },
+    { int : "Traveling", icon : "&#xa090;" },
+    { int : "Biking", icon : "&#xa060;" },
+    { int : "Car Driving", icon : "&#xa061;" },
+    { int : "Camping", icon : camping },
+    { int : "Swimming", icon : "&#xa094;" },
+    { int : "Hiking/Trekking", icon : hikingTrekking },
+    { int : "Games & Sports", icon : cricket }, 
+    { int : "Fitness & Athletics", icon : fitAth },
+    { int : "Interior Designing", icon : interiorDesign }, 
+    { int : "Listening Music", icon : "&#xa066;" },
+    { int : "Watching Movies", icon : "&#xa075;" }, 
+    { int : "Social Media", icon : socialMedia },
+    { int : "Social Work", icon : socialWork }
+];
+const InterestTag = (props) => {
+  const isImage = props.icon && props.icon.includes("/");
+  return (
+    <li>
+      <i className="icon">
+        {isImage ? (<img src={props.icon} alt="icon" />) : (<span dangerouslySetInnerHTML={{ __html: props.icon }} />)}
+      </i>
+      <span>{props.int}</span>
+    </li>
+  );
+};
+
 export default function LeftSidebar() {
   return (
     <>
@@ -41,79 +74,11 @@ export default function LeftSidebar() {
           <aside className="interests">
             <p className="hd">Interests</p>
             <ul>
-              <li>
-                  <i class="icon"><img src={style} /></i>
-                  <span>Fashion & Styling</span>
-              </li>
-              <li>
-                <i className="icon">&#xa051;</i>
-                <span>Nature Sightseeing</span>
-              </li>
-              <li>
-                  <i class="icon">&#xa083;</i>
-                  <span>Photography</span>
-              </li>
-              <li>
-                <i className="icon">&#xa091;</i>
-                <span>Food Lover</span>
-              </li>
-              
-              <li>
-                  <i class="icon">&#xa092;</i>
-                  <span>Road Trips</span>
-              </li>
-              <li>
-                <i className="icon">&#xa090;</i>
-                <span>Traveling</span>
-              </li>
-              <li>
-                <i className="icon">&#xa060;</i>
-                <span>Biking</span>
-              </li>
-              <li>
-                <i className="icon">&#xa061;</i>
-                <span>Car Driving</span>
-              </li>              
-              <li>
-                <i class="icon"><img src={camping} /></i>
-                <span>Camping</span>
-              </li>
-              <li>
-                  <i class="icon">&#xa094;</i>
-                  <span>Swimming</span>
-              </li>
-              <li>
-                  <i class="icon"><img src={hikingTrekking} /></i>
-                  <span>Hiking / Trekking</span>
-              </li>
-              <li>
-                <i class="icon"><img src={cricket} /></i>
-                <span>Games & Sports</span>
-              </li>
-              <li>
-                  <i class="icon"><img src={fitAth} /></i>
-                  <span>Fitness & Athletics</span>
-              </li>
-              <li>
-                <i class="icon"><img src={interiorDesign} /></i>
-                <span>Interior Designing</span>
-              </li>
-              <li>
-                <i className="icon">&#xa066;</i>
-                <span>Listening Music</span>
-              </li>
-              <li>
-                <i className="icon">&#xa075;</i>
-                <span>Watching Movies</span>
-              </li>
-              <li>
-                  <i class="icon"><img src={socialMedia} /></i>
-                  <span>Social Media</span>
-              </li> 
-              <li>
-                  <i class="icon"><img src={socialWork} /></i>
-                  <span>Social Work</span>
-              </li>
+              {
+                InterestTagData.map((val, ind) => {
+                  return <InterestTag key={ind} int={val.int} icon={val.icon} />
+                })
+              }
             </ul>
           </aside>
           <aside className="ads">

@@ -56,7 +56,7 @@
         }
     }
     .counterBox{width: 100%;display: grid;grid-template-columns: repeat(4, 1fr);grid-gap:32px;
-        > li{list-style: none;background: var(--c2);color:#fff;padding:32px 16px;@extend %fc;text-align: center;}
+        > li{list-style: none;background: var(--cb8);color:#fff;padding:32px 16px;@extend %fc;text-align: center;}
         .icon{font-size: 48px;line-height: 1;margin-bottom: 4px;}
         b{font-size: 24px;}
         span{font-size: 18px;
