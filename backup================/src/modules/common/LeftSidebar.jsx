@@ -79,7 +79,7 @@ export default function LeftSidebar() {
                 <span>Camping</span>
               </li>
               <li>
-                  <i class="icon"><img src={swimming} /></i>
+                  <i class="icon">&#xa094;</i>
                   <span>Swimming</span>
               </li>
               <li>
