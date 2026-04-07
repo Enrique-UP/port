@@ -4,7 +4,7 @@
 
 
 @media (max-width:1399px){
-    .poetry {grid-template-columns: repeat(1, 1fr);}
+    .poetry {grid-template-columns: repeat(1, minmax(0, 1fr));}
 }
 @media (min-width:1200px) and (max-width:1399px){
     header .fw {grid-template-columns: 20% 60% 20%;}

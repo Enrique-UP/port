@@ -4,7 +4,7 @@
             > *{width: 100%;justify-content:center;}
         }
     }
-    .contactBox{width: 100%;display: grid;grid-template-columns: repeat(2, 1fr);gap: 16px;
+    .contactBox{width: 100%;display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 16px;
         > li{width: 100%;display: flex;list-style:none;align-items: center;background: var(--g1);padding: 32px;border:1px solid var(--b1);
             .icon{width: 77px;height: 77px;background: var(--c1);color: #fff;@extend %center;flex-shrink: 0;font-size: 24px;}
             > a{width: 100%;display: flex;align-items: center;column-gap: 24px;cursor: pointer;}
@@ -16,7 +16,7 @@
         .hd{width: 100%;display: flex;font-family: Bold;background: var(--c1);color: #fff;padding: 10px 16px;font-size: 20px;}
         .ca{width: 100%;@extend %fc;border-inline: 1px solid var(--b1);border-bottom: 1px solid var(--b1);padding: 16px;}
     }
-    .follow{width: 100%;display: grid;grid-template-columns: repeat(3, 1fr);padding: 0;margin: 0;gap:16px;
+    .follow{width: 100%;display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));padding: 0;margin: 0;gap:16px;
         > li{list-style: none;@extend %fc;
             > a{width: 100%;@extend %fc;text-align: center;background: var(--cb8);color:#fff;padding: 16px 8px;}
             .icon{font-size: 28px;}
@@ -33,21 +33,21 @@
 }
 
 @media (min-width:992px) and (max-width:1399px){
-    .contactUs .contactBox {grid-template-columns: repeat(1, 1fr);}
+    .contactUs .contactBox {grid-template-columns: repeat(1, minmax(0, 1fr));}
 }
 @media (min-width:992px) and (max-width:1199px){
     .contactUs iframe {height: 450px;}
-    .contactUs .follow {grid-template-columns: repeat(2, 1fr);}
+    .contactUs .follow {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
 @media (max-width:991px){
     .contactUs iframe {height: 400px;}
 }
 @media (min-width:768px) and (max-width:991px){
-    .contactUs .contactBox{grid-template-columns: repeat(2, 1fr);}
+    .contactUs .contactBox{grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
 @media (max-width:767px){
     .contactUs {row-gap: 16px;}
-    .contactUs .contactBox {grid-template-columns: repeat(1, 1fr);gap:16px;}
+    .contactUs .contactBox {grid-template-columns: repeat(1, minmax(0, 1fr));gap:16px;}
 }
 @media (min-width:576px) and (max-width:767px){}
 @media (max-width:575px){
@@ -55,7 +55,7 @@
     .contactUs .form .field {row-gap: 4px;}
     .contactUs .contactBox > li > a{column-gap: 12px;}
     .contactUs .contactBox > li{padding: 12px;}
-    .contactUs .follow {grid-template-columns: repeat(2, 1fr);gap: 8px;}
+    .contactUs .follow {grid-template-columns: repeat(2, minmax(0, 1fr));gap: 8px;}
 }
 @media (max-width:460px){
     .contactUs .contactBox > li .icon{width: 60px;height: 60px;}
