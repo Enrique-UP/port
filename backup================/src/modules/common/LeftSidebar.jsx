@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 import { Global } from "./Global";
 import img1 from "../../assets/images/lifeStyle/home1.jpg";
+import camping from "../../assets/images/icons/camping.png";
+import fitAth from "../../assets/images/icons/fitAth.png";
+
+import style from "../../assets/images/icons/style.png";
+import cricket from "../../assets/images/icons/cricket.png";
+import swimming from "../../assets/images/icons/swimming.png";
+import hikingTrekking from "../../assets/images/icons/hikingTrekking.png";
+import interiorDesign from "../../assets/images/icons/interiorDesign.png";
+import socialMedia from "../../assets/images/icons/socialMedia.png";
+import socialWork from "../../assets/images/icons/socialWork.png";
 
 export default function LeftSidebar() {
   return (
@@ -32,28 +42,29 @@ export default function LeftSidebar() {
             <p className="hd">Interests</p>
             <ul>
               <li>
-                <i className="icon">&#xa066;</i>
-                <span>Listening Music</span>
-              </li>
-              <li>
-                <i className="icon">&#xa075;</i>
-                <span>Watching Movies</span>
+                  <i class="icon"><img src={style} /></i>
+                  <span>Fashion & Styling</span>
               </li>
               <li>
                 <i className="icon">&#xa051;</i>
                 <span>Nature Sightseeing</span>
               </li>
               <li>
-                <i className="icon">&#xa089;</i>
-                <span>Games & Sports</span>
-              </li>
-              <li>
-                <i className="icon">&#xa090;</i>
-                <span>Traveling</span>
+                  <i class="icon">&#xa083;</i>
+                  <span>Photography</span>
               </li>
               <li>
                 <i className="icon">&#xa091;</i>
                 <span>Food Lover</span>
+              </li>
+              
+              <li>
+                  <i class="icon">&#xa092;</i>
+                  <span>Road Trips</span>
+              </li>
+              <li>
+                <i className="icon">&#xa090;</i>
+                <span>Traveling</span>
               </li>
               <li>
                 <i className="icon">&#xa060;</i>
@@ -62,6 +73,46 @@ export default function LeftSidebar() {
               <li>
                 <i className="icon">&#xa061;</i>
                 <span>Car Driving</span>
+              </li>              
+              <li>
+                <i class="icon"><img src={camping} /></i>
+                <span>Camping</span>
+              </li>
+              <li>
+                  <i class="icon"><img src={swimming} /></i>
+                  <span>Swimming</span>
+              </li>
+              <li>
+                  <i class="icon"><img src={hikingTrekking} /></i>
+                  <span>Hiking / Trekking</span>
+              </li>
+              <li>
+                <i class="icon"><img src={cricket} /></i>
+                <span>Games & Sports</span>
+              </li>
+              <li>
+                  <i class="icon"><img src={fitAth} /></i>
+                  <span>Fitness & Athletics</span>
+              </li>
+              <li>
+                <i class="icon"><img src={interiorDesign} /></i>
+                <span>Interior Designing</span>
+              </li>
+              <li>
+                <i className="icon">&#xa066;</i>
+                <span>Listening Music</span>
+              </li>
+              <li>
+                <i className="icon">&#xa075;</i>
+                <span>Watching Movies</span>
+              </li>
+              <li>
+                  <i class="icon"><img src={socialMedia} /></i>
+                  <span>Social Media</span>
+              </li> 
+              <li>
+                  <i class="icon"><img src={socialWork} /></i>
+                  <span>Social Work</span>
               </li>
             </ul>
           </aside>

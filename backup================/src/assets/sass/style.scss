@@ -121,7 +121,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .breadcrumbs{padding-block: 12px;background:var(--g1);
     ul{width: 100%;display: flex;flex-wrap: wrap;padding: 0;margin: 0;gap: 4px 11px;
         > li{list-style: none;line-height: 1.1;display:flex;color:var(--f2);
-            > a{color: var(--c2);font-family: Bold;}
+            > a{color: var(--f1);font-family: Bold;}
             &:not(:last-child){position: relative;padding-right: 16px;
                 &::after{font-family: fontello;content:"\a030";position: absolute;right: 0;}
             }
@@ -153,7 +153,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     .hd{width: 100%;font-family: Bold;font-size: 24px;color: var(--c1);text-align: center;}
     .field{width: 100%;@extend %fc;row-gap:8px;
         label{font-family: Bold;}
-        input, textarea, select{width: 100%;border-radius: 4px;border: 1px solid var(--b1);outline: none;padding: 8px 12px;background: #fff;}
+        input, textarea, select{width: 100%;border: 1px solid var(--b1);outline: none;padding: 8px 12px;background: #fff;}
         textarea{resize: vertical;height: 129px;min-height: 129px;}
     }
     .error{width: 100%;color:red;font-size: 12px;}
