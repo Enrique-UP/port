@@ -19,7 +19,7 @@ export default function RightSidebar() {
           <aside className="slider">
             <p className="hd">My Lifestyle</p>
             <div className="sliderArea">
-              <img src={img1} />
+              <img data-src={img1} />
               <div className="text">
                 <b>Lorem</b>
                 <span>Ipsum</span>
@@ -29,7 +29,7 @@ export default function RightSidebar() {
           <aside className="slider">
             <p className="hd">My Childhood</p>
             <div className="sliderArea">
-              <img src={img1} />
+              <img data-src={img1} />
               <div className="text">
                 <b>Lorem</b>
                 <span>Ipsum</span>
@@ -39,7 +39,7 @@ export default function RightSidebar() {
           <aside className="slider">
             <p className="hd">My Team</p>
             <div className="sliderArea">
-              <img src={img1} />
+              <img data-src={img1} />
               <div className="text">
                 <b>Lorem</b>
                 <span>Ipsum</span>

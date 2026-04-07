@@ -36,7 +36,7 @@ const Temp = ({ date, site, link, about, img, onClick }) => {
         </div>
       </figcaption>
       <figure>
-        <img src={img} onClick={onClick} />
+        <img data-src={img} onClick={onClick} />
       </figure>
     </article>
   );

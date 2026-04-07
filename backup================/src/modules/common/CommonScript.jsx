@@ -18,12 +18,29 @@ export default function CommonScript() {
         i++;
       });
     }
+    {
+      if (!!window.IntersectionObserver) {
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              const realSrc = img.getAttribute("data-src");
+              if (realSrc) img.src = realSrc;
+              img.removeAttribute("data-src");
+              observer.unobserve(img);
+            }
+          });
+        }, { rootMargin: "0px 0px 100px 0px" });
+        document.querySelectorAll('img[data-src]').forEach(img => { 
+          observer.observe(img);
+        });
+      }
+      else console.warn("This API is not supported by your browser, so you can't see the effect.");
+    }
 
     /* ==============================
     For masonry grid
     ============================== */
-    // {}
-
     {
       // 1. Single Element Resize (High Performance for 1000+ items)
       function resizeSingleArticle(article) {
@@ -51,11 +68,11 @@ export default function CommonScript() {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               const img = entry.target;
-              const src = img.getAttribute("data-src");
+              const src = img.getAttribute("data-img");
               const article = img.closest('article');
               if (src) {
                 img.src = src;
-                img.removeAttribute("data-src");
+                img.removeAttribute("data-img");
                 img.onload = () => {
                   resizeSingleArticle(article);
                 };
@@ -67,7 +84,7 @@ export default function CommonScript() {
             }
           });
         }, { rootMargin: "0px 0px 500px 0px" });
-        document.querySelectorAll('img[data-src]').forEach(img => observer.observe(img));
+        document.querySelectorAll('img[data-img]').forEach(img => observer.observe(img));
       } else alert("This API is not supported by your browser, so you can't see the effect.");
       window.addEventListener("load", resizeAllArticles);
       window.addEventListener("resize", resizeAllArticles);

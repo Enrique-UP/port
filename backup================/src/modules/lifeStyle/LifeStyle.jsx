@@ -96,7 +96,7 @@ export default function Lifestyle() {
                     <article key={`${gIndex}-${iIndex}`}>
                       <figure>
                         <img
-                          data-src={img.src}
+                          data-img={img.src}
                           alt={img.place}
                           onClick={() => {
                             setIndex(getGlobalIndex(gIndex, iIndex));

@@ -67,9 +67,9 @@ export default function AboutHome() {
           <div className="fw">
             <div className="cols1">
               <ul className="images">
-                <li><img className="img1" src={img1} alt="" /></li>
-                <li><img className="img1" src={img2} alt="" /></li>
-                <li><img className="img2" src={img3} alt="" /></li>
+                <li><img className="img1" data-src={img1} alt="" /></li>
+                <li><img className="img1" data-src={img2} alt="" /></li>
+                <li><img className="img2" data-src={img3} alt="" /></li>
               </ul>
             </div>{/* cols1 */}
             <div className="cols2">
