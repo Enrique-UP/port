@@ -18,11 +18,13 @@
         }
         &.interests{@extend %fc;
             > ul{background: var(--g1);padding:16px;margin:0;gap:4px;display:grid;grid-template-columns:repeat(2, 1fr);
-                > li{border:1px solid var(--b1);padding: 12px 4px;line-height: 1.1;gap: 8px;background: #fff;@extend %fc;text-align: center;}
-                .icon{color:var(--cb1);font-size: 18px;
-                    > img{display: flex;margin-inline: auto;height: 23px;}
+                > li{border:1px solid var(--b1);padding: 12px 4px;line-height: 1.1;gap: 8px;background: #fff;@extend %fc;text-align: center;
+                    > span{font-size: 14px;}
                 }
-                span{font-size: 14px;}
+                .icon{color:var(--cb1);
+                    > span{font-size: 22px;}
+                    > img{display: flex;margin-inline: auto;height: 22px;}
+                }
             }
         }
         &.ads{background: url(../../images/lifeStyle/forest/21.jpg) top / cover;display:flex;overflow: hidden;padding-top:250px;
