@@ -133,10 +133,11 @@
     .about .skillBar i {height: 6px;}
     .about .hd {font-size: 24px;}
     .about .counterBox {grid-gap: 4px;}
-    .about .counterBox > li{padding: 24px 8px;}
-    .about .counterBox .icon {font-size: 40px;}
+    .about .counterBox > li{padding: 20px 8px;}
+    .about .counterBox .icon {font-size: 40px;margin-bottom: 0;}
     .about .counterBox b {font-size: 22px;}
     .about .counterBox span {font-size: 16px;}
+    .about .cnt {row-gap: 8px;}
 
     .about .fw .cols3 {row-gap: 16px;}
     .about .hd {padding-top: 16px;}
