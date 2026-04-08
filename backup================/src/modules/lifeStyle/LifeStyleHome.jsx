@@ -17,7 +17,7 @@ export default function LifestyleHome() {
           <div className="row">
             <div className="col-12">
               <hgroup>
-                <h2>Gallery</h2>
+                <h2>Image <span>Gallery</span></h2>
                 <p>Lorem ipsum dolor sit ameet</p>
               </hgroup>
             </div>{/* cols */}

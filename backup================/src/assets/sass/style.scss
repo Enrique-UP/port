@@ -244,10 +244,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .port{width: 100%;@extend %fc;row-gap:80px;counter-reset: count;
-    .hd{position: relative;font-size: 36px;font-family: Black;line-height: 1.1;padding-block: 12px;padding-left:72px;
+    .hd{position: relative;font-size: 36px;font-family: Black;line-height: 1.2;padding-block: 12px;padding-left:72px;
         &::before, &::after{position: absolute;}
         &::before{content:"";width: 0;height: 0;border-block: 32px solid transparent;border-left: 56px solid var(--cb1);top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);left:-1px;}
-        &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 24px;top: 20px;left: 8px;line-height: 1;}
+        &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 24px;top: 20px;left: 8px;line-height: 1;bottom: 20px;margin-block: auto;display: flex;align-items: center;}
     }
     .portArea{width: 100%;@extend %fc;row-gap: 16px;border-left:1px solid var(--b1);}
     article{display: flex;column-gap: 32px;border-bottom:1px solid var(--b1);padding-bottom: 16px;padding-left: 32px;row-gap:16px;position: relative;
@@ -267,6 +267,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         > p{color: var(--f4);}
     }
     figure{width: 300px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;max-width: 100%;align-self: flex-start;cursor: pointer;}
+    [class*="_text"]::after{content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste.';}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {

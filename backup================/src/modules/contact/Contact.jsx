@@ -56,7 +56,7 @@ export default function Contact() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Contact Us</h2>
+            <h2>Contact <span>Us</span></h2>
             <p>We're here to help you</p>
           </hgroup>
           <div className="sideMid">

@@ -61,7 +61,7 @@ export default function AboutHome() {
       <section className="section about">
         <div className="container">
           <hgroup>
-            <h2>About Us</h2>
+            <h2>About <span>Us</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
           </hgroup>
           <div className="fw">

@@ -17,7 +17,7 @@ export default function InnerPage() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Inner Page</h2>
+            <h2>Inner <span>Page</span></h2>
             <p>Lorem ipsum dolor sit ameet</p>
           </hgroup>
           <div className="sideMid">

@@ -1,6 +1,6 @@
 .btns{display: flex;flex-wrap:wrap;align-items: flex-start;gap:4px 4px;margin-bottom:32px;
     &.center, &.tc{justify-content: center;}
-    a, button{padding:14px 16px;line-height:1.1;font-family: Bold;color:#fff;@extend %userSelect;text-align:center;outline:none;cursor: pointer;display: flex;column-gap: 4px;
+    a, button{padding:14px 16px;line-height:1.1;font-family: Bold;color:#fff;@extend %userSelect;text-align:center;outline:none;cursor: pointer;display: flex;column-gap: 4px;border:none;
         &:nth-child(1){background: var(--cb1);}
         &:nth-child(2){background: var(--cb2);}
         &:nth-child(3){background: var(--cb3);}

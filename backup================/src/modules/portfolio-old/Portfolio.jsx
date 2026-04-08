@@ -19,50 +19,24 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-// ✅ LOAD ALL IMAGES (IMPORTANT FIX)
-const images = import.meta.glob(
-  "/src/assets/images/portfolio/*/*.jpg",
-  { eager: true, import: "default" }
-);
-
-// ✅ FAST LOOKUP MAP (BEST PRACTICE)
-const imageMap = {};
-Object.entries(images).forEach(([path, value]) => {
-  const parts = path.split("/");
-  const folder = parts[parts.length - 2];
-  const file = parts[parts.length - 1].replace(".jpg", "");
-  imageMap[`${folder}-${file}`] = value;
-});
-
-// ✅ GET IMAGE FUNCTION (FINAL)
-const getImage = (folder, name) => {
-  return imageMap[`${folder}-${name}`] || "";
-};
-
-// ✅ CARD COMPONENT
 const Temp = ({ date, site, link, about, img, onClick }) => {
-  const displaySite = site.startsWith("www.") ? site : `www.${site}`;
-
   return (
     <article>
       <figcaption>
         <span>{date}</span>
-        <a className="site" href={link} target="_blank" rel="noreferrer">
-          {displaySite}
+        <a className="site" href={link} target="_blank" rel="noopener noreferrer">
+          {site}
         </a>
-        <p className={about}></p>
+        <p>{about}</p>
         <div className="links">
           {link && (
-            <a href={link} target="_blank" rel="noreferrer">
-              Live Demo
-            </a>
+            <a href={link} target="_blank" rel="noopener noreferrer">Live Demo</a>
           )}
           <span onClick={onClick}>View Template</span>
         </div>
       </figcaption>
-
       <figure>
-        <img src={img} onClick={onClick} alt={site} />
+        <img data-src={img} onClick={onClick} />
       </figure>
     </article>
   );
@@ -72,12 +46,8 @@ export default function Portfolio() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ BUILD LIGHTBOX IMAGES (FIXED)
-  const allImages = PortfolioData.flatMap(section =>
-    section.items.map(item => ({
-      src: getImage(section.fName, item.name)
-    }))
-  );
+  // Flatten all images from PortfolioData
+  const allImages = PortfolioData.flatMap(section => section.items.map(item => ({ src: item.img })));
 
   return (
     <>
@@ -93,9 +63,7 @@ export default function Portfolio() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>
-              Lorem <span>Page</span>
-            </h2>
+            <h2>Lorem Page</h2>
             <p>Lorem ipsum dolor sit ameet</p>
           </hgroup>
 
@@ -107,36 +75,27 @@ export default function Portfolio() {
                 {PortfolioData.map((section, i) => (
                   <div className="portArea" key={i}>
                     <p className="hd">{section.hd}</p>
+                    {section.items.map((item, j) => {
+                      // Compute the index of the clicked image for lightbox
+                      const index = PortfolioData
+                        .slice(0, i)
+                        .flatMap(s => s.items).length + j;
 
-                    {section.items.map(
-                      ({ date, name, domain, link }, j) => {
-                        const site = `${name}.${domain}`;
-                        const about = `${name}_text`;
-                        const fullLink = link?.startsWith("http")
-                          ? link
-                          : `https://${site}`;
-
-                        // ✅ CORRECT INDEX SYNC
-                        const index =
-                          PortfolioData.slice(0, i).flatMap(s => s.items)
-                            .length + j;
-
-                        return (
-                          <Temp
-                            key={j}
-                            date={date}
-                            site={site}
-                            link={fullLink}
-                            about={about}
-                            img={getImage(section.fName, name)} // ✅ FIXED
-                            onClick={() => {
-                              setCurrentIndex(index);
-                              setLightboxOpen(true);
-                            }}
-                          />
-                        );
-                      }
-                    )}
+                      return (
+                        <Temp
+                          key={j}
+                          date={item.date}
+                          site={item.site}
+                          link={item.link}
+                          about={item.about}
+                          img={item.img}
+                          onClick={() => {
+                            setCurrentIndex(index);
+                            setLightboxOpen(true);
+                          }}
+                        />
+                      );
+                    })}
                   </div>
                 ))}
               </div>
@@ -146,22 +105,13 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
-      {/* ✅ LIGHTBOX */}
       {lightboxOpen && (
         <Lightbox
           slides={allImages}
           open={lightboxOpen}
           index={currentIndex}
           close={() => setLightboxOpen(false)}
-          plugins={[
-            Zoom,
-            Thumbnails,
-            Fullscreen,
-            Slideshow,
-            Counter,
-            Captions
-          ]}
+          plugins={[Zoom, Thumbnails, Fullscreen, Slideshow, Counter, Captions]}
           zoom={{ maxZoomPixelRatio: 3 }}
         />
       )}

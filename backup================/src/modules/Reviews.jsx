@@ -106,7 +106,7 @@ export default function Reviews() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Reviews</h2>
+            <h2>Customer's <span>Reviews</span></h2>
             <p>Lorem ipsum dolor sit ameet</p>
           </hgroup>
           <div className="sideMid">
