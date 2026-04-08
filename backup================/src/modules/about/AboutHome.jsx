@@ -1,8 +1,8 @@
 import { TypeWriter } from "../typeWriter/TypeWriter";
 
-import img1 from "../../assets/images/lifeStyle/forest/2.jpg";
+import img1 from "../../assets/images/lifeStyle/forest/12.jpg";
 import img2 from "../../assets/images/lifeStyle/forest/3.jpg";
-import img3 from "../../assets/images/lifeStyle/forest/52.jpg";
+import img3 from "../../assets/images/lifeStyle/forest/39.jpg";
 
 import { Global } from "../common/Global";
 import { Link } from "react-router-dom";

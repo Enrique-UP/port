@@ -3,6 +3,7 @@ import HomeBanner from "../../assets/images/banners/home.jpg";
 import Banner from "../common/Banner";
 import Welcome from "./Welcome";
 import AboutHome from "../about/AboutHome";
+import LifestyleHome from "../lifeStyle/LifeStyleHome";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
         showBreadcrumbs={false}
       />
       <Welcome />
-      <AboutHome />      
+      <AboutHome />
+      <LifestyleHome />     
     </>
   );
 }

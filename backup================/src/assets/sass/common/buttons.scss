@@ -1,10 +1,10 @@
 .btns{display: flex;flex-wrap:wrap;align-items: flex-start;gap:4px 4px;margin-bottom:32px;
     &.center, &.tc{justify-content: center;}
-    a, button{padding:14px 16px;line-height:1.1;font-family: Bold;color:#fff;@extend %userSelect;text-align:center;outline:none;cursor: pointer;display: flex;column-gap: 4px;border:2px solid var(--c1);
+    a, button{padding:14px 16px;line-height:1.1;font-family: Bold;color:#fff;@extend %userSelect;text-align:center;outline:none;cursor: pointer;display: flex;column-gap: 4px;
         &:nth-child(1){background: var(--cb1);}
         &:nth-child(2){background: var(--cb2);}
         &:nth-child(3){background: var(--cb3);}
 
-        &:active, &:hover, &:focus{background: var(--c1) !important;border-color: transparent !important;}
+        &:active, &:hover, &:focus{background: var(--c1) !important;}
     }
 }

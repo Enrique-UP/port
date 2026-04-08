@@ -40,7 +40,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     > hr{height: 1px;border: none;background: var(--b1);}
     > .banner{
         // background: var(--c2);color:#fff;
-        .cnt{width: 100%;@extend %fc;row-gap:16px;}
+        .cnt{width: 100%;@extend %fc;row-gap:16px;position: relative;z-index: 1;}
         .hd{font-size: 72px;font-family: Black;line-height: 1.1;}
         .txt{font-size: 24px;}
         .img{width: 100%;border:10px solid var(--f1);object-fit: cover;}

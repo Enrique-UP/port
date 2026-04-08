@@ -1,4 +1,4 @@
-.welcome{padding-block: 56px;background:var(--c2);color:#fff;position: relative;z-index: -1;
+.welcome{padding-block: 56px;background:var(--c2);color:#fff;
     .fw{position: relative;@extend %fc;row-gap:24px;
         &::before{width: 0;height: 0;position: absolute;left:0;@extend %cnt;top: -216px;border-inline: 250px solid transparent;border-bottom: 150px solid var(--c2);}
     }
