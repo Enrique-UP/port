@@ -39,12 +39,14 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     > *{width:100%;@extend %fc;}
     > hr{height: 1px;border: none;background: var(--b1);}
     > .banner{
-        // background: var(--c2);color:#fff;
+        background: var(--c1);color:#fff;
         .cnt{width: 100%;@extend %fc;row-gap:16px;position: relative;z-index: 1;}
         .hd{font-size: 72px;font-family: Black;line-height: 1.1;}
         .txt{font-size: 24px;}
-        .img{width: 100%;border:10px solid var(--f1);object-fit: cover;}
-        .btns{margin-top: 8px;}
+        .img{width: 100%;border:10px solid #fff;object-fit: cover;}
+        .btns{margin-top: 8px;
+            > a{border: 2px solid #fff;}
+        }
     }
     > .b1{background-color: var(--g1);}
     > .b2{background-color: var(--g2);}
