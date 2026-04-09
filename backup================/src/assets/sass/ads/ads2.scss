@@ -1,4 +1,4 @@
-.ads2{background:var(--cb1);
+.ads2{background:var(--cb10);
     hgroup{padding-bottom: 0;max-width:1000px;margin-inline: auto;
         > *{color:#fff;}
         .hd{font-family: var(--ff1);font-size: 56px;}
@@ -6,8 +6,8 @@
         &::before, &::after{display: none;}
     }
     .btns{
-        a{background: var(--f1) !important;
-            &:hover, &:active, &:focus{background: var(--c1) !important;}
+        a{background: var(--cb1) !important;
+            &:hover, &:active, &:focus{background: var(--c2) !important;}
         }
     }
 }
