@@ -8,6 +8,10 @@ import Childhood from "./Childhood";
 import Ads1 from "../ads/Ads1";
 import Ads2 from "../ads/Ads2";
 import Team from "./Team";
+import Education from "./Education";
+import Experience from "./Experience";
+import Know from "./Know";
+
 
 
 export default function Home() {
@@ -27,8 +31,11 @@ export default function Home() {
       <Welcome />
       <AboutHome />
       <LifestyleHome />
-      <Team />
+      <Education />
+      <Experience />
+      <Know />
       <Ads2 />
+      <Team />
       <Ads1 />
       <Childhood />
     </>
