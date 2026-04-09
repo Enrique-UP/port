@@ -4,6 +4,8 @@ import Banner from "../common/Banner";
 import Welcome from "./Welcome";
 import AboutHome from "../about/AboutHome";
 import LifestyleHome from "../lifeStyle/LifeStyleHome";
+import Childhood from "./Childhood";
+
 
 export default function Home() {
   return (
@@ -21,7 +23,8 @@ export default function Home() {
       />
       <Welcome />
       <AboutHome />
-      <LifestyleHome />     
+      <LifestyleHome />
+      <Childhood />
     </>
   );
 }

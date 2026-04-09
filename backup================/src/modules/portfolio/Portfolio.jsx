@@ -47,22 +47,15 @@ const Temp = ({ date, site, link, about, img, onClick }) => {
     <article>
       <figcaption>
         <span>{date}</span>
-        <a className="site" href={link} target="_blank" rel="noreferrer">
-          {displaySite}
-        </a>
+        <a className="site" href={link} target="_blank" rel="noreferrer">{displaySite}</a>
         <p className={about}></p>
         <div className="links">
-          {link && (
-            <a href={link} target="_blank" rel="noreferrer">
-              Live Demo
-            </a>
-          )}
+          {link && (<a href={link} target="_blank" rel="noreferrer">Live Demo</a>)}
           <span onClick={onClick}>View Template</span>
         </div>
       </figcaption>
-
       <figure>
-        <img src={img} onClick={onClick} alt={site} />
+        <img src={img} onClick={onClick} />
       </figure>
     </article>
   );
@@ -75,7 +68,7 @@ export default function Portfolio() {
   // ✅ BUILD LIGHTBOX IMAGES (FIXED)
   const allImages = PortfolioData.flatMap(section =>
     section.items.map(item => ({
-      src: getImage(section.fName, item.name)
+      src: getImage(section.folderName, item.name)
     }))
   );
 
@@ -93,9 +86,7 @@ export default function Portfolio() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>
-              Lorem <span>Page</span>
-            </h2>
+            <h2>Lorem <span>Page</span></h2>
             <p>Lorem ipsum dolor sit ameet</p>
           </hgroup>
 
@@ -117,9 +108,7 @@ export default function Portfolio() {
                           : `https://${site}`;
 
                         // ✅ CORRECT INDEX SYNC
-                        const index =
-                          PortfolioData.slice(0, i).flatMap(s => s.items)
-                            .length + j;
+                        const index = PortfolioData.slice(0, i).flatMap(s => s.items).length + j;
 
                         return (
                           <Temp
@@ -128,7 +117,7 @@ export default function Portfolio() {
                             site={site}
                             link={fullLink}
                             about={about}
-                            img={getImage(section.fName, name)} // ✅ FIXED
+                            img={getImage(section.folderName, name)} // ✅ FIXED
                             onClick={() => {
                               setCurrentIndex(index);
                               setLightboxOpen(true);

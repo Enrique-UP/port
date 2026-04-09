@@ -23,17 +23,17 @@ export default function LifestyleHome() {
             </div>{/* cols */}
             <div className="col-12 space">
               <div className="row">
-                <div class="col-xl-6 setHeight">
-                  <div class="row">
-                    <div class="col-sm-6 col-xl-12 df">
-                      <div class="outlineBox">
+                <div className="col-xl-6 setHeight">
+                  <div className="row">
+                    <div className="col-sm-6 col-xl-12 df">
+                      <div className="outlineBox">
                         <b>Heading</b>
                         <span>
                           Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.
                         </span>
                       </div>
                     </div>
-                    <article class="col-sm-6 col-xl-12">
+                    <article className="col-sm-6 col-xl-12">
                       <figure>
                         <img src={img1} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
@@ -41,27 +41,27 @@ export default function LifestyleHome() {
                     </article>
                   </div>{/* row */}
                 </div>{/* cols */}
-                <div class="col-xl-6 setHeight">
-                  <div class="row">
-                    <article class="col-6 col-md-3 col-xl-6">
+                <div className="col-xl-6 setHeight">
+                  <div className="row">
+                    <article className="col-6 col-md-3 col-xl-6">
                       <figure>
                         <img src={img2} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
-                    <article class="col-6 col-md-3 col-xl-6">
+                    <article className="col-6 col-md-3 col-xl-6">
                       <figure>
                         <img src={img3} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
-                    <article class="col-6 col-md-3 col-xl-6">
+                    <article className="col-6 col-md-3 col-xl-6">
                       <figure>
                         <img src={img4} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
-                    <article class="col-6 col-md-3 col-xl-6">
+                    <article className="col-6 col-md-3 col-xl-6">
                       <figure>
                         <img src={img5} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
@@ -69,25 +69,25 @@ export default function LifestyleHome() {
                     </article>
                   </div>{/* row */}
                 </div>{/* cols */}
-                <article class="col-6 col-md-3">
+                <article className="col-6 col-md-3">
                   <figure>
                     <img src={img6} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
-                <article class="col-6 col-md-3">
+                <article className="col-6 col-md-3">
                   <figure>
                     <img src={img7} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
-                <article class="col-6 col-md-3">
+                <article className="col-6 col-md-3">
                   <figure>
                     <img src={img8} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
-                <article class="col-6 col-md-3">
+                <article className="col-6 col-md-3">
                   <figure>
                     <img src={img9} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
@@ -95,7 +95,7 @@ export default function LifestyleHome() {
                 </article>
               </div>{/* row */}
             </div>{/* cols */}
-            <div class="col-12 btns center mb0">
+            <div className="col-12 btns center mb0">
               <Link to="/lifestyle">Explore More</Link>
             </div>{/* cols */}
           </div>{/* row */}          

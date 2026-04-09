@@ -23,14 +23,13 @@
 
     --b1:#ccc;
 
-    --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-    --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-    --mono: ui-monospace, Consolas, monospace;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --ff1: "Raleway", sans-serif;
+    --ff2: "Oswald", sans-serif;
 }
 
 

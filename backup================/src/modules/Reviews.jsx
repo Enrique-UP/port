@@ -79,7 +79,7 @@ const ReviewTag =(props) => {
       <div className="iconArea">
         <i className="icon">&#xa043;</i>
       </div>
-      <div class="outlineBox">
+      <div className="outlineBox">
         <ul>
           <li>
             <b>{props.name}</b>
