@@ -5,6 +5,7 @@ import Welcome from "./Welcome";
 import AboutHome from "../about/AboutHome";
 import LifestyleHome from "../lifeStyle/LifeStyleHome";
 import Childhood from "./Childhood";
+import Ads1 from "../ads/Ads1";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Welcome />
       <AboutHome />
       <LifestyleHome />
+      <Ads1 />
       <Childhood />
     </>
   );
