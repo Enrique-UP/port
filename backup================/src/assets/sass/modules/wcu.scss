@@ -11,7 +11,7 @@
         }
     }
     .wcuArea{width: 100%;display:grid;grid-gap:32px;grid-template-columns: repeat(2, minmax(0, 1fr));padding-bottom:80px;
-        aside{width: 100%;@extend %fc;position: relative;background: #fff;
+        aside{width: 100%;@extend %fc;position: relative;background: var(--g1);
             > b{display: flex;background: var(--cb10);color:#fff;font-size: 20px;padding:16px;line-height: 1.2;}
             > p{padding: 16px;}
         }

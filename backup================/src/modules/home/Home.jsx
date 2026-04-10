@@ -39,9 +39,9 @@ export default function Home() {
       <LifestyleHome />
       <Ads4 />
       <Team />
-      <Wcu />
       <Ads2 />
-      <Ads1 />
+      <Wcu /> 
+      <Ads1 />     
       <Childhood />
       <Ads3 />
     </>
