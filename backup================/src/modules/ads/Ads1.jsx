@@ -11,7 +11,7 @@ export default function Ads1() {
                         <p className="subHead">Lorem, ipsum dolor</p>
                         <p className="head">Lorem ipsum dolor sit</p>
                         <p className="text">Lorem ipsum dolor sit amet</p>
-                        <div className="btns center">
+                        <div className="btns center bsn">
                             <a href={Global.numTel} target="_blank">View More</a>
                         </div>
                     </li>

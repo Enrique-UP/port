@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import img1 from "../../assets/images/lifeStyle/home1.jpg";
 import { Global } from "../common/Global";
+
 const WcuData = [
     {hd: "Heading1", text: "1 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
     {hd: "Heading2", text: "2 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
@@ -8,16 +8,17 @@ const WcuData = [
     {hd: "Heading4", text: "4 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
     {hd: "Heading5", text: "5 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
     {hd: "Heading6", text: "6 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading7", text: "1 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading8", text: "2 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading9", text: "3 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading10", text: "4 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading11", text: "5 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading12", text: "6 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading13", text: "6 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading14", text: "6 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."}
+    {hd: "Heading7", text: "7 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading8", text: "8 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading9", text: "9 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading10", text: "10 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading11", text: "11 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading12", text: "12 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading13", text: "13 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
+    {hd: "Heading14", text: "14 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."}
 ];
-const WcuTag =(props) => {
+
+const WcuTag = (props) => {
   return (
     <>
         <aside>
@@ -36,7 +37,7 @@ export default function Wcu(){
                     <div className="row">
                         <div className="col-12">
                             <hgroup>
-                                <h4>Why Choose Us?</h4>
+                                <h4>Why <span>Choose</span> Us?</h4>
                                 <p>Your Advantages</p>
                             </hgroup>
                         </div>{/* cols */}

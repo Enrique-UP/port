@@ -6,7 +6,7 @@ export default function Ads2() {
                 <hgroup>
                     <h2 className="hd">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing</p>
-                    <div className="btns center">
+                    <div className="btns center bsn">
                         <a href="" target="_blank">View More</a>
                     </div>
                 </hgroup>

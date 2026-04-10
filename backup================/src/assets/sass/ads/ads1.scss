@@ -11,7 +11,9 @@
     .subHead{font-weight:500;font-size: 28px;}
     .text{font-size: 20px;}
     .btns{margin-top: 8px;}
-    a{background: var(--f1) !important;}
+    a{background: var(--cb10) !important;
+        &:hover, &:active, &:focus{background: var(--f1) !important;}
+    }
 }
 
 @media (min-width:768px) and (max-width:991px){

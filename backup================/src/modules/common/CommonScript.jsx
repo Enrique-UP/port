@@ -20,6 +20,9 @@ export default function CommonScript() {
         });
     });
     }
+    /* ==============================
+    For lazy load
+    ============================== */
     {
       if (!!window.IntersectionObserver) {
         const observer = new IntersectionObserver((entries, observer) => {
@@ -41,7 +44,7 @@ export default function CommonScript() {
     }
 
     /* ==============================
-    For masonry grid
+    For masonry grid and its lazy load
     ============================== */
     {
       // 1. Single Element Resize (High Performance for 1000+ items)
