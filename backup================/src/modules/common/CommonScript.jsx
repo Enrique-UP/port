@@ -9,14 +9,16 @@ export default function CommonScript() {
     For colors
     ============================== */
     {
-      const items = document.querySelectorAll(".colors article");
-      const totalClasses = 10;
-      let i = 1;
-      items.forEach((li) => {
-        if (i > totalClasses) i = 1;
-        li.style.setProperty("--unique", `var(--cb${i})`);
-        i++;
-      });
+      document.querySelectorAll(".colors").forEach(function(e){
+        const items = e.querySelectorAll(".colors article");
+        const totalClasses = 10;
+        let i = 1;
+        items.forEach((li) => {
+          if (i > totalClasses) i = 1;
+          li.style.setProperty("--unique", `var(--cb${i})`);
+          i++;
+        });
+    });
     }
     {
       if (!!window.IntersectionObserver) {

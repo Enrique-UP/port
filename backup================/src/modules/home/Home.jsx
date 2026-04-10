@@ -13,6 +13,7 @@ import Experience from "./Experience";
 import Know from "./Know";
 import Ads3 from "../ads/Ads3";
 import Wcu from "./Wcu";
+import Ads4 from "../ads/Ads4";
 
 
 
@@ -36,9 +37,10 @@ export default function Home() {
       <Education />
       <Experience />
       <Know />
-      <Ads2 />
+      <Ads4 />
       <Team />
       <Wcu />
+      <Ads2 />
       <Ads1 />
       <Childhood />
       <Ads3 />
