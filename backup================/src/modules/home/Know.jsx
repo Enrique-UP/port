@@ -1,7 +1,7 @@
 export default function Know() {
   return (
     <>
-      <section className="section skills back">
+      <section className="section skills back b1">
         <div className="container">
           <hgroup>
             <h2>

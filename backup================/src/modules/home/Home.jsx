@@ -33,10 +33,10 @@ export default function Home() {
       />
       <Welcome />
       <AboutHome />
-      <LifestyleHome />
-      <Education />
       <Experience />
+      <Education />
       <Know />
+      <LifestyleHome />
       <Ads4 />
       <Team />
       <Wcu />

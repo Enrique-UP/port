@@ -1,5 +1,5 @@
 .lifeStyle{
-    .outlineBox{background: #fff;height: 100%;}
+    .outlineBox{height: 100%;}
     figure{@extend %fc;width: 100%;border:1px solid var(--f1);
         > *{width: 100%;}
         > img{cursor: pointer;}
