@@ -26,7 +26,7 @@ const FollowData = [
   { link: Global.fb, icon: "&#xa019;", name: "Facebook" },
   { link: Global.tw, icon: "&#xa020;", name: "Twitter" },
   { link: Global.lin, icon: "&#xa021;", name: "Linkedin" },
-  { link: Global.skp, icon: "&#xa020;", name: "Skype" },
+  { link: Global.skp, icon: "&#xa026;", name: "Skype" },
   { link: Global.ins, icon: "&#xa023;", name: "Instagram" },
   { link: Global.pnt, icon: "&#xa024;", name: "Pinterest" }
 ];

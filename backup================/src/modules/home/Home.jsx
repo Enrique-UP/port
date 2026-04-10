@@ -11,6 +11,8 @@ import Team from "./Team";
 import Education from "./Education";
 import Experience from "./Experience";
 import Know from "./Know";
+import Ads3 from "../ads/Ads3";
+import Wcu from "./Wcu";
 
 
 
@@ -36,8 +38,10 @@ export default function Home() {
       <Know />
       <Ads2 />
       <Team />
+      <Wcu />
       <Ads1 />
       <Childhood />
+      <Ads3 />
     </>
   );
 }
