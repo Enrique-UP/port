@@ -28,7 +28,7 @@ const ContactData = [
   {link: Global.numTel, icon: "&#xa001;", cnt: Global.num},
   {link: Global.whatsappLink, icon: "&#xa025;", cnt: Global.num},
   {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: Global.email},
-  {link: Global.address, icon: "&#xa007;", cnt: Global.address}
+  {icon: "&#xa007;", cnt: Global.address}
 ];
 function ContactTag(props){
   return(
