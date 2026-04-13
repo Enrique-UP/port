@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="col-md-12 col-xxl-3">
               <div className="fw">
                   <p className="hd">About Us</p>
-                  <p class="text">
+                  <p className="text">
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit facilis dolores voluptatum nostrum ea ex reprehenderit corrupti cupiditate corporis hic inventore non optio porro deserunt molestiae inventore ab veritatis nemo ad dolorem iure rerum adipisci iste reprehenderit.</span>
                     <span><strong>Outside of work,</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit quae neque consequatur temporibus veniam maiores laudantium obcaecati labore.</span>
                   </p>
@@ -111,12 +111,12 @@ export default function Footer() {
                     }
                   </ul>
                   <div className="follow">
-                    <a href={Global.fb} target="_blank"><i class="icon">&#xa019;</i></a>
-                    <a href={Global.tw} target="_blank"><i class="icon">&#xa020;</i></a>
-                    <a href={Global.lin} target="_blank"><i class="icon">&#xa021;</i></a>
-                    <a href={Global.ins} target="_blank"><i class="icon">&#xa023;</i></a>
-                    <a href={Global.pnt} target="_blank"><i class="icon">&#xa024;</i></a>
-                    <a href={Global.skp} target="_blank"><i class="icon">&#xa026;</i></a>
+                    <a href={Global.fb} target="_blank"><i className="icon">&#xa019;</i></a>
+                    <a href={Global.tw} target="_blank"><i className="icon">&#xa020;</i></a>
+                    <a href={Global.lin} target="_blank"><i className="icon">&#xa021;</i></a>
+                    <a href={Global.ins} target="_blank"><i className="icon">&#xa023;</i></a>
+                    <a href={Global.pnt} target="_blank"><i className="icon">&#xa024;</i></a>
+                    <a href={Global.skp} target="_blank"><i className="icon">&#xa026;</i></a>
                   </div>{/* follow */}
               </div>{/* fw */}
             </div>{/* cols */}

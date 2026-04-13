@@ -32,7 +32,7 @@ footer{background: var(--f5);
         .abt{display: flex;align-items: center;line-height: 1.5;padding-block:12px;}
     }
     .links > li > a, .text{padding-inline: 16px;}
-    .follow{width: 100%;display: flex;gap:8px;flex-wrap:wrap;
+    .follow{width: 100%;display: flex;gap:8px;
         > a{background: var(--f6);color: var(--f7);display:flex;border-left: 2px solid #2cc7cb;
             .icon{width: 44px;height: 44px;@extend %center;}
             &:hover, &:active, &:focus{background: var(--cb1);color:#fff;}
@@ -43,4 +43,7 @@ footer{background: var(--f5);
 
 @media (max-width:767px){
     footer .row{row-gap: 32px !important;}
+}
+@media (max-width:480px){
+    footer .follow > a .icon {width: 42px;}
 }

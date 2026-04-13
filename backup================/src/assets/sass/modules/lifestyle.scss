@@ -2,7 +2,6 @@
     .outlineBox{height: 100%;}
     figure{@extend %fc;width: 100%;border:1px solid var(--f1);
         > *{width: 100%;}
-        > img{cursor: pointer;}
         figcaption{display: flex;justify-content: space-between;background: var(--unique);padding:8px 12px;color:#fff;column-gap: 8px;text-transform: capitalize;border-top: 1px solid var(--f1);
             > span{white-space: nowrap;}
         }
@@ -22,6 +21,7 @@
     .partition {display: grid !important;grid-template-columns: repeat(4, minmax(0, 1fr));grid-column-gap: 8px;align-items: start;grid-auto-flow: dense;grid-auto-rows: 4px;row-gap:0 !important;
         article{width: 100%;grid-row-end: span var(--num, 100);margin-bottom: 8px;@extend %fc;}
         figcaption{font-size: 14px;}
+        img{cursor: pointer;}
     }
 }
 

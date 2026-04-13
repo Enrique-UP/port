@@ -29,7 +29,7 @@
 
 @media (max-width:991px){}
 @media (min-width:768px) and (max-width:991px){
-    .banner.homeBanner{margin-bottom: 56px;}
+    .banner.homeBanner .container{padding-bottom: 56px;}
     main > .banner .hd {font-size: 56px;}
     main > .banner .txt {font-size: 20px;}
 }
@@ -89,7 +89,7 @@
 
     main > .innerPage .order {row-gap: 16px;}
     .poetry {row-gap: 8px !important;}
-    main > .banner.homeBanner .container {margin-bottom: 28px;}
+    .banner.homeBanner .container{padding-bottom: 28px;}
     .port {row-gap: 56px;}
 }
 @media (min-width:576px) and (max-width:767px){
