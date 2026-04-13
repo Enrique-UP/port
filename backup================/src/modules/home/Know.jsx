@@ -106,7 +106,6 @@ export default function Know() {
           <h2>Lorem <span>Lorem</span></h2>
           <p>Lorem ipsum dolor sit ameet</p>
         </hgroup>
-
         <div className="row colors">
           <div className="col-12">
             <div className="outlineBox">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe
@@ -131,7 +130,7 @@ export default function Know() {
                     </p>
                     <p className="text">
                       {isActive || !isLong ? item.text : short}
-                      {!isActive && isLong && "..."}
+                      {!isActive && isLong && "... "}
                       {isLong && (
                         <button
                           onClick={(e) => {

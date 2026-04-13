@@ -14,6 +14,7 @@ import Know from "./Know";
 import Ads3 from "../ads/Ads3";
 import Wcu from "./Wcu";
 import Ads4 from "../ads/Ads4";
+import Reviews from "./Reviews";
 
 
 
@@ -43,6 +44,7 @@ export default function Home() {
       <Wcu /> 
       <Ads1 />     
       <Childhood />
+      <Reviews />
       <Ads3 />
     </>
   );
