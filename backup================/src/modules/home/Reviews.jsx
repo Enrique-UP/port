@@ -44,7 +44,7 @@ function ReviewsTag({ img, name, place, text }) {
         <figcaption>
           <b>{name}</b>
           <span>{place}</span>
-          <i className="icon">★★★★★</i>
+          <i className="icon">&#xa047;&#xa047;&#xa047;&#xa047;&#xa048;</i>
         </figcaption>
       </figure>
       <p>{text}</p>
@@ -74,51 +74,55 @@ export default function Reviews() {
           </div>
 
           <div className="col-12">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={30}
+            <div className="back">
+                <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                autoHeight={false}
 
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                992: { slidesPerView: 2 },
-                1400: { slidesPerView: 3 },
-              }}
+                breakpoints={{
+                    0: { slidesPerView: 1 },
+                    992: { slidesPerView: 2 },
+                    1400: { slidesPerView: 3 },
+                }}
 
-              navigation={true}
-            //   pagination={{ clickable: true }}
+                navigation={true}
+                //   pagination={{ clickable: true }}
 
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }}
 
-              loop={true}
-              speed={800}
-              grabCursor={true}
+                loop={true}
+                speed={800}
+                grabCursor={true}
 
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                }}
 
-              onSlideChange={(swiper) => {
-                // FIX: ensure autoplay continues after manual interaction
-                if (swiper.autoplay && !swiper.autoplay.running) {
-                  swiper.autoplay.start();
-                }
-              }}
-            >
-              {ReviewsData.map((val, ind) => (
-                <SwiperSlide key={ind}>
-                  <ReviewsTag {...val} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                onSlideChange={(swiper) => {
+                    // FIX: ensure autoplay continues after manual interaction
+                    if (swiper.autoplay && !swiper.autoplay.running) {
+                    swiper.autoplay.start();
+                    }
+                }}
+                >
+                {ReviewsData.map((val, ind) => (
+                    <SwiperSlide key={ind}>
+                    <ReviewsTag {...val} />
+                    </SwiperSlide>
+                ))}
+                </Swiper>
+            </div>{/* back */}
 
+          </div>
+          <div className="col-12">
             <div className="btns center">
               <a href="#">View More</a>
             </div>
-
           </div>
         </div>
       </div>

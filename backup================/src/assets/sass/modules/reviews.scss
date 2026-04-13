@@ -1,6 +1,7 @@
 .reviews{
     .outlineBox{background: var(--cb10);color: #fff;text-align: center;}
-    .reviewArea{width: 100%;@extend %fc;background: #fff;padding:32px;gap:16px;
+    .back{width: 100%;display: flex;background: #fff;padding: 32px;}
+    .reviewArea{width: 100%;@extend %fc;gap:16px;
         p{color:var(--f7);position: relative;padding-right: 56px;
             &::before{font-family: fontello;content:"\a042";position: absolute;top:-20px;right:0;font-size: 48px;line-height: 1;color: var(--cb8);}
         }
@@ -10,20 +11,22 @@
         figcaption{width: 100%;@extend %fc;row-gap: 8px;}
         b{font-size: 40px;line-height: 1.1;color: var(--cb1);font-weight: 800;}
         span{font-size: 22px;color:var(--f5);line-height: 1.1;font-weight: bold;}
-        i{color:var(--cb2);display: flex;}
+        i{color:var(--cb2);display: flex;line-height: 1;}
     }
-    .btns{margin-top: 32px;}
+    .swiper-button-prev{left: -10px !important;}
+    .swiper-button-next{right: -10px !important;}
 }
 
-@media (max-width:767px){
-    .reviews .btns{margin-top: 16px;}
-}
 @media (max-width:575px){
-    .reviews .reviewArea {padding: 16px;}
     .reviews figure{gap:12px;}
     .reviews figure > img{width: 70px;}
     .reviews figure b {font-size: 24px;}
     .reviews figure span {font-size: 16px;}
     .reviews .reviewArea p::before {font-size: 32px;}
     .reviews .reviewArea p {padding-right: 36px;}
+    
+}
+@media (max-width:480px){
+    .reviews .back{padding: 24px 16px;}
+    
 }
