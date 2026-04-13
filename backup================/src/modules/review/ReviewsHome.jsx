@@ -62,7 +62,6 @@ export default function ReviewsHome() {
                   breakpoints={{
                       0: { slidesPerView: 1 },
                       992: { slidesPerView: 2 },
-                      1400: { slidesPerView: 3 },
                   }}
 
                   navigation={true}

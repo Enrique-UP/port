@@ -131,17 +131,6 @@
         .texts{font-size: 14px;}
     }
 
-    .reviews {row-gap: 16px;
-        .reviewsArea {column-gap: 8px;}
-        .iconArea .icon{width: 56px;height: 56px;font-size: 32px;}
-        .iconArea::after{height: 68px;}
-        .outlineBox b {flex-direction: column;align-items: flex-start;font-size:24px;
-            ~ i{font-size: 16px;}
-        }
-        .outlineBox .icon{font-size: 14px;}
-        ul{flex-direction: column;}
-    }
-
     .port .hd{font-size: 24px;}
     .port .hd::before{border-block:25px solid transparent;}
     .port .hd::after{left:6px;}

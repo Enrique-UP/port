@@ -228,27 +228,6 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.reviews{width: 100%;@extend %fc;row-gap:32px;
-    ul{width: 100%;display: flex;padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--b1);gap:4px;
-        > li{list-style: none;
-            &:first-child{width: 100%;@extend %fc;row-gap: 4px;}
-        }
-    }
-    .reviewsArea{width: 100%;display: flex;column-gap: 16px;}
-    .iconArea{position: relative;display:flex;
-        &::before, &::after{width: 2px;content:"";position: absolute;top:0;left:0;right:0;margin-inline:auto;}
-        &::before{background: var(--f1);height: 100%;}
-        &::after{background: #fff;height: 100px;}
-        .icon{width: 80px;height: 80px;background: var(--cb3);color:#fff;position: relative;@extend %center;font-size: 48px;z-index: 1;}
-    }
-    .outlineBox{border-color: var(--b1);
-        b{display: flex;align-items: center;color:var(--cb1);font-size:30px;line-height: 1.2;
-            ~ i{font-style: normal;font-size: 18px;font-weight: bold;}
-        }
-        .icon{margin-left: auto;color: orange;font-size: 18px;white-space: nowrap;}
-    }
-}
-
 .typeWriter{width: 100%;display:flex;
     .cursor {animation: blink 1s infinite;}
     @keyframes blink {

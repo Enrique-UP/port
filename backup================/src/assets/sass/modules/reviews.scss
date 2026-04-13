@@ -1,3 +1,24 @@
+.reviews{width: 100%;@extend %fc;row-gap:32px;
+    ul{width: 100%;display: flex;padding:0 0 16px;margin:0 0 16px;border-bottom:1px solid var(--b1);gap:4px;
+        > li{list-style: none;
+            &:first-child{width: 100%;@extend %fc;row-gap: 4px;}
+        }
+    }
+    .reviewsArea{width: 100%;display: flex;column-gap: 16px;}
+    .iconArea{position: relative;display:flex;
+        &::before, &::after{width: 2px;content:"";position: absolute;top:0;left:0;right:0;margin-inline:auto;}
+        &::before{background: var(--f1);height: 100%;}
+        &::after{background: #fff;height: 100px;}
+        .icon{width: 80px;height: 80px;background: var(--cb3);color:#fff;position: relative;@extend %center;font-size: 48px;z-index: 1;}
+    }
+    .outlineBox{border-color: var(--b1);
+        b{display: flex;align-items: center;color:var(--cb1);font-size:30px;line-height: 1.2;
+            ~ i{font-style: normal;font-size: 18px;font-weight: bold;}
+        }
+        .icon{margin-left: auto;color: orange;font-size: 18px;white-space: nowrap;}
+    }
+}
+
 .reviewsSec{
     .outlineBox{background: var(--cb10);color: #fff;text-align: center;}
     .back{width: 100%;display: flex;background: #fff;padding: 32px;}
@@ -24,6 +45,17 @@
     .reviewsSec figure span {font-size: 16px;}
     .reviewsSec .reviewArea p::before {font-size: 32px;}
     .reviewsSec .reviewArea p {padding-right: 36px;}
+
+    .reviews {row-gap: 16px;
+        .reviewsArea {column-gap: 8px;}
+        .iconArea .icon{width: 56px;height: 56px;font-size: 32px;}
+        .iconArea::after{height: 68px;}
+        .outlineBox b {flex-direction: column;align-items: flex-start;font-size:24px;
+            ~ i{font-size: 16px;}
+        }
+        .outlineBox .icon{font-size: 14px;}
+        ul{flex-direction: column;}
+    }
     
 }
 @media (max-width:480px){
