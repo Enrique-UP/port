@@ -1,5 +1,5 @@
 .childhood{background: var(--cb3);position: relative;
-    &::before{width:50%;height:100%;position:absolute;top:0;right:0;content:"";background:var(--g2);}
+    &::before{width:50%;height:100%;position:absolute;top:0;right:0;content:"";background:var(--g1);}
     .container{position: relative;}
     .heading{width: 100%;@extend %fc;padding-right:16px;color:#fff;text-align:right;line-height:1.1;row-gap:8px;
         .hd1{font-size: 52px;}
