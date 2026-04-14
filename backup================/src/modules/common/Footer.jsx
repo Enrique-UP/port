@@ -75,16 +75,6 @@ export default function Footer() {
                     <li><Link to="/reviews">Reviews</Link></li>
                     <li><Link to="/poetry">Poetry</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/inner">About Us</Link></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
-                    <li><Link to="/inner">Inner Page</Link></li>
-                    <li><Link to="/contactus">Contact Us</Link></li>
-                    <li><Link to="/reviews">Reviews</Link></li>
-                    <li><Link to="/poetry">Poetry</Link></li>
-                    <li><Link to="/poetry">Poetry</Link></li>
-                    <li><Link to="/thankyou">Thank You</Link></li>
-                    <li><Link to="/thankyou">Thank You</Link></li>
                   </ul>
               </div>{/* fw */}
             </div>{/* cols */}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs, FreeMode } from "swiper/modules";
+import { Navigation, Thumbs, FreeMode, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,10 +8,10 @@ import "swiper/css/thumbs";
 import "swiper/css/free-mode";
 
 // images
-import img1 from "../../assets/images/lifeStyle/home1.jpg";
-import img2 from "../../assets/images/lifeStyle/home2.jpg";
-import img3 from "../../assets/images/lifeStyle/home3.jpg";
-import img4 from "../../assets/images/lifeStyle/home4.jpg";
+import img1 from "../../assets/images/banners/slide1.jpg";
+import img2 from "../../assets/images/banners/slide2.jpg";
+import img3 from "../../assets/images/banners/slide3.jpg";
+import img4 from "../../assets/images/banners/slide4.jpg";
 
 const images = [img1, img2, img3, img4];
 
@@ -21,24 +21,32 @@ export default function Slider() {
   return (
     <div className="gallerySlider">
 
-      {/* ✅ MAIN SLIDER */}
+      {/* MAIN SWIPER (AUTOPLAY) */}
       <Swiper
-        modules={[Navigation, Thumbs]}
+        modules={[Navigation, Thumbs, Autoplay]}
         navigation
         spaceBetween={10}
-        thumbs={{ swiper: thumbsSwiper }}
+        watchSlidesProgress={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         className="mainSwiper"
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+        }}
       >
         {images.map((img, i) => (
           <SwiperSlide key={i}>
-            <img src={img} alt="" className="mainImg" />
+            <img src={img} alt={`slide-${i}`} className="mainImg" />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* ✅ THUMBNAIL SLIDER */}
+      {/* THUMB SWIPER */}
       <Swiper
-        modules={[Thumbs, FreeMode]}
+        modules={[FreeMode, Thumbs]}
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={4}
@@ -48,7 +56,7 @@ export default function Slider() {
       >
         {images.map((img, i) => (
           <SwiperSlide key={i}>
-            <img src={img} alt="" className="thumbImg" />
+            <img src={img} alt={`thumb-${i}`} className="thumbImg" />
           </SwiperSlide>
         ))}
       </Swiper>

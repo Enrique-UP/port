@@ -270,3 +270,55 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 body:has(.yarl__portal_open) .fixNum{display: none;}
 
 @import "./res";
+
+
+
+
+
+
+
+
+
+
+.gallerySlider {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/* IMPORTANT: prevents width expanding bug */
+.mainSwiper,
+.thumbSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* MAIN IMAGE */
+.mainImg {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+/* THUMBNAILS */
+.swiper-free-mode > .swiper-wrapper{display: grid;grid-template-columns:repeat(4,minmax(0,1fr));box-sizing: border-box;}
+.thumbSwiper .swiper-slide {
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 0 !important;
+  display: flex;
+  > img{}
+}
+
+/* active thumb */
+.swiper-thumbs{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+/* images */
+.thumbImg {
+  width: 100%;
+}
