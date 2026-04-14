@@ -8,38 +8,12 @@ import "swiper/css/thumbs";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// DESKTOP IMAGES
+// images
 import img1 from "../../assets/images/slider/slide1.jpg";
 import img2 from "../../assets/images/slider/slide2.jpg";
 import img3 from "../../assets/images/slider/slide3.jpg";
 
-// TABLET IMAGES
-import img1Tab from "../../assets/images/slider/slide1-991.jpg";
-import img2Tab from "../../assets/images/slider/slide2-991.jpg";
-import img3Tab from "../../assets/images/slider/slide3-991.jpg";
-
-// MOBILE IMAGES
-import img1Mob from "../../assets/images/slider/slide1-575.jpg";
-import img2Mob from "../../assets/images/slider/slide2-575.jpg";
-import img3Mob from "../../assets/images/slider/slide3-575.jpg";
-
-const images = [
-  {
-    desktop: img1,
-    tab: img1Tab,
-    mobile: img1Mob,
-  },
-  {
-    desktop: img2,
-    tab: img2Tab,
-    mobile: img2Mob,
-  },
-  {
-    desktop: img3,
-    tab: img3Tab,
-    mobile: img3Mob,
-  },
-];
+const images = [img1, img2, img3];
 
 export default function Slider() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -73,10 +47,10 @@ export default function Slider() {
           {images.map((img, i) => (
             <SwiperSlide key={i}>
               <picture>
-                <source media="(max-width:575px)" srcSet={img.mobile} />
-                <source media="(min-width: 576px) and (max-width: 767px)" srcSet={img.tab} />
-                <img src={img.desktop} className="mainImg" alt={`slide-${i}`} />
-              </picture>
+                {/* <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+                <source media="(min-width:465px)" srcset="img_white_flower.jpg" /> */}
+                <img src={img} className="mainImg" />
+              </picture>              
             </SwiperSlide>
           ))}
         </Swiper>
@@ -93,7 +67,7 @@ export default function Slider() {
           >
             {images.map((img, i) => (
               <SwiperSlide key={i}>
-                <img src={img.desktop} alt={`thumb-${i}`} className="thumbImg" />
+                <img src={img} alt={`thumb-${i}`} className="thumbImg" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -107,12 +81,12 @@ export default function Slider() {
           </div>{/* arrowArea */}
         </div>{/* thumbsImg */}
 
-        {/* PAGINATION */}
+        {/* ✅ PAGINATION */}
         <div className="paginationArea">
           <div className="paginations">
             <div className="customPagination"></div>
-          </div>
-        </div>
+          </div>{/* paginations */}
+        </div>{/* paginationArea */}
 
       </div>
 
