@@ -90,9 +90,9 @@
   .gallerySlider .arrowsArea .arrows{right: 8px;}
   .gallerySlider .paginationArea .customPagination::before {right: 8px;width: 132px;height: 8px;top:14px;}
   .gallerySlider .thumbsImg .swiper{padding-left: 0;display: flex;justify-content: flex-end;}
-  .gallerySlider .thumbsImg{padding-inline: 8px;bottom: 79px;}
-  .gallerySlider .swiper-free-mode > .swiper-wrapper{width: 136px;grid-template-columns: repeat(2, minmax(0, 1fr));}
-  .gallerySlider .arrowsArea{bottom: -40px;}
+  .gallerySlider .thumbsImg{padding-inline: 8px;bottom: 84px;}
+  .gallerySlider .swiper-free-mode > .swiper-wrapper{width: 230px;left: 0;margin-inline: auto;}
+  .gallerySlider .arrowsArea{bottom: -44px;}
 
   .gallerySlider .slideWrapper .head{top: 70px;}
   .gallerySlider .slideWrapper .head .hd{font-size: 56px;}
