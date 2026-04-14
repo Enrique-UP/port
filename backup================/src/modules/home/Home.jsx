@@ -15,6 +15,7 @@ import Ads3 from "../ads/Ads3";
 import Wcu from "./Wcu";
 import Ads4 from "../ads/Ads4";
 import ReviewsHome from "../review/ReviewsHome";
+import Slider from "./Slider";
 
 
 
@@ -25,13 +26,14 @@ export default function Home() {
         <title>Home</title>
         <meta name="description" content="This is home page" />
       </Helmet>
-      <Banner
+      {/* <Banner
         pageName="Welcome to our website" 
         pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
         isHome={true}
         otherImg={HomeBanner}
         showBreadcrumbs={false}
-      />
+      /> */}
+      <Slider />
       <Welcome />
       <AboutHome />
       <Experience />
