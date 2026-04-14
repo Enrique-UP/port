@@ -9,9 +9,9 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // images
-import img1 from "../../assets/images/banners/slide1.jpg";
-import img2 from "../../assets/images/banners/slide2.jpg";
-import img3 from "../../assets/images/banners/slide3.jpg";
+import img1 from "../../assets/images/slider/slide1.jpg";
+import img2 from "../../assets/images/slider/slide2.jpg";
+import img3 from "../../assets/images/slider/slide3.jpg";
 
 const images = [img1, img2, img3];
 
@@ -46,7 +46,11 @@ export default function Slider() {
         >
           {images.map((img, i) => (
             <SwiperSlide key={i}>
-              <img src={img} alt={`slide-${i}`} className="mainImg" />
+              <picture>
+                {/* <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+                <source media="(min-width:465px)" srcset="img_white_flower.jpg" /> */}
+                <img src={img} className="mainImg" />
+              </picture>              
             </SwiperSlide>
           ))}
         </Swiper>

@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import Banner from "./common/Banner";
 import LeftSidebar from "./common/LeftSidebar";
 import RightSidebar from "./common/RightSidebar";
-import Slider from "./home/Slider";
 
 export default function InnerPage() {
   return (
@@ -11,7 +10,6 @@ export default function InnerPage() {
         <title>InnerPage</title>
         <meta name="description" content="This is Inner page" />
       </Helmet>
-      <Slider />
       <Banner
         pageName="Inner Page"
         pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
