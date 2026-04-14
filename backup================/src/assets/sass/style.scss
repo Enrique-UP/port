@@ -310,6 +310,7 @@ body:has(.yarl__portal_open) .fixNum{display: none;}
 /* active thumb */
 .swiper-thumbs{
   position: absolute !important;
+  padding-inline: 8px !important;
   left: 0;
   bottom: 8px;
   right: 0;
