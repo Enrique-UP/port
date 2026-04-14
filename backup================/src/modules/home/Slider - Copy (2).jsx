@@ -29,25 +29,16 @@ const images = [
     desktop: img1,
     tab: img1Tab,
     mobile: img1Mob,
-    title: "One",
-    desc: "First",
-    link: "/contactus",
   },
   {
     desktop: img2,
     tab: img2Tab,
     mobile: img2Mob,
-    title: "Two",
-    desc: "Second",
-    link: "/contactus",
   },
   {
     desktop: img3,
     tab: img3Tab,
     mobile: img3Mob,
-    title: "Three",
-    desc: "Third",
-    link: "/contactus",
   },
 ];
 
@@ -82,30 +73,11 @@ export default function Slider() {
         >
           {images.map((img, i) => (
             <SwiperSlide key={i}>
-              <div className="slideWrapper">
-
-                {/* DYNAMIC CONTENT */}
-                <div className="head">
-                  <div className="container">
-                    <div className="text">
-                      <p className="hd">Lorema's</p>
-                      <p className="txt">Ipsum/Lorem</p>
-                      <p className="desc">Lorem ipsum dolor sit</p>
-                      <div className="btns">
-                        <Link to={img.link}>Contact Us</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* IMAGE */}
-                <picture>
-                  <source media="(max-width:575px)" srcSet={img.mobile} />
-                  <source media="(min-width:576px) and (max-width:767px)" srcSet={img.tab} />
-                  <img src={img.desktop} className="mainImg" alt={`slide-${i}`} />
-                </picture>                
-
-              </div>
+              <picture>
+                <source media="(max-width:575px)" srcSet={img.mobile} />
+                <source media="(min-width: 576px) and (max-width: 767px)" srcSet={img.tab} />
+                <img src={img.desktop} className="mainImg" alt={`slide-${i}`} />
+              </picture>
             </SwiperSlide>
           ))}
         </Swiper>
