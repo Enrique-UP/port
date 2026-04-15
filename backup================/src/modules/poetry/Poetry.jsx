@@ -13,7 +13,7 @@ const PoetryTag = ({ word, poet }) => {
       <figcaption>
         <ul>
           {wordsArray.map((item, index) => {
-            const text = item.trim(); // ✅ important
+            const text = item.trim();
             const isOr = text.toLowerCase() === "or";
 
             return (

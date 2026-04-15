@@ -12,6 +12,7 @@ import img2 from "../../assets/images/lifeStyle/home2.jpg";
 import img3 from "../../assets/images/lifeStyle/home3.jpg";
 import img4 from "../../assets/images/lifeStyle/home4.jpg";
 import img5 from "../../assets/images/lifeStyle/home5.jpg";
+const images = [img1, img2, img3, img4, img5];
 
 import ReviewData from "./ReviewData";
 
@@ -30,7 +31,7 @@ function ReviewsTag({ img, name, place, icons, text }) {
     </div>
   );
 }
-const images = [img1, img2, img3, img4, img5];
+
 export default function ReviewsHome() {
   const swiperRef = useRef(null);
 

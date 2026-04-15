@@ -31,7 +31,7 @@
         > img{width: 100px;flex-shrink: 0;align-self: flex-start;}
         figcaption{width: 100%;@extend %fc;row-gap: 8px;}
         b{font-size: 40px;line-height: 1.1;color: var(--cb1);font-weight: 800;}
-        span{font-size: 22px;color:var(--f5);line-height: 1.1;font-weight: bold;}
+        span{font-size: 22px;color:var(--f3);line-height: 1.1;font-weight: bold;}
         i{color:var(--cb2);display: flex;line-height: 1;}
     }
     .swiper-button-prev{left: -10px !important;}

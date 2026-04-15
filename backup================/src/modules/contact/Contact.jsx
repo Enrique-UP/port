@@ -76,13 +76,7 @@ export default function Contact() {
                   <div className="ca">
                     <ul className="contactBox">
                       {ContactData.map((val, ind) => (
-                        <ContactTag
-                          key={ind}
-                          link={val.link}
-                          icon={val.icon}
-                          text={val.text}
-                          contact={val.contact}
-                        />
+                        <ContactTag key={ind} {...val} />
                       ))}
                     </ul>
                   </div>{/* ca */}
@@ -115,12 +109,7 @@ export default function Contact() {
                   <div className="ca">
                     <ul className="follow">
                       {FollowData.map((val, ind) => (
-                        <FollowTag
-                          key={ind}
-                          link={val.link}
-                          icon={val.icon}
-                          name={val.name}
-                        />
+                        <FollowTag key={ind} {...val} />
                       ))}
                     </ul>  
                   </div>{/* ca */}

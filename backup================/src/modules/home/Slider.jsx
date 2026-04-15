@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs, FreeMode, Autoplay, Pagination } from "swiper/modules";
@@ -22,7 +23,6 @@ import img3Tab from "../../assets/images/slider/slide3-991.jpg";
 import img1Mob from "../../assets/images/slider/slide1-575.jpg";
 import img2Mob from "../../assets/images/slider/slide2-575.jpg";
 import img3Mob from "../../assets/images/slider/slide3-575.jpg";
-import { Link } from "react-router-dom";
 
 const images = [
   {
@@ -102,10 +102,10 @@ export default function Slider() {
                 <picture>
                   <source media="(max-width:575px)" srcSet={img.mobile} />
                   <source media="(min-width:576px) and (max-width:767px)" srcSet={img.tab} />
-                  <img src={img.desktop} className="mainImg" alt={`slide-${i}`} />
+                  <img src={img.desktop} className="mainImg" />
                 </picture>                
 
-              </div>
+              </div>{/* slideWrapper */}
             </SwiperSlide>
           ))}
         </Swiper>
@@ -122,7 +122,7 @@ export default function Slider() {
           >
             {images.map((img, i) => (
               <SwiperSlide key={i}>
-                <img src={img.desktop} alt={`thumb-${i}`} className="thumbImg" />
+                <img src={img.desktop} className="thumbImg" />
               </SwiperSlide>
             ))}
           </Swiper>

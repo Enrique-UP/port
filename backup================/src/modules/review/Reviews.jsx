@@ -53,7 +53,7 @@ export default function Reviews() {
                 <div className="reviews">
                   {
                     ReviewData.map((val, ind) => {
-                      return <ReviewTag key={ind} name={val.name} place={val.place} text={val.text} icons={val.icons} />
+                      return <ReviewTag key={ind} {...val} />
                     })
                   }
                 </div>{/* reviews */}
