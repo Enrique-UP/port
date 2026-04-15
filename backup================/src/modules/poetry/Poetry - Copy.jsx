@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Banner from "../common/Banner";
 import LeftSidebar from "../common/LeftSidebar";
@@ -31,82 +31,44 @@ const PoetryTag = ({ word, poet }) => {
 };
 export default function Poetry() {
   const [search, setSearch] = useState("");
-  const sectionRef = useRef(null);
-
-  /* =========================
-     Filter Data
-  ========================= */
-  const filteredData = PoetryData.flatMap((val) =>
-    val.words
-      .filter((word) =>
-        word.toLowerCase().includes(search.toLowerCase())
-      )
-      .map((word) => ({
-        word,
-        poet: val.poet,
-      }))
-  );
-
-  /* =========================
-     Scroll when no result
-  ========================= */
-  useEffect(() => {
-    if (filteredData.length === 0 && search !== "") {
-      sectionRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-
-      // offset -100px
-      setTimeout(() => {
-        window.scrollBy(0, -92);
-      }, 300);
-    }
-  }, [filteredData, search]);
-
   return (
     <>
       <Helmet>
         <title>Poetry</title>
       </Helmet>
-
       <Banner
-        pageName="Poetry"
+        pageName="Poetry" 
         pageText="Lorem ipsum dolor sit ameet."
       />
-
-      <section className="section" ref={sectionRef}>
+      <section className="section">
         <div className="container">
           <hgroup>
             <h2>Poetry</h2>
             <p>Lorem ipsum dolor sit ameet</p>
           </hgroup>
-
           <div className="sideMid">
             <LeftSidebar />
 
             <div className="area-2">
-              
               <div className="searchBar">
                 <input type="text" placeholder="Please search here..." value={search} onChange={(e) => setSearch(e.target.value)} />
                 <i className="icon">&#xa010;</i>
-              </div>
-
+              </div>{/* searchBar */}
               <div className="poetry">
-                {filteredData.length > 0 ? (
-                  filteredData.map((item, i) => (
+                {
+                  PoetryData.map((val) =>
+                    val.words.filter((word) => word.toLowerCase().includes(search.toLowerCase())
+                  ).map((word, i) => (
                     <PoetryTag
                       key={i}
-                      word={item.word}
-                      poet={item.poet}
+                      word={word}
+                      poet={val.poet}
                     />
                   ))
-                ) : (
-                  search !== "" && <p>No results found</p>
-                )}
-              </div>
-
-            </div>
+                  )
+                }
+              </div>{/* poetry */}
+            </div>{/* area-2 */}
 
             <RightSidebar />
           </div>

@@ -215,7 +215,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.searchBar{width: 100%;display: flex;margin-bottom: 16px;position:sticky;top:100px;
+.searchBar{width: 100%;display: flex;margin-bottom: 16px;position:sticky;top:92px;
     input{width: 100%;border: 1px solid var(--b1);outline: none;padding: 12px 12px 12px 40px;background: #fff;}
     .icon{position: absolute;top:0;bottom:0;margin-block: auto;left:16px;display: flex;align-items: center;}
 }
