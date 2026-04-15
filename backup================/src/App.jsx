@@ -1,4 +1,8 @@
+import {useEffect} from "react";
 import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 import "./assets/sass/style.scss";
 
@@ -21,6 +25,9 @@ import Reviews from './modules/review/Reviews';
 
 
 export default function App() {
+  useEffect(() => {
+    Aos.init({duration:1000});
+  }, []);
   return (
     <HashRouter>      
       <Header />
