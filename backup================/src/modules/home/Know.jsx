@@ -94,9 +94,9 @@ export default function Know() {
   // format label (Year / Years)
   const formatExperience = (exp) => {
     if (exp <= 1) {
-      return `${exp}+ Year`;
+      return `${exp} + Year`;
     } else {
-      return `${exp}+ Years`;
+      return `${exp} + Years`;
     }
   };
   return (
