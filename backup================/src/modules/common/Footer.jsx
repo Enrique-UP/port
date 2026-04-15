@@ -84,7 +84,7 @@ export default function Footer() {
                   <ul className="posts">
                     {
                       PostData.map((val, ind) => {
-                        return <PostTag key={ind} link={val.link} date={val.date} year={val.year} txt={val.txt} />
+                        return <PostTag key={ind} {...val} />
                       })
                     }
                   </ul>
@@ -96,7 +96,7 @@ export default function Footer() {
                   <ul className="posts">
                     {
                       ContactData.map((val, ind) => {
-                        return <ContactTag key={ind} link={val.link} icon={val.icon} cnt={val.cnt} />
+                        return <ContactTag key={ind} {...val} />
                       })
                     }
                   </ul>

@@ -8,9 +8,9 @@ footer{background: var(--f3);
     .fw{@extend %fc;row-gap: 16px;}
     .hd{font-size:32px;text-transform: uppercase;color:var(--cb2);border-bottom: 4px solid #fff;font-weight:700;}
     ul{margin:0;padding:0;}
-    .links{display: flex;flex-wrap: wrap;gap:8px;
+    .links{display: flex;flex-wrap: wrap;gap:12px;
         > li{list-style: none;display:flex;
-            > a{background: var(--f6);color:var(--f7);border-left: 2px solid #2cc7cb;padding-block:10px;
+            > a{background: var(--f6);color:var(--f7);border-left: 2px solid #2cc7cb;padding:12px 24px;
                 &:hover, &:active, &:focus{background: var(--cb1);color:#fff;}
             }
         }
@@ -31,7 +31,7 @@ footer{background: var(--f3);
         .icon{background: var(--cb8);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;font-weight: bold;width: 56px;padding-block:24px;}
         .abt{display: flex;align-items: center;line-height: 1.5;padding-block:12px;}
     }
-    .links > li > a, .text{padding-inline: 16px;}
+    .text{padding-inline: 16px;}
     .follow{width: 100%;display: flex;gap:8px;
         > a{background: var(--f6);color: var(--f7);display:flex;border-left: 2px solid #2cc7cb;
             .icon{width: 44px;height: 44px;@extend %center;}
@@ -43,6 +43,7 @@ footer{background: var(--f3);
 
 @media (max-width:767px){
     footer .row{row-gap: 32px !important;}
+    footer .links{gap:8px;}
 }
 @media (max-width:480px){
     footer .follow > a .icon {width: 42px;}
