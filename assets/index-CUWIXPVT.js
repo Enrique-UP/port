@@ -176,7 +176,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Ajab duniya hai na shayar yahan per sir oothate hain,
         Jo shayar hain vo mehfil mai dari chadar oothate hai,
         Tumhare shehar mein mayyat ko sab kandha nahin dete,
-        Humare gaaon mein chhappar bhi sab mil kar uthate hain. Unhe firkhaparashti mat sikha dena,
+        Humare gaaon mein chhappar bhi sab mil kar uthate hain,
+        Unhe firkhaparashti mat sikha dena,
         Ki ye bacche zami se choomker titli ke pankh oothate hain.
       `,`
         Sare hawa mai ghol di hai nafratein or hawas ahal-a-siyasat ne,
@@ -469,7 +470,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Amiri resham-o-kumkhwab mai nangi nazar aai,
         Garibi shan se ek taat ke parde mai rehti hai,
         Mai insan hu bahak jana meri fitrat mai shamil hai,
-        Hawa bhi ussko chuke dair tak nashe mai rehti hai. Mohobbat mai parakhne janchne se faida kya hai,
+        Hawa bhi ussko chuke dair tak nashe mai rehti hai.,
+        Mohobbat mai parakhne janchne se faida kya hai,
         Kami thodi bahut her ek ke shazar mai rehti hai,
         Ye apne aapko takseem kerlete hain soobo mai,
         Kharabi bus yahi her mulk ke nakshe mai rehti hai.
@@ -636,7 +638,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Hoton par ganga ho, haaton main tiranga ho,
         Geeta ka gyaan sune na sune, is dharti ka yashgaan sune,
         Ham shbd-kirtan sun na sake, Bharat mata ka jay-gaan sune,
-        Parwar-digaar main tere dwaar par le pukaar ye kahata hoon, Chaahe ajaan na sune kaan par jay jay hindustaan sune,
+        Parwar-digaar main tere dwaar par le pukaar ye kahata hoon,
+        Chaahe ajaan na sune kaan par jay jay hindustaan sune,
         Jan-man mein uchchhal desh prem ka jaladh Tiranga ho,
         Hontho.n par Ganga ho, haatho.n mein Tiranga ho.
       `,`
@@ -804,8 +807,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Mujhe malum hai meri hifazat kon kerta hai,
         Or hamare jaise he kuch log aajate hain ladne ko,
         Nahi toh jung mai jaane ki himmat kon kerta hai,
-        Or humhe ne laaj rakhi hai buzoorgo
-      ki yahan verna,
+        Or humhe ne laaj rakhi hai buzoorgo ki yahan verna,
         Sabhi tookdo pe palte hain baghawat kon kerta hai.
       `,`
         Lovon per hum sajake ayat-a-quran nikle hain,
@@ -860,8 +862,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Prathvi ko ooncha ootha nahi sakta,
         Parvat himalaya jaise ko koi hila nahi sakta,
         Sagar jaise ko koi sookha nahi sakta,
-        Oosi tarah Narendra bhai ki taqat ko koi Hindustan mai
-      daba nahi sakta koi mita nahi sakta.
+        Oosi tarah Narendra bhai ki taqat ko koi Hindustan mai daba nahi sakta koi mita nahi sakta.
       `,`
         Congress ki mandi badi nashili hai,
         Iss mandi mai sabne madira pili hai,
@@ -956,15 +957,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Tumne dekha nahi aansu ka samandar hona.
       `,`
         Sirf itni bat per ussne hume balvai likha hai,
-        Ki hamare ghar ke ek bartan pe ISI likha hai. Hamare mulk mai insan jab ghar mai nahi rehte, Kahin Hindu Muslim Sikh likha hai, Yeh dukh shayad hamari zindagi ke sath jaiga, Ki jo dil per laga hai
-      teer uss per bhai likha hai.
+        Ki hamare ghar ke ek bartan pe ISI likha hai.,
+        Hamare mulk mai insan jab ghar mai nahi rehte,
+        Kahin Hindu Muslim Sikh likha hai,
+        Yeh dukh shayad hamari zindagi ke sath jaiga,
+        Ki jo dil per laga hai teer uss per bhai likha hai.
       `,`
         Iss shahar ki sabhi ladkiyan mujhe adab kerti hain,
         Kyunki mai baccho ki kalai ke liye rakhi banata hu,
         Vazahrat chand ghanto ki mahal minar se ooncha,
         Mai Aurangzeb hu apne liye khichdi banata hu,
-        Tumhe hukumat milti hai toh
-      Gujrat banta hai,
+        Tumhe hukumat milti hai toh Gujrat banta hai,
         Mujhe hukumat milti hai toh Dilli banata hu,
         Mai Aurangzeb hu apne liye khichdi banata hu.
       `,`
@@ -980,16 +983,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Hukumat ke ishare per toh murda bol sakta hai,
         Yaha per nafraton ne kaise-kaise gul khilai hain,
         Tooti issmat bata deti hai dupatta bol sakta hai,
-        Hukumat ki tavajjo chahti hai
-      ye hamari jali basti,
+        Hukumat ki tavajjo chahti hai ye hamari jali basti,
         Adalat poochna chahe toh malva bol sakta hai.
       `,`
         kai chehre abhi tak mooh zubani yad hain issko,
         Kahi tum pooch mat lena ye goonga bol sakta hao,
         Adalat mai gavahi ke liye lashein nahi aati,
         Vo ankhe bujh chuki hain fir bhi chashma bolsakta hai,
-        Bohot si kursiyan iss mulk
-      mai lasho pe rakhi hui hain,
+        Bohot si kursiyan iss mulk mai lasho pe rakhi hui hain,
         Ye vo such hai jise jhoothe se jhootha bol sakta hai.
       `,`
         Mujhko malum nahi hai siyasat kya hai,
@@ -1070,7 +1071,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Or mai tere lashker ke muqabil mai akela khada hu magar,
         Faisla maidan mai hoga ke marta kon hai.
       `,`
-        Bol ki lobe azad hain tere fir mere sir pe ek khadi dhoop ki bauchar giri,
+        Bol ki lab azad hain tere,
+        Fir mere sir pe ek khadi dhoop ki bauchar giri,
         Mai jahan jaaker rooka tha vahi diwar giri,
         Log kishton mai mujhe qatl kareenge shayad,
         Sabse pehle meri awaz per talwar giri.
@@ -1090,8 +1092,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Hum samandar hain humko na raste bata,
         Hum musafir nahi jo bhatak jaeenge,
         Dushmani yaar kis-kis se leenge bhala,
-        Humhe tere pehlu se sarak
-      jaeenge.
+        Humhe tere pehlu se sarak jaeenge.
       `,`
         Tujhe duniya se jo itna gila hai,
         Bata duniya ko tune kya diya hai,
@@ -1105,7 +1106,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Raja Dheergji bhi nahi hota,
         Vidwan ke pass dhan nahi hota,
         kisi ko muqammal jahan nahi milta,
-              Kahi zami toh kahi aasma nahi milta.
+        Kahi zami toh kahi aasma nahi milta.
       `,`
         Sabhi ko sabhi kuch hasil nahi milta,
         Nadi ki her lehar ko sahil nahi milta,
@@ -1159,19 +1160,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Ye kon kehraha hai ki talwar deke dekh,
         Duniya ko jeet laeenge dastar deke dekh,
         Or kis tarha chalatein hain batadeenge tumhe,
-        Humko bhi doh roz ke liye sarkar deke dekh. Or Ye kon kehraha hai ki talwar deke dekh,
-        Duniya ko
-      jeet laeenge bandook deke dekh,
+        Humko bhi doh roz ke liye sarkar deke dekh.,
+        Or,
+        Ye kon kehraha hai ki talwar deke dekh,
+        Duniya ko jeet laeenge bandook deke dekh,
         Or marjaeenge meet jaeenge apne Hinduastan ke khatir,
         Hume bhi sarhado pe ladne ko bhej ke dekh.
       `,`
         Ki mohobbat or chahat ka mohalla leke chalta hai,
         Ye pagal apne lobe per naam-e-allah leke chalta hai,
-        Mehez iss bat per kurban tyjhpe a Nomaan,
-        Tu apne sath gaadi mai musalla leke chalta hai. Or Ki mohobbat or chahat ka mohalla
-      leke chalta hai,
+        Mehez iss bat per kurban tyjhpe a Doston,
+        Tu apne sath gaadi mai musalla leke chalta hai.,
+        Or,
+        Ki mohobbat or chahat ka mohalla leke chalta hai,
         Ye pagal apne lobe per Naam-E-Hindustan leke chalta hai,
-        Mehez iss bat per kurban tyjhpe a Nomaan,
+        Mehez iss bat per kurban tyjhpe a Doston,
         Tu apne sath gaadi mai Tiranga lagake chalta hai.
       `,`
         Dilon mai zeher nafrat gholne se kuch nahi hoga,
@@ -1189,16 +1192,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Jo nafrat se toote hain vo ghar toh banalo,
         Apni ghar ki chat ko bachake rakhna,
         Apne padosiki ki diwar girane walon,
-        Ek
-      he rehne doh shaheedoh ka tiranga jhanda,
+        Ek he rehne doh shaheedoh ka tiranga jhanda,
         Roz nai jhande mai danda fasane valon.
       `,`
         Mandir mai dana chugker chidiya masjid mai pani peeti hai,
         Maine suna hai Radha ki chundri koi Salma begum seeti hai,
         Ek Rafi the jo her mehfil mai Raghupati Raghav gaate the,
         Toh kahin Prem Chand Eidgah padate the,
-        Arre Krishn
-      ke vakya sune Ruskhan ke mukh se,
+        Arre Krishn ke vakya sune Ruskhan ke mukh se,
         Na Hindu dikhta hai na musalman dikhta hai,
         Mujhe Bharat desh mai sirf insan dikhta hai.
       `,`
@@ -1217,8 +1218,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Mai bade budho ki khidmat ke liye aaya hu,
         Kon kehta hai huqumat ke liye aaya hu,
         Mai khasker hindu muslim ko ek kerne aaya hu,
-        Toote bikharte hue
-      rishte ko jodne aaya hu,
+        Toote bikharte hue rishte ko jodne aaya hu,
         Ab toh iss kismat ko badla bhi nahi jaasakta,
         Mai vo engineer hu vo jo vapas dilli bhi nahi jaasakta.
       `,`
@@ -1274,9 +1274,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Konsi baat kahan kaise kahi jaati hai,
         Ye salikha ho toh her baat suni jaati hai,
         Or insan pehchanne ki ye bhi ek nishani hai,
-        Guftagu batadeti hai kon kitna khandani hai. Mujhe her zulm ke aage tumhari dhaal banna hai,
-        Muhe
-      Galib nahi banna mujhe Iqbal banna hai.
+        Guftagu batadeti hai kon kitna khandani hai.
+      `,`
+        Mujhe her zulm ke aage tumhari dhaal banna hai,
+        Muhe Galib nahi banna mujhe Iqbal banna hai.
       `,`
         Bebafai ke her illzam se bahar kerdoh,
         Komm ko gardish-e-aiyam se bahar kerdoh,
@@ -1319,7 +1320,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Ki charagon ke safar mai dabdaba ho aandhiyon ka,
         Toh fir anjam zulmat ke siva kuch bhi nahi hai,
         Ye duniya nafraton ki aakhri stage mai hai,
-        Ilaj isska mohobbat ke siva kuch bhi nahi.,
+        Ilaj isska mohobbat ke siva kuch bhi nahi,
         Or,
         Ki charagon ke safar mai dabdaba ho aandhiyon ka,
         Toh fir anjam zulmat ke siva kuch bhi nahi hai,
@@ -1335,8 +1336,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Ki sadiyon se jab sath rahe hain fir ab kyu takrar karein,
         Sath jieenge sath mareenge aao ye iqrar karein,
         Tum talwar zami per rakhdoh hum bhi ab khanjar rakhdein,
-        Bhai bhai
-      hokerke kyu ek dooje per vaar karein,
+        Bhai bhai hokerke kyu ek dooje per vaar karein,
         Nafrat se nafrat badhti hai pyar se pyar panapta hai,
         Sham-a-mohobbat se aao roshan ye sansar karein.
       `,`
@@ -1344,14 +1344,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Sulagti dopahar mai jaise badal bhejdeta hai,
         Mai apne sab masael bus usi per chod detahu,
         Mere ooljhe masael ka vohi hal bhejdeta hai,
-        Jahan vale usse jab yaad kerna bhool jaate
-      hain,
+        Jahan vale usse jab yaad kerna bhool jaate hain,
         Zamino ki tahon mai koi hulchul bhej deta hai,
         Jahan ehle khirat tevar badal ker baat kerte hain,
         Vo ibrat ke liye doh chaar pagal bhejdeta hai,
         Subah magroor ko vo shaam bhi kerdeta hai,
-        Shohratein cheen ke
-      gum nam bhi kerdeta hai,
+        Shohratein cheen ke gum nam bhi kerdeta hai,
         Waqt se aankh milane ki jurrat mat karo,
         Waqt insan ko nilam bhi kerdeta hai.
       `,`
@@ -1360,8 +1358,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Mitti se jo bhi apni bafain na kersaka,
         Vo paid andhiyon mai jadonse ookhad gaya,
         Ussne bhi sabke sath ki meri mukhafilat,
-        Jiske
-      liye mai sare zamanese lad gaya,
+        Jiske liye mai sare zamanese lad gaya,
         Or jisdin mere oorooj ki ussne khabar suni,
         ussdin se usska zehni tavazun bigad gaya.
       `,`
@@ -1404,8 +1401,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Mazhabi mazdoor sab baithein hain inko kaam doh,
         Ek imarat shahar mai kafi purani or hai,
         Khamoshi kab cheekh banjai kise malum hai,
-        Julm
-      kerlo jab talak ye bezubani or hai.
+        Julm kerlo jab talak ye bezubani or hai.
       `,`
         Apne mustaqbil (future) ki chadar per rafu kerte hue,
         Masjidon mai dekhiye bacche vazu kerte hue,
@@ -1432,8 +1428,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Kahan devar ka dil atka hai bahujai samajhti hai,
         Hamare or usske beech ek dhage ka rishta hai,
         Hume lekin hamesha vo saga bhai samajhti hai,
-        Tamasha banke rehjaoge tum bhi sabki
-      nazron mai,
+        Tamasha banke rehjaoge tum bhi sabki nazron mai,
         Ye duniya dil ke tanko ko bhi turpai samajhti hai.
       `,`
         Kisi ke zakhm per chahat se patti kon bandhega,
@@ -1451,7 +1446,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Kuch toh log kaheenge logon ka kaam hai kehna,
         Chodo bekar ki baton ko kahin beet na jai raina.
       `,`
-        Mrat ateet ko dafna dalo anand bharixhya tumhare samne khada hai.
+        Mrat ateet ko dafna dalo anand bhavishya tumhare samne khada hai.
       `,`
         Ber lamya yahan musrufe karpasvani hu,
         Musalma toh yakinun hu magar Hindustani hu.
@@ -1506,16 +1501,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Or tawar ki mayaam kabhi fekhna nahi,
         Mumkin hain ki dushmano ko darane ke kaaam aai,
         Or kaccha samajhker bech na dena makan ko,
-        Shayad kabhi
-      ye sir ko chupane ke kaam aai.
+        Shayad kabhi ye sir ko chupane ke kaam aai.
       `,`
         Vo sir buland hamesha khushamadoh mai raha,
         Mai sir jhookai raha or sirmadoh mai raha,
         Or muhajiron yahi taarikh hai makano ki,
         Banane vala hamesha baramdoh mai raha,
         Or kabutaron ko pani pilake khush hu bohot,
-        Yahi bohot
-      hai ki mai kuch dair sayyadon mai raha.
+        Yahi bohot hai ki mai kuch dair sayyadon mai raha.
       `,`
         Lehron mai doobte rahe dariya nahi mila,
         Usse bichadke fir koi vaisa nahi mila,
@@ -1588,12 +1581,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         jiske liye mai sare zamane se lad gaya,
         or jisdin mere oorooj ki ussne khabar suni,
         ussdinse usska zehni tavazoon bigad gaya.
-      `,`
-        
+      `,`        
         Dil mai armaan yahi ho, yahi fariyad rahe,
         Mai rahu na rahu bharat mera abad rahe.
-      `,`
-        
+      `,`        
         Azi star vo mujhe rakhta hai ragejaan se,
         Ye bat such hai mera baap kum nahi meri maa se,
         Vo maake kehne pe kuch rob mujhpe rakhta hai,
@@ -1615,11 +1606,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         Mere baghair hain sab khwab usske viran se,
         Ye bat such hai mera baap kum nahi hai meri maa se.
       `,`
-        
         Mera chirag hawa ke khilaf jalta hai,
         Isiliye toh zamane ko aaj khalta hai,
         Or usi ko khalne lagi roshnai mere ghar ki,
         Mere chirag se jiska chirag jalta hai,
         Jo tumne aag lagai thi tum toh bhool gai,
         Hamare dil se abhi tak dhua nikalta hai.
-      `]}],UC=e=>{let t=(0,R.c)(9),{word:n,poet:r}=e,i;if(t[0]!==n){let e=n.split(`,`);i=e.map((t,n)=>{let r=t.trim(),i=r.toLowerCase()===`or`;return(0,z.jsxs)(`li`,{children:[i?(0,z.jsx)(`span`,{children:`Or`}):r,!i&&n<e.length-1&&`,`]},n)}),t[0]=n,t[1]=i}else i=t[1];let a;t[2]===i?a=t[3]:(a=(0,z.jsx)(`ul`,{children:i}),t[2]=i,t[3]=a);let o;t[4]===r?o=t[5]:(o=(0,z.jsx)(`b`,{children:r}),t[4]=r,t[5]=o);let s;return t[6]!==a||t[7]!==o?(s=(0,z.jsx)(`article`,{children:(0,z.jsxs)(`figcaption`,{children:[a,o]})}),t[6]=a,t[7]=o,t[8]=s):s=t[8],s};function WC(){let e=(0,R.c)(5),t,n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsx)(Xr,{children:(0,z.jsx)(`title`,{children:`Poetry`})}),n=(0,z.jsx)(Qr,{pageName:`Poetry`,pageText:`Lorem ipsum dolor sit ameet.`}),e[0]=t,e[1]=n):(t=e[0],n=e[1]);let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsxs)(`hgroup`,{children:[(0,z.jsx)(`h2`,{children:`Poetry`}),(0,z.jsx)(`p`,{children:`Lorem ipsum dolor sit ameet`})]}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,z.jsx)(lu,{}),e[3]=i):i=e[3];let a;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsxs)(z.Fragment,{children:[t,n,(0,z.jsx)(`section`,{className:`section`,children:(0,z.jsxs)(`div`,{className:`container`,children:[r,(0,z.jsxs)(`div`,{className:`sideMid`,children:[i,(0,z.jsx)(`div`,{className:`area-2`,children:(0,z.jsx)(`div`,{className:`poetry colors`,children:HC.map(GC)})}),(0,z.jsx)(pu,{})]})]})})]}),e[4]=a):a=e[4],a}function GC(e,t){return e.words.map((t,n)=>(0,z.jsx)(UC,{word:t,poet:e.poet},n))}function KC(){let e=(0,R.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(Xr,{children:[(0,z.jsx)(`title`,{children:`Thank You`}),(0,z.jsx)(`meta`,{name:`description`,content:`This is Reviews page`})]}),(0,z.jsx)(Qr,{pageName:`Thank You!`,pageText:`Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus`,otherImg:Zr,showBreadcrumbs:!1})]}),e[0]=t):t=e[0],t}function qC(){let e=(0,R.c)(5),[t,n]=(0,C.useState)(!1),r,i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=()=>{let e=()=>{n(window.scrollY>=300)};return window.addEventListener(`scroll`,e),()=>window.removeEventListener(`scroll`,e)},i=[],e[0]=r,e[1]=i):(r=e[0],i=e[1]),(0,C.useEffect)(r,i);let a=JC,o;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(`a`,{className:`callRight icon`,href:B.numTel,children:`ꀁ`}),e[2]=o):o=e[2];let s=`scrollTop icon ${t?`fixed`:``}`,c;return e[3]===s?c=e[4]:(c=(0,z.jsxs)(z.Fragment,{children:[o,(0,z.jsx)(`button`,{onClick:a,className:s,children:`ꀱ`})]}),e[3]=s,e[4]=c),c}function JC(){typeof window<`u`&&window.scrollTo({top:0,behavior:`smooth`})}function YC(e){let t=(0,R.c)(3),{children:n}=e,{pathname:r}=et(),i,a;return t[0]===r?(i=t[1],a=t[2]):(i=()=>{if(r){window.scrollTo(0,0);let e=document.body;e&&e.classList.remove(`back`);let t=document.querySelector(`header .headerBottom .navBar`);t&&t.classList.remove(`active`)}},a=[r],t[0]=r,t[1]=i,t[2]=a),(0,C.useEffect)(i,a),n}function XC(){return(0,C.useEffect)(()=>{if(document.querySelectorAll(`.colors`).forEach(function(e){let t=e.querySelectorAll(`.colors article`),n=1;t.forEach(e=>{n>10&&(n=1),e.style.setProperty(`--u`,`var(--cb${n})`),n++})}),window.IntersectionObserver){let e=new IntersectionObserver((e,t)=>{e.forEach(e=>{if(e.isIntersecting){let n=e.target,r=n.getAttribute(`data-src`);r&&(n.src=r),n.removeAttribute(`data-src`),t.unobserve(n)}})},{rootMargin:`0px 0px 100px 0px`});document.querySelectorAll(`img[data-src]`).forEach(t=>{e.observe(t)})}else console.warn(`This API is not supported by your browser, so you can't see the effect.`);{function e(e){let t=document.querySelector(`.partition`);if(!t||!e)return;let n=window.getComputedStyle(t),r=parseInt(n.gridAutoRows)||1,i=e.querySelector(`figure`);if(i){let t=i.getBoundingClientRect().height,n=window.getComputedStyle(e),a=parseFloat(n.marginBottom)||0,o=Math.ceil((t+a)/r);e.style.setProperty(`--num`,o)}}function t(){document.querySelectorAll(`.partition article`).forEach(t=>{e(t)})}if(window.IntersectionObserver){let t=new IntersectionObserver((t,n)=>{t.forEach(t=>{if(t.isIntersecting){let r=t.target,i=r.getAttribute(`data-img`),a=r.closest(`article`);i&&(r.src=i,r.removeAttribute(`data-img`),r.onload=()=>{e(a)},r.complete&&e(a)),n.unobserve(r)}})},{rootMargin:`0px 0px 500px 0px`});document.querySelectorAll(`img[data-img]`).forEach(e=>t.observe(e))}else alert(`This API is not supported by your browser, so you can't see the effect.`);window.addEventListener(`load`,t),window.addEventListener(`resize`,t)}},[et()]),null}var ZC=e=>{let t=(0,R.c)(18),n;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,z.jsx)(`div`,{className:`iconArea`,children:(0,z.jsx)(`i`,{className:`icon`,children:`ꁃ`})}),t[0]=n):n=t[0];let r;t[1]===e.name?r=t[2]:(r=(0,z.jsx)(`b`,{children:e.name}),t[1]=e.name,t[2]=r);let i;t[3]===e.place?i=t[4]:(i=(0,z.jsx)(`i`,{children:e.place}),t[3]=e.place,t[4]=i);let a;t[5]!==r||t[6]!==i?(a=(0,z.jsxs)(`li`,{children:[r,i]}),t[5]=r,t[6]=i,t[7]=a):a=t[7];let o;t[8]===e.icons?o=t[9]:(o=(0,z.jsx)(`li`,{children:(0,z.jsx)(`i`,{className:`icon`,dangerouslySetInnerHTML:{__html:e.icons}})}),t[8]=e.icons,t[9]=o);let s;t[10]!==a||t[11]!==o?(s=(0,z.jsxs)(`ul`,{children:[a,o]}),t[10]=a,t[11]=o,t[12]=s):s=t[12];let c;t[13]===e.text?c=t[14]:(c=(0,z.jsx)(`span`,{children:e.text}),t[13]=e.text,t[14]=c);let l;return t[15]!==s||t[16]!==c?(l=(0,z.jsx)(z.Fragment,{children:(0,z.jsxs)(`div`,{className:`reviewsArea`,children:[n,(0,z.jsxs)(`div`,{className:`outlineBox`,children:[s,c]})]})}),t[15]=s,t[16]=c,t[17]=l):l=t[17],l};function QC(){let e=(0,R.c)(7),t,n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsx)(Xr,{children:(0,z.jsx)(`title`,{children:`Reviews`})}),n=(0,z.jsx)(Qr,{pageName:`Reviews`,pageText:`Lorem ipsum dolor sit ameet.`}),e[0]=t,e[1]=n):(t=e[0],n=e[1]);let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsxs)(`hgroup`,{children:[(0,z.jsxs)(`h2`,{children:[`Customer's `,(0,z.jsx)(`span`,{children:`Reviews`})]}),(0,z.jsx)(`p`,{children:`Lorem ipsum dolor sit ameet`})]}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,z.jsx)(lu,{}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsx)(`div`,{className:`box1`,children:(0,z.jsx)(`p`,{className:`texts`,children:`Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.`})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(`div`,{className:`reviews`,children:Cs.map($C)}),e[5]=o):o=e[5];let s;return e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,z.jsxs)(z.Fragment,{children:[t,n,(0,z.jsx)(`section`,{className:`section`,children:(0,z.jsxs)(`div`,{className:`container`,children:[r,(0,z.jsxs)(`div`,{className:`sideMid`,children:[i,(0,z.jsx)(`div`,{className:`area-2`,children:(0,z.jsxs)(`div`,{className:`fw`,children:[a,o,(0,z.jsx)(`div`,{className:`btns center`,children:(0,z.jsx)(`a`,{href:B.numTel,target:`_blank`,children:`Hire Us`})})]})}),(0,z.jsx)(pu,{})]})]})})]}),e[6]=s):s=e[6],s}function $C(e,t){return(0,z.jsx)(ZC,{...e},t)}function ew(){let e=(0,R.c)(9),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsx)(Bn,{}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,z.jsx)(Ot,{path:`/`,element:(0,z.jsx)(Ns,{})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsx)(Ot,{path:`/inner`,element:(0,z.jsx)(VC,{})}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,z.jsx)(Ot,{path:`/lifestyle`,element:(0,z.jsx)(th,{})}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsx)(Ot,{path:`/portfolio`,element:(0,z.jsx)(_h,{})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(Ot,{path:`/contactus`,element:(0,z.jsx)(RC,{})}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,z.jsx)(Ot,{path:`/reviews`,element:(0,z.jsx)(QC,{})}),e[6]=s):s=e[6];let c;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,z.jsx)(Ot,{path:`/poetry`,element:(0,z.jsx)(WC,{})}),e[7]=c):c=e[7];let l;return e[8]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,z.jsxs)(_n,{children:[t,(0,z.jsxs)(At,{children:[n,r,i,a,o,s,c,(0,z.jsx)(Ot,{path:`/thankyou`,element:(0,z.jsx)(KC,{})})]}),(0,z.jsx)(Gn,{}),(0,z.jsx)(qC,{}),(0,z.jsx)(YC,{}),(0,z.jsx)(XC,{})]}),e[8]=l):l=e[8],l}(0,Ln.createRoot)(document.getElementById(`root`)).render((0,z.jsx)(C.StrictMode,{children:(0,z.jsx)(ew,{})}));
+      `]}],UC=e=>{let t=(0,R.c)(9),{word:n,poet:r}=e,i;if(t[0]!==n){let e=n.split(`,`);i=e.map((t,n)=>{let r=t.trim(),i=r.toLowerCase()===`or`;return(0,z.jsxs)(`li`,{children:[i?(0,z.jsx)(`span`,{children:`Or`}):r,!i&&n<e.length-1&&`,`]},n)}),t[0]=n,t[1]=i}else i=t[1];let a;t[2]===i?a=t[3]:(a=(0,z.jsx)(`ul`,{children:i}),t[2]=i,t[3]=a);let o;t[4]===r?o=t[5]:(o=(0,z.jsx)(`b`,{children:r}),t[4]=r,t[5]=o);let s;return t[6]!==a||t[7]!==o?(s=(0,z.jsx)(`article`,{children:(0,z.jsxs)(`figcaption`,{children:[a,o]})}),t[6]=a,t[7]=o,t[8]=s):s=t[8],s};function WC(){let e=(0,R.c)(20),[t,n]=(0,C.useState)(``),r,i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsx)(Xr,{children:(0,z.jsx)(`title`,{children:`Poetry`})}),i=(0,z.jsx)(Qr,{pageName:`Poetry`,pageText:`Lorem ipsum dolor sit ameet.`}),e[0]=r,e[1]=i):(r=e[0],i=e[1]);let a;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsxs)(`hgroup`,{children:[(0,z.jsx)(`h2`,{children:`Poetry`}),(0,z.jsx)(`p`,{children:`Lorem ipsum dolor sit ameet`})]}),e[2]=a):a=e[2];let o;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(lu,{}),e[3]=o):o=e[3];let s;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(s=e=>n(e.target.value),e[4]=s):s=e[4];let c;e[5]===t?c=e[6]:(c=(0,z.jsx)(`input`,{type:`text`,placeholder:`Please search here...`,value:t,onChange:s}),e[5]=t,e[6]=c);let l;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,z.jsx)(`i`,{className:`icon`,children:`ꀐ`}),e[7]=l):l=e[7];let u;e[8]===c?u=e[9]:(u=(0,z.jsxs)(`div`,{className:`searchBar`,children:[c,l]}),e[8]=c,e[9]=u);let d;e[10]===t?d=e[11]:(d=HC.map(e=>e.words.filter(e=>e.toLowerCase().includes(t.toLowerCase())).map((t,n)=>(0,z.jsx)(UC,{word:t,poet:e.poet},n))),e[10]=t,e[11]=d);let f;e[12]===d?f=e[13]:(f=(0,z.jsx)(`div`,{className:`poetry`,children:d}),e[12]=d,e[13]=f);let p;e[14]!==u||e[15]!==f?(p=(0,z.jsxs)(`div`,{className:`area-2`,children:[u,f]}),e[14]=u,e[15]=f,e[16]=p):p=e[16];let m;e[17]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,z.jsx)(pu,{}),e[17]=m):m=e[17];let h;return e[18]===p?h=e[19]:(h=(0,z.jsxs)(z.Fragment,{children:[r,i,(0,z.jsx)(`section`,{className:`section`,children:(0,z.jsxs)(`div`,{className:`container`,children:[a,(0,z.jsxs)(`div`,{className:`sideMid`,children:[o,p,m]})]})})]}),e[18]=p,e[19]=h),h}function GC(){let e=(0,R.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsxs)(z.Fragment,{children:[(0,z.jsxs)(Xr,{children:[(0,z.jsx)(`title`,{children:`Thank You`}),(0,z.jsx)(`meta`,{name:`description`,content:`This is Reviews page`})]}),(0,z.jsx)(Qr,{pageName:`Thank You!`,pageText:`Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus`,otherImg:Zr,showBreadcrumbs:!1})]}),e[0]=t):t=e[0],t}function KC(){let e=(0,R.c)(5),[t,n]=(0,C.useState)(!1),r,i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=()=>{let e=()=>{n(window.scrollY>=300)};return window.addEventListener(`scroll`,e),()=>window.removeEventListener(`scroll`,e)},i=[],e[0]=r,e[1]=i):(r=e[0],i=e[1]),(0,C.useEffect)(r,i);let a=qC,o;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(`a`,{className:`callRight icon`,href:B.numTel,children:`ꀁ`}),e[2]=o):o=e[2];let s=`scrollTop icon ${t?`fixed`:``}`,c;return e[3]===s?c=e[4]:(c=(0,z.jsxs)(z.Fragment,{children:[o,(0,z.jsx)(`button`,{onClick:a,className:s,children:`ꀱ`})]}),e[3]=s,e[4]=c),c}function qC(){typeof window<`u`&&window.scrollTo({top:0,behavior:`smooth`})}function JC(e){let t=(0,R.c)(3),{children:n}=e,{pathname:r}=et(),i,a;return t[0]===r?(i=t[1],a=t[2]):(i=()=>{if(r){window.scrollTo(0,0);let e=document.body;e&&e.classList.remove(`back`);let t=document.querySelector(`header .headerBottom .navBar`);t&&t.classList.remove(`active`)}},a=[r],t[0]=r,t[1]=i,t[2]=a),(0,C.useEffect)(i,a),n}function YC(){return(0,C.useEffect)(()=>{if(document.querySelectorAll(`.colors`).forEach(function(e){let t=e.querySelectorAll(`.colors article`),n=1;t.forEach(e=>{n>10&&(n=1),e.style.setProperty(`--u`,`var(--cb${n})`),n++})}),window.IntersectionObserver){let e=new IntersectionObserver((e,t)=>{e.forEach(e=>{if(e.isIntersecting){let n=e.target,r=n.getAttribute(`data-src`);r&&(n.src=r),n.removeAttribute(`data-src`),t.unobserve(n)}})},{rootMargin:`0px 0px 100px 0px`});document.querySelectorAll(`img[data-src]`).forEach(t=>{e.observe(t)})}else console.warn(`This API is not supported by your browser, so you can't see the effect.`);{function e(e){let t=document.querySelector(`.partition`);if(!t||!e)return;let n=window.getComputedStyle(t),r=parseInt(n.gridAutoRows)||1,i=e.querySelector(`figure`);if(i){let t=i.getBoundingClientRect().height,n=window.getComputedStyle(e),a=parseFloat(n.marginBottom)||0,o=Math.ceil((t+a)/r);e.style.setProperty(`--num`,o)}}function t(){document.querySelectorAll(`.partition article`).forEach(t=>{e(t)})}if(window.IntersectionObserver){let t=new IntersectionObserver((t,n)=>{t.forEach(t=>{if(t.isIntersecting){let r=t.target,i=r.getAttribute(`data-img`),a=r.closest(`article`);i&&(r.src=i,r.removeAttribute(`data-img`),r.onload=()=>{e(a)},r.complete&&e(a)),n.unobserve(r)}})},{rootMargin:`0px 0px 500px 0px`});document.querySelectorAll(`img[data-img]`).forEach(e=>t.observe(e))}else alert(`This API is not supported by your browser, so you can't see the effect.`);window.addEventListener(`load`,t),window.addEventListener(`resize`,t)}},[et()]),null}var XC=e=>{let t=(0,R.c)(18),n;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,z.jsx)(`div`,{className:`iconArea`,children:(0,z.jsx)(`i`,{className:`icon`,children:`ꁃ`})}),t[0]=n):n=t[0];let r;t[1]===e.name?r=t[2]:(r=(0,z.jsx)(`b`,{children:e.name}),t[1]=e.name,t[2]=r);let i;t[3]===e.place?i=t[4]:(i=(0,z.jsx)(`i`,{children:e.place}),t[3]=e.place,t[4]=i);let a;t[5]!==r||t[6]!==i?(a=(0,z.jsxs)(`li`,{children:[r,i]}),t[5]=r,t[6]=i,t[7]=a):a=t[7];let o;t[8]===e.icons?o=t[9]:(o=(0,z.jsx)(`li`,{children:(0,z.jsx)(`i`,{className:`icon`,dangerouslySetInnerHTML:{__html:e.icons}})}),t[8]=e.icons,t[9]=o);let s;t[10]!==a||t[11]!==o?(s=(0,z.jsxs)(`ul`,{children:[a,o]}),t[10]=a,t[11]=o,t[12]=s):s=t[12];let c;t[13]===e.text?c=t[14]:(c=(0,z.jsx)(`span`,{children:e.text}),t[13]=e.text,t[14]=c);let l;return t[15]!==s||t[16]!==c?(l=(0,z.jsx)(z.Fragment,{children:(0,z.jsxs)(`div`,{className:`reviewsArea`,children:[n,(0,z.jsxs)(`div`,{className:`outlineBox`,children:[s,c]})]})}),t[15]=s,t[16]=c,t[17]=l):l=t[17],l};function ZC(){let e=(0,R.c)(7),t,n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsx)(Xr,{children:(0,z.jsx)(`title`,{children:`Reviews`})}),n=(0,z.jsx)(Qr,{pageName:`Reviews`,pageText:`Lorem ipsum dolor sit ameet.`}),e[0]=t,e[1]=n):(t=e[0],n=e[1]);let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsxs)(`hgroup`,{children:[(0,z.jsxs)(`h2`,{children:[`Customer's `,(0,z.jsx)(`span`,{children:`Reviews`})]}),(0,z.jsx)(`p`,{children:`Lorem ipsum dolor sit ameet`})]}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,z.jsx)(lu,{}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsx)(`div`,{className:`box1`,children:(0,z.jsx)(`p`,{className:`texts`,children:`Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.`})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(`div`,{className:`reviews`,children:Cs.map(QC)}),e[5]=o):o=e[5];let s;return e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,z.jsxs)(z.Fragment,{children:[t,n,(0,z.jsx)(`section`,{className:`section`,children:(0,z.jsxs)(`div`,{className:`container`,children:[r,(0,z.jsxs)(`div`,{className:`sideMid`,children:[i,(0,z.jsx)(`div`,{className:`area-2`,children:(0,z.jsxs)(`div`,{className:`fw`,children:[a,o,(0,z.jsx)(`div`,{className:`btns center`,children:(0,z.jsx)(`a`,{href:B.numTel,target:`_blank`,children:`Hire Us`})})]})}),(0,z.jsx)(pu,{})]})]})})]}),e[6]=s):s=e[6],s}function QC(e,t){return(0,z.jsx)(XC,{...e},t)}function $C(){let e=(0,R.c)(9),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,z.jsx)(Bn,{}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,z.jsx)(Ot,{path:`/`,element:(0,z.jsx)(Ns,{})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,z.jsx)(Ot,{path:`/inner`,element:(0,z.jsx)(VC,{})}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,z.jsx)(Ot,{path:`/lifestyle`,element:(0,z.jsx)(th,{})}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,z.jsx)(Ot,{path:`/portfolio`,element:(0,z.jsx)(_h,{})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,z.jsx)(Ot,{path:`/contactus`,element:(0,z.jsx)(RC,{})}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,z.jsx)(Ot,{path:`/reviews`,element:(0,z.jsx)(ZC,{})}),e[6]=s):s=e[6];let c;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,z.jsx)(Ot,{path:`/poetry`,element:(0,z.jsx)(WC,{})}),e[7]=c):c=e[7];let l;return e[8]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,z.jsxs)(_n,{children:[t,(0,z.jsxs)(At,{children:[n,r,i,a,o,s,c,(0,z.jsx)(Ot,{path:`/thankyou`,element:(0,z.jsx)(GC,{})})]}),(0,z.jsx)(Gn,{}),(0,z.jsx)(KC,{}),(0,z.jsx)(JC,{}),(0,z.jsx)(YC,{})]}),e[8]=l):l=e[8],l}(0,Ln.createRoot)(document.getElementById(`root`)).render((0,z.jsx)(C.StrictMode,{children:(0,z.jsx)($C,{})}));
