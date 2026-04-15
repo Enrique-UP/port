@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Banner from "../common/Banner";
 import LeftSidebar from "../common/LeftSidebar";
@@ -29,6 +30,7 @@ const PoetryTag = ({ word, poet }) => {
   );
 };
 export default function Poetry() {
+  const [search, setSearch] = useState("");
   return (
     <>
       <Helmet>
@@ -48,14 +50,19 @@ export default function Poetry() {
             <LeftSidebar />
 
             <div className="area-2">
-              <div className="poetry colors">
+              <div className="searchBar">
+                <input type="text" placeholder="Please search here..." value={search} onChange={(e) => setSearch(e.target.value)} />
+                <i className="icon">&#xa010;</i>
+              </div>{/* searchBar */}
+              <div className="poetry">
                 {
-                  PoetryData.map((val, ind) =>
-                    val.words.map((word, i) => (
-                      <PoetryTag 
-                        key={i} 
-                        word={word} 
-                        poet={val.poet} 
+                  PoetryData.map((val) =>
+                    val.words.filter((word) => word.toLowerCase().includes(search.toLowerCase())
+                  ).map((word, i) => (
+                      <PoetryTag
+                        key={i}
+                        word={word}
+                        poet={val.poet}
                       />
                     ))
                   )

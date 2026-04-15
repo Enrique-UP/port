@@ -215,6 +215,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
+.searchBar{width: 100%;display: flex;margin-bottom: 16px;position: relative;position:sticky;top:0;
+    input{width: 100%;border: 1px solid var(--b1);outline: none;padding: 12px 12px 12px 40px;background: #fff;}
+    .icon{position: absolute;top:0;bottom:0;margin-block: auto;left:16px;display: flex;align-items: center;}
+}
 .poetry{counter-reset: num;display:grid;grid-template-columns: repeat(1, minmax(0, 1fr));grid-gap: 16px;
     article{width: 100%;display: flex;border: 1px solid var(--b1);padding:16px;flex-direction:column;row-gap:8px;
         figcaption{width: 100%;@extend %fc;row-gap:8px;height: 100%;justify-content: space-between;
