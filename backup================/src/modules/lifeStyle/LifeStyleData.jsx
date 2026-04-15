@@ -23,5 +23,5 @@ const LifeStyleData = [
     ],
   },
   { imgFdr: "mountains", place:"Lorem5", date: "2024-05-20", items: 15 },
-];
+].reverse();
 export default LifeStyleData;

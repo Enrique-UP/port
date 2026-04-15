@@ -110,7 +110,7 @@ export default function Lifestyle() {
                       </figure>
                     </article>
                   ))
-                ).reverse()}
+                )}
               </div>
             </div>{/* area-2 */}
             
