@@ -133,9 +133,9 @@
         .texts{font-size: 14px;}
     }
 
-    .port .hd{font-size: 24px;padding-left: 64px;}
-    .port .hd::before{border-block:25px solid transparent;}
+    .port .hd{font-size: 24px;padding-left: 48px;}
     .port .hd::after{left:6px;}
+    .port .hd::before {border-left-width:40px;}
     .port article {padding-left: 16px;}
     .port figcaption > span::before{left: -27px;width: 22px;height: 22px;font-size: 12px;border-radius: 0;}
 

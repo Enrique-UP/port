@@ -246,11 +246,11 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 }
 
 .port{width: 100%;@extend %fc;row-gap:80px;counter-reset: count;
-    .hd{position: relative;font-size: 36px;font-weight: 900;line-height: 1.2;padding-left:72px;padding-block: 8px;display:flex;
+    .hd{position: relative;font-size: 36px;font-weight: 900;line-height: 1.2;padding-left:72px;display:flex;
         > span::after{content: attr(data-hd);}
         &::before, &::after{position: absolute;}
-        &::before{content:"";width: 0;height: 0;border-block: 32px solid transparent;border-left: 56px solid var(--cb1);top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);left:-1px;}
-        &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 24px;top: 0;left: 8px;line-height: 1;bottom: 0;margin-block: auto;display: flex;align-items: center;}
+        &::before{content:"";width: 0;height: 0;border-block: 21px solid transparent;border-left: 56px solid var(--cb1);top: 0;left:-1px;}
+        &::after{font-family: fontello;content:"\a016";color:#fff;font-size: 16px;top: 13px;left: 10px;line-height: 1;display: flex;align-items: center;}
     }
     .portArea{width: 100%;@extend %fc;row-gap: 16px;border-left:1px solid var(--b1);position: relative;padding-top: 8px;
         &::before{width: 6px;height: 4px;position: absolute;top:0;left:-3px;content:"";background: var(--cb1);}
@@ -260,9 +260,9 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
     figcaption{width: 100%;@extend %fc;row-gap:8px;
         > span{color:var(--f2);position: relative;
-            &::before{width: 24px;height: 24px;position: absolute;left:-44px;background: var(--cb1);border-radius: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);@extend %center;border-radius: 100%;counter-increment: count;content: counter(count);color: #fff;font-size: 14px;}
+            &::before{width: 24px;height: 24px;position: absolute;left:-44px;background: var(--c2);border-radius: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);@extend %center;border-radius: 100%;counter-increment: count;content: counter(count);color: #fff;font-size: 14px;}
         }
-        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;
+        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;font-size: 18px;
             &::after{content:attr(data-site);}
         }
         .links{display: flex;

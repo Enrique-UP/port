@@ -12,6 +12,7 @@ const PortfolioData = [
     hd: "NameHere (2020-Present)",
     folderName: "two",
     items: [
+      { date: "01-00-2014", name: "home1", domain: "com" },
       { date: "01-00-2015", name: "demo2", domain: "com" },
       { date: "01-00-2016", name: "lorem5", domain: "in" },
       { date: "01-00-2025", name: "dolor10", domain: "edu.in" },
