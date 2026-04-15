@@ -203,7 +203,8 @@ const PoetryData = [
         Ajab duniya hai na shayar yahan per sir oothate hain,
         Jo shayar hain vo mehfil mai dari chadar oothate hai,
         Tumhare shehar mein mayyat ko sab kandha nahin dete,
-        Humare gaaon mein chhappar bhi sab mil kar uthate hain. Unhe firkhaparashti mat sikha dena,
+        Humare gaaon mein chhappar bhi sab mil kar uthate hain,
+        Unhe firkhaparashti mat sikha dena,
         Ki ye bacche zami se choomker titli ke pankh oothate hain.
       `,
       `
@@ -557,7 +558,8 @@ const PoetryData = [
         Amiri resham-o-kumkhwab mai nangi nazar aai,
         Garibi shan se ek taat ke parde mai rehti hai,
         Mai insan hu bahak jana meri fitrat mai shamil hai,
-        Hawa bhi ussko chuke dair tak nashe mai rehti hai. Mohobbat mai parakhne janchne se faida kya hai,
+        Hawa bhi ussko chuke dair tak nashe mai rehti hai.,
+        Mohobbat mai parakhne janchne se faida kya hai,
         Kami thodi bahut her ek ke shazar mai rehti hai,
         Ye apne aapko takseem kerlete hain soobo mai,
         Kharabi bus yahi her mulk ke nakshe mai rehti hai.
@@ -748,7 +750,8 @@ const PoetryData = [
         Hoton par ganga ho, haaton main tiranga ho,
         Geeta ka gyaan sune na sune, is dharti ka yashgaan sune,
         Ham shbd-kirtan sun na sake, Bharat mata ka jay-gaan sune,
-        Parwar-digaar main tere dwaar par le pukaar ye kahata hoon, Chaahe ajaan na sune kaan par jay jay hindustaan sune,
+        Parwar-digaar main tere dwaar par le pukaar ye kahata hoon,
+        Chaahe ajaan na sune kaan par jay jay hindustaan sune,
         Jan-man mein uchchhal desh prem ka jaladh Tiranga ho,
         Hontho.n par Ganga ho, haatho.n mein Tiranga ho.
       `,
@@ -948,8 +951,7 @@ const PoetryData = [
         Mujhe malum hai meri hifazat kon kerta hai,
         Or hamare jaise he kuch log aajate hain ladne ko,
         Nahi toh jung mai jaane ki himmat kon kerta hai,
-        Or humhe ne laaj rakhi hai buzoorgo
-      ki yahan verna,
+        Or humhe ne laaj rakhi hai buzoorgo ki yahan verna,
         Sabhi tookdo pe palte hain baghawat kon kerta hai.
       `,
       `
@@ -1015,8 +1017,7 @@ const PoetryData = [
         Prathvi ko ooncha ootha nahi sakta,
         Parvat himalaya jaise ko koi hila nahi sakta,
         Sagar jaise ko koi sookha nahi sakta,
-        Oosi tarah Narendra bhai ki taqat ko koi Hindustan mai
-      daba nahi sakta koi mita nahi sakta.
+        Oosi tarah Narendra bhai ki taqat ko koi Hindustan mai daba nahi sakta koi mita nahi sakta.
       `,
       `
         Congress ki mandi badi nashili hai,
@@ -1130,16 +1131,18 @@ const PoetryData = [
       `,
       `
         Sirf itni bat per ussne hume balvai likha hai,
-        Ki hamare ghar ke ek bartan pe ISI likha hai. Hamare mulk mai insan jab ghar mai nahi rehte, Kahin Hindu Muslim Sikh likha hai, Yeh dukh shayad hamari zindagi ke sath jaiga, Ki jo dil per laga hai
-      teer uss per bhai likha hai.
+        Ki hamare ghar ke ek bartan pe ISI likha hai.,
+        Hamare mulk mai insan jab ghar mai nahi rehte,
+        Kahin Hindu Muslim Sikh likha hai,
+        Yeh dukh shayad hamari zindagi ke sath jaiga,
+        Ki jo dil per laga hai teer uss per bhai likha hai.
       `,
       `
         Iss shahar ki sabhi ladkiyan mujhe adab kerti hain,
         Kyunki mai baccho ki kalai ke liye rakhi banata hu,
         Vazahrat chand ghanto ki mahal minar se ooncha,
         Mai Aurangzeb hu apne liye khichdi banata hu,
-        Tumhe hukumat milti hai toh
-      Gujrat banta hai,
+        Tumhe hukumat milti hai toh Gujrat banta hai,
         Mujhe hukumat milti hai toh Dilli banata hu,
         Mai Aurangzeb hu apne liye khichdi banata hu.
       `,
@@ -1158,8 +1161,7 @@ const PoetryData = [
         Hukumat ke ishare per toh murda bol sakta hai,
         Yaha per nafraton ne kaise-kaise gul khilai hain,
         Tooti issmat bata deti hai dupatta bol sakta hai,
-        Hukumat ki tavajjo chahti hai
-      ye hamari jali basti,
+        Hukumat ki tavajjo chahti hai ye hamari jali basti,
         Adalat poochna chahe toh malva bol sakta hai.
       `,
       `
@@ -1167,8 +1169,7 @@ const PoetryData = [
         Kahi tum pooch mat lena ye goonga bol sakta hao,
         Adalat mai gavahi ke liye lashein nahi aati,
         Vo ankhe bujh chuki hain fir bhi chashma bolsakta hai,
-        Bohot si kursiyan iss mulk
-      mai lasho pe rakhi hui hain,
+        Bohot si kursiyan iss mulk mai lasho pe rakhi hui hain,
         Ye vo such hai jise jhoothe se jhootha bol sakta hai.
       `,
       `
@@ -1266,7 +1267,8 @@ const PoetryData = [
         Faisla maidan mai hoga ke marta kon hai.
       `,
       `
-        Bol ki lobe azad hain tere fir mere sir pe ek khadi dhoop ki bauchar giri,
+        Bol ki lab azad hain tere,
+        Fir mere sir pe ek khadi dhoop ki bauchar giri,
         Mai jahan jaaker rooka tha vahi diwar giri,
         Log kishton mai mujhe qatl kareenge shayad,
         Sabse pehle meri awaz per talwar giri.
@@ -1289,8 +1291,7 @@ const PoetryData = [
         Hum samandar hain humko na raste bata,
         Hum musafir nahi jo bhatak jaeenge,
         Dushmani yaar kis-kis se leenge bhala,
-        Humhe tere pehlu se sarak
-      jaeenge.
+        Humhe tere pehlu se sarak jaeenge.
       `,
       `
         Tujhe duniya se jo itna gila hai,
@@ -1306,7 +1307,7 @@ const PoetryData = [
         Raja Dheergji bhi nahi hota,
         Vidwan ke pass dhan nahi hota,
         kisi ko muqammal jahan nahi milta,
-              Kahi zami toh kahi aasma nahi milta.
+        Kahi zami toh kahi aasma nahi milta.
       `,
       `
         Sabhi ko sabhi kuch hasil nahi milta,
@@ -1370,20 +1371,22 @@ const PoetryData = [
         Ye kon kehraha hai ki talwar deke dekh,
         Duniya ko jeet laeenge dastar deke dekh,
         Or kis tarha chalatein hain batadeenge tumhe,
-        Humko bhi doh roz ke liye sarkar deke dekh. Or Ye kon kehraha hai ki talwar deke dekh,
-        Duniya ko
-      jeet laeenge bandook deke dekh,
+        Humko bhi doh roz ke liye sarkar deke dekh.,
+        Or,
+        Ye kon kehraha hai ki talwar deke dekh,
+        Duniya ko jeet laeenge bandook deke dekh,
         Or marjaeenge meet jaeenge apne Hinduastan ke khatir,
         Hume bhi sarhado pe ladne ko bhej ke dekh.
       `,
       `
         Ki mohobbat or chahat ka mohalla leke chalta hai,
         Ye pagal apne lobe per naam-e-allah leke chalta hai,
-        Mehez iss bat per kurban tyjhpe a Nomaan,
-        Tu apne sath gaadi mai musalla leke chalta hai. Or Ki mohobbat or chahat ka mohalla
-      leke chalta hai,
+        Mehez iss bat per kurban tyjhpe a Doston,
+        Tu apne sath gaadi mai musalla leke chalta hai.,
+        Or,
+        Ki mohobbat or chahat ka mohalla leke chalta hai,
         Ye pagal apne lobe per Naam-E-Hindustan leke chalta hai,
-        Mehez iss bat per kurban tyjhpe a Nomaan,
+        Mehez iss bat per kurban tyjhpe a Doston,
         Tu apne sath gaadi mai Tiranga lagake chalta hai.
       `,
       `
@@ -1404,8 +1407,7 @@ const PoetryData = [
         Jo nafrat se toote hain vo ghar toh banalo,
         Apni ghar ki chat ko bachake rakhna,
         Apne padosiki ki diwar girane walon,
-        Ek
-      he rehne doh shaheedoh ka tiranga jhanda,
+        Ek he rehne doh shaheedoh ka tiranga jhanda,
         Roz nai jhande mai danda fasane valon.
       `,
       `
@@ -1413,8 +1415,7 @@ const PoetryData = [
         Maine suna hai Radha ki chundri koi Salma begum seeti hai,
         Ek Rafi the jo her mehfil mai Raghupati Raghav gaate the,
         Toh kahin Prem Chand Eidgah padate the,
-        Arre Krishn
-      ke vakya sune Ruskhan ke mukh se,
+        Arre Krishn ke vakya sune Ruskhan ke mukh se,
         Na Hindu dikhta hai na musalman dikhta hai,
         Mujhe Bharat desh mai sirf insan dikhta hai.
       `,
@@ -1436,8 +1437,7 @@ const PoetryData = [
         Mai bade budho ki khidmat ke liye aaya hu,
         Kon kehta hai huqumat ke liye aaya hu,
         Mai khasker hindu muslim ko ek kerne aaya hu,
-        Toote bikharte hue
-      rishte ko jodne aaya hu,
+        Toote bikharte hue rishte ko jodne aaya hu,
         Ab toh iss kismat ko badla bhi nahi jaasakta,
         Mai vo engineer hu vo jo vapas dilli bhi nahi jaasakta.
       `,
@@ -1505,9 +1505,11 @@ const PoetryData = [
         Konsi baat kahan kaise kahi jaati hai,
         Ye salikha ho toh her baat suni jaati hai,
         Or insan pehchanne ki ye bhi ek nishani hai,
-        Guftagu batadeti hai kon kitna khandani hai. Mujhe her zulm ke aage tumhari dhaal banna hai,
-        Muhe
-      Galib nahi banna mujhe Iqbal banna hai.
+        Guftagu batadeti hai kon kitna khandani hai.
+      `,
+      `
+        Mujhe her zulm ke aage tumhari dhaal banna hai,
+        Muhe Galib nahi banna mujhe Iqbal banna hai.
       `,
       `
         Bebafai ke her illzam se bahar kerdoh,
@@ -1559,7 +1561,7 @@ const PoetryData = [
         Ki charagon ke safar mai dabdaba ho aandhiyon ka,
         Toh fir anjam zulmat ke siva kuch bhi nahi hai,
         Ye duniya nafraton ki aakhri stage mai hai,
-        Ilaj isska mohobbat ke siva kuch bhi nahi.,
+        Ilaj isska mohobbat ke siva kuch bhi nahi,
         Or,
         Ki charagon ke safar mai dabdaba ho aandhiyon ka,
         Toh fir anjam zulmat ke siva kuch bhi nahi hai,
@@ -1577,8 +1579,7 @@ const PoetryData = [
         Ki sadiyon se jab sath rahe hain fir ab kyu takrar karein,
         Sath jieenge sath mareenge aao ye iqrar karein,
         Tum talwar zami per rakhdoh hum bhi ab khanjar rakhdein,
-        Bhai bhai
-      hokerke kyu ek dooje per vaar karein,
+        Bhai bhai hokerke kyu ek dooje per vaar karein,
         Nafrat se nafrat badhti hai pyar se pyar panapta hai,
         Sham-a-mohobbat se aao roshan ye sansar karein.
       `,
@@ -1587,14 +1588,12 @@ const PoetryData = [
         Sulagti dopahar mai jaise badal bhejdeta hai,
         Mai apne sab masael bus usi per chod detahu,
         Mere ooljhe masael ka vohi hal bhejdeta hai,
-        Jahan vale usse jab yaad kerna bhool jaate
-      hain,
+        Jahan vale usse jab yaad kerna bhool jaate hain,
         Zamino ki tahon mai koi hulchul bhej deta hai,
         Jahan ehle khirat tevar badal ker baat kerte hain,
         Vo ibrat ke liye doh chaar pagal bhejdeta hai,
         Subah magroor ko vo shaam bhi kerdeta hai,
-        Shohratein cheen ke
-      gum nam bhi kerdeta hai,
+        Shohratein cheen ke gum nam bhi kerdeta hai,
         Waqt se aankh milane ki jurrat mat karo,
         Waqt insan ko nilam bhi kerdeta hai.
       `,
@@ -1604,8 +1603,7 @@ const PoetryData = [
         Mitti se jo bhi apni bafain na kersaka,
         Vo paid andhiyon mai jadonse ookhad gaya,
         Ussne bhi sabke sath ki meri mukhafilat,
-        Jiske
-      liye mai sare zamanese lad gaya,
+        Jiske liye mai sare zamanese lad gaya,
         Or jisdin mere oorooj ki ussne khabar suni,
         ussdin se usska zehni tavazun bigad gaya.
       `,
@@ -1657,8 +1655,7 @@ const PoetryData = [
         Mazhabi mazdoor sab baithein hain inko kaam doh,
         Ek imarat shahar mai kafi purani or hai,
         Khamoshi kab cheekh banjai kise malum hai,
-        Julm
-      kerlo jab talak ye bezubani or hai.
+        Julm kerlo jab talak ye bezubani or hai.
       `,
       `
         Apne mustaqbil (future) ki chadar per rafu kerte hue,
@@ -1692,8 +1689,7 @@ const PoetryData = [
         Kahan devar ka dil atka hai bahujai samajhti hai,
         Hamare or usske beech ek dhage ka rishta hai,
         Hume lekin hamesha vo saga bhai samajhti hai,
-        Tamasha banke rehjaoge tum bhi sabki
-      nazron mai,
+        Tamasha banke rehjaoge tum bhi sabki nazron mai,
         Ye duniya dil ke tanko ko bhi turpai samajhti hai.
       `,
       `
@@ -1715,7 +1711,7 @@ const PoetryData = [
         Chodo bekar ki baton ko kahin beet na jai raina.
       `,
       `
-        Mrat ateet ko dafna dalo anand bharixhya tumhare samne khada hai.
+        Mrat ateet ko dafna dalo anand bhavishya tumhare samne khada hai.
       `,
       `
         Ber lamya yahan musrufe karpasvani hu,
@@ -1784,8 +1780,7 @@ const PoetryData = [
         Or tawar ki mayaam kabhi fekhna nahi,
         Mumkin hain ki dushmano ko darane ke kaaam aai,
         Or kaccha samajhker bech na dena makan ko,
-        Shayad kabhi
-      ye sir ko chupane ke kaam aai.
+        Shayad kabhi ye sir ko chupane ke kaam aai.
       `,
       `
         Vo sir buland hamesha khushamadoh mai raha,
@@ -1793,8 +1788,7 @@ const PoetryData = [
         Or muhajiron yahi taarikh hai makano ki,
         Banane vala hamesha baramdoh mai raha,
         Or kabutaron ko pani pilake khush hu bohot,
-        Yahi bohot
-      hai ki mai kuch dair sayyadon mai raha.
+        Yahi bohot hai ki mai kuch dair sayyadon mai raha.
       `,
       `
         Lehron mai doobte rahe dariya nahi mila,
@@ -1883,13 +1877,11 @@ const PoetryData = [
         or jisdin mere oorooj ki ussne khabar suni,
         ussdinse usska zehni tavazoon bigad gaya.
       `,
-      `
-        
+      `        
         Dil mai armaan yahi ho, yahi fariyad rahe,
         Mai rahu na rahu bharat mera abad rahe.
       `,
-      `
-        
+      `        
         Azi star vo mujhe rakhta hai ragejaan se,
         Ye bat such hai mera baap kum nahi meri maa se,
         Vo maake kehne pe kuch rob mujhpe rakhta hai,
@@ -1912,7 +1904,6 @@ const PoetryData = [
         Ye bat such hai mera baap kum nahi hai meri maa se.
       `,
       `
-        
         Mera chirag hawa ke khilaf jalta hai,
         Isiliye toh zamane ko aaj khalta hai,
         Or usi ko khalne lagi roshnai mere ghar ki,
@@ -1925,36 +1916,3 @@ const PoetryData = [
 ];
 
 export default PoetryData;
-
-
-
-
-
-
-
-
-
-
-
-
-// const PoetryData = [
-//   {
-//     poet: "-Unknown Poet",
-//     words: [
-//       `        
-//         Lorem1,
-//         Ipsum1,
-//         Dolor1,
-//         Sit1.
-//       `,
-//       `        
-//         Lorem2,
-//         Ipsum2,
-//         Dolor2,
-//         Sit2.
-//       `,
-//     ]
-//   }
-// ];
-
-// export default PoetryData;
