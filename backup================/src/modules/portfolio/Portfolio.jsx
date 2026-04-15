@@ -47,7 +47,7 @@ const Temp = ({ date, site, link, about, img, onClick }) => {
     <article>
       <figcaption>
         <span>{date}</span>
-        <a className="site" href={link} target="_blank" rel="noreferrer">{displaySite}</a>
+        <a className="site" href={link} target="_blank" rel="noreferrer" data-site={displaySite}></a>
         <p className={about}></p>
         <div className="links">
           {link && (<a href={link} target="_blank" rel="noreferrer">Live Demo</a>)}
@@ -97,7 +97,7 @@ export default function Portfolio() {
               <div className="port">
                 {PortfolioData.map((section, i) => (
                   <div className="portArea" key={i}>
-                    <p className="hd">{section.hd}</p>
+                    <p className="hd"><span data-hd={section.hd}></span></p>
 
                     {section.items.map(
                       ({ date, name, domain, link }, j) => {

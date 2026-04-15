@@ -1,11 +1,11 @@
-header{@extend %fc;background:var(--f1);padding-block:12px;position: sticky;top:0;z-index: 999;
+header{@extend %fc;background:var(--f6);padding-block:12px;position: sticky;top:0;z-index: 999;
     .fw{display: flex;align-items: center;justify-content: space-between;column-gap: 16px;}
     .logo{display: flex;flex-shrink: 0;
         > img{width: 170px;}
     }
     nav{display: flex;gap:4px 36px;
         > a{color:#fff;
-            &.active, &:hover, &:active, &:focus{color:var(--cb2);}
+            &.active, &:hover, &:active, &:focus{color:var(--c2);}
         }
     }
 }
