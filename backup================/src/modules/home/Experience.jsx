@@ -10,7 +10,7 @@ export default function Experience() {
         </hgroup>
         <div className="container">
             <ul className="exp">
-                <li style={{ "--unique": "var(--cb1)" }}>
+                <li style={{ "--u": "var(--cb1)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>
@@ -23,7 +23,7 @@ export default function Experience() {
                     </article>
                 </li>
             
-                <li style={{ "--unique": "var(--cb2)" }}>
+                <li style={{ "--u": "var(--cb2)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>
@@ -36,7 +36,7 @@ export default function Experience() {
                     </article>
                 </li>
             
-                <li style={{ "--unique": "var(--cb3)" }}>
+                <li style={{ "--u": "var(--cb3)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>
@@ -49,7 +49,7 @@ export default function Experience() {
                     </article>
                 </li>
             
-                <li style={{ "--unique": "var(--cb4)" }}>
+                <li style={{ "--u": "var(--cb4)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>
@@ -62,7 +62,7 @@ export default function Experience() {
                     </article>
                 </li>
             
-                <li style={{ "--unique": "var(--cb5)" }}>
+                <li style={{ "--u": "var(--cb5)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>
@@ -75,7 +75,7 @@ export default function Experience() {
                     </article>
                 </li>
             
-                <li style={{ "--unique": "var(--cb6)" }}>
+                <li style={{ "--u": "var(--cb6)" }}>
                     <i className="circles animate"></i>
                     <article className="headText">
                         <p className="duration"><i className="icon">&#xa012;</i>0000 - 0000</p>

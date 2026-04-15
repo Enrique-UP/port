@@ -6,12 +6,12 @@
                 aside{
                     &.year{justify-content: flex-end;padding-right:30px;
                         > span{margin-right: 9px;
-                            &::before{border-left:15px solid var(--unique);right:-17px;}
+                            &::before{border-left:15px solid var(--u);right:-17px;}
                         }
                     }
                     &.headText{padding-left: 30px;
                         .head{
-                            &::before{left:-10px;border-right:10px solid var(--unique);}
+                            &::before{left:-10px;border-right:10px solid var(--u);}
                         }
                     }
                 }
@@ -20,24 +20,24 @@
                 aside{
                     &.year{padding-left:30px;
                         > span{margin-left: 9px;
-                            &::before{border-right:15px solid var(--unique);left:-17px;}
+                            &::before{border-right:15px solid var(--u);left:-17px;}
                         }
                     }
                     &.headText{justify-content: flex-end;padding-right: 30px;text-align:right;
                         .head{flex-direction: row-reverse;
-                            &::before{right:-10px;border-left:10px solid var(--unique);}
+                            &::before{right:-10px;border-left:10px solid var(--u);}
                             b{text-align: right;}
                         }
                     }
                 }
             }
         }
-        .circles{width:20px;height:20px;border:2px solid var(--unique);position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);border-radius: 100%;background:white;
-            &::before{width:8px;height:8px;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);border-radius: 100%;content:"";background: var(--unique);}
+        .circles{width:20px;height:20px;border:2px solid var(--u);position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);border-radius: 100%;background:white;
+            &::before{width:8px;height:8px;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);border-radius: 100%;content:"";background: var(--u);}
         }
         aside{width:50%;
             &.year{display: flex;align-items: center;
-                > span{width:100px;height:100px;border-radius: 100%;border:8px solid var(--unique);display: flex;justify-content: center;align-items: center;font-weight: 800;font-size:20px;color:var(--unique);background: white;position: relative;
+                > span{width:100px;height:100px;border-radius: 100%;border:8px solid var(--u);display: flex;justify-content: center;align-items: center;font-weight: 800;font-size:20px;color:var(--u);background: white;position: relative;
                     &::before{width:0;height:0;border-top:15px solid transparent;border-bottom:15px solid transparent;content:"";position: absolute;right:-17px;}
                 }
             }
@@ -47,9 +47,9 @@
                     &::before{width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;content:"";position: absolute;top:50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);}
                     > *{padding:10px 15px;display: flex;align-items: center;}
                     span{box-shadow: 0 0 5px rgba(0,0,0,0.15);font-weight: bold;font-size:20px;background: white;color:var(--f1);}
-                    b{width:250px;background: var(--unique);color:white;font-size: 18px;font-weight: 600;display: flex;justify-content: center;}
+                    b{width:250px;background: var(--u);color:white;font-size: 18px;font-weight: 600;display: flex;justify-content: center;}
                 }
-                .text{box-shadow: 0 0 10px rgba(0,0,0,0.15);display: flex;flex-direction: column;background: white;padding:20px;border-bottom:4px solid var(--unique);margin: 0;
+                .text{box-shadow: 0 0 10px rgba(0,0,0,0.15);display: flex;flex-direction: column;background: white;padding:20px;border-bottom:4px solid var(--u);margin: 0;
                     b{margin-bottom: 5px;font-weight: bold;font-size:24px;color:var(--f1);}
                     span{font-size:16px;line-height: 1.7;color:var(--f2);}
                 }
@@ -99,7 +99,7 @@
                             aside{
                                 &.year{padding-right: 0;justify-content: flex-start;
                                     > span{margin-right: 0;margin-left: 30px;
-                                        &::before{border-top-width:12px;border-bottom-width:12px;border-right: 12px solid var(--unique);border-left:none;left: -14px;right:0;}
+                                        &::before{border-top-width:12px;border-bottom-width:12px;border-right: 12px solid var(--u);border-left:none;left: -14px;right:0;}
                                     }
                                 }
                             }
@@ -113,7 +113,7 @@
                                 }
                                 &.headText{padding-right: 0;padding-left: 30px;text-align:left;
                                     .head{flex-direction: row;
-                                        &::before{left: -12px;border-right: 12px solid var(--unique);right:auto;border-left:none;}
+                                        &::before{left: -12px;border-right: 12px solid var(--u);right:auto;border-left:none;}
                                     }
                                 }
                             }

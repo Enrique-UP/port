@@ -15,7 +15,7 @@ export default function CommonScript() {
         let i = 1;
         items.forEach((li) => {
           if (i > totalClasses) i = 1;
-          li.style.setProperty("--unique", `var(--cb${i})`);
+          li.style.setProperty("--u", `var(--cb${i})`);
           i++;
         });
     });

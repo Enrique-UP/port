@@ -61,7 +61,7 @@ export default function Poetry() {
                     ))
                   )
                 }
-              </div>
+              </div>{/* poetry */}
             </div>{/* area-2 */}
 
             <RightSidebar />
