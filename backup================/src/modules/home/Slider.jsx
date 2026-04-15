@@ -66,7 +66,7 @@ export default function Slider() {
             nextEl: ".nextBtn",
           }}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           loop={true}
