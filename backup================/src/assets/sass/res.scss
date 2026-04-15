@@ -131,12 +131,11 @@
         .texts{font-size: 14px;}
     }
 
-    .port .hd{font-size: 24px;}
+    .port .hd{font-size: 24px;padding-left: 64px;}
     .port .hd::before{border-block:25px solid transparent;}
     .port .hd::after{left:6px;}
     .port article {padding-left: 16px;}
     .port figcaption > span::before{left: -27px;width: 22px;height: 22px;font-size: 12px;border-radius: 0;}
-    .port .hd{padding-left: 64px;}    
 
     .about img {border-width: 4px;}
 }
