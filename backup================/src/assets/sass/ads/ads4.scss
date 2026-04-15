@@ -27,7 +27,7 @@
     .ads4 .btns {margin-top: 12px;}
 }
 @media (max-width:575px){
-    .ads4 ul{flex-direction: column;}
+    .ads4 ul{flex-direction: column-reverse;}
     .ads4 ul > li{width: 100%;row-gap: 12px;}
     .ads4 ul > li:first-child {padding: 56px 12px;}
     .ads4 img{height: auto;}
