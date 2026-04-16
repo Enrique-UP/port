@@ -130,8 +130,8 @@ export default function TopProjects() {
 
     const allImages = TpData.map(item => ({
         src: item.img,
-        title: item.type,
-        description: item.details
+        // title: item.web,
+        description: item.web
     }));
 
     useEffect(() => {
