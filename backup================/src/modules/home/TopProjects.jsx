@@ -25,6 +25,7 @@ const TpData = [
         link: "https://www.loremipsumdolor.com",
         date: "01-00-0000",
         type:"Web Type1",
+        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
@@ -41,6 +42,7 @@ const TpData = [
         link: "https://www.loremipsumdolor.com",
         date: "03-00-0000",
         type:"Web Type3",
+        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
@@ -75,6 +77,7 @@ function TpTag(props) {
                 <div className="top">
                     <img src={props.img} alt="" />
                     <span className="date">{props.date}</span>
+                    {props.note && <div className="notes">{props.note}</div>}
                     <span
                         className="detail"
                         onClick={() =>

@@ -24,7 +24,13 @@
             .icon{background: #fff;width: 40px;@extend %center;cursor: pointer;flex-shrink: 0;}
         }
         p{color:var(--f4);overflow-y:auto;padding-block: 16px;}
-    }    
+    }
+    .notes{width: 100%;background: var(--cb1);color:#fff;position: absolute;top:50%;left:0;transform: translateY(-50%);text-align: center;padding:10px 16px;line-height: 1.5;font-size: 14px;animation:back 1s linear infinite;
+        @keyframes back {
+            from {background:var(--cb9);}
+            to {background:var(--cb10);}
+        }
+    }
 }
 .yarl__slide_description{text-align: center !important;}
 
@@ -37,10 +43,14 @@
 @media (min-width:576px) and (max-width:767px){
     .tp .tpArea .top > img{height: 320px;}
     .tp .tpArea .bottom .icon{width: 40px;}
+    .tp .details .headClose b{font-size: 20px;}
+    .tp .tpArea .top > .date, .tp .tpArea .top > .detail{top:28px;}
+    .tp .notes{padding-inline: 8px;}
 }
 @media (max-width:575px){
     .tp .tpArea .bottom a{height: 56px;}
-    
+    .tp .tpArea .top > .date, .tp .tpArea .top > .detail{top:24px;}
+    .tp .notes{padding-inline: 12px;}
 }
 @media (min-width:451px) and (max-width:575px){
     .tp .tpArea .top > img{height: 300px;}
