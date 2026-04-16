@@ -16,6 +16,7 @@ import Wcu from "./Wcu";
 import Ads4 from "../ads/Ads4";
 import ReviewsHome from "../review/ReviewsHome";
 import Slider from "./Slider";
+import TopProjects from "./TopProjects";
 
 
 
@@ -35,6 +36,7 @@ export default function Home() {
       /> */}
       <Slider />
       <Welcome />
+      <TopProjects />
       <AboutHome />
       <Experience />
       <Education />

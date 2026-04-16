@@ -7,8 +7,8 @@ export default function Header() {
       <header>
         <div className="container">
           <div className="fw">
-            <Link to="/" className="logo"><img src={logo} data-aos="fade-right" /></Link>
-            <nav data-aos="fade-left">
+            <Link to="/" className="logo"><img src={logo} /></Link>
+            <nav>
               <NavLink to="/">Home</NavLink>
               <NavLink to="/portfolio">Portfolio</NavLink>
               <NavLink to="/lifestyle">Gallery</NavLink>

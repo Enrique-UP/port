@@ -9,7 +9,7 @@ export default function Banner(props) {
         <div className="container">
           <div className="row"> 
             <div className="col-md-6">
-              <div className="cnt">
+              <div className="cnt" data-aos="fade-down">
                 <h1 className="hd">{props.pageName}</h1>
                 <p className="txt">{props.pageText}</p>
                 <div className="btns">
