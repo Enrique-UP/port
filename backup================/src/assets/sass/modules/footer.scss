@@ -1,6 +1,6 @@
 footer{background: var(--f3);
     .logo{
-        .fw{border-bottom: 1px solid var(--f5);padding-bottom:32px;
+        .fw{border-bottom: 1px solid var(--f5);padding-bottom:32px;align-items: center;
             > a{display: flex;justify-content: center;}
         }
         img{width: 200px;}
@@ -16,7 +16,7 @@ footer{background: var(--f3);
         }
     }
     .text{background: var(--f6);text-align: justify;color:var(--f7);@extend %fc;row-gap: 12px;padding-block:16px;
-        strong{color: var(--cb8);}
+        strong{color: var(--cb4);}
     }
     .posts{width: 100%;@extend %fc;gap:8px;
         > li{display: flex;width: 100%;
@@ -24,11 +24,11 @@ footer{background: var(--f3);
                 &:hover, &:active, &:focus {background: var(--cb1);color: #fff;}
             }
         }
-        .date{background: var(--cb8);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;padding: 20px 16px;font-family: var(--ff2);font-weight: bold;width: 80px;
+        .date{background: var(--cb4);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;padding: 20px 16px;font-family: var(--ff2);font-weight: bold;width: 80px;
             > b{text-transform: uppercase;font-size: 17px;}
             > i{font-style: normal;font-size: 22px;}
         }
-        .icon{background: var(--cb8);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;font-weight: bold;width: 56px;padding-block:24px;}
+        .icon{background: var(--cb4);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;font-weight: bold;width: 56px;padding-block:24px;}
         .abt{display: flex;align-items: center;line-height: 1.5;padding-block:12px;}
     }
     .text{padding-inline: 16px;}

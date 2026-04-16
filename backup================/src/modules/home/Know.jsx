@@ -103,7 +103,7 @@ export default function Know() {
     <section className="section skills back b1">
       <div className="container">
         <hgroup>
-          <h2>Lorem <span>Lorem</span></h2>
+          <h2>Technical <span>Skills</span></h2>
           <p>Lorem ipsum dolor sit ameet</p>
         </hgroup>
         <div className="row colors">

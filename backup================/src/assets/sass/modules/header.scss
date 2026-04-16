@@ -5,7 +5,7 @@ header{@extend %fc;background:var(--f6);padding-block:12px;position: sticky;top:
     }
     nav{display: flex;gap:4px 36px;
         > a{color:#fff;
-            &.active, &:hover, &:active, &:focus{color:var(--c2);}
+            &.active, &:hover, &:active, &:focus{color:var(--cb2);}
         }
     }
 }
