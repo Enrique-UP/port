@@ -17,6 +17,7 @@ import Ads4 from "../ads/Ads4";
 import ReviewsHome from "../review/ReviewsHome";
 import Slider from "./Slider";
 import TopProjects from "./TopProjects";
+import BrandingProjects from "./BrandingProjects";
 
 
 
@@ -36,18 +37,19 @@ export default function Home() {
       /> */}
       <Slider />
       <Welcome />
-      <TopProjects />
       <AboutHome />
+      <TopProjects />
       <Experience />
       <Education />
       <Know />
-      <LifestyleHome />
       <Ads4 />
+      <LifestyleHome />
+      <Childhood />
       <Team />
       <Ads2 />
       <Wcu /> 
-      <Ads1 />     
-      <Childhood />
+      <BrandingProjects />
+      <Ads1 />
       <ReviewsHome />
       <Ads3 />
     </>

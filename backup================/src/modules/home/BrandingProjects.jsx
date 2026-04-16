@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -18,7 +18,7 @@ import img2 from "../../assets/images/team/t2.jpg";
 import img3 from "../../assets/images/team/t3.jpg";
 import img4 from "../../assets/images/team/t4.jpg";
 
-const TpData = [
+const BpData = [
     {
         img: img1,
         web: "www.loremipsumdolor.com",
@@ -69,129 +69,98 @@ const TpData = [
     },
 ];
 
-function TpTag(props) {
-    const isActive = props.activeIndex === props.index;
-    return (
-        <div className="col-sm-6 col-lg-4">
-            <div className={`tpArea ${isActive ? "active" : ""}`}>
-                <div className="top">
-                    <img data-src={props.img} alt="" />
-                    <span className="date">{props.date}</span>
-                    {props.note && <div className="notes">{props.note}</div>}
-                    <span
-                        className="detail"
-                        onClick={() =>
-                            props.setActiveIndex(
-                                props.activeIndex === props.index
-                                    ? null
-                                    : props.index
-                            )
-                        }
-                    >View Details</span>
-                    <span className="type">{props.type}</span>
-                    <div className="details">
-                        <div className="headClose">
-                            <b>About the Website</b>
-                            <i
-                                className="icon"
-                                onClick={() => props.setActiveIndex(null)}
-                            >&#xa018;</i>
-                        </div>
-                        <p>{props.details}</p>
-                    </div>
-                </div>
-                <div className="bottom">
-                    <i
-                        className="icon"
-                        onClick={() => {
-                            props.setCurrentIndex(props.index);
-                            props.setLightboxOpen(true);
-                        }}
-                    >&#xa095;</i>
-                    <a href={`https://${props.web}`} target="_blank" rel="noreferrer">{props.web}</a>
-                    <i
-                        className="icon"
-                        onClick={() => {
-                            if (props.link) {
-                                window.open(props.link, "_blank");
-                            } else {
-                                alert("This website is not available now");
-                            }
-                        }}
-                    >&#xa038;</i>
-                </div>
+function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, setCurrentIndex }) {
+  return (
+    <div className="col-12">
+      <ul className="bpArea">
+        <li className="img">
+          <img src={img} alt="" />
+        </li>
+
+        <li className="text">
+          <p className="hd">{web}</p>
+          <p className="about">
+            <b>About the Project</b>
+            <span>Website Type: <em>{type}</em></span>
+          </p>
+          <p className="cnt">{details}</p>
+        </li>
+
+        <li className="btnText">
+          <article>
+            <div>
+              <span>{date}</span>
+
+              <b
+                onClick={() => {
+                  setCurrentIndex(index);
+                  setLightboxOpen(true);
+                }}
+              >
+                View Template
+              </b>
+
+              <a
+                onClick={() => {
+                  if (link) {
+                    window.open(link, "_blank");
+                  } else {
+                    alert("This website is not available now");
+                  }
+                }}
+              >
+                View Live
+              </a>
             </div>
-        </div>
-    );
+          </article>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
-export default function TopProjects() {
-    const [activeIndex, setActiveIndex] = useState(null);
+export default function BrandingProjects() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const slides = BpData.map(item => ({
+    src: item.img,
+    description: item.web
+  }));
 
-    const allImages = TpData.map(item => ({
-        src: item.img,
-        // title: item.web,
-        description: item.web
-    }));
+  return (
+    <>
+      <section className="section bp colors b1">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <hgroup>
+                <h3>Top <span>Projects</span></h3>
+                <p>Lorem ipsum dolor sit ameet</p>
+              </hgroup>
+            </div>
 
-    useEffect(() => {
-        function handleClickOutside(e) {
-            if (!e.target.closest(".tpArea")) {
-                setActiveIndex(null);
-            }
-        }
+            {BpData.map((item, index) => (
+              <BpTag
+                key={index}
+                index={index}
+                setLightboxOpen={setLightboxOpen}
+                setCurrentIndex={setCurrentIndex}
+                {...item}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-        document.addEventListener("mousedown", handleClickOutside);
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, []);
-
-    return (
-        <>
-            <section className="section tp b1">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <hgroup>
-                                <h3>Top <span>Projects</span></h3>
-                                <p>Lorem ipsum dolor sit ameet</p>
-                            </hgroup>
-                        </div>
-                        {TpData.map((val, ind) => (
-                            <TpTag
-                                key={ind}
-                                index={ind}
-                                activeIndex={activeIndex}
-                                setActiveIndex={setActiveIndex}
-                                setLightboxOpen={setLightboxOpen}
-                                setCurrentIndex={setCurrentIndex}
-                                {...val}
-                            />
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <Lightbox
-                slides={allImages}
-                open={lightboxOpen}
-                index={currentIndex}
-                close={() => setLightboxOpen(false)}
-                plugins={[
-                    Zoom,
-                    Thumbnails,
-                    Fullscreen,
-                    Slideshow,
-                    Counter,
-                    Captions
-                ]}
-                zoom={{ maxZoomPixelRatio: 3 }}
-            />
-        </>
-    );
+      <Lightbox
+        slides={slides}
+        open={lightboxOpen}
+        index={currentIndex}
+        close={() => setLightboxOpen(false)}
+        plugins={[Zoom, Thumbnails, Fullscreen, Slideshow, Counter, Captions]}
+        zoom={{ maxZoomPixelRatio: 3 }}
+      />
+    </>
+  );
 }

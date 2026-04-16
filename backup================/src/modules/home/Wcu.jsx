@@ -32,7 +32,7 @@ const WcuTag = (props) => {
 export default function Wcu(){
     return(
         <>
-            <section className="sectionT wcu bgb">
+            <section className="sectionT wcu">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

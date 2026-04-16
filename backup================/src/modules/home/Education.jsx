@@ -1,7 +1,7 @@
 export default function Education() {
   return (
     <>
-      <section className="section education colors">
+      <section className="section education colors b1">
             <div className="container">
                 <hgroup>
                   <h2>

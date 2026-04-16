@@ -100,7 +100,7 @@ export default function Know() {
     }
   };
   return (
-    <section className="section skills back b1">
+    <section className="section skills back">
       <div className="container">
         <hgroup>
           <h2>Technical <span>Skills</span></h2>
