@@ -1,26 +1,21 @@
 .about{color:var(--f2);
-    .fw{display: flex;flex-wrap: wrap;
+    .fw{display: flex;flex-wrap: wrap;row-gap:32px;
         .cols1{width: 50%;padding-right: 16px;}
-        .cols2{width: 50%;padding-left: 16px;@extend %fc;row-gap: 32px;
-            .hd{
-                + p{color: var(--f1);}
-            }
-        }
+        .cols2{width: 50%;padding-left: 16px;@extend %fc;row-gap: 32px;}
         .cols3{width: 100%;@extend %fc;row-gap: 32px;
             .hd{
                 &:has(+ .skillBar){margin-bottom: 8px;}
             }
         }
+        p.shd{color: var(--f1);}
     }
-    .images{width: 100%;display: flex;flex-wrap: wrap;border:5px solid var(--b1);
+    .images{width: 100%;display: flex;flex-wrap: wrap;border:5px solid var(--b1);height:100%;
         > li{list-style: none;border:5px solid var(--b1);display:flex;
             &:first-child{width: 50%;}
             &:nth-child(2){width: 50%;}
             &:last-child{width: 100%;}
         }
         img{object-fit: cover;width: 100%;}
-        .img1{height: 500px;}
-        .img2{height: 414px;}
     }
     .cnt{@extend %fc;row-gap: 12px;
         strong{color: var(--f1);}
@@ -34,13 +29,7 @@
         &.two{color:var(--cb3);}
     }
     .hd{font-weight: 900;color:var(--f1);font-size: 28px;line-height:1.3;border-top: 1px solid var(--b1);padding-top: 32px;}
-    .lists{width: 100%;display:grid;grid-gap: 16px 16px;
-        &.one{grid-template-columns: repeat(2, minmax(0, 1fr));
-            > li:nth-child(n + 15){display: none;}
-        }
-        &.two{grid-template-columns: repeat(3, minmax(0, 1fr));margin-top:16px;
-            > li:nth-child(-n + 14){display: none;}
-        }
+    .lists{width: 100%;display:grid;grid-gap: 16px 32px;grid-template-columns: repeat(3, minmax(0, 1fr));
         > li{list-style: none;position: relative;padding-left: 24px;
             &::before{font-family: fontello;content:"\a038";position: absolute;left:0;color: var(--f1);}
         }
@@ -70,90 +59,33 @@
 }
 
 
-
-
-@media (min-width:1200px) and (max-width:1399px){
-    .about .images .img1 {height: 455px;}
-    .about .lists.one > li:nth-child(n+13) {display: none;}
-    .about .lists.two > li:nth-child(-n+13) {display: none;}
-    .about .lists.two > li:nth-child(n+13) {display: block !important;}
+@media (min-width:576px) and (max-width:1199px){
+    .about .lists {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
-
-@media (min-width:768px) and (max-width:1199px){
-    .about .lists.one {grid-template-columns: repeat(1, minmax(0, 1fr));}
-    .about .lists.two {grid-template-columns: repeat(2, minmax(0, 1fr));grid-column-gap: 28px;}
-}
-
-@media (min-width:992px) and (max-width:1199px){
-    .about .images .img1 {height: 350px;}
-    .about .images .img2 {height: 350px;}
-    .about .lists.one > li:nth-child(n+7) {display: none;}
-    .about .lists.two > li:nth-child(-n+7) {display: none;}
-    .about .lists.two > li:nth-child(n+7) {display: block !important;}
-}
-
-@media (min-width:576px) and (max-width:991px){
-    .about .counterBox {grid-gap: 12px;}
-}
-
-@media (min-width:768px) and (max-width:991px){
-    .about .lists.one > li:nth-child(n+3) {display: none;}
-    .about .lists.two > li:nth-child(-n+2) {display: none;}
-    .about .lists.two > li:nth-child(n+3) {display: block !important;}
-    .about .images .img1 {height: 284px;}
-    .about .images .img2 {height: 280px;}
-    .about .cnt .int {font-size: 32px;}
-    .about .cnt .post {font-size: 40px;}
-    .about .lists.one > li:nth-child(n+2) {display: none;}
-    .about .lists.two > li:nth-child(-n+2) {display: none;}
-    .about .lists.two > li:nth-child(n+2) {display: block !important;}
-}
-
-@media (max-width:767px){
-    .about .fw .cols1{width: 100%;padding-right: 0;margin-bottom: 32px;}
+@media (max-width:991px){
+    .about .fw .cols1{width: 100%;padding-right: 0;}
     .about .fw .cols2{width: 100%;padding-left: 0;}
-    .about .counterBox{grid-template-columns: repeat(2, minmax(0, 1fr));}
-    .about .lists.one > li:nth-child(n+2) {display: block !important;}
-    .about .lists.two{display: none;}
 }
-@media (min-width:576px) and (max-width:767px){       
-    .about .images .img1 {height: 400px;}
-    .about .images .img2 {height: 350px;}
-    .about .counterBox {grid-gap: 12px;}
-    .about .cnt .int {font-size: 32px;}
-    .about .cnt .post {font-size: 40px;}
-    .about .lists.one{padding-bottom: 32px;}
+@media (min-width:576px) and (max-width:991px){
+    .about .images > li:first-child, .about .images > li:nth-child(2){width: 25%;}
+    .about .images > li:last-child {width: 50%;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .about .counterBox{grid-gap:4px;}
+}
+@media (max-width:767px){
+    .about .counterBox {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
 @media (max-width:575px){
-    .about .cnt .int {font-size: 30px;}
-    .about .cnt .post {font-size: 36px;}
-    .about .lists.one {grid-template-columns: repeat(1, minmax(0, 1fr));grid-row-gap:8px;padding-bottom: 16px;}
-    .about .skillBar {grid-gap: 24px 8px;}
-    .about .skillBar > article{font-size: 14px;gap:8px 4px;}
-    .about .skillBar i {height: 6px;}
-    .about .hd {font-size: 24px;}
-    .about .counterBox {grid-gap: 4px;}
-    .about .counterBox > li{padding: 20px 8px;}
-    .about .counterBox .icon {font-size: 36px;}
-    .about .counterBox b {font-size: 20px;}
-    .about .counterBox span {font-size: 14px;}
-    .about .cnt {row-gap: 4px;}
-
-    .about .fw .cols2{row-gap: 16px;}
-    .about .fw .cols3 {row-gap: 16px;}
-    .about .hd {padding-top: 16px;}
-    .about .lists > li {padding-left: 20px;}
-}
-
-@media (min-width:521px) and (max-width:575px){
-    .about .images .img1 {height: 350px;}
-    .about .images .img2 {height: 300px;}
-}
-@media (min-width:461px) and (max-width:520px){
-    .about .images .img1 {height: 300px;}
-    .about .images .img2 {height: 260px;}
-}
-@media (max-width:460px){
-    .about .images .img1 {height: 240px;}
-    .about .images .img2 {height: 220px;}
+    .about .lists {grid-template-columns: repeat(1, minmax(0, 1fr));grid-gap: 8px 32px;}
+    .about .fw, .about .fw .cols2, .about .fw .cols3 {row-gap: 16px;}
+    .about .hd{padding-top: 16px;}
+    .about .cnt {row-gap: 8px;}
+    .about .skillBar > article{font-size: 16px;gap:8px 8px;}
+    .about .skillBar {grid-gap: 24px 12px;}
+    .about .counterBox{grid-gap:8px;}
+    .about .counterBox > li{padding: 24px 8px;}
+    .about .counterBox .icon{font-size: 40px;}
+    .about .counterBox b{font-size: 20px;}
+    .about .counterBox span{font-size: 16px;}
 }

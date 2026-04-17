@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { TypeWriter } from "../typeWriter/TypeWriter";
 
 import img1 from "../../assets/images/lifeStyle/forest/12.jpg";
@@ -13,85 +14,109 @@ const words1 = [
   { text: "(New Delhi)", className: "two" }
 ];
 
-const ListContent = () => {
-  return (
-    <>
-      <li>01 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>02 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>03 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>04 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>05 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>06 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>07 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>08 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>09 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>11 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>12 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>13 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>14 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>15 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>16 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>17 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>18 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>19 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>20 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>21 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>22 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>23 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>24 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>25 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>26 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>27 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>28 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>29 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>30 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>31 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>32 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>33 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>34 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>35 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-    </>
-  );
-};
-
 export default function AboutHome() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 1199px)");
+    const handleChange = (e) => setIsMobile(e.matches);
+    setIsMobile(media.matches);
+    if (media.addEventListener) {
+      media.addEventListener("change", handleChange);
+    } else {
+      media.addListener(handleChange);
+    }
+    return () => {
+      if (media.removeEventListener) {
+        media.removeEventListener("change", handleChange);
+      } else {
+        media.removeListener(handleChange);
+      }
+    };
+  }, []);
+
+  const TextBlock = (
+    <div className="cnt">
+      <p className="hd">Heading</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non quibusdam aliquid! Officia dolorem dolorum nesciunt illo voluptates itaque, iure, ipsam explicabo blanditiis eum maiores eos aut. Deserunt fuga, minima fugiat voluptatum ullam esse repellendus architecto repudiandae. Ratione neque impedit eaque ipsum consequatur, enim in corporis dolore veritatis atque, voluptatem recusandae et? Id illo doloribus, ullam aliquid quis placeat rerum hic voluptates et assumenda explicabo recusandae cupiditate repellendus numquam sed enim. Amet delectus cum nostrum sunt dolores distinctio similique commodi sequi suscipit utnew.</p>
+    </div>// {/* cnt */}
+  );
+
   return (
-    <>
-      <section className="section about">
-        <div className="container">
-          <hgroup>
-            <h2>About <span>Us</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
-          </hgroup>
-          <div className="fw">
-            <div className="cols1">
-              <ul className="images">
-                <li><img className="img1" data-src={img1} alt="" /></li>
-                <li><img className="img1" data-src={img2} alt="" /></li>
-                <li><img className="img2" data-src={img3} alt="" /></li>
-              </ul>
-            </div>{/* cols1 */}
-            <div className="cols2">
-              <div className="cnt">
-                <p className="int">Hello!</p>
-                <p className="int">P Lm Loremm Ipum,</p>
-                <p className="post"><TypeWriter words={words1} /></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia necessitatibus esse! Asperiores dolorum veritatis quam, praesentium incidunt excepturi neque perferendis totam, natus libero corporis sed aut temporibus, harum explicabo unde minus doloribus. Maxime totam distinctio aspernatur recusandae dolor fugit excepturi at, esse tenetur magni eos consequuntur ad iure optio.</p>
-              </div>{/* cnt */}
-              <div className="cnt">
-                <p className="hd">Heading</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <ul className="lists one">
-                  <ListContent />
+    <section className="section about">
+      <div className="container">
+        <hgroup>
+          <h2>About <span>Us</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
+        </hgroup>
+        <div className="fw">
+          <div className="cols1">
+            <ul className="images">
+              <li><img className="img1" src={img1} /></li>
+              <li><img className="img1" src={img2} /></li>
+              <li><img className="img2" src={img3} /></li>
+            </ul>
+          </div>{/* cols1 */}
+
+          <div className="cols2">
+            <div className="cnt">
+              <p className="int">Hello!</p>
+              <p className="int">P Lm Loremm Ipum,</p>
+              <p className="post"><TypeWriter words={words1} /></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia necessitatibus esse! Asperiores dolorum veritatis quam, praesentium incidunt excepturi neque perferendis totam, natus libero corporis sed aut temporibus, harum explicabo unde minus doloribus. Maxime totam distinctio aspernatur recusandae dolor fugit excepturi at, esse tenetur magni eos consequuntur ad iure optio.</p>
+            </div>
+            <div className="cnt">
+              <p className="hd">Heading</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non quibusdam aliquid! Officia dolorem dolorum nesciunt illo voluptates itaque, iure, ipsam explicabo blanditiis eum maiores eos aut. Deserunt fuga, minima fugiat voluptatum ullam esse repellendus architecto repudiandae. Ratione neque impedit eaque ipsum consequatur, enim in corporis dolore veritatis atque, voluptatem recusandae et? Id illo doloribus, ullam aliquid quis placeat rerum hic voluptates et assumenda explicabo recusandae cupiditate repellendus numquam sed enim.</p>
+            </div>
+            {/* ✅ Desktop only */}
+            {!isMobile && TextBlock}
+          </div>{/* cols2 */}
+          <div className="cols3">
+            {/* ✅ Mobile only */}
+            {isMobile && TextBlock}
+            <div className="cnt">
+              <p className="hd">Heading</p>
+              <p className="shd">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              <ul className="lists one">
+                  <li>01 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>02 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>03 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>04 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>05 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>06 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>07 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>08 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>09 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>10 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>11 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>12 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>13 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>14 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>15 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>16 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>17 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>18 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>19 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>20 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>21 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>22 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>23 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>24 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>25 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>26 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>27 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>28 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>29 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>30 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>31 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>32 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>33 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>34 Lorem ipsum dolor sit amet consectetur</li>
+                  <li>35 Lorem ipsum dolor sit amet consectetur</li>
                 </ul>
-              </div>{/* cnt */}
-            </div>{/* cols2 */}
-            <div className="cols3">
-              <ul className="lists two">
-                  <ListContent />
-                </ul>
-              <div className="cnt">
+            </div>{/* cnt */}
+            <div className="cnt">
                 <p className="hd">Heading</p>
                 <div className="skillBar colors one">
                   <article>
@@ -200,8 +225,7 @@ export default function AboutHome() {
               </div>{/* btns */}
             </div>{/* cols3 */}
           </div>{/* fw */}
-        </div>
+        </div>{/* container */}
       </section>
-    </>
   );
 }
