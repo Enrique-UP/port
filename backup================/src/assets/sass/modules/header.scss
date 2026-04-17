@@ -28,7 +28,7 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
         }
         .menu, .logo, .close{display: none;}
         .logo{padding-bottom:12px;
-            > a{display: flex;width: 100%;background: var(--cb2);padding:24px;}
+            > a{display: flex;width: 100%;background: var(--cb2);padding:16px;justify-content:center;}
         }
         .menu{color:#fff;justify-content: space-between;width: 100%;padding-block: 10px;align-items:center;line-height:1;
             > b{font-size: 20px;}
@@ -78,4 +78,5 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
     header .middle .follow{padding: 4px;}
     header .middle .follow > p a{width: 26px;}
     header .middle .logo img{width: 140px;}
+    header .bottom .logo > a img{width: 140px;}
 }
