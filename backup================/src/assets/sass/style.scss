@@ -63,7 +63,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .img{width: 100%;border:10px solid #fff;object-fit: cover;}
         .btns{margin-top: 8px;
             > a{border: 1px solid #fff;background:var(--cb1) !important;
-                &:hover, &:active, &:focus{background: var(--cb3) !important;}
+                &:hover, &:active, &:focus{background: var(--c2) !important;}
             }
         }
     }
