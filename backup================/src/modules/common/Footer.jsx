@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { Global } from "./Global";
+import { HashLink } from "react-router-hash-link";
 
 const PostData = [
   {link:"#", date:"01 Jan", year:"0001", txt:"1 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"},
@@ -75,6 +76,8 @@ export default function Footer() {
                     <li><Link to="/contactus">Contact Us</Link></li>                    
                     <li><Link to="/inner">Inner Page</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li>
+                    <li><HashLink to="/#tp">Top Projects</HashLink></li>
+                    <li><HashLink to="/#bp">Branding Projects</HashLink></li>
                   </ul>
               </div>{/* fw */}
             </div>{/* cols */}

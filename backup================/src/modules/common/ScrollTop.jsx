@@ -6,7 +6,7 @@ export default function ScrollTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsFixed(window.scrollY >= 300);
+      setIsFixed(window.scrollY >= 50);
     };
 
     window.addEventListener("scroll", handleScroll);

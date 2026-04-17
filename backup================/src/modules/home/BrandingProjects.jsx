@@ -130,7 +130,7 @@ export default function BrandingProjects() {
 
   return (
     <>
-      <section className="section bp colors b1">
+      <section className="section bp colors b1" id="bp">
         <div className="container">
           <div className="row">
             <div className="col-12">
