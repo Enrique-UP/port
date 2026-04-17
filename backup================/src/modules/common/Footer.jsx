@@ -75,13 +75,13 @@ export default function Footer() {
                     <li><HashLink to="/#exp" scroll={ScrollOffset}>Exp</HashLink></li>
                     <li><HashLink to="/#edu" scroll={ScrollOffset}>Edu</HashLink></li>
                     <li><HashLink to="/#ts" scroll={ScrollOffset}>Skills</HashLink></li>
-                    <li><Link to="/lifestyle">Gallery</Link></li>
-                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Ch</HashLink></li>
                     <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
                     <li><HashLink to="/#wcu" scroll={ScrollOffset}>Wcu</HashLink></li>
                     <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>                    
+                    <li><Link to="/portfolio">Portfolio</Link></li>
                     <li><Link to="/reviews">Reviews</Link></li>
+                    <li><Link to="/lifestyle">Gallery</Link></li>
+                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Ch</HashLink></li>
                     <li><Link to="/poetry">Poetry</Link></li>
                     <li><Link to="/contactus">Contact Us</Link></li>
                     {/* <li><Link to="/inner">Inner Page</Link></li>

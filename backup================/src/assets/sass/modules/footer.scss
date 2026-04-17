@@ -10,7 +10,7 @@ footer{background: var(--f3);
     ul{margin:0;padding:0;}
     .links{display: flex;flex-wrap: wrap;gap:8px;
         > li{list-style: none;display:flex;
-            > a{background: var(--f6);color:var(--f7);border-left: 4px solid #2cc7cb;padding:12px 20px;
+            > a{background: var(--f6);color:var(--f7);border-left: 4px solid #2cc7cb;padding:12px 24px;
                 &:hover, &:active, &:focus{background: var(--cb1);color:#fff;}
             }
         }
@@ -43,10 +43,10 @@ footer{background: var(--f3);
 
 @media (max-width:767px){
     footer .row{row-gap: 32px !important;}
-    footer .links{gap:8px;}
 }
 @media (max-width:575px){
     footer .text, footer .links > li > a, footer .follow > a{border-left-width: 2px;}
+    footer .links > li > a{padding: 10px 16px;}
 }
 @media (max-width:480px){
     footer .follow > a .icon {width: 42px;}
