@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
     <>
-      <section className="section experience back">
+      <section className="section experience back" id="exp">
         <hgroup>
           <h2>
             Lorem <span>Lorem</span>

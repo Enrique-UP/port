@@ -27,7 +27,7 @@ function TeamTag(props){
 export default function Team() {
     return (
         <>
-            <section className="section team">
+            <section className="section team" id="team">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

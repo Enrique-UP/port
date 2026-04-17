@@ -15,7 +15,7 @@ export default function Childhood() {
 
   return (
     <>
-      <section className="section childhood">
+      <section className="section childhood" id="ch">
         <div className="childhoodText">
           <div className="container">
             <div className="row">

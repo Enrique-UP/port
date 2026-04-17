@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { Global } from "./Global";
 import { HashLink } from "react-router-hash-link";
+import ScrollOffset from "./ScrollOffset";
 
 const PostData = [
   {link:"#", date:"01 Jan", year:"0001", txt:"1 Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"},
@@ -69,15 +70,22 @@ export default function Footer() {
                   <p className="hd">Main Links</p>
                   <ul className="links">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
+                    <li><HashLink to="/#about" scroll={ScrollOffset}>About Us</HashLink></li>
+                    <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
+                    <li><HashLink to="/#exp" scroll={ScrollOffset}>Exp</HashLink></li>
+                    <li><HashLink to="/#edu" scroll={ScrollOffset}>Edu</HashLink></li>
+                    <li><HashLink to="/#ts" scroll={ScrollOffset}>Skills</HashLink></li>
                     <li><Link to="/lifestyle">Gallery</Link></li>
+                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Ch</HashLink></li>
+                    <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
+                    <li><HashLink to="/#wcu" scroll={ScrollOffset}>Wcu</HashLink></li>
+                    <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
+                    <li><Link to="/portfolio">Portfolio</Link></li>                    
                     <li><Link to="/reviews">Reviews</Link></li>
                     <li><Link to="/poetry">Poetry</Link></li>
-                    <li><Link to="/contactus">Contact Us</Link></li>                    
-                    <li><Link to="/inner">Inner Page</Link></li>
-                    <li><Link to="/thankyou">Thank You</Link></li>
-                    <li><HashLink to="/#tp">Top Projects</HashLink></li>
-                    <li><HashLink to="/#bp">Branding Projects</HashLink></li>
+                    <li><Link to="/contactus">Contact Us</Link></li>
+                    {/* <li><Link to="/inner">Inner Page</Link></li>
+                    <li><Link to="/thankyou">Thank You</Link></li> */}
                   </ul>
               </div>{/* fw */}
             </div>{/* cols */}

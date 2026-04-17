@@ -43,7 +43,7 @@ export default function AboutHome() {
   );
 
   return (
-    <section className="section about">
+    <section className="section about" id="about">
       <div className="container">
         <hgroup>
           <h2>About <span>Us</span></h2>

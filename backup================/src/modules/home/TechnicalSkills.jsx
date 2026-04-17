@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const WcuData = [
+const TsData = [
   {
     year: 2014,
     hd1: "Heading1 ipsum sit ameet lorem ipsum",
@@ -75,7 +75,7 @@ const WcuData = [
   }
 ];
 
-export default function Know() {
+export default function TechinicalSkills() {
   const [activeIndex, setActiveIndex] = useState(null);
   const currentYear = new Date().getFullYear();
   // limit to 20 words
@@ -100,7 +100,7 @@ export default function Know() {
     }
   };
   return (
-    <section className="section skills back">
+    <section className="section skills back" id="ts">
       <div className="container">
         <hgroup>
           <h2>Technical <span>Skills</span></h2>
@@ -114,7 +114,7 @@ export default function Know() {
               perspiciatis quasi facilis ab commodi dolores hic sint rerum enim deserunt dicta similique delectus
               deleniti!</div>{/* outlineBox */}
           </div>{/* cols */}
-          {WcuData.map((item, index) => {
+          {TsData.map((item, index) => {
             const { short, isLong } = limitText(item.text);
             const isActive = activeIndex === index;
             const exp = getExperience(item.year);

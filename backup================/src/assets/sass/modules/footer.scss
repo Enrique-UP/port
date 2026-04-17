@@ -8,9 +8,9 @@ footer{background: var(--f3);
     .fw{@extend %fc;row-gap: 16px;}
     .hd{font-size:32px;text-transform: uppercase;color:var(--cb2);border-bottom: 4px solid #fff;font-weight:700;}
     ul{margin:0;padding:0;}
-    .links{display: flex;flex-wrap: wrap;gap:12px;
+    .links{display: flex;flex-wrap: wrap;gap:8px;
         > li{list-style: none;display:flex;
-            > a{background: var(--f6);color:var(--f7);border-left: 4px solid #2cc7cb;padding:12px 24px;
+            > a{background: var(--f6);color:var(--f7);border-left: 4px solid #2cc7cb;padding:12px 20px;
                 &:hover, &:active, &:focus{background: var(--cb1);color:#fff;}
             }
         }
