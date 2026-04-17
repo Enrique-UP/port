@@ -43,8 +43,10 @@
     .bp .bpArea > .img{width: 100%;height: auto;background: var(--g1);}
     .bp .bpArea > .btnText{width: 100%;border-top: 10px solid var(--b1);}
     .bp .bpArea > .img > img {width: 150px;object-fit: cover;margin-inline: auto;}
-    .bp article > div{width: 150px;}
-    .bp article b, .bp article a{padding: 10px 8px;}
+    .bp article > div{width: 100%;flex-direction: row;flex-wrap: wrap;}
+    .bp article span{width: 100%;}
+    .bp article b{border-right: none;}
+    .bp article b, .bp article a{padding: 10px 8px;width: 50%;}
     .bp .about{flex-direction: column;}
     .bp .about b{font-size: 18px;}
     .bp .hd{font-size: 20px;}
