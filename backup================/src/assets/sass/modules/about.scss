@@ -67,8 +67,8 @@
     .about .fw .cols2{width: 100%;padding-left: 0;}
 }
 @media (min-width:576px) and (max-width:991px){
-    .about .images > li:first-child, .about .images > li:nth-child(2){width: 25%;}
-    .about .images > li:last-child {width: 50%;}
+    .about .images > li:first-child, .about .images > li:nth-child(2){width: 27.5%;}
+    .about .images > li:last-child {width: 45%;}
 }
 @media (min-width:768px) and (max-width:991px){
     .about .counterBox{grid-gap:4px;}
@@ -77,15 +77,18 @@
     .about .counterBox {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
 @media (max-width:575px){
+    .about .fw .cols1{margin-bottom: 8px;}
     .about .lists {grid-template-columns: repeat(1, minmax(0, 1fr));grid-gap: 8px 32px;}
     .about .fw, .about .fw .cols2, .about .fw .cols3 {row-gap: 16px;}
     .about .hd{padding-top: 16px;}
     .about .cnt {row-gap: 8px;}
-    .about .skillBar > article{font-size: 16px;gap:8px 8px;}
-    .about .skillBar {grid-gap: 24px 12px;}
+    .about .skillBar > article{font-size: 14px;gap:8px 4px;}
+    .about .skillBar {grid-gap: 16px 12px;}
     .about .counterBox{grid-gap:8px;}
     .about .counterBox > li{padding: 24px 8px;}
     .about .counterBox .icon{font-size: 40px;}
     .about .counterBox b{font-size: 20px;}
     .about .counterBox span{font-size: 16px;}
+    .about .cnt .int {font-size: 28px;}
+    .about .cnt .post {font-size: 36px;}
 }
