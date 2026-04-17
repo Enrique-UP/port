@@ -53,7 +53,7 @@
                 .skill{flex-direction: column;
                     .back{width:100%;align-items:flex-start;padding-right:0;
                         span{font-size:18px;height: auto;padding:10px 16px;border-bottom-left-radius:0;border-bottom-right-radius:0;justify-content:flex-start;
-                            &::before{border-left: 10px solid transparent;border-right: 10px solid transparent;border-top-color: var(--u);border-bottom:none;top:auto;bottom:-14px;left:16px;}
+                            &::before{border-inline: 10px solid transparent;border-top-color: var(--u);border-bottom:none;top:auto;bottom:-14px;left:auto;right:16px;}
                         }
                     }
                     .cnts{width:100%;padding:15px;border-top-left-radius:0;border-top-right-radius:0;border-left:none;border-right:none;border-bottom:4px solid var(--u);}
