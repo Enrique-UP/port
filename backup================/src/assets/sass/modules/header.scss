@@ -50,6 +50,11 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
     }
 }
 
+@media (min-width:992px){
+    body.back:has(header.active){overflow-y: auto;
+        &::before{left: 100%;}
+    }
+}
 @media (max-width:991px){
     header .bottom .menu, header .bottom .logo, header .bottom .close{display: flex;}
     header .bottom nav{width: 280px;margin-left: -280px;background: #fff;flex-direction: column;position: relative;
