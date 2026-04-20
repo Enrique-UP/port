@@ -23,6 +23,7 @@ import img3Tab from "../../assets/images/slider/slide3-991.jpg";
 import img1Mob from "../../assets/images/slider/slide1-575.jpg";
 import img2Mob from "../../assets/images/slider/slide2-575.jpg";
 import img3Mob from "../../assets/images/slider/slide3-575.jpg";
+import ColorsLine from "../common/ColorsLine";
 
 const images = [
   {
@@ -145,11 +146,7 @@ export default function Slider() {
 
       </div>
 
-      <ul className="colorsLine">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <ColorsLine />
     </>
   );
 }

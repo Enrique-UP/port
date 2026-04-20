@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
@@ -9,6 +9,7 @@ import contact from "../../assets/images/icons/contact.png";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const headerRef = useRef(null);
 
   useEffect(() => {
     if (menuOpen) {
@@ -24,9 +25,14 @@ export default function Header() {
     setMenuOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    const height = headerRef.current?.offsetHeight;
+    document.documentElement.style.setProperty("--headerHeight", `${height}px`);
+  }, [menuOpen, location]);  
+
   return (
     <>
-      <header className={menuOpen ? "active" : ""}>
+      <header ref={headerRef} className={menuOpen ? "active" : ""}>
         <div className="top">
           <div className="container">
             <div className="fw">
@@ -79,12 +85,7 @@ export default function Header() {
                 <i className="icon">&#xa009;</i>
               </p>
               <div className="navBar">
-                <i 
-                  className="icon close" 
-                  onClick={() => setMenuOpen(false)}
-                >
-                  &#xa018;
-                </i>
+                <i className="icon close" onClick={() => setMenuOpen(false)}>&#xa018;</i>
                 <nav onClick={(e) => e.stopPropagation()}>
                   <div className="logo">
                     <Link to="/"><img src={logo} /></Link>
@@ -116,7 +117,7 @@ export default function Header() {
                     </li>
                     <li>
                       <NavLink to="/contactus">
-                        <img src={contact} alt="" />
+                        <img src={contact} />
                         <span>Contact Us</span>
                       </NavLink>
                     </li>

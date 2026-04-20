@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/images/logo.png";
@@ -46,6 +47,19 @@ function ContactTag(props){
 }
 
 export default function Footer() {
+  const fixNumRef = useRef(null);
+  useEffect(() => {
+    const setHeight = () => {
+      if (fixNumRef.current) {
+        const height = fixNumRef.current.offsetHeight;
+        document.documentElement.style.setProperty("--fixNumHeight", `${height}px`);
+      }
+    };
+    setHeight();
+    window.addEventListener("resize", setHeight);
+    return () => window.removeEventListener("resize", setHeight);
+  }, []);
+
   return (
     <>
       <footer className="section">
@@ -129,7 +143,7 @@ export default function Footer() {
           <div className="fw">Copyright &copy; <span>{new Date().getFullYear()}</span> with all rights reserved.</div>
         </div>{/* container */}
       </section>
-      <a className="fixNum" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>Call Us {Global.num}</a>
+      <a ref={fixNumRef} className="fixNum" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>Call Us {Global.num}</a>
       <a className="icon callRight" href="tel:<?php echo $numberTel; ?>" target="_blank">&#xa041;</a>
       <i className="icon scrollTop">&#xa022;</i>
     </>

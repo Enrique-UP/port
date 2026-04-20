@@ -1,4 +1,4 @@
-header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
+header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: var(--hh);
     > *{width: 100%;@extend %fc;}
     .top{background: var(--c2);padding-block:8px;
         .fw{display: flex;justify-content: space-between;column-gap: 12px;

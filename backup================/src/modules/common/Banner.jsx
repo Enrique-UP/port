@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Global } from "./Global";
 import defaultImg from "../../assets/images/banners/inner.jpg";
+import ColorsLine from "./ColorsLine";
 
 export default function Banner(props) {
   return (
@@ -35,11 +36,7 @@ export default function Banner(props) {
         </div>
       </section>
 
-      <ul className="colorsLine">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <ColorsLine />
 
       {props.showBreadcrumbs !== false && (
         <section className="breadcrumbs">
