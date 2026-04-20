@@ -21,7 +21,7 @@
         span{font-weight: bold;color:#fff;}
         b{border:1px solid #fff;color:#fff;@extend %trans;}
         a{background: #fff;color:var(--u);font-weight: bold;}
-        b, a{cursor: pointer;padding:12px;
+        b, a{cursor: pointer;padding:12px;line-height: 1.3;
             &:hover, &:active, &:focus{background: var(--f1);color:#fff;border-color: transparent;}
         }
     }
@@ -40,15 +40,10 @@
     .bp .bpArea > .btnText{width: calc(100% - 250px);border-left: 10px solid var(--b1);}
 }
 @media (max-width:575px){
-    .bp .bpArea > .img{width: 100%;height: auto;background: var(--g1);}
-    .bp .bpArea > .btnText{width: 100%;border-top: 10px solid var(--b1);}
-    .bp .bpArea > .img > img {width: 150px;object-fit: cover;margin-inline: auto;}
-    .bp article > div{width: 100%;flex-direction: row;flex-wrap: wrap;}
-    .bp article span{width: 100%;}
-    .bp article b{border-right: none;}
-    .bp article b, .bp article a{padding: 10px 8px;width: 50%;}
+    .bp .bpArea > .img{width: 50%;}
+    .bp .bpArea > .btnText{width: 50%;}
+    .bp article b, .bp article a{padding-inline: 4px;}
     .bp .about{flex-direction: column;}
     .bp .about b{font-size: 18px;}
     .bp .hd{font-size: 20px;}
-    .bp .bpArea > .text > * {padding-inline: 12px;}
 }
