@@ -86,13 +86,13 @@ export default function Contact() {
                   <p className="hd">Opening Timings</p>
                   <div className="ca">
                     <ul className="time">
-                      <li><b><i className="icon">&#xA011;</i><span>Sunday</span></b><span>09:00 - 11:00</span></li>
+                      <li><b><i className="icon">&#xA011;</i><span>Sunday</span></b><span>09:00 - 24:00</span></li>
                       <li><b><i className="icon">&#xA011;</i><span>Monday</span></b><span>20:30 - 24:00</span></li>
                       <li><b><i className="icon">&#xA011;</i><span>Tuesday</span></b><span>20:30 - 24:00</span></li>
                       <li><b><i className="icon">&#xA011;</i><span>Wednesday</span></b><span>20:30 - 24:00</span></li>
                       <li><b><i className="icon">&#xA011;</i><span>Thursday</span></b><span>20:30 - 24:00</span></li>
                       <li><b><i className="icon">&#xA011;</i><span>Friday</span></b><span>20:30 - 24:00</span></li>
-                      <li><b><i className="icon">&#xA011;</i><span>Saturday</span></b><span>09:00 - 11:00</span></li>
+                      <li><b><i className="icon">&#xA011;</i><span>Saturday</span></b><span>09:00 - 24:00</span></li>
                     </ul>
                   </div>{/* ca */}
                 </div>{/* contactArea */}

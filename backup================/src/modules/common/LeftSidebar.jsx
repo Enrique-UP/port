@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
+import ScrollOffset from "./ScrollOffset";
+
 import img1 from "../../assets/images/lifeStyle/home1.jpg";
 import camping from "../../assets/images/icons/camping.png";
 import fitAth from "../../assets/images/icons/fitAth.png";
@@ -12,26 +15,25 @@ import interiorDesign from "../../assets/images/icons/interiorDesign.png";
 import socialMedia from "../../assets/images/icons/socialMedia.png";
 import socialWork from "../../assets/images/icons/socialWork.png";
 
-
 const InterestData = [
-    { int : "Fashion & Styling", icon : style },
-    { int : "Nature Sightseeing", icon : "&#xa051;" },
-    { int : "Photography", icon : "&#xa083;" },
-    { int : "Food Lover", icon : "&#xa091;" },
-    { int : "Road Trips", icon : "&#xa092;" },
-    { int : "Traveling", icon : "&#xa090;" },
-    { int : "Biking", icon : "&#xa060;" },
-    { int : "Car Driving", icon : "&#xa061;" },
-    { int : "Camping", icon : camping },
-    { int : "Swimming", icon : "&#xa094;" },
-    { int : "Hiking/Trekking", icon : hikingTrekking },
-    { int : "Games & Sports", icon : cricket }, 
-    { int : "Fitness & Athletics", icon : fitAth },
-    { int : "Interior Designing", icon : interiorDesign }, 
-    { int : "Listening Music", icon : "&#xa066;" },
-    { int : "Watching Movies", icon : "&#xa075;" }, 
-    { int : "Social Media", icon : socialMedia },
-    { int : "Social Work", icon : socialWork }
+  { int : "Fashion & Styling", icon : style },
+  { int : "Nature Sightseeing", icon : "&#xa051;" },
+  { int : "Photography", icon : "&#xa083;" },
+  { int : "Food Lover", icon : "&#xa091;" },
+  { int : "Road Trips", icon : "&#xa092;" },
+  { int : "Traveling", icon : "&#xa090;" },
+  { int : "Biking", icon : "&#xa060;" },
+  { int : "Car Driving", icon : "&#xa061;" },
+  { int : "Camping", icon : camping },
+  { int : "Swimming", icon : "&#xa094;" },
+  { int : "Hiking/Trekking", icon : hikingTrekking },
+  { int : "Games & Sports", icon : cricket }, 
+  { int : "Fitness & Athletics", icon : fitAth },
+  { int : "Interior Designing", icon : interiorDesign }, 
+  { int : "Listening Music", icon : "&#xa066;" },
+  { int : "Watching Movies", icon : "&#xa075;" }, 
+  { int : "Social Media", icon : socialMedia },
+  { int : "Social Work", icon : socialWork }
 ];
 const InterestTag = (props) => {
   const isImage = props.icon && props.icon.includes("/");
@@ -54,17 +56,20 @@ export default function LeftSidebar() {
             <p className="hd">Menu</p>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link>About Me</Link></li>
-              <li><Link>My Worked Projects</Link></li>
-              <li><Link>I Know</Link></li>
-              <li><Link to="/lifestyle">Image Gallery</Link></li>
-              <li><Link>My Childhood</Link></li>
-              <li><Link>My Education</Link></li>
-              <li><Link>My Lifestyle</Link></li>
-              <li><Link>My Team</Link></li>
-              <li><Link>Customer's Review</Link></li>
-              <li><Link>Why Choose Me</Link></li>
-              <li><Link to="/contactus">Contact Me</Link></li>
+              <li><HashLink to="/#about" scroll={ScrollOffset}>About Us</HashLink></li>
+              <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
+              <li><HashLink to="/#exp" scroll={ScrollOffset}>Exp</HashLink></li>
+              <li><HashLink to="/#edu" scroll={ScrollOffset}>Edu</HashLink></li>
+              <li><HashLink to="/#ts" scroll={ScrollOffset}>Skills</HashLink></li>
+              <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
+              <li><HashLink to="/#wcu" scroll={ScrollOffset}>Wcu</HashLink></li>
+              <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
+              <li><Link to="/reviews">Reviews</Link></li>
+              <li><Link to="/lifestyle">Gallery</Link></li>
+              <li><HashLink to="/#ch" scroll={ScrollOffset}>Ch</HashLink></li>
+              <li><Link to="/poetry">Poetry</Link></li>
+              <li><Link to="/contactus">Contact Us</Link></li>
             </ul>
           </aside>
           <aside className="about">

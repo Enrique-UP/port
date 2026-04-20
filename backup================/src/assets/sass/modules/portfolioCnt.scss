@@ -1,0 +1,9 @@
+.port{
+    [data-site="visasoftheworld_in"]{
+        .text::before{content:"Text here...";}
+        .notes::before{content:"Notes here...";}
+    }
+    [data-site="digitized_it_com"]{
+        .text::before{content:"Text here...";}
+    }
+}

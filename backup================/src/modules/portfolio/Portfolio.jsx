@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+
 import Banner from "../common/Banner";
 import LeftSidebar from "../common/LeftSidebar";
 import RightSidebar from "../common/RightSidebar";
@@ -19,57 +20,123 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-// ✅ LOAD ALL IMAGES (IMPORTANT FIX)
+/* ================= IMAGE IMPORT ================= */
+
 const images = import.meta.glob(
   "/src/assets/images/portfolio/*/*.jpg",
   { eager: true, import: "default" }
 );
 
-// ✅ FAST LOOKUP MAP (BEST PRACTICE)
 const imageMap = {};
+
 Object.entries(images).forEach(([path, value]) => {
   const parts = path.split("/");
   const folder = parts[parts.length - 2];
   const file = parts[parts.length - 1].replace(".jpg", "");
+
   imageMap[`${folder}-${file}`] = value;
 });
 
-// ✅ GET IMAGE FUNCTION (FINAL)
-const getImage = (folder, name) => {
-  return imageMap[`${folder}-${name}`] || "";
+/* ================= HELPERS ================= */
+
+const normalizeName = (name) => name.replaceAll("-", "_");
+
+// local image
+const getImage = (folder, name, domain) =>
+  imageMap[`${folder}-${normalizeName(name)}_${domain}`] || null;
+
+// fallback image from website link
+const getFallbackImage = (link) => {
+  if (!link) return null;
+
+  try {
+    const url = new URL(
+      link.startsWith("http") ? link : `https://${link}`
+    );
+
+    return `${url.href}`;
+  } catch {
+    return null;
+  }
 };
 
-// ✅ CARD COMPONENT
-const Temp = ({ date, site, link, about, img, onClick }) => {
-  const displaySite = site.startsWith("www.") ? site : `www.${site}`;
+/* ================= TEMPLATE ================= */
+
+const Temp = ({
+  date,
+  site,
+  link,
+  note,
+  img,
+  onClick,
+  status,
+}) => {
+  const displaySite = `www.${site}`;
 
   return (
-    <article>
+    <article data-site={normalizeName(site).replaceAll(".", "_")}>
       <figcaption>
         <span>{date}</span>
-        <a className="site" href={link} target="_blank" rel="noreferrer" data-site={displaySite}></a>
-        <p className={about}></p>
+
+        <a
+          className="site"
+          {...(status && {
+            href: link,
+            target: "_blank",
+            rel: "noreferrer",
+          })}
+          data-site={displaySite}
+        ></a>
+
+        <p className="text"></p>
+
+        {note && <p className="notes">{note}</p>}
+
         <div className="links">
-          {link && (<a href={link} target="_blank" rel="noreferrer">Live Demo</a>)}
-          <span onClick={onClick}>View Template</span>
+          {status && (
+            <a href={link} target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+          )}
+
+          {img && <span onClick={onClick}>View Template</span>}
         </div>
       </figcaption>
+
       <figure>
-        <img src={img} onClick={onClick} />
+        {img && <img src={img} onClick={onClick} />}
       </figure>
     </article>
   );
 };
 
+/* ================= MAIN ================= */
+
 export default function Portfolio() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ BUILD LIGHTBOX IMAGES (FIXED)
-  const allImages = PortfolioData.flatMap(section =>
-    section.items.map(item => ({
-      src: getImage(section.folderName, item.name)
-    }))
+  /* ================= LIGHTBOX IMAGES ================= */
+
+  const allImages = PortfolioData.flatMap((section) =>
+    section.items
+      .map((item) => {
+        const local = getImage(
+          section.folderName,
+          item.name,
+          item.domain
+        );
+
+        const link =
+          item.link || `${item.name}.${item.domain}`;
+
+        const fallback = getFallbackImage(link);
+
+        const src = local || fallback;
+
+        return src ? { src } : null;
+      })
+      .filter(Boolean)
   );
 
   return (
@@ -80,14 +147,16 @@ export default function Portfolio() {
 
       <Banner
         pageName="Portfolio"
-        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
+        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
       />
 
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Lorem <span>Page</span></h2>
-            <p>Lorem ipsum dolor sit ameet</p>
+            <h2>
+              Lorem <span>Page</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet</p>
           </hgroup>
 
           <div className="sideMid">
@@ -97,35 +166,52 @@ export default function Portfolio() {
               <div className="port">
                 {PortfolioData.map((section, i) => (
                   <div className="portArea" key={i}>
-                    <p className="hd"><span data-hd={section.hd}></span></p>
+                    <p className="hd">
+                      <span data-hd={section.hd}></span>
+                    </p>
 
-                    {section.items.map(
-                      ({ date, name, domain, link }, j) => {
-                        const site = `${name}.${domain}`;
-                        const about = `${name}_text`;
-                        const fullLink = link?.startsWith("http")
-                          ? link
-                          : `https://${site}`;
+                    {section.items.map((item, j) => {
+                      const { date, name, domain, link, note, status } =
+                        item;
 
-                        // ✅ CORRECT INDEX SYNC
-                        const index = PortfolioData.slice(0, i).flatMap(s => s.items).length + j;
+                      const site = `${name}.${domain}`;
 
-                        return (
-                          <Temp
-                            key={j}
-                            date={date}
-                            site={site}
-                            link={fullLink}
-                            about={about}
-                            img={getImage(section.folderName, name)} // ✅ FIXED
-                            onClick={() => {
-                              setCurrentIndex(index);
-                              setLightboxOpen(true);
-                            }}
-                          />
-                        );
-                      }
-                    )}
+                      const fullLink = link?.startsWith("http")
+                        ? link
+                        : `https://${site}`;
+
+                      const index =
+                        PortfolioData.slice(0, i)
+                          .flatMap((s) => s.items).length + j;
+
+                      const localImg = getImage(
+                        section.folderName,
+                        name,
+                        domain
+                      );
+
+                      const fallbackImg =
+                        getFallbackImage(fullLink);
+
+                      const img = localImg || fallbackImg;
+
+                      return (
+                        <Temp
+                          key={j}
+                          date={date}
+                          site={site}
+                          link={fullLink}
+                          note={note}
+                          status={status}
+                          img={img}
+                          onClick={() => {
+                            if (!img) return;
+                            setCurrentIndex(index);
+                            setLightboxOpen(true);
+                          }}
+                        />
+                      );
+                    })}
                   </div>
                 ))}
               </div>
@@ -136,8 +222,9 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* ✅ LIGHTBOX */}
-      {lightboxOpen && (
+      {/* ================= LIGHTBOX ================= */}
+
+      {lightboxOpen && allImages.length > 0 && (
         <Lightbox
           slides={allImages}
           open={lightboxOpen}
@@ -149,9 +236,8 @@ export default function Portfolio() {
             Fullscreen,
             Slideshow,
             Counter,
-            Captions
+            Captions,
           ]}
-          zoom={{ maxZoomPixelRatio: 3 }}
         />
       )}
     </>
