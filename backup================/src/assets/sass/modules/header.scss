@@ -27,15 +27,15 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
             .navBar{display: flex;}
         }
         .menu, .logo, .close{display: none;}
-        .logo{padding-bottom:12px;
+        .logo{
             > a{display: flex;width: 100%;background: var(--cb2);padding:16px;justify-content:center;}
         }
         .menu{color:#fff;justify-content: space-between;width: 100%;padding-block: 10px;align-items:center;line-height:1;
             > b{font-size: 20px;}
             > .icon{font-size: 24px;cursor: pointer;}
         }
-        .close{position: absolute;top: 0;right: 0;background: var(--cb1);width: 36px;height: 36px;color: #fff;align-items: center;justify-content: center;cursor: pointer;}
-        nav{display: flex;
+        .close{position: fixed;top: -36px;right: 0;background: var(--cb1);width: 36px;height: 36px;color: #fff;align-items: center;justify-content: center;cursor: pointer;@extend %trans;}
+        nav{display: flex;@extend %trans;
             > ul{display: flex;margin:0;padding:0;
                 li{list-style: none;display: flex;border-right: 1px solid #fff;
                     a{color:#fff;}
@@ -51,16 +51,14 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
 }
 
 @media (max-width:991px){
-    header .bottom .fw .navBar{display: none;}
-    header.active .bottom .fw .navBar{display: flex;}
     header .bottom .menu, header .bottom .logo, header .bottom .close{display: flex;}
-    header .bottom .fw .navBar{position: fixed;top:0;left:0;width: 100%;height: 100%;}
-    header .bottom .fw .navBar::before{background: rgba(0,0,0,0.7);position: absolute;top:0;left:0;width: 100%;height: 100%;content:"";}
-    header .bottom nav{width: 280px;background: #fff;flex-direction: column;padding: 12px;position: relative;
-        // margin-left: -100%;
+    header .bottom nav{width: 280px;margin-left: -280px;background: #fff;flex-direction: column;position: relative;
+    position: fixed;top:0;left:0;height: 100%;
     }
-    header .bottom nav > ul{flex-direction: column;}
-    header .bottom nav > ul > li:first-child {border-left: none;border-top: 1px solid var(--b1);}
+    header .bottom .logo > a{padding: 12px;justify-content: flex-start;}
+    header .bottom .logo > a > img{width: 160px;}
+    header .bottom nav > ul{flex-direction: column;padding-inline: 12px;overflow-y: auto;}
+    header .bottom nav > ul > li:first-child {border-left: none;}
     header .bottom nav > ul li{border-right: none;border-bottom: 1px solid var(--b1);}
     header .bottom nav > ul > li > a{width: 100%;padding-inline: 0;}
     header .bottom nav > ul li a{color: var(--f2);}
@@ -68,14 +66,17 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;
         img{filter: brightness(1) invert(1);}
     }
     header .bottom nav > ul li a img {filter: grayscale(100%) brightness(0.5);}
-    body:has(header.active){overflow: hidden;}
+    header.active{position: static;z-index: auto;
+        .bottom nav{margin-left: 0;z-index: 9999;}
+        .bottom .close{top:0;z-index: 9999;}
+    }
 }
 @media (max-width:575px){
     header .top .fw > a > span b{display: none;}
     header .middle .logo > a{padding: 54px 12px;}
     header .middle .follow > b{display: none;}
-    header .bottom .fw {padding-left: 212px;}
-    header .middle .follow{padding: 4px;}
+    header .bottom .fw {padding-left: 172px;}
+    header .middle .follow{padding: 4px 10px;}
     header .middle .follow > p a{width: 26px;}
     header .middle .logo img{width: 140px;}
     header .bottom .logo > a img{width: 140px;}

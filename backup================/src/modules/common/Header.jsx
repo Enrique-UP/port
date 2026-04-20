@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
 import ScrollOffset from "./ScrollOffset";
@@ -8,6 +8,21 @@ import contact from "../../assets/images/icons/contact.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("back");
+    } else {
+      document.body.classList.remove("back");
+    }
+
+    return () => document.body.classList.remove("back");
+  }, [menuOpen]);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   return (
     <>
@@ -65,12 +80,12 @@ export default function Header() {
               </p>
               <div className="navBar">
                 <i 
-                className="icon close" 
-                onClick={() => setMenuOpen(false)}
-              >
-                &#xa018;
-              </i>
-                <nav>
+                  className="icon close" 
+                  onClick={() => setMenuOpen(false)}
+                >
+                  &#xa018;
+                </i>
+                <nav onClick={(e) => e.stopPropagation()}>
                   <div className="logo">
                     <Link to="/"><img src={logo} /></Link>
                   </div>{/* logo */}

@@ -56,7 +56,7 @@ export default function Slider() {
 
   return (
     <>
-      <div className="gallerySlider">
+      <div className="homeSlider">
 
         {/* MAIN SWIPER */}
         <Swiper
