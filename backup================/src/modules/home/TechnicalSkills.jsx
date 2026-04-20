@@ -122,7 +122,7 @@ export default function TechinicalSkills() {
               <div className="col-xs-12 col-lg-6" key={index}>
                 <article className={`skill ${isActive ? "active" : ""}`}>                  
                   <div className="back">
-                    <span>{formatExperience(exp)} Exp</span>
+                    <span>{formatExperience(exp)} <i>Exp</i></span>
                   </div>
                   <div className="cnts">
                     <p className="head">
