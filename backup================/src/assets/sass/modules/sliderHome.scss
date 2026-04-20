@@ -17,8 +17,6 @@
   }
   .mainImg {width: 100%;object-fit: cover;display: flex;
     height: -webkit-fill-available;
-    // min-height: calc(100vh - var(--headerHeight) - var(--fixNumHeight) - var(--colorsLineHeight));
-    // min-height: calc(100dvh - var(--headerHeight) - var(--fixNumHeight) - var(--colorsLineHeight));
     height: calc(100vh - var(--headerHeight) - var(--fixNumHeight) - var(--colorsLineHeight));
     height: calc(100dvh - var(--headerHeight) - var(--fixNumHeight) - var(--colorsLineHeight));
   }
