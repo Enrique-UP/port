@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nomaan Arif : Image Gallery</title>
+    <meta name="keywords" content="Nomaan Arif, Nomaan Budaun, Check Nomaan Arif Work/Portfolio, Check Nomaan Arif Contact Number, Nomaan Arif Phone Number, Provide Services to Web Design">
+    <meta name="description" content="Nomaan Pics, Image Gallery, My Pics, Nomaan Life Style">
+    
+    <link rel="canonical" href="" />
+    <meta name="author" content="Nomaan Arif">
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <filesmatch ".(html|css|js|ico|jpg|jpeg|png|gif|ttf|eot|woff|woff2|svg)$"=""></filesmatch>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!--common-->
+    <link rel="icon" type="image/png" sizes="60x60" href="images/favicon.png">
+    <link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/animation.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/content_text.css" type="text/css" />
+    <!--common-->
+
+    <link rel="stylesheet" type="text/css" class="sidebar_css" />
+    <link rel="stylesheet" type="text/css" href="css/image_gallery.css" />
+    <!--<link rel="stylesheet" href="css/jquery.fancybox.min_for_image_gallery.css" />-->
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/include.js"></script>
+    
+</head>
+<body>
+<div class="loader_area">
+    <div class="middle_area">
+        <div class="box">
+            <div class="line"></div><!--line-->
+            <span>Loading...</span>
+        </div><!--box-->
+    </div><!--middle_area-->
+</div><!--loader_area-->
+<div class="main" id="scroll_top">
+    <div class="header"></div><!--header--> 
+    <div class="slider banner_inner"></div><!--slider-->
+    <div class="breadcrumbs">
+        <div class="c-container">
+            <div class="c-row">
+                <div class="col-lg-c12 animate bounce_in">
+                    <a href="index.html" class="fa fa-home"></a>
+                    <i class="fa fa-angle-right"></i>
+                    <span>Image Gallery</span>
+                </div><!--cols-->
+            </div><!--c-row-->
+        </div><!--container-->
+    </div><!--breadcrumbs-->
+    <div class="main_container section">
+        <div class="c-container">
+            <div class="c-row">
+                <div class="col-lg-c12">
+                    <h3 class="main_heading">
+                        <span class="head animate heading">Image Gallery</span>
+                        <span class="sub_head animate bounce_in">My Pics</span>
+                    </h3>
+                </div><!--cols-->
+                <div class="col-lg-c12">
+                    <div class="c-row order_area">
+                        <div class="col-vvxs-c12 col-vxs-c12 col-xs-c6 col-sm-c6 col-lg-c3 left_area">
+                            <div class="sidebar" id="left_sidebar"></div><!--sidebar-->                          
+                        </div><!--cols-->
+                        <div class="col-vvxs-c12 col-vxs-c12 col-xs-c12 col-sm-c12 col-lg-c6 middle_area">
+                            <div class="projects-wrapper">
+                            	<!-- Project Filtering -->
+				                <ul id="filterNav" class="filters-list animate bounce_in">
+				                    <li data-filter="*" class="active"><a href="#projects-list">All Pics</a></li>
+                                    <li data-filter=".best"><a href="#projects-list">Best Pics</a></li>
+                                    <li data-filter=".politician"><a href="#projects-list">With Politicians</a></li>
+                                    <li data-filter=".childhood"><a href="#projects-list">Childhood Pics</a></li>
+                                    <li data-filter=".festival"><a href="#projects-list">Festival Posts</a></li>
+                                    <li data-filter=".father"><a href="#projects-list">My Father</a></li>
+                                    <li data-filter=".nephew"><a href="#projects-list">My Nephew</a></li>
+                                    <li data-filter=".neice"><a href="#projects-list">My Neice</a></li>
+                                    <li data-filter=".cricket"><a href="#projects-list">Playing Cricket</a></li>
+                                    <!-- <li data-filter=".others"><a href="#projects-list">Others</a></li> -->
+                                    <li>
+                                        <div class="quicksearch_area animate bounce_in">
+                                            <input type="text" id="quicksearch" placeholder="Search" class="quicksearch" />
+                                            <i class="fa fa-search"></i>
+                                        </div><!--quicksearch_area-->
+                                    </li>
+				                </ul>
+				                <div class="c-row">
+                                    <div class="projects-list" id="projects-list"></div><!--projects-list-->
+				                </div><!--c-row-->
+							</div><!--projects-wrapper-->
+                        </div><!--cols-->
+                        <div class="col-vvxs-c12 col-vxs-c12 col-xs-c6 col-sm-c6 col-lg-c3 right_area">
+                            <div class="sidebar" id="right_sidebar"></div><!--sidebar-->                  
+                        </div><!--cols-->
+                    </div><!--c-row-->
+                </div><!--cols-->
+            </div><!--c-row-->
+        </div><!--container-->
+    </div><!--main_container-->
+    <div class="footer section"></div><!--footer-->
+</div><!--main-->
+<div class="slide_show">
+    <img />
+    <i class="prev">&#8592;</i>
+    <i class="next">&#8594;</i>
+    <b>&times;</b>
+
+    <div class="total_current">
+          <span class="current"></span> || <span class="total"></span>
+    </div><!--total_current-->
+</div><!--slide_show-->
+<a href="#scroll_top" class="scroll_top fa fa-angle-up animate big_up"></a>
+<script type="text/javascript" src="js/images_data.js"></script>
+<script src="js/isotope.pkgd.min_for_search_masonry.js"></script>
+<script src="js/functions_for_masonry.js"></script>
+
+<!--<script src="js/plugins_for_image_gallery.js"></script>-->
+
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazy.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/image_gallery.js"></script>
+<script type="text/javascript">
+   $(".filters-list li").click(function(){
+       $(window).resize();
+   });
+//    $(document).scroll(function () {
+//        $(window).resize();
+//    });
+   $(window).on("scroll", rsz);
+   setInterval(rsz, 100);
+   function rsz(){
+    $(window).resize();
+   }
+</script>
+<script type="text/javascript">
+    $(".filters-list li").click(function(){
+        $(".project-item").removeClass("animate heading");
+        $(".project-item").css({"visibility" : "visible", "animation-name" : "none", "-webkit-animation-name" : "none", "-moz-animation-name" : "none"});
+        $( window ).scroll(function() {
+            $(".project-item").removeClass("animate heading");
+            $(".project-item").css({"visibility" : "visible", "animation-name" : "none", "-webkit-animation-name" : "none", "-moz-animation-name" : "none"});
+        });
+    });        
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".quicksearch_area input").on("keyup", function() {
+    $(window).resize();
+    var value = $(this).val().toLowerCase();
+    $(".projects-list .project-item").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+$(document).ready(function(){
+$(".quicksearch_area").click(function(e){
+    e.stopPropagation();
+});
+});
+$(document).click(function(){
+    $(".quicksearch_area input").val("");
+    $(".projects-list .project-item").fadeIn();
+});
+    </script>
+    
+</body>
+</html>

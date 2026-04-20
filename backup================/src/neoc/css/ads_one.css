@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.ads_one{color:#fff;position: relative;padding:225px 0;background: #34495c;}
+.ads_one .ads_one_banner{width:50%;height: 100%;content:"";position: absolute;top:0;right:0;background-repeat:no-repeat;background-position: center center;background-size:cover;}
+.ads_one > *{width:50%;float:left;}
+.ads_one > .text{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);text-align: center;width:100%;line-height: 1;}
+.ads_one > .text p{margin-bottom: 0;}
+.ads_one > .text p > *{margin:15px 0;}
+.ads_one > .text p > span.sub_head{display: block;font-size: 24px;font-family: bold;color:#eee;}
+.ads_one > .text p > b{display: block;font-size: 40px;font-family: bold;color:#fff;}
+.ads_one > .text p > span.text{display: block;font-size: 18px;color:#eee;}
+.ads_one > .text .img{width:100%;float:left;}
+
+
+
+@media (min-width:768px) and (max-width:991px)
+{
+    .ads_one > .text p > b{font-size:31px;}
+}
+@media (max-width:767px)
+{
+    .ads_one{padding:0;}
+    .ads_one .ads_one_banner{width:100%;right:auto;left:0;}
+    .ads_one > .text{width:100%;position: static;transform: translate(0,0);-webkit-transform: translate(0,0);-moz-transform: translate(0,0);float: left;}
+}
+@media (min-width:621px) and (max-width:767px)
+{
+    .ads_one .ads_one_banner{height: 350px;}
+    .ads_one > .text{margin: 400px 0 35px;}
+}
+@media (max-width:620px)
+{
+    .ads_one .ads_one_banner{height: 300px;}
+    .ads_one > .text{margin: 350px 0 35px;}
+}
+@media (min-width:461px) and (max-width:620px)
+{
+    .ads_one .ads_one_banner{height: 250px;}
+    .ads_one > .text{margin: 300px 0 35px;}
+    .ads_one > .text p > b{font-size: 36px;}
+    .ads_one > .text p > span.sub_head{font-size:22px;}
+    .ads_one > .text p > span.text{font-size: 17px;}
+}
+@media (max-width:460px)
+{
+    .ads_one .ads_one_banner{height: 250px;}
+    .ads_one > .text{margin: 280px 0 15px;}
+    .ads_one > .text p > span.sub_head{font-size:16px;}
+    .ads_one > .text p > b{font-size: 24px;}
+    .ads_one > .text p > span.text{font-size: 14px;}
+}

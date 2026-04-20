@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.team{width:100%;float:left;}
+.team .team_area{width:100%;float:left;margin-bottom: 30px;position: relative;overflow: hidden;color:#fff;}
+.team .team_area .name{position: absolute;font-size: 22px;left:15px;bottom:90px;line-height: 1;text-transform: uppercase;}
+.team .team_area .name > b{font-family: bold;display: block;color:#fff;}
+.team .team_area .post{position: absolute;font-size: 16px;left:15px;bottom:20px;line-height: 1;font-style: italic;text-transform: uppercase;font-weight: bold;}
+.team .team_area > img{width:100%;float:left;}
+.team .team_area .left{width:0;height:0;position: absolute;left:0;bottom:0;content:"";border-right: 290px solid transparent;border-bottom: 270px solid #eec85b;}
+.team .team_area .right{width:0;height:0;position: absolute;right:0;bottom:0;content:"";border-left: 200px solid transparent;border-bottom: 120px solid #2cc7cb;}
+.team .team_area .bottom{width: 0;height: 0;position: absolute;left: -80px;right: 0;bottom: 0;content: "";border-right: 625px solid transparent;border-bottom: 70px solid #34495c;border-left: 110px solid transparent;}
+
+
+
+@media(max-width:460px){
+    .team .team_area .post{font-size:11px;left: 10px;bottom: 10px;}
+    .team .team_area .bottom{border-bottom-width: 40px;border-left-width: 90px;}
+    .team .team_area .right{border-left-width: 100px;border-bottom-width: 60px;}
+    .team .team_area .left{border-right-width: 200px;border-bottom-width: 150px;}
+    .team .team_area .name {font-size: 16px;left: 10px;bottom: 50px;}
+}

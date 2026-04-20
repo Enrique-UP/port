@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.ads_four{width:100%;float:left;color:#fff;}
+.ads_four img.img{width:100%;float:left;}
+.ads_four .heading{width:100%;float:left;margin-bottom: 30px;position: relative;}
+.ads_four .text::before{display: none;}
+.ads_four .heading::before{width:100%;height:100%;position:absolute;top:0;left:0;content:"";background: rgba(0,0,0,0.3);}
+.ads_four .heading > p{position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);text-align: center;font-weight: bold;text-shadow: 0 0 1px #000;font-size: 50px;margin:0;text-transform: uppercase;line-height: 1;font-family: bold;}
+.ads_four .heading > p > span{display: block;font-size: 30px;}
+.ads_four .text{width:100%;float:left;margin-bottom: 30px;position: relative;}
+.ads_four .text > p{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);border:5px solid #fff;padding:25px;text-transform: uppercase;}
+.ads_four .text > p > *{display:block;clear:both;text-align: center;line-height: 1;font-family: bold;font-size: 40px;color:#fff;}
+.ads_four .text > p > span{font-family:regular;font-size: 30px;}
+.ads_four .text > a{position: absolute;top:50%;left:50%;transform: translate(-50%,100px);-webkit-transform: translate(-50%,100px);-moz-transform: translate(-50%,100px);color:#fff;text-decoration: none;text-transform: uppercase;font-size: 16px;font-weight: bold;}
+
+
+@media (min-width:992px) and (max-width:1199px)
+{
+    .ads_four .text > p{padding:20px;}
+    .ads_four .text > a{transform: translate(-50%,90px);-webkit-transform: translate(-50%,90px);-moz-transform: translate(-50%,90px);}
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    .ads_four .heading > p{font-size: 40px;}
+    .ads_four .heading > p > span{font-size: 23px;}
+    .ads_four .text > p{padding:15px;}
+    .ads_four .text > a{transform: translate(-50%,72px);-webkit-transform: translate(-50%,72px);-moz-transform: translate(-50%,72px);}
+    .ads_four .text > p > span{font-size:24px;}
+    .ads_four .text > p > *{font-size: 34px;}
+}
+@media (min-width:461px) and (max-width:620px)
+{
+    .ads_four .text > a{transform: translate(-50%,93px);-webkit-transform: translate(-50%,93px);-moz-transform: translate(-50%,93px);}
+}
+@media (max-width:460px)
+{
+    .ads_four .heading > p{font-size: 40px;}
+    .ads_four .heading > p > span{font-size: 23px;}
+    .ads_four .text > p{padding:15px;}
+    .ads_four .text > a{transform: translate(-50%,55px);-webkit-transform: translate(-50%,55px);-moz-transform: translate(-50%,55px);font-size:14px;}
+    .ads_four .text > p > span{font-size:12px;}
+    .ads_four .text > p > *{font-size: 20px;}
+}
