@@ -78,11 +78,12 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
 }
 @media (max-width:575px){
     header .top .fw > a > span b{display: none;}
-    header .middle .logo > a{padding: 54px 12px;}
+    header .middle .logo > a{padding: 47px 12px;}
     header .middle .follow > b{display: none;}
     header .bottom .fw {padding-left: 172px;}
-    header .middle .follow{padding: 4px 10px;}
-    header .middle .follow > p a{width: 26px;}
+    header .middle .follow{padding: 4px;}
+    header .middle .follow > p a {width: 26px;height: 26px;}
     header .middle .logo img{width: 140px;}
     header .bottom .logo > a img{width: 140px;}
+    header .middle .follow > p, header .middle .follow > p > span{gap:2px;}
 }
