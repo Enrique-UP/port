@@ -8,7 +8,6 @@
 }
 @media (min-width:1200px) and (max-width:1399px){
     header .fw {grid-template-columns: 20% 60% 20%;}
-    .port figure {width: 250px;}
 }
 
 
@@ -100,7 +99,6 @@
         .head2 {font-size: 30px;}
     }
     main > .banner .hd {font-size: 48px;}
-    .port figure {width: 220px;}
     main > .banner .cnt {row-gap: 8px;}
 }
 @media (max-width:575px){
@@ -142,7 +140,7 @@
     .about img {border-width: 4px;}
 }
 @media (min-width:441px) and (max-width:575px){
-    .port figure {width: 180px;padding: 6px;}
+    .port figure {padding: 6px;}
     .port article {column-gap: 12px;}
 }
 @media (max-width:460px){

@@ -29,7 +29,7 @@
 @import "./modules/sliderHome.scss";
 @import "./modules/topProjects.scss";
 @import "./modules/brandingProjects.scss";
-@import "./modules/portfolioCnt.scss";
+@import "./sites/sites.scss";
 
 
 // html {scroll-behavior: smooth;}
@@ -265,7 +265,7 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         > span{color:var(--f2);position: relative;
             &::before{width: 24px;height: 24px;position: absolute;left:-44px;background: var(--c2);border-radius: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);@extend %center;border-radius: 100%;counter-increment: count;content: counter(count);color: #fff;font-size: 14px;}
         }
-        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;font-size: 18px;
+        > a.site{align-self: flex-start;color:var(--f1);font-weight: bold;font-size: 18px;word-break: break-word;line-height: 1;
             &::after{content:attr(data-site);}
         }
         .links{display: flex;
@@ -278,8 +278,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         .notes{color: var(--c2);}
 
     }
-    figure{width: 150px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;max-width: 100%;align-self: flex-start;cursor: pointer;}
-    .text::before{content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste.';}
+    figure{width: 150px;border:1px solid var(--b1);padding:10px;background: #fff;display: flex;flex-shrink: 0;max-width: 100%;align-self: flex-start;cursor: pointer;
+        > img{width: 100%;}
+    }
+    // .text::before{content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste.';}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {

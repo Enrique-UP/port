@@ -39,25 +39,19 @@ Object.entries(images).forEach(([path, value]) => {
 
 /* ================= HELPERS ================= */
 
-const normalizeName = (name) => name.replaceAll("-", "_");
+// ✅ UPDATED → replace "-" AND "." with "_"
+const normalizeName = (name) =>
+  name.replace(/[-.]/g, "_");
 
 // local image
 const getImage = (folder, name, domain) =>
   imageMap[`${folder}-${normalizeName(name)}_${domain}`] || null;
 
-// fallback image from website link
-const getFallbackImage = (link) => {
-  if (!link) return null;
-
-  try {
-    const url = new URL(
-      link.startsWith("http") ? link : `https://${link}`
-    );
-
-    return `${url.href}`;
-  } catch {
-    return null;
-  }
+// ✅ fallback → show expected path only
+const getFallbackImage = (folder, name, domain) => {
+  return `/port/src/assets/images/portfolio/${folder}/${normalizeName(
+    name
+  )}_${domain}.jpg`;
 };
 
 /* ================= TEMPLATE ================= */
@@ -127,12 +121,13 @@ export default function Portfolio() {
           item.domain
         );
 
-        const link =
-          item.link || `${item.name}.${item.domain}`;
-
-        const fallback = getFallbackImage(link);
-
-        const src = local || fallback;
+        const src =
+          local ||
+          getFallbackImage(
+            section.folderName,
+            item.name,
+            item.domain
+          );
 
         return src ? { src } : null;
       })
@@ -190,10 +185,13 @@ export default function Portfolio() {
                         domain
                       );
 
-                      const fallbackImg =
-                        getFallbackImage(fullLink);
-
-                      const img = localImg || fallbackImg;
+                      const img =
+                        localImg ||
+                        getFallbackImage(
+                          section.folderName,
+                          name,
+                          domain
+                        );
 
                       return (
                         <Temp
