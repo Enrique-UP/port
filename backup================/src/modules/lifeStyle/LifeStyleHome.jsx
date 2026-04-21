@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/lifeStyle/home1.jpg";
-import img2 from "../../assets/images/lifeStyle/home2.jpg";
-import img3 from "../../assets/images/lifeStyle/home3.jpg";
-import img4 from "../../assets/images/lifeStyle/home4.jpg";
-import img5 from "../../assets/images/lifeStyle/home5.jpg";
-import img6 from "../../assets/images/lifeStyle/home6.jpg";
-import img7 from "../../assets/images/lifeStyle/home7.jpg";
-import img8 from "../../assets/images/lifeStyle/home8.jpg";
-import img9 from "../../assets/images/lifeStyle/home9.jpg";
+import img1 from "../../assets/images/delete/home1.jpg";
+import img2 from "../../assets/images/delete/home2.jpg";
+import img3 from "../../assets/images/delete/home3.jpg";
+import img4 from "../../assets/images/delete/home4.jpg";
+import img5 from "../../assets/images/delete/home5.jpg";
+import img6 from "../../assets/images/delete/home6.jpg";
+import img7 from "../../assets/images/delete/home7.jpg";
+import img8 from "../../assets/images/delete/home8.jpg";
+import img9 from "../../assets/images/delete/home9.jpg";
 
 export default function LifestyleHome() {
   return (

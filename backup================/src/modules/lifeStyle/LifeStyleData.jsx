@@ -2,26 +2,37 @@ const LifeStyleData = [
   {
     imgFdr: "others",
     images: [
-      { place: "Delhi", date: "1-1-2025" },
-      { place: "Mumbai", date: "1-2-2025" },
-      { place: "Jaipur", date: "1-3- 2025" },
-      { place: "Goa", date: "1-4-2025" },
+      { title: "Amritsar (Punjab)", date: "1935", img:"1935" },
+      { title: "Ujhani (Budaun)", img:"grandFather1"},
+      { title: "Ujhani (Budaun)", date: "1958", img:"1958"},
+      { title: "My Paternal Grand Father", img:"grandFather2"},
+      { title: "My Maternal Grand Father", img:"maternalGrandFather1"},
     ],
   },
-  { imgFdr: "beach", place:"Lorem1", date: "1-1-2024", items: 34 },
-  { imgFdr: "bridge", place:"Lorem2", date: "1-2-2023", items: 4 },
-  { imgFdr: "building", place:"Lorem3", date: "1-2-2022", items: 21 },
-  { imgFdr: "forest", place:"Lorem4", date: "1-2-2021", items: 56 },
   {
-    imgFdr: "others",
+    imgFdr: "aunty",
     images: [
-      { place: "Manali", date: "1-1-2026" },
-      { place: "Agra", date: "1-1-2026" },
-      { place: "Lucknow", date: "1-1-2026" },
-      { place: "Uttrakhand", date: "1-1-2026" },
-      { place: "Kashmir", date: "1-1-2026" },
+      { title: "My aunt with Rajesh Khanna Sahab", img:"1995" },
+      { title: "My aunt at a musical show", img:"1996" },
+      { title: "My aunt at a musical show", img:"1997-1" },
+      { title: "My aunt at a musical show", img:"1997-2" },
+      { title: "My aunt at a musical show", img:"1997-3" },
+      { title: "My aunt at a musical show", img:"1997-4" },
+      { title: "My aunt with Ghulam Mustafa Sahab", img:"2005" },
+      { title: "Antakshari Final Runner (Sony Sab)", date: "2016", img:"mar2016" },
     ],
   },
-  { imgFdr: "mountains", place:"Lorem5", date: "2024-05-20", items: 15 },
-].reverse();
+
+  { imgFdr: "25sep2021", title:"Old Ford, Delhi", date: "25 Sep 2021", items: 47 },
+
+  // {
+  //   imgFdr: "others",
+  //   images: [
+  //     { title: "Delhi", date: "1.1.2001", img:"imageipsum" },
+  //     { title: "Ujhani", date: "1958", img:"imageName0"},
+  //     { title: "Budaun", date: "0000", img:"imagesit"},
+  //   ],
+  // },
+  
+];
 export default LifeStyleData;

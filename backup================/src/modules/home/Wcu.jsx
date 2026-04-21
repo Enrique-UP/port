@@ -1,4 +1,4 @@
-import img1 from "../../assets/images/lifeStyle/home1.jpg";
+import img1 from "../../assets/images/delete/home1.jpg";
 import { Global } from "../common/Global";
 
 const WcuData = [

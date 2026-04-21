@@ -1,5 +1,5 @@
 import { Global } from "./Global";
-import img1 from "../../assets/images/lifeStyle/home1.jpg";
+import img1 from "../../assets/images/delete/home1.jpg";
 import t1 from "../../assets/images/testi/t1.jpg";
 import call from "../../assets/images/call.png";
 

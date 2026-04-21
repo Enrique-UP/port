@@ -1,9 +1,8 @@
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Banner from "../common/Banner";
 import LeftSidebar from "../common/LeftSidebar";
 import RightSidebar from "../common/RightSidebar";
-
-import { useState } from "react";
 
 import LifeStyleData from "./LifeStyleData";
 
@@ -20,35 +19,36 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
+
 const LifeStyleAllData = LifeStyleData.map((folder) => {
-  if (folder.imgFdr !== "others") {
+  if (folder.images) {
     return {
       category: folder.imgFdr,
-      images: Array.from({ length: folder.items }, (_, i) => ({
-        // src: require(`../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`),
-        src: new URL(
-          `../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
-          import.meta.url
-        ).href,
-        place: folder.place,
-        date: folder.date,
-      })),
+      images: [...folder.images]
+        .reverse()
+        .map((img) => ({
+          src: new URL(
+            `../../assets/images/lifeStyle/${folder.imgFdr}/${img.img}.jpg`,
+            import.meta.url
+          ).href,
+          title: img.title,
+          date: img.date,
+        })),
     };
   }
 
   return {
     category: folder.imgFdr,
-    images: folder.images.map((img, i) => ({
-      // src: require(`../../assets/images/lifeStyle/home${i + 1}.jpg`),
+    images: Array.from({ length: folder.items || 0 }, (_, i) => ({
       src: new URL(
-        `../../assets/images/lifeStyle/home${i + 1}.jpg`,
+        `../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
         import.meta.url
       ).href,
-      place: img.place,
-      date: img.date,
+      title: folder.title,
+      date: folder.date,
     })),
   };
-});
+}).reverse();
 
 export default function Lifestyle() {
   const [open, setOpen] = useState(false);
@@ -57,7 +57,7 @@ export default function Lifestyle() {
   const slides = LifeStyleAllData.flatMap((group) =>
     group.images.map((img) => ({
       src: img.src,
-      description: `${img.place} - ${img.date}`,
+      description: `${img.title} - ${img.date}`,
     }))
   );
 
@@ -97,15 +97,15 @@ export default function Lifestyle() {
                       <figure>
                         <img
                           data-img={img.src}
-                          alt={img.place}
+                          alt={img.title}
                           onClick={() => {
                             setIndex(getGlobalIndex(gIndex, iIndex));
                             setOpen(true);
                           }}
                         />
                         <figcaption>
-                          <b>{img.place}</b>
-                          <span>{img.date}</span>
+                          <b>{img.title}</b>
+                          {img.date && <span>{img.date}</span>}
                         </figcaption>
                       </figure>
                     </article>
