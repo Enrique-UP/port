@@ -1,4 +1,12 @@
 const PortfolioData = [
+  // free====================================================================================
+  {
+    hd: "Site Projects",
+    folderName: "free",
+    items: [
+      { name: "dubai-visa", domain: "com", date: "09 May 2015 to 9 June 2016"},
+    ],
+  },
   // bls====================================================================================
   {
     hd: "BLS (9 May 2015 to 9 June 2016)",
@@ -53,14 +61,14 @@ const PortfolioData = [
   //   hd: "SI (2022-2023)",
   //   folderName: "si",
   //   items: [
-  //     { name: "demo1", domain: "com", date: "01-00-2015", note:true, },
-  //     { name: "demo1", domain: "com", date: "01-00-2015" },
-  //     { name: "demo1", domain: "com", date: "01-00-2015" },
+  //     { name: "alefmeem", domain: "store", date: "13 Nov 2022 to 13 May 2023"},
+  //     { name: "stemcityusa", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
+  //     { name: "osmosalt", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
   //   ],
   // },
   // i2a====================================================================================
   // {
-  //   hd: "(1-Feb to Nov)",
+  //   hd: "(23 May 2022 to Present)",
   //   folderName: "i2a",
   //   items: [
   //     { name: "demo1", domain: "com", date: "01-00-2015" },
