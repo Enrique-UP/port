@@ -40,18 +40,18 @@ Object.entries(images).forEach(([path, value]) => {
 /* ================= HELPERS ================= */
 
 // ✅ UPDATED → replace "-" AND "." with "_"
-// normalize both name AND domain
-const normalizeName = (name) => name.replace(/[-.]/g, "_");
+const normalizeName = (name) =>
+  name.replace(/[-.]/g, "_");
 
+// local image
 const getImage = (folder, name, domain) =>
-  imageMap[
-    `${folder}-${normalizeName(name)}_${normalizeName(domain)}`
-  ] || null;
+  imageMap[`${folder}-${normalizeName(name)}_${domain}`] || null;
 
+// ✅ fallback → show expected path only
 const getFallbackImage = (folder, name, domain) => {
   return `/port/src/assets/images/portfolio/${folder}/${normalizeName(
     name
-  )}_${normalizeName(domain)}.jpg`;
+  )}_${domain}.jpg`;
 };
 
 /* ================= TEMPLATE ================= */
@@ -98,7 +98,7 @@ const Temp = ({
       </figcaption>
 
       <figure>
-        {img && <img data-src={img} onClick={onClick} />}
+        {img && <img src={img} onClick={onClick} />}
       </figure>
     </article>
   );

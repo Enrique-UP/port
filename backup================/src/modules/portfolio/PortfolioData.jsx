@@ -1,7 +1,7 @@
 const PortfolioData = [
   // bls====================================================================================
   {
-    hd: "(9-May to 9-June)",
+    hd: "BLS (9 May 2015 to 9 June 2016)",
     folderName: "bls",
     items: [
       { name: "india.blsattestation", domain: "com", date: "09 May 2015 to 9 June 2016", note:true, status:true },
@@ -27,18 +27,41 @@ const PortfolioData = [
     ],
   },
   // city====================================================================================
+  {
+    hd: "City (2016-2017)",
+    folderName: "city",
+    items: [
+      { name: "ticketstoworld", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+      { name: "ticketstoindia", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+      { name: "ticketstousa", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+      { name: "ticketstopakistan", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+      { name: "myamsterdam", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+      { name: "citybreak1", domain: "co.uk", date: "10 June 2016 to 28 Feb 2017", status: true},
+    ],
+  },
+  // snva====================================================================================
   // {
-  //   hd: "City (2020-Present)",
-  //   folderName: "city",
+  //   hd: "SVNA (1 Feb 2017 to 13 Nov 2021)",
+  //   folderName: "snva",
   //   items: [
-  //     { name: "demo1", domain: "com", date: "01-00-2015", note:true, },
+  //     { name: "demo1", domain: "com", date: "01-00-2015" },
   //     { name: "demo1", domain: "com", date: "01-00-2015" },
   //   ],
   // },
-  // snva====================================================================================
+  // si====================================================================================
+  // {
+  //   hd: "SI (2022-2023)",
+  //   folderName: "si",
+  //   items: [
+  //     { name: "demo1", domain: "com", date: "01-00-2015", note:true, },
+  //     { name: "demo1", domain: "com", date: "01-00-2015" },
+  //     { name: "demo1", domain: "com", date: "01-00-2015" },
+  //   ],
+  // },
+  // i2a====================================================================================
   // {
   //   hd: "(1-Feb to Nov)",
-  //   folderName: "snva",
+  //   folderName: "i2a",
   //   items: [
   //     { name: "demo1", domain: "com", date: "01-00-2015" },
   //     { name: "demo1", domain: "com", date: "01-00-2015" },
