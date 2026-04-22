@@ -20,7 +20,7 @@
 
     .partition {display: grid !important;grid-template-columns: repeat(4, minmax(0, 1fr));grid-column-gap: 8px;align-items: start;grid-auto-flow: dense;grid-auto-rows: 4px;row-gap:0 !important;
         article{width: 100%;grid-row-end: span var(--num, 100);margin-bottom: 8px;@extend %fc;}
-        figcaption{font-size: 14px;}
+        figcaption{font-size: 14px;flex-direction: column-reverse;row-gap: 4px;}
         img{cursor: pointer;}
     }
 }
