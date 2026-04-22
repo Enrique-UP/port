@@ -162,7 +162,7 @@ export default function Portfolio() {
                 {PortfolioData.map((section, i) => (
                   <div className="portArea" key={i}>
                     <p className="hd">
-                      <span data-hd={section.hd}></span>
+                      <span data-hd={`${section.hd} (${section.date})`}></span>
                     </p>
 
                     {section.items.map((item, j) => {
@@ -196,7 +196,7 @@ export default function Portfolio() {
                       return (
                         <Temp
                           key={j}
-                          date={date}
+                          date={section.date}
                           site={site}
                           link={fullLink}
                           note={note}
