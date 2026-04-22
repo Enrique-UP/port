@@ -57,15 +57,15 @@ const PortfolioData = [
   //   ],
   // },
   // si====================================================================================
-  // {
-  //   hd: "SI (2022-2023)",
-  //   folderName: "si",
-  //   items: [
-  //     { name: "alefmeem", domain: "store", date: "13 Nov 2022 to 13 May 2023"},
-  //     { name: "stemcityusa", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
-  //     { name: "osmosalt", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
-  //   ],
-  // },
+  {
+    hd: "SI (2022-2023)",
+    folderName: "si",
+    items: [
+      { name: "alefmeem", domain: "store", date: "13 Nov 2022 to 13 May 2023"},
+      { name: "stemcityusa", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
+      { name: "osmosalt", domain: "com", date: "13 Nov 2022 to 13 May 2023", status:true },
+    ],
+  },
   // i2a====================================================================================
   // {
   //   hd: "(23 May 2022 to Present)",
