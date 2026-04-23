@@ -78,43 +78,11 @@ export default function AboutHome() {
             <div className="cnt">
               <p className="hd">Heading</p>
               <p className="shd">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-              <ul className="lists one">
-                  <li>01 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>02 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>03 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>04 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>05 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>06 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>07 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>08 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>09 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>10 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>11 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>12 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>13 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>14 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>15 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>16 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>17 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>18 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>19 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>20 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>21 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>22 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>23 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>24 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>25 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>26 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>27 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>28 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>29 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>30 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>31 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>32 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>33 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>34 Lorem ipsum dolor sit amet consectetur</li>
-                  <li>35 Lorem ipsum dolor sit amet consectetur</li>
-                </ul>
+              <ul className="lists">
+                {Array.from({ length: 22 }).map((_, index) => (
+                  <li key={index}></li>
+                ))}
+              </ul>
             </div>{/* cnt */}
             <div className="cnt">
                 <p className="hd">Heading</p>
