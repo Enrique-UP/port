@@ -15,9 +15,9 @@ export default function ColorsLine(){
     return(
         <>
             <ul ref={colorsLineHeightRef} className="colorsLine">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li data-aos="fade-left"></li>
+                <li data-aos="fade-right"></li>
+                <li data-aos="fade-left"></li>
             </ul>
         </>
     )

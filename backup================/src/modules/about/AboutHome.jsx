@@ -54,7 +54,7 @@ export default function AboutHome() {
             <ul className="images">
               <li><img className="img1" src={img1} data-aos="flip-right" /></li>
               <li><img className="img1" src={img2} data-aos="flip-left" /></li>
-              <li><img className="img2" src={img3} data-aos="zoom-in" /></li>
+              <li><img className="img2" src={img3} data-aos="flip-up" /></li>
             </ul>
           </div>{/* cols1 */}
 
