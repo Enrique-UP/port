@@ -1,7 +1,4 @@
 .wcu{
-    .outlineBox {border: none;background: var(--cb9);
-        > span{color: #fff;}
-    }
     figure{width: 100%;@extend %fc;background: var(--cb4);padding: 12px;row-gap:10px;height:100%;
         img{background: #fff;margin-inline: auto;}
         figcaption{width: 100%;@extend %fc;text-align: center;row-gap: 8px;padding-block: 16px 26px;border-bottom: 4px solid #fff;

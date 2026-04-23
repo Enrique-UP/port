@@ -95,9 +95,6 @@
 }
 @media (min-width:576px) and (max-width:767px){
     .list>li::before, .unlist>li::before{top:3px;}
-    .box1{
-        .head2 {font-size: 30px;}
-    }
     main > .banner .hd {font-size: 48px;}
     main > .banner .cnt {row-gap: 8px;}
 }
@@ -126,11 +123,6 @@
 
     main > .bd hgroup ul > li > a, main > .bd hgroup ol > li > a{font-size: 16px;}
     
-    .box1{padding:15px 10px;
-        .head2 {font-size: 24px;}
-        .texts{font-size: 14px;}
-    }
-
     .port .hd{font-size: 24px;padding-left: 48px;}
     .port .hd::after{left:6px;}
     .port .hd::before {border-left-width:40px;}

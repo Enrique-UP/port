@@ -61,8 +61,8 @@ export default function Wcu(){
                         <div className="col-lg-8 col-xxl-9">
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="outlineBox">
-                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit vero neque quasi et quos reiciendis earum ratione excepturi ameet nam temporibus deleniti adipisci fuga fugit eos placeat reprehenderit a corporis vel pariatur unde hic eveniet minus necessitatibus qui dolore sapiente in consequuntur sunt magnam ipsum.</span>
+                                    <div className="outlineBox dk">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit vero neque quasi et quos reiciendis earum ratione excepturi ameet nam temporibus deleniti adipisci fuga fugit eos placeat reprehenderit a corporis vel pariatur unde hic eveniet minus necessitatibus qui dolore sapiente in consequuntur sunt magnam ipsum.
                                     </div>{/* outlineBox */}
                                 </div>{/* cols */}
                                 <div className="col-12">

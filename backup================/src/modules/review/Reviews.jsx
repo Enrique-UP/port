@@ -47,8 +47,8 @@ export default function Reviews() {
 
             <div className="area-2">
               <div className="fw">
-                <div className="box1">
-                  <p className="texts">Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.</p>
+                <div className="outlineBox dk">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.
                 </div>{/* fw */}
                 <div className="reviews">
                   {

@@ -108,7 +108,7 @@ export default function TechinicalSkills() {
         </hgroup>
         <div className="row colors">
           <div className="col-12">
-            <div className="outlineBox">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe
+            <div className="outlineBox dk">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe
               laudantium deleniti alias cum quisquam velit perferendis sed facere rem facilis voluptas atque,
               magni cumque. Ratione, aliquam! Natus, iusto voluptatem architecto eaque, repellendus libero et
               perspiciatis quasi facilis ab commodi dolores hic sint rerum enim deserunt dicta similique delectus

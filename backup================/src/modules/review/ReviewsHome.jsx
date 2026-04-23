@@ -48,7 +48,7 @@ export default function ReviewsHome() {
           </div>
 
           <div className="col-12">
-            <div className="outlineBox">
+            <div className="outlineBox dk">
               Among my clients there are many renowned industries.
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ReviewsHome() {
             <div className="back">
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
-                  spaceBetween={30}
+                  spaceBetween={12}
                   autoHeight={false}
 
                   breakpoints={{
