@@ -79,7 +79,7 @@ export default function AboutHome() {
               <p className="hd">Heading</p>
               <p className="shd">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
               <ul className="lists">
-                {Array.from({ length: 22 }).map((_, index) => (
+                {Array.from({ length: 24 }).map((_, index) => (
                   <li key={index}></li>
                 ))}
               </ul>

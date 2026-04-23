@@ -66,7 +66,7 @@ export default function LeftSidebar() {
               <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/reviews">Reviews</Link></li>
-              <li><Link to="/lifestyle">Gallery</Link></li>
+              <li><Link to="/lifestyle">Life Style</Link></li>
               <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
               <li><Link to="/poetry">Poetry</Link></li>
               <li><Link to="/contactus">Contact Us</Link></li>

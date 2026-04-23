@@ -1,6 +1,6 @@
 .ads1{
     .row{justify-content: flex-start;}
-    ul{width: 100%;display: flex;background:var(--cb9);
+    ul{width: 100%;display: flex;background:var(--cb10);
         > li{width: 50%;list-style: none;@extend %fc;row-gap:20px;
             &:first-child{padding: 80px 32px;justify-content: center;text-align: center;}
         }
@@ -11,8 +11,8 @@
     .subHead{font-weight:500;font-size: 28px;}
     .text{font-size: 20px;}
     .btns{margin-top: 8px;}
-    a{background: var(--cb10) !important;
-        &:hover, &:active, &:focus{background: var(--f1) !important;}
+    a{
+        &:hover, &:active, &:focus{background: var(--cb2) !important;color:var(--f1);}
     }
 }
 

@@ -83,7 +83,6 @@ export default function ReviewsHome() {
                   }}
 
                   onSlideChange={(swiper) => {
-                      // FIX: ensure autoplay continues after manual interaction
                       if (swiper.autoplay && !swiper.autoplay.running) {
                       swiper.autoplay.start();
                       }
