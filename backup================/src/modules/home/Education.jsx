@@ -4,19 +4,17 @@ export default function Education() {
       <section className="section education colors b1" id="edu">
             <div className="container">
                 <hgroup>
-                  <h2>
-                    Lorem <span>Lorem</span>
-                  </h2>
-                  <p>Lorem ipsum dolor sit ameet</p>
+                  <h2 data-aos="fade-down">Lorem <span>Lorem</span></h2>
+                  <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
                 </hgroup>
                 <ul className="edu">
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInRight active">1001</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1001</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInLeft active">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>01</span>
                                     <b>Head 1</b>
@@ -31,11 +29,11 @@ export default function Education() {
                 
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInLeft active">1002</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1002</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInRight active">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>02</span>
                                     <b>Head 2</b>
@@ -50,11 +48,11 @@ export default function Education() {
                 
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInRight active">1003</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1003</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInLeft active">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>03</span>
                                     <b>Head 3</b>
@@ -69,11 +67,11 @@ export default function Education() {
                 
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInLeft">1004</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1004</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInRight">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>04</span>
                                     <b>Head 4</b>
@@ -88,11 +86,11 @@ export default function Education() {
                 
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInRight">1005</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1005</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInLeft">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>05</span>
                                     <b>Head 5</b>
@@ -107,11 +105,11 @@ export default function Education() {
                 
                     <article>
                         <i className="circles"></i>
-                        <aside className="year">
-                            <span className="animate bounceInLeft">1006</span>
+                        <aside className="year" data-aos="fade-left">
+                            <span>1006</span>
                         </aside>
-                        <aside className="headText">
-                            <div className="shadow animate bounceInRight">
+                        <aside className="headText" data-aos="fade-right">
+                            <div className="shadow">
                                 <p className="head">
                                     <span>06</span>
                                     <b>Head 6</b>

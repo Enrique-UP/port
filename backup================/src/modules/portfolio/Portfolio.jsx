@@ -69,7 +69,7 @@ const Temp = ({
 
   return (
     <article data-site={normalizeName(site).replaceAll(".", "_")}>
-      <figcaption>
+      <figcaption data-aos="fade-right">
         <span>{date}</span>
 
         <a
@@ -97,7 +97,7 @@ const Temp = ({
         </div>
       </figcaption>
 
-      <figure>
+      <figure data-aos="fade-up">
         {img && <img data-src={img} onClick={onClick} />}
       </figure>
     </article>
@@ -148,10 +148,8 @@ export default function Portfolio() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>
-              Lorem <span>Page</span>
-            </h2>
-            <p>Lorem ipsum dolor sit amet</p>
+            <h2 data-aos="fade-down">Lorem <span>Page</span></h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet</p>
           </hgroup>
 
           <div className="sideMid">
@@ -161,7 +159,7 @@ export default function Portfolio() {
               <div className="port">
                 {PortfolioData.map((section, i) => (
                   <div className="portArea" key={i}>
-                    <p className="hd">
+                    <p className="hd" data-aos="fade-down">
                       <span data-hd={`${section.hd} (${section.date})`}></span>
                     </p>
 

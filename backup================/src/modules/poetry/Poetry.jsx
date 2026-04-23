@@ -9,7 +9,7 @@ const PoetryTag = ({ word, poet }) => {
   const wordsArray = word.split(",");
 
   return (
-    <article>
+    <article data-aos="fade-up">
       <figcaption>
         <ul>
           {wordsArray.map((item, index) => {
@@ -78,8 +78,8 @@ export default function Poetry() {
       <section className="section" ref={sectionRef}>
         <div className="container">
           <hgroup>
-            <h2>Poetry</h2>
-            <p>Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">Poetry</h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
           </hgroup>
 
           <div className="sideMid">

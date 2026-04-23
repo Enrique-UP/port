@@ -92,7 +92,7 @@ export default function RightSidebar() {
       <div className="sideBar">
 
         {/* Contact */}
-        <aside className="contact">
+        <aside className="contact" data-aos="fade-left">
           <img src={calling} alt="" />
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
@@ -102,7 +102,7 @@ export default function RightSidebar() {
         </aside>
 
         {/* Lifestyle */}
-        <aside className="slider">
+        <aside className="slider" data-aos="fade-left">
           <p className="hd">My Lifestyle</p>
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -128,7 +128,7 @@ export default function RightSidebar() {
         </aside>
 
         {/* Childhood */}
-        <aside className="slider">
+        <aside className="slider" data-aos="fade-left">
           <p className="hd">My Childhood</p>
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -154,7 +154,7 @@ export default function RightSidebar() {
         </aside>
 
         {/* Team */}
-        <aside className="slider">
+        <aside className="slider" data-aos="fade-left">
           <p className="hd">My Team</p>
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -180,7 +180,7 @@ export default function RightSidebar() {
         </aside>
 
         {/* Testimonials */}
-        <aside className="slider">
+        <aside className="slider" data-aos="fade-left">
           <p className="hd">Testimonials</p>
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -206,7 +206,7 @@ export default function RightSidebar() {
         </aside>
 
         {/* Tags */}
-        <aside className="tags">
+        <aside className="tags" data-aos="fade-left">
           <p className="hd">Tags</p>
           <ul>
             <li><a href="index.html#ads_one">Seasonal Deals</a></li>

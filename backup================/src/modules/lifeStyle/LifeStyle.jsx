@@ -83,8 +83,8 @@ export default function Lifestyle() {
       <section className="section lifeStyle colors">
         <div className="container">
           <hgroup>
-            <h2>Image <span>Gallery</span></h2>
-            <p>Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">Image <span>Gallery</span></h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />

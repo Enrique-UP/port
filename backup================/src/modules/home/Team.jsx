@@ -4,14 +4,14 @@ import img3 from "../../assets/images/team/t3.jpg";
 import img4 from "../../assets/images/team/t4.jpg";
 
 const TeamData = [
-  { fName: "Lorem1", lName: "Ipsum1", post: "Lorem ipsum dolor1", img: img1 },
-  { fName: "Lorem2", lName: "Ipsum2", post: "Lorem ipsum dolor2", img: img2 },
-  { fName: "Lorem3", lName: "Ipsum3", post: "Lorem ipsum dolor3", img: img3 },
-  { fName: "Lorem4", lName: "Ipsum4", post: "Lorem ipsum dolor4", img: img4 },
+  { fName: "Lorem1", lName: "Ipsum1", post: "Lorem ipsum dolor1", img: img1, ani:"fade-left" },
+  { fName: "Lorem2", lName: "Ipsum2", post: "Lorem ipsum dolor2", img: img2, ani:"fade-right" },
+  { fName: "Lorem3", lName: "Ipsum3", post: "Lorem ipsum dolor3", img: img3, ani:"fade-left" },
+  { fName: "Lorem4", lName: "Ipsum4", post: "Lorem ipsum dolor4", img: img4, ani:"fade-right" },
 ];
 function TeamTag(props){
     return(
-        <div className="teamArea">
+        <div className="teamArea" data-aos={props.ani}>
             <img src={props.img} />
             <i className="leftArrow"></i>
             <i className="rightArrow"></i>
@@ -32,8 +32,8 @@ export default function Team() {
                     <div className="row">
                         <div className="col-12">
                             <hgroup>
-                                <h3>Fantastic <span>Team</span></h3>
-                                <p>Hark worker & talented</p>
+                                <h3 data-aos="fade-down">Fantastic <span>Team</span></h3>
+                                <p data-aos="fade-up">Hark worker & talented</p>
                             </hgroup>
                         </div>{/* cols */}
                         <div className="col-12">

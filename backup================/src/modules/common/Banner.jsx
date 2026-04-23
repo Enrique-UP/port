@@ -10,7 +10,7 @@ export default function Banner(props) {
         <div className="container">
           <div className="row"> 
             <div className="col-md-6">
-              <div className="cnt" data-aos="fade-down">
+              <div className="cnt" data-aos="fade-right">
                 <h1 className="hd">{props.pageName}</h1>
                 <p className="txt">{props.pageText}</p>
                 <div className="btns">
@@ -30,7 +30,7 @@ export default function Banner(props) {
               </div>
             </div>
             <div className="col-md-6">
-              <img src={props.otherImg || defaultImg} className="img" />
+              <img src={props.otherImg || defaultImg} className="img" data-aos="fade-left" />
             </div>
           </div>
         </div>

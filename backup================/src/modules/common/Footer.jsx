@@ -67,11 +67,11 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 logo">
               <div className="fw">
-                <Link to="/"><img src={logo} /></Link>
+                <Link to="/" data-aos="zoom-in"><img src={logo} /></Link>
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-md-12 col-xxl-3">
-              <div className="fw">
+              <div className="fw" data-aos="fade-down">
                   <p className="hd">About Us</p>
                   <p className="text">
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit facilis dolores voluptatum nostrum ea ex reprehenderit corrupti cupiditate corporis hic inventore non optio porro deserunt molestiae inventore ab veritatis nemo ad dolorem iure rerum adipisci iste reprehenderit.</span>
@@ -80,7 +80,7 @@ export default function Footer() {
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-lg-4 col-xxl-3">
-              <div className="fw">
+              <div className="fw" data-aos="fade-down">
                   <p className="hd">Main Links</p>
                   <ul className="links">
                     <li><Link to="/">Home</Link></li>
@@ -104,7 +104,7 @@ export default function Footer() {
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-sm-6 col-lg-4 col-xxl-3">
-              <div className="fw">
+              <div className="fw" data-aos="fade-down">
                   <p className="hd">Latest Posts</p>
                   <ul className="posts">
                     {
@@ -116,7 +116,7 @@ export default function Footer() {
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-sm-6 col-lg-4 col-xxl-3">
-              <div className="fw">
+              <div className="fw" data-aos="fade-down">
                   <p className="hd">Contact Us</p>
                   <ul className="posts">
                     {

@@ -103,12 +103,12 @@ export default function TechinicalSkills() {
     <section className="section skills back" id="ts">
       <div className="container">
         <hgroup>
-          <h2>Technical <span>Skills</span></h2>
-          <p>Lorem ipsum dolor sit ameet</p>
+          <h2 data-aos="fade-down">Technical <span>Skills</span></h2>
+          <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
         </hgroup>
         <div className="row colors">
           <div className="col-12">
-            <div className="outlineBox dk">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe
+            <div className="outlineBox dk" data-aos="fade-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe
               laudantium deleniti alias cum quisquam velit perferendis sed facere rem facilis voluptas atque,
               magni cumque. Ratione, aliquam! Natus, iusto voluptatem architecto eaque, repellendus libero et
               perspiciatis quasi facilis ab commodi dolores hic sint rerum enim deserunt dicta similique delectus
@@ -121,10 +121,10 @@ export default function TechinicalSkills() {
             return (
               <div className="col-xs-12 col-lg-6" key={index}>
                 <article className={`skill ${isActive ? "active" : ""}`}>                  
-                  <div className="back">
+                  <div className="back" data-aos="fade-left">
                     <span>{formatExperience(exp)} <i>Exp</i></span>
                   </div>
-                  <div className="cnts">
+                  <div className="cnts" data-aos="fade-right">
                     <p className="head">
                       {item.hd1 && <i>{item.hd1}</i>} {item.hd2 && <span>{item.hd2}</span>}
                     </p>

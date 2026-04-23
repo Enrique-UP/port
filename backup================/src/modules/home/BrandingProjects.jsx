@@ -74,10 +74,10 @@ function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, se
     <div className="col-12">
       <ul className="bpArea">
         <li className="img">
-          <img src={img} alt="" />
+          <img src={img} data-aos="fade-right" />
         </li>
 
-        <li className="text">
+        <li className="text" data-aos="fade-up">
           <p className="hd">{web}</p>
           <p className="about">
             <b>About the Project</b>
@@ -86,7 +86,7 @@ function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, se
           <p className="cnt">{details}</p>
         </li>
 
-        <li className="btnText">
+        <li className="btnText" data-aos="fade-left">
           <article>
             <div>
               <span>{date}</span>
@@ -135,12 +135,12 @@ export default function BrandingProjects() {
           <div className="row">
             <div className="col-12">
               <hgroup>
-                <h3>Top <span>Projects</span></h3>
-                <p>Lorem ipsum dolor sit ameet</p>
+                <h3 data-aos="fade-down">Top <span>Projects</span></h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
               </hgroup>
             </div>
             <div className="col-12">
-              <div className="outlineBox dk">asdfasdf</div>
+              <div className="outlineBox dk" data-aos="fade-up">asdfasdf</div>
             </div>
 
             {BpData.map((item, index) => (

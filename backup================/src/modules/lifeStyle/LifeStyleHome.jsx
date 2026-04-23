@@ -17,8 +17,8 @@ export default function LifestyleHome() {
           <div className="row">
             <div className="col-12">
               <hgroup>
-                <h2>Image <span>Gallery</span></h2>
-                <p>Lorem ipsum dolor sit ameet</p>
+                <h2 data-aos="fade-down">Image <span>Gallery</span></h2>
+                <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
               </hgroup>
             </div>{/* cols */}
             <div className="col-12 space">
@@ -26,15 +26,13 @@ export default function LifestyleHome() {
                 <div className="col-xl-6 setHeight">
                   <div className="row">
                     <div className="col-sm-6 col-xl-12 df">
-                      <div className="outlineBox">
+                      <div className="outlineBox" data-aos="fade-up">
                         <b>Heading</b>
-                        <span>
-                          Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.
-                        </span>
+                        <span>Lorem ispum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsumdolor sit ameet.</span>
                       </div>
                     </div>
                     <article className="col-sm-6 col-xl-12">
-                      <figure>
+                      <figure data-aos="fade-up">
                         <img src={img1} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
@@ -44,25 +42,25 @@ export default function LifestyleHome() {
                 <div className="col-xl-6 setHeight">
                   <div className="row">
                     <article className="col-6 col-md-3 col-xl-6">
-                      <figure>
+                      <figure data-aos="fade-right">
                         <img src={img2} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
-                      <figure>
+                      <figure data-aos="fade-left">
                         <img src={img3} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
-                      <figure>
+                      <figure data-aos="fade-right">
                         <img src={img4} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
-                      <figure>
+                      <figure data-aos="fade-left">
                         <img src={img5} />
                         <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                       </figure>
@@ -70,25 +68,25 @@ export default function LifestyleHome() {
                   </div>{/* row */}
                 </div>{/* cols */}
                 <article className="col-6 col-md-3">
-                  <figure>
+                  <figure data-aos="fade-left">
                     <img src={img6} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
-                  <figure>
+                  <figure data-aos="fade-right">
                     <img src={img7} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
-                  <figure>
+                  <figure data-aos="fade-left">
                     <img src={img8} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
-                  <figure>
+                  <figure data-aos="fade-right">
                     <img src={img9} />
                     <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
                   </figure>
@@ -96,7 +94,7 @@ export default function LifestyleHome() {
               </div>{/* row */}
             </div>{/* cols */}
             <div className="col-12 btns center mb0">
-              <Link to="/lifestyle">Explore More</Link>
+              <Link to="/lifestyle" data-aos="fade-right">Explore More</Link>
             </div>{/* cols */}
           </div>{/* row */}          
         </div>{/* container */}

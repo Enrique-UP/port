@@ -17,8 +17,8 @@ export default function InnerPage() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Inner <span>Page</span></h2>
-            <p>Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">Inner <span>Page</span></h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />

@@ -20,6 +20,7 @@ import img4 from "../../assets/images/team/t4.jpg";
 
 const TpData = [
     {
+        ani: "fade-left",
         img: img1,
         web: "www.loremipsumdolor.com",
         link: "https://www.loremipsumdolor.com",
@@ -29,6 +30,7 @@ const TpData = [
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
+        ani: "fade-right",
         img: img2,
         web: "www.loremipsumdolorsitameetlorem.com",
         link: "",
@@ -37,6 +39,7 @@ const TpData = [
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
+        ani: "fade-left",
         img: img3,
         web: "www.loremipsumdolor.com",
         link: "https://www.loremipsumdolor.com",
@@ -46,6 +49,7 @@ const TpData = [
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
+        ani: "fade-right",
         img: img4,
         web: "www.loremipsumdolorsitameetlorem.com",
         link: null,
@@ -54,6 +58,7 @@ const TpData = [
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
+        ani: "fade-left",
         img: img1,
         web: "www.loremipsumdolor.com",
         date: "05-00-0000",
@@ -61,6 +66,7 @@ const TpData = [
         details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
     },
     {
+        ani: "fade-right",
         img: img2,
         web: "www.loremipsumdolorsitameetlorem.com",
         date: "06-00-0000",
@@ -73,9 +79,9 @@ function TpTag(props) {
     const isActive = props.activeIndex === props.index;
     return (
         <div className="col-sm-6 col-lg-4">
-            <div className={`tpArea ${isActive ? "active" : ""}`}>
+            <div className={`tpArea ${isActive ? "active" : ""}`} data-aos={props.ani}>
                 <div className="top">
-                    <img data-src={props.img} alt="" />
+                    <img data-src={props.img} />
                     <span className="date">{props.date}</span>
                     {props.note && <div className="notes">{props.note}</div>}
                     <span
@@ -158,8 +164,8 @@ export default function TopProjects() {
                     <div className="row">
                         <div className="col-12">
                             <hgroup>
-                                <h3>Top <span>Projects</span></h3>
-                                <p>Lorem ipsum dolor sit ameet</p>
+                                <h3 data-aos="fade-down">Top <span>Projects</span></h3>
+                                <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
                             </hgroup>
                         </div>
                         {TpData.map((val, ind) => (

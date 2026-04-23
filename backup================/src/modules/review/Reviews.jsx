@@ -12,7 +12,7 @@ const ReviewTag =(props) => {
       <div className="iconArea">
         <i className="icon">&#xa043;</i>
       </div>
-      <div className="outlineBox">
+      <div className="outlineBox" data-aos="fade-up">
         <ul>
           <li>
             <b>{props.name}</b>
@@ -39,15 +39,15 @@ export default function Reviews() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2>Customer's <span>Reviews</span></h2>
-            <p>Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">Customer's <span>Reviews</span></h2>
+            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />
 
             <div className="area-2">
               <div className="fw">
-                <div className="outlineBox dk">
+                <div className="outlineBox dk"  data-aos="fade-down">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.
                 </div>{/* fw */}
                 <div className="reviews">
@@ -58,7 +58,7 @@ export default function Reviews() {
                   }
                 </div>{/* reviews */}
                 <div className="btns center">
-                  <a href={Global.numTel} target="_blank">Hire Us</a>
+                  <a href={Global.numTel} target="_blank" data-aos="fade-right">Hire Us</a>
                 </div>
               </div>
             </div>{/* area-2 */}

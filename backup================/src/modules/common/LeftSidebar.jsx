@@ -52,7 +52,7 @@ export default function LeftSidebar() {
     <>
       <div className="area-1">
         <div className="sideBar">
-          <aside className="links">
+          <aside className="links" data-aos="fade-right">
             <p className="hd">Menu</p>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -72,11 +72,11 @@ export default function LeftSidebar() {
               <li><Link to="/contactus">Contact Us</Link></li>
             </ul>
           </aside>
-          <aside className="about">
+          <aside className="about" data-aos="fade-right">
             <img data-src={img1} />
             <p><span>Loremm Ipsu</span> Lorem ipsum dolor sit ameet loremipsum dolor sit ameet loremipsum solor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet. <Link to="/">Explore More</Link></p>
           </aside>
-          <aside className="interests">
+          <aside className="interests" data-aos="fade-right">
             <p className="hd">Interests</p>
             <ul>
               {
@@ -86,7 +86,7 @@ export default function LeftSidebar() {
               }
             </ul>
           </aside>
-          <aside className="ads">
+          <aside className="ads" data-aos="fade-right">
             <a href={Global.numTel} target="_blank">
               <b>
                 Get a 50%<br />

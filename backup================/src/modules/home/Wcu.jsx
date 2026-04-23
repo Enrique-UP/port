@@ -22,8 +22,8 @@ const WcuTag = (props) => {
   return (
     <>
         <aside>
-            <b>{props.hd}</b>
-            <p>{props.text}</p>
+            <b data-aos="fade-right">{props.hd}</b>
+            <p data-aos="fade-left">{props.text}</p>
         </aside>
     </>
   )
@@ -37,13 +37,13 @@ export default function Wcu(){
                     <div className="row">
                         <div className="col-12">
                             <hgroup>
-                                <h4>Why <span>Choose</span> Us?</h4>
-                                <p>Your Advantages</p>
+                                <h4 data-aos="fade-down">Why <span>Choose</span> Us?</h4>
+                                <p data-aos="fade-up">Your Advantages</p>
                             </hgroup>
                         </div>{/* cols */}
                         <div className="col-lg-4 col-xxl-3">
                             <figure>
-                                <img src={img1} />
+                                <img src={img1} data-aos="fade-up" />
                                 <figcaption>
                                     <p><a href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>{Global.num}</a></p>
                                     <p><a href={`mailto:${Global.email}`} target="_blank"><i className="icon">&#xa004;</i>{Global.email}</a></p>
@@ -61,7 +61,7 @@ export default function Wcu(){
                         <div className="col-lg-8 col-xxl-9">
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="outlineBox dk">
+                                    <div className="outlineBox dk" data-aos="fade-up">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit vero neque quasi et quos reiciendis earum ratione excepturi ameet nam temporibus deleniti adipisci fuga fugit eos placeat reprehenderit a corporis vel pariatur unde hic eveniet minus necessitatibus qui dolore sapiente in consequuntur sunt magnam ipsum.
                                     </div>{/* outlineBox */}
                                 </div>{/* cols */}

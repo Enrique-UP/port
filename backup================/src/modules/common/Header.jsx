@@ -36,14 +36,14 @@ export default function Header() {
         <div className="top">
           <div className="container">
             <div className="fw">
-              <a href={Global.emailTag} target="_blank">
+              <a href={Global.emailTag} target="_blank" data-aos="fade-right">
                 <span>
                   <i className="icon">&#xa004;</i>
                   <b>Email Id.:</b>
                 </span>
                 <em>{Global.email}</em>
               </a>
-              <a href={Global.numTel} target="_blank">
+              <a href={Global.numTel} target="_blank" data-aos="fade-left">
                 <span>
                   <i className="icon">&#xa001;</i>
                   <b>Phone No.:</b>
@@ -56,10 +56,10 @@ export default function Header() {
         <div className="middle">
           <div className="container">
             <div className="fw">
-              <div className="logo">
+              <div className="logo" data-aos="fade-down">
                 <Link to="/"><img src={logo} /></Link>
               </div>{/* logo */}
-              <div className="follow">
+              <div className="follow" data-aos="fade-up">
                 <b>Follow Us</b>
                 <p>
                   <span>
@@ -84,7 +84,7 @@ export default function Header() {
                 <b>Menu</b>
                 <i className="icon">&#xa009;</i>
               </p>
-              <div className="navBar">
+              <div className="navBar" data-aos="flip-up">
                 <i className="icon close" onClick={() => setMenuOpen(false)}>&#xa018;</i>
                 <nav onClick={(e) => e.stopPropagation()}>
                   <div className="logo">

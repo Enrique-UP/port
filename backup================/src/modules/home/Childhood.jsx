@@ -21,12 +21,12 @@ export default function Childhood() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="heading">
-                  <h2 className="hd1">Welcome to lorem</h2>
-                  <p className="hd2">Lorem ipsum dolor sit amet ipsum!</p>
+                  <h2 className="hd1" data-aos="fade-down">Welcome to lorem</h2>
+                  <p className="hd2" data-aos="fade-up">Lorem ipsum dolor sit amet ipsum!</p>
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className={`content ${active ? "active" : ""}`}>
+                <div className={`content ${active ? "active" : ""}`} data-aos="fade-left">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit optio dolorem rerum provident similique praesentium labore iure debitis vero asperiores corporis quidem dolorem suscipit laborum perspiciatis harum eum enim quo iusto.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit repellat soluta vero quas ipsam illum temporibus ducimus exercitationem doloremque asperiores modi eos minima voluptas fugiat provident cum aliquam aut suscipit accusantium officia velit perspiciatis totam porro dolorem nobis aut tempore at fugit nam eos quis quae quia ex dolore ad omnis.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit repellat soluta vero quas ipsam illum temporibus ducimus exercitationem doloremque asperiores modi eos minima voluptas fugiat provident cum aliquam aut suscipit accusantium officia velit perspiciatis totam porro dolorem nobis aut tempore at fugit nam eos quis quae quia ex dolore ad omnis.</p>
@@ -41,10 +41,10 @@ export default function Childhood() {
       </section>
       <section className="childhoodImg">
         <div className="container">
-          <img src={img1} />
-          <img src={img2} />
-          <img src={img3} />
-          <img src={img4} />
+          <img src={img1} data-aos="fade-left" />
+          <img src={img2} data-aos="fade-right" />
+          <img src={img3} data-aos="fade-left" />
+          <img src={img4} data-aos="fade-right" />
         </div>
       </section>
     </>

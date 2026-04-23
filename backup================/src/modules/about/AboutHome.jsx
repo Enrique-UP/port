@@ -46,15 +46,15 @@ export default function AboutHome() {
     <section className="section about" id="about">
       <div className="container">
         <hgroup>
-          <h2>About <span>Us</span></h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
+          <h2 data-aos="fade-down">About <span>Us</span></h2>
+          <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit minus unde</p>
         </hgroup>
         <div className="fw">
           <div className="cols1">
             <ul className="images">
-              <li><img className="img1" src={img1} /></li>
-              <li><img className="img1" src={img2} /></li>
-              <li><img className="img2" src={img3} /></li>
+              <li><img className="img1" src={img1} data-aos="flip-right" /></li>
+              <li><img className="img1" src={img2} data-aos="flip-left" /></li>
+              <li><img className="img2" src={img3} data-aos="zoom-in" /></li>
             </ul>
           </div>{/* cols1 */}
 
@@ -87,42 +87,42 @@ export default function AboutHome() {
             <div className="cnt">
                 <p className="hd">Heading</p>
                 <div className="skillBar colors one">
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={80} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-right">
                     <b>Lorem</b>
                     <CounterNum target={85} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={60} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-right">
                     <b>Lorem</b>
                     <CounterNum target={65} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={70} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-right">
                     <b>Lorem</b>
                     <CounterNum target={75} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={76} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-right">
                     <b>Lorem</b>
                     <CounterNum target={80} suffix="%" />
                     <i></i>
@@ -132,17 +132,17 @@ export default function AboutHome() {
               <div className="cnt">
                 <p className="hd">Heading</p>
                 <div className="skillBar colors two">
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={70} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-right">
                     <b>Lorem</b>
                     <CounterNum target={65} suffix="%" />
                     <i></i>
                   </article>
-                  <article>
+                  <article data-aos="fade-left">
                     <b>Lorem</b>
                     <CounterNum target={50} suffix="%" />
                     <i></i>
@@ -160,36 +160,36 @@ export default function AboutHome() {
               </div>{/* cnt */}
 
               <ul className="counterBox">
-                <li>
+                <li data-aos="fade-right">
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
                   <CounterNum target={1000} suffix="+" />
                 </li>
-                <li>
+                <li data-aos="fade-left">
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
                   <CounterNum target={500} suffix="+" />
                 </li>
-                <li>
+                <li data-aos="fade-right">
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
                   <CounterNum target={10000} suffix="+" />
                 </li>
-                <li>
+                <li data-aos="fade-left">
                   <i className="icon">&#xa001;</i>
                   <b>Lorem</b>
                   <CounterNum target={20} suffix="+" />
                 </li>
               </ul>
 
-              <div className="outlineBox dk">
+              <div className="outlineBox dk" data-aos="fade-up">
                 <b>Lorem</b>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque quasi et quos reiciendis earum ratione excepturi. Amet nam temporibus deleniti adipisci, fuga fugit eos placeat reprehenderit a corporis vel pariatur unde hic eveniet minus, necessitatibus, qui dolore sapiente in consequuntur sunt magnam ipsum? Eaque aut animi suscipit a, ducimus ab perferendis harum error sit illo iusto tempora perspiciatis quos at quas quis consequuntur dolorum impedit quibusdam corporis totam. Ducimus quam officiis commodi placeat voluptate ab cumque maxime tempore, adipisci sint quia, omnis animi non facilis enim ipsa deleniti ea doloremque nisi vero ullam repellat alias odit iste? Eveniet, totam.</span>
               </div>{/* outlineBox */}
 
               <div className="btns center">
-                <a href={Global.numTel} target="_blank">Hire Us</a>
-                <Link to="/contactus">Contact Us</Link>
+                <a href={Global.numTel} target="_blank" data-aos="fade-right">Hire Us</a>
+                <Link to="/contactus" data-aos="fade-left">Contact Us</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
           </div>{/* fw */}

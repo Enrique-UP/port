@@ -42,13 +42,13 @@ export default function ReviewsHome() {
 
           <div className="col-12">
             <hgroup>
-              <h3>Customer's <span>Reviews</span></h3>
-              <p>My Satisfy Clients</p>
+              <h3 data-aos="fade-down">Customer's <span>Reviews</span></h3>
+              <p data-aos="fade-up">My Satisfy Clients</p>
             </hgroup>
           </div>
 
           <div className="col-12">
-            <div className="outlineBox dk">
+            <div className="outlineBox dk" data-aos="fade-up">
               Among my clients there are many renowned industries.
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function ReviewsHome() {
           </div>
           <div className="col-12">
             <div className="btns center">
-              <Link to="/reviews">View More</Link>
+              <Link to="/reviews" data-aos="fade-right">View More</Link>
             </div>
           </div>
         </div>
