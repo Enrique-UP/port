@@ -8,8 +8,9 @@
         > li{width: 100%;display: flex;list-style:none;align-items: center;background: var(--g1);padding: 32px;border:1px solid var(--b1);
             .icon{width: 77px;height: 77px;background: var(--c1);color: #fff;@extend %center;flex-shrink: 0;font-size: 24px;}
             > a{width: 100%;display: flex;align-items: center;column-gap: 24px;cursor: pointer;}
-            b{color: var(--f1);font-size: 20px;}
+            b{color: var(--f1);font-size: 20px;@extend %fc;}
             span{width:100%;@extend %fc;color:var(--f2);font-size: 16px;row-gap: 4px;line-height: 1.5;}
+            em{font-style: normal;}
         }
     }
     .contactArea{width: 100%;@extend %fc;

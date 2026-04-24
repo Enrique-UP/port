@@ -41,14 +41,14 @@ export default function Header() {
                   <i className="icon">&#xa004;</i>
                   <b>Email Id.:</b>
                 </span>
-                <em>{Global.email}</em>
+                <em data-email></em>
               </a>
               <a href={Global.numTel} target="_blank" data-aos="fade-left">
                 <span>
                   <i className="icon">&#xa001;</i>
                   <b>Phone No.:</b>
                 </span>
-                <em>{Global.num}</em>
+                <em data-num></em>
               </a>
             </div>{/* fw */}
           </div>{/* container */}

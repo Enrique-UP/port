@@ -6,17 +6,20 @@ import { Global } from "../common/Global";
 import FormArea from "./FormArea.jsx";
 
 const ContactData = [
-  { link: Global.numTel, icon: "&#xa001;", text: "Phone Number", contact: Global.num, ani: "fade-left" },
-  { link: Global.whatsappLink, icon: "&#xa025;", text: "WhatsApp Number", contact: Global.num, ani: "fade-right" },
-  { link: `mailto:${Global.email}`, icon: "&#xa004;", text: "Email Address", contact: Global.email, ani: "fade-left" },
-  { link: "https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D", icon: "&#xa007;", text: "Address", contact: Global.address, ani: "fade-right" }
+  { link: Global.numTel, icon: "&#xa001;", text: "Phone Number", contact: "num", ani: "fade-left" },
+  { link: Global.whatsappLink, icon: "&#xa025;", text: "WhatsApp Number", contact: "num", ani: "fade-right" },
+  { link: `mailto:${Global.email}`, icon: "&#xa004;", text: "Email Address", contact: "email", ani: "fade-left" },
+  { link: "https://www.google.com/maps/dir///@31.176664,-7.682147,3z?entry=ttu&amp;g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D", icon: "&#xa007;", text: "Address", contact: "address", ani: "fade-right" }
 ];
 const ContactTag = (props) => {
   return (
     <li data-aos={props.ani}>
       <a href={props.link} target="_blank" rel="noopener noreferrer">
         <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
-        <span><b>{props.text}</b> {props.contact}</span>
+        <span>
+          <b>{props.text}</b>
+          <em {...{ [`data-${props.contact}`]: props.contact }}></em>
+        </span>
       </a>
     </li>
   );
@@ -100,7 +103,7 @@ export default function Contact() {
                 <div className="contactArea">
                   <p className="hd" data-aos="fade-down">Search Location</p>
                   <div className="ca">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55928250.58785387!2d-7.682147!3d31.176664!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sin!4v1774592467853!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55928250.58785387!2d-7.682147!3d31.176664!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sin!4v1774592467853!5m2!1sen!2sin" loading="lazy"></iframe>
                   </div>{/* ca */}
                 </div>{/* contactArea */}
 

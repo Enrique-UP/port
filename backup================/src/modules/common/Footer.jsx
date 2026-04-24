@@ -28,10 +28,10 @@ function PostTag(props){
 }
 
 const ContactData = [
-  {link: Global.numTel, icon: "&#xa001;", cnt: Global.num},
-  {link: Global.whatsappLink, icon: "&#xa025;", cnt: Global.num},
-  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: Global.email},
-  {icon: "&#xa007;", cnt: Global.address}
+  {link: Global.numTel, icon: "&#xa001;", cnt: "num"},
+  {link: Global.whatsappLink, icon: "&#xa025;", cnt: "num"},
+  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: "email"},
+  {icon: "&#xa007;", cnt: "address"}
 ];
 function ContactTag(props){
   return(
@@ -39,7 +39,7 @@ function ContactTag(props){
       <li>
         <a href={props.link} target="_blank">
           <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
-          <span className="abt">{props.cnt}</span>
+          <span className="abt" {...{ [`data-${props.cnt}`]: props.cnt }}></span>
         </a>
       </li>
     </>
