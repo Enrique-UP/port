@@ -4,7 +4,7 @@ const EduData = [
         sr:"01", 
         courseName:"Diploma In UI/UX Design", 
         place:"Noida (U.P.)", 
-        about:"I learnt UI/UX designing from reputed Institute of Noida from November 2014 to March 2015. After that, My placement has been done in BLS International Services Limited."
+        about:"I learned UI/UX designing from a reputed institute in Noida from November 2014 to March 2015. After that, I secured placement in a multinational company."
     },
     {
         year:"2014", 

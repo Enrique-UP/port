@@ -10,8 +10,8 @@ export default function Ads3() {
                     <div className="fw">
                         <figure className="head">
                             <figcaption>
-                                <b data-aos="fade-down">Travel</b>
-                                <span data-aos="fade-up">Website</span>
+                                <b data-aos="fade-down">All Types</b>
+                                <span data-aos="fade-up">of Website</span>
                             </figcaption>
                             <img src={img1} />
                         </figure>

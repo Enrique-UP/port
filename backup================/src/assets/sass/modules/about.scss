@@ -16,6 +16,7 @@
             &:last-child{width: 100%;}
         }
         img{object-fit: cover;width: 100%;}
+        .img1, .img2{height: 353px;}
     }
     .cnt{@extend %fc;row-gap: 12px;
         strong{color: var(--f1);}
@@ -23,6 +24,7 @@
         .post{font-size: 50px;@extend %fc;line-height: 1.1;
             b{font-weight: 900;white-space: nowrap;}
         }
+        .blsisl{font-style: normal;}
     }
     .typeWriter{
         &.one{color:var(--cb1);}
@@ -61,9 +63,17 @@
 @media (min-width:576px) and (max-width:1199px){
     .about .lists.projects {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
+@media (min-width:1200px) and (max-width:1399px){
+    .about .images .img1, .about .images .img2 {height: 394px;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    .about .images .img1, .about .images .img2 {height: 435px;}
+}
 @media (max-width:991px){
     .about .fw .cols1{width: 100%;padding-right: 0;}
     .about .fw .cols2{width: 100%;padding-left: 0;}
+    .about .images > li{height: auto;}
+    .about .images .img1, .about .images .img2 {height: 100%;}
 }
 @media (min-width:576px) and (max-width:991px){
     .about .images > li:first-child, .about .images > li:nth-child(2){width: 27.5%;}
@@ -90,4 +100,7 @@
     .about .counterBox span{font-size: 16px;}
     .about .cnt .int {font-size: 28px;}
     .about .cnt .post {font-size: 36px;}
+}
+@media (max-width:370px){
+    .about .skillBar > article{font-size: 12px;gap:8px 0px;}
 }

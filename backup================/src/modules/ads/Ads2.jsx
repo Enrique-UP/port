@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function Ads2() {
   return (
     <>
       <section className="section ads2">
             <div className="container">
                 <hgroup>
-                    <h2 className="hd" data-aos="fade-down">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
-                    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <h2 className="hd" data-aos="fade-down">I Create Modern Web Solutions</h2>
+                    <p data-aos="fade-up">I develop responsive websites that deliver seamless usability, strong performance, and a clean, intuitive interface.</p>
                     <div className="btns center bsn" data-aos="fade-right">
-                        <a href="" target="_blank">View More</a>
+                        <Link to="/contactus">Contact Us</Link>
                     </div>
                 </hgroup>
             </div>{/* container */}

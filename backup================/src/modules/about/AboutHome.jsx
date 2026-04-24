@@ -88,7 +88,7 @@ export default function AboutHome() {
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Work Debut</p>
-              <p>I began my professional journey as a UI & UX Developer at BLS International Services Limited. At the organization, I have worked on designing and developing websites and software solutions for multiple countries and in various languages, including Azeri, Polish, French, Spanish, and Chinese.</p>
+              <p>I began my professional journey as a UI & UX Developer at <i className="blsisl"></i>. At the organization, I have worked on designing and developing websites and software solutions for multiple countries and in various languages, including Azeri, Polish, French, Spanish, and Chinese.</p>
               <p>My work involves creating platforms for services such as visa processing, passport services, identity management, verification systems, and other global digital solutions.</p>
             </div>{/* cnt */}
             {/* <div className="cnt">
@@ -138,7 +138,7 @@ export default function AboutHome() {
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
-                    <b>AMP (Accelerate Mobile Pages)</b>
+                    <b>AMP {/* (Accelerate Mobile Pages) */}</b>
                     <CounterNum target={70} suffix="%" />
                     <i></i>
                   </article>

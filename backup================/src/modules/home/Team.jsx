@@ -4,10 +4,10 @@ import img3 from "../../assets/images/team/t3.jpg";
 import img4 from "../../assets/images/team/t4.jpg";
 
 const TeamData = [
-  { fName: "Lorem1", lName: "Ipsum1", post: "Lorem ipsum dolor1", img: img1, ani:"fade-left" },
-  { fName: "Lorem2", lName: "Ipsum2", post: "Lorem ipsum dolor2", img: img2, ani:"fade-right" },
-  { fName: "Lorem3", lName: "Ipsum3", post: "Lorem ipsum dolor3", img: img3, ani:"fade-left" },
-  { fName: "Lorem4", lName: "Ipsum4", post: "Lorem ipsum dolor4", img: img4, ani:"fade-right" },
+  { fName: "Enrique", lName: "Brave", post: "Sr. UI & UX Developer", img: img1, ani:"fade-left" },
+  { fName: "Sandeep", Kumar: "Ipsum2", post: "Sr. Web Developer", img: img2, ani:"fade-right" },
+  { fName: "Anubhav", lName: "Singh", post: "Sr. SEO", img: img3, ani:"fade-left" },
+  { fName: "Kamal", lName: "Kant", post: "Sr. Content Developer", img: img4, ani:"fade-right" },
 ];
 function TeamTag(props){
     return(
