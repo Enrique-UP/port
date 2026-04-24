@@ -84,7 +84,7 @@ export default function Header() {
                 <b>Menu</b>
                 <i className="icon">&#xa009;</i>
               </p>
-              <div className="navBar" data-aos="flip-up">
+              <div className="navBar">
                 <i className="icon close" onClick={() => setMenuOpen(false)}>&#xa018;</i>
                 <nav onClick={(e) => e.stopPropagation()}>
                   <div className="logo">
