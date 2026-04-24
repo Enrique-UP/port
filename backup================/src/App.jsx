@@ -26,7 +26,7 @@ import Reviews from './modules/review/Reviews';
 
 export default function App() {
   useEffect(() => {
-    Aos.init({duration:1000});
+    Aos.init({duration:1000, once: true});
   }, []);
   return (
     <HashRouter>      
