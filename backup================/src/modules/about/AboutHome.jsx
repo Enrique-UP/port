@@ -67,12 +67,12 @@ export default function AboutHome() {
               <p className="int">Hello!</p>
               <p className="int">I am Loremm Ipum,</p>
               <p className="post"><TypeWriter words={words1} /></p>
-              <p>I am Demo, a Software Engineer specializing in UI & UX development. I am passionate about designing and developing user-friendly and visually appealing digital experiences. With over 7 years of professional experience, I focus on creating innovative and efficient solutions.</p>
+              <p>I am Demo, a Software Engineer specializing in UI & UX development. I am passionate about designing and developing user-friendly and visually appealing digital experiences. With over 11 years of professional experience, I focus on creating innovative and efficient solutions.</p>
               <p>Currently, I am based in Delhi, India, and working with a leading IT software company, where I contribute to the development of high-quality digital platforms.</p>
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Work Experience</p>
-              <p>I have over 7 years of commercial experience in UI & UX development, working with clients globally. I have successfully delivered more than 250 projects using modern technologies and best design practices.</p>
+              <p>I have over 11 years of commercial experience in UI & UX development, working with clients globally. I have successfully delivered more than 500 projects using modern technologies and best design practices.</p>
               <p>My expertise includes website design and redesign, software interfaces, e-commerce platforms, landing pages, responsive design, emailers, branding materials, and graphic design. I possess strong problem-solving abilities and planning skills, allowing me to handle complex projects efficiently, both independently and as part of a team.</p>
               <p>I collaborate closely with clients and business teams to understand requirements and deliver solutions that align with their goals and user expectations.</p>
             </div>{/* cnt */}
@@ -108,11 +108,11 @@ export default function AboutHome() {
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Goal</p>
-              <p>My goal is to contribute to making the web a better place by delivering high-quality, user-focused designs that help businesses grow and strengthen their digital presence.</p>
+              <p>My goal is to contribute to making the web a better place by delivering high-quality, user-focused designs that help businesses grow and strengthen their digital presence. I aim to create solutions that are not only visually appealing but also highly functional, ensuring a seamless experience for users. By continuously improving my skills and adapting to new technologies, I strive to provide innovative and result-driven digital products that add real value to every project.</p>
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Vision</p>
-              <p>My vision is to establish myself as a leading UI & UX Developer by consistently delivering exceptional and impactful design solutions.</p>
+              <p>My vision is to establish myself as a leading UI & UX Developer by consistently delivering exceptional and impactful design solutions. I aspire to build a strong professional identity recognized for creativity, quality, and reliability. Through dedication and continuous learning, I aim to work on diverse global projects, contribute to meaningful digital transformations, and set high standards in user experience and interface design.</p>
             </div>{/* cnt */}            
             <div className="cnt">
                 <p className="hd">Frontend Development Skills</p>
@@ -182,14 +182,15 @@ export default function AboutHome() {
               
               <div className="cnt">
                 <p className="hd">My Family Background</p>
-                <p>I come from a respected and sports-oriented family based in Ujhani, in the Budaun district of Uttar Pradesh, India. My grandfather, Late Mr. Qamaruddin, and my great-grandfather, Late Mr. Shamsuddin, were prominent landlords and well-known businessmen in the frozen goods sector across Uttar Pradesh.</p>
-                <p>My grandfather was also a national-level cricketer, excelling as a wicketkeeper and batsman, and had a keen interest in chess. He was an intelligent and knowledgeable individual with a strong understanding of politics and social matters. He believed in unity, respected all religions, and was highly regarded in the community. He also served in the Indian Army before transitioning into business.</p>
-                <p>Following his legacy, my father, Mr. Mohammad Arif, continued the family business and was also an excellent volleyball player. My uncle, Mr. Mohammad Aslam, was a national-level volleyball player and served as the captain of the Uttar Pradesh volleyball team. I have also represented at the state level in cricket. Today, I work as a software engineer.</p>
+                <p>I come from an old, reputed, and sports-oriented family based in the Budaun district of Uttar Pradesh, India. My great-great-grandfather, Late Mr. Saifuddin, and my great-grandfather, Late Mr. Shamsuddin, were both prominent zamindars. My great-grandfather, Late Mr. Shamsuddin, owned around 19 brick kilns. His legacy is also recorded in a 1935 publication published in Amritsar, Punjab. They were widely known for resolving community matters and promoting unity among people.</p>
+                <p>My grandfather, Late Mr. Qamaruddin, carried forward this legacy with significant landholdings and business ventures, including brick kilns. He also served in the Indian Army before resigning to manage and expand his family business. Later, he served as Vice Chairman in Ujhani and became a well-recognized and respected personality in the region. He was also known for resolving community matters and helping people reach fair decisions. Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality. He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions.</p>
+                <p>Continuing this legacy, my father, Mr. Mohammad Arif, has also been an excellent volleyball player. My uncle was a national-level volleyball player and served as the captain of the Uttar Pradesh volleyball team. I have also been a cricketer and played as an all-rounder.</p>
+                <p>Today, I carry forward this legacy through my journey as a software engineer while actively contributing to social work.</p>
               </div>{/* cnt */}
 
               <div className="outlineBox dk" data-aos="fade-up">
-                <b>Outside of Work</b>
-                <span>Outside of my professional life, I have been actively involved in cricket at school, club, and state levels. I am also interested in political analysis, consulting, social work in rural areas, and exploring new experiences as an adventurer.</span>
+                <b>Outside of my Professional Life</b>
+                <span>I am deeply passionate about cricket, having played at school, club, state, and corporate levels. Alongside sports, I have a strong interest in politics, as it allows me to understand people’s challenges and contribute towards helping them in meaningful ways. I actively enjoy participating in election activities, including campaigning and connecting with people to support my preferred candidates. In addition, I am engaged in social work in rural areas, where I strive to make a positive impact at the grassroots level, and beyond this, I enjoy exploring new experiences while embracing life with an adventurous spirit.</span>
               </div>{/* outlineBox */}
 
               <div className="btns center">
