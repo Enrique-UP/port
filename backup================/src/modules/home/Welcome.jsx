@@ -5,10 +5,10 @@ export default function Welcome() {
         <div className="container">
           <div className="fw">
             <p className="head">
-              <b data-aos="fade-down">Loremip</b>
-              <span data-aos="fade-up">Lm Ip Dolorst</span>
+              <b data-aos="fade-down">Welcome</b>
+              <span data-aos="fade-up">To my Website</span>
             </p>
-            <p className="text" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste!</p>
+            <p className="text" data-aos="fade-left"></p>
           </div>{/* fw */}
         </div>{/* container */}
       </section>

@@ -12,6 +12,8 @@
 [data-email]::before{content:"office@example.com";}
 [data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
 
+
+.welcome .text::after{content: "I am dedicated to creating exceptional digital experiences through modern design, intuitive interfaces, and advanced functionality. Explore my work, services, and creative solutions, all driven by passion, professionalism, and a commitment to excellence. With a strong focus on detail and usability, I ensure that every project reflects both creativity and performance. I aim to build digital solutions that are visually appealing and deliver real value to users, turning ideas into impactful experiences. I continuously refine my skills and stay updated with the latest trends to deliver innovative solutions. My focus is always on creating meaningful and user-centric results.";}
 .skills .outlineBox::before{content: "Web design is my expertise. I offer a wide range of services of web design. No matter what size is your project of – it is done quickly and on the highest quality level. I complete the design/project regardless of its level of complexity. I am not afraid of difficult tasks – hundreds of my satisfied clients can prove that.";}
 
 .blsisl::before{content: "BLS International Services Limited";}
@@ -19,7 +21,8 @@
 
 
 
-.welcome_note .welcome_detail::after{content: "In my wonderful world, I sincerely hope that each and every user entering my website will find simple ui design with advanced features. You will definitely have a great experience of using my web page. It will tell you lots of interesting things about my design, my products and services, highly professional team and happy customers.";}
+
+
 .why_choose_me_area_text::after{content: "I am dedicated to giving you the best service possible by keeping my solutions friendly, simple and effective. If you don’t trust my word for it, just ask the people who have successfully launched their websites designed by me. My core principle is absolute transparency in everything. Come any time to check what your project is doing – i will inform you about the progress.";}
 .testimonials_title::after{content:"Among my clients there are many renowned industries. Their websites are modern looking and reliable – thanks to me.";}
 .my_branding_projects_title::after{content:"In my portfolio there are many of successful projects and dozen of satisfied customers. Some of the websites I've been working on became profitable startups with thousands of daily visitors. Check out the my website to learn more about my skills and style. I offer a perfect solution for my clients to establish a stunningly looking website with lots of useful functions and without extra coding.";}
