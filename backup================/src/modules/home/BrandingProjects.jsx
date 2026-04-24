@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -70,11 +70,19 @@ const BpData = [
 ];
 
 function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, setCurrentIndex }) {
+  const cntRef = useRef(null);
+
+  useEffect(() => {
+    if (cntRef.current) {
+      cntRef.current.scrollTop = 0;
+    }
+  }, []);
+
   return (
     <div className="col-12">
       <ul className="bpArea">
         <li className="img">
-          <img src={img} data-aos="fade-right" />
+          <img data-src={img} data-aos="fade-right" />
         </li>
 
         <li className="text" data-aos="fade-up">
@@ -83,7 +91,7 @@ function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, se
             <b>About the Project</b>
             <span>Website Type: <em>{type}</em></span>
           </p>
-          <p className="cnt">{details}</p>
+          <p className="cnt" ref={cntRef}>{details}</p>
         </li>
 
         <li className="btnText" data-aos="fade-left">

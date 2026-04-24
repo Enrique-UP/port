@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -77,9 +77,18 @@ const TpData = [
 
 function TpTag(props) {
     const isActive = props.activeIndex === props.index;
+
+    const detailsRef = useRef(null);
+
+    useEffect(() => {
+        if (isActive && detailsRef.current) {
+            detailsRef.current.scrollTop = 0;
+        }
+    }, [isActive]);
+
     return (
-        <div className="col-sm-6 col-lg-4">
-            <div className={`tpArea ${isActive ? "active" : ""}`} data-aos={props.ani}>
+        <div className="col-sm-6 col-lg-4" data-aos={props.ani}>
+            <div className={`tpArea ${isActive ? "active" : ""}`}>
                 <div className="top">
                     <img data-src={props.img} />
                     <span className="date">{props.date}</span>
@@ -103,9 +112,11 @@ function TpTag(props) {
                                 onClick={() => props.setActiveIndex(null)}
                             >&#xa018;</i>
                         </div>
-                        <p>{props.details}</p>
+
+                        <p ref={detailsRef}>{props.details}</p>
                     </div>
                 </div>
+
                 <div className="bottom">
                     <i
                         className="icon"
@@ -151,10 +162,8 @@ export default function TopProjects() {
         }
 
         document.addEventListener("mousedown", handleClickOutside);
-
-        return () => {
+        return () =>
             document.removeEventListener("mousedown", handleClickOutside);
-        };
     }, []);
 
     return (
