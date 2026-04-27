@@ -84,7 +84,7 @@ export default function Lifestyle() {
         <div className="container">
           <hgroup>
             <h2 data-aos="fade-down">Image <span>Gallery</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
+            <p data-aos="fade-up">Capturing moments that reflect my journey and experiences</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />

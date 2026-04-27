@@ -147,7 +147,7 @@ export default function BrandingProjects() {
             <div className="col-12">
               <hgroup>
                 <h3 data-aos="fade-down">Branding <span>Projects</span></h3>
-                <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
+                <p data-aos="fade-up">Building strong, consistent and impactful brand identities</p>
               </hgroup>
             </div>
             <div className="col-12">

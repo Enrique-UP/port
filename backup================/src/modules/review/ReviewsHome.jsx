@@ -42,8 +42,8 @@ export default function ReviewsHome() {
 
           <div className="col-12">
             <hgroup>
-              <h3 data-aos="fade-down">Customer's <span>Reviews</span></h3>
-              <p data-aos="fade-up">My Satisfy Clients</p>
+              <h3 data-aos="fade-down">Customer <span>Reviews</span></h3>
+              <p data-aos="fade-up">What my clients say about my work</p>
             </hgroup>
           </div>
 

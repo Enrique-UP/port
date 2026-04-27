@@ -39,8 +39,8 @@ export default function Reviews() {
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2 data-aos="fade-down">Customer's <span>Reviews</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">Customer <span>Reviews</span></h2>
+            <p data-aos="fade-up">What my clients say about my work</p>
           </hgroup>
           <div className="sideMid">
             <LeftSidebar />
