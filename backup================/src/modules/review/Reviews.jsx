@@ -15,12 +15,12 @@ const ReviewTag =(props) => {
       <div className="outlineBox" data-aos="fade-up">
         <ul>
           <li>
-            <b>{props.name}</b>
-            <i>{props.place}</i>
+            <b data-name={props.name}></b>
+            <i data-place={props.place}></i>
           </li>
           <li><i className="icon" dangerouslySetInnerHTML={{ __html: props.icons }}></i></li>
         </ul>
-        <span>{props.text}</span>
+        <span data-text={props.text}></span>
       </div>{/* outlineBox */}
     </div>{/* reviewsArea */}
   </>)
@@ -47,9 +47,7 @@ export default function Reviews() {
 
             <div className="area-2">
               <div className="fw">
-                <div className="outlineBox dk"  data-aos="fade-down">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit aspernatur officiis eaque quod earum et ex quasi doloribus.
-                </div>{/* fw */}
+                <div className="outlineBox dk"  data-aos="fade-down"></div>{/* fw */}
                 <div className="reviews">
                   {
                     ReviewData.map((val, ind) => {

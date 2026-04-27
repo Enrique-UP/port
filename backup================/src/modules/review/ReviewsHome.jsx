@@ -22,12 +22,12 @@ function ReviewsTag({ img, name, place, icons, text }) {
       <figure>
         <img src={img} />
         <figcaption>
-          <b>{name}</b>
-          <span>{place}</span>
+          <b data-name={name}></b>
+          <span data-place={place}></span>
           <i className="icon" dangerouslySetInnerHTML={{ __html: icons }}></i>
         </figcaption>
       </figure>
-      <p>{text}</p>
+      <p data-text={text}></p>
     </div>
   );
 }
@@ -48,9 +48,7 @@ export default function ReviewsHome() {
           </div>
 
           <div className="col-12">
-            <div className="outlineBox dk" data-aos="fade-up">
-              Among my clients there are many renowned industries.
-            </div>
+            <div className="outlineBox dk" data-aos="fade-up"></div>
           </div>
 
           <div className="col-12">
@@ -88,7 +86,7 @@ export default function ReviewsHome() {
                       }
                   }}
                   >
-                  {ReviewData.slice(0, 4).map((val, ind) => (
+                  {ReviewData.slice(0, 5).map((val, ind) => (
                     <SwiperSlide key={ind}>
                       <ReviewsTag {...val} img={images[ind]} />
                     </SwiperSlide>

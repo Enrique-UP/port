@@ -2,20 +2,54 @@ import img1 from "../../assets/images/delete/home1.jpg";
 import { Global } from "../common/Global";
 
 const WcuData = [
-    {hd: "Heading1", text: "1 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading2", text: "2 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading3", text: "3 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading4", text: "4 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading5", text: "5 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading6", text: "6 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading7", text: "7 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading8", text: "8 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading9", text: "9 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading10", text: "10 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading11", text: "11 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading12", text: "12 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading13", text: "13 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."},
-    {hd: "Heading14", text: "14 Lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet."}
+  {
+    hd: "Cost-Effective Solutions",
+    text: "I offer high-quality services at competitive and transparent pricing, with no hidden charges."
+  },
+  {
+    hd: "High-Quality Standards",
+    text: "I deliver modern, scalable, and user-focused websites and applications that align with international design and development standards."
+  },
+  {
+    hd: "Proven Experience",
+    text: "With over 10+ years of experience in UI/UX design and development, I have successfully delivered 500+ projects across diverse industries."
+  },
+  {
+    hd: "Modern Technologies",
+    text: "I leverage the latest tools, frameworks, and design trends to build efficient and future-ready digital solutions."
+  },
+  {
+    hd: "Time Efficiency",
+    text: "I value deadlines and ensure timely delivery without compromising quality."
+  },
+  {
+    hd: "Reliable Support",
+    text: "I provide continuous support and assistance to ensure smooth performance and long-term success of your project."
+  },
+  {
+    hd: "Clean & Intuitive Design",
+    text: "I focus on creating clean, user-friendly interfaces that enhance user experience and engagement."
+  },
+  {
+    hd: "Flexible Layout Systems",
+    text: "I build responsive and flexible layouts that work seamlessly across all devices and screen sizes."
+  },
+  {
+    hd: "Performance Optimized",
+    text: "I optimize every project for fast loading speed and smooth performance."
+  },
+  {
+    hd: "SEO-Friendly Development",
+    text: "All projects are built with SEO best practices to improve visibility and search engine ranking."
+  },
+  {
+    hd: "Extensive Project Portfolio",
+    text: "I have worked on 500+ projects including e-commerce, travel, education, IT solutions, and more."
+  },
+  {
+    hd: "Engaging User Experience",
+    text: "I incorporate modern UI/UX strategies and subtle animations to create engaging digital experiences."
+  }
 ];
 
 const WcuTag = (props) => {
@@ -38,7 +72,7 @@ export default function Wcu(){
                         <div className="col-12">
                             <hgroup>
                                 <h4 data-aos="fade-down">Why <span>Choose</span> Us?</h4>
-                                <p data-aos="fade-up">Your Advantages</p>
+                                <p data-aos="fade-up">Your success is my priority—delivering intuitive, scalable solutions.</p>
                             </hgroup>
                         </div>{/* cols */}
                         <div className="col-lg-4 col-xxl-3">
