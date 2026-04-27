@@ -72,8 +72,8 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     }
     header .bottom nav > ul li a img {filter: grayscale(100%) brightness(0.5);}
     header.active{position: static;z-index: auto;
-        .bottom nav{margin-left: 0;z-index: 9999;}
-        .bottom .close{top:0;z-index: 9999;}
+        .bottom nav{margin-left: 0;z-index: 99999;}
+        .bottom .close{top:0;z-index: 99999;}
     }
 }
 @media (max-width:575px){
