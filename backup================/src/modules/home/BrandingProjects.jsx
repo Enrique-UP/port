@@ -151,7 +151,7 @@ export default function BrandingProjects() {
               </hgroup>
             </div>
             <div className="col-12">
-              <div className="outlineBox dk" data-aos="fade-up">asdfasdf</div>
+              <div className="outlineBox dk" data-aos="fade-up"></div>{/* outlineBox */}
             </div>
 
             {BpData.map((item, index) => (

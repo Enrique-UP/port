@@ -211,8 +211,8 @@ export default function TechinicalSkills() {
     <section className="section skills back" id="ts">
       <div className="container">
         <hgroup>
-          <h2 data-aos="fade-down">Technical <span>Skills</span></h2>
-          <p data-aos="fade-up">My wide area of expertise</p>
+          <h2 data-aos="fade-down">Design <span>Services</span></h2>
+          <p data-aos="fade-up">Modern design solutions for websites and brands</p>
         </hgroup>
         <div className="row colors">
           <div className="col-12">

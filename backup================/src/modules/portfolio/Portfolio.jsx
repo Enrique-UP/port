@@ -156,61 +156,64 @@ export default function Portfolio() {
             <LeftSidebar />
 
             <div className="area-2">
-              <div className="port">
-                {PortfolioData.map((section, i) => (
-                  <div className="portArea" key={i}>
-                    <p className="hd" data-aos="fade-down">
-                      <span data-hd={`${section.hd} (${section.date})`}></span>
-                    </p>
+              <div className="fw">
+                <div className="portTitle outlineBox dk"></div>{/* outlineBox */}
+                <div className="port">
+                  {PortfolioData.map((section, i) => (
+                    <div className="portArea" key={i}>
+                      <p className="hd" data-aos="fade-down">
+                        <span data-hd={`${section.hd} (${section.date})`}></span>
+                      </p>
 
-                    {section.items.map((item, j) => {
-                      const { date, name, domain, link, note, status } =
-                        item;
+                      {section.items.map((item, j) => {
+                        const { date, name, domain, link, note, status } =
+                          item;
 
-                      const site = `${name}.${domain}`;
+                        const site = `${name}.${domain}`;
 
-                      const fullLink = link?.startsWith("http")
-                        ? link
-                        : `https://${site}`;
+                        const fullLink = link?.startsWith("http")
+                          ? link
+                          : `https://${site}`;
 
-                      const index =
-                        PortfolioData.slice(0, i)
-                          .flatMap((s) => s.items).length + j;
+                        const index =
+                          PortfolioData.slice(0, i)
+                            .flatMap((s) => s.items).length + j;
 
-                      const localImg = getImage(
-                        section.folderName,
-                        name,
-                        domain
-                      );
-
-                      const img =
-                        localImg ||
-                        getFallbackImage(
+                        const localImg = getImage(
                           section.folderName,
                           name,
                           domain
                         );
 
-                      return (
-                        <Temp
-                          key={j}
-                          date={section.date}
-                          site={site}
-                          link={fullLink}
-                          note={note}
-                          status={status}
-                          img={img}
-                          onClick={() => {
-                            if (!img) return;
-                            setCurrentIndex(index);
-                            setLightboxOpen(true);
-                          }}
-                        />
-                      );
-                    })}
-                  </div>
-                ))}
-              </div>
+                        const img =
+                          localImg ||
+                          getFallbackImage(
+                            section.folderName,
+                            name,
+                            domain
+                          );
+
+                        return (
+                          <Temp
+                            key={j}
+                            date={section.date}
+                            site={site}
+                            link={fullLink}
+                            note={note}
+                            status={status}
+                            img={img}
+                            onClick={() => {
+                              if (!img) return;
+                              setCurrentIndex(index);
+                              setLightboxOpen(true);
+                            }}
+                          />
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </div>{/* fw */}
             </div>
 
             <RightSidebar />

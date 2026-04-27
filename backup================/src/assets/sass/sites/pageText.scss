@@ -3,19 +3,22 @@
 [data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
 
 
-.welcome .text::after{content: "I am dedicated to creating exceptional digital experiences through modern design, intuitive interfaces, and advanced functionality. Explore my work, services, and creative solutions, all driven by passion, professionalism, and a commitment to excellence. With a strong focus on detail and usability, I ensure that every project reflects both creativity and performance. I aim to build digital solutions that are visually appealing and deliver real value to users, turning ideas into impactful experiences. I continuously refine my skills and stay updated with the latest trends to deliver innovative solutions. My focus is always on creating meaningful and user-centric results.";}
-.skills .outlineBox::before{content: "Web design is my expertise. I offer a wide range of services of web design. No matter what size is your project of – it is done quickly and on the highest quality level. I complete the design/project regardless of its level of complexity. I am not afraid of difficult tasks – hundreds of my satisfied clients can prove that.";}
-
 .blsisl::before{content: "BLS International Services Limited";}
 
 
+.welcome .text::after{content: "I am dedicated to creating exceptional digital experiences through modern design, intuitive interfaces, and advanced functionality. Explore my work, services, and creative solutions, all driven by passion, professionalism, and a commitment to excellence. With a strong focus on detail and usability, I ensure that every project reflects both creativity and performance. I aim to build digital solutions that are visually appealing and deliver real value to users, turning ideas into impactful experiences. I continuously refine my skills and stay updated with the latest trends to deliver innovative solutions. My focus is always on creating meaningful and user-centric results.";}
+
+.skills .outlineBox::before{content: "Web design is my core expertise, and I provide a wide range of solutions tailored to different project needs. Whether your project is small or complex, I ensure fast delivery without compromising on quality. I approach every challenge with confidence and dedication, consistently delivering results that meet client expectations.";}
+
+.wcu .outlineBox::before{content: "I am dedicated to delivering high-quality services by keeping my solutions simple, user-friendly, and effective. I believe in complete transparency, ensuring you stay informed about your project at every stage. The success of my clients reflects the quality of my work.";}
+
+.portTitle.outlineBox::before{content:"My portfolio includes many successful projects and dozens of satisfied clients. Some of the websites I’ve worked on have grown into profitable startups with thousands of daily visitors. Explore my portfolio to learn more about my skills and design approach. I create visually appealing, functional websites tailored to client needs without unnecessary complexity.";}
+
+.reviewsTitle.outlineBox::before{content:"Feedback from clients who have trusted my services and achieved successful results. I focus on understanding their needs, delivering high-quality solutions, and maintaining clear communication throughout the process. Their experiences reflect my commitment to reliability, performance, and creating user-friendly digital solutions that help businesses grow and succeed.";}
+
+.bp .outlineBox::before{content:"Explore my branding projects, where creativity meets strategy to build strong and memorable brand identities. From complete visual systems to cohesive brand experiences, each project reflects a deep understanding of brand values and user perception. I focus on delivering consistent, impactful designs that help businesses stand out and connect with their audience effectively.";}
 
 
-
-
-.why_choose_me_area_text::after{content: "I am dedicated to giving you the best service possible by keeping my solutions friendly, simple and effective. If you don’t trust my word for it, just ask the people who have successfully launched their websites designed by me. My core principle is absolute transparency in everything. Come any time to check what your project is doing – i will inform you about the progress.";}
-.testimonials_title::after{content:"Among my clients there are many renowned industries. Their websites are modern looking and reliable – thanks to me.";}
-.my_branding_projects_title::after{content:"In my portfolio there are many of successful projects and dozen of satisfied customers. Some of the websites I've been working on became profitable startups with thousands of daily visitors. Check out the my website to learn more about my skills and style. I offer a perfect solution for my clients to establish a stunningly looking website with lots of useful functions and without extra coding.";}
 
 footer .text > span{
     &:first-of-type::after{content:"Hello, I am Nomaan Arif, a UI/UX Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}

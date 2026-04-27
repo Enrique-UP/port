@@ -48,7 +48,7 @@ export default function ReviewsHome() {
           </div>
 
           <div className="col-12">
-            <div className="outlineBox dk" data-aos="fade-up"></div>
+            <div className="reviewsTitle outlineBox dk" data-aos="fade-up"></div>
           </div>
 
           <div className="col-12">

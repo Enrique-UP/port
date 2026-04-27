@@ -47,7 +47,7 @@ export default function Reviews() {
 
             <div className="area-2">
               <div className="fw">
-                <div className="outlineBox dk"  data-aos="fade-down"></div>{/* fw */}
+                <div className="reviewsTitle outlineBox dk"  data-aos="fade-down"></div>{/* fw */}
                 <div className="reviews">
                   {
                     ReviewData.map((val, ind) => {

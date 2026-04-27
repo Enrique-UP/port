@@ -65,7 +65,7 @@ export default function Education() {
             <div className="container">
                 <hgroup>
                   <h2 data-aos="fade-down">My <span>Education</span></h2>
-                  <p data-aos="fade-up">Learning</p>
+                  <p data-aos="fade-up">An overview of my education and qualifications</p>
                 </hgroup>
                 <ul className="edu">
                     {

@@ -116,6 +116,7 @@ export default function AboutHome() {
             </div>{/* cnt */}            
             <div className="cnt">
                 <p className="hd">Frontend Development Skills</p>
+                <p className="shd">Technologies and tools I use to create responsive and interactive web applications.</p>
                 <div className="skillBar colors one">
                   <article data-aos="fade-left">
                     <b>HTML</b>
