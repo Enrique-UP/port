@@ -13,65 +13,75 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/team/t1.jpg";
-import img2 from "../../assets/images/team/t2.jpg";
-import img3 from "../../assets/images/team/t3.jpg";
-import img4 from "../../assets/images/team/t4.jpg";
+import img1 from "../../assets/images/portfolio/bls/india_blsattestation_com.jpg";
+import img2 from "../../assets/images/portfolio/i2a/9cents_com.jpg";
+import img3 from "../../assets/images/portfolio/snva/travomint_com.jpg";
+import img4 from "../../assets/images/portfolio/i2a/akountobooks_com.jpg";
+import img5 from "../../assets/images/portfolio/si/alefmeem_store.jpg";
+import img6 from "../../assets/images/portfolio/i2a/zippyconvert_com.jpg";
 
 const TpData = [
     {
         ani: "fade-left",
+        website:"india_blsattestation_com",
         img: img1,
-        web: "www.loremipsumdolor.com",
-        link: "https://www.loremipsumdolor.com",
-        date: "01-00-0000",
-        type:"Web Type1",
-        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.india.blsattestation.com",
+        link: "https://india.blsattestation.com/",
+        date: "09-Jun-2016",
+        type:"Attestation Services",
+        note:" ",
+        details:""
     },
     {
         ani: "fade-right",
+        website:"9cents_com",
         img: img2,
-        web: "www.loremipsumdolorsitameetlorem.com",
-        link: "",
-        date: "02-00-0000",
-        type:"Web Type2",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.9cents.com",
+        link: "https://www.9cents.com/",
+        date: "Present",
+        type:"Accounting Software",
+        details:""
     },
     {
         ani: "fade-left",
+        website:"travomint_com",
         img: img3,
-        web: "www.loremipsumdolor.com",
-        link: "https://www.loremipsumdolor.com",
-        date: "03-00-0000",
-        type:"Web Type3",
-        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.travomint.com",
+        link: "https://www.travomint.com",
+        date: "12-Nov-2021",
+        type:"Travel",
+        note:" ",
+        details:""
     },
     {
         ani: "fade-right",
+        website:"akountobooks_com",
         img: img4,
-        web: "www.loremipsumdolorsitameetlorem.com",
+        web: "www.akountobooks.com",
         link: null,
-        date: "04-00-0000",
-        type:"Web Type4",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        date: "31-Dec-2025",
+        type:"Accounting Software",
+        details:""
     },
     {
         ani: "fade-left",
-        img: img1,
-        web: "www.loremipsumdolor.com",
-        date: "05-00-0000",
-        type:"Web Type5",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        website:"alefmeem_store",
+        img: img5,
+        web: "www.alefmeem.store",
+        link: null,
+        date: "13-May-2022",
+        type:"E-Commerce",
+        details:""
     },
     {
         ani: "fade-right",
-        img: img2,
-        web: "www.loremipsumdolorsitameetlorem.com",
-        date: "06-00-0000",
-        type:"Web Type6",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        website:"zippyconvert_com",
+        img: img6,
+        web: "www.zippyconvert.com",
+        link: "https://www.zippyconvert.com",
+        date: "Present",
+        type:"Accounting Software",
+        details:""
     },
 ];
 
@@ -88,7 +98,7 @@ function TpTag(props) {
 
     return (
         <div className="col-sm-6 col-lg-4" data-aos={props.ani}>
-            <div className={`tpArea ${isActive ? "active" : ""}`}>
+            <div className={`tpArea ${isActive ? "active" : ""}`} data-site={props.website}>
                 <div className="top">
                     <img data-src={props.img} />
                     <span className="date">{props.date}</span>
@@ -113,7 +123,7 @@ function TpTag(props) {
                             >&#xa018;</i>
                         </div>
 
-                        <p ref={detailsRef}>{props.details}</p>
+                        <p className="text" ref={detailsRef}>{props.details}</p>
                     </div>
                 </div>
 
@@ -174,7 +184,7 @@ export default function TopProjects() {
                         <div className="col-12">
                             <hgroup>
                                 <h3 data-aos="fade-down">Top <span>Projects</span></h3>
-                                <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
+                                <p data-aos="fade-up">Some of my best work</p>
                             </hgroup>
                         </div>
                         {TpData.map((val, ind) => (

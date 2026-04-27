@@ -13,63 +13,66 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/team/t1.jpg";
-import img2 from "../../assets/images/team/t2.jpg";
-import img3 from "../../assets/images/team/t3.jpg";
-import img4 from "../../assets/images/team/t4.jpg";
+import img1 from "../../assets/images/portfolio/i2a/akounto_com.jpg";
+import img2 from "../../assets/images/portfolio/free/rajankapoorchai_com.jpg";
+import img3 from "../../assets/images/portfolio/snva/snva_com.jpg";
+import img4 from "../../assets/images/portfolio/snva/careerera_com.jpg";
+import img5 from "../../assets/images/portfolio/city/ticketstoworld_co_uk.jpg";
+import img6 from "../../assets/images/portfolio/city/ticketstoindia_co_uk.jpg";
+
 
 const BpData = [
     {
+        site:"akounto_com",
         img: img1,
-        web: "www.loremipsumdolor.com",
-        link: "https://www.loremipsumdolor.com",
-        date: "01-00-0000",
-        type:"Web Type1",
-        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.akounto.com",
+        date: "31-Dec-2024",
+        type:"Accounting Software",        
     },
     {
+        site:"rajankapoorchai_com",
         img: img2,
-        web: "www.loremipsumdolorsitameetlorem.com",
-        link: "",
-        date: "02-00-0000",
-        type:"Web Type2",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.rajankapoorchai.com",
+        link: "https://www.rajankapoorchai.com",
+        date: "31-Oct-2024",
+        type:"Portfolio",        
     },
     {
+        site:"snva_com",
         img: img3,
-        web: "www.loremipsumdolor.com",
-        link: "https://www.loremipsumdolor.com",
-        date: "03-00-0000",
-        type:"Web Type3",
-        note:"Note here lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi.",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.snva.com",
+        link: "",
+        date: "13-Nov-2021",
+        type:"Company Website",
     },
     {
+        site:"careerera_com",
         img: img4,
-        web: "www.loremipsumdolorsitameetlorem.com",
-        link: null,
-        date: "04-00-0000",
-        type:"Web Type4",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        web: "www.careerera.com",
+        link: "https://www.careerera.com",
+        date: "13-Nov-2021",
+        type:"Online Education Courses",
+        notes: true,
     },
     {
-        img: img1,
-        web: "www.loremipsumdolor.com",
-        date: "05-00-0000",
-        type:"Web Type5",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed. Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        site:"ticketstoworld_co_uk",
+        img: img5,
+        web: "www.ticketstoworld.co.uk",
+        link: "https://www.ticketstoworld.co.uk",
+        date: "13-Dec-2016",
+        type:"Travel",        
     },
     {
-        img: img2,
-        web: "www.loremipsumdolorsitameetlorem.com",
-        date: "06-00-0000",
-        type:"Web Type6",
-        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit adipisci harum dolores similique provident officiis vitae in iusto recusandae fuga commodi sit facere temporibus amet aliquam consequuntur distinctio voluptatem nihil optio rerum aliquid quos minima fugiat quisquam quam eum atque voluptates dolorum culpa iusto doloremque laudantium sapiente vero iste praesentium sed."
+        site:"ticketstoindia_co_uk",
+        img: img6,
+        web: "www.ticketstoindia.co.uk",
+        link: "https://www.ticketstoindia.co.uk",
+        date: "13-Dec-2016",
+        type:"Travel",        
     },
 ];
 
-function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, setCurrentIndex }) {
+function BpTag({ site, img, web, link, date, type, notes, index, setLightboxOpen, setCurrentIndex }) {
   const cntRef = useRef(null);
 
   useEffect(() => {
@@ -80,18 +83,18 @@ function BpTag({ img, web, link, date, type, details, index, setLightboxOpen, se
 
   return (
     <div className="col-12">
-      <ul className="bpArea">
+      <ul className="bpArea" data-site={site}>
         <li className="img">
           <img data-src={img} data-aos="fade-right" />
         </li>
 
-        <li className="text" data-aos="fade-up">
-          <p className="hd">{web}</p>
+        <li className="txt" data-aos="fade-up">
+          <p className="hd" data-web={web}></p>
           <p className="about">
             <b>About the Project</b>
             <span>Website Type: <em>{type}</em></span>
           </p>
-          <p className="cnt" ref={cntRef}>{details}</p>
+          <p className={`cnt text ${notes ? "notes" : ""}`} ref={cntRef}></p>
         </li>
 
         <li className="btnText" data-aos="fade-left">
@@ -143,7 +146,7 @@ export default function BrandingProjects() {
           <div className="row">
             <div className="col-12">
               <hgroup>
-                <h3 data-aos="fade-down">Top <span>Projects</span></h3>
+                <h3 data-aos="fade-down">Branding <span>Projects</span></h3>
                 <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
               </hgroup>
             </div>

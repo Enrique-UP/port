@@ -165,7 +165,7 @@ const PortfolioData = [
       { name: "passwordrecoverysupportplus", domain: "com", },
       { name: "windowssupportplus", domain: "com", },
       { name: "echeck360", domain: "com", },
-      { name: "uni_versity", domain: "in", },
+      { name: "uni-versity", domain: "in", },
       { name: "sixsigmaversity", domain: "org", },
       { name: "laruetreefarm", domain: "com", },
       { name: "uhawaii", domain: "org", },
