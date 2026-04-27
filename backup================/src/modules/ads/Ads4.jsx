@@ -12,7 +12,7 @@ export default function Ads4() {
                         <p className="subHead" data-aos="fade-down">Adventure</p>
                         <p className="head" data-aos="fade-up">Dare to Explore</p>
                         <p className="text" data-aos="fade-down">Take some time for yourself</p>
-                        <div className="btns bsn">
+                        <div className="btns bsn" data-aos="fade-right">
                             <Link to="/lifestyle">View More</Link>
                         </div>
                     </li>

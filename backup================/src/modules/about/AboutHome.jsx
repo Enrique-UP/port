@@ -195,8 +195,8 @@ export default function AboutHome() {
               </div>{/* outlineBox */}
 
               <div className="btns center">
-                <a href={Global.numTel} target="_blank" data-aos="fade-right">Hire Us</a>
-                <Link to="/contactus" data-aos="fade-left">Contact Us</Link>
+                <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Us</a>
+                <Link to="/contactus" data-aos="fade-right">Contact Us</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
           </div>{/* fw */}
