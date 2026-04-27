@@ -2,7 +2,7 @@
     .bpArea{width: 100%;display: flex;padding:0;margin:0;border:1px solid var(--b1);height: 350px;background: #fff;
         > li{list-style: none;}
         > .img{width:300px;flex-shrink: 0;display: flex;align-items: flex-start;overflow: hidden;
-            > img{width: 100%;object-fit: contain;max-height: 300px;}
+            > img{width: 100%;object-fit: cover;}
         }
         > .txt{width:100%;border-inline:10px solid var(--b1);@extend %fc;
             > *{padding-inline: 16px;}
@@ -50,4 +50,5 @@
     .bp .about{flex-direction: column;}
     .bp .about b{font-size: 18px;}
     .bp .hd{font-size: 20px;}
+    .bp .bpArea > .img > img{object-fit: contain;max-height: 300px;}
 }

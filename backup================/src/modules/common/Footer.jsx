@@ -74,8 +74,8 @@ export default function Footer() {
               <div className="fw" data-aos="fade-down">
                   <p className="hd">About Us</p>
                   <p className="text">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit facilis dolores voluptatum nostrum ea ex reprehenderit corrupti cupiditate corporis hic inventore non optio porro deserunt molestiae inventore ab veritatis nemo ad dolorem iure rerum adipisci iste reprehenderit.</span>
-                    <span><strong>Outside of work,</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit quae neque consequatur temporibus veniam maiores laudantium obcaecati labore.</span>
+                    <span></span>
+                    <span><strong>Outside of work,</strong></span>
                   </p>
               </div>{/* fw */}
             </div>{/* cols */}

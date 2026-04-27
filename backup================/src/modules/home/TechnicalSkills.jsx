@@ -212,7 +212,7 @@ export default function TechinicalSkills() {
       <div className="container">
         <hgroup>
           <h2 data-aos="fade-down">Technical <span>Skills</span></h2>
-          <p data-aos="fade-up">MY WIDE AREA OF EXPERTISE</p>
+          <p data-aos="fade-up">My wide area of expertise</p>
         </hgroup>
         <div className="row colors">
           <div className="col-12">

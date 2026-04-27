@@ -1,13 +1,3 @@
-// I belong to a royal and sports-oriented family from Ujhani (Budaun district, Uttar Pradesh, India). My grandfather, Late Mr. Qamaruddin, and my great-grandfather, Late Mr. Shamsuddin, were prominent landlords and well-known businessmen in the frozen goods trade across Uttar Pradesh.
-
-// My grandfather was a national-level cricketer (wicketkeeper and batsman) and also a skilled chess player. Alongside his business and agricultural responsibilities, he was known for his legal knowledge and active involvement in social and political discussions. He was a highly intelligent and respected individual who promoted unity among all religions and maintained strong communal harmony. Earlier in his life, he served in the Indian Army before transitioning into business.
-
-// Following his legacy, my father, Mr. Mohammad Arif, continued the family business. He was also a talented volleyball player. My uncle, Mr. Mohammad Aslam, was a national-level volleyball player and served as the captain of the Uttar Pradesh volleyball team.
-
-// Continuing the family’s sporting tradition, I have also been a state-level cricketer. Currently, I work as a software engineer.
-
-
-
 [data-num]::before{content:"+1 000 000 0000";}
 [data-email]::before{content:"office@example.com";}
 [data-address]::before{content:"25-Lorem ipsum dolor sit ameet.";}
@@ -26,6 +16,11 @@
 .why_choose_me_area_text::after{content: "I am dedicated to giving you the best service possible by keeping my solutions friendly, simple and effective. If you don’t trust my word for it, just ask the people who have successfully launched their websites designed by me. My core principle is absolute transparency in everything. Come any time to check what your project is doing – i will inform you about the progress.";}
 .testimonials_title::after{content:"Among my clients there are many renowned industries. Their websites are modern looking and reliable – thanks to me.";}
 .my_branding_projects_title::after{content:"In my portfolio there are many of successful projects and dozen of satisfied customers. Some of the websites I've been working on became profitable startups with thousands of daily visitors. Check out the my website to learn more about my skills and style. I offer a perfect solution for my clients to establish a stunningly looking website with lots of useful functions and without extra coding.";}
+
+footer .text > span{
+    &:first-of-type::after{content:"Hello, I am Nomaan Arif, a UI/UX Developer from India. I specialize in designing and developing user-focused websites across industries such as Travel, E-Commerce, Charity, Education, Tech Support, Visa, Passport, Consular, Attestation, Flights Ticket, IT-Solutions, Online Payment, Digitization, Tree Plantation and Accounting etc.";}
+    &:last-of-type::after{content: " " "I’m passionate about cricket, having played at multiple levels, and I’m also interested in politics and helping people.";}
+}
 
 
 
