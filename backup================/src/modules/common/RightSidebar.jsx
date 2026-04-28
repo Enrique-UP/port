@@ -4,7 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { Global } from "./Global";
+import { Global, TeamName } from "./Global";
 
 import calling from "../../assets/images/call.png";
 
@@ -13,10 +13,10 @@ import Ls2 from "../../assets/images/sideBar/home2.jpg";
 import Ls3 from "../../assets/images/sideBar/home3.jpg";
 import Ls4 from "../../assets/images/sideBar/home4.jpg";
 
-import T1 from "../../assets/images/team/t1.jpg";
-import T2 from "../../assets/images/team/t2.jpg";
-import T3 from "../../assets/images/team/t3.jpg";
-import T4 from "../../assets/images/team/t4.jpg";
+import T1 from "../../assets/images/team/t1-sb.jpg";
+import T2 from "../../assets/images/team/t2-sb.jpg";
+import T3 from "../../assets/images/team/t3-sb.jpg";
+import T4 from "../../assets/images/team/t4-sb.jpg";
 
 import C1 from "../../assets/images/childhood/1.jpg";
 import C2 from "../../assets/images/childhood/2.jpg";
@@ -168,7 +168,13 @@ export default function RightSidebar() {
           >
             {TeamData.map((val, ind) => (
               <SwiperSlide key={ind}>
-                <CommonTag {...val} />
+                <CommonTag 
+                  post={TeamName[ind]?.post}
+                  img={val.img}
+                  ani={val.ani}
+                  hd={TeamName[ind]?.fName}
+                  txt={TeamName[ind]?.lName}
+                />
               </SwiperSlide>
             ))}
           </Swiper>

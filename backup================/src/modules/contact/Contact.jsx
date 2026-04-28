@@ -54,7 +54,7 @@ export default function Contact() {
       </Helmet>
       <Banner
         pageName="Contact Us"
-        pageText="We’re here to help you with any queries, project discussions, or collaboration opportunities. Let’s connect and build something great together."
+        pageText="We’re here to help you with any queries, project discussions, or collaboration opportunities. Feel free to reach out anytime."
       />
       <section className="section">
         <div className="container">

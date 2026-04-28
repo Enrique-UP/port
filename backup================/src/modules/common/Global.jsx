@@ -17,6 +17,14 @@ export const Global = {
   pnt:"https://www.pinterest.com/",
   skp:"skype:namehere",
 };
+
+export const TeamName = [
+  { fName: "Enrique", lName: "Brave", post: "Sr. UI & UX Developer" },
+  { fName: "Sandeep", lName: "Kumar", post: "Sr. Web Developer" },
+  { fName: "Anubhav", lName: "Singh", post: "Sr. SEO" },
+  { fName: "Kamal", lName: "Kant", post: "Sr. Content Developer" },
+];
+
 // {Global.num}
 
 
