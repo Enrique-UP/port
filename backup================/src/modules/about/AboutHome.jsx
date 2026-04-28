@@ -65,7 +65,7 @@ export default function AboutHome() {
               </div>{/* imgArea */}
               <div className="imgArea2">
                 <picture>
-                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset={img3_1199} />
+                  <source media="(min-width: 576px) and (max-width: 1199px)" srcset={img3_1199} />
                   <img src={img3} data-aos="fade-up" />
                 </picture>
               </div>{/* imgArea */}
