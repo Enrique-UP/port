@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
 import { TypeWriter } from "../typeWriter/TypeWriter";
 
-import img1 from "../../assets/images/delete/home1.jpg";
-import img2 from "../../assets/images/delete/home2.jpg";
-import img3 from "../../assets/images/delete/home3.jpg";
+import img1 from "../../assets/images/about1.jpg";
+import img2 from "../../assets/images/about2.jpg";
+import img3 from "../../assets/images/about3.jpg";
+import img3_1199 from "../../assets/images/about3_1199.jpg";
 
 import { Global } from "../common/Global";
 import { Link } from "react-router-dom";
 import CounterNum from "./CounterNum";
 
 const words1 = [
-  { text: "(India)", className: "one" },
-  { text: "(New Delhi)", className: "two" }
+  // { text: "(UI & UX Developer)", className: "one" },
+  // { text: "(UI & UX Developer)", className: "two" }
+  { text: "(USA)", className: "one" },
+  { text: "(India)", className: "two" }
 ];
 
 export default function AboutHome() {
@@ -55,11 +58,18 @@ export default function AboutHome() {
         </hgroup>
         <div className="fw">
           <div className="cols1">
-            <ul className="images">
-              <li><img className="img1" src={img1} data-aos="flip-right" /></li>
-              <li><img className="img1" src={img2} data-aos="flip-left" /></li>
-              <li><img className="img2" src={img3} data-aos="flip-up" /></li>
-            </ul>
+            <div className="images">
+              <div className="imgArea1">
+                <picture><img src={img1} data-aos="fade-right" /></picture>
+                <picture><img src={img2} data-aos="fade-left" /></picture>
+              </div>{/* imgArea */}
+              <div className="imgArea2">
+                <picture>
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset={img3_1199} />
+                  <img src={img3} data-aos="fade-up" />
+                </picture>
+              </div>{/* imgArea */}
+            </div>{/* images */}
           </div>{/* cols1 */}
 
           <div className="cols2">
@@ -191,7 +201,7 @@ export default function AboutHome() {
 
               <div className="outlineBox dk" data-aos="fade-up">
                 <b>Outside of my Professional Life</b>
-                <span>I am deeply passionate about cricket, having played at school, club, state, and corporate levels. Alongside sports, I have a strong interest in politics, as it allows me to understand people’s challenges and contribute towards helping them in meaningful ways. I actively enjoy participating in election activities, including campaigning and connecting with people to support my preferred candidates. In addition, I am engaged in social work in rural areas, where I strive to make a positive impact at the grassroots level, and beyond this, I enjoy exploring new experiences while embracing life with an adventurous spirit.</span>
+                <span>I am deeply passionate about cricket, having played at school, club, and corporate levels. Alongside sports, I have a strong interest in politics, as it allows me to understand people’s challenges and contribute towards helping them in meaningful ways. I actively enjoy participating in election activities, including campaigning and connecting with people to support my preferred candidates. In addition, I am engaged in social work in rural areas, where I strive to make a positive impact at the grassroots level, and beyond this, I enjoy exploring new experiences while embracing life with an adventurous spirit.</span>
               </div>{/* outlineBox */}
 
               <div className="btns center">

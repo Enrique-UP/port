@@ -2,166 +2,166 @@ import { useState } from "react";
 
 const TsData = [
   {
-    year: 1,
+    year: 2014,
     hd1: "Website",
     hd2: "Design",
     text: "I specialize in delivering high-quality website design services that help establish a strong online presence. My approach combines creativity, usability, and performance to build visually appealing and user-friendly websites. I ensure each design aligns with business goals while maintaining responsiveness, SEO compatibility, and modern UI/UX standards."
   },
   {
-    year: 2,
+    year: 2014,
     hd1: "Website",
     hd2: "Redesign",
     text: "I provide professional website redesign services to enhance your site's look, functionality, and performance using the latest technologies. My goal is to modernize your website while improving user engagement and aligning it with your brand identity."
   },
   {
-    year: 3,
+    year: 2014,
     hd1: "E-commerce",
     hd2: "Website Design",
     text: "I design scalable and visually compelling e-commerce websites that showcase products effectively and enhance user experience. My solutions are tailored to drive conversions and support business growth in the competitive online marketplace."
   },
   {
-    year: 4,
+    year: 2014,
     hd1: "Custom",
     hd2: "Website Design",
     text: "I develop fully customized website designs based on your business requirements and strategic objectives. Each design is uniquely crafted to reflect your brand identity and deliver a personalized user experience."
   },
   {
-    year: 5,
+    year: 2015,
     hd1: "Landing Page",
     hd2: "Design",
     text: "I create high-converting landing pages optimized for marketing campaigns, including PPC ads. Each page is designed to capture attention, communicate value clearly, and drive user actions effectively."
   },
   {
-    year: 6,
+    year: 2014,
     hd1: "Responsive",
     hd2: "Web Design",
     text: "I build fully responsive websites that provide seamless experiences across all devices, including desktops, tablets, and smartphones. My designs adapt flawlessly to different screen sizes and platforms."
   },
   {
-    year: 7,
+    year: 2014,
     hd1: "UI & UX",
     hd2: "Development",
     text: "I focus on delivering intuitive user interfaces and engaging user experiences. By combining design principles with development expertise, I create products that are both functional and visually appealing."
   },
   {
-    year: 8,
+    year: 2015,
     hd1: "Email",
     hd2: "Template Design",
     text: "I design responsive and visually engaging email templates suitable for marketing campaigns and newsletters. These templates are optimized for readability across devices and email clients."
   },
   {
-    year: 9,
+    year: 2015,
     hd1: "Invoice",
     hd2: "Design",
     text: "I create professional and visually appealing invoice designs that reflect your brand identity. A well-designed invoice enhances credibility and leaves a lasting impression on clients."
   },
   {
-    year: 10,
+    year: 2015,
     hd1: "Web",
     hd2: "Implementation",
     text: "I provide end-to-end web implementation services, ensuring that designs are accurately translated into functional and efficient websites while maintaining performance and usability."
   },
   {
-    year: 11,
+    year: 2015,
     hd1: "Website",
     hd2: "Maintenance",
     text: "I offer reliable website maintenance services to keep your site updated, secure, and running smoothly. This includes content updates, bug fixes, and performance optimization."
   },
   {
-    year: 12,
+    year: 2013,
     hd1: "Graphic",
     hd2: "Design",
     text: "I create impactful graphic designs using typography, imagery, and visual storytelling. My designs effectively communicate your message and enhance your brand’s visual identity."
   },
   {
-    year: 13,
+    year: 2013,
     hd1: "UI & UX",
     hd2: "Design",
     text: "I design user-centric interfaces and experiences by focusing on usability, structure, and aesthetics. My process includes planning, prototyping, and refining to deliver intuitive digital products."
   },
   {
-    year: 14,
+    year: 2013,
     hd1: "Logo",
     hd2: "Design",
     text: "I design unique and memorable logos that represent your brand identity. Each logo is crafted to communicate your business values and create a strong visual impact."
   },
   {
-    year: 15,
+    year: 2014,
     hd1: "Web Ads",
     hd2: "Design",
     text: "I design engaging web advertisements and banners that attract attention and drive user engagement across various online platforms."
   },
   {
-    year: 16,
+    year: 2014,
     hd1: "Web Banner",
     hd2: "Design",
     text: "I create high-quality web banners that effectively promote products and services, helping increase website traffic and brand visibility."
   },
   {
-    year: 17,
+    year: 2014,
     hd1: "Web Template",
     hd2: "Design",
     text: "I design modern and reusable web templates that combine visual appeal with functionality, making development faster and more efficient."
   },
   {
-    year: 18,
+    year: 2013,
     hd1: "Image",
     hd2: "Editing",
     text: "I provide professional image editing services, including retouching, enhancement, and manipulation to ensure high-quality visual output."
   },
   {
-    year: 19,
+    year: 2014,
     hd1: "Image",
     hd2: "Optimization",
     text: "I optimize images for web performance by balancing quality and file size, ensuring faster load times and improved user experience."
   },
   {
-    year: 20,
+    year: 2015,
     hd1: "Brochure",
     hd2: "Design",
     text: "I design informative and visually appealing brochures that effectively communicate your brand message and services."
   },
   {
-    year: 21,
+    year: 2015,
     hd1: "Flyer",
     hd2: "Design",
     text: "I create eye-catching flyers for promotions, events, and marketing campaigns, ensuring maximum reach and engagement."
   },
   {
-    year: 22,
+    year: 2015,
     hd1: "Newsletter",
     hd2: "Design",
     text: "I design attractive newsletters that engage audiences and communicate updates effectively, helping improve customer interaction and retention."
   },
   {
-    year: 23,
+    year: 2015,
     hd1: "Social Media",
     hd2: "Design",
     text: "I design creative social media graphics, banners, and advertisements tailored for platforms like Facebook, Instagram, LinkedIn, and Twitter to boost brand presence."
   },
   {
-    year: 24,
+    year: 2018,
     hd1: "AMP",
     hd2: "Development",
     text: "I develop AMP (Accelerated Mobile Pages) solutions to ensure lightning-fast website performance on mobile devices, improving user experience and SEO rankings."
   },
   {
-    year: 25,
+    year: 2015,
     hd1: "Digital",
     hd2: "Marketing",
-    text: "I offer comprehensive digital marketing solutions to help businesses grow online through effective strategies and tools."
+    text: "I offer professionally designed images and visual assets tailored for digital marketing, helping brands create engaging content and improve their online visibility."
   },
   {
     year: 26,
     hd1: "Data",
-    hd2: "Analytics",
-    text: "I provide detailed analytics and insights to help you track performance and make data-driven decisions for your business growth."
+    hd2: "Updates",
+    text: "I manage and update website data, ensuring all content is current, well-structured, and aligned with business requirements."
   },
   {
     year: 27,
     hd1: "Video",
-    hd2: "Production",
-    text: "I create professional video content that enhances brand communication and engages audiences effectively."
+    hd2: "Editing",
+    text: "I provide professional video editing services, enhancing raw footage into polished and engaging content for your brand."
   },
   {
     year: 28,

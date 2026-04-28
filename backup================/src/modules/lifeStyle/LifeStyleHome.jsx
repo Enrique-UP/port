@@ -28,7 +28,7 @@ export default function LifestyleHome() {
                     <div className="col-sm-6 col-xl-12 df">
                       <div className="outlineBox" data-aos="fade-up">
                         <b>My Hobbies</b>
-                        <span>I enjoy traveling and playing cricket, with experience representing school, club, state, and corporate teams. I am also passionate about food.</span>
+                        <span>I enjoy traveling and playing cricket, with experience representing school, club, and corporate teams. I am also passionate about food.</span>
                       </div>
                     </div>
                     <article className="col-sm-6 col-xl-12">
