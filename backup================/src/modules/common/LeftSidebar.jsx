@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 
-import img1 from "../../assets/images/delete/home1.jpg";
+import img1 from "../../assets/images/sideBar/home1.jpg";
 import camping from "../../assets/images/icons/camping.png";
 import fitAth from "../../assets/images/icons/fitAth.png";
 

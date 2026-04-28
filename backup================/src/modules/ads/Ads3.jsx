@@ -1,5 +1,4 @@
-import img1 from "../../assets/images/banners/home.jpg";
-import img2 from "../../assets/images/banners/inner.jpg";
+import img1 from "../../assets/images/ads/ads3.jpg";
 import { Global } from "../common/Global";
 
 export default function Ads3() {

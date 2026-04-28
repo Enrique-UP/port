@@ -8,10 +8,10 @@ import { Global } from "./Global";
 
 import calling from "../../assets/images/call.png";
 
-import Ls1 from "../../assets/images/delete/home1.jpg";
-import Ls2 from "../../assets/images/delete/home2.jpg";
-import Ls3 from "../../assets/images/delete/home3.jpg";
-import Ls4 from "../../assets/images/delete/home4.jpg";
+import Ls1 from "../../assets/images/sideBar/home1.jpg";
+import Ls2 from "../../assets/images/sideBar/home2.jpg";
+import Ls3 from "../../assets/images/sideBar/home3.jpg";
+import Ls4 from "../../assets/images/sideBar/home4.jpg";
 
 import T1 from "../../assets/images/team/t1.jpg";
 import T2 from "../../assets/images/team/t2.jpg";

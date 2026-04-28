@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
 import { TypeWriter } from "../typeWriter/TypeWriter";
 
-import img1 from "../../assets/images/about1.jpg";
-import img2 from "../../assets/images/about2.jpg";
-import img3 from "../../assets/images/about3.jpg";
-import img3_1199 from "../../assets/images/about3_1199.jpg";
+import img1 from "../../assets/images/about/about1.jpg";
+import img2 from "../../assets/images/about/about2.jpg";
+import img3 from "../../assets/images/about/about3.jpg";
+import img3_1199 from "../../assets/images/about/about3_1199.jpg";
 
 import { Global } from "../common/Global";
 import { Link } from "react-router-dom";
 import CounterNum from "./CounterNum";
 
 const words1 = [
-  // { text: "(UI & UX Developer)", className: "one" },
-  // { text: "(UI & UX Developer)", className: "two" }
-  { text: "(USA)", className: "one" },
-  { text: "(India)", className: "two" }
+  { text: "(UI & UX Developer)", className: "one" },
+  { text: "(UI & UX Developer)", className: "two" }
+  // { text: "(USA)", className: "one" },
+  // { text: "(India)", className: "two" }
 ];
 
 export default function AboutHome() {

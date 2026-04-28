@@ -1,4 +1,4 @@
-import Ads from "../../assets/images/delete/home2.jpg";
+import Ads from "../../assets/images/ads/ads1.jpg";
 import { Global } from "../common/Global";
 
 export default function Ads1() {

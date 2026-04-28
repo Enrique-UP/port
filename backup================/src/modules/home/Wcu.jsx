@@ -1,4 +1,4 @@
-import img1 from "../../assets/images/delete/home1.jpg";
+import img1 from "../../assets/images/wcu.jpg";
 import { Global } from "../common/Global";
 
 const WcuData = [
@@ -93,21 +93,21 @@ export default function Wcu(){
                             </figure>
                         </div>{/* cols */}
                         <div className="col-lg-8 col-xxl-9">
-                            <div className="row">
-                                <div className="col-12">
-                                    <div className="outlineBox dk" data-aos="fade-up"></div>{/* outlineBox */}
-                                </div>{/* cols */}
-                                <div className="col-12">
-                                    <div className="wcuArea">
-                                        {
-                                            // WcuData.slice(0, 4).map((val, ind) => {}
-                                            WcuData.map((val, ind) => {
-                                                return <WcuTag key={ind} hd={val.hd} text={val.text} />
-                                            })
-                                        }
-                                    </div>{/* wcuArea */}
-                                </div>{/* cols */}
-                            </div>{/* row */}
+                          <div className="row">
+                            <div className="col-12">
+                              <div className="outlineBox dk" data-aos="fade-up"></div>{/* outlineBox */}
+                            </div>{/* cols */}
+                            <div className="col-12">
+                              <div className="wcuArea">
+                                {
+                                  // WcuData.slice(0, 4).map((val, ind) => {}
+                                  WcuData.map((val, ind) => {
+                                    return <WcuTag key={ind} hd={val.hd} text={val.text} />
+                                  })
+                                }
+                              </div>{/* wcuArea */}
+                            </div>{/* cols */}
+                          </div>{/* row */}
                         </div>{/* cols */}
                     </div>{/* row */}
                 </div>{/* container */}
