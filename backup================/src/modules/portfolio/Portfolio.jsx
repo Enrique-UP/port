@@ -141,15 +141,15 @@ export default function Portfolio() {
       </Helmet>
 
       <Banner
-        pageName="Portfolio"
-        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        pageName="My Portfolio"
+        pageText="Explore selected works that reflect my skills in design thinking, frontend development, and user experience."
       />
 
       <section className="section">
         <div className="container">
           <hgroup>
-            <h2 data-aos="fade-down">Lorem <span>Page</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet</p>
+            <h2 data-aos="fade-down">Explore <span>My Work</span></h2>
+            <p data-aos="fade-up">A showcase of my UI/UX and web development work.</p>
           </hgroup>
 
           <div className="sideMid">
