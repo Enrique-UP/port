@@ -22,7 +22,7 @@ export default function Childhood() {
               <div className="col-lg-6">
                 <div className="heading">
                   <h2 className="hd1" data-aos="fade-down">Childhood Days</h2>
-                  <p className="hd2" data-aos="fade-up">A Life Full of Joy and Fun Moments</p>
+                  <p className="hd2" data-aos="fade-up">A life full of joy and fun moments</p>
                 </div>
               </div>
               <div className="col-lg-6" data-aos="fade-left">

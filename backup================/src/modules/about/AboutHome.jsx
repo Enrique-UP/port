@@ -206,7 +206,7 @@ export default function AboutHome() {
 
               <div className="outlineBox dk" data-aos="fade-up">
                 <b>Outside of my Professional Life</b>
-                <span>I am passionate about cricket and actively follow and engage in politics and social work. Beyond this, I enjoy exploring fashion and styling, nature sightseeing, photography, and food experiences. I love road trips, traveling, biking, and driving, along with outdoor activities like camping, swimming, hiking, and trekking. My interests also include sports, fitness, interior designing, listening to music, watching movies, and staying active on social media.</span>
+                <span>I am passionate about cricket and actively follow and engage in politics and social work. I enjoy exploring fashion and styling, nature sightseeing, photography, and food experiences. I love road trips, traveling, biking, and driving, along with outdoor activities like camping, swimming, hiking, and trekking. My interests also include sports, fitness, interior designing, listening to music, watching movies, and staying active on social media.</span>
               </div>{/* outlineBox */}
 
               <div className="btns center">
