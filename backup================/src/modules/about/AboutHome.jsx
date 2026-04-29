@@ -159,14 +159,14 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-right">
                     <p>
-                      <b>JQuery</b>
-                      <CounterNum target={70} suffix="%" />
+                      <b>React JS & VITE</b>
+                      <CounterNum target={65} suffix="%" />
                     </p>
                     <i></i>
                   </article>
-                  <article data-aos="fade-left">
+                  <article data-aos="fade-right">
                     <p>
-                      <b>AMP {/* (Accelerate Mobile Pages) */}</b>
+                      <b>JQuery</b>
                       <CounterNum target={70} suffix="%" />
                     </p>
                     <i></i>
@@ -180,22 +180,8 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-left">
                     <p>
-                      <b>Adobe Photoshop</b>
-                      <CounterNum target={75} suffix="%" />
-                    </p>
-                    <i></i>
-                  </article>
-                  <article data-aos="fade-right">
-                    <p>
-                      <b>React JS & VITE</b>
-                      <CounterNum target={65} suffix="%" />
-                    </p>
-                    <i></i>
-                  </article>
-                  <article data-aos="fade-left">
-                    <p>
-                      <b>Macromedia Fireworks</b>
-                      <CounterNum target={60} suffix="%" />
+                      <b>AMP {/* (Accelerate Mobile Pages) */}</b>
+                      <CounterNum target={70} suffix="%" />
                     </p>
                     <i></i>
                   </article>
@@ -203,6 +189,20 @@ export default function AboutHome() {
                     <p>
                       <b>Unbounce</b>
                       <CounterNum target={65} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Adobe Photoshop</b>
+                      <CounterNum target={75} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Macromedia Fireworks</b>
+                      <CounterNum target={60} suffix="%" />
                     </p>
                     <i></i>
                   </article>
