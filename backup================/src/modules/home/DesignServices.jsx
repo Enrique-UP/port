@@ -152,31 +152,31 @@ const DsData = [
     text: "I offer professionally designed images and visual assets tailored for digital marketing, helping brands create engaging content and improve their online visibility."
   },
   {
-    year: 26,
+    year: 2015,
     hd1: "Data",
     hd2: "Updates",
     text: "I manage and update website data, ensuring all content is current, well-structured, and aligned with business requirements."
   },
   {
-    year: 27,
+    year: 2022,
     hd1: "Video",
     hd2: "Editing",
     text: "I provide professional video editing services, enhancing raw footage into polished and engaging content for your brand."
   },
   {
-    year: 28,
+    year: 2013,
     hd1: "Coding",
     hd2: "Services",
     text: "I offer reliable coding services to develop high-performance, scalable, and secure websites tailored to your business needs."
   },
   {
-    year: 29,
+    year: 2017,
     hd1: "CRM (Customer Relationship Management)",
     hd2: "UI Design",
     text: "I design intuitive and user-friendly CRM interfaces that simplify complex workflows. My focus is on clean layouts, easy navigation, and improved user productivity, ensuring teams can manage customer data efficiently."
   },
   {
-    year: 30,
+    year: 2017,
     hd1: "CRM (Customer Relationship Management)",
     hd2: "Mobile Design",
     text: "I design responsive and mobile-friendly CRM interfaces that allow users to manage customer relationships effectively on smartphones and tablets."
