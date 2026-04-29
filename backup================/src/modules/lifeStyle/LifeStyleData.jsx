@@ -24,7 +24,7 @@ const LifeStyleData = [
       { title: "My aunt at a musical show", img:"1997-3" },
       { title: "My aunt at a musical show", img:"1997-4" },
       { title: "My aunt with Ghulam Mustafa Sahab", img:"2005" },
-      { title: "Antakshari Final Runner (Sony Sab)", date: "2016", img:"mar2016" },
+      { title: "Antakshari Final Runner-Up (Sony SAB)", date: "2016", img:"mar2016" },
       { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021" },
     ],
   },
@@ -97,8 +97,8 @@ const LifeStyleData = [
     imgFdr: "19nov2019",
     date: "19 Nov 2019",
     images: [
-      { title: "Best friend's marriage (Son of BL Verma uncle central government minister)", img:"1" },
-      { title: "Best friend's marriage (Son of BL Verma uncle central government minister)", img:"2" },
+      { title: "Best Friend's Marriage (Son of B. L. Verma, Central Government Minister)", img:"1" },
+      { title: "Best Friend's Marriage (Son of B. L. Verma, Central Government Minister)", img:"2" },
       { title: "With my father", img:"3" },
     ],
   },
@@ -109,7 +109,7 @@ const LifeStyleData = [
   {
     imgFdr: "others",
     images: [
-      { title: "Met my best friend’s father, B.L. Verma (uncle), Central Government Minister", date: "23 Feb 2020", img:"23feb2020" },
+      { title: "Met My Best Friend’s Father, B. L. Verma (Uncle), Central Government Minister", date: "23 Feb 2020", img:"23feb2020" },
     ],
   },
   { imgFdr: "june2020", title:"My niece Aira Noor", date: "June 2020", items: 5 },
@@ -119,35 +119,35 @@ const LifeStyleData = [
       { title: "My niece Aira Noor", date: "28 Sep 2020", img:"28sep2020" },
     ],
   },
-  { imgFdr: "29sep2020", title:"At my cousin sister’s marriage, Budaun", date: "29 Sep 2020", items: 2 },
-  { imgFdr: "30sep2020", title:"At my cousin sister’s reception, Moradabad", date: "30 Sep 2020", items: 2 },
-  { imgFdr: "24oct2020", title:"At my cousin’s wedding", date: "24 Oct 2020", items: 11 },
+  { imgFdr: "29sep2020", title:"At My Cousin Sister’s Marriage, Budaun", date: "29 Sep 2020", items: 2 },
+  { imgFdr: "30sep2020", title:"At My Cousin Sister’s Reception, Moradabad", date: "30 Sep 2020", items: 2 },
+  { imgFdr: "24oct2020", title:"At My Cousin’s Wedding", date: "24 Oct 2020", items: 11 },
   {
     imgFdr: "others",
     images: [
       { title: "At Budaun", date: "26 Oct 2020", img:"26oct2020" },
     ],
   },
-  { imgFdr: "23nov2020", title:"Phoenix mall, Bareilly", date: "23 Nov 2020", items: 2 },
+  { imgFdr: "23nov2020", title:"Phoenix Mall, Bareilly", date: "23 Nov 2020", items: 2 },
   { imgFdr: "29dec2020", title:"Ujhani", date: "29 Dec 2020", items: 2 },
   { imgFdr: "30dec2020", title:"Ujhani & Budaun", date: "30 Dec 2020", items: 4 },
   { imgFdr: "1jan2021", title:"With the Chief Editor of APN News Channel", date: "1 Jan 2021", items: 2 },
-  { imgFdr: "21feb2021", title:"-", date: "21 Feb 2021", items: 3 },
+  { imgFdr: "21feb2021", title:"Enjoyed near dam", date: "21 Feb 2021", items: 3 },
   {
     imgFdr: "others",
     images: [
       { title: "At Noida", date: "27 Feb 2021", img:"27feb2021" },
     ],
   },
-  { imgFdr: "6mar2021", title:"-", date: "6 Mar 2021", items: 6 },
+  { imgFdr: "6mar2021", title:"Attended official Party, Noida", date: "6 Mar 2021", items: 6 },
   {
     imgFdr: "others",
     images: [
       { title: "Met Budaun BJP MP Mrs. Sanghmitra Maurya, daughter of former minister Mr. Swami Prasad Maurya", date: "11 Jul 2021", img:"11jul2021" },
     ],
   },
-  { imgFdr: "25sep2021", title:"Old Ford, Delhi", date: "25 Sep 2021", items: 47 },
-  { imgFdr: "27nov2021", title:"BJP, Campaigning", date: "27 Nov 2021", items: 2 },
+  { imgFdr: "25sep2021", title:"Old Fort, Delhi", date: "25 Sep 2021", items: 47 },
+  { imgFdr: "27nov2021", title:"Election Campaigning", date: "27 Nov 2021", items: 2 },
   { imgFdr: "27mar2022", title:"Ghaziabad", date: "27 Mar 2022", items: 3 },
   {
     imgFdr: "others",
@@ -168,7 +168,7 @@ const LifeStyleData = [
 
   { imgFdr: "18apr2025", title:"Lulu Mall, Lucknow", date: "18 Apr 2025", items: 17 },
   { imgFdr: "22jun2025", title:"Ambience Mall, Gurgaon", date: "22 Jun 2025", items: 10 },
-  { imgFdr: "16oct2025", title:"Diwali Celebration in the office & won 1st price in male fancy dress compitition", date: "16 Oct 2025", items: 3 },
+  { imgFdr: "16oct2025", title:"Diwali Celebration in the Office & Won 1st Prize in Male Fancy Dress Competition", date: "16 Oct 2025", items: 3 },
   { imgFdr: "21dec2025", title:"Cyber Park & Ambience Mall, Gurgaon", date: "21 Dec 2025", items: 16 },
   { imgFdr: "30aug2025", title:"Mall, Lucknow", date: "30 Aug 2025", items: 7 },
   { imgFdr: "20sep2025", title:"Park, Gurgaon", date: "20 Sep 2025", items: 7 },
