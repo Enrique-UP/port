@@ -39,7 +39,7 @@
   .arrowsArea{width: auto;position: absolute;bottom: 0;left: 0;right: 0;display: flex;
     .aaw{max-width: 1368px;width: 100%;margin-inline: auto;display: flex;position: relative;}
     .arrows{width: auto;display: flex;position: absolute;right:0;z-index: 9;bottom:0;column-gap: 4px;}
-    .icon{cursor: pointer;width: 36px;height: 36px;background: #fff;color:var(--f1);@extend %center;flex-shrink: 0;@extend %userSelect;@extend %trans;
+    .icon{cursor: pointer;width: 36px;height: 36px;background: var(--cb1);color:#fff;@extend %center;flex-shrink: 0;@extend %userSelect;@extend %trans;
       &:hover{background: var(--cb1);color:#fff;}
     }
   }

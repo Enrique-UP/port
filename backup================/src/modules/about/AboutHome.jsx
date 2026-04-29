@@ -144,7 +144,7 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-left">
                     <p>
-                      <b>Javascript</b>
+                      <b>JavaScript</b>
                       <CounterNum target={65} suffix="%" />
                     </p>
                     <i></i>
