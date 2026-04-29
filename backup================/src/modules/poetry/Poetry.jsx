@@ -17,14 +17,15 @@ const PoetryTag = ({ word, poet }) => {
             const isOr = text.toLowerCase() === "or";
 
             return (
-              <li key={index}>
-                {isOr ? <span>Or</span> : text}
-                {!isOr && index < wordsArray.length - 1 && ","}
-              </li>
+              // <li key={index}>
+              //   {isOr ? <span>Or</span> : text}
+              //   {!isOr && index < wordsArray.length - 1 && ","}
+              // </li>
+              <li key={index} data-line={isOr ? "Or" : text}></li>
             );
           })}
         </ul>
-        <b>{poet}</b>
+        <b data-poetName={poet}></b>
       </figcaption>
     </article>
   );
@@ -72,14 +73,14 @@ export default function Poetry() {
 
       <Banner
         pageName="Poetry"
-        pageText="Lorem ipsum dolor sit ameet."
+        pageText="Expressions of the heart, captured in timeless verses, echoing emotions, memories, and dreams beyond words."
       />
 
       <section className="section" ref={sectionRef}>
         <div className="container">
           <hgroup>
-            <h2 data-aos="fade-down">Poetry</h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit ameet</p>
+            <h2 data-aos="fade-down">The <span>Art</span> of <span>Words</span></h2>
+            <p data-aos="fade-up">Every word tells a story, every line holds a feeling</p>
           </hgroup>
 
           <div className="sideMid">
@@ -87,10 +88,10 @@ export default function Poetry() {
 
             <div className="area-2">
               
-              <div className="searchBar">
+              {/* <div className="searchBar">
                 <input type="text" placeholder="Please search here..." value={search} onChange={(e) => setSearch(e.target.value)} />
                 <i className="icon">&#xa010;</i>
-              </div>
+              </div> */}
 
               <div className="poetry">
                 {filteredData.length > 0 ? (

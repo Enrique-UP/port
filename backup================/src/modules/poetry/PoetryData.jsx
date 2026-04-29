@@ -529,7 +529,7 @@ const PoetryData = [
         Mai apni umar se chota dikhai deta raha.
       `,
       `
-        Mere guzugon ko isski khabar nahi shayad,
+        Mere gaon ko uski khabar nahi shayad,
         Panapsaka nahi jo paid bargadon mai raha,
         Ishq mai rai buzurgon se nahi lijaati,
         Aag bujhte hue choolho se nahi li jaati.
@@ -1910,7 +1910,13 @@ const PoetryData = [
         Mere chirag se jiska chirag jalta hai,
         Jo tumne aag lagai thi tum toh bhool gai,
         Hamare dil se abhi tak dhua nikalta hai.
-      `        
+      `,
+      `
+        Bichadna usski khuwaish thi na meri aazoo lekin,
+        Zara si zidd ne ye batwara karaya hai,
+        Or Koi sarhad nahi hoti ye galiyara nahi hota,
+        Agar mohobbat beech mai hoti toh batvara nahi hota.
+      `,
     ]
   }
 ];
