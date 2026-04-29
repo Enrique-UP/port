@@ -11,12 +11,7 @@ const LifeStyleData = [
   },
 
 
-  {
-    imgFdr: "shillong",
-    images: [
-      { title: "My Father", img:"1" },
-    ],
-  },
+  { imgFdr: "shillong", title:"Ujhani", items: 5 },
 
 
   {
@@ -96,9 +91,21 @@ const LifeStyleData = [
       { title: "At Bareilly", date: "14 Sep 2019", img:"14sep2019" },
     ],
   },
-  { imgFdr: "21nov2019", title:"Best friend's marriage (Son of BL Verma uncle central government minister)", date: "21 Nov 2019", items: 3 },
+  { imgFdr: "8oct2019", title:"My Nephew & Niece", date: "8 Oct 2019", items: 9 },
+  { imgFdr: "22nov2019", title:"My Niece", date: "22 Nov 2019", items: 4 },
+  {
+    imgFdr: "19nov2019",
+    date: "19 Nov 2019",
+    images: [
+      { title: "Best friend's marriage (Son of BL Verma uncle central government minister)", img:"1" },
+      { title: "Best friend's marriage (Son of BL Verma uncle central government minister)", img:"2" },
+      { title: "With my father", img:"3" },
+    ],
+  },
+
   { imgFdr: "30nov2019", title:"Official Cricket Tournament", date: "30 Nov 2019", items: 2 },
   { imgFdr: "31jan2020", title:"My niece Aira Noor", date: "31 Jan 2020", items: 3 },
+  { imgFdr: "2feb2020", title:"My niece Aira Noor", date: "2 Feb 2020", items: 3 },
   {
     imgFdr: "others",
     images: [
@@ -141,14 +148,34 @@ const LifeStyleData = [
   },
   { imgFdr: "25sep2021", title:"Old Ford, Delhi", date: "25 Sep 2021", items: 47 },
   { imgFdr: "27nov2021", title:"BJP, Campaigning", date: "27 Nov 2021", items: 2 },
-  { imgFdr: "4june2022", title:"Aravali Resort", date: "4 Jun 2022", items: 8 },
-  { imgFdr: "27mar2022", title:"Ghaziabad", date: "27 Mar 2022", items: 2 },
+  { imgFdr: "27mar2022", title:"Ghaziabad", date: "27 Mar 2022", items: 3 },
   {
     imgFdr: "others",
     images: [
       { title: "Met Budaun BJP MLC Mr. Vagish Pathak", date: "1 May 2022", img:"1may2022" },
     ],
   },
+  { imgFdr: "4june2022", title:"Aravali Resort", date: "4 Jun 2022", items: 8 },
+  { imgFdr: "7jan2023", title:"Manali", date: "7 Jan 2023", items: 31 },
+  { imgFdr: "8jan2023", title:"Manali", date: "8 Jan 2023", items: 22 },
+  { imgFdr: "9jan2023", title:"Manali", date: "9 Jan 2023", items: 25 },
+  { imgFdr: "22jan2023", title:"Humayun Tomb, Delhi", date: "22 Jan 2023", items: 28 },
+  { imgFdr: "19_20dec2023", title:"Aksa Beach, Mumbai", date: "19 & 20 Dec 2023", items: 18 },
+  { imgFdr: "21dec2023", title:"Attended marriage, Mumbai", date: "21 Dec 2023", items: 18 },
+  { imgFdr: "22dec2023", title:"Zoo & Haji Ali Dargah, Mumbai", date: "22 Dec 2023", items: 11 },
+  { imgFdr: "23dec2023", title:"Gateway of India, Mumbai", date: "23 Dec 2023", items: 5 },
+
+
+  { imgFdr: "18apr2025", title:"Lulu Mall, Lucknow", date: "18 Apr 2025", items: 17 },
+  { imgFdr: "22jun2025", title:"Ambience Mall, Gurgaon", date: "22 Jun 2025", items: 10 },
+  { imgFdr: "16oct2025", title:"Diwali Celebration in the office & won 1st price in male fancy dress compitition", date: "16 Oct 2025", items: 3 },
+  {
+    imgFdr: "others",
+    images: [
+      { title: "Official Lunch", date: "25 Dec 2025", img:"25dec2025" },
+    ],
+  },
+  { imgFdr: "26jan2026", title:"Ambedkar Park, Lucknow", date: "26 Jan 2026", items: 26 },
 
   // {
   //   imgFdr: "others",
