@@ -42,16 +42,16 @@ export default function Home() {
       <Experience />
       <Education />
       <DesignServices />
-      <Ads4 />
+      <Ads1 />
       <LifestyleHome />
       <Childhood />
       <Team />
       <Ads2 />
       <Wcu /> 
       <BrandingProjects />
-      <Ads1 />
-      <ReviewsHome />
       <Ads3 />
+      <ReviewsHome />
+      <Ads4 />
     </>
   );
 }
