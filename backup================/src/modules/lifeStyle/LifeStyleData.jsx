@@ -169,22 +169,22 @@ const LifeStyleData = [
   { imgFdr: "18apr2025", title:"Lulu Mall, Lucknow", date: "18 Apr 2025", items: 17 },
   { imgFdr: "22jun2025", title:"Ambience Mall, Gurgaon", date: "22 Jun 2025", items: 10 },
   { imgFdr: "16oct2025", title:"Diwali Celebration in the office & won 1st price in male fancy dress compitition", date: "16 Oct 2025", items: 3 },
+  { imgFdr: "21dec2025", title:"Cyber Park & Ambience Mall, Gurgaon", date: "21 Dec 2025", items: 16 },
+  { imgFdr: "30aug2025", title:"Mall, Lucknow", date: "30 Aug 2025", items: 7 },
+  { imgFdr: "20sep2025", title:"Park, Gurgaon", date: "20 Sep 2025", items: 7 },
+  { imgFdr: "30nov2025", title:"Bada Imambara, Lucknow", date: "30 Nov 2025", items: 27 },
+  { imgFdr: "20dec2025-1", title:"Deer Park, Delhi", date: "20 Dec 2025", items: 25 },
+  { imgFdr: "20dec2025-2", title:"Delhi, Delhi", date: "20 Dec 2025", items: 32 },
   {
     imgFdr: "others",
     images: [
       { title: "Official Lunch", date: "25 Dec 2025", img:"25dec2025" },
     ],
   },
+  { imgFdr: "25dec2026-1", title:"Bada Imambara, Lucknow", date: "25 Jan 2026", items: 10 },
+  { imgFdr: "25dec2026-2", title:"Clock Tower & Rumi Darwaza, Lucknow", date: "25 Jan 2026", items: 18 },
   { imgFdr: "26jan2026", title:"Ambedkar Park, Lucknow", date: "26 Jan 2026", items: 26 },
-
-  // {
-  //   imgFdr: "others",
-  //   images: [
-  //     { title: "Delhi", date: "1.1.2001", img:"imageipsum" },
-  //     { title: "Ujhani", date: "1958", img:"imageName0"},
-  //     { title: "Budaun", date: "0000", img:"imagesit"},
-  //   ],
-  // },
+  { imgFdr: "4apr2026", title:"Ardee Mall, Gurgaon", date: "4 Apr 2026", items: 17 },
   
 ];
 export default LifeStyleData;
