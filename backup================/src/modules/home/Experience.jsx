@@ -101,7 +101,7 @@ function ExpTag(props) {
 
 export default function Experience() {
   return (
-    <section className="section experience back" id="exp">
+    <section className="section experience back b1" id="exp">
       <hgroup>
         <h2 data-aos="fade-down">Work <span>Experience</span></h2>
         <p data-aos="fade-up">A summary of my professional journey</p>

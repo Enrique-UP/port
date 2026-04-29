@@ -12,7 +12,7 @@ import img9 from "../../assets/images/lifeStyleHome/9.jpg";
 export default function LifestyleHome() {
   return (
     <>
-      <section className="section lifeStyle colors">
+      <section className="section lifeStyle colors b1">
         <div className="container">
           <div className="row">
             <div className="col-12">

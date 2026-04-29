@@ -28,29 +28,22 @@ export default function Home() {
         <title>Home</title>
         <meta name="description" content="This is home page" />
       </Helmet>
-      {/* <Banner
-        pageName="Welcome to our website" 
-        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
-        isHome={true}
-        otherImg={HomeBanner}
-        showBreadcrumbs={false}
-      /> */}
       <Slider />
       <Welcome />
       <AboutHome />
+      <LifestyleHome />      
       <TopProjects />
       <Experience />
       <Education />
       <DesignServices />
+      <Ads3 />
+      <BrandingProjects />
+      <Wcu /> 
       <Ads1 />
-      <LifestyleHome />
-      <Childhood />
       <Team />
       <Ads2 />
-      <Wcu /> 
-      <BrandingProjects />
-      <Ads3 />
       <ReviewsHome />
+      <Childhood />
       <Ads4 />
     </>
   );

@@ -67,7 +67,7 @@ function EduTag(props){
 export default function Education() {
   return (
     <>
-      <section className="section education colors b1" id="edu">
+      <section className="section education colors" id="edu">
             <div className="container">
                 <hgroup>
                   <h2 data-aos="fade-down">My <span>Education</span></h2>

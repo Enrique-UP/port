@@ -28,7 +28,7 @@
 
 .reviewsSec{
     .outlineBox.dk{background: var(--cb10);}
-    .back{width: 100%;display: flex;background: #fff;padding: 12px;}
+    .back{width: 100%;display: flex;background: var(--b1);padding: 12px;}
     .reviewArea{width: 100%;@extend %fc;gap:16px;background: var(--g3);padding: 32px;height: 100%;
         p{color:var(--f7);position: relative;padding-right: 56px;
             &::before{font-family: fontello;content:"\a042";position: absolute;top:-20px;right:0;font-size: 48px;line-height: 1;color: var(--cb10);}

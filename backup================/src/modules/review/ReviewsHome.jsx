@@ -36,7 +36,7 @@ export default function ReviewsHome() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="section reviewsSec b1">
+    <section className="section reviewsSec">
       <div className="container">
         <div className="row">
 
