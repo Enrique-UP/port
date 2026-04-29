@@ -33,27 +33,11 @@ footer .text > span{
 
 
 
-.about .lists > li:nth-child(1)::after{content:"Attestation Services of India";}
-.about .lists > li:nth-child(2)::after{content:"Attestation Services";}
-.about .lists > li:nth-child(3)::after{content:"High Commission of India";}
-.about .lists > li:nth-child(4)::after{content:"High Commission of Malaysia";}
-.about .lists > li:nth-child(5)::after{content:"Embassy of Italy";}
-.about .lists > li:nth-child(6)::after{content:"Embassy of Spain";}
-.about .lists > li:nth-child(7)::after{content:"Embassy of India";}
-.about .lists > li:nth-child(8)::after{content:"Embassy of Hungary";}
-.about .lists > li:nth-child(9)::after{content:"Embassy of U.A.E";}
-.about .lists > li:nth-child(10)::after{content:"Embassy of France";}
-.about .lists > li:nth-child(11)::after{content:"Embassy of Brazil";}
-.about .lists > li:nth-child(12)::after{content:"Embassy of India, Poland";}
-.about .lists > li:nth-child(13)::after{content:"Embassy of The State of Kuwait";}
-.about .lists > li:nth-child(14)::after{content:"Consulate General of India";}
-.about .lists > li:nth-child(15)::after{content:"Consulate General of Spain";}
-.about .lists > li:nth-child(16)::after{content:"Spanish Consulate General of Spain";}
-.about .lists > li:nth-child(17)::after{content:"Consulate of Spain";}
-.about .lists > li:nth-child(18)::after{content:"Spanish Honorary Consulate";}
-.about .lists > li:nth-child(19)::after{content:"(Mobile City (Moscow)) Mobile Biometric";}
-.about .lists > li:nth-child(20)::after{content:"VAC (Visa Application Center) Presence";}
-.about .lists > li:nth-child(21)::after{content:"Embassy of many countries of world";}
-.about .lists > li:nth-child(22)::after{content:"Approved by The Ministry of External Affairs Government of India";}
-.about .lists > li:nth-child(23)::after{content: "Travomint.com is ranked among the top 15 flight ticket booking platforms in India.";}
-.about .lists > li:nth-child(24)::after{content:"Careerera was awarded by The Times of India for its contribution to online education.";}
+.about .lists.projects > li:nth-child(1)::after {content: "Worked on a website approved by the Ministry of External Affairs, New Delhi, and recognized by the embassies of Qatar and the UAE in India.";}
+.about .lists.projects > li:nth-child(2)::after {content: "Contributed from the early development stage of Travomint.com, which later ranked among the top 15 flight ticket booking platforms in India.";}
+.about .lists.projects > li:nth-child(3)::after {content: "Contributed to the redesign of Careerera, later recognized by The Times of India for its contribution to the online education sector.";}
+.about .lists.projects > li:nth-child(4)::after {content: "Contributed to attestation service platforms for India and other countries.";}
+.about .lists.projects > li:nth-child(5)::after {content: "Contributed to High Commission websites for India and Malaysia.";}
+.about .lists.projects > li:nth-child(6)::after {content: "Contributed to embassy websites across multiple countries, including India, Italy, Spain, Hungary, the UAE, France, Brazil, India (in Poland), and Kuwait.";}
+.about .lists.projects > li:nth-child(7)::after {content: "Contributed to Consulate General websites for India and Spain, including the Spanish Consulate General, Consulate of Spain, and Spanish Honorary Consulate platforms.";}
+.about .lists.projects > li:nth-child(8)::after {content: "Contributed to Mobile Biometric services for Mobile City (Moscow) and Visa Application Center (VAC) presence.";}

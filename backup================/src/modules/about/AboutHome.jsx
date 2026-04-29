@@ -11,11 +11,21 @@ import { Link } from "react-router-dom";
 import CounterNum from "./CounterNum";
 
 const words1 = [
-  { text: "(UI & UX Developer)", className: "one" },
-  { text: "(UI & UX Developer)", className: "two" }
-  // { text: "(USA)", className: "one" },
-  // { text: "(India)", className: "two" }
+  // { text: "(UI & UX Developer)", className: "one" },
+  // { text: "(UI & UX Developer)", className: "two" }
+  { text: "(Loremipsum)", className: "one" },
+  { text: "(Dolorsit)", className: "two" }
 ];
+
+function getExperienceYears(startYear = 2015, startMonth = 5) {
+  const now = new Date();
+  let years = now.getFullYear() - startYear + 1;
+  // adjust if current month is before joining month
+  if (now.getMonth() + 1 < startMonth) {
+    years--;
+  }
+  return years;
+}
 
 export default function AboutHome() {
   const [isMobile, setIsMobile] = useState(false);
@@ -41,8 +51,9 @@ export default function AboutHome() {
   const TextBlock = (
     <div className="cnt">
       <p className="hd">International Projects & Government Collaborations</p>
+      <p className="shd">Contributed as a UI/UX Developer to global digital platforms.</p>
       <ul className="lists projects">
-        {Array.from({ length: 24 }).map((_, index) => (
+        {Array.from({ length: 8 }).map((_, index) => (
           <li key={index}></li>
         ))}
       </ul>
@@ -77,14 +88,16 @@ export default function AboutHome() {
               <p className="int">Hello!</p>
               <p className="int">I am Loremm Ipum,</p>
               <p className="post"><TypeWriter words={words1} /></p>
-              <p>I am Demo, a Software Engineer specializing in UI & UX development. I am passionate about designing and developing user-friendly and visually appealing digital experiences. With over 11 years of professional experience, I focus on creating innovative and efficient solutions.</p>
-              <p>Currently, I am based in Delhi, India, and working with a leading IT software company, where I contribute to the development of high-quality digital platforms.</p>
+              <p>Specializing in designing and developing user-friendly and visually appealing digital experiences.</p>
+              <p>My expertise includes UI/UX design, website redesign, responsive design, software interfaces, landing pages, emailers, CRM systems, and branding materials, along with other digital design solutions.</p>
+              <p>Currently based in Delhi, India, I focus on delivering high-quality digital experiences that align with user needs and business goals.</p>
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Work Experience</p>
-              <p>I have over 11 years of commercial experience in UI & UX development, working with clients globally. I have successfully delivered more than 500 projects using modern technologies and best design practices.</p>
-              <p>My expertise includes website design and redesign, software interfaces, e-commerce platforms, landing pages, responsive design, emailers, branding materials, and graphic design. I possess strong problem-solving abilities and planning skills, allowing me to handle complex projects efficiently, both independently and as part of a team.</p>
-              <p>I collaborate closely with clients and business teams to understand requirements and deliver solutions that align with their goals and user expectations.</p>
+              <p>With over {getExperienceYears()} years of professional experience, I specialize in creating innovative and efficient digital solutions that deliver strong user engagement and business value.</p>
+              <p>I have delivered more than 500 projects globally, working with clients across various industries including travel, e-commerce, education, visa and passport services, consular platforms, attestation services, IT solutions, online payments, and enterprise systems.</p>
+              <p>I am currently working with a leading IT software company where I contribute to the development of high-quality digital platforms and scalable solutions.</p>
+              <p>I collaborate closely with clients and business teams to understand requirements and transform them into effective and user-centric digital products.</p>
             </div>{/* cnt */}
             {/* ✅ Desktop only */}
             {/* {!isMobile && TextBlock} */}
@@ -98,14 +111,9 @@ export default function AboutHome() {
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Work Debut</p>
-              <p>I began my professional journey as a UI & UX Developer at <i className="blsisl"></i>. At the organization, I have worked on designing and developing websites and software solutions for multiple countries and in various languages, including Azeri, Polish, French, Spanish, and Chinese.</p>
+              <p>I began my professional journey as a UI & UX Developer at a multinational company. At the organization, I have worked on designing and developing websites and software solutions for multiple countries and in various languages, including Azeri, Polish, French, Spanish, and Chinese.</p>
               <p>My work involves creating platforms for services such as visa processing, passport services, identity management, verification systems, and other global digital solutions.</p>
             </div>{/* cnt */}
-            {/* <div className="cnt">
-              <p className="hd">Freelancing Work</p>
-              <p>In addition to my professional role, I actively work on freelance projects. I have designed and developed a wide range of websites across industries such as travel, ticket booking, hospitality, education, technical support, media, and e-commerce for clients worldwide.</p>
-            </div> */}
-            {/* cnt */}
             <div className="cnt">
               <p className="hd">My Mission</p>
               <p className="shd">My mission is to deliver innovative and high-quality web design and development solutions that create real value for clients.</p>
