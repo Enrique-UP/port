@@ -129,43 +129,73 @@ export default function AboutHome() {
                 <p className="shd">Technologies and tools I use to create responsive and interactive web applications.</p>
                 <div className="skillBar colors one">
                   <article data-aos="fade-left">
-                    <b>HTML</b>
-                    <CounterNum target={70} suffix="%" />
+                    <p>
+                      <b>HTML</b>
+                      <CounterNum target={70} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
-                    <b>CSS</b>
-                    <CounterNum target={75} suffix="%" />
+                    <p>
+                      <b>CSS</b>
+                      <CounterNum target={75} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
-                    <b>JAVASCRIP</b>
-                    <CounterNum target={65} suffix="%" />
+                    <p>
+                      <b>Javascript</b>
+                      <CounterNum target={65} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
-                    <b>JQUERY</b>
-                    <CounterNum target={70} suffix="%" />
+                    <p>
+                      <b>JQuery</b>
+                      <CounterNum target={70} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
-                    <b>AMP {/* (Accelerate Mobile Pages) */}</b>
-                    <CounterNum target={70} suffix="%" />
+                    <p>
+                      <b>AMP {/* (Accelerate Mobile Pages) */}</b>
+                      <CounterNum target={70} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
-                    <b>Responsive</b>
-                    <CounterNum target={90} suffix="%" />
+                    <p>
+                      <b>Responsive</b>
+                      <CounterNum target={90} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-left">
-                    <b>Adobe Photoshop</b>
-                    <CounterNum target={75} suffix="%" />
+                    <p>
+                      <b>Adobe Photoshop</b>
+                      <CounterNum target={75} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                   <article data-aos="fade-right">
-                    <b>React JS & VITE</b>
-                    <CounterNum target={65} suffix="%" />
+                    <p>
+                      <b>React JS & VITE</b>
+                      <CounterNum target={65} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-left">
+                    <p>
+                      <b>Macromedia Fireworks</b>
+                      <CounterNum target={60} suffix="%" />
+                    </p>
+                    <i></i>
+                  </article>
+                  <article data-aos="fade-right">
+                    <p>
+                      <b>Unbounce</b>
+                      <CounterNum target={65} suffix="%" />
+                    </p>
                     <i></i>
                   </article>
                 </div>
