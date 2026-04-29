@@ -174,7 +174,7 @@ const LifeStyleData = [
   { imgFdr: "20sep2025", title:"Park, Gurgaon", date: "20 Sep 2025", items: 7 },
   { imgFdr: "30nov2025", title:"Bada Imambara, Lucknow", date: "30 Nov 2025", items: 27 },
   { imgFdr: "20dec2025-1", title:"Deer Park, Delhi", date: "20 Dec 2025", items: 25 },
-  { imgFdr: "20dec2025-2", title:"Delhi, Delhi", date: "20 Dec 2025", items: 32 },
+  { imgFdr: "20dec2025-2", title:"Red Fort, Delhi", date: "20 Dec 2025", items: 32 },
   {
     imgFdr: "others",
     images: [
