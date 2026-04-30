@@ -26,9 +26,16 @@ export default function Header() {
   }, [location]);
 
   useEffect(() => {
-    const height = headerRef.current?.offsetHeight;
-    document.documentElement.style.setProperty("--headerHeight", `${height}px`);
-  }, [menuOpen, location]);  
+    const updateHeight = () => {
+      const height = headerRef.current?.offsetHeight || 0;
+      document.documentElement.style.setProperty("--headerHeight", `${height}px`);
+    };
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, [menuOpen, location]); 
 
   return (
     <>
