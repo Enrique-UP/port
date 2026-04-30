@@ -113,7 +113,7 @@ function TpTag(props) {
                             )
                         }
                     >View Details</span>
-                    <span className="type">{props.type}</span>
+                    <span className="type" data-type={props.type}></span>
                     <div className="details">
                         <div className="headClose">
                             <b>About the Website</b>
@@ -135,7 +135,7 @@ function TpTag(props) {
                             props.setLightboxOpen(true);
                         }}
                     >&#xa095;</i>
-                    <a href={`https://${props.web}`} target="_blank" rel="noreferrer">{props.web}</a>
+                    <a href={`https://${props.web}`} target="_blank" rel="noreferrer" data-web={props.web}></a>
                     <i
                         className="icon"
                         onClick={() => {
