@@ -55,6 +55,7 @@ export default function ReviewsHome() {
             <div className="back">
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
+                  spaceBetween={12}
                   autoHeight={false}
 
                   breakpoints={{
