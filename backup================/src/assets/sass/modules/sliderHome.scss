@@ -8,12 +8,23 @@
     .head{position: absolute;top:120px;left:0;right: 0;z-index: 999;@extend %fc;
       .text{width:100%;@extend %fc;row-gap: 16px;}
       .hd{font-weight: 800;line-height: 1;font-size: 106px;text-transform: uppercase;}
-      .shd{font-weight: bold;font-size: 64px;line-height: 1;}
-      .desc{font-size: 32px;font-weight: bold;line-height: 1;margin-bottom: 16px;}
+      .shd{font-weight: bold;font-size: 64px;line-height: 1;transition-delay:0.2s;}
+      .desc{font-size: 32px;font-weight: bold;line-height: 1;margin-bottom: 16px;transition-delay:0.4s;}
       .hd, .shd, .desc{text-shadow: 0 0 2px #000;color:#fff;}
-      .btns{
+      .btns{transition-delay:0.6s;
         > a{
           &:hover, &:active, &:focus{background: var(--cb2) !important;color:var(--f1);}
+        }
+      }
+      .hd, .shd, .desc, .btns{@extend %transl;opacity: 0;margin-top: -100px;}
+    }
+  }
+  .swiper-slide-active{
+    .slideWrapper .head{
+      .hd, .shd, .desc, .btns{margin-top: 0;animation:1s linear trans;opacity: 1;
+        @keyframes trans {
+          from {opacity: 0;}
+          to   {opacity: 1;}
         }
       }
     }
