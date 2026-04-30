@@ -6,7 +6,7 @@ footer{background: var(--f3);
         img{width: 200px;}
     }
     .fw{@extend %fc;row-gap: 16px;}
-    .hd{font-size:32px;text-transform: uppercase;color:var(--cb2);border-bottom: 4px solid #fff;font-weight:800;}
+    .hd{font-size:36px;text-transform: uppercase;color:var(--cb2);border-bottom: 4px solid #fff;font-weight:800;}
     ul{margin:0;padding:0;}
     .links{display: flex;flex-wrap: wrap;gap:8px;
         > li{list-style: none;display:flex;
@@ -43,6 +43,7 @@ footer{background: var(--f3);
 
 @media (max-width:767px){
     footer .row{row-gap: 32px !important;}
+    footer .hd{font-size: 32px;}
 }
 @media (max-width:575px){
     footer .text, footer .links > li > a, footer .follow > a{border-left-width: 2px;}
