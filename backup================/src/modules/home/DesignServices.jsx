@@ -223,7 +223,7 @@ export default function DesignServices() {
             const isActive = activeIndex === index;
             const exp = getExperience(item.year);
             return (
-              <div className="col-xs-12 col-lg-6" key={index}>
+              <div className="col-xs-12 col-xl-6" key={index}>
                 <article className={`skill ${isActive ? "active" : ""}`}>                  
                   <div className="back" data-aos="fade-left">
                     <span>

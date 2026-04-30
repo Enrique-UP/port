@@ -28,18 +28,6 @@
                 .cnts{width:70%;}
             }
         }
-        @media (min-width:992px) and (max-width:1199px){
-            &{
-                .skill{flex-direction: column;
-                    .back{width:100%;align-items:flex-start;padding-right:0;
-                        span{height: auto;border-bottom-left-radius:0;border-bottom-right-radius:0;
-                            &::before{border-left: 10px solid transparent;border-right: 10px solid transparent;border-top-color: var(--u);border-bottom:none;top:auto;bottom:-14px;left:0;right:0;margin:auto;}
-                        }
-                    }
-                    .cnts{width:100%;border-top-left-radius:0;border-top-right-radius:0;border-left:none;border-right:none;border-bottom:4px solid var(--u);height: 100%;}
-                }
-            } 
-        }
         @media (min-width:576px) and (max-width:767px){
             &{
                 .skill{

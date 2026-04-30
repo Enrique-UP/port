@@ -20,19 +20,20 @@
 }
 @media (min-width:768px) and (max-width:1199px){
     .ads3 figure > img{height: 350px;}    
+    .ads3 figure.head b {font-size: 56px;}
+    .ads3 figure.head span {font-size: 36px;}
 }
 @media (max-width:767px){
     .ads3 .fw {flex-direction: column;}
-}
-@media (min-width:576px) and (max-width:767px){
-    .ads3 figure.text{height: 280px;}
-}
-@media (max-width:575px){
-    .ads3 figure > img{height: 300px;}
-    .ads3 figure.text{height: 250px;}
-    .ads3 figure.head b {font-size: 56px;}
+    .ads3 figure.head b {font-size: 48px;}
     .ads3 figure.head span {font-size: 32px;}
 
     .ads3 figure figcaption > p > span {font-size: 30px;}
     .ads3 figure figcaption > p > b {font-size: 32px;}
+}
+@media (min-width:576px) and (max-width:767px){
+    .ads3 figure.text, .ads3 figure > img{height: 300px;}
+}
+@media (max-width:575px){
+    .ads3 figure > img, .ads3 figure.text{height: 240px;}
 }
