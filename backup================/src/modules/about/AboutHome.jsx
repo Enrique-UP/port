@@ -209,7 +209,8 @@ export default function AboutHome() {
                 </div>
               </div>{/* cnt */}
               <div className="cnt">
-                <p className="hd">Languages Known</p>
+                <p className="hd">Language Proficiency</p>
+                <p className="shd">Communication in multiple languages with varying fluency levels.</p>
                 <div className="skillBar colors two">
                   <article data-aos="fade-left">
                     <b>English</b>

@@ -85,7 +85,7 @@ export default function Contact() {
                   </div>{/* ca */}
                 </div>{/* contactArea */}
 
-                <div className="contactArea">
+                <div className="contactArea" id="timing">
                   <p className="hd" data-aos="fade-down">Opening Timings</p>
                   <div className="ca">
                     <ul className="time">

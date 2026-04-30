@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Ads2() {
   return (
     <>
-      <section className="section ads2">
+      <section className="section ads2" id="ads2">
             <div className="container">
                 <hgroup>
                     <h2 className="hd" data-aos="fade-down">I Create Modern Web Solutions</h2>

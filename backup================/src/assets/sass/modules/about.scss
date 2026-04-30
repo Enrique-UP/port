@@ -56,7 +56,7 @@
             &::after{content:attr(data-end);}
         }
     }
-    .outlineBox.dk{background: var(--cb10);}
+    .outlineBox.dk{background: var(--cb10) !important;}
 }
 
 
@@ -81,6 +81,7 @@
 }
 @media (max-width:767px){
     .about .counterBox {grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .about .skillBar b{text-transform: capitalize;}
 }
 @media (max-width:575px){
     .about .fw .cols1{margin-bottom: 8px;}
@@ -103,7 +104,6 @@
 }
 @media (max-width:480px){
     .about .skillBar > article{gap:6px 0px;}
-    .about .skillBar b{text-transform: capitalize;}
     .about .skillBar i{height: 6px;}
 }
 @media (max-width:370px){

@@ -5,6 +5,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Global, TeamName } from "./Global";
+import ReviewData from "../review/ReviewData";
+
+import { HashLink } from "react-router-hash-link";
+import ScrollOffset from "./ScrollOffset";
 
 import calling from "../../assets/images/call.png";
 
@@ -62,24 +66,17 @@ const CommonTag = ({ img, hd, txt }) => {
   );
 };
 
-
-const TmData = [
-  { txt: "Text1 Lorem ipsum dolor sit amet consectetur adipisicing elit qui necessitatibus ex iste deserunt reprehenderit neque rerum magni velit explicabo tempora.", img: Tm1, hd: "Head1", post:"Post1", stars:"&#xa047;&#xa047;&#xa047;&#xa047;" },
-  { txt: "Text2 Lorem ipsum dolor sit amet consectetur adipisicing elit qui necessitatibus ex iste deserunt reprehenderit neque rerum magni velit explicabo tempora.", img: Tm2, hd: "Head2", post:"Post2", stars:"&#xa047;&#xa047;&#xa047;&#xa047;&#xa047;" },
-  { txt: "Text3 Lorem ipsum dolor sit amet consectetur adipisicing elit qui necessitatibus ex iste deserunt reprehenderit neque rerum magni velit explicabo tempora.", img: Tm3, hd: "Head3", post:"Post3", stars:"&#xa047;&#xa047;&#xa047;&#xa047;" },
-  { txt: "Text4 Lorem ipsum dolor sit amet consectetur adipisicing elit qui necessitatibus ex iste deserunt reprehenderit neque rerum magni velit explicabo tempora.", img: Tm4, hd: "Head4", post:"Post4", stars:"&#xa047;&#xa047;&#xa047;&#xa047;&#xa047;&#xa047;" },
-  { txt: "Text5 Lorem ipsum dolor sit amet consectetur adipisicing elit qui necessitatibus ex iste deserunt reprehenderit neque rerum magni velit explicabo tempora.", img: Tm5, hd: "Head5", post:"Post5", stars:"&#xa047;&#xa047;&#xa047;&#xa047;&#xa047;&#xa047;" },
-];
-const TmTag = ({ txt, img, hd, post, stars }) => {
+const images = [Tm1, Tm2, Tm3, Tm4, Tm5];
+const TmTag = ({ name, place, text, icons, img }) => {
   return (
     <div className="testi">
-      <p>{txt}</p>
+      <p data-review={text}></p>
       <div className="text">
         <img src={img} />
         <div className="txt">
-          <b>{hd}</b>
-          <span>{post}</span>
-          <i className="icon" dangerouslySetInnerHTML={{ __html: stars }}></i>
+          <b data-name={name}></b>
+          <span data-place={place}></span>
+          <i className="icon" dangerouslySetInnerHTML={{ __html: icons }}></i>
         </div>
       </div>
     </div>
@@ -92,7 +89,7 @@ export default function RightSidebar() {
       <div className="sideBar">
 
         {/* Contact */}
-        <aside className="contact" data-aos="fade-left">
+        <aside className="contact" data-aos="fade-left" id="question">
           <img src={calling} alt="" />
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
@@ -198,9 +195,9 @@ export default function RightSidebar() {
             autoplay={{ delay: 10000, disableOnInteraction: false }}
             loop
           >
-            {TmData.map((val, ind) => (
+            {ReviewData.slice(0, 5).map((val, ind) => (
               <SwiperSlide key={ind}>
-                <TmTag {...val} />
+                <TmTag {...val} img={images[ind]} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -215,11 +212,11 @@ export default function RightSidebar() {
         <aside className="tags" data-aos="fade-left">
           <p className="hd">Tags</p>
           <ul>
-            <li><a href="index.html#ads_one">Seasonal Deals</a></li>
-            <li><a href="index.html#ads_two">Best Web Design Solutions</a></li>
-            <li><a href="index.html#ads_four">Travel Website</a></li>
-            <li><a href="#questions">Got a Questions?</a></li>
-            <li><a href="contact-me.html#call-support">Call Support Timings</a></li>
+            <li><HashLink to="/#ads1" scroll={ScrollOffset}>Seasonal Offers Available</HashLink></li>
+            <li><HashLink to="/#ads2" scroll={ScrollOffset}>Modern Web Solutions</HashLink></li>
+            <li><HashLink to="/#ads3" scroll={ScrollOffset}>All Website Services</HashLink></li>
+            <li><HashLink to="#question" scroll={ScrollOffset}>Got a Questions?</HashLink></li>
+            <li><HashLink to="/contactus#timing" scroll={ScrollOffset}>Call Support Timings</HashLink></li>
           </ul>
         </aside>
 
