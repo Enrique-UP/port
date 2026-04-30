@@ -1,5 +1,5 @@
 .team{
-    .part{width: 100%;display: grid;grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));;grid-gap:32px;}
+    .part{width: 100%;display: grid;grid-template-columns: repeat(4, minmax(0, 1fr));grid-gap:32px;}
     .teamArea{width:100%;position: relative;overflow: hidden;@extend %fc;
         > img{width:100%;}
         span, i{position: absolute;}
@@ -24,7 +24,7 @@
     .team .teamArea .rightArrow {border-top-width: 120px;border-right-width: 140px;}
 }
 @media (min-width:768px) and (max-width:991px){
-    .team .part {grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));grid-gap: 8px;}
+    .team .part {grid-gap: 8px;}
     .team .teamArea .leftArrow {border-top-width: 190px;border-left-width: 220px;}
     .team .teamArea .rightArrow {border-top-width: 110px;border-right-width: 140px;}
     .team .teamArea .bottomArrow {border-bottom-width: 50px;}
@@ -35,10 +35,10 @@
     .team .teamArea span.name > em {font-size: 16px;}
 }
 @media (min-width:576px) and (max-width:767px){
-    .team .part {grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));}
+    .team .part {grid-template-columns: repeat(2, minmax(0, 2fr));}
 }
 @media (max-width:575px){
-    .team .part {grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));grid-gap: 8px;}
+    .team .part {grid-template-columns: repeat(2, minmax(0, 2fr));grid-gap: 8px;}
     .team .teamArea .leftArrow {border-top-width: 200px;border-left-width: 200px;}
     .team .teamArea .rightArrow {border-top-width: 100px;border-right-width: 140px;}
     .team .teamArea .bottomArrow {border-bottom-width: 50px;}
