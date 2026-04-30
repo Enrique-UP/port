@@ -73,7 +73,7 @@ export default function Footer() {
             <div className="col-md-12 col-xxl-3">
               <div className="fw" data-aos="fade-down">
                   <p className="hd">About Us</p>
-                  <p className="text">
+                  <p className="text about">
                     <span></span>
                     <span><strong>Outside of work,</strong></span>
                   </p>
@@ -98,12 +98,6 @@ export default function Footer() {
                     <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
                     <li><Link to="/poetry">Poetry</Link></li>
                     <li><Link to="/contactus">Contact Us</Link></li>
-
-
-
-
-
-
                     {/* <li><Link to="/inner">Inner Page</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li> */}
                   </ul>
@@ -139,6 +133,13 @@ export default function Footer() {
                     <a href={Global.pnt} target="_blank"><i className="icon">&#xa024;</i></a>
                     <a href={Global.skp} target="_blank"><i className="icon">&#xa026;</i></a>
                   </div>{/* follow */}
+              </div>{/* fw */}
+            </div>{/* cols */}
+            <div className="col-12">
+              <div className="fw" data-aos="fade-down">
+                  <p className="text disclaimer">
+                    <span><strong>Disclaimer,</strong></span>
+                  </p>
               </div>{/* fw */}
             </div>{/* cols */}
           </div>{/* row */}
