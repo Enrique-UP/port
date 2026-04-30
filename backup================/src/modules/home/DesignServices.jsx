@@ -39,9 +39,9 @@ const DsData = [
   },
   {
     year: 2014,
-    hd1: "UI & UX",
+    hd1: "Frontend",
     hd2: "Development",
-    text: "I focus on delivering intuitive user interfaces and engaging user experiences. By combining design principles with development expertise, I create products that are both functional and visually appealing."
+    text: "I build responsive and user-friendly interfaces using modern web technologies. Combining design understanding with development skills, I create fast, functional, and visually engaging web experiences."
   },
   {
     year: 2015,

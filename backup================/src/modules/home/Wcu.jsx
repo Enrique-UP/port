@@ -4,51 +4,51 @@ import { Global } from "../common/Global";
 const WcuData = [
   {
     hd: "Cost-Effective Solutions",
-    text: "I offer high-quality services at competitive and transparent pricing, with no hidden charges."
+    text: "Delivering high-quality frontend solutions with transparent and competitive pricing."
   },
   {
-    hd: "High-Quality Standards",
-    text: "I deliver modern, scalable, and user-focused websites and applications that align with international design and development standards."
+    hd: "High-Quality Development",
+    text: "Building modern, scalable, and user-focused web interfaces following industry best practices."
   },
   {
     hd: "Proven Experience",
-    text: "With over 10+ years of experience in UI/UX design and development, I have successfully delivered 500+ projects across diverse industries."
+    text: "Experienced in developing responsive and user-friendly web applications across multiple domains."
   },
   {
     hd: "Modern Technologies",
-    text: "I leverage the latest tools, frameworks, and design trends to build efficient and future-ready digital solutions."
+    text: "Using the latest frontend technologies and frameworks to build efficient and future-ready applications."
   },
   {
-    hd: "Time Efficiency",
-    text: "I value deadlines and ensure timely delivery without compromising quality."
+    hd: "Timely Delivery",
+    text: "Ensuring projects are delivered on time without compromising code quality and performance."
   },
   {
     hd: "Reliable Support",
-    text: "I provide continuous support and assistance to ensure smooth performance and long-term success of your project."
+    text: "Providing ongoing support to maintain performance and ensure smooth user experience."
   },
   {
-    hd: "Clean & Intuitive Design",
-    text: "I focus on creating clean, user-friendly interfaces that enhance user experience and engagement."
+    hd: "Clean User Interfaces",
+    text: "Creating clean, intuitive, and user-friendly interfaces for better usability."
   },
   {
-    hd: "Flexible Layout Systems",
-    text: "I build responsive and flexible layouts that work seamlessly across all devices and screen sizes."
+    hd: "Responsive Design",
+    text: "Developing layouts that adapt seamlessly across all devices and screen sizes."
   },
   {
-    hd: "Performance Optimized",
-    text: "I optimize every project for fast loading speed and smooth performance."
+    hd: "Performance Optimization",
+    text: "Optimizing websites for fast loading speed and smooth interactions."
   },
   {
-    hd: "SEO-Friendly Development",
-    text: "All projects are built with SEO best practices to improve visibility and search engine ranking."
+    hd: "SEO-Friendly Structure",
+    text: "Implementing SEO best practices in frontend development for better visibility."
   },
   {
-    hd: "Extensive Project Portfolio",
-    text: "I have worked on 500+ projects including e-commerce, travel, education, IT solutions, and more."
+    hd: "Diverse Project Experience",
+    text: "Worked on various projects including e-commerce, travel, education, and business websites."
   },
   {
-    hd: "Engaging User Experience",
-    text: "I incorporate modern UI/UX strategies and subtle animations to create engaging digital experiences."
+    hd: "Enhanced User Experience",
+    text: "Improving user engagement through interactive and well-structured interfaces."
   }
 ];
 

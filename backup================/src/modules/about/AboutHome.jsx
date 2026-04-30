@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 import CounterNum from "./CounterNum";
 
 const words1 = [
-  // { text: "(UI & UX Developer)", className: "one" },
-  // { text: "(UI & UX Developer)", className: "two" }
+  // { text: "(Frontend Developer)", className: "one" },
+  // { text: "(Frontend Developer)", className: "two" }
   { text: "(Loremipsum).", className: "one" },
   { text: "(Dolorsit).", className: "two" }
 ];
@@ -51,7 +51,7 @@ export default function AboutHome() {
   const TextBlock = (
     <div className="cnt">
       <p className="hd">International Projects & Government Collaborations</p>
-      <p className="shd">Contributed as a UI/UX Developer to global digital platforms.</p>
+      <p className="shd">Contributed as a Frontend Developer to global digital platforms.</p>
       <ul className="lists projects">
         {Array.from({ length: 8 }).map((_, index) => (
           <li key={index}></li>
@@ -89,7 +89,7 @@ export default function AboutHome() {
               <p className="int">I am Loremm Ipum</p>
               <p className="post"><TypeWriter words={words1} /></p>
               <p>Specializing in designing and developing user-friendly and visually appealing digital experiences.</p>
-              <p>My expertise includes UI/UX design, website redesign, responsive design, software interfaces, landing pages, emailers, CRM systems, and branding materials, along with other digital design solutions.</p>
+              <p>My expertise includes Frontend Development, UI/UX design, website redesign, responsive design, software interfaces, landing pages, emailers, CRM systems, and branding materials, along with other digital design solutions.</p>
               <p>Currently based in Delhi, India, I focus on delivering high-quality digital experiences that align with user needs and business goals.</p>
             </div>{/* cnt */}
             <div className="cnt">
@@ -107,7 +107,7 @@ export default function AboutHome() {
             {isMobile && TextBlock}
             <div className="cnt">
               <p className="hd">My Story</p>
-              <p>I have a deep passion for design and development. I believe that talent plays a crucial role in building a successful career, and I have dedicated myself to becoming a skilled UI & UX developer. Showcasing creativity through meaningful digital products is essential, and I strive to deliver work that reflects both value and innovation.</p>
+              <p>I have a deep passion for design and development. I believe that talent plays a crucial role in building a successful career, and I have dedicated myself to becoming a skilled frontend developer. Showcasing creativity through meaningful digital products is essential, and I strive to deliver work that reflects both value and innovation.</p>
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Work Debut</p>
@@ -130,7 +130,7 @@ export default function AboutHome() {
             </div>{/* cnt */}
             <div className="cnt">
               <p className="hd">My Vision</p>
-              <p>My vision is to establish myself as a leading UI & UX Developer by consistently delivering exceptional and impactful design solutions. I aspire to build a strong professional identity recognized for creativity, quality, and reliability. Through dedication and continuous learning, I aim to work on diverse global projects, contribute to meaningful digital transformations, and set high standards in user experience and interface design.</p>
+              <p>My vision is to establish myself as a leading Frontend Developer by consistently delivering exceptional and impactful design solutions. I aspire to build a strong professional identity recognized for creativity, quality, and reliability. Through dedication and continuous learning, I aim to work on diverse global projects, contribute to meaningful digital transformations, and set high standards in user experience and interface design.</p>
             </div>{/* cnt */}            
             <div className="cnt">
                 <p className="hd">Frontend Development Skills</p>

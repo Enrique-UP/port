@@ -11,10 +11,10 @@
             }
             &.post{bottom:16px;font-style: italic;}
         }
-        i{width:0;height:0;position: absolute;bottom:0;}
+        i{width:0;height:0;bottom:0;}
         .leftArrow{left:0;border-top: 300px solid transparent;border-left: 250px solid var(--cb2);}
         .rightArrow{right:0;border-top: 150px solid transparent;border-right: 180px solid var(--c2);}
-        .bottomArrow{left: -40px;border-bottom: 60px solid var(--cb10);border-left: 60px solid transparent;border-right: 700px solid transparent;}
+        .bottomArrow{left: -80px;border-bottom: 56px solid var(--cb10);border-left: 100px solid transparent;border-right: 1100px solid transparent;}
     }
 }
 
@@ -39,8 +39,8 @@
 }
 @media (max-width:575px){
     .team .part {grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));grid-gap: 8px;}
-    .team .teamArea .leftArrow {border-top-width: 200px;border-left-width: 220px;}
-    .team .teamArea .rightArrow {border-top-width: 80px;border-right-width: 160px;}
+    .team .teamArea .leftArrow {border-top-width: 200px;border-left-width: 200px;}
+    .team .teamArea .rightArrow {border-top-width: 100px;border-right-width: 140px;}
     .team .teamArea .bottomArrow {border-bottom-width: 50px;}
     .team .teamArea span {left: 8px;}
     .team .teamArea span.post {bottom: 14px;}

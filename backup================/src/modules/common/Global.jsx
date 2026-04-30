@@ -19,7 +19,7 @@ export const Global = {
 };
 
 export const TeamName = [
-  { fName: "Enrique", lName: "Brave", post: "Sr. UI & UX Developer" },
+  { fName: "Enrique", lName: "Brave", post: "Frontend Developer" },
   { fName: "Sandeep", lName: "Kumar", post: "Sr. Web Developer" },
   { fName: "Anubhav", lName: "Singh", post: "Sr. SEO" },
   { fName: "Kamal", lName: "Kant", post: "Sr. Content Developer" },
