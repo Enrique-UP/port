@@ -57,7 +57,7 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     header .bottom nav > ul li.mob{display: none;}
 }
 @media (min-width:992px) and (max-width:1199px){
-    header .bottom nav > ul > li > a{font-size: 14px;}
+    header .bottom nav > ul > li > a{font-size: 14px;padding: 14px 8px;}
 }
 @media (max-width:991px){
     header .bottom .menu, header .bottom .logo, header .bottom .close{display: flex;}

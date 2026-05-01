@@ -134,13 +134,13 @@ export default function Header() {
                     </Link>
                   </li>
 
-                  <li>
+                  <li className="mob">
                     <HashLink to="/#tp" scroll={ScrollOffset}>
                       <i className="icon">&#xa097;</i>
                       <span>My Top Projects</span>
                     </HashLink>
                   </li>
-                  <li>
+                  <li className="mob">
                     <HashLink to="/#bp" scroll={ScrollOffset}>
                       <i className="icon">&#xa058;</i>
                       <span>My Branding Projects</span>
@@ -161,7 +161,7 @@ export default function Header() {
                     </HashLink>
                   </li>
 
-                  <li className="mob">
+                  <li>
                     <HashLink to="/#ds" scroll={ScrollOffset}>
                       <i className="icon">&#xa078;</i>
                       <span>My Design Services</span>
