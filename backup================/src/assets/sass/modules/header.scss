@@ -54,6 +54,10 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     body.back:has(header.active){overflow-y: auto;
         &::before{left: 100%;}
     }
+    header .bottom nav > ul li.mob{display: none;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    header .bottom nav > ul > li > a{font-size: 14px;}
 }
 @media (max-width:991px){
     header .bottom .menu, header .bottom .logo, header .bottom .close{display: flex;}
@@ -64,7 +68,8 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     header .bottom .logo > a > img{width: 160px;}
     header .bottom nav > ul{flex-direction: column;padding-inline: 12px;overflow-y: auto;}
     header .bottom nav > ul > li:first-child {border-left: none;}
-    header .bottom nav > ul li{border-right: none;border-bottom: 1px solid var(--b1);}
+    header .bottom nav > ul li{border-right: none;}
+    header .bottom nav > ul > li:not(:last-child){border-bottom: 1px solid var(--b1);}
     header .bottom nav > ul > li > a{width: 100%;padding-inline: 0;}
     header .bottom nav > ul li a{color: var(--f2);}
     header .bottom nav > ul a:hover, header .bottom nav > ul a:active, header .bottom nav > ul a:focus, header .bottom nav > ul a.active{background: none;color:var(--f1);

@@ -93,7 +93,7 @@ export default function Slider() {
                       <p className="shd">Ipsum/Lorem</p>
                       <p className="desc">Lorem ipsum dolor sit</p>
                       <div className="btns">
-                        <Link to={img.link}>Contact Us</Link>
+                        <Link to={img.link}>Contact Me</Link>
                       </div>
                     </div>
                   </div>

@@ -38,7 +38,7 @@ export default function App() {
         <Route path="/inner" element={<InnerPage />} />
         <Route path="/lifestyle" element={<LifeStyle />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contactus" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/poetry" element={<Poetry />} />
         <Route path="/thankyou" element={<ThankYou />} />

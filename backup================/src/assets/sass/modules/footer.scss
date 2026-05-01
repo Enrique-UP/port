@@ -10,7 +10,7 @@ footer{background: var(--f3);
     ul{margin:0;padding:0;}
     .links{display: flex;flex-wrap: wrap;gap:8px;
         > li{list-style: none;display:flex;
-            > a{background: var(--f6);color:var(--f7);border-left: 4px solid var(--c2);padding:9px 16px;
+            > a{background: var(--f6);color:var(--f7);border-left: 4px solid var(--c2);padding:9px 12px;
                 &:hover, &:active, &:focus{background: var(--c3);color:#fff;}
             }
         }

@@ -9,7 +9,7 @@ export default function Ads2() {
                     <h2 className="hd" data-aos="fade-down">I create modern web solutions</h2>
                     <p data-aos="fade-up">I develop responsive websites that deliver seamless usability, strong performance, and a clean, intuitive interface.</p>
                     <div className="btns center bsn" data-aos="fade-right">
-                        <Link to="/contactus">Contact Us</Link>
+                        <Link to="/contact">Contact Me</Link>
                     </div>
                 </hgroup>
             </div>{/* container */}

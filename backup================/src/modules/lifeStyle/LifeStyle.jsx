@@ -72,12 +72,12 @@ export default function Lifestyle() {
   return (
     <>
       <Helmet>
-        <title>Gallery</title>
+        <title>Life Style</title>
       </Helmet>
 
       <Banner
         pageName="Life Style"
-        pageText="A dynamic lifestyle collection showcasing moments, experiences, and personal journey."
+        pageText="A collection of moments, experiences, and my personal journey, reflecting creativity, growth, and the stories that shape who I am."
       />
 
       <section className="section lifeStyle colors">

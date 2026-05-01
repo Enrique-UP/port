@@ -87,7 +87,6 @@ function BpTag({ site, img, web, link, date, type, notes, index, setLightboxOpen
         <li className="img">
           <img data-src={img} data-aos="fade-right" />
         </li>
-
         <li className="txt" data-aos="fade-up">
           <p className="hd" data-web={web}></p>
           <p className="about">
@@ -96,21 +95,11 @@ function BpTag({ site, img, web, link, date, type, notes, index, setLightboxOpen
           </p>
           <p className={`cnt text ${notes ? "notes" : ""}`} ref={cntRef}></p>
         </li>
-
         <li className="btnText" data-aos="fade-left">
           <article>
             <div>
               <span>{date}</span>
-
-              <b
-                onClick={() => {
-                  setCurrentIndex(index);
-                  setLightboxOpen(true);
-                }}
-              >
-                View Template
-              </b>
-
+              <b onClick={() => {setCurrentIndex(index); setLightboxOpen(true);}}>View Template</b>
               <a
                 onClick={() => {
                   if (link) {
@@ -119,9 +108,7 @@ function BpTag({ site, img, web, link, date, type, notes, index, setLightboxOpen
                     alert("This website is not available now");
                   }
                 }}
-              >
-                View Live
-              </a>
+              >View Live</a>
             </div>
           </article>
         </li>
@@ -149,11 +136,10 @@ export default function BrandingProjects() {
                 <h3 data-aos="fade-down">Branding <span>Projects</span></h3>
                 <p data-aos="fade-up">Building strong, consistent and impactful brand identities</p>
               </hgroup>
-            </div>
+            </div>{/* cols */}
             <div className="col-12">
               <div className="outlineBox dk" data-aos="fade-up"></div>{/* outlineBox */}
-            </div>
-
+            </div>{/* cols */}
             {BpData.map((item, index) => (
               <BpTag
                 key={index}
@@ -166,7 +152,6 @@ export default function BrandingProjects() {
           </div>
         </div>
       </section>
-
       <Lightbox
         slides={slides}
         open={lightboxOpen}

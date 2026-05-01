@@ -49,11 +49,11 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us</title>
+        <title>Contact Me</title>
         <meta name="description" content="This is Inner page" />
       </Helmet>
       <Banner
-        pageName="Contact Us"
+        pageName="Contact Me"
         pageText="We’re here to help you with any queries, project discussions, or collaboration opportunities. Feel free to reach out anytime."
       />
       <section className="section">

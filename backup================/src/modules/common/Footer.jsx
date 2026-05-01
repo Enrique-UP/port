@@ -72,7 +72,7 @@ export default function Footer() {
             </div>{/* cols */}
             <div className="col-md-12 col-xxl-3">
               <div className="fw" data-aos="fade-down">
-                  <p className="hd">About Us</p>
+                  <p className="hd">About Me</p>
                   <p className="text about">
                     <span></span>
                     <span><strong>Outside of work,</strong></span>
@@ -84,20 +84,20 @@ export default function Footer() {
                   <p className="hd">Main Links</p>
                   <ul className="links">
                     <li><Link to="/">Home</Link></li>
-                    <li><HashLink to="/#about" scroll={ScrollOffset}>About Us</HashLink></li>
-                    <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
-                    <li><HashLink to="/#exp" scroll={ScrollOffset}>Experience</HashLink></li>
-                    <li><HashLink to="/#edu" scroll={ScrollOffset}>Education</HashLink></li>
-                    <li><HashLink to="/#ds" scroll={ScrollOffset}>Design Services</HashLink></li>
-                    <li><HashLink to="/#team" scroll={ScrollOffset}>Team</HashLink></li>
-                    <li><HashLink to="/#wcu" scroll={ScrollOffset}>Why Choose Us</HashLink></li>
-                    <li><HashLink to="/#bp" scroll={ScrollOffset}>Branding Projects</HashLink></li>
-                    <li><Link to="/portfolio">Portfolio</Link></li>
-                    <li><Link to="/reviews">Reviews</Link></li>
-                    <li><Link to="/lifestyle">Life Style</Link></li>
-                    <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
-                    <li><Link to="/poetry">Poetry</Link></li>
-                    <li><Link to="/contactus">Contact Us</Link></li>
+                    <li><HashLink to="/#about" scroll={ScrollOffset}>About Me</HashLink></li>
+                    <li><Link to="/lifestyle">My Life Style</Link></li>
+                    <li><Link to="/portfolio">My Portfolio</Link></li>
+                    <li><HashLink to="/#tp" scroll={ScrollOffset}>My Top Projects</HashLink></li>
+                    <li><HashLink to="/#bp" scroll={ScrollOffset}>My Branding Projects</HashLink></li>
+                    <li><HashLink to="/#exp" scroll={ScrollOffset}>My Experience</HashLink></li>
+                    <li><HashLink to="/#edu" scroll={ScrollOffset}>My Education</HashLink></li>
+                    <li><HashLink to="/#ds" scroll={ScrollOffset}>My Design Services</HashLink></li>
+                    <li><HashLink to="/#team" scroll={ScrollOffset}>My Team</HashLink></li>
+                    <li><HashLink to="/#wcu" scroll={ScrollOffset}>Why Choose Me</HashLink></li>
+                    <li><Link to="/reviews">My Customer Reviews</Link></li>
+                    <li><HashLink to="/#ch" scroll={ScrollOffset}>My Childhood</HashLink></li>
+                    {/* <li><Link to="/poetry">Poetry</Link></li> */}
+                    <li><Link to="/contact">Contact Me</Link></li>
                     {/* <li><Link to="/inner">Inner Page</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li> */}
                   </ul>
@@ -117,7 +117,7 @@ export default function Footer() {
             </div>{/* cols */}
             <div className="col-sm-6 col-lg-4 col-xxl-3">
               <div className="fw" data-aos="fade-down">
-                  <p className="hd">Contact Us</p>
+                  <p className="hd">Contact Me</p>
                   <ul className="posts">
                     {
                       ContactData.map((val, ind) => {

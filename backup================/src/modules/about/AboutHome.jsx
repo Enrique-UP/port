@@ -250,7 +250,7 @@ export default function AboutHome() {
 
               <div className="btns center">
                 <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Us</a>
-                <Link to="/contactus" data-aos="fade-right">Contact Us</Link>
+                <Link to="/contact" data-aos="fade-right">Contact Me</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
           </div>{/* fw */}

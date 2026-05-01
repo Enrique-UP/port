@@ -4,12 +4,18 @@ import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 import logo from "../../assets/images/logo.png";
+import lifestyle from "../../assets/images/icons/lifeStyle.png";
 import contact from "../../assets/images/icons/contact.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const headerRef = useRef(null);
+  const menuListRef = useRef(null);
+
+  const resetScroll = () => {
+    menuListRef.current?.scrollTo({ top: 0, behavior: "auto" });
+  };
 
   useEffect(() => {
     if (menuOpen) {
@@ -17,12 +23,12 @@ export default function Header() {
     } else {
       document.body.classList.remove("back");
     }
-
     return () => document.body.classList.remove("back");
   }, [menuOpen]);
 
   useEffect(() => {
     setMenuOpen(false);
+    resetScroll();
   }, [location]);
 
   useEffect(() => {
@@ -35,7 +41,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("resize", updateHeight);
     };
-  }, [menuOpen, location]); 
+  }, [menuOpen, location]);
 
   return (
     <>
@@ -84,53 +90,121 @@ export default function Header() {
             </div>{/* fw */}
           </div>{/* container */}
         </div>{/* middle */}
-        <div className="bottom">
-          <div className="container">
-            <div className="fw">
-              <p className="menu" onClick={() => setMenuOpen(true)}>
-                <b>Menu</b>
-                <i className="icon">&#xa009;</i>
-              </p>
-              <div className="navBar">
-                <i className="icon close" onClick={() => setMenuOpen(false)}>&#xa018;</i>
-                <nav onClick={(e) => e.stopPropagation()}>
-                  <div className="logo">
-                    <Link to="/"><img src={logo} /></Link>
-                  </div>{/* logo */}
-                  <ul>
-                    <li>
-                      <NavLink to="/">
-                        <i className="icon">&#xa074;</i>
-                        <span>Home</span>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <HashLink to="/#about" scroll={ScrollOffset}>
-                        <i className="icon">&#xa043;</i>
-                        <span>About Us</span>
-                      </HashLink>
-                    </li>
-                    <li>
-                      <NavLink to="/portfolio">
-                        <i className="icon">&#xa076;</i>
-                        <span>Portfolio</span>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/lifestyle">
-                        <i className="icon">&#xa051;</i>
-                        <span>Gallery</span>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/contactus">
-                        <img src={contact} />
-                        <span>Contact Us</span>
-                      </NavLink>
-                    </li>
-                  </ul>
-                </nav>
-              </div>{/* navBar */}
+
+      <div className="bottom">
+        <div className="container">
+          <div className="fw">
+
+            <p className="menu" onClick={() => setMenuOpen(true)}>
+              <b>Menu</b>
+              <i className="icon">&#xa009;</i>
+            </p>
+
+            <div className="navBar">
+              <i className="icon close" onClick={() => {setMenuOpen(false); resetScroll();}}>&#xa018;</i>
+              <nav onClick={(e) => {e.stopPropagation();}}>
+                <div className="logo">
+                  <Link to="/"><img src={logo} /></Link>
+                </div>{/* logo */}
+                <ul ref={menuListRef} onClick={resetScroll}>
+                  <li>
+                    <NavLink to="/">
+                      <i className="icon">&#xa074;</i>
+                      <span>Home</span>
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <HashLink to="/#about" scroll={ScrollOffset}>
+                      <i className="icon">&#xa043;</i>
+                      <span>About Me</span>
+                    </HashLink>
+                  </li>
+
+                  <li>
+                    <Link to="/lifestyle">
+                      <img src={lifestyle} />
+                      <span>My Life Style</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/portfolio">
+                      <i className="icon">&#xa075;</i>
+                      <span>My Portfolio</span>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <HashLink to="/#tp" scroll={ScrollOffset}>
+                      <i className="icon">&#xa097;</i>
+                      <span>My Top Projects</span>
+                    </HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/#bp" scroll={ScrollOffset}>
+                      <i className="icon">&#xa058;</i>
+                      <span>My Branding Projects</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#exp" scroll={ScrollOffset}>
+                      <i className="icon">&#xa001;</i>
+                      <span>My Experience</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#edu" scroll={ScrollOffset}>
+                      <i className="icon">&#xa079;</i>
+                      <span>My Education</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#ds" scroll={ScrollOffset}>
+                      <i className="icon">&#xa078;</i>
+                      <span>My Design Services</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#team" scroll={ScrollOffset}>
+                      <i className="icon">&#xa045;</i>
+                      <span>My Team</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#wcu" scroll={ScrollOffset}>
+                      <i className="icon">&#xa001;</i>
+                      <span>Why Choose Me</span>
+                    </HashLink>
+                  </li>
+
+                  <li className="mob">
+                    <Link to="/reviews">
+                      <i className="icon">&#xa087;</i>
+                      <span>My Customer Reviews</span>
+                    </Link>
+                  </li>
+
+                  <li className="mob">
+                    <HashLink to="/#ch" scroll={ScrollOffset}>
+                      <i className="icon">&#xa088;</i>
+                      <span>My Childhood</span>
+                    </HashLink>
+                  </li>
+
+                  <li>
+                    <NavLink to="/contact">
+                      <img src={contact} />
+                      <span>Contact Me</span>
+                    </NavLink>
+                  </li>
+                </ul>
+              </nav>
+            </div>{/* navBar */}
             </div>{/* fw */}
           </div>{/* container */}
         </div>{/* bottom */}

@@ -216,7 +216,7 @@ export default function RightSidebar() {
             <li><HashLink to="/#ads2" scroll={ScrollOffset}>Modern Web Solutions</HashLink></li>
             <li><HashLink to="/#ads3" scroll={ScrollOffset}>All Website Services</HashLink></li>
             <li><HashLink to="#question" scroll={ScrollOffset}>Got a Questions?</HashLink></li>
-            <li><HashLink to="/contactus#timing" scroll={ScrollOffset}>Call Support Timings</HashLink></li>
+            <li><HashLink to="/contact#timing" scroll={ScrollOffset}>Call Support Timings</HashLink></li>
           </ul>
         </aside>
 

@@ -56,7 +56,7 @@ export default function LeftSidebar() {
             <p className="hd">Menu</p>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><HashLink to="/#about" scroll={ScrollOffset}>About Us</HashLink></li>
+              <li><HashLink to="/#about" scroll={ScrollOffset}>About Me</HashLink></li>
               <li><HashLink to="/#tp" scroll={ScrollOffset}>Top Projects</HashLink></li>
               <li><HashLink to="/#exp" scroll={ScrollOffset}>Experience</HashLink></li>
               <li><HashLink to="/#edu" scroll={ScrollOffset}>Education</HashLink></li>
@@ -69,7 +69,7 @@ export default function LeftSidebar() {
               <li><Link to="/lifestyle">Life Style</Link></li>
               <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
               <li><Link to="/poetry">Poetry</Link></li>
-              <li><Link to="/contactus">Contact Us</Link></li>
+              <li><Link to="/contact">Contact Me</Link></li>
             </ul>
           </aside>
           <aside className="about" data-aos="fade-right">
