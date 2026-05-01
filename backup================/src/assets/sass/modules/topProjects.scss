@@ -53,6 +53,7 @@
 @media (max-width:575px){
     .tp .tpArea .bottom a{height: 48px;}
     .tp .notes{padding-inline: 12px;}
+    .tp .tpArea .bottom .icon{font-size: 16px;}
 }
 @media (min-width:451px) and (max-width:575px){
     .tp .tpArea .top > img{height: 300px;}
@@ -66,5 +67,5 @@
 @media (max-width:450px){
  .tp .tpArea .top > img{height: 350px;}
  .tp .tpArea .bottom .icon{width: 48px;}
- .tp .details .headClose b{font-size: 20px;}
+ .tp .details .headClose b{font-size: 18px;}
 }
