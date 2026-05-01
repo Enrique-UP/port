@@ -74,10 +74,14 @@ export default function LeftSidebar() {
           </aside>
           <aside className="about" data-aos="fade-right">
             <img data-src={img1} />
-            <p><span>Loremm Ipsu</span> Lorem ipsum dolor sit ameet loremipsum dolor sit ameet loremipsum solor sit ameet lorem ipsum dolor sit ameet lorem ipsum dolor sit ameet. <Link to="/">Explore More</Link></p>
+            <p>
+              <span>My Activities</span>
+              <i>I have a strong interest in cricket and politics, and I enjoy staying active through outdoor experiences, travel, and creative pursuits. I like exploring new places, meeting new people, and gaining new experiences. It helps me stay refreshed, focused, and balanced in life.</i>
+              <Link to="/#about" scroll={ScrollOffset}>Explore More</Link>
+            </p>
           </aside>
           <aside className="interests" data-aos="fade-right">
-            <p className="hd">Interests</p>
+            <p className="hd">My Interests</p>
             <ul>
               {
                 InterestData.map((val, ind) => {

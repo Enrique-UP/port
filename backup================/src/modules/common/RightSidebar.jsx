@@ -94,7 +94,7 @@ export default function RightSidebar() {
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
             <span>Don't hesitate to call me</span>
-            <i>{Global.num}</i>
+            <i data-num={Global.num}></i>
           </a>
         </aside>
 
