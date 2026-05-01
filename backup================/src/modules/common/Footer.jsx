@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/images/logo.png";
-import { Global } from "./Global";
+import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 
 const PostData = [
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 logo">
               <div className="fw">
-                <Link to="/" data-aos="zoom-in"><img src={logo} /></Link>
+                <Link to="/" data-aos="zoom-in" onClick={ScrollTopPage}><img src={logo} /></Link>
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-md-12 col-xxl-3">
@@ -83,7 +83,7 @@ export default function Footer() {
               <div className="fw" data-aos="fade-down">
                   <p className="hd">Main Links</p>
                   <ul className="links">
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/" onClick={ScrollTopPage}>Home</Link></li>
                     <li><HashLink to="/#about" scroll={ScrollOffset}>About Me</HashLink></li>
                     <li><Link to="/lifestyle">My Life Style</Link></li>
                     <li><Link to="/portfolio">My Portfolio</Link></li>
@@ -96,8 +96,8 @@ export default function Footer() {
                     <li><HashLink to="/#wcu" scroll={ScrollOffset}>Why Choose Me</HashLink></li>
                     <li><Link to="/reviews">My Customer Reviews</Link></li>
                     <li><HashLink to="/#ch" scroll={ScrollOffset}>My Childhood</HashLink></li>
-                    {/* <li><Link to="/poetry">Poetry</Link></li> */}
                     <li><Link to="/contact">Contact Me</Link></li>
+                    {/* <li><Link to="/poetry">Poetry</Link></li> */}
                     {/* <li><Link to="/inner">Inner Page</Link></li>
                     <li><Link to="/thankyou">Thank You</Link></li> */}
                   </ul>

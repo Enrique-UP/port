@@ -25,6 +25,10 @@ export const TeamName = [
   { fName: "Kamal", lName: "Kant", post: "Sr. Content Developer" },
 ];
 
+export function ScrollTopPage() {
+  window.scrollTo(window.scrollTo(0, 0));
+}
+
 // {Global.num}
 
 

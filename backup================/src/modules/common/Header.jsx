@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Global } from "./Global";
+import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 import logo from "../../assets/images/logo.png";
 import lifestyle from "../../assets/images/icons/lifeStyle.png";
@@ -70,7 +70,7 @@ export default function Header() {
           <div className="container">
             <div className="fw">
               <div className="logo" data-aos="fade-down">
-                <Link to="/"><img src={logo} /></Link>
+                <Link to="/" onClick={ScrollTopPage}><img src={logo} /></Link>
               </div>{/* logo */}
               <div className="follow" data-aos="fade-up">
                 <b>Follow Us</b>
@@ -104,11 +104,11 @@ export default function Header() {
               <i className="icon close" onClick={() => {setMenuOpen(false); resetScroll();}}>&#xa018;</i>
               <nav onClick={(e) => {e.stopPropagation();}}>
                 <div className="logo">
-                  <Link to="/"><img src={logo} /></Link>
+                  <Link to="/" onClick={ScrollTopPage}><img src={logo} /></Link>
                 </div>{/* logo */}
                 <ul ref={menuListRef} onClick={resetScroll}>
                   <li>
-                    <NavLink to="/">
+                    <NavLink to="/" onClick={ScrollTopPage}>
                       <i className="icon">&#xa074;</i>
                       <span>Home</span>
                     </NavLink>
