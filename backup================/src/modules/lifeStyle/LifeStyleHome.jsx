@@ -17,7 +17,7 @@ export default function LifestyleHome() {
           <div className="row">
             <div className="col-12">
               <hgroup>
-                <h2 data-aos="fade-down">Life <span>Style</span></h2>
+                <h2 data-aos="fade-down">My <span>Life</span> Style</h2>
                 <p data-aos="fade-up">Capturing moments that reflect my journey and experiences</p>
               </hgroup>
             </div>{/* cols */}

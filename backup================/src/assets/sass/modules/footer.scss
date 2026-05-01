@@ -6,7 +6,7 @@ footer{background: var(--f3);
         img{width: 200px;}
     }
     .fw{@extend %fc;row-gap: 16px;}
-    .hd{font-size:36px;text-transform: uppercase;color:var(--c4);border-bottom: 4px solid #fff;font-weight:800;}
+    .hd{font-size:36px;color:var(--c4);border-bottom: 4px solid #fff;font-weight:800;}
     ul{margin:0;padding:0;}
     .links{display: flex;flex-wrap: wrap;gap:8px;
         > li{list-style: none;display:flex;

@@ -211,7 +211,7 @@ export default function DesignServices() {
     <section className="section skills back b1" id="ds">
       <div className="container">
         <hgroup>
-          <h2 data-aos="fade-down">Design <span>Services</span></h2>
+          <h2 data-aos="fade-down">My <span>Design</span> Services</h2>
           <p data-aos="fade-up">Modern design solutions for websites and brands</p>
         </hgroup>
         <div className="row colors">

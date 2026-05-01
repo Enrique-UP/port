@@ -2,7 +2,7 @@
     .fw{position: relative;@extend %fc;row-gap:24px;
         &::before{width: 0;height: 0;position: absolute;left:0;@extend %cnt;top: -216px;border-inline: 300px solid transparent;border-bottom: 150px solid var(--c2);z-index: 9;}
     }
-    .head{font-size: 100px;@extend %fc;line-height: 1.1;font-weight: 900;text-transform:uppercase;
+    .head{font-size: 100px;@extend %fc;line-height: 1.1;font-weight: 900;
         > b{font-weight: inherit;}
     }
     .text{font-size: 22px;}
