@@ -147,7 +147,7 @@ export default function Footer() {
       </footer>
       <section className="copy">
         <div className="container">
-          <div className="fw">Copyright &copy; <span>{new Date().getFullYear()}</span> with all rights reserved.</div>
+          <div className="fw">Copyright &copy; <span>{new Date().getFullYear()}</span>. All Rights Reserved.</div>{/* fw */}
         </div>{/* container */}
       </section>
       <a ref={fixNumRef} className="fixNum" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i>Call Us {Global.num}</a>

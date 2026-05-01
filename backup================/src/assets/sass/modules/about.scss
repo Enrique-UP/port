@@ -7,7 +7,7 @@
                 &:has(+ .skillBar){margin-bottom: 8px;}
             }
         }
-        p.shd{color: var(--f1);}
+        p.shd{color: var(--f1);line-height: 1.3;}
     }
     .images{width: 100%;@extend %fc;background:var(--g7);padding:8px;height:787px;
         > *{width: 100%;height: 50%;display: flex;gap:8px;}
@@ -29,7 +29,7 @@
         &.one{color:var(--c3);}
         &.two{color:var(--c5);}
     }
-    .hd{font-weight: 900;color:var(--f1);font-size: 28px;line-height:1.3;border-top: 1px solid var(--b1);padding-top: 32px;}
+    .hd{font-weight: 900;color:var(--f1);font-size: 28px;line-height:1.2;border-top: 1px solid var(--b1);padding-top: 32px;}
     .lists{width: 100%;@extend %fc;gap: 8px 32px;
         > li{list-style: none;position: relative;padding-left: 24px;
             &::before{font-family: fontello;content:"\a038";position: absolute;left:0;color: var(--f1);}
@@ -90,14 +90,14 @@
     .about .hd{padding-top: 16px;font-size: 22px;}
     .about .cnt {row-gap: 8px;}
     .about .skillBar > article{font-size: 14px;gap:8px 4px;}
-    .about .skillBar {grid-gap: 16px 12px;}
+    .about .skillBar {grid-gap: 16px 8px;}
     .about .counterBox{grid-gap:8px;}
     .about .counterBox > li{padding: 24px 8px;}
     .about .counterBox .icon{font-size: 40px;}
     .about .counterBox b{font-size: 20px;}
     .about .counterBox span{font-size: 16px;}
     .about .cnt .int, .about .cnt .post {font-size: 30px;}
-    .about .fw p.shd{margin-bottom: 4px;}
+    .about .cnt:has(.skillBar) p.shd{margin-bottom: 8px;}
     .about .lists > li {padding-left: 20px;}
 
     .about .images{height: auto;}

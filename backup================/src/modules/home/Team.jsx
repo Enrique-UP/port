@@ -34,7 +34,7 @@ export default function Team() {
                         <div className="col-12">
                             <hgroup>
                                 <h3 data-aos="fade-down">Fantastic <span>Team</span></h3>
-                                <p data-aos="fade-up">Hark worker & talented</p>
+                                <p data-aos="fade-up">Dedicated, skilled, and passionate professionals working together</p>
                             </hgroup>
                         </div>{/* cols */}
                         <div className="col-12">

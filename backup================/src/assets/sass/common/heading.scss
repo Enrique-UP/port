@@ -6,7 +6,7 @@ hgroup{width: 100%;@extend %fc;margin-bottom:32px;row-gap:12px;text-align:center
     &.center{max-width: 800px;margin-inline: auto;text-align: center;
         .btns{justify-content: center;}
     }
-    h1, h2, h3, h4, h5, h6{font-size: 88px;font-family: var(--ff2);line-height: 1.2;color:var(--f1);font-weight: 900;text-transform: uppercase;
+    h1, h2, h3, h4, h5, h6{font-size: 88px;line-height: 1.1;color:var(--f1);font-weight: 900;text-transform: uppercase;
         > span{color:var(--c3);}
     }
     p{font-size:24px;line-height: 1.4;color:var(--f2);font-weight: Bold;}
