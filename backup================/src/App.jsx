@@ -21,6 +21,7 @@ import ScrollTop from './modules/common/ScrollTop';
 import RenderTop from './modules/common/RenderTop';
 import CommonScript from './modules/common/CommonScript';
 import Reviews from './modules/review/Reviews';
+import ScrollToHashOnLoad from "./modules/common/ScrollToHashOnLoad";
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
   return (
     <HashRouter>      
       <Header />
+      <ScrollToHashOnLoad />
 
 
       <Routes>
