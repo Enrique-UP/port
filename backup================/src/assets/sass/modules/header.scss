@@ -10,10 +10,10 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     .middle{
         .fw{display: flex;justify-content: flex-end;column-gap: 12px;position: relative;}
         .logo{display: flex;position: absolute;top:0;left:0;background: var(--c3);
-            > a{display: flex;background: var(--c4);padding:64px 32px;}
+            > a{display: flex;background: var(--c4);padding:48px 32px;}
             img{width: 180px;}
         }
-        .follow{width: auto;display: flex;align-items: center;background: var(--c5);padding:16px;column-gap: 12px;color:#fff;
+        .follow{width: auto;display: flex;align-items: center;background: var(--c5);padding:8px;column-gap: 12px;color:#fff;
             > b{font-size: 20px;}
             > p{@extend %fc;gap:4px;
                 > span{display: flex;align-items: center;gap:4px;}
