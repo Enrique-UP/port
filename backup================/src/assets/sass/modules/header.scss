@@ -9,11 +9,11 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     }
     .middle{
         .fw{display: flex;justify-content: flex-end;column-gap: 12px;position: relative;}
-        .logo{display: flex;position: absolute;top:0;left:0;background: var(--cb1);
-            > a{display: flex;background: var(--cb2);padding:64px 32px;}
+        .logo{display: flex;position: absolute;top:0;left:0;background: var(--c3);
+            > a{display: flex;background: var(--c4);padding:64px 32px;}
             img{width: 180px;}
         }
-        .follow{width: auto;display: flex;align-items: center;background: var(--cb3);padding:16px;column-gap: 12px;color:#fff;
+        .follow{width: auto;display: flex;align-items: center;background: var(--c5);padding:16px;column-gap: 12px;color:#fff;
             > b{font-size: 20px;}
             > p{@extend %fc;gap:4px;
                 > span{display: flex;align-items: center;gap:4px;}
@@ -22,19 +22,19 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
         }
 
     }
-    .bottom{background: var(--cb1);
+    .bottom{background: var(--c3);
         .fw{padding-left: 260px;@extend %fc;align-items: flex-end;
             .navBar{display: flex;}
         }
         .menu, .logo, .close{display: none;}
         .logo{
-            > a{display: flex;width: 100%;background: var(--cb2);padding:16px;justify-content:center;}
+            > a{display: flex;width: 100%;background: var(--c4);padding:16px;justify-content:center;}
         }
         .menu{color:#fff;justify-content: space-between;width: 100%;padding-block: 10px;align-items:center;line-height:1;
             > b{font-size: 20px;}
             > .icon{font-size: 24px;cursor: pointer;}
         }
-        .close{position: fixed;top: -36px;right: 0;background: var(--cb1);width: 36px;height: 36px;color: #fff;align-items: center;justify-content: center;cursor: pointer;@extend %trans;}
+        .close{position: fixed;top: -36px;right: 0;background: var(--c3);width: 36px;height: 36px;color: #fff;align-items: center;justify-content: center;cursor: pointer;@extend %trans;}
         nav{display: flex;@extend %trans;
             > ul{display: flex;margin:0;padding:0;
                 li{list-style: none;display: flex;border-right: 1px solid #fff;

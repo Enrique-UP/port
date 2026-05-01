@@ -9,13 +9,13 @@
         }
         > .btnText{width:220px;flex-shrink: 0;display: flex;align-items: center;}
     }
-    .hd{background:var(--cb10);color:#fff;font-weight: bold;font-size: 22px;padding-block:12px;word-break: break-all;line-height: 1.2;
+    .hd{background:var(--c12);color:#fff;font-weight: bold;font-size: 22px;padding-block:12px;word-break: break-all;line-height: 1.2;
         &::before{content:attr(data-web);}
     }
     .about{background:var(--g1);padding-block: 10px;display: flex;justify-content: space-between;column-gap: 12px;color:var(--f1);border-bottom:1px solid var(--b1);
-        b{color:var(--cb1);}
+        b{color:var(--c3);}
         span{color:var(--f1);}
-        em{color:var(--cb1);font-style: normal;}
+        em{color:var(--c3);font-style: normal;}
     }
     .cnt{height: 100%;padding-block:16px;font-size: 14px;color:var(--f2);overflow: auto;@extend %scroll;@extend %fc;row-gap:8px;
         &::before{width: 100%;color:var(--c2);}

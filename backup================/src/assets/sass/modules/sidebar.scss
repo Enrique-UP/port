@@ -21,7 +21,7 @@
                 > li{border:1px solid var(--b1);padding: 12px 4px;line-height: 1.1;gap: 8px;background: #fff;@extend %fc;text-align: center;
                     > span{font-size: 14px;}
                 }
-                .icon{color:var(--cb1);
+                .icon{color:var(--c3);
                     > span{font-size: 22px;}
                     > img{display: flex;margin-inline: auto;height: 22px;}
                 }
@@ -29,7 +29,7 @@
         }
         &.ads{background: url(../../images/ads/sideBar.jpg) no-repeat top / cover;display:flex;overflow: hidden;padding-top:250px;
             a{@extend %fc;width: 100%;position: relative;padding:32px 12px 24px;text-align:center;row-gap:8px;
-                &::before{width: 200%;height: 200%;content: "";background: var(--cb1);position: absolute;top: 0;left: -50%;transform: rotate(-10deg);}
+                &::before{width: 200%;height: 200%;content: "";background: var(--c3);position: absolute;top: 0;left: -50%;transform: rotate(-10deg);}
                 > *{position: relative;color:#fff;}
                 b{font-size: 28px;font-weight: bold;line-height: 1;}
 
@@ -60,7 +60,7 @@
             }
             .testi{@extend %fc;height:100%;background: var(--g1);justify-content: space-between;
                 p{padding: 16px;}
-                .text{display:flex;background: var(--cb2);color:#fff;padding:16px;position: relative;column-gap:12px;
+                .text{display:flex;background: var(--c4);color:#fff;padding:16px;position: relative;column-gap:12px;
                     &::before{width: 0;height: 0;content: "";border: 10px solid transparent;border-top-color: var(--g1);position: absolute;left: 16px;top: 0;}
                     > img{width: 56px;flex-shrink: 0;align-self: flex-start;}
                     .txt{@extend %fc;row-gap: 4px;width: 100%;}

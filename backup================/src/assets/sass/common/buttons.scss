@@ -12,9 +12,9 @@
         &:hover, &:active, &:focus, &.active{background: var(--c2) !important;}
 
 
-        &:nth-child(1){background: var(--cb1);}
-        &:nth-child(2){background: var(--cb2);}
-        &:nth-child(3){background: var(--cb3);}
+        &:nth-child(1){background: var(--c3);}
+        &:nth-child(2){background: var(--c4);}
+        &:nth-child(3){background: var(--c5);}
         &:active, &:hover, &:focus{background: var(--c1) !important;}
     }
     &.bsn{

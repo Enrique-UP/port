@@ -11,7 +11,7 @@ export default function CommonScript() {
     {
       document.querySelectorAll(".colors").forEach(function(e){
         const items = e.querySelectorAll(".colors article");
-        const totalClasses = 10;
+        const totalClasses = 12;
         let i = 1;
         items.forEach((li) => {
           if (i > totalClasses) i = 1;

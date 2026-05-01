@@ -1,5 +1,5 @@
 .wcu{
-    figure{width: 100%;@extend %fc;background: var(--cb9);padding: 16px;row-gap:10px;height:100%;
+    figure{width: 100%;@extend %fc;background: var(--c11);padding: 16px;row-gap:10px;height:100%;
         img{background: #fff;margin-inline: auto;}
         figcaption{width: 100%;@extend %fc;text-align: center;row-gap: 8px;padding-block: 16px 26px;border-bottom: 4px solid #fff;
             p{display: flex;justify-content: center;column-gap: 12px;align-items:center;
@@ -9,7 +9,7 @@
     }
     .wcuArea{width: 100%;display:grid;grid-gap:32px;grid-template-columns: repeat(2, minmax(0, 1fr));padding-bottom:80px;
         aside{width: 100%;@extend %fc;position: relative;background: var(--g1);
-            > b{display: flex;background: var(--cb10);color:#fff;font-size: 20px;padding:16px;line-height: 1.2;}
+            > b{display: flex;background: var(--c12);color:#fff;font-size: 20px;padding:16px;line-height: 1.2;}
             > p{padding: 16px;}
         }
     }
