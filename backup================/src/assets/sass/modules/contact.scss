@@ -6,8 +6,8 @@
     }
     .contactBox{width: 100%;display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 16px;
         > li{width: 100%;display: flex;list-style:none;align-items: center;background: var(--g1);padding: 32px;border:1px solid var(--b1);
-            .icon{width: 77px;height: 77px;background: var(--c1);color: #fff;@extend %center;flex-shrink: 0;font-size: 24px;}
-            > a{width: 100%;display: flex;align-items: center;column-gap: 24px;cursor: pointer;}
+            .icon{width: 77px;height: 77px;background: var(--c2);color: #fff;@extend %center;flex-shrink: 0;font-size: 24px;}
+            > a{width: 100%;display: flex;align-items: center;column-gap: 12px;cursor: pointer;}
             b{color: var(--f1);font-size: 20px;@extend %fc;}
             span{width:100%;@extend %fc;color:var(--f2);font-size: 16px;row-gap: 4px;line-height: 1.5;}
             em{font-style: normal;}
@@ -19,7 +19,7 @@
     }
     .follow{width: 100%;display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));padding: 0;margin: 0;gap:16px;
         > li{list-style: none;@extend %fc;
-            > a{width: 100%;@extend %fc;text-align: center;background: var(--c6);color:#fff;padding: 16px 8px;}
+            > a{width: 100%;@extend %fc;text-align: center;background: var(--c2);color:#fff;padding: 16px 8px;}
             .icon{font-size: 28px;}
         }
     }
@@ -54,9 +54,9 @@
 @media (max-width:575px){
     .contactUs .form{padding:16px 12px;row-gap: 16px;}
     .contactUs .form .field {row-gap: 4px;}
-    .contactUs .contactBox > li > a{column-gap: 12px;}
     .contactUs .contactBox > li{padding: 12px;}
     .contactUs .follow {grid-template-columns: repeat(2, minmax(0, 1fr));gap: 8px;}
+    .contactUs .contactBox > li span{row-gap: 0;}
 }
 @media (max-width:460px){
     .contactUs .contactBox > li .icon{width: 60px;height: 60px;}

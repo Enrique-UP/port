@@ -68,7 +68,7 @@ export default function LeftSidebar() {
               <li><Link to="/reviews">Reviews</Link></li>
               <li><Link to="/lifestyle">Life Style</Link></li>
               <li><HashLink to="/#ch" scroll={ScrollOffset}>Childhood</HashLink></li>
-              <li><Link to="/poetry">Poetry</Link></li>
+              {/* <li><Link to="/poetry">Poetry</Link></li> */}
               <li><Link to="/contact">Contact Me</Link></li>
             </ul>
           </aside>
