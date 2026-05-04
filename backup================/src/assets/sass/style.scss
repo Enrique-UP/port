@@ -39,19 +39,17 @@ body{
     -moz-osx-font-smoothing: grayscale;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+    color:var(--f1);
+    &::before{width: 100%;height: 100%;position: fixed;top:0;left:100%;background: rgba(0,0,0,0.9);z-index: 99999;content:"";@extend %trans;}
+    &.back{overflow: hidden;
+        &::before{left:0;}
+    }
 }
 
 a, button{@extend %trans;text-decoration: none;}
 b, strong{font-weight: bold;}
 img{@extend %userSelect;}
 img[data-src], img[data-img]{background: url(../images/icons/loader.gif) no-repeat center center;}
-
-body{color:var(--f1);
-    &::before{width: 100%;height: 100%;position: fixed;top:0;left:100%;background: rgba(0,0,0,0.9);z-index: 99999;content:"";@extend %trans;}
-    &.back{overflow: hidden;
-        &::before{left:0;}
-    }
-}
 
 main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit-fill-available;min-height: 100dvh;
     > *{width:100%;@extend %fc;}

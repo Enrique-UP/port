@@ -71,13 +71,13 @@ export default function AboutHome() {
           <div className="cols1">
             <div className="images">
               <div className="imgArea1">
-                <picture><img src={img1} data-aos="fade-right" /></picture>
-                <picture><img src={img2} data-aos="fade-left" /></picture>
+                <picture data-aos="fade-right"><img src={img1} /></picture>
+                <picture data-aos="fade-left"><img src={img2} /></picture>
               </div>{/* imgArea */}
               <div className="imgArea2">
-                <picture>
+                <picture data-aos="fade-down">
                   <source media="(min-width: 576px) and (max-width: 1199px)" srcset={img3_1199} />
-                  <img src={img3} data-aos="fade-up" />
+                  <img src={img3} />
                 </picture>
               </div>{/* imgArea */}
             </div>{/* images */}
@@ -99,11 +99,11 @@ export default function AboutHome() {
               <p>I am currently working with a leading IT software company where I contribute to the development of high-quality digital platforms and scalable solutions.</p>
               <p>I collaborate closely with clients and business teams to understand requirements and transform them into effective and user-centric digital products.</p>
             </div>{/* cnt */}
-            {/* ✅ Desktop only */}
+            {/* Desktop only */}
             {/* {!isMobile && TextBlock} */}
           </div>{/* cols2 */}
           <div className="cols3">
-            {/* ✅ Mobile only */}
+            {/* Mobile only */}
             {isMobile && TextBlock}
             <div className="cnt">
               <p className="hd">My Story</p>
@@ -131,7 +131,7 @@ export default function AboutHome() {
             <div className="cnt">
               <p className="hd">My Vision</p>
               <p>My vision is to establish myself as a leading Frontend Developer by consistently delivering exceptional and impactful design solutions. I aspire to build a strong professional identity recognized for creativity, quality, and reliability. Through dedication and continuous learning, I aim to work on diverse global projects, contribute to meaningful digital transformations, and set high standards in user experience and interface design.</p>
-            </div>{/* cnt */}            
+            </div>{/* cnt */}
             <div className="cnt">
                 <p className="hd">Frontend Development Skills</p>
                 <p className="shd">Technologies and tools I use to create responsive and interactive web applications.</p>
