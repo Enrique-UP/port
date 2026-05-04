@@ -33,7 +33,11 @@
     .lists{width: 100%;@extend %fc;gap: 8px 32px;
         > li{list-style: none;position: relative;padding-left: 24px;
             &::before{font-family: fontello;content:"\a038";position: absolute;left:0;color: var(--f1);}
+            > a{color:inherit;
+                &:hover, &:active, &:focus{color:var(--f1);}
+            }
         }
+        &.songs{display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));}
     }
     .skillBar{width: 100%;display:grid;grid-gap: 32px 32px;
         &.one{grid-template-columns: repeat(2, minmax(0, 1fr));}
@@ -78,9 +82,11 @@
 @media (min-width:768px) and (max-width:991px){
     .about .counterBox{grid-gap:4px;}
     .about .cnt .post{font-size: 44px;}
+    .about .lists.songs {gap: 8px 16px;}
 }
 @media (max-width:767px){
     .about .counterBox {grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .about .lists.songs {grid-template-columns: repeat(2, minmax(0, 1fr));}
 }
 @media (max-width:575px){
     .about .fw .cols1{margin-bottom: 8px;}
@@ -100,10 +106,12 @@
     .about .lists > li {padding-left: 20px;}
 
     .about .images{height: auto;}
+
 }
 @media (max-width:480px){
     .about .skillBar > article{gap:6px 0px;}
     .about .skillBar i{height: 6px;}
+    .about .lists.songs {grid-template-columns: repeat(1, minmax(0, 1fr));}
 }
 @media (max-width:370px){
     .about .skillBar > article{font-size: 12px;}

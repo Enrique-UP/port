@@ -151,9 +151,9 @@ export default function BrandingProjects() {
               />
             ))}
             <div className="col-12">
-                <div className="btns center">
-                    <Link to="/portfolio" data-aos="fade-left">View More</Link>
-                </div>
+              <div className="btns center">
+                <Link to="/portfolio" data-aos="fade-left">View More</Link>
+              </div>
             </div>
           </div>
         </div>
