@@ -211,8 +211,8 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
 .callRight{bottom: 140px;}
 
 
-.fixNum{width: 100%;background: var(--c3);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
-    &:hover, &:active, &:focus{background: var(--c4);color:var(--f1);}
+.fixNum{width: 100%;background: var(--c1);color:#fff;position: sticky;left: 0;bottom: 0;z-index: 99999;padding: 12px 8px;font-size: 16px;font-weight: bold;text-decoration: none;line-height: 1.3;display: none;flex-direction: row;justify-content: center;text-align: center;cursor: pointer;
+    &:hover, &:active, &:focus{background: var(--c12);}
     & > i{margin-right: 4px;}
 }
 
@@ -277,12 +277,10 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
         }
         > p:not(.notes){color: var(--f4);}
         .notes{color: var(--c2);}
-
     }
     figure{width: 150px;border:1px solid var(--b1);background: #fff;display: flex;flex-shrink: 0;max-width: 100%;align-self: flex-start;cursor: pointer;max-height:400px;
         > img{width: 100%;object-fit: contain;}
     }
-    // .text::before{content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quis iste architecto asperiores enim tenetur, sit, quos voluptate id repudiandae ab veritatis hic perferendis porro! Voluptatum recusandae delectus vero iusto nisi laboriosam iste praesentium officia commodi ratione doloremque pariatur impedit minus, quaerat a ut perspiciatis, saepe est eaque id cumque modi maxime fugiat dolores. Assumenda illo architecto, natus unde ullam provident, repellat exercitationem voluptas officia fuga reiciendis dignissimos at mollitia aliquam perspiciatis temporibus eum consequuntur iste.';}
 }
 
 // main:has(> .thankYou) > :not(.thankYou) {
