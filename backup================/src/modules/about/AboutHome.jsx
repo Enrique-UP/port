@@ -159,7 +159,7 @@ export default function AboutHome() {
                   </article>
                   <article data-aos="fade-right">
                     <p>
-                      <b>React JS & VITE</b>
+                      <b>React JS & Vite</b>
                       <CounterNum target={65} suffix="%" />
                     </p>
                     <i></i>
@@ -254,7 +254,7 @@ export default function AboutHome() {
               </div>{/* outlineBox */}
 
               <div className="btns center">
-                <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Us</a>
+                <a href={Global.numTel} target="_blank" data-aos="fade-left">Hire Me</a>
                 <Link to="/contact" data-aos="fade-right">Contact Me</Link>
               </div>{/* btns */}
             </div>{/* cols3 */}
