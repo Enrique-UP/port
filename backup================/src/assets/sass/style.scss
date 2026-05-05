@@ -106,12 +106,12 @@ main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit
     }
 }
 
-.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 32px;@extend %fc;row-gap:8px;
+.outlineBox {width: 100%;border: 1px solid var(--f1);padding: 24px;@extend %fc;row-gap:8px;
     &:not(.dk){background: var(--g4);color: var(--f2);}
     &.dk{background: var(--f1) !important;border-color: transparent;color:#fff;
         > *{color:#fff;}
     }
-    > b{font-size: 28px;font-weight: bold;line-height: 1.2;color: var(--f1);}
+    > b{font-size: 24px;font-weight: bold;line-height: 1.2;color: var(--f1);}
     > span{font-size: 16px;}
 }
 
