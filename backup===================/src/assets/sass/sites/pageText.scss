@@ -7,9 +7,9 @@
 // Developing Clean & User-Friendly Interfaces
 
 
-[data-num]::before{content:"+91 8745 999 480";}
-[data-email]::before{content:"nomaanarif786@gmail.com";}
-[data-address]::before{content:"25, Mamoora Village, Sector 66, Noida, Gautam Buddh Nagar, Uttar Pradesh – 201301, India";}
+[data-num]::before{content:attr(data-num);}
+[data-email]::before{content:attr(data-email);}
+[data-address]::before{content:attr(data-address);}
 
 
 .blsisl::before{content: "BLS International Services Limited";}
