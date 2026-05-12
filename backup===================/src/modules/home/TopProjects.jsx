@@ -13,19 +13,14 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "/portfolio/bls/india_blsattestation_com.jpg";
-import img2 from "/portfolio/i2a/9cents_com.jpg";
-import img3 from "/portfolio/snva/travomint_com.jpg";
-import img4 from "/portfolio/i2a/akountobooks_com.jpg";
-import img5 from "/portfolio/si/alefmeem_store.jpg";
-import img6 from "/portfolio/i2a/zippyconvert_com.jpg";
+
 import { Link } from "react-router-dom";
 
 const TpData = [
     {
         ani: "fade-left",
         website:"india_blsattestation_com",
-        img: img1,
+        img: "./public/images/portfolio/bls/india_blsattestation_com.jpg",
         web: "www.india.blsattestation.com",
         link: "https://india.blsattestation.com/",
         date: "09-Jun-2016",
@@ -36,7 +31,7 @@ const TpData = [
     {
         ani: "fade-right",
         website:"9cents_com",
-        img: img2,
+        img: "./public/images/portfolio/i2a/9cents_com.jpg",
         web: "www.9cents.com",
         link: "https://www.9cents.com/",
         date: "Present",
@@ -46,7 +41,7 @@ const TpData = [
     {
         ani: "fade-left",
         website:"travomint_com",
-        img: img3,
+        img: "./public/images/portfolio/snva/travomint_com.jpg",
         web: "www.travomint.com",
         link: "https://www.travomint.com",
         date: "12-Nov-2021",
@@ -57,7 +52,7 @@ const TpData = [
     {
         ani: "fade-right",
         website:"akountobooks_com",
-        img: img4,
+        img: "./public/images/portfolio/i2a/akountobooks_com.jpg",
         web: "www.akountobooks.com",
         link: null,
         date: "31-Dec-2025",
@@ -67,7 +62,7 @@ const TpData = [
     {
         ani: "fade-left",
         website:"alefmeem_store",
-        img: img5,
+        img: "./public/images/portfolio/si/alefmeem_store.jpg",
         web: "www.alefmeem.store",
         link: null,
         date: "13-May-2022",
@@ -77,7 +72,7 @@ const TpData = [
     {
         ani: "fade-right",
         website:"zippyconvert_com",
-        img: img6,
+        img: "./public/images/portfolio/i2a/zippyconvert_com.jpg",
         web: "www.zippyconvert.com",
         link: "https://www.zippyconvert.com",
         date: "Present",
