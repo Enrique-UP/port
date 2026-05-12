@@ -25,31 +25,16 @@ import img2Mob from "../../assets/images/slider/slide2-575.jpg";
 import img3Mob from "../../assets/images/slider/slide3-575.jpg";
 import ColorsLine from "../common/ColorsLine";
 
+const meta = {
+  hd: "Nomaan",
+  shd: "Frontend Developer",
+  link: "/contactus",
+};
+
 const images = [
-  {
-    desktop: img1,
-    tab: img1Tab,
-    mobile: img1Mob,
-    title: "One",
-    desc: "First",
-    link: "/contactus",
-  },
-  {
-    desktop: img2,
-    tab: img2Tab,
-    mobile: img2Mob,
-    title: "Two",
-    desc: "Second",
-    link: "/contactus",
-  },
-  {
-    desktop: img3,
-    tab: img3Tab,
-    mobile: img3Mob,
-    title: "Three",
-    desc: "Third",
-    link: "/contactus",
-  },
+  { desktop: img1, tab: img1Tab, mobile: img1Mob, desc: "Developing Modern & Dynamic Web Experiences", ...meta },
+  { desktop: img2, tab: img2Tab, mobile: img2Mob, desc: "Developing Fast & Interactive Web Interfaces", ...meta },
+  { desktop: img3, tab: img3Tab, mobile: img3Mob, desc: "Developing Smart & Efficient Web Solutions", ...meta },
 ];
 
 export default function Slider() {
@@ -89,9 +74,10 @@ export default function Slider() {
                 <div className="head">
                   <div className="container">
                     <div className="text">
-                      <p className="hd">Lorema</p>
-                      <p className="shd">Ipsum/Lorem</p>
-                      <p className="desc">Lorem ipsum dolor sit</p>
+                      <p className="hd">{img.hd}</p>
+                      <p className="shd">{img.shd}</p>
+                      <p className="desc">{img.desc}</p>
+
                       <div className="btns">
                         <Link to={img.link}>Contact Me</Link>
                       </div>
