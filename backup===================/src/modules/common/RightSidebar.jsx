@@ -37,17 +37,17 @@ import Tm3 from "../../assets/images/testi/t3.jpg";
 import Tm4 from "../../assets/images/testi/t4.jpg";
 import Tm5 from "../../assets/images/testi/t5.jpg";
 
-import LifeStyleTextDate from "../lifeStyle/LifeStyleTextDate";
+import LifeStyleMoments from "../lifeStyle/LifeStyleMoments";
 
 const LifeStyleData = [
-  { hd: LifeStyleTextDate[1].hd, txt: LifeStyleTextDate[1].shd, img: Ls1 },
-  { hd: LifeStyleTextDate[2].hd, txt: LifeStyleTextDate[2].shd, img: Ls2 },
-  { hd: LifeStyleTextDate[3].hd, txt: LifeStyleTextDate[3].shd, img: Ls3 },
-  { hd: LifeStyleTextDate[4].hd, txt: LifeStyleTextDate[4].shd, img: Ls4 },
-  { hd: LifeStyleTextDate[5].hd, txt: LifeStyleTextDate[5].shd, img: Ls5 },
-  { hd: LifeStyleTextDate[6].hd, txt: LifeStyleTextDate[6].shd, img: Ls6 },
-  { hd: LifeStyleTextDate[7].hd, txt: LifeStyleTextDate[7].shd, img: Ls7 },
-  { hd: LifeStyleTextDate[8].hd, txt: LifeStyleTextDate[8].shd, img: Ls8 },
+  { hd: LifeStyleMoments[1].hd, txt: LifeStyleMoments[1].shd, img: Ls1 },
+  { hd: LifeStyleMoments[2].hd, txt: LifeStyleMoments[2].shd, img: Ls2 },
+  { hd: LifeStyleMoments[3].hd, txt: LifeStyleMoments[3].shd, img: Ls3 },
+  { hd: LifeStyleMoments[4].hd, txt: LifeStyleMoments[4].shd, img: Ls4 },
+  { hd: LifeStyleMoments[5].hd, txt: LifeStyleMoments[5].shd, img: Ls5 },
+  { hd: LifeStyleMoments[6].hd, txt: LifeStyleMoments[6].shd, img: Ls6 },
+  { hd: LifeStyleMoments[7].hd, txt: LifeStyleMoments[7].shd, img: Ls7 },
+  { hd: LifeStyleMoments[8].hd, txt: LifeStyleMoments[8].shd, img: Ls8 },
 ];
 
 const TeamData = [

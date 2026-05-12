@@ -1,4 +1,4 @@
-const LifeStyleTextDate = [
+const LifeStyleMoments = [
   { hd: "Diwali Celebration", shd: "Festive Mood" },
   { hd: "Heritage Walk", shd: "Historic Vibes" },
   { hd: "Christmas Vibes", shd: "Holiday Mood" },
@@ -9,4 +9,4 @@ const LifeStyleTextDate = [
   { hd: "Beach Life", shd: "Ocean Mood" },
   { hd: "Wedding Look", shd: "Wedding Vibes" },
 ];
-export default LifeStyleTextDate;
+export default LifeStyleMoments;
