@@ -26,7 +26,7 @@ import img3Mob from "../../assets/images/slider/slide3-575.jpg";
 import ColorsLine from "../common/ColorsLine";
 
 const meta = {
-  hd: "Nomaan",
+  hd: "Nomaan Arif",
   shd: "Frontend Developer",
   link: "/contactus",
 };
