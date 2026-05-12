@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logoFooter.png";
 import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 

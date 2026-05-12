@@ -45,7 +45,11 @@ footer{background: var(--f3);
     footer .row{row-gap: 32px !important;}
     footer .hd{font-size: 32px;}
 }
+@media (min-width:576px) and (max-width:767px){
+    footer .logo img {width: 160px;}
+}
 @media (max-width:575px){
+    footer .logo img {width: 160px;}
     footer .text, footer .links > li > a, footer .follow > a{border-left-width: 2px;}
     footer .links > li > a{padding: 10px 16px;}
 }

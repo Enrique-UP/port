@@ -10,12 +10,16 @@ import ReviewData from "../review/ReviewData";
 import { HashLink } from "react-router-hash-link";
 import ScrollOffset from "./ScrollOffset";
 
-import calling from "../../assets/images/call.png";
+import calling from "../../assets/images/wcu.png";
 
-import Ls1 from "../../assets/images/sideBar/1.jpg";
-import Ls2 from "../../assets/images/sideBar/2.jpg";
-import Ls3 from "../../assets/images/sideBar/3.jpg";
-import Ls4 from "../../assets/images/sideBar/4.jpg";
+import Ls1 from "../../assets/images/lifeStyleHome/2.jpg";
+import Ls2 from "../../assets/images/lifeStyleHome/3.jpg";
+import Ls3 from "../../assets/images/lifeStyleHome/4.jpg";
+import Ls4 from "../../assets/images/lifeStyleHome/5.jpg";
+import Ls5 from "../../assets/images/lifeStyleHome/6.jpg";
+import Ls6 from "../../assets/images/lifeStyleHome/7.jpg";
+import Ls7 from "../../assets/images/lifeStyleHome/8.jpg";
+import Ls8 from "../../assets/images/lifeStyleHome/9.jpg";
 
 import T1 from "../../assets/images/team/t1-sb.jpg";
 import T2 from "../../assets/images/team/t2-sb.jpg";
@@ -37,7 +41,11 @@ const LifeStyleData = [
   { hd: "Head1", txt: "Txt1", img: Ls1 },
   { hd: "Head2", txt: "Txt2", img: Ls2 },
   { hd: "Head3", txt: "Txt3", img: Ls3 },
-  { hd: "Head4", txt: "Txt4", img: Ls4 }
+  { hd: "Head4", txt: "Txt4", img: Ls4 },
+  { hd: "Head5", txt: "Txt5", img: Ls5 },
+  { hd: "Head6", txt: "Txt6", img: Ls6 },
+  { hd: "Head7", txt: "Txt7", img: Ls7 },
+  { hd: "Head8", txt: "Txt8", img: Ls8 },
 ];
 
 const TeamData = [

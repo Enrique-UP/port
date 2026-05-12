@@ -10,8 +10,8 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     .middle{
         .fw{display: flex;justify-content: flex-end;column-gap: 12px;position: relative;}
         .logo{display: flex;position: absolute;top:0;left:0;background: var(--c3);
-            > a{display: flex;background: var(--c4);padding:64px 32px;}
-            img{width: 180px;}
+            > a{display: flex;background: var(--c4);padding:20px 48px;}
+            img{width: 140px;}
         }
         .follow{width: auto;display: flex;align-items: center;background: var(--c5);padding:16px;column-gap: 12px;color:#fff;
             > b{font-size: 20px;}
@@ -81,18 +81,29 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
         .bottom .close{top:0;z-index: 99999;}
     }
 }
+@media (min-width:576px) and (max-width:767px){
+    header .middle .logo > a{padding: 20px 40px;}
+    header .middle .logo img {width: 120px;}
+    header .bottom .fw {padding-left: 214px;}
+}
 @media (max-width:575px){
+    header .middle .logo > a{padding: 16px 24px;}
+    header .middle .logo img {width: 112px;}
+    header .bottom .fw {padding-left: 172px;}
+
     header .middle .follow > b {font-size: 16px;}
     header .top .fw > a > span b{display: none;}
-    header .middle .logo > a{padding: 47px 12px;}
-    header .bottom .fw {padding-left: 172px;}
     header .middle .follow{padding: 8px;column-gap: 8px;}
     header .middle .follow > p a {width: 26px;height: 26px;}
-    header .middle .logo img{width: 140px;}
     header .bottom .logo > a img{width: 140px;}
     header .middle .follow > p, header .middle .follow > p > span{gap:2px;}
+    header .bottom .menu > b{font-size: 18px;}
 }
 @media (max-width:360px){
     header .middle .follow{padding: 4px;column-gap: 4px;}
     header .middle .follow > b{display: none;}
+}
+@media (max-width:348px){
+    header .top .fw > a > em{display:none;}
+    header .top .fw{justify-content: center;}
 }
