@@ -9,6 +9,8 @@ import img7 from "../../assets/images/lifeStyleHome/7.jpg";
 import img8 from "../../assets/images/lifeStyleHome/8.jpg";
 import img9 from "../../assets/images/lifeStyleHome/9.jpg";
 
+import LifeStyleTextDate from "./LifeStyleTextDate";
+
 export default function LifestyleHome() {
   return (
     <>
@@ -34,7 +36,7 @@ export default function LifestyleHome() {
                     <article className="col-sm-6 col-xl-12">
                       <figure data-aos="fade-up">
                         <img src={img1} />
-                        <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                        <figcaption><b>{LifeStyleTextDate[0].hd}</b><span>{LifeStyleTextDate[0].shd}</span></figcaption>
                       </figure>
                     </article>
                   </div>{/* row */}
@@ -44,25 +46,25 @@ export default function LifestyleHome() {
                     <article className="col-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-right">
                         <img src={img2} />
-                        <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                        <figcaption><b>{LifeStyleTextDate[1].hd}</b><span>{LifeStyleTextDate[1].shd}</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-left">
                         <img src={img3} />
-                        <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                        <figcaption><b>{LifeStyleTextDate[2].hd}</b><span>{LifeStyleTextDate[2].shd}</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-right">
                         <img src={img4} />
-                        <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                        <figcaption><b>{LifeStyleTextDate[3].hd}</b><span>{LifeStyleTextDate[3].shd}</span></figcaption>
                       </figure>
                     </article>
                     <article className="col-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-left">
                         <img src={img5} />
-                        <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                        <figcaption><b>{LifeStyleTextDate[4].hd}</b><span>{LifeStyleTextDate[4].shd}</span></figcaption>
                       </figure>
                     </article>
                   </div>{/* row */}
@@ -70,25 +72,25 @@ export default function LifestyleHome() {
                 <article className="col-6 col-md-3">
                   <figure data-aos="fade-left">
                     <img src={img6} />
-                    <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                    <figcaption><b>{LifeStyleTextDate[5].hd}</b><span>{LifeStyleTextDate[5].shd}</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
                   <figure data-aos="fade-right">
                     <img src={img7} />
-                    <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                    <figcaption><b>{LifeStyleTextDate[6].hd}</b><span>{LifeStyleTextDate[6].shd}</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
                   <figure data-aos="fade-left">
                     <img src={img8} />
-                    <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                    <figcaption><b>{LifeStyleTextDate[7].hd}</b><span>{LifeStyleTextDate[7].shd}</span></figcaption>
                   </figure>
                 </article>
                 <article className="col-6 col-md-3">
                   <figure data-aos="fade-right">
                     <img src={img9} />
-                    <figcaption><b>Lorem</b><span>Ipsum</span></figcaption>
+                    <figcaption><b>{LifeStyleTextDate[8].hd}</b><span>{LifeStyleTextDate[8].shd}</span></figcaption>
                   </figure>
                 </article>
               </div>{/* row */}

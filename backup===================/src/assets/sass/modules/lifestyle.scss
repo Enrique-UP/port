@@ -43,11 +43,17 @@
         }
     }
 }
+@media (min-width:768px) and (max-width:1199px){
+    .lifeStyle .space .row figure figcaption{flex-direction: column;}
+}
 @media (min-width:576px) and (max-width:991px){
     .lifeStyle .partition {grid-template-columns: repeat(3, minmax(0, 1fr));}
 }
 @media (max-width:767px){
     .lifeStyle figure figcaption{padding: 6px 6px;}
+}
+@media (max-width:575px){
+    .lifeStyle .space .row figure figcaption{flex-direction: column;}
 }
 @media (min-width:401px) and (max-width:575px){
     .lifeStyle .partition {grid-template-columns: repeat(2, minmax(0, 1fr));}
