@@ -4,6 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 import logo from "../../assets/images/logo.png";
+import logoMob from "../../assets/images/logoMob.png";
 import lifestyle from "../../assets/images/icons/lifeStyle.png";
 import contact from "../../assets/images/icons/contact.png";
 
@@ -104,7 +105,7 @@ export default function Header() {
               <i className="icon close" onClick={() => {setMenuOpen(false); resetScroll();}}>&#xa018;</i>
               <nav onClick={(e) => {e.stopPropagation();}}>
                 <div className="logo">
-                  <Link to="/" onClick={ScrollTopPage}><img src={logo} /></Link>
+                  <Link to="/" onClick={ScrollTopPage}><img src={logoMob} /></Link>
                 </div>{/* logo */}
                 <ul ref={menuListRef} onClick={resetScroll}>
                   <li>

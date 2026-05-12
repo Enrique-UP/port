@@ -65,7 +65,7 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     position: fixed;top:0;left:0;height: 100%;
     }
     header .bottom .logo > a{padding: 12px;justify-content: flex-start;}
-    header .bottom .logo > a > img{width: 160px;}
+    header .bottom .logo > a > img{width: 200px;}
     header .bottom nav > ul{flex-direction: column;padding-inline: 12px;overflow-y: auto;}
     header .bottom nav > ul > li:first-child {border-left: none;}
     header .bottom nav > ul li{border-right: none;}
@@ -95,7 +95,6 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     header .top .fw > a > span b{display: none;}
     header .middle .follow{padding: 8px;column-gap: 8px;}
     header .middle .follow > p a {width: 26px;height: 26px;}
-    header .bottom .logo > a img{width: 140px;}
     header .middle .follow > p, header .middle .follow > p > span{gap:2px;}
     header .bottom .menu > b{font-size: 18px;}
 }
