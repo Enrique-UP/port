@@ -103,7 +103,7 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
     header .middle .follow{padding: 4px;column-gap: 4px;}
     header .middle .follow > b{display: none;}
 }
-@media (max-width:348px){
-    header .top .fw > a > em{display:none;}
-    header .top .fw{justify-content: center;}
+@media (max-width:350px){
+    header .top .fw{column-gap: 4px;}
+    header .top .fw > a > em{white-space: nowrap;font-size: 13px;}
 }
