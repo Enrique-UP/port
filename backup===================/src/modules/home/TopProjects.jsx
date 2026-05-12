@@ -13,12 +13,12 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/portfolio/bls/india_blsattestation_com.jpg";
-import img2 from "../../assets/images/portfolio/i2a/9cents_com.jpg";
-import img3 from "../../assets/images/portfolio/snva/travomint_com.jpg";
-import img4 from "../../assets/images/portfolio/i2a/akountobooks_com.jpg";
-import img5 from "../../assets/images/portfolio/si/alefmeem_store.jpg";
-import img6 from "../../assets/images/portfolio/i2a/zippyconvert_com.jpg";
+import img1 from "/portfolio/bls/india_blsattestation_com.jpg";
+import img2 from "/portfolio/i2a/9cents_com.jpg";
+import img3 from "/portfolio/snva/travomint_com.jpg";
+import img4 from "/portfolio/i2a/akountobooks_com.jpg";
+import img5 from "/portfolio/si/alefmeem_store.jpg";
+import img6 from "/portfolio/i2a/zippyconvert_com.jpg";
 import { Link } from "react-router-dom";
 
 const TpData = [

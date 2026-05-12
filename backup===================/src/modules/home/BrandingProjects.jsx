@@ -14,12 +14,12 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/portfolio/i2a/akounto_com.jpg";
-import img2 from "../../assets/images/portfolio/free/rajankapoorchai_com.jpg";
-import img3 from "../../assets/images/portfolio/snva/snva_com.jpg";
-import img4 from "../../assets/images/portfolio/snva/careerera_com.jpg";
-import img5 from "../../assets/images/portfolio/city/ticketstoworld_co_uk.jpg";
-import img6 from "../../assets/images/portfolio/city/ticketstoindia_co_uk.jpg";
+import img1 from "/portfolio/i2a/akounto_com.jpg";
+import img2 from "/portfolio/free/rajankapoorchai_com.jpg";
+import img3 from "/portfolio/snva/snva_com.jpg";
+import img4 from "/portfolio/snva/careerera_com.jpg";
+import img5 from "/portfolio/city/ticketstoworld_co_uk.jpg";
+import img6 from "/portfolio/city/ticketstoindia_co_uk.jpg";
 
 
 const BpData = [

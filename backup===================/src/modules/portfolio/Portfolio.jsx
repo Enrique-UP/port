@@ -23,7 +23,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 /* ================= IMAGE IMPORT ================= */
 
 const images = import.meta.glob(
-  "/src/assets/images/portfolio/*/*.jpg",
+  "/public/portfolio/*/*.jpg",
   { eager: true, import: "default" }
 );
 
@@ -49,7 +49,7 @@ const getImage = (folder, name, domain) =>
   ] || null;
 
 const getFallbackImage = (folder, name, domain) => {
-  return `/port/src/assets/images/portfolio/${folder}/${normalizeName(
+  return `/port/public/portfolio/${folder}/${normalizeName(
     name
   )}_${normalizeName(domain)}.jpg`;
 };
