@@ -14,10 +14,9 @@ import { Link } from "react-router-dom";
 import CounterNum from "./CounterNum";
 
 const words1 = [
-  // { text: "(Frontend Developer)", className: "one" },
-  // { text: "(Frontend Developer)", className: "two" }
-  { text: "(Loremipsum).", className: "one" },
-  { text: "(Dolorsit).", className: "two" }
+  { text: "(Frontend Developer).", className: "one" },
+  { text: "(Frontend Developer).", className: "two" },
+  { text: "(Frontend Developer).", className: "three" }
 ];
 
 function getExperienceYears(startYear = 2015, startMonth = 5) {
@@ -96,7 +95,7 @@ export default function AboutHome() {
           <div className="cols2">
             <div className="cnt">
               <p className="int">Hello!</p>
-              <p className="int">I am Loremm Ipum</p>
+              <p className="int">I am Nomaan Arif</p>
               <p className="post"><TypeWriter words={words1} /></p>
               <p>Specializing in designing and developing user-friendly and visually appealing digital experiences.</p>
               <p>My expertise includes Frontend Development, UI/UX design, website redesign, responsive design, software interfaces, landing pages, emailers, CRM systems, and branding materials, along with other digital design solutions.</p>
