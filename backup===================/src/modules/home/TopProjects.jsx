@@ -179,7 +179,7 @@ export default function TopProjects() {
 
     return (
         <>
-            <section className="section tp" id="tp">
+            <section className="section tp b1" id="tp">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

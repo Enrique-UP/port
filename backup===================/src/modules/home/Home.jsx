@@ -18,6 +18,7 @@ import ReviewsHome from "../review/ReviewsHome";
 import Slider from "./Slider";
 import TopProjects from "./TopProjects";
 import BrandingProjects from "./BrandingProjects";
+import FamilyBack from "../about/FamilyBack";
 
 
 
@@ -31,13 +32,14 @@ export default function Home() {
       <Slider />
       <Welcome />
       <AboutHome />
-      <LifestyleHome />      
+      <LifestyleHome /> 
+      <FamilyBack />
       <TopProjects />
       <Experience />
       <Education />
       <DesignServices />
-      <Ads3 />
       <BrandingProjects />
+      <Ads3 />
       <Wcu /> 
       <Ads1 />
       <Team />

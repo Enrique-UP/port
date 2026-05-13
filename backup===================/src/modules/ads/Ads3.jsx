@@ -4,7 +4,7 @@ import { Global } from "../common/Global";
 export default function Ads3() {
   return (
     <>
-      <section className="section ads1" id="ads1">
+      <section className="section ads1 bgb" id="ads1">
             <div className="container">
                 <ul>
                     <li>
