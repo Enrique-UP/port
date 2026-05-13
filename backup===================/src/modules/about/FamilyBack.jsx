@@ -109,8 +109,8 @@ export default function FamilyBack() {
                 </article>
                 <article data-aos="fade-left">
                   <figure>
-                    <img data-src={familyData[3].image} />
-                    <figcaption>{familyData[3].title}</figcaption>
+                    <img data-src={familyData[4].image} />
+                    <figcaption>{familyData[4].title}</figcaption>
                     <div className="content">
                       <p className="hd">Musical Talent and Achievements in the Family</p>
                       <p>My aunt, Nusrat Waseem, is a Bollywood playback singer who has performed in films, albums, TV shows, live concerts, and international events. She appeared on Doordarshan’s Meri Awaaz Suno and was a runner-up in the 2016 Sony SAB Antakshari competition. She has also worked with singer <b>Altaf Raja</b>, contributed to the <b>film Tarazu</b>, and continues her active singing career. She has been honored with the <b>Adharshila Best Female Singer Award (presented by the President of India, Mr. Shankar Dayal Sharma)</b> and the Best Singer Award by Venus Records and Tapes Company. She currently runs a Mumbai-based music studio called “Musica”, where she trains aspiring singers.</p>
@@ -128,8 +128,8 @@ export default function FamilyBack() {
                 </article>
                 <article data-aos="fade-left">
                   <figure>
-                    <img data-src={familyData[3].image} />
-                    <figcaption>{familyData[3].title}</figcaption>
+                    <img data-src={familyData[5].image} />
+                    <figcaption>{familyData[5].title}</figcaption>
                     <div className="content">
                       <p className="hd">My Cricket Journey and Passion for the Game</p>
                       <p>I am known as a stylish cricketer with natural sporting ability since childhood and active involvement in cricket as an all-rounder. I am recognized for my strong batting technique, preference for long innings, solid straight-bat play, consistent timing, good footwork, body control, classic cricketing shots, and disciplined batting style. As a pace bowler, I once broke a batsman’s helmet with a sharp bouncer and also broke the stumps many times with fast deliveries. In fielding, I was known as a sharp and agile fielder.</p>
@@ -139,8 +139,8 @@ export default function FamilyBack() {
                 </article>
                 <article data-aos="fade-left">
                   <figure>
-                    <img data-src={familyData[3].image} />
-                    <figcaption>{familyData[3].title}</figcaption>
+                    <img data-src={familyData[6].image} />
+                    <figcaption>{familyData[6].title}</figcaption>
                     <div className="content">
                       <p className="hd">Interest in Politics and Helping People</p>
                       <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
@@ -149,8 +149,8 @@ export default function FamilyBack() {
                 </article>
                 <article data-aos="fade-left">
                   <figure>
-                    <img data-src={familyData[3].image} />
-                    <figcaption>{familyData[3].title}</figcaption>
+                    <img data-src={familyData[7].image} />
+                    <figcaption>{familyData[7].title}</figcaption>
                     <div className="content">
                       <p className="hd">Carrying Forward the Family Legacy</p>
                       <p>Although I may never equal the remarkable achievements and legacy of my elders, I sincerely strive to follow their path, uphold their values, and continue the traditions they built with honor and respect.</p>
