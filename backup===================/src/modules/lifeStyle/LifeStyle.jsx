@@ -28,7 +28,7 @@ const LifeStyleAllData = LifeStyleData.map((folder) => {
         .reverse()
         .map((img) => ({
           src: new URL(
-            `/public/images/lifeStyle/${folder.imgFdr}/${img.img}.jpg`,
+            `../../assets/images/lifeStyle/${folder.imgFdr}/${img.img}.jpg`,
             import.meta.url
           ).href,
           title: img.title,
@@ -41,7 +41,7 @@ const LifeStyleAllData = LifeStyleData.map((folder) => {
     category: folder.imgFdr,
     images: Array.from({ length: folder.items || 0 }, (_, i) => ({
       src: new URL(
-        `/public/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
+        `../../assets/images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
         import.meta.url
       ).href,
       title: folder.title,
