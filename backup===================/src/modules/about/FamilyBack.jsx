@@ -1,27 +1,27 @@
-import img1 from "../../assets/images/lifeStyle/others/1935.jpg";
-import img2 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img3 from "../../assets/images/lifeStyle/others/grandFather1.jpg";
-import img4 from "../../assets/images/lifeStyle/others/grandFather2.jpg";
+import book from "../../assets/images/lifeStyle/others/1935.jpg";
+import pol from "../../assets/images/lifeStyle/others/1958.jpg";
+import dataTeam from "../../assets/images/lifeStyle/others/grandFather1.jpg";
+import dada from "../../assets/images/lifeStyle/others/grandFather2.jpg";
 import img5 from "../../assets/images/lifeStyle/others/2013.jpg";
-import img6 from "../../assets/images/lifeStyle/shillong/1.jpg";
+import father from "../../assets/images/lifeStyle/shillong/1.jpg";
 import img7 from "../../assets/images/lifeStyle/others/23feb2020.jpg";
 import img8 from "../../assets/images/lifeStyle/others/2010.jpg";
 
 const familyData = [
   {
-    image: img1,
+    image: book,
     title: "Mention of My Great-Grandfather in a 1935 Book",
   },
   {
-    image: img2,
+    image: pol,
     title: "Lorem2",
   },
   {
-    image: img3,
+    image: dataTeam,
     title: "Lorem3",
   },
   {
-    image: img4,
+    image: dada,
     title: "My Grandfather (Late Mr. Qamaruddin)",
   },
   {
@@ -29,7 +29,7 @@ const familyData = [
     title: "Lorem5",
   },
   {
-    image: img6,
+    image: father,
     title: "My Father",
   },
   {
