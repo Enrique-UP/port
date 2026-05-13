@@ -10,7 +10,7 @@ import img8 from "../../assets/images/lifeStyle/others/2010.jpg";
 const familyData = [
   {
     image: img1,
-    title: "Lorem1",
+    title: "Mention of My Great-Grandfather in a 1935 Book",
   },
   {
     image: img2,
