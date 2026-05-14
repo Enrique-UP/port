@@ -130,7 +130,7 @@ export default function FamilyBack() {
                     <p>He carried forward this legacy with significant landholdings and business ventures, including brick kilns. He also served as the State President of the Brick Kiln Association. He served as Vice Chairman in Ujhani and became a well-recognized and respected personality in the region.</p>
                     <p>He was widely known for resolving community matters, including settling disputes and helping people resolve conflicts fairly and peacefully.</p>
                     <p>Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality.</p>
-                    <p>He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions.</p>
+                    <p>He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions. He was also regarded as one of the most capable and respected individuals in the Budaun district.</p>
                   </div>{/* content */}
                 </figure>
 
@@ -141,7 +141,7 @@ export default function FamilyBack() {
                   </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Our Connection with Wrestling Legend – The Great Gama</p>
-                    <p>Our family is related to the world-famous wrestler The Great Gama (Ghulam Mohammad Baksh Bhatt), who is known as "Rustam-e-Hind" and was my grandfather's cousin. He never lost a match in his wrestling career and is remembered as one of the greatest wrestlers in history.</p>
+                    <p>Our family is related to the world-famous wrestler The Great Gama (Ghulam Mohammad Baksh Bhatt), who is known as "Rustam-e-Hind" and was my grandfather's cousin. The Great Gama was our relative and, in family relation, he was regarded as my grandfather. He never lost a match in his wrestling career and is remembered as one of the greatest wrestlers in history.</p>
                   </div>{/* content */}
                 </figure>
 
