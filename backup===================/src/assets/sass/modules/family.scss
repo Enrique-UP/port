@@ -13,6 +13,7 @@
                 }
             }
         }        
+        img{cursor: pointer;}
         span{background: var(--g1);padding: 10px 12px;line-height: 1.3;color:var(--f1);font-weight: bold;}
     }
     .hd{font-weight: bold;color:var(--f1);line-height: 1.3;font-size: 24px;}
@@ -38,4 +39,5 @@
     .family .imgText{padding-inline: 0;border:none;}
     .family .imgText > figure{flex-direction: column;padding-block: 0;gap:10px;}
     .family .imgText > figure:not(:last-child){border-bottom-width: 4px;padding-bottom: 16px;margin-bottom: 16px;}
+    .family .imgText > figure > figcaption{width: 100%;}
 }

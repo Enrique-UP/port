@@ -217,7 +217,6 @@ export default function LifestyleHome() {
 
                     <img
                       src={img9}
-                      alt=""
                       onClick={() => {
                         setIndex(8);
                         setOpen(true);
