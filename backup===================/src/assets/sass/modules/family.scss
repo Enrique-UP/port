@@ -7,7 +7,7 @@
             }
             &.img{flex-wrap: wrap;
                 .images{width: 100%;@extend %fc;
-                    figcaption{column-count: 4;font-size: 0;background:var(--g7);
+                    figcaption{column-count: 4;column-gap: 0;font-size: 0;background:var(--g7);
                         > img{break-inside: avoid-column;}
                     }
                 }
