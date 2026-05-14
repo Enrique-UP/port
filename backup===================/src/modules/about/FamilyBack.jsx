@@ -10,22 +10,26 @@ import img5_3 from "../../assets/images/lifeStyle/aunty/1997-3.jpg";
 import img5_4 from "../../assets/images/lifeStyle/aunty/1997-4.jpg";
 import img5_5 from "../../assets/images/lifeStyle/aunty/mar2016.jpg";
 
-import img6 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img6_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img6_2 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img6_3 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img6_4 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img6_5 from "../../assets/images/lifeStyle/shillong/1.jpg";
+import img6 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_1 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_2 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_3 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_4 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_5 from "../../assets/images/lifeStyle/others/2010.jpg";
 
 import img7 from "../../assets/images/lifeStyle/19nov2019/1.jpg";
-import img7_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img7_2 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img7_3 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img7_4 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img7_5 from "../../assets/images/lifeStyle/shillong/1.jpg";
+import img7_1 from "../../assets/images/lifeStyle/others/1may2022.jpg";
+import img7_2 from "../../assets/images/lifeStyle/others/11jul2021.jpg";
+import img7_3 from "../../assets/images/lifeStyle/others/23feb2020.jpg";
+import img7_4 from "../../assets/images/lifeStyle/feb2017/3.jpg";
+import img7_5 from "../../assets/images/lifeStyle/feb2017/4.jpg";
 
-// import img6 from "../../assets/images/lifeStyle/others/2010.jpg";
 import img8 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_1 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_2 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_3 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_4 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_5 from "../../assets/images/lifeStyle/others/1958.jpg";
 
 export default function FamilyBack() {
   return (
@@ -138,7 +142,7 @@ export default function FamilyBack() {
                     <img data-src={img7_4} data-aos="fade-left" />
                     <img data-src={img7_5} data-aos="fade-right" />
                   </figcaption>
-                  <span>Loremmmm</span>
+                  <span>Memories with Politicians</span>
                 </div>{/* images */}
               </figure>
               <figure className="img">
@@ -149,12 +153,12 @@ export default function FamilyBack() {
                 </div>{/* content */}
                 <div className="images">
                   <figcaption>
-                    <img data-src={img5} data-aos="fade-left" />
-                    <img data-src={img5_1} data-aos="fade-right" />
-                    <img data-src={img5_2} data-aos="fade-left" />
-                    <img data-src={img5_3} data-aos="fade-right" />
-                    <img data-src={img5_4} data-aos="fade-left" />
-                    <img data-src={img5_5} data-aos="fade-right" />
+                    <img data-src={img8} data-aos="fade-left" />
+                    <img data-src={img8_1} data-aos="fade-right" />
+                    <img data-src={img8_2} data-aos="fade-left" />
+                    <img data-src={img8_3} data-aos="fade-right" />
+                    <img data-src={img8_4} data-aos="fade-left" />
+                    <img data-src={img8_5} data-aos="fade-right" />
                   </figcaption>
                   <span>Loremmmm</span>
                 </div>{/* images */}
