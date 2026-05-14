@@ -26,11 +26,11 @@ import img5_4 from "../../assets/images/lifeStyle/aunty/1997-4.jpg";
 import img5_5 from "../../assets/images/lifeStyle/aunty/mar2016.jpg";
 
 import img6 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_1 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_2 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_3 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_4 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_5 from "../../assets/images/lifeStyle/others/2010.jpg";
+import img6_1 from "../../assets/images/lifeStyle/30nov2019/1.jpg";
+import img6_2 from "../../assets/images/lifeStyle/20sep2025/2.jpg";
+import img6_3 from "../../assets/images/lifeStyle/20sep2025/1.jpg";
+import img6_4 from "../../assets/images/lifeStyle/20sep2025/4.jpg";
+import img6_5 from "../../assets/images/lifeStyle/20sep2025/6.jpg";
 
 import img7 from "../../assets/images/lifeStyle/19nov2019/1.jpg";
 import img7_1 from "../../assets/images/lifeStyle/others/1may2022.jpg";
@@ -41,10 +41,10 @@ import img7_5 from "../../assets/images/lifeStyle/feb2017/4.jpg";
 
 import img8 from "../../assets/images/lifeStyle/others/1958.jpg";
 import img8_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img8_2 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_3 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_4 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_5 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_2 from "../../assets/images/lifeStyle/shillong/2.jpg";
+import img8_3 from "../../assets/images/lifeStyle/shillong/3.jpg";
+import img8_4 from "../../assets/images/lifeStyle/shillong/4.jpg";
+import img8_5 from "../../assets/images/lifeStyle/shillong/5.jpg";
 
 export default function FamilyBack() {
   const [open, setOpen] = useState(false);
@@ -112,7 +112,10 @@ export default function FamilyBack() {
                   </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Ancestral Legacy and Zamindari Heritage</p>
-                    <p>I come from an old, reputed, and sports-oriented family based in the Budaun district of Uttar Pradesh, India. My great-great-grandfather, Late Mr. Naimuddin, and my great-grandfather, Late Mr. Shamsuddin, were both prominent zamindars. My great-grandfather, Late Mr. Shamsuddin, owned around 19 brick kilns. His legacy is also recorded in a 1935 publication published in Amritsar, Punjab. They were widely known for resolving community matters and promoting unity among people.</p>
+                    <p>I come from an old, reputed, and sports-oriented family based in the Budaun district of Uttar Pradesh, India.</p>
+                    <p>My great-great-grandfather, Late Mr. Naimuddin, and my great-grandfather, Late Mr. Shamsuddin, were both prominent zamindars.</p>
+                    <p>Late Mr. Naimuddin established the first brick kiln (bhatta) in the Budaun district in 1810 during the British period, on the request of the British authorities. It was the first brick kiln in the district at that time and produced traditional kakaiya bricks.</p>
+                    <p>My great-grandfather, Late Mr. Shamsuddin, later expanded this legacy by owning around 19 brick kilns. His legacy is also recorded in a 1935 publication published in Amritsar, Punjab. They were widely known for resolving community matters and promoting unity among people.</p>
                   </div>{/* content */}
                 </figure>
 
@@ -123,7 +126,11 @@ export default function FamilyBack() {
                   </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Leadership, Business, and Sports Legacy of My Grandfather</p>
-                    <p>My grandfather, Late Mr. Qamaruddin, served in the Indian Army before resigning to manage and expand his family business. He carried forward this legacy with significant landholdings and business ventures, including brick kilns. He also served as the District President of the Brick Kiln Association. He served as Vice Chairman in Ujhani and became a well-recognized and respected personality in the region. He was also known for resolving community matters and helping people reach fair decisions. Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality. He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions.</p>
+                    <p>My grandfather, Late Mr. Qamaruddin, served in the Indian Army before resigning to manage and expand his family business.</p>
+                    <p>He carried forward this legacy with significant landholdings and business ventures, including brick kilns. He also served as the State President of the Brick Kiln Association. He served as Vice Chairman in Ujhani and became a well-recognized and respected personality in the region.</p>
+                    <p>He was widely known for resolving community matters, including settling disputes and helping people resolve conflicts fairly and peacefully.</p>
+                    <p>Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality.</p>
+                    <p>He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions.</p>
                   </div>{/* content */}
                 </figure>
 
@@ -209,7 +216,7 @@ export default function FamilyBack() {
                       <img data-src={img7_4} data-index="20" onClick={handleImageClick} data-aos="fade-left" />
                       <img data-src={img7_5} data-index="21" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
-                    <span>Memories with Politicians</span>
+                    <span>Memories with MPs, MLAs, MLCs & Ministers</span>
                   </div>{/* images */}
                 </figure>
 
@@ -228,7 +235,7 @@ export default function FamilyBack() {
                       <img data-src={img8_4} data-index="26" onClick={handleImageClick} data-aos="fade-left" />
                       <img data-src={img8_5} data-index="27" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
-                    <span>Loremmmm</span>
+                    <span>Carrying Forward the Legacy</span>
                 </div>{/* images */}
               </figure>              
             </div>{/* imgText */}

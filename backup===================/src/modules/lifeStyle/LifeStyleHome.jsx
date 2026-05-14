@@ -92,7 +92,7 @@ export default function LifestyleHome() {
 
                   <div className="row">
 
-                    <article className="col-6 col-md-3 col-xl-6">
+                    <article className="col-sm-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-right">
 
                         <img
@@ -109,7 +109,7 @@ export default function LifestyleHome() {
                       </figure>
                     </article>
 
-                    <article className="col-6 col-md-3 col-xl-6">
+                    <article className="col-sm-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-left">
 
                         <img
@@ -126,7 +126,7 @@ export default function LifestyleHome() {
                       </figure>
                     </article>
 
-                    <article className="col-6 col-md-3 col-xl-6">
+                    <article className="col-sm-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-right">
 
                         <img
@@ -143,7 +143,7 @@ export default function LifestyleHome() {
                       </figure>
                     </article>
 
-                    <article className="col-6 col-md-3 col-xl-6">
+                    <article className="col-sm-6 col-md-3 col-xl-6">
                       <figure data-aos="fade-left">
 
                         <img
@@ -161,7 +161,7 @@ export default function LifestyleHome() {
                     </article>
                   </div>{/* row */}
                 </div>{/* cols */}
-                <article className="col-6 col-md-3">
+                <article className="col-sm-6 col-md-3">
                   <figure data-aos="fade-left">
 
                     <img
@@ -178,7 +178,7 @@ export default function LifestyleHome() {
                   </figure>
                 </article>
 
-                <article className="col-6 col-md-3">
+                <article className="col-sm-6 col-md-3">
                   <figure data-aos="fade-right">
 
                     <img
@@ -195,7 +195,7 @@ export default function LifestyleHome() {
                   </figure>
                 </article>
 
-                <article className="col-6 col-md-3">
+                <article className="col-sm-6 col-md-3">
                   <figure data-aos="fade-left">
 
                     <img
@@ -212,7 +212,7 @@ export default function LifestyleHome() {
                   </figure>
                 </article>
 
-                <article className="col-6 col-md-3">
+                <article className="col-sm-6 col-md-3">
                   <figure data-aos="fade-right">
 
                     <img
