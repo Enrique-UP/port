@@ -50,7 +50,7 @@ body{
 a, button{@extend %trans;text-decoration: none;}
 b, strong{font-weight: bold;}
 img{@extend %userSelect;}
-img {filter: grayscale(100%) brightness(0);}
+// img {filter: grayscale(100%) brightness(0);}
 img[data-src], img[data-img]{background: url(../images/icons/loader.gif) no-repeat center center;}
 
 main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit-fill-available;min-height: 100dvh;
