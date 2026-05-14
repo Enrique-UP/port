@@ -25,7 +25,7 @@ import img7_4 from "../../assets/images/lifeStyle/feb2017/3.jpg";
 import img7_5 from "../../assets/images/lifeStyle/feb2017/4.jpg";
 
 import img8 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_1 from "../../assets/images/lifeStyle/others/1958.jpg";
+import img8_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
 import img8_2 from "../../assets/images/lifeStyle/others/1958.jpg";
 import img8_3 from "../../assets/images/lifeStyle/others/1958.jpg";
 import img8_4 from "../../assets/images/lifeStyle/others/1958.jpg";
