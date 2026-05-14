@@ -141,7 +141,9 @@ export default function FamilyBack() {
                   </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Our Connection with Wrestling Legend – The Great Gama</p>
-                    <p>Our family is related to the world-famous wrestler The Great Gama (Ghulam Mohammad Baksh Bhatt), who is known as "Rustam-e-Hind" and was my grandfather's cousin. The Great Gama was our relative and, in family relation, he was regarded as my grandfather. He never lost a match in his wrestling career and is remembered as one of the greatest wrestlers in history.</p>
+                    <p>Our family is related to the world-famous wrestler The Great Gama (Ghulam Mohammad Baksh Bhatt), who was known as "Rustam-e-Hind" and was my grandfather's cousin. In our family relations, he is regarded as my grandfather. He remained undefeated throughout his wrestling career and is remembered as one of the greatest wrestlers in history.</p>
+                    <p>He earned worldwide respect for his extraordinary strength, discipline, and dedication to wrestling. The Great Gama defeated many renowned international wrestlers and achieved global recognition for his unmatched wrestling skills and physical power. One of his greatest achievements was winning the prestigious John Bull Belt in England, which brought him international fame and honor.</p>
+                    <p>His remarkable legacy continues to inspire generations of wrestlers and sports enthusiasts around the world, and he is still remembered with great pride as a symbol of courage, excellence, and greatness in Indian wrestling history.</p>
                   </div>{/* content */}
                 </figure>
 

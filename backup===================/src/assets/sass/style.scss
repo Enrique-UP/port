@@ -34,6 +34,8 @@
 
 
 // html {scroll-behavior: smooth;}
+// img {filter: grayscale(100%) brightness(0);}
+
 body{
     font-family: var(--ff1), 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -49,8 +51,7 @@ body{
 
 a, button{@extend %trans;text-decoration: none;}
 b, strong{font-weight: bold;}
-img{@extend %userSelect;}
-img {filter: grayscale(100%) brightness(0);}
+img{@extend %userSelect;-webkit-user-drag: none;pointer-events: auto;-webkit-touch-callout: none;}
 img[data-src], img[data-img]{background: url(../images/icons/loader.gif) no-repeat center center;}
 
 main {width:100%;overflow:clip;@extend %fc;min-height: 100vh;min-height: -webkit-fill-available;min-height: 100dvh;

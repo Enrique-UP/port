@@ -22,12 +22,17 @@ import RenderTop from './modules/common/RenderTop';
 import CommonScript from './modules/common/CommonScript';
 import Reviews from './modules/review/Reviews';
 import ScrollToHashOnLoad from "./modules/common/ScrollToHashOnLoad";
+import { DisableImageProtection } from "./modules/common/DisableImageProtection";
+
 
 
 
 export default function App() {
   useEffect(() => {
     Aos.init({duration:1000, once: true});
+    
+    const cleanup = DisableImageProtection();
+    return cleanup;
   }, []);
   return (
     <HashRouter>      
