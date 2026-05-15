@@ -1,16 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../../assets/images/lifeStyleHome/1.jpg";
-import img2 from "../../assets/images/lifeStyleHome/2.jpg";
-import img3 from "../../assets/images/lifeStyleHome/3.jpg";
-import img4 from "../../assets/images/lifeStyleHome/4.jpg";
-import img5 from "../../assets/images/lifeStyleHome/5.jpg";
-import img6 from "../../assets/images/lifeStyleHome/6.jpg";
-import img7 from "../../assets/images/lifeStyleHome/7.jpg";
-import img8 from "../../assets/images/lifeStyleHome/8.jpg";
-import img9 from "../../assets/images/lifeStyleHome/9.jpg";
-
 import LifeStyleMoments from "./LifeStyleMoments";
 
 import Lightbox from "yet-another-react-lightbox";
@@ -32,15 +22,15 @@ export default function LifestyleHome() {
   const [index, setIndex] = useState(0);
 
   const slides = [
-    { src: img1 },
-    { src: img2 },
-    { src: img3 },
-    { src: img4 },
-    { src: img5 },
-    { src: img6 },
-    { src: img7 },
-    { src: img8 },
-    { src: img9 },
+    { src: "images/lifeStyleHome/1.jpg" },
+    { src: "images/lifeStyleHome/2.jpg" },
+    { src: "images/lifeStyleHome/3.jpg" },
+    { src: "images/lifeStyleHome/4.jpg" },
+    { src: "images/lifeStyleHome/5.jpg" },
+    { src: "images/lifeStyleHome/6.jpg" },
+    { src: "images/lifeStyleHome/7.jpg" },
+    { src: "images/lifeStyleHome/8.jpg" },
+    { src: "images/lifeStyleHome/9.jpg" },
   ];
 
   return (
@@ -74,9 +64,8 @@ export default function LifestyleHome() {
                       <figure data-aos="fade-up">
 
                         <img
-                          src={img1}
-                          alt=""
-                          onClick={() => {
+                          src={slides[0].src}
+                              onClick={() => {
                             setIndex(0);
                             setOpen(true);
                           }}
@@ -96,9 +85,8 @@ export default function LifestyleHome() {
                       <figure data-aos="fade-right">
 
                         <img
-                          src={img2}
-                          alt=""
-                          onClick={() => {
+                          src={slides[1].src}
+                              onClick={() => {
                             setIndex(1);
                             setOpen(true);
                           }}
@@ -113,9 +101,8 @@ export default function LifestyleHome() {
                       <figure data-aos="fade-left">
 
                         <img
-                          src={img3}
-                          alt=""
-                          onClick={() => {
+                          src={slides[2].src}
+                              onClick={() => {
                             setIndex(2);
                             setOpen(true);
                           }}
@@ -130,9 +117,8 @@ export default function LifestyleHome() {
                       <figure data-aos="fade-right">
 
                         <img
-                          src={img4}
-                          alt=""
-                          onClick={() => {
+                          src={slides[3].src}
+                              onClick={() => {
                             setIndex(3);
                             setOpen(true);
                           }}
@@ -147,9 +133,8 @@ export default function LifestyleHome() {
                       <figure data-aos="fade-left">
 
                         <img
-                          src={img5}
-                          alt=""
-                          onClick={() => {
+                          src={slides[4].src}
+                              onClick={() => {
                             setIndex(4);
                             setOpen(true);
                           }}
@@ -165,8 +150,7 @@ export default function LifestyleHome() {
                   <figure data-aos="fade-left">
 
                     <img
-                      src={img6}
-                      alt=""
+                      src={slides[5].src}
                       onClick={() => {
                         setIndex(5);
                         setOpen(true);
@@ -182,8 +166,7 @@ export default function LifestyleHome() {
                   <figure data-aos="fade-right">
 
                     <img
-                      src={img7}
-                      alt=""
+                      src={slides[6].src}
                       onClick={() => {
                         setIndex(6);
                         setOpen(true);
@@ -199,8 +182,7 @@ export default function LifestyleHome() {
                   <figure data-aos="fade-left">
 
                     <img
-                      src={img8}
-                      alt=""
+                      src={slides[7].src}
                       onClick={() => {
                         setIndex(7);
                         setOpen(true);
@@ -216,7 +198,7 @@ export default function LifestyleHome() {
                   <figure data-aos="fade-right">
 
                     <img
-                      src={img9}
+                      src={slides[8].src}
                       onClick={() => {
                         setIndex(8);
                         setOpen(true);

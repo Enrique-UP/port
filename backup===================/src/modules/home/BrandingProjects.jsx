@@ -14,25 +14,17 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/portfolio/i2a/akounto_com.jpg";
-import img2 from "../../assets/images/portfolio/free/rajankapoorchai_com.jpg";
-import img3 from "../../assets/images/portfolio/snva/snva_com.jpg";
-import img4 from "../../assets/images/portfolio/snva/careerera_com.jpg";
-import img5 from "../../assets/images/portfolio/city/ticketstoworld_co_uk.jpg";
-import img6 from "../../assets/images/portfolio/city/ticketstoindia_co_uk.jpg";
-
-
 const BpData = [
     {
         site:"akounto_com",
-        img: img1,
+        img: "images/portfolio/i2a/akounto_com.jpg",
         web: "www.akounto.com",
         date: "31-Dec-2024",
         type:"Accounting Software",        
     },
     {
         site:"rajankapoorchai_com",
-        img: img2,
+        img: "images/portfolio/free/rajankapoorchai_com.jpg",
         web: "www.rajankapoorchai.com",
         link: "https://www.rajankapoorchai.com",
         date: "31-Oct-2024",
@@ -40,7 +32,7 @@ const BpData = [
     },
     {
         site:"snva_com",
-        img: img3,
+        img: "images/portfolio/snva/snva_com.jpg",
         web: "www.snva.com",
         link: "",
         date: "13-Nov-2021",
@@ -48,7 +40,7 @@ const BpData = [
     },
     {
         site:"careerera_com",
-        img: img4,
+        img: "images/portfolio/snva/careerera_com.jpg",
         web: "www.careerera.com",
         link: "https://www.careerera.com",
         date: "13-Nov-2021",
@@ -57,7 +49,7 @@ const BpData = [
     },
     {
         site:"ticketstoworld_co_uk",
-        img: img5,
+        img: "images/portfolio/city/ticketstoworld_co_uk.jpg",
         web: "www.ticketstoworld.co.uk",
         link: "https://www.ticketstoworld.co.uk",
         date: "13-Dec-2016",
@@ -65,7 +57,7 @@ const BpData = [
     },
     {
         site:"ticketstoindia_co_uk",
-        img: img6,
+        img: "images/portfolio/city/ticketstoindia_co_uk.jpg",
         web: "www.ticketstoindia.co.uk",
         link: "https://www.ticketstoindia.co.uk",
         date: "13-Dec-2016",

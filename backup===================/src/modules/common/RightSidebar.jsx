@@ -10,58 +10,31 @@ import ReviewData from "../review/ReviewData";
 import { HashLink } from "react-router-hash-link";
 import ScrollOffset from "./ScrollOffset";
 
-import calling from "../../assets/images/wcu.png";
-
-import Ls1 from "../../assets/images/lifeStyleHome/2.jpg";
-import Ls2 from "../../assets/images/lifeStyleHome/3.jpg";
-import Ls3 from "../../assets/images/lifeStyleHome/4.jpg";
-import Ls4 from "../../assets/images/lifeStyleHome/5.jpg";
-import Ls5 from "../../assets/images/lifeStyleHome/6.jpg";
-import Ls6 from "../../assets/images/lifeStyleHome/7.jpg";
-import Ls7 from "../../assets/images/lifeStyleHome/8.jpg";
-import Ls8 from "../../assets/images/lifeStyleHome/9.jpg";
-
-import T1 from "../../assets/images/team/t1-sb.jpg";
-import T2 from "../../assets/images/team/t2-sb.jpg";
-import T3 from "../../assets/images/team/t3-sb.jpg";
-import T4 from "../../assets/images/team/t4-sb.jpg";
-
-import C1 from "../../assets/images/childhood/1.jpg";
-import C2 from "../../assets/images/childhood/2.jpg";
-import C3 from "../../assets/images/childhood/3.jpg";
-import C4 from "../../assets/images/childhood/4.jpg";
-
-import Tm1 from "../../assets/images/testi/t1.jpg";
-import Tm2 from "../../assets/images/testi/t2.jpg";
-import Tm3 from "../../assets/images/testi/t3.jpg";
-import Tm4 from "../../assets/images/testi/t4.jpg";
-import Tm5 from "../../assets/images/testi/t5.jpg";
-
 import LifeStyleMoments from "../lifeStyle/LifeStyleMoments";
 
 const LifeStyleData = [
-  { hd: LifeStyleMoments[1].hd, txt: LifeStyleMoments[1].shd, img: Ls1 },
-  { hd: LifeStyleMoments[2].hd, txt: LifeStyleMoments[2].shd, img: Ls2 },
-  { hd: LifeStyleMoments[3].hd, txt: LifeStyleMoments[3].shd, img: Ls3 },
-  { hd: LifeStyleMoments[4].hd, txt: LifeStyleMoments[4].shd, img: Ls4 },
-  { hd: LifeStyleMoments[5].hd, txt: LifeStyleMoments[5].shd, img: Ls5 },
-  { hd: LifeStyleMoments[6].hd, txt: LifeStyleMoments[6].shd, img: Ls6 },
-  { hd: LifeStyleMoments[7].hd, txt: LifeStyleMoments[7].shd, img: Ls7 },
-  { hd: LifeStyleMoments[8].hd, txt: LifeStyleMoments[8].shd, img: Ls8 },
+  { hd: LifeStyleMoments[1].hd, txt: LifeStyleMoments[1].shd, img: "images/lifeStyleHome/2.jpg" },
+  { hd: LifeStyleMoments[2].hd, txt: LifeStyleMoments[2].shd, img: "images/lifeStyleHome/3.jpg" },
+  { hd: LifeStyleMoments[3].hd, txt: LifeStyleMoments[3].shd, img: "images/lifeStyleHome/4.jpg" },
+  { hd: LifeStyleMoments[4].hd, txt: LifeStyleMoments[4].shd, img: "images/lifeStyleHome/5.jpg" },
+  { hd: LifeStyleMoments[5].hd, txt: LifeStyleMoments[5].shd, img: "images/lifeStyleHome/6.jpg" },
+  { hd: LifeStyleMoments[6].hd, txt: LifeStyleMoments[6].shd, img: "images/lifeStyleHome/7.jpg" },
+  { hd: LifeStyleMoments[7].hd, txt: LifeStyleMoments[7].shd, img: "images/lifeStyleHome/8.jpg" },
+  { hd: LifeStyleMoments[8].hd, txt: LifeStyleMoments[8].shd, img: "images/lifeStyleHome/9.jpg" },
 ];
 
 const TeamData = [
-  { hd: "Head1", txt: "Txt1", img: T1 },
-  { hd: "Head2", txt: "Txt2", img: T2 },
-  { hd: "Head3", txt: "Txt3", img: T3 },
-  { hd: "Head4", txt: "Txt4", img: T4 }
+  { hd: "Head1", txt: "Txt1", img: "images/team/t1-sb.jpg" },
+  { hd: "Head2", txt: "Txt2", img: "images/team/t2-sb.jpg" },
+  { hd: "Head3", txt: "Txt3", img: "images/team/t3-sb.jpg" },
+  { hd: "Head4", txt: "Txt4", img: "images/team/t4-sb.jpg" }
 ];
 
 const ChildhoodData = [
-  { hd: "Head1", txt: "Txt1", img: C1 },
-  { hd: "Head2", txt: "Txt2", img: C2 },
-  { hd: "Head3", txt: "Txt3", img: C3 },
-  { hd: "Head4", txt: "Txt4", img: C4 }
+  { hd: "Head1", txt: "Txt1", img: "images/childhood/1.jpg" },
+  { hd: "Head2", txt: "Txt2", img: "images/childhood/2.jpg" },
+  { hd: "Head3", txt: "Txt3", img: "images/childhood/3.jpg" },
+  { hd: "Head4", txt: "Txt4", img: "images/childhood/4.jpg" }
 ];
 
 const CommonTag = ({ img, hd, txt }) => {
@@ -76,7 +49,7 @@ const CommonTag = ({ img, hd, txt }) => {
   );
 };
 
-const images = [Tm1, Tm2, Tm3, Tm4, Tm5];
+const images = ["images/testi/t1.jpg", "images/testi/t2.jpg", "images/testi/t3.jpg", "images/testi/t4.jpg", "images/testi/t5.jpg"];
 const TmTag = ({ name, place, text, icons, img }) => {
   return (
     <div className="testi">
@@ -100,7 +73,7 @@ export default function RightSidebar() {
 
         {/* Contact */}
         <aside className="contact" data-aos="fade-left" id="question">
-          <img src={calling} alt="" />
+          <img src="images/wcu.png" alt="" />
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
             <span>Don't hesitate to call me</span>

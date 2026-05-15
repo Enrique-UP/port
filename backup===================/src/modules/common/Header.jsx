@@ -3,10 +3,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
-import logo from "../../assets/images/logo.png";
-import logoMob from "../../assets/images/logoMob.png";
-import lifestyle from "../../assets/images/icons/lifeStyle.png";
-import contact from "../../assets/images/icons/contact.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,7 +67,7 @@ export default function Header() {
           <div className="container">
             <div className="fw">
               <div className="logo" data-aos="fade-down">
-                <Link to="/" onClick={ScrollTopPage}><img src={logo} /></Link>
+                <Link to="/" onClick={ScrollTopPage}><img src="images/logo.png" /></Link>
               </div>{/* logo */}
               <div className="follow" data-aos="fade-up">
                 <b>Follow Us</b>
@@ -105,7 +101,7 @@ export default function Header() {
               <i className="icon close" onClick={() => {setMenuOpen(false); resetScroll();}}>&#xa018;</i>
               <nav onClick={(e) => {e.stopPropagation();}}>
                 <div className="logo">
-                  <Link to="/" onClick={ScrollTopPage}><img src={logoMob} /></Link>
+                  <Link to="/" onClick={ScrollTopPage}><img src="images/logoMob.png" /></Link>
                 </div>{/* logo */}
                 <ul ref={menuListRef} onClick={resetScroll}>
                   <li>
@@ -124,7 +120,7 @@ export default function Header() {
 
                   <li>
                     <Link to="/lifestyle">
-                      <img src={lifestyle} />
+                      <img src="images/icons/lifeStyle.png" />
                       <span>My Life Style</span>
                     </Link>
                   </li>
@@ -199,7 +195,7 @@ export default function Header() {
 
                   <li>
                     <NavLink to="/contact">
-                      <img src={contact} />
+                      <img src="images/icons/contact.png" />
                       <span>Contact Me</span>
                     </NavLink>
                   </li>

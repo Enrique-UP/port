@@ -3,20 +3,8 @@ import { HashLink } from "react-router-hash-link";
 import { Global } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 
-import img1 from "../../assets/images/sideBar/about.jpg";
-import camping from "../../assets/images/icons/camping.png";
-import fitAth from "../../assets/images/icons/fitAth.png";
-
-import style from "../../assets/images/icons/style.png";
-import cricket from "../../assets/images/icons/cricket.png";
-import swimming from "../../assets/images/icons/swimming.png";
-import hikingTrekking from "../../assets/images/icons/hikingTrekking.png";
-import interiorDesign from "../../assets/images/icons/interiorDesign.png";
-import socialMedia from "../../assets/images/icons/socialMedia.png";
-import socialWork from "../../assets/images/icons/socialWork.png";
-
 const InterestData = [
-  { int : "Fashion & Styling", icon : style },
+  { int : "Fashion & Styling", icon : "images/icons/style.png" },
   { int : "Nature Sightseeing", icon : "&#xa051;" },
   { int : "Photography", icon : "&#xa083;" },
   { int : "Food Lover", icon : "&#xa091;" },
@@ -24,16 +12,16 @@ const InterestData = [
   { int : "Traveling", icon : "&#xa090;" },
   { int : "Biking", icon : "&#xa060;" },
   { int : "Car Driving", icon : "&#xa061;" },
-  { int : "Camping", icon : camping },
+  { int : "Camping", icon : "images/icons/camping.png" },
   { int : "Swimming", icon : "&#xa094;" },
-  { int : "Hiking/Trekking", icon : hikingTrekking },
-  { int : "Games & Sports", icon : cricket }, 
-  { int : "Fitness & Athletics", icon : fitAth },
-  { int : "Interior Designing", icon : interiorDesign }, 
+  { int : "Hiking/Trekking", icon : "images/icons/hikingTrekking.png" },
+  { int : "Games & Sports", icon : "images/icons/cricket.png" }, 
+  { int : "Fitness & Athletics", icon : "images/icons/fitAth.png" },
+  { int : "Interior Designing", icon : "images/icons/interiorDesign.png" }, 
   { int : "Listening Music", icon : "&#xa066;" },
   { int : "Watching Movies", icon : "&#xa075;" }, 
-  { int : "Social Media", icon : socialMedia },
-  { int : "Social Work", icon : socialWork }
+  { int : "Social Media", icon : "images/icons/socialMedia.png" },
+  { int : "Social Work", icon : "images/icons/socialWork.png" }
 ];
 const InterestTag = (props) => {
   const isImage = props.icon && props.icon.includes("/");
@@ -73,7 +61,7 @@ export default function LeftSidebar() {
             </ul>
           </aside>
           <aside className="about" data-aos="fade-right">
-            <img data-src={img1} />
+            <img data-src="images/sideBar/about.jpg" />
             <p>
               <span>My Activities</span>
               <i>I have a strong interest in cricket and politics, and I enjoy staying active through outdoor experiences, travel, and creative pursuits. I like exploring new places, meeting new people, and gaining new experiences. It helps me stay refreshed, focused, and balanced in life.</i>

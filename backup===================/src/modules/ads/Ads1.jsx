@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Ads from "../../assets/images/ads/ads4.jpg";
 import { Global } from "../common/Global";
 
 export default function Ads1() {
@@ -16,7 +15,7 @@ export default function Ads1() {
                             <Link to="/lifestyle">View More</Link>
                         </div>
                     </li>
-                    <li><img src={Ads} data-aos="fade-left" /></li>
+                    <li><img src="images/ads/ads4.jpg" data-aos="fade-left" /></li>
                 </ul>
             </div>{/* container */}
         </section>

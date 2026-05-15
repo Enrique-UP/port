@@ -7,12 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import img1 from "../../assets/images/testi/t1.jpg";
-import img2 from "../../assets/images/testi/t2.jpg";
-import img3 from "../../assets/images/testi/t3.jpg";
-import img4 from "../../assets/images/testi/t4.jpg";
-import img5 from "../../assets/images/testi/t5.jpg";
-const images = [img1, img2, img3, img4, img5];
+const images = ["images/testi/t1.jpg", "images/testi/t2.jpg", "images/testi/t3.jpg", "images/testi/t4.jpg", "images/testi/t5.jpg"];
 
 import ReviewData from "./ReviewData";
 

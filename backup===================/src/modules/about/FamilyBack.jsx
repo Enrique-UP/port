@@ -13,76 +13,47 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-import img1 from "../../assets/images/lifeStyle/others/1935.jpg";
-import img2 from "../../assets/images/lifeStyle/others/grandFather2.jpg";
-import img3 from "../../assets/images/gamaPahalwan.jpg";
-import img4 from "../../assets/images/lifeStyle/others/grandFather1.jpg";
 
-import img5 from "../../assets/images/lifeStyle/aunty/2aug2021.jpg";
-import img5_1 from "../../assets/images/lifeStyle/aunty/1996.jpg";
-import img5_2 from "../../assets/images/lifeStyle/aunty/1997-1.jpg";
-import img5_3 from "../../assets/images/lifeStyle/aunty/1997-3.jpg";
-import img5_4 from "../../assets/images/lifeStyle/aunty/1997-4.jpg";
-import img5_5 from "../../assets/images/lifeStyle/aunty/mar2016.jpg";
 
-import img6 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_1 from "../../assets/images/lifeStyle/30nov2019/1.jpg";
-import img6_2 from "../../assets/images/lifeStyle/20sep2025/2.jpg";
-import img6_3 from "../../assets/images/lifeStyle/20sep2025/1.jpg";
-import img6_4 from "../../assets/images/lifeStyle/20sep2025/4.jpg";
-import img6_5 from "../../assets/images/lifeStyle/20sep2025/6.jpg";
 
-import img7 from "../../assets/images/lifeStyle/19nov2019/1.jpg";
-import img7_1 from "../../assets/images/lifeStyle/others/1may2022.jpg";
-import img7_2 from "../../assets/images/lifeStyle/others/11jul2021.jpg";
-import img7_3 from "../../assets/images/lifeStyle/others/23feb2020.jpg";
-import img7_4 from "../../assets/images/lifeStyle/feb2017/3.jpg";
-import img7_5 from "../../assets/images/lifeStyle/feb2017/4.jpg";
-
-import img8 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img8_2 from "../../assets/images/lifeStyle/shillong/2.jpg";
-import img8_3 from "../../assets/images/lifeStyle/shillong/3.jpg";
-import img8_4 from "../../assets/images/lifeStyle/shillong/4.jpg";
-import img8_5 from "../../assets/images/lifeStyle/shillong/5.jpg";
 
 export default function FamilyBack() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
   const slides = [
-    { src: img1 },
-    { src: img2 },
-    { src: img3 },
-    { src: img4 },
+    { src: "images/lifeStyle/others/1935.jpg" },
+    { src: "images/lifeStyle/others/grandFather2.jpg" },
+    { src: "images/gamaPahalwan.jpg" },
+    { src: "images/lifeStyle/others/grandFather1.jpg" },
 
-    { src: img5 },
-    { src: img5_1 },
-    { src: img5_2 },
-    { src: img5_3 },
-    { src: img5_4 },
-    { src: img5_5 },
+    { src: "images/lifeStyle/aunty/2aug2021.jpg" },
+    { src: "images/lifeStyle/aunty/1996.jpg" },
+    { src: "images/lifeStyle/aunty/1997-1.jpg" },
+    { src: "images/lifeStyle/aunty/1997-3.jpg" },
+    { src: "images/lifeStyle/aunty/1997-4.jpg" },
+    { src: "images/lifeStyle/aunty/mar2016.jpg" },
 
-    { src: img6 },
-    { src: img6_1 },
-    { src: img6_2 },
-    { src: img6_3 },
-    { src: img6_4 },
-    { src: img6_5 },
+    { src: "images/lifeStyle/others/2010.jpg" },
+    { src: "images/lifeStyle/30nov2019/1.jpg" },
+    { src: "images/lifeStyle/20sep2025/2.jpg" },
+    { src: "images/lifeStyle/20sep2025/1.jpg" },
+    { src: "images/lifeStyle/20sep2025/4.jpg" },
+    { src: "images/lifeStyle/20sep2025/6.jpg" },
 
-    { src: img7 },
-    { src: img7_1 },
-    { src: img7_2 },
-    { src: img7_3 },
-    { src: img7_4 },
-    { src: img7_5 },
+    { src: "images/lifeStyle/19nov2019/1.jpg" },
+    { src: "images/lifeStyle/others/1may2022.jpg" },
+    { src: "images/lifeStyle/others/11jul2021.jpg" },
+    { src: "images/lifeStyle/others/23feb2020.jpg" },
+    { src: "images/lifeStyle/feb2017/3.jpg" },
+    { src: "images/lifeStyle/feb2017/4.jpg" },
 
-    { src: img8 },
-    { src: img8_1 },
-    { src: img8_2 },
-    { src: img8_3 },
-    { src: img8_4 },
-    { src: img8_5 },
+    { src: "images/lifeStyle/others/1958.jpg" },
+    { src: "images/lifeStyle/shillong/1.jpg" },
+    { src: "images/lifeStyle/shillong/2.jpg" },
+    { src: "images/lifeStyle/shillong/3.jpg" },
+    { src: "images/lifeStyle/shillong/4.jpg" },
+    { src: "images/lifeStyle/shillong/5.jpg" },
   ];
 
   const handleImageClick = (e) => {
@@ -107,7 +78,7 @@ export default function FamilyBack() {
               <div className="imgText">
                 <figure>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img1} data-index="0" onClick={handleImageClick} />
+                    <img data-src={slides[0].src} data-index="0" onClick={handleImageClick} />
                     <span>My Great-Grandfather’s name in a 1935 Book Published from Amritsar, Punjab</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -121,7 +92,7 @@ export default function FamilyBack() {
 
                 <figure>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img2} data-index="1" onClick={handleImageClick} />
+                    <img data-src={slides[1].src} data-index="1" onClick={handleImageClick} />
                     <span>My Grandfather (Late Mr. Qamaruddin)</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -136,7 +107,7 @@ export default function FamilyBack() {
 
                 <figure>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img3} data-index="2" onClick={handleImageClick} />
+                    <img data-src={slides[2].src} data-index="2" onClick={handleImageClick} />
                     <span>The Great Gama Pahalwan</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -149,7 +120,7 @@ export default function FamilyBack() {
 
                 <figure>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img4} data-index="3" onClick={handleImageClick} />
+                    <img data-src={slides[3].src} data-index="3" onClick={handleImageClick} />
                     <span>My grandfather is standing as the wicket-keeper</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -174,12 +145,12 @@ export default function FamilyBack() {
                 </div>{/* content */}
                 <div className="images">
                     <figcaption>
-                      <img data-src={img5} data-index="4" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_1} data-index="5" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img5_2} data-index="6" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_3} data-index="7" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img5_4} data-index="8" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_5} data-index="9" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[4].src} data-index="4" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[5].src} data-index="5" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[6].src} data-index="6" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[7].src} data-index="7" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[8].src} data-index="8" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[9].src} data-index="9" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
                     <span>My aunt Nusrat Waseem (Playback Singer)</span>
                 </div>{/* images */}
@@ -193,12 +164,12 @@ export default function FamilyBack() {
                 </div>{/* content */}
                 <div className="images">
                     <figcaption>
-                      <img data-src={img6} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_1} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img6_2} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_3} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img6_4} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_5} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[10].src} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[11].src} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[13].src} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[15].src} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
                     <span>My Cricketing Memories</span>
                   </div>{/* images */}
@@ -211,12 +182,12 @@ export default function FamilyBack() {
                 </div>{/* content */}
                 <div className="images">
                     <figcaption>
-                      <img data-src={img7} data-index="16" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_1} data-index="17" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img7_2} data-index="18" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_3} data-index="19" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img7_4} data-index="20" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_5} data-index="21" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[17].src} data-index="17" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[18].src} data-index="18" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[19].src} data-index="19" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[20].src} data-index="20" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[21].src} data-index="21" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
                     <span>Memories with MPs, MLAs, MLCs & Ministers</span>
                   </div>{/* images */}
@@ -230,12 +201,12 @@ export default function FamilyBack() {
                   </div>{/* content */}
                   <div className="images">
                     <figcaption>
-                      <img data-src={img8} data-index="22" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_1} data-index="23" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img8_2} data-index="24" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_3} data-index="25" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img8_4} data-index="26" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_5} data-index="27" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[22].src} data-index="22" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[23].src} data-index="23" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[24].src} data-index="24" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[25].src} data-index="25" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={slides[26].src} data-index="26" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={slides[27].src} data-index="27" onClick={handleImageClick} data-aos="fade-right" />
                     </figcaption>
                     <span>Carrying Forward the Legacy</span>
                 </div>{/* images */}

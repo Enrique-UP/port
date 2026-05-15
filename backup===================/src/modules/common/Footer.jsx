@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from "../../assets/images/logoFooter.png";
 import { Global, ScrollTopPage } from "./Global";
 import ScrollOffset from "./ScrollOffset";
 
@@ -28,17 +27,20 @@ function PostTag(props){
 }
 
 const ContactData = [
-  {link: Global.numTel, icon: "&#xa001;", cnt: Global.num, contact:"num"},
-  {link: Global.whatsappLink, icon: "&#xa025;", cnt: Global.num, contact:"num"},
-  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: Global.email, contact:"email"},
-  {icon: "&#xa007;", cnt: Global.address, contact:"address"}
+  {link: Global.numTel, icon: "&#xa001;", cnt: Global.num, contact:"num", txt:"Phone No." },
+  {link: Global.whatsappLink, icon: "&#xa025;", cnt: Global.num, contact:"num", txt:"WhatsApp No." },
+  {link: `mailto:${Global.email}`, icon: "&#xa004;", cnt: Global.email, contact:"email", txt:"Email ID." },
+  {icon: "&#xa007;", cnt: Global.address, contact:"address", txt:"Address" }
 ];
 function ContactTag(props){
   return(
     <>
       <li>
         <a href={props.link} target="_blank">
-          <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
+          <b>
+            <i className="icon" dangerouslySetInnerHTML={{ __html: props.icon }}></i>
+            <em>{props.txt}</em>
+          </b>
           <span className="abt" {...{ [`data-${props.contact}`]: props.cnt }}></span>
         </a>
       </li>
@@ -67,7 +69,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 logo">
               <div className="fw">
-                <Link to="/" data-aos="zoom-in" onClick={ScrollTopPage}><img src={logo} /></Link>
+                <Link to="/" data-aos="zoom-in" onClick={ScrollTopPage}><img src="images/logoFooter.png" /></Link>
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-md-12 col-xxl-3">

@@ -1,4 +1,3 @@
-import img1 from "../../assets/images/ads/ads3.jpg";
 import { Global } from "../common/Global";
 
 export default function Ads4() {
@@ -12,7 +11,7 @@ export default function Ads4() {
                                 <b data-aos="fade-down">All Types</b>
                                 <span data-aos="fade-up">of Website</span>
                             </figcaption>
-                            <img src={img1} />
+                            <img src="images/ads/ads3.jpg" />
                         </figure>
                         <figure className="text">
                             <figcaption>

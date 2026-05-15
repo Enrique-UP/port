@@ -9,32 +9,20 @@ import "swiper/css/thumbs";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// DESKTOP IMAGES
-import img1 from "../../assets/images/slider/slide1.jpg";
-import img2 from "../../assets/images/slider/slide2.jpg";
-import img3 from "../../assets/images/slider/slide3.jpg";
-
-// TABLET IMAGES
-import img1Tab from "../../assets/images/slider/slide1-991.jpg";
-import img2Tab from "../../assets/images/slider/slide2-991.jpg";
-import img3Tab from "../../assets/images/slider/slide3-991.jpg";
-
-// MOBILE IMAGES
-import img1Mob from "../../assets/images/slider/slide1-575.jpg";
-import img2Mob from "../../assets/images/slider/slide2-575.jpg";
-import img3Mob from "../../assets/images/slider/slide3-575.jpg";
 import ColorsLine from "../common/ColorsLine";
 
 const meta = {
-  hd: "Nomaan Arif",
-  shd: "Frontend Developer",
+  // hd: "Nomaan Arif",
+  // shd: "Frontend Developer",
+  hd: "Loremn Ipsm",
+  shd: "Dolor Sit Meets",
   link: "/contactus",
 };
 
 const images = [
-  { desktop: img1, tab: img1Tab, mobile: img1Mob, desc: "Developing Modern & Dynamic Web Experiences", ...meta },
-  { desktop: img2, tab: img2Tab, mobile: img2Mob, desc: "Developing Fast & Interactive Web Interfaces", ...meta },
-  { desktop: img3, tab: img3Tab, mobile: img3Mob, desc: "Developing Smart & Efficient Web Solutions", ...meta },
+  { desktop: "images/slider/slide1.jpg", tab: "images/slider/slide1-991.jpg", mobile: "images/slider/slide1-575.jpg", desc: "Developing Modern & Dynamic Web Experiences", ...meta },
+  { desktop: "images/slider/slide2.jpg", tab: "images/slider/slide2-991.jpg", mobile: "images/slider/slide2-575.jpg", desc: "Developing Fast & Interactive Web Interfaces", ...meta },
+  { desktop: "images/slider/slide3.jpg", tab: "images/slider/slide3-991.jpg", mobile: "images/slider/slide3-575.jpg", desc: "Developing Smart & Efficient Web Solutions", ...meta },
 ];
 
 export default function Slider() {

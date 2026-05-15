@@ -1,10 +1,5 @@
 import { useState } from "react";
 
-import img1 from "../../assets/images/childhood/1.jpg";
-import img2 from "../../assets/images/childhood/2.jpg";
-import img3 from "../../assets/images/childhood/3.jpg";
-import img4 from "../../assets/images/childhood/4.jpg";
-
 export default function Childhood() {
   const [active, setActive] = useState(false);
 
@@ -43,10 +38,10 @@ export default function Childhood() {
       </section>
       <section className="childhoodImg">
         <div className="container">
-          <img src={img1} data-aos="fade-left" />
-          <img src={img2} data-aos="fade-right" />
-          <img src={img3} data-aos="fade-left" />
-          <img src={img4} data-aos="fade-right" />
+          <img src="images/childhood/1.jpg" data-aos="fade-left" />
+          <img src="images/childhood/2.jpg" data-aos="fade-right" />
+          <img src="images/childhood/3.jpg" data-aos="fade-left" />
+          <img src="images/childhood/4.jpg" data-aos="fade-right" />
         </div>
       </section>
     </>

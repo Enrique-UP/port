@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Global } from "./Global";
-import defaultImg from "../../assets/images/banners/inner.jpg";
+const defaultImg = "images/banners/inner.jpg";
 import ColorsLine from "./ColorsLine";
 
 export default function Banner(props) {
