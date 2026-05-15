@@ -31,8 +31,8 @@ export default function App() {
   useEffect(() => {
     Aos.init({duration:1000, once: true});
     
-    // const cleanup = DisableImageProtection();
-    // return cleanup;
+    const cleanup = DisableImageProtection();
+    return cleanup;
   }, []);
   return (
     <HashRouter>      
