@@ -105,9 +105,9 @@ export default function FamilyBack() {
 
             <div className="col-12">
               <div className="imgText">
-                <figure>
+                <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img1} data-index="0" onClick={handleImageClick} />
+                    <img data-img={img1} data-index="0" onClick={handleImageClick} />
                     <span>My Great-Grandfather’s name in a 1935 Book Published from Amritsar, Punjab</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -117,11 +117,11 @@ export default function FamilyBack() {
                     <p>Late Mr. Naimuddin established the first brick kiln (bhatta) in the Budaun district in 1810 during the British period, on the request of the British authorities. It was the first brick kiln in the district at that time and produced traditional kakaiya bricks.</p>
                     <p>My great-grandfather, Late Mr. Shamsuddin, later expanded this legacy by owning around 19 brick kilns. His legacy is also recorded in a 1935 publication published in Amritsar, Punjab. They were widely known for resolving community matters and promoting unity among people.</p>
                   </div>{/* content */}
-                </figure>
+                </aside>
 
-                <figure>
+                <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img2} data-index="1" onClick={handleImageClick} />
+                    <img data-img={img2} data-index="1" onClick={handleImageClick} />
                     <span>My Grandfather (Late Mr. Qamaruddin)</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -132,11 +132,11 @@ export default function FamilyBack() {
                     <p>Alongside his professional achievements, he was a national-level cricketer who represented Uttar Pradesh as a wicketkeeper and batsman. He was also skilled in hockey and chess, reflecting his versatile personality.</p>
                     <p>He was known as an intelligent and capable individual who strongly believed in social harmony, promoting unity among communities and respect for all religions. He was also regarded as one of the most capable and respected individuals in the Budaun district.</p>
                   </div>{/* content */}
-                </figure>
+                </aside>
 
-                <figure>
+                <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img3} data-index="2" onClick={handleImageClick} />
+                    <img data-img={img3} data-index="2" onClick={handleImageClick} />
                     <span>The Great Gama Pahalwan</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -145,114 +145,202 @@ export default function FamilyBack() {
                     <p>He earned worldwide respect for his extraordinary strength, discipline, and dedication to wrestling. The Great Gama defeated many renowned international wrestlers and achieved global recognition for his unmatched wrestling skills and physical power. One of his greatest achievements was winning the prestigious John Bull Belt in England, which brought him international fame and honor.</p>
                     <p>His remarkable legacy continues to inspire generations of wrestlers and sports enthusiasts around the world, and he is still remembered with great pride as a symbol of courage, excellence, and greatness in Indian wrestling history.</p>
                   </div>{/* content */}
-                </figure>
+                </aside>
 
-                <figure>
+                <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-src={img4} data-index="3" onClick={handleImageClick} />
+                    <img data-img={img4} data-index="3" onClick={handleImageClick} />
                     <span>My grandfather is standing as the wicket-keeper</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">A Family Deeply Rooted in Sports</p>
                     <p>Continuing this legacy, my father, Mr. Mohammad Arif, has been an excellent volleyball player, while my uncle was a national-level volleyball player and captain of the Uttar Pradesh team.</p>
                   </div>{/* content */}
-                </figure>
+                </aside>
 
-                <figure className="img">
-                <div className="content" data-aos="fade-left">
-                  <p className="hd">Musical Talent and Achievements in the Family</p>
-                  <p>My aunt, Nusrat Waseem, is a Bollywood playback singer who has performed in films, albums, TV shows, live concerts, and international events. She appeared on Doordarshan’s Meri Awaaz Suno and was a runner-up in the 2016 Sony SAB Antakshari competition. She has also worked with singer <b>Altaf Raja</b>, contributed to the <b>film Tarazu</b>, and continues her active singing career. She has been honored with the <b>Adharshila Best Female Singer Award (presented by the President of India, Mr. Shankar Dayal Sharma)</b> and the Best Singer Award by Venus Records and Tapes Company. She currently runs a Mumbai-based music studio called “Musica”, where she trains aspiring singers.</p>
-                  <p>Below are the links to Recorded Songs & Qawwalis:-</p>
-                  <ul className="lists songs">
-                    <li><a href="https://www.youtube.com/results?search_query=Khwaja+Ki+Hai+Ye+Angnayee+Altaf+Raja" target="_blank">Khwaja Ki Hai Ye Angnayee (With Altaf Raza)</a></li>
-                    <li><a href="https://www.youtube.com/results?search_query=Jogan+Aayee+Altaf+Raja" target="_blank">Jogan Aayee (With Altaf Raza)</a></li>
-                    <li><a href="https://www.youtube.com/results?search_query=Chali+Chali+Woh+Sharaab+Altaf+Raja" target="_blank">Chali Chali Woh Sharaab (With Altaf Raza)</a></li>
-                    <li><a href="https://www.youtube.com/results?search_query=Ya+Habibe+Khuda+Altaf+Raja" target="_blank">Ya Habibe Khuda (With Altaf Raza)</a></li>
-                    <li><a href="https://www.youtube.com/results?search_query=Shahe+Sanjar+Ke+Dar+Ki+Altaf+Raja" target="_blank">Shahe Sanjar Ke Dar Ki (With Altaf Raza)</a></li>
-                    <li><a href="https://www.youtube.com/results?search_query=Nazar+Na+Hate+Mere+Yaar+Se+Tarazu" target="_blank">Nazar Na Hate Mere Yaar Se (Tarazu movie)</a></li>
-                  </ul>
-                </div>{/* content */}
-                <div className="images">
-                    <figcaption>
-                      <img data-src={img5} data-index="4" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_1} data-index="5" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img5_2} data-index="6" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_3} data-index="7" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img5_4} data-index="8" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img5_5} data-index="9" onClick={handleImageClick} data-aos="fade-right" />
-                    </figcaption>
-                    <span>My aunt Nusrat Waseem (Playback Singer)</span>
-                </div>{/* images */}
-                </figure>
+                <aside className="img">
+                  <div className="content" data-aos="fade-left">
+                    <p className="hd">Musical Talent and Achievements in the Family</p>
+                    <p>My aunt, Nusrat Waseem, is a Bollywood playback singer who has performed in films, albums, TV shows, live concerts, and international events. She appeared on Doordarshan’s Meri Awaaz Suno and was a runner-up in the 2016 Sony SAB Antakshari competition. She has also worked with singer <b>Altaf Raja</b>, contributed to the <b>film Tarazu</b>, and continues her active singing career. She has been honored with the <b>Adharshila Best Female Singer Award (presented by the President of India, Mr. Shankar Dayal Sharma)</b> and the Best Singer Award by Venus Records and Tapes Company. She currently runs a Mumbai-based music studio called “Musica”, where she trains aspiring singers.</p>
+                    <p>Below are the links to Recorded Songs & Qawwalis:-</p>
+                    <ul className="lists songs">
+                      <li><a href="https://www.youtube.com/results?search_query=Khwaja+Ki+Hai+Ye+Angnayee+Altaf+Raja" target="_blank">Khwaja Ki Hai Ye Angnayee (With Altaf Raza)</a></li>
+                      <li><a href="https://www.youtube.com/results?search_query=Jogan+Aayee+Altaf+Raja" target="_blank">Jogan Aayee (With Altaf Raza)</a></li>
+                      <li><a href="https://www.youtube.com/results?search_query=Chali+Chali+Woh+Sharaab+Altaf+Raja" target="_blank">Chali Chali Woh Sharaab (With Altaf Raza)</a></li>
+                      <li><a href="https://www.youtube.com/results?search_query=Ya+Habibe+Khuda+Altaf+Raja" target="_blank">Ya Habibe Khuda (With Altaf Raza)</a></li>
+                      <li><a href="https://www.youtube.com/results?search_query=Shahe+Sanjar+Ke+Dar+Ki+Altaf+Raja" target="_blank">Shahe Sanjar Ke Dar Ki (With Altaf Raza)</a></li>
+                      <li><a href="https://www.youtube.com/results?search_query=Nazar+Na+Hate+Mere+Yaar+Se+Tarazu" target="_blank">Nazar Na Hate Mere Yaar Se (Tarazu movie)</a></li>
+                    </ul>
+                  </div>{/* content */}
+                  <div className="partition">
+                    <article>
+                      <figure>
+                        <img data-img={img5} data-index="4" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img5_1} data-index="5" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img5_2} data-index="6" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img5_3} data-index="7" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img5_4} data-index="8" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img5_5} data-index="9" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                  </div>{/* partition */}
+                  <span>My aunt Nusrat Waseem (Playback Singer)</span>
+                </aside>
 
-                <figure className="img">
-                <div className="content" data-aos="fade-left">
-                  <p className="hd">My Cricket Journey and Passion for the Game</p>
-                  <p>I am known as a stylish cricketer with natural sporting ability since childhood and active involvement in cricket as an all-rounder. I am recognized for my strong batting technique, preference for long innings, solid straight-bat play, consistent timing, good footwork, body control, classic cricketing shots, and disciplined batting style. As a pace bowler, I once broke a batsman’s helmet with a sharp bouncer and also broke the stumps many times with fast deliveries. In fielding, I was known as a sharp and agile fielder.</p>
-                  <p>I participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, West Bengal, and Tamil Nadu. I also shared the field with players associated with state-level tournaments, the Ranji Trophy, and the IPL. I am deeply passionate about cricket and played at school, club, and corporate levels.</p>
-                </div>{/* content */}
-                <div className="images">
-                    <figcaption>
-                      <img data-src={img6} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_1} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img6_2} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_3} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img6_4} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img6_5} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
-                    </figcaption>
-                    <span>My Cricketing Memories</span>
-                  </div>{/* images */}
-                </figure>
+                <aside className="img">
+                  <div className="content" data-aos="fade-left">
+                    <p className="hd">My Cricket Journey and Passion for the Game</p>
+                    <p>I am known as a stylish cricketer with natural sporting ability since childhood and active involvement in cricket as an all-rounder. I am recognized for my strong batting technique, preference for long innings, solid straight-bat play, consistent timing, good footwork, body control, classic cricketing shots, and disciplined batting style. As a pace bowler, I once broke a batsman’s helmet with a sharp bouncer and also broke the stumps many times with fast deliveries. In fielding, I was known as a sharp and agile fielder.</p>
+                    <p>I participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, West Bengal, and Tamil Nadu. I also shared the field with players associated with state-level tournaments, the Ranji Trophy, and the IPL. I am deeply passionate about cricket and played at school, club, and corporate levels.</p>
+                  </div>{/* content */}
+                  <div className="partition">
+                    <article>
+                      <figure>
+                        <img data-img={img6} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img6_1} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img6_2} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img6_3} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img6_4} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img6_5} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                  </div>{/* partition */}
+                  <span>My Cricketing Memories</span>
+                </aside>
 
-                <figure className="img">
-                <div className="content" data-aos="fade-left">
-                  <p className="hd">Interest in Politics and Helping People</p>
-                  <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
-                </div>{/* content */}
-                <div className="images">
-                    <figcaption>
-                      <img data-src={img7} data-index="16" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_1} data-index="17" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img7_2} data-index="18" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_3} data-index="19" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img7_4} data-index="20" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img7_5} data-index="21" onClick={handleImageClick} data-aos="fade-right" />
-                    </figcaption>
-                    <span>Memories with MPs, MLAs, MLCs & Ministers</span>
-                  </div>{/* images */}
-                </figure>
+                <aside className="img">
+                  <div className="content" data-aos="fade-left">
+                    <p className="hd">Interest in Politics and Helping People</p>
+                    <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
+                  </div>{/* content */}
+                  <div className="partition">
+                    <article>
+                      <figure>
+                        <img data-img={img7} data-index="16" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img7_1} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img7_2} data-index="18" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img7_3} data-index="19" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img7_4} data-index="20" onClick={handleImageClick} data-aos="fade-right" />
+                      </figure>
+                    </article>
+                    <article>
+                      <figure>
+                        <img data-img={img7_5} data-index="21" onClick={handleImageClick} data-aos="fade-left" />
+                      </figure>
+                    </article>
+                  </div>{/* partition */}
+                  <span>Memories with MPs, MLAs, MLCs & Ministers</span>
+                </aside>
 
-                <figure className="img">
+                <aside className="img">
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Carrying Forward the Family Legacy</p>
                     <p>Although I may never equal the remarkable achievements and legacy of my elders, I sincerely strive to follow their path, uphold their values, and continue the traditions they built with honor and respect.</p>
                     <p>Today, I proudly carry forward this legacy through my journey as a software engineer while continuing to support and help people in need.</p>
                   </div>{/* content */}
-                  <div className="images">
-                    <figcaption>
-                      <img data-src={img8} data-index="22" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_1} data-index="23" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img8_2} data-index="24" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_3} data-index="25" onClick={handleImageClick} data-aos="fade-right" />
-                      <img data-src={img8_4} data-index="26" onClick={handleImageClick} data-aos="fade-left" />
-                      <img data-src={img8_5} data-index="27" onClick={handleImageClick} data-aos="fade-right" />
-                    </figcaption>
-                    <span>Carrying Forward the Legacy</span>
-                </div>{/* images */}
-              </figure>              
+                <div className="partition">
+                  <article>
+                    <figure>
+                      <img data-img={img8} data-index="22" onClick={handleImageClick} data-aos="fade-right" />
+                    </figure>
+                  </article>
+                  <article>
+                    <figure>
+                      <img data-img={img8_1} data-index="23" onClick={handleImageClick} data-aos="fade-left" />
+                    </figure>
+                  </article>
+                  <article>
+                    <figure>
+                      <img data-img={img8_2} data-index="24" onClick={handleImageClick} data-aos="fade-right" />
+                    </figure>
+                  </article>
+                  <article>
+                    <figure>
+                      <img data-img={img8_3} data-index="25" onClick={handleImageClick} data-aos="fade-left" />
+                    </figure>
+                  </article>
+                  <article>
+                    <figure>
+                      <img data-img={img8_4} data-index="26" onClick={handleImageClick}  data-aos="fade-right"/>
+                    </figure>
+                  </article>
+                  <article>
+                    <figure>
+                      <img data-img={img8_5} data-index="27" onClick={handleImageClick} data-aos="fade-left" />
+                    </figure>
+                  </article>
+                </div>{/* partition */}
+                <span>Carrying Forward the Legacy</span>
+              </aside>              
             </div>{/* imgText */}
           </div>{/* cols */}
         </div>{/* row */}
       </div>{/* container */}
     </section>
 
-      <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        index={index}
-        slides={slides}
-        plugins={[Zoom, Thumbnails, Fullscreen, Slideshow, Captions, Counter]}
-      />
+    <Lightbox
+      open={open}
+      close={() => setOpen(false)}
+      index={index}
+      slides={slides}
+      plugins={[Zoom, Thumbnails, Fullscreen, Slideshow, Captions, Counter]}
+    />
     </>
   );
 }
