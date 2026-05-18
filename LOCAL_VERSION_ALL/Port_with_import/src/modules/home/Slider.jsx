@@ -26,8 +26,10 @@ import img3Mob from "../../assets/images/slider/slide3-575.jpg";
 import ColorsLine from "../common/ColorsLine";
 
 const meta = {
-  hd: "Nomaan Arif",
-  shd: "Frontend Developer",
+  // hd: "Nomaan Arif",
+  // shd: "Frontend Developer",
+  hd: "Loremn Ipsm",
+  shd: "Dolor Sit Meets",
   link: "/contactus",
 };
 

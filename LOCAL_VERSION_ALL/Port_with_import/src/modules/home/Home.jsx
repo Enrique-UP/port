@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import HomeBanner from "../../assets/images/banners/home.jpg";
 import Banner from "../common/Banner";
 import Welcome from "./Welcome";
 import AboutHome from "../about/AboutHome";
@@ -19,8 +18,6 @@ import Slider from "./Slider";
 import TopProjects from "./TopProjects";
 import BrandingProjects from "./BrandingProjects";
 import FamilyBack from "../about/FamilyBack";
-
-
 
 export default function Home() {
   return (

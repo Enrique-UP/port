@@ -19,14 +19,15 @@
 }
 @media (max-width:767px){
     .welcome{padding-block: 44px;}
-    .welcome .fw::before {border-inline-width: 120px;border-bottom-width: 80px;top:-134px;}
     .welcome .fw {row-gap: 12px;}
     .welcome .head {white-space: nowrap;}
     .welcome .text {font-size: 16px;}
 }
 @media (min-width:576px) and (max-width:767px){
     .welcome .head {font-size: 64px;}
+    .welcome .fw::before {border-inline-width: 120px;border-bottom-width: 80px;top:-134px;}
 }
 @media (max-width:575px){
     .welcome .head {font-size: 46px;}
+    .welcome .fw::before {border-inline-width: 60px;border-bottom-width: 50px;top:-104px;}
 }

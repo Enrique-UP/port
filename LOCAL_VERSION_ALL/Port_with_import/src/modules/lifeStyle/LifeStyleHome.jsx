@@ -75,7 +75,6 @@ export default function LifestyleHome() {
 
                         <img
                           src={img1}
-                          alt=""
                           onClick={() => {
                             setIndex(0);
                             setOpen(true);
@@ -97,7 +96,6 @@ export default function LifestyleHome() {
 
                         <img
                           src={img2}
-                          alt=""
                           onClick={() => {
                             setIndex(1);
                             setOpen(true);
@@ -114,7 +112,6 @@ export default function LifestyleHome() {
 
                         <img
                           src={img3}
-                          alt=""
                           onClick={() => {
                             setIndex(2);
                             setOpen(true);
@@ -131,7 +128,6 @@ export default function LifestyleHome() {
 
                         <img
                           src={img4}
-                          alt=""
                           onClick={() => {
                             setIndex(3);
                             setOpen(true);
@@ -148,7 +144,6 @@ export default function LifestyleHome() {
 
                         <img
                           src={img5}
-                          alt=""
                           onClick={() => {
                             setIndex(4);
                             setOpen(true);
@@ -166,7 +161,6 @@ export default function LifestyleHome() {
 
                     <img
                       src={img6}
-                      alt=""
                       onClick={() => {
                         setIndex(5);
                         setOpen(true);
@@ -183,7 +177,6 @@ export default function LifestyleHome() {
 
                     <img
                       src={img7}
-                      alt=""
                       onClick={() => {
                         setIndex(6);
                         setOpen(true);
@@ -200,7 +193,6 @@ export default function LifestyleHome() {
 
                     <img
                       src={img8}
-                      alt=""
                       onClick={() => {
                         setIndex(7);
                         setOpen(true);

@@ -20,15 +20,15 @@ footer{background: var(--f3);
     }
     .posts{width: 100%;@extend %fc;gap:8px;
         > li{display: flex;width: 100%;
-            > a{background: var(--f6);color: var(--f7);display: flex;width: 100%;column-gap: 16px;padding-right:16px;
+            > a{background: var(--f6);color: var(--f7);display: flex;width: 100%;column-gap: 12px;padding-right:16px;
                 &:hover, &:active, &:focus {background: var(--c3);color: #fff;}
+                > b{background: var(--c5);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1.2;font-weight: bold;width: 96px;padding-block:10px;row-gap: 4px;}
             }
         }
         .date{background: var(--c5);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;padding: 20px 10px;font-weight: bold;width: 80px;white-space:nowrap;row-gap: 2px;
             > b{text-transform: uppercase;font-size: 16px;}
             > i{font-style: normal;font-size: 22px;}
         }
-        .icon{background: var(--c5);color:#fff;flex-shrink: 0;@extend %fc;text-align: center;justify-content: center;line-height: 1;font-weight: bold;width: 56px;padding-block:24px;}
         .abt{display: flex;align-items: center;line-height: 1.5;padding-block:12px;}
     }
     .text{padding-inline: 16px;}
@@ -44,6 +44,7 @@ footer{background: var(--f3);
 @media (max-width:767px){
     footer .row{row-gap: 32px !important;}
     footer .hd{font-size: 32px;}
+    footer .posts > li > a > b{width: 80px;}
 }
 @media (min-width:576px) and (max-width:767px){
     footer .logo img {width: 160px;}

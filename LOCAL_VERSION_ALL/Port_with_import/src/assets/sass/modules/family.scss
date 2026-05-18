@@ -31,6 +31,7 @@
     .family aside{flex-direction: column;}
     .family aside figcaption{margin-bottom: 16px;}
     .family .content p, .family .content ul, .family .content ol{margin-bottom:8px;}
+    .family .imgText {row-gap: 16px;}
 }
 @media (min-width:451px) and (max-width:767px){
     .family .partition {grid-template-columns: repeat(2, minmax(0, 1fr));}
