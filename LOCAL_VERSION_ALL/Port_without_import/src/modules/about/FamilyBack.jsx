@@ -27,33 +27,23 @@ export default function FamilyBack() {
     { src: "images/gamaPahalwan.jpg" },
     { src: "images/lifeStyle/others/grandFather1.jpg" },
 
-    { src: "images/lifeStyle/aunty/2aug2021.jpg" },
-    { src: "images/lifeStyle/aunty/1996.jpg" },
-    { src: "images/lifeStyle/aunty/1997-1.jpg" },
-    { src: "images/lifeStyle/aunty/1997-3.jpg" },
-    { src: "images/lifeStyle/aunty/1997-4.jpg" },
-    { src: "images/lifeStyle/aunty/mar2016.jpg" },
+    { src: "images/familyHome/aunt/1.jpg" },
+    { src: "images/familyHome/aunt/2.jpg" },
+    { src: "images/familyHome/aunt/3.jpg" },
+    { src: "images/familyHome/aunt/4.jpg" },
+    { src: "images/familyHome/aunt/5.jpg" },
+    { src: "images/familyHome/aunt/6.jpg" },
 
     { src: "images/lifeStyle/others/2010.jpg" },
-    { src: "images/lifeStyle/30nov2019/1.jpg" },
-    { src: "images/lifeStyle/20sep2025/2.jpg" },
-    { src: "images/lifeStyle/20sep2025/1.jpg" },
-    { src: "images/lifeStyle/20sep2025/4.jpg" },
-    { src: "images/lifeStyle/20sep2025/6.jpg" },
 
     { src: "images/lifeStyle/19nov2019/1.jpg" },
-    { src: "images/lifeStyle/others/1may2022.jpg" },
-    { src: "images/lifeStyle/others/11jul2021.jpg" },
-    { src: "images/lifeStyle/others/23feb2020.jpg" },
-    { src: "images/lifeStyle/feb2017/3.jpg" },
-    { src: "images/lifeStyle/feb2017/4.jpg" },
 
-    { src: "images/lifeStyle/others/1958.jpg" },
-    { src: "images/lifeStyle/shillong/1.jpg" },
-    { src: "images/lifeStyle/shillong/2.jpg" },
-    { src: "images/lifeStyle/shillong/3.jpg" },
-    { src: "images/lifeStyle/shillong/4.jpg" },
-    { src: "images/lifeStyle/shillong/5.jpg" },
+    { src: "images/familyHome/legacy/1.jpg" },
+    { src: "images/familyHome/legacy/2.jpg" },
+    { src: "images/familyHome/legacy/3.jpg" },
+    { src: "images/familyHome/legacy/4.jpg" },
+    { src: "images/familyHome/legacy/5.jpg" },
+    { src: "images/familyHome/legacy/6.jpg" },
   ];
 
   const handleImageClick = (e) => {
@@ -143,7 +133,7 @@ export default function FamilyBack() {
                       <li><a href="https://www.youtube.com/results?search_query=Nazar+Na+Hate+Mere+Yaar+Se+Tarazu" target="_blank">Nazar Na Hate Mere Yaar Se (Tarazu movie)</a></li>
                     </ul>
                   </div>{/* content */}
-                  <div className="partition">
+                  <div className="partitions">
                     <article>
                       <figure>
                         <img data-img={slides[4].src} data-index="4" onClick={handleImageClick} data-aos="fade-right" />
@@ -178,85 +168,27 @@ export default function FamilyBack() {
                   <span>My aunt Nusrat Waseem (Playback Singer)</span>
                 </aside>
 
-                <aside className="img">
+                <aside>
+                  <figcaption data-aos="fade-right">
+                    <img data-img={slides[10].src} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
+                    <span>Born for the Pitch</span>
+                  </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">My Cricket Journey and Passion for the Game</p>
                     <p>I am known as a stylish cricketer with natural sporting ability since childhood and active involvement in cricket as an all-rounder. I am recognized for my strong batting technique, preference for long innings, solid straight-bat play, consistent timing, good footwork, body control, classic cricketing shots, and disciplined batting style. As a pace bowler, I once broke a batsman’s helmet with a sharp bouncer and also broke the stumps many times with fast deliveries. In fielding, I was known as a sharp and agile fielder.</p>
                     <p>I participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, West Bengal, and Tamil Nadu. I also shared the field with players associated with state-level tournaments, the Ranji Trophy, and the IPL. I am deeply passionate about cricket and played at school, club, and corporate levels.</p>
                   </div>{/* content */}
-                  <div className="partition">
-                    <article>
-                      <figure>
-                        <img data-img={slides[10].src} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[11].src} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[13].src} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[15].src} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                  </div>{/* partition */}
-                  <span>My Cricketing Memories</span>
                 </aside>
 
-                <aside className="img">
+                <aside>
+                  <figcaption data-aos="fade-right">
+                    <img data-img={slides[11].src} data-index="11" onClick={handleImageClick} data-aos="fade-left" />
+                    <span>Passion for Leadership and Helping People</span>
+                  </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Interest in Politics and Helping People</p>
                     <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
                   </div>{/* content */}
-                  <div className="partition">
-                    <article>
-                      <figure>
-                        <img data-img={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[17].src} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[18].src} data-index="18" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[19].src} data-index="19" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[20].src} data-index="20" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[21].src} data-index="21" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                  </div>{/* partition */}
-                  <span>Memories with MPs, MLAs, MLCs & Ministers</span>
                 </aside>
 
                 <aside className="img">
@@ -265,39 +197,39 @@ export default function FamilyBack() {
                     <p>Although I may never equal the remarkable achievements and legacy of my elders, I sincerely strive to follow their path, uphold their values, and continue the traditions they built with honor and respect.</p>
                     <p>Today, I proudly carry forward this legacy through my journey as a software engineer while continuing to support and help people in need.</p>
                   </div>{/* content */}
-                <div className="partition">
+                <div className="partitions">
                   <article>
                     <figure>
-                      <img data-img={slides[22].src} data-index="22" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-img={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[23].src} data-index="23" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[13].src} data-index="13" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[24].src} data-index="24" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-img={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[25].src} data-index="25" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[15].src} data-index="15" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[26].src} data-index="26" onClick={handleImageClick}  data-aos="fade-right"/>
+                      <img data-img={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[27].src} data-index="27" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[17].src} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
-                </div>{/* partition */}
-                <span>Carrying Forward the Legacy</span>
+                </div>{/* partitions */}
+                <span>Legacy in my hands, responsibility in my heart</span>
               </aside>              
             </div>{/* imgText */}
           </div>{/* cols */}

@@ -18,6 +18,8 @@ import Slider from "./Slider";
 import TopProjects from "./TopProjects";
 import BrandingProjects from "./BrandingProjects";
 import FamilyBack from "../about/FamilyBack";
+import CricketMoments from "./CricketMoments";
+import AdventureMoments from "./AdventureMoments";
 
 export default function Home() {
   return (
@@ -29,8 +31,10 @@ export default function Home() {
       <Slider />
       <Welcome />
       <AboutHome />
-      <LifestyleHome /> 
       <FamilyBack />
+      <LifestyleHome />
+      <CricketMoments />
+      <AdventureMoments />
       <TopProjects />
       <Experience />
       <Education />
