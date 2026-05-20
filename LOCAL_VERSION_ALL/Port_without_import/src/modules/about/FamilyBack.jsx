@@ -200,7 +200,7 @@ export default function FamilyBack() {
                 <div className="partitions">
                   <article>
                     <figure>
-                      <img data-img={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-right" />
                     </figure>
                   </article>
                   <article>
@@ -210,7 +210,7 @@ export default function FamilyBack() {
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-right" />
                     </figure>
                   </article>
                   <article>
@@ -220,7 +220,7 @@ export default function FamilyBack() {
                   </article>
                   <article>
                     <figure>
-                      <img data-img={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-img={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-right" />
                     </figure>
                   </article>
                   <article>
