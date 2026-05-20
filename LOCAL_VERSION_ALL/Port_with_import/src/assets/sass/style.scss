@@ -30,11 +30,13 @@
 @import "./modules/sliderHome.scss";
 @import "./modules/topProjects.scss";
 @import "./modules/brandingProjects.scss";
+@import "./modules/cricMoments.scss";
+@import "./modules/advenMoments.scss";
 @import "./sites/sites.scss";
 
 
 // html {scroll-behavior: smooth;}
-// img {filter: grayscale(100%) brightness(0);}
+img {filter: grayscale(100%) brightness(0);}
 
 body{
     font-family: var(--ff1), 'Helvetica Neue', sans-serif;

@@ -21,7 +21,7 @@ const words1 = [
 
 function getExperienceYears(startYear = 2015, startMonth = 5) {
   const now = new Date();
-  let years = now.getFullYear() - startYear + 1;
+  let years = now.getFullYear() - startYear;
   // adjust if current month is before joining month
   if (now.getMonth() + 1 < startMonth) {
     years--;

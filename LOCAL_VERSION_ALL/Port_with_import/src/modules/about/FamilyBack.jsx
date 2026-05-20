@@ -18,33 +18,23 @@ import img2 from "../../assets/images/lifeStyle/others/grandFather2.jpg";
 import img3 from "../../assets/images/gamaPahalwan.jpg";
 import img4 from "../../assets/images/lifeStyle/others/grandFather1.jpg";
 
-import img5 from "../../assets/images/lifeStyle/aunty/2aug2021.jpg";
-import img5_1 from "../../assets/images/lifeStyle/aunty/1996.jpg";
-import img5_2 from "../../assets/images/lifeStyle/aunty/1997-1.jpg";
-import img5_3 from "../../assets/images/lifeStyle/aunty/1997-3.jpg";
-import img5_4 from "../../assets/images/lifeStyle/aunty/1997-4.jpg";
-import img5_5 from "../../assets/images/lifeStyle/aunty/mar2016.jpg";
+import img5 from "../../assets/images/familyHome/aunt/1.jpg";
+import img5_1 from "../../assets/images/familyHome/aunt/2.jpg";
+import img5_2 from "../../assets/images/familyHome/aunt/3.jpg";
+import img5_3 from "../../assets/images/familyHome/aunt/4.jpg";
+import img5_4 from "../../assets/images/familyHome/aunt/5.jpg";
+import img5_5 from "../../assets/images/familyHome/aunt/6.jpg";
 
 import img6 from "../../assets/images/lifeStyle/others/2010.jpg";
-import img6_1 from "../../assets/images/lifeStyle/30nov2019/1.jpg";
-import img6_2 from "../../assets/images/lifeStyle/20sep2025/2.jpg";
-import img6_3 from "../../assets/images/lifeStyle/20sep2025/1.jpg";
-import img6_4 from "../../assets/images/lifeStyle/20sep2025/4.jpg";
-import img6_5 from "../../assets/images/lifeStyle/20sep2025/6.jpg";
 
 import img7 from "../../assets/images/lifeStyle/19nov2019/1.jpg";
-import img7_1 from "../../assets/images/lifeStyle/others/1may2022.jpg";
-import img7_2 from "../../assets/images/lifeStyle/others/11jul2021.jpg";
-import img7_3 from "../../assets/images/lifeStyle/others/23feb2020.jpg";
-import img7_4 from "../../assets/images/lifeStyle/feb2017/3.jpg";
-import img7_5 from "../../assets/images/lifeStyle/feb2017/4.jpg";
 
-import img8 from "../../assets/images/lifeStyle/others/1958.jpg";
-import img8_1 from "../../assets/images/lifeStyle/shillong/1.jpg";
-import img8_2 from "../../assets/images/lifeStyle/shillong/2.jpg";
-import img8_3 from "../../assets/images/lifeStyle/shillong/3.jpg";
-import img8_4 from "../../assets/images/lifeStyle/shillong/4.jpg";
-import img8_5 from "../../assets/images/lifeStyle/shillong/5.jpg";
+import img8 from "../../assets/images/familyHome/legacy/1.jpg";
+import img8_1 from "../../assets/images/familyHome/legacy/2.jpg";
+import img8_2 from "../../assets/images/familyHome/legacy/3.jpg";
+import img8_3 from "../../assets/images/familyHome/legacy/4.jpg";
+import img8_4 from "../../assets/images/familyHome/legacy/5.jpg";
+import img8_5 from "../../assets/images/familyHome/legacy/6.jpg";
 
 export default function FamilyBack() {
   const [open, setOpen] = useState(false);
@@ -64,18 +54,8 @@ export default function FamilyBack() {
     { src: img5_5 },
 
     { src: img6 },
-    { src: img6_1 },
-    { src: img6_2 },
-    { src: img6_3 },
-    { src: img6_4 },
-    { src: img6_5 },
 
     { src: img7 },
-    { src: img7_1 },
-    { src: img7_2 },
-    { src: img7_3 },
-    { src: img7_4 },
-    { src: img7_5 },
 
     { src: img8 },
     { src: img8_1 },
@@ -93,7 +73,7 @@ export default function FamilyBack() {
 
   return (
     <>
-      <section className="section family" id="family">
+      <section className="section family b1" id="family">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -107,7 +87,7 @@ export default function FamilyBack() {
               <div className="imgText">
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={img1} data-index="0" onClick={handleImageClick} />
+                    <img data-src={img1} data-index="0" onClick={handleImageClick} />
                     <span>My Great-Grandfather’s name in a 1935 Book Published from Amritsar, Punjab</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -121,7 +101,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={img2} data-index="1" onClick={handleImageClick} />
+                    <img data-src={img2} data-index="1" onClick={handleImageClick} />
                     <span>My Grandfather (Late Mr. Qamaruddin)</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -136,7 +116,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={img3} data-index="2" onClick={handleImageClick} />
+                    <img data-src={img3} data-index="2" onClick={handleImageClick} />
                     <span>The Great Gama Pahalwan</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -149,7 +129,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={img4} data-index="3" onClick={handleImageClick} />
+                    <img data-src={img4} data-index="3" onClick={handleImageClick} />
                     <span>My grandfather is standing as the wicket-keeper</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -172,120 +152,62 @@ export default function FamilyBack() {
                       <li><a href="https://www.youtube.com/results?search_query=Nazar+Na+Hate+Mere+Yaar+Se+Tarazu" target="_blank">Nazar Na Hate Mere Yaar Se (Tarazu movie)</a></li>
                     </ul>
                   </div>{/* content */}
-                  <div className="partition">
+                  <div className="partitions">
                     <article>
                       <figure>
-                        <img data-img={img5} data-index="4" onClick={handleImageClick} data-aos="fade-right" />
+                        <img data-src={img5} data-index="4" onClick={handleImageClick} data-aos="fade-right" />
                       </figure>
                     </article>
                     <article>
                       <figure>
-                        <img data-img={img5_1} data-index="5" onClick={handleImageClick} data-aos="fade-left" />
+                        <img data-src={img5_1} data-index="5" onClick={handleImageClick} data-aos="fade-left" />
                       </figure>
                     </article>
                     <article>
                       <figure>
-                        <img data-img={img5_2} data-index="6" onClick={handleImageClick} data-aos="fade-right" />
+                        <img data-src={img5_2} data-index="6" onClick={handleImageClick} data-aos="fade-right" />
                       </figure>
                     </article>
                     <article>
                       <figure>
-                        <img data-img={img5_3} data-index="7" onClick={handleImageClick} data-aos="fade-left" />
+                        <img data-src={img5_3} data-index="7" onClick={handleImageClick} data-aos="fade-left" />
                       </figure>
                     </article>
                     <article>
                       <figure>
-                        <img data-img={img5_4} data-index="8" onClick={handleImageClick} data-aos="fade-right" />
+                        <img data-src={img5_4} data-index="8" onClick={handleImageClick} data-aos="fade-right" />
                       </figure>
                     </article>
                     <article>
                       <figure>
-                        <img data-img={img5_5} data-index="9" onClick={handleImageClick} data-aos="fade-left" />
+                        <img data-src={img5_5} data-index="9" onClick={handleImageClick} data-aos="fade-left" />
                       </figure>
                     </article>
-                  </div>{/* partition */}
+                  </div>{/* partitions */}
                   <span>My aunt Nusrat Waseem (Playback Singer)</span>
                 </aside>
 
-                <aside className="img">
+                <aside>
+                  <figcaption data-aos="fade-right">
+                    <img data-src={img6} data-index="10" onClick={handleImageClick} />
+                    <span>Born for the Pitch</span>
+                  </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">My Cricket Journey and Passion for the Game</p>
                     <p>I am known as a stylish cricketer with natural sporting ability since childhood and active involvement in cricket as an all-rounder. I am recognized for my strong batting technique, preference for long innings, solid straight-bat play, consistent timing, good footwork, body control, classic cricketing shots, and disciplined batting style. As a pace bowler, I once broke a batsman’s helmet with a sharp bouncer and also broke the stumps many times with fast deliveries. In fielding, I was known as a sharp and agile fielder.</p>
                     <p>I participated in state-level open tournaments across multiple states in India, competing with and against players from Uttar Pradesh, Delhi, Haryana, Uttarakhand, Madhya Pradesh, Bihar, Himachal Pradesh, Maharashtra, West Bengal, and Tamil Nadu. I also shared the field with players associated with state-level tournaments, the Ranji Trophy, and the IPL. I am deeply passionate about cricket and played at school, club, and corporate levels.</p>
                   </div>{/* content */}
-                  <div className="partition">
-                    <article>
-                      <figure>
-                        <img data-img={img6} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img6_1} data-index="11" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img6_2} data-index="12" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img6_3} data-index="13" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img6_4} data-index="14" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img6_5} data-index="15" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                  </div>{/* partition */}
-                  <span>My Cricketing Memories</span>
                 </aside>
 
-                <aside className="img">
+                <aside>
+                  <figcaption data-aos="fade-right">
+                    <img data-src={img7} data-index="11" onClick={handleImageClick} />
+                    <span>Passion for Leadership and Helping People</span>
+                  </figcaption>
                   <div className="content" data-aos="fade-left">
                     <p className="hd">Interest in Politics and Helping People</p>
                     <p>I have a strong interest in politics and actively participate in election activities, including canvassing, campaigning, and connecting with people. I have a keen interest in understanding people's challenges and contributing to meaningful solutions. People often approach me for guidance, and I support them by offering practical advice and helping them through my network and connections. I believe in helping people selflessly and without any bias, treating everyone with fairness and equal respect. I also enjoy exploring new experiences and embracing life with an adventurous spirit.</p>
                   </div>{/* content */}
-                  <div className="partition">
-                    <article>
-                      <figure>
-                        <img data-img={img7} data-index="16" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img7_1} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img7_2} data-index="18" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img7_3} data-index="19" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img7_4} data-index="20" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={img7_5} data-index="21" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                  </div>{/* partition */}
-                  <span>Memories with MPs, MLAs, MLCs & Ministers</span>
                 </aside>
 
                 <aside className="img">
@@ -294,39 +216,39 @@ export default function FamilyBack() {
                     <p>Although I may never equal the remarkable achievements and legacy of my elders, I sincerely strive to follow their path, uphold their values, and continue the traditions they built with honor and respect.</p>
                     <p>Today, I proudly carry forward this legacy through my journey as a software engineer while continuing to support and help people in need.</p>
                   </div>{/* content */}
-                <div className="partition">
+                <div className="partitions">
                   <article>
                     <figure>
-                      <img data-img={img8} data-index="22" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={img8} data-index="12" onClick={handleImageClick} data-aos="fade-right" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={img8_1} data-index="23" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={img8_1} data-index="13" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={img8_2} data-index="24" onClick={handleImageClick} data-aos="fade-right" />
+                      <img data-src={img8_2} data-index="14" onClick={handleImageClick} data-aos="fade-right" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={img8_3} data-index="25" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={img8_3} data-index="15" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={img8_4} data-index="26" onClick={handleImageClick}  data-aos="fade-right"/>
+                      <img data-src={img8_4} data-index="16" onClick={handleImageClick}  data-aos="fade-right"/>
                     </figure>
                   </article>
                   <article>
                     <figure>
-                      <img data-img={img8_5} data-index="27" onClick={handleImageClick} data-aos="fade-left" />
+                      <img data-src={img8_5} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
                     </figure>
                   </article>
-                </div>{/* partition */}
-                <span>Carrying Forward the Legacy</span>
+                </div>{/* partitions */}
+                <span>Legacy in my hands, responsibility in my heart</span>
               </aside>              
             </div>{/* imgText */}
           </div>{/* cols */}

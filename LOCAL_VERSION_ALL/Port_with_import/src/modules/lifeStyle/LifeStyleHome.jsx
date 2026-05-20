@@ -45,7 +45,7 @@ export default function LifestyleHome() {
 
   return (
     <>
-      <section className="section lifeStyle colors b1">
+      <section className="section lifeStyle colors">
         <div className="container">
           <div className="row">
             <div className="col-12">
