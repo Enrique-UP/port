@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -34,7 +35,7 @@ function CricTag({ img, name, place, index, onClick }) {
   return (
     <article>
       <img
-        src={img}
+        data-src={img}
         alt={name}
         onClick={() => onClick(index)}
       />
@@ -83,6 +84,9 @@ export default function CricketMoments() {
                   ))
                 }
               </div>{/* colors */}
+            </div>{/* cols */}
+            <div className="col-12 btns center mb0">
+              <Link to="/lifestyle" data-aos="fade-right">Explore More</Link>
             </div>{/* cols */}
           </div>{/* row */}
         </div>{/* container */}
