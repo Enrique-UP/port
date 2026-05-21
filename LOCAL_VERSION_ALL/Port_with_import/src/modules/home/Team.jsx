@@ -13,7 +13,7 @@ const TeamData = [
 function TeamTag(props){
     return(
         <div className="teamArea" data-aos={props.ani}>
-            <img src={props.img} />
+            <img data-src={props.img} />
             <i className="leftArrow"></i>
             <i className="rightArrow"></i>
             <i className="bottomArrow"></i>

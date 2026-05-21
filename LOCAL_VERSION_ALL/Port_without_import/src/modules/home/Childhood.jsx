@@ -30,19 +30,19 @@ export default function Childhood() {
                   <p>My grandfather was very strict about us going outside, so he used to keep us in one place while he slept. But we would secretly run away to the mango garden and the pond, where we had a lot of fun.</p>
                   <p>Now everything has changed, and those beautiful childhood days are gone. But whenever I think about them, I feel amazed at how quickly we all grew up.</p>
                   <p><span onClick={readMore}>{active ? "Read Less" : "Read More"}</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
+                </div>{/* content */}
+              </div>{/* cols */}
+            </div>{/* row */}
+          </div>{/* container */}
         </div>
       </section>
       <section className="childhoodImg">
         <div className="container">
-          <img src="images/childhood/1.jpg" data-aos="fade-left" />
-          <img src="images/childhood/2.jpg" data-aos="fade-right" />
-          <img src="images/childhood/3.jpg" data-aos="fade-left" />
-          <img src="images/childhood/4.jpg" data-aos="fade-right" />
-        </div>
+          <img data-src="images/childhood/1.jpg" data-aos="fade-left" />
+          <img data-src="images/childhood/2.jpg" data-aos="fade-right" />
+          <img data-src="images/childhood/3.jpg" data-aos="fade-left" />
+          <img data-src="images/childhood/4.jpg" data-aos="fade-right" />
+        </div>{/* container */}
       </section>
     </>
   );

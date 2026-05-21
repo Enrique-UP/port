@@ -13,48 +13,68 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-
-
-
-
 export default function FamilyBack() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const slides = [
-    { src: "images/lifeStyle/others/1935.jpg" },
-    { src: "images/lifeStyle/others/grandFather2.jpg" },
-    { src: "images/gamaPahalwan.jpg" },
-    { src: "images/lifeStyle/others/grandFather1.jpg" },
+  const img1 = "images/lifeStyle/others/1935.jpg";
+  const img2 = "images/lifeStyle/others/grandFather2.jpg";
+  const img3 = "images/gamaPahalwan.jpg";
+  const img4 = "images/lifeStyle/others/grandFather1.jpg";
 
-    { src: "images/familyHome/aunt/1.jpg" },
-    { src: "images/familyHome/aunt/2.jpg" },
-    { src: "images/familyHome/aunt/3.jpg" },
-    { src: "images/familyHome/aunt/4.jpg" },
-    { src: "images/familyHome/aunt/5.jpg" },
-    { src: "images/familyHome/aunt/6.jpg" },
+  const img5 = "images/familyHome/aunt/1.jpg";
+  const img5_1 = "images/familyHome/aunt/2.jpg";
+  const img5_2 = "images/familyHome/aunt/3.jpg";
+  const img5_3 = "images/familyHome/aunt/4.jpg";
+  const img5_4 = "images/familyHome/aunt/5.jpg";
+  const img5_5 = "images/familyHome/aunt/6.jpg";
 
-    { src: "images/lifeStyle/others/2010.jpg" },
+  const img6 = "images/lifeStyle/others/2010.jpg";
+  const img7 = "images/lifeStyle/19nov2019/1.jpg";
 
-    { src: "images/lifeStyle/19nov2019/1.jpg" },
+  const img8 = "images/familyHome/legacy/1.jpg";
+  const img8_1 = "images/familyHome/legacy/2.jpg";
+  const img8_2 = "images/familyHome/legacy/3.jpg";
+  const img8_3 = "images/familyHome/legacy/4.jpg";
+  const img8_4 = "images/familyHome/legacy/5.jpg";
+  const img8_5 = "images/familyHome/legacy/6.jpg";
 
-    { src: "images/familyHome/legacy/1.jpg" },
-    { src: "images/familyHome/legacy/2.jpg" },
-    { src: "images/familyHome/legacy/3.jpg" },
-    { src: "images/familyHome/legacy/4.jpg" },
-    { src: "images/familyHome/legacy/5.jpg" },
-    { src: "images/familyHome/legacy/6.jpg" },
+  const gallery = [
+    img1,
+    img2,
+    img3,
+    img4,
+
+    img5,
+    img5_1,
+    img5_2,
+    img5_3,
+    img5_4,
+    img5_5,
+
+    img6,
+    img7,
+
+    img8,
+    img8_1,
+    img8_2,
+    img8_3,
+    img8_4,
+    img8_5,
   ];
 
-  const handleImageClick = (e) => {
-    const i = Number(e.currentTarget.dataset.index);
-    setIndex(i);
+  const slides = gallery.map((img) => ({
+    src: img,
+  }));
+
+  const handleClick = (img) => {
+    setIndex(gallery.indexOf(img));
     setOpen(true);
   };
 
   return (
     <>
-      <section className="section family" id="family">
+      <section className="section family b1" id="family">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -68,7 +88,7 @@ export default function FamilyBack() {
               <div className="imgText">
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[0].src} data-index="0" onClick={handleImageClick} />
+                    <img data-src={img1} onClick={() => handleClick(img1)} />
                     <span>My Great-Grandfather’s name in a 1935 Book Published from Amritsar, Punjab</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -82,7 +102,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[1].src} data-index="1" onClick={handleImageClick} />
+                    <img data-src={img2} onClick={() => handleClick(img2)} />
                     <span>My Grandfather (Late Mr. Qamaruddin)</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -97,7 +117,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[2].src} data-index="2" onClick={handleImageClick} />
+                    <img data-src={img3} onClick={() => handleClick(img3)} />
                     <span>The Great Gama Pahalwan</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -110,7 +130,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[3].src} data-index="3" onClick={handleImageClick} />
+                    <img data-src={img4} onClick={() => handleClick(img4)} />
                     <span>My grandfather is standing as the wicket-keeper</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -134,43 +154,20 @@ export default function FamilyBack() {
                     </ul>
                   </div>{/* content */}
                   <div className="partitions">
-                    <article>
-                      <figure>
-                        <img data-img={slides[4].src} data-index="4" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[5].src} data-index="5" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[6].src} data-index="6" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[7].src} data-index="7" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[8].src} data-index="8" onClick={handleImageClick} data-aos="fade-right" />
-                      </figure>
-                    </article>
-                    <article>
-                      <figure>
-                        <img data-img={slides[9].src} data-index="9" onClick={handleImageClick} data-aos="fade-left" />
-                      </figure>
-                    </article>
-                  </div>{/* partition */}
+                    {[img5, img5_1, img5_2, img5_3, img5_4, img5_5].map((img) => (
+                      <article key={img}>
+                        <figure>
+                          <img data-src={img} onClick={() => handleClick(img)} />
+                        </figure>
+                      </article>
+                    ))}
+                  </div>{/* partitions */}
                   <span>My aunt Nusrat Waseem (Playback Singer)</span>
                 </aside>
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[10].src} data-index="10" onClick={handleImageClick} data-aos="fade-left" />
+                    <img data-src={img6} onClick={() => handleClick(img6)} />
                     <span>Born for the Pitch</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -182,7 +179,7 @@ export default function FamilyBack() {
 
                 <aside>
                   <figcaption data-aos="fade-right">
-                    <img data-img={slides[11].src} data-index="11" onClick={handleImageClick} data-aos="fade-left" />
+                    <img data-src={img7} onClick={() => handleClick(img7)} />
                     <span>Passion for Leadership and Helping People</span>
                   </figcaption>
                   <div className="content" data-aos="fade-left">
@@ -197,45 +194,23 @@ export default function FamilyBack() {
                     <p>Although I may never equal the remarkable achievements and legacy of my elders, I sincerely strive to follow their path, uphold their values, and continue the traditions they built with honor and respect.</p>
                     <p>Today, I proudly carry forward this legacy through my journey as a software engineer while continuing to support and help people in need.</p>
                   </div>{/* content */}
-                <div className="partitions">
-                  <article>
-                    <figure>
-                      <img data-img={slides[12].src} data-index="12" onClick={handleImageClick} data-aos="fade-right" />
-                    </figure>
-                  </article>
-                  <article>
-                    <figure>
-                      <img data-img={slides[13].src} data-index="13" onClick={handleImageClick} data-aos="fade-left" />
-                    </figure>
-                  </article>
-                  <article>
-                    <figure>
-                      <img data-img={slides[14].src} data-index="14" onClick={handleImageClick} data-aos="fade-right" />
-                    </figure>
-                  </article>
-                  <article>
-                    <figure>
-                      <img data-img={slides[15].src} data-index="15" onClick={handleImageClick} data-aos="fade-left" />
-                    </figure>
-                  </article>
-                  <article>
-                    <figure>
-                      <img data-img={slides[16].src} data-index="16" onClick={handleImageClick} data-aos="fade-right" />
-                    </figure>
-                  </article>
-                  <article>
-                    <figure>
-                      <img data-img={slides[17].src} data-index="17" onClick={handleImageClick} data-aos="fade-left" />
-                    </figure>
-                  </article>
-                </div>{/* partitions */}
-                <span>Legacy in my hands, responsibility in my heart</span>
-              </aside>              
-            </div>{/* imgText */}
-          </div>{/* cols */}
-        </div>{/* row */}
-      </div>{/* container */}
-    </section>
+                  <div className="partitions">
+                    {[img8, img8_1, img8_2, img8_3, img8_4, img8_5].map((img) => (
+                      <article key={img}>
+                        <figure>
+                          <img data-src={img} onClick={() => handleClick(img)} />
+                        </figure>
+                      </article>
+                    ))}
+                  </div>{/* partitions */}
+                  <span>Legacy in my hands, responsibility in my heart</span>
+                </aside>
+
+              </div>{/* imgText */}
+            </div>{/* cols */}
+          </div>{/* row */}
+        </div>{/* container */}
+      </section>
 
       <Lightbox
         open={open}

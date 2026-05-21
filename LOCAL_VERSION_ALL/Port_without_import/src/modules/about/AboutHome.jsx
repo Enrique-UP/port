@@ -13,7 +13,7 @@ const words1 = [
 
 function getExperienceYears(startYear = 2015, startMonth = 5) {
   const now = new Date();
-  let years = now.getFullYear() - startYear + 1;
+  let years = now.getFullYear() - startYear;
   // adjust if current month is before joining month
   if (now.getMonth() + 1 < startMonth) {
     years--;
@@ -67,18 +67,18 @@ export default function AboutHome() {
               <div className="imgArea1">
                 <picture data-aos="fade-right">
                   <source media="(max-width: 575px)" srcset="images/about/about1_575.jpg" />
-                  <img src="images/about/about1.jpg" />
+                  <img data-src="images/about/about1.jpg" />
                 </picture>
                 <picture data-aos="fade-left">
                   <source media="(max-width: 575px)" srcset="images/about/about2_575.jpg" />
-                  <img src="images/about/about2.jpg" />
+                  <img data-src="images/about/about2.jpg" />
                 </picture>
               </div>{/* imgArea */}
               <div className="imgArea2">
                 <picture data-aos="fade-down">
                   <source media="(min-width: 576px) and (max-width: 1199px)" srcset="images/about/img3_1199.jpg" />
                   <source media="(max-width: 575px)" srcset="images/about/about3_575.jpg" />
-                  <img src="images/about/about3.jpg" />
+                  <img data-src="images/about/about3.jpg" />
                 </picture>
               </div>{/* imgArea */}
             </div>{/* images */}

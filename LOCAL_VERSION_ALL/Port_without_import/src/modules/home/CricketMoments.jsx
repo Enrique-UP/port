@@ -29,7 +29,6 @@ function CricTag({ img, name, place, index, onClick }) {
     <article>
       <img
         data-src={img}
-        alt={name}
         onClick={() => onClick(index)}
       />
       <span>

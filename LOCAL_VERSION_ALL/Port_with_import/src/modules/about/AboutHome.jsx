@@ -75,18 +75,18 @@ export default function AboutHome() {
               <div className="imgArea1">
                 <picture data-aos="fade-right">
                   <source media="(max-width: 575px)" srcset={img1_575} />
-                  <img src={img1} />
+                  <img data-src={img1} />
                 </picture>
                 <picture data-aos="fade-left">
                   <source media="(max-width: 575px)" srcset={img2_575} />
-                  <img src={img2} />
+                  <img data-src={img2} />
                 </picture>
               </div>{/* imgArea */}
               <div className="imgArea2">
                 <picture data-aos="fade-down">
                   <source media="(min-width: 576px) and (max-width: 1199px)" srcset={img3_1199} />
                   <source media="(max-width: 575px)" srcset={img3_575} />
-                  <img src={img3} />
+                  <img data-src={img3} />
                 </picture>
               </div>{/* imgArea */}
             </div>{/* images */}

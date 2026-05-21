@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 logo">
               <div className="fw">
-                <Link to="/" data-aos="zoom-in" onClick={ScrollTopPage}><img src="images/logoFooter.png" /></Link>
+                <Link to="/" data-aos="zoom-in" onClick={ScrollTopPage}><img data-src="images/logoFooter.png" /></Link>
               </div>{/* fw */}
             </div>{/* cols */}
             <div className="col-md-12 col-xxl-3">

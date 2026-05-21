@@ -16,7 +16,7 @@ export default function Ads1() {
                             <Link to="/lifestyle">View More</Link>
                         </div>
                     </li>
-                    <li><img src={Ads} data-aos="fade-left" /></li>
+                    <li><img data-src={Ads} data-aos="fade-left" /></li>
                 </ul>
             </div>{/* container */}
         </section>

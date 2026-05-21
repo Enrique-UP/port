@@ -1,6 +1,36 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+
+
+
 export default function AdventureMoments() {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const images = ["images/AdventureMoments/1.jpg", "images/AdventureMoments/2.jpg", "images/AdventureMoments/3.jpg", "images/AdventureMoments/4.jpg", "images/AdventureMoments/5.jpg", "images/AdventureMoments/6.jpg"];
+
+  const slides = images.map((img) => ({
+    src: img,
+  }));
+
+  const handleClick = (img) => {
+    setIndex(images.indexOf(img));
+    setOpen(true);
+  };
+
   return (
     <>
       <section className="section advenMoments">
@@ -16,31 +46,31 @@ export default function AdventureMoments() {
               <ul>
                 <li>
                   <span>
-                    <img data-src="images/AdventureMoments/1.jpg" />
+                    <img data-src="images/AdventureMoments/1.jpg" onClick={() => handleClick(img1)} />
                     <em>Lorem</em>
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img data-src="images/AdventureMoments/2.jpg" />
+                    <img data-src="images/AdventureMoments/2.jpg" onClick={() => handleClick(img2)} />
                     <em>Lorem</em>
                   </span>
                   <span>
-                    <img data-src="images/AdventureMoments/3.jpg" />
+                    <img data-src="images/AdventureMoments/3.jpg" onClick={() => handleClick(img3)} />
                     <em>Lorem</em>
                   </span>
                   <span>
-                    <img data-src="images/AdventureMoments/4.jpg" />
+                    <img data-src="images/AdventureMoments/4.jpg" onClick={() => handleClick(img4)} />
                     <em>Lorem</em>
                   </span>
                   <span>
-                    <img data-src="images/AdventureMoments/5.jpg" />
+                    <img data-src="images/AdventureMoments/5.jpg" onClick={() => handleClick(img5)} />
                     <em>Lorem</em>
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img data-src="images/AdventureMoments/6.jpg" />
+                    <img data-src="images/AdventureMoments/6.jpg" onClick={() => handleClick(img6)} />
                     <em>Lorem</em>
                   </span>
                 </li>
@@ -52,6 +82,15 @@ export default function AdventureMoments() {
           </div>{/* row */}
         </div>{/* container */}
       </section>
+
+      {/* LIGHTBOX */}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={slides}
+        plugins={[Zoom, Thumbnails, Fullscreen, Slideshow, Captions, Counter]}
+      />
     </>
   );
 }

@@ -67,7 +67,7 @@ const ChildhoodData = [
 const CommonTag = ({ img, hd, txt }) => {
   return (
     <div className="sliderArea">
-      <img src={img} />
+      <img data-src={img} />
       <div className="text">
         <b>{hd}</b>
         <span>{txt}</span>
@@ -82,7 +82,7 @@ const TmTag = ({ name, place, text, icons, img }) => {
     <div className="testi">
       <p data-review={text}></p>
       <div className="text">
-        <img src={img} />
+        <img data-src={img} />
         <div className="txt">
           <b data-name={name}></b>
           <span data-place={place}></span>
@@ -100,7 +100,7 @@ export default function RightSidebar() {
 
         {/* Contact */}
         <aside className="contact" data-aos="fade-left" id="question">
-          <img src={calling} alt="" />
+          <img data-src={calling} alt="" />
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
             <span>Don't hesitate to call me</span>

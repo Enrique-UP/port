@@ -14,7 +14,7 @@ export default function Ads3() {
                             <a href={Global.numTel} target="_blank">Contact Me</a>
                         </div>
                     </li>
-                    <li><img src="images/ads/ads1.jpg" data-aos="fade-left" /></li>
+                    <li><img data-src="images/ads/ads1.jpg" data-aos="fade-left" /></li>
                 </ul>
             </div>{/* container */}
         </section>

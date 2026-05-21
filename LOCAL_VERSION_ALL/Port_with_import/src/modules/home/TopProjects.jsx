@@ -88,7 +88,6 @@ const TpData = [
 
 function TpTag(props) {
     const isActive = props.activeIndex === props.index;
-
     const detailsRef = useRef(null);
 
     useEffect(() => {

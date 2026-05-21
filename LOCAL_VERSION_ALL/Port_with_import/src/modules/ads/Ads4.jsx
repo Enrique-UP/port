@@ -12,7 +12,7 @@ export default function Ads4() {
                                 <b data-aos="fade-down">All Types</b>
                                 <span data-aos="fade-up">of Website</span>
                             </figcaption>
-                            <img src={img1} />
+                            <img data-src={img1} />
                         </figure>
                         <figure className="text">
                             <figcaption>

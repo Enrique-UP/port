@@ -76,7 +76,7 @@ export default function Wcu(){
                         </div>{/* cols */}
                         <div className="col-lg-4 col-xxl-3">
                             <figure>
-                                <img src="images/wcu.png" data-aos="fade-up" />
+                                <img data-src="images/wcu.png" data-aos="fade-up" />
                                 <figcaption>
                                     <p><a href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i><span data-num={Global.num}></span></a></p>
                                     <p><a href={`mailto:${Global.email}`} target="_blank"><i className="icon">&#xa004;</i><span data-email={Global.email}></span></a></p>
