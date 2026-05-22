@@ -12,10 +12,10 @@ import "swiper/css/pagination";
 import ColorsLine from "../common/ColorsLine";
 
 const meta = {
-  // hd: "Nomaan Arif",
-  // shd: "Frontend Developer",
-  hd: "Loremn Ipsm",
-  shd: "Dolor Sit Meets",
+  hd: "Nomaan Arif",
+  shd: "Frontend Developer",
+  // hd: "Loremn Ipsm",
+  // shd: "Dolor Sit Meets",
   link: "/contactus",
 };
 
