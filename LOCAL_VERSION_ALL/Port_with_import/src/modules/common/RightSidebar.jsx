@@ -10,7 +10,7 @@ import ReviewData from "../review/ReviewData";
 import { HashLink } from "react-router-hash-link";
 import ScrollOffset from "./ScrollOffset";
 
-import calling from "../../assets/images/wcu.png";
+import calling from "../../assets/images/sideBar/calling.png";
 
 import Ls1 from "../../assets/images/lifeStyleHome/2.jpg";
 import Ls2 from "../../assets/images/lifeStyleHome/3.jpg";
