@@ -27,10 +27,7 @@ const LifeStyleAllData = LifeStyleData.map((folder) => {
       images: [...folder.images]
         .reverse()
         .map((img) => ({
-          src: new URL(
-            `./images/lifeStyle/${folder.imgFdr}/${img.img}.jpg`,
-            import.meta.url
-          ).href,
+          src: `./images/lifeStyle/${folder.imgFdr}/${img.img}.jpg`,
           title: img.title,
           date: img.date,
         })),
@@ -40,10 +37,7 @@ const LifeStyleAllData = LifeStyleData.map((folder) => {
   return {
     category: folder.imgFdr,
     images: Array.from({ length: folder.items || 0 }, (_, i) => ({
-      src: new URL(
-        `./images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
-        import.meta.url
-      ).href,
+      src: `./images/lifeStyle/${folder.imgFdr}/${i + 1}.jpg`,
       title: folder.title,
       date: folder.date,
     })),
