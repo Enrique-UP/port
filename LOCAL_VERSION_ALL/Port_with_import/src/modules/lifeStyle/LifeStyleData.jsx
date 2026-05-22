@@ -25,7 +25,16 @@ const LifeStyleData = [
       { title: "My aunt at a musical show", img:"1997-4" },
       { title: "My aunt with Ghulam Mustafa Sahab", img:"2005" },
       { title: "Antakshari Final Runner-Up (Sony SAB)", date: "2016", img:"mar2016" },
-      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_1" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_2" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_3" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_4" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_5" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_6" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_7" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_8" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_9" },
+      { title: "Inauguration of Musica", date: "2 Aug 2021", img:"2aug2021_10" },
     ],
   },
   {
@@ -50,25 +59,24 @@ const LifeStyleData = [
   },
 
   
-  { imgFdr: "feb2017", title:"At my house, Ujhani", date: "Aug 2015", items: 6 },
   { imgFdr: "13feb2016", title:"Amer Fort, Jaipur", date: "13 Feb 2016", items: 4 },
   { imgFdr: "14feb2016", title:"Jantar Mantar, Jaipur", date: "14 Feb 2016", items: 2 },
   { imgFdr: "25jan2017", title:"Election Campaigning", date: "25 Jan 2017", items: 4 },
+  { imgFdr: "feb2017", title:"At Raja Badhwar Sahab kothi, Ujhani", date: "Feb 2017", items: 6 },
   {
     imgFdr: "others",
     images: [
       { title: "At Ujhani", date: "10 Feb 2017", img:"10feb2017" },
     ],
   },
-  { imgFdr: "feb2017", title:"Election Campaigning", date: "Feb 2017", items: 6 },
   {
     imgFdr: "others",
     images: [
       { title: "At Noida", date: "19 Dec 2017", img:"19dec2017" },
     ],
   },
-  { imgFdr: "1aug2018", title:"At Starex University, Gurgaon", date: "1 Aug 2018", items: 2 },
   { imgFdr: "4feb2018", title:"At SNVA, Noida", date: "4 Feb 2018", items: 3 },
+  { imgFdr: "1aug2018", title:"At Starex University, Gurgaon", date: "1 Aug 2018", items: 2 },
   { imgFdr: "5oct2018", title: "At Noida", date: "5 Oct 2018", items:"2" },
   { imgFdr: "23feb2019", title:"Ujhani", date: "23 Feb 2019", items: 3 },
   {
@@ -78,14 +86,10 @@ const LifeStyleData = [
       { title: "At Phoenix Mall, Bareilly", date: "19 Jul 2019", img:"19jul2019" },
     ],
   },
-  { imgFdr: "10aug2019", title:"Bareilly", date: "10 Aug 2019", items: 4 },
-  {
-    imgFdr: "others",
-    images: [
-      { title: "At Bareilly", date: "14 Aug 2019", img:"14aug2019" },
-      { title: "At Bareilly", date: "14 Sep 2019", img:"14sep2019" },
-    ],
-  },
+  { imgFdr: "10aug2019", title:"At Bareilly", date: "10 Aug 2019", items: 5 },
+  { imgFdr: "14aug2019", title:"At Bareilly", date: "14 Aug 2019", items: 6 },
+  { imgFdr: "14aug2019", title:"At Bareilly", date: "14 Sep 2019", items: 4 },
+  
   { imgFdr: "8oct2019", title:"My Nephew & Niece", date: "8 Oct 2019", items: 9 },
   { imgFdr: "22nov2019", title:"My Niece", date: "22 Nov 2019", items: 4 },
   {
@@ -98,7 +102,7 @@ const LifeStyleData = [
     ],
   },
 
-  { imgFdr: "30nov2019", title:"Official Cricket Tournament", date: "30 Nov 2019", items: 2 },
+  { imgFdr: "31nov2019", title:"Official Cricket Tournament", date: "31 Nov 2019", items: 6 },
   { imgFdr: "31jan2020", title:"My niece Aira Noor", date: "31 Jan 2020", items: 3 },
   { imgFdr: "2feb2020", title:"My niece Aira Noor", date: "2 Feb 2020", items: 3 },
   {
@@ -163,13 +167,13 @@ const LifeStyleData = [
 
   { imgFdr: "18apr2025", title:"Lulu Mall, Lucknow", date: "18 Apr 2025", items: 17 },
   { imgFdr: "22jun2025", title:"Ambience Mall, Gurgaon", date: "22 Jun 2025", items: 10 },
-  { imgFdr: "16oct2025", title:"Diwali Celebration in the Office & Won 1st Prize in Male Fancy Dress Competition", date: "16 Oct 2025", items: 3 },
-  { imgFdr: "21dec2025", title:"Cyber Park & Ambience Mall, Gurgaon", date: "21 Dec 2025", items: 16 },
   { imgFdr: "30aug2025", title:"Mall, Lucknow", date: "30 Aug 2025", items: 7 },
   { imgFdr: "20sep2025", title:"Park, Gurgaon", date: "20 Sep 2025", items: 7 },
   { imgFdr: "30nov2025", title:"Bada Imambara, Lucknow", date: "30 Nov 2025", items: 27 },
+  { imgFdr: "16oct2025", title:"Diwali Celebration in the Office & Won 1st Prize in Male Fancy Dress Competition", date: "16 Oct 2025", items: 3 },
   { imgFdr: "20dec2025-1", title:"Deer Park, Delhi", date: "20 Dec 2025", items: 25 },
   { imgFdr: "20dec2025-2", title:"Red Fort, Delhi", date: "20 Dec 2025", items: 32 },
+  { imgFdr: "21dec2025", title:"Cyber Park & Ambience Mall, Gurgaon", date: "21 Dec 2025", items: 16 },
   {
     imgFdr: "others",
     images: [
