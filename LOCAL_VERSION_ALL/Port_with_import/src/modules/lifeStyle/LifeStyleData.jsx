@@ -53,7 +53,7 @@ const LifeStyleData = [
   { imgFdr: "feb2017", title:"At my house, Ujhani", date: "Aug 2015", items: 6 },
   { imgFdr: "13feb2016", title:"Amer Fort, Jaipur", date: "13 Feb 2016", items: 4 },
   { imgFdr: "14feb2016", title:"Jantar Mantar, Jaipur", date: "14 Feb 2016", items: 2 },
-  { imgFdr: "jan2017", title:"Election Campaigning", date: "Jan 2017", items: 2 },
+  { imgFdr: "25jan2017", title:"Election Campaigning", date: "25 Jan 2017", items: 4 },
   {
     imgFdr: "others",
     images: [
@@ -69,12 +69,7 @@ const LifeStyleData = [
   },
   { imgFdr: "1aug2018", title:"At Starex University, Gurgaon", date: "1 Aug 2018", items: 2 },
   { imgFdr: "4feb2018", title:"At SNVA, Noida", date: "4 Feb 2018", items: 3 },
-  {
-    imgFdr: "others",
-    images: [
-      { title: "At Noida", date: "5 Oct 2018", img:"5oct2018" },
-    ],
-  },
+  { imgFdr: "5oct2018", title: "At Noida", date: "5 Oct 2018", items:"2" },
   { imgFdr: "23feb2019", title:"Ujhani", date: "23 Feb 2019", items: 3 },
   {
     imgFdr: "others",
