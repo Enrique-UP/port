@@ -15,12 +15,12 @@ import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
 const CricData = [
-  { img: "images/cricMoments/1.jpg", name: "Ipsum", place: "Lorem" },
-  { img: "images/cricMoments/2.jpg", name: "Ipsum", place: "Lorem" },
-  { img: "images/cricMoments/3.jpg", name: "Ipsum", place: "Lorem" },
-  { img: "images/cricMoments/4.jpg", name: "Ipsum", place: "Lorem" },
-  { img: "images/cricMoments/5.jpg", name: "Ipsum", place: "Lorem" },
-  { img: "images/cricMoments/6.jpg", name: "Ipsum", place: "Lorem" }
+  { img: "images/cricMoments/1.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/2.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/3.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/5.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/7.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/8.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
 ];
 
 // Child component

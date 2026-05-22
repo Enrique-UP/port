@@ -52,31 +52,31 @@ export default function AdventureMoments() {
                 <li>
                   <span>
                     <img data-src={img1} onClick={() => handleClick(img1)} />
-                    <em>Lorem</em>
+                    <em>Scuba Diving</em>
                   </span>
                 </li>
                 <li>
                   <span>
                     <img data-src={img2} onClick={() => handleClick(img2)} />
-                    <em>Lorem</em>
+                    <em>Zip Line</em>
                   </span>
                   <span>
                     <img data-src={img3} onClick={() => handleClick(img3)} />
-                    <em>Lorem</em>
+                    <em>Quad Bike</em>
                   </span>
                   <span>
                     <img data-src={img4} onClick={() => handleClick(img4)} />
-                    <em>Lorem</em>
+                    <em>Snow Tubing</em>
                   </span>
                   <span>
                     <img data-src={img5} onClick={() => handleClick(img5)} />
-                    <em>Lorem</em>
+                    <em>Zip Line</em>
                   </span>
                 </li>
                 <li>
                   <span>
                     <img data-src={img6} onClick={() => handleClick(img6)} />
-                    <em>Lorem</em>
+                    <em>Sky Cycling</em>
                   </span>
                 </li>
               </ul>

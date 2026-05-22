@@ -22,12 +22,12 @@ import img5 from "../../assets/images/cricMoments/5.jpg";
 import img6 from "../../assets/images/cricMoments/6.jpg";
 
 const CricData = [
-  { img: img1, name: "Ipsum", place: "Lorem" },
-  { img: img2, name: "Ipsum", place: "Lorem" },
-  { img: img3, name: "Ipsum", place: "Lorem" },
-  { img: img4, name: "Ipsum", place: "Lorem" },
-  { img: img5, name: "Ipsum", place: "Lorem" },
-  { img: img6, name: "Ipsum", place: "Lorem" }
+  { img: "images/cricMoments/1.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/2.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/3.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/5.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/7.jpg", name: "Corporate Night Tournament,", place: "Gurgaon" },
+  { img: "images/cricMoments/8.jpg", name: "Corporate Tournament,", place: "Gurgaon" },
 ];
 
 // Child component
