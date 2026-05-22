@@ -73,7 +73,7 @@ export default function RightSidebar() {
 
         {/* Contact */}
         <aside className="contact" data-aos="fade-left" id="question">
-          <img data-src="images/wcu.png" alt="" />
+          <img data-src="images/sideBar/calling.png" alt="" />
           <a target="_blank" href={Global.numTel}>
             <b>Got a questions?</b>
             <span>Don't hesitate to call me</span>

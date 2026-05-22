@@ -52,8 +52,9 @@ const LifeStyleData = [
   {
     imgFdr: "others",
     images: [
-      { title: "Cricket Tournament", date: "2010", img:"2010" },
       { title: "Lucknow", date: "2013", img:"2013" },
+      { title: "Arhaan", date: "23 Nov 2014", img:"23nov2014" },
+      { title: "Arhaan", date: "28 Sep 2014", img:"28sep2014" },
       { title: "Ghaziabad", date: "2016", img:"2016" }
     ],
   },
@@ -79,6 +80,7 @@ const LifeStyleData = [
   { imgFdr: "1aug2018", title:"At Starex University, Gurgaon", date: "1 Aug 2018", items: 2 },
   { imgFdr: "5oct2018", title: "At Noida", date: "5 Oct 2018", items:"2" },
   { imgFdr: "23feb2019", title:"Ujhani", date: "23 Feb 2019", items: 3 },
+  { imgFdr: "21jul2019", title:"My nephew & neice, Arhaan & Aira", date: "21jul2019", items: 7 },
   {
     imgFdr: "others",
     images: [
@@ -103,15 +105,40 @@ const LifeStyleData = [
   },
 
   { imgFdr: "31nov2019", title:"Official Cricket Tournament", date: "31 Nov 2019", items: 6 },
+  { imgFdr: "2dec2019", title:"Aira", date: "2 Dec 2019", items: 8 },
+
+  {
+    imgFdr: "others",
+    images: [      
+      { title: "Arhaan", date: "14 Jan 2019", img:"14jan2019" },
+      { title: "Aira", date: "28 Apr 2019", img:"28apr2019" },
+      { title: "With Relatives", date: "30 Jun 2019", img:"30jun2019" },
+      { title: "Arhaan", date: "9 Sep 2019", img:"9sep2019" },
+      { title: "Arhaan & Aira", date: "21 Sep 2019", img:"21sep2019" },      
+
+      { title: "Aira", date: "4 Apr 2020", img:"4apr2020" },
+      { title: "Aira", date: "8 Nov 2020", img:"8nov2020" },
+      
+      { title: "Aira", date: "2020", img:"2020" },
+
+      { title: "My Father", date: "13 Jun 2022", img:"13jun2022" },
+    ],
+  },
+
   { imgFdr: "31jan2020", title:"My niece Aira Noor", date: "31 Jan 2020", items: 3 },
   { imgFdr: "2feb2020", title:"My niece Aira Noor", date: "2 Feb 2020", items: 3 },
+  { imgFdr: "3feb2020", title:"My niece Aira Noor", date: "3 Feb 2020", items: 3 },
   {
     imgFdr: "others",
     images: [
       { title: "Met My Best Friend’s Father, B. L. Verma (Uncle), Central Government Minister", date: "23 Feb 2020", img:"23feb2020" },
     ],
   },
-  { imgFdr: "june2020", title:"My niece Aira Noor", date: "June 2020", items: 5 },
+
+  { imgFdr: "16mar2020", title:"My niece Aira Noor", date: "16 Mar 2020", items: 4 },
+  { imgFdr: "18mar2020", title:"My niece Aira Noor", date: "18 Mar 2020", items: 7 },
+  { imgFdr: "25may2020", title:"My nephew & niece, Arhaan & Aira Noor", date: "25 May 2020", items: 7 },
+  
   {
     imgFdr: "others",
     images: [
@@ -127,10 +154,16 @@ const LifeStyleData = [
       { title: "At Budaun", date: "26 Oct 2020", img:"26oct2020" },
     ],
   },
+  { imgFdr: "9nov2020", title:"My niece Aira Noor", date: "9 Nov 2020", items: 7 },
+  
   { imgFdr: "23nov2020", title:"Phoenix Mall, Bareilly", date: "23 Nov 2020", items: 2 },
+  { imgFdr: "26nov2020", title:"My niece Aira Noor", date: "26 Nov 2020", items: 2 },
   { imgFdr: "29dec2020", title:"Ujhani", date: "29 Dec 2020", items: 2 },
   { imgFdr: "30dec2020", title:"Ujhani & Budaun", date: "30 Dec 2020", items: 4 },
   { imgFdr: "1jan2021", title:"With the Chief Editor of APN News Channel", date: "1 Jan 2021", items: 2 },
+
+  { imgFdr: "26jan2021", title:"My nephew & neice, Arhaan & Aira", date: "26 Jan 2021", items: 25 },
+
   { imgFdr: "21feb2021", title:"Enjoyed near dam", date: "21 Feb 2021", items: 3 },
   {
     imgFdr: "others",
@@ -139,6 +172,7 @@ const LifeStyleData = [
     ],
   },
   { imgFdr: "6mar2021", title:"Attended official Party, Noida", date: "6 Mar 2021", items: 6 },
+  { imgFdr: "7jun2021", title:"My niece Aira Noor", date: "7 Jun 2021", items: 7 },
   {
     imgFdr: "others",
     images: [
@@ -159,10 +193,24 @@ const LifeStyleData = [
   { imgFdr: "8jan2023", title:"Manali", date: "8 Jan 2023", items: 22 },
   { imgFdr: "9jan2023", title:"Manali", date: "9 Jan 2023", items: 25 },
   { imgFdr: "22jan2023", title:"Humayun Tomb, Delhi", date: "22 Jan 2023", items: 28 },
+  { imgFdr: "19mar2023", title:"My niece Aira Noor", date: "19 Mar 2023", items: 3 },
   { imgFdr: "19_20dec2023", title:"Aksa Beach, Mumbai", date: "19 & 20 Dec 2023", items: 18 },
   { imgFdr: "21dec2023", title:"Attended marriage, Mumbai", date: "21 Dec 2023", items: 18 },
   { imgFdr: "22dec2023", title:"Zoo & Haji Ali Dargah, Mumbai", date: "22 Dec 2023", items: 11 },
   { imgFdr: "23dec2023", title:"Gateway of India, Mumbai", date: "23 Dec 2023", items: 5 },
+
+
+  {
+    imgFdr: "others",
+    images: [
+      { title: "Cricket Tournament", date: "2010", img:"2010" },
+    ],
+  },
+  { imgFdr: "2aug2024", title:"Cricket Match", date: "2 Aug 2024", items: 3 },
+  { imgFdr: "3may2024", title:"Corporate Cricket Tournament", date: "3 May 2024", items: 5 },
+  { imgFdr: "16jun2023", title:"Corporate Cricket Tournament", date: "16 Jun 2023", items: 2 },
+  { imgFdr: "24feb2024", title:"Corporate Cricket Tournament", date: "24 Feb 2024", items: 4 },
+  { imgFdr: "25nov2023", title:"Corporate Cricket Tournament", date: "25 Nov 2023", items: 4 },
 
 
   { imgFdr: "18apr2025", title:"Lulu Mall, Lucknow", date: "18 Apr 2025", items: 17 },
@@ -184,6 +232,9 @@ const LifeStyleData = [
   { imgFdr: "25dec2026-2", title:"Clock Tower & Rumi Darwaza, Lucknow", date: "25 Jan 2026", items: 18 },
   { imgFdr: "26jan2026", title:"Ambedkar Park, Lucknow", date: "26 Jan 2026", items: 26 },
   { imgFdr: "4apr2026", title:"Ardee Mall, Gurgaon", date: "4 Apr 2026", items: 17 },
+
+
+  
   
 ];
 export default LifeStyleData;

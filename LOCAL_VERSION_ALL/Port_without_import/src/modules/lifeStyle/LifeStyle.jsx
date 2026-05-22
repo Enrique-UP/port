@@ -97,7 +97,6 @@ export default function Lifestyle() {
                       <figure>
                         <img
                           data-img={img.src}
-                          alt={img.title}
                           onClick={() => {
                             setIndex(getGlobalIndex(gIndex, iIndex));
                             setOpen(true);
@@ -111,7 +110,7 @@ export default function Lifestyle() {
                     </article>
                   ))
                 )}
-              </div>
+              </div>{/* partition */}
             </div>{/* area-2 */}
             
             <RightSidebar />
