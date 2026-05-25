@@ -58,11 +58,11 @@ export default function AdventureMoments() {
                 <li>
                   <span>
                     <img data-src={img2} onClick={() => handleClick(img2)} />
-                    <em>Zip Line</em>
+                    <em>Zip Lining</em>
                   </span>
                   <span>
                     <img data-src={img3} onClick={() => handleClick(img3)} />
-                    <em>Quad Bike</em>
+                    <em>Quad Biking</em>
                   </span>
                   <span>
                     <img data-src={img4} onClick={() => handleClick(img4)} />
@@ -70,7 +70,7 @@ export default function AdventureMoments() {
                   </span>
                   <span>
                     <img data-src={img5} onClick={() => handleClick(img5)} />
-                    <em>Zip Line</em>
+                    <em>Zip Lining</em>
                   </span>
                 </li>
                 <li>
