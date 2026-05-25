@@ -53,7 +53,7 @@ export default function AdventureMoments() {
                 <li>
                   <span>
                     <img data-src="images/AdventureMoments/2.jpg" onClick={() => handleClick(img2)} />
-                    <em>Zip Line</em>
+                    <em>Zip Lining</em>
                   </span>
                   <span>
                     <img data-src="images/AdventureMoments/3.jpg" onClick={() => handleClick(img3)} />
