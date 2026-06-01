@@ -23,24 +23,73 @@ export default function CommonScript() {
     /* ==============================
     For lazy load
     ============================== */
+    // {
+    //   if (!!window.IntersectionObserver) {
+    //     const observer = new IntersectionObserver((entries, observer) => {
+    //       entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //           const img = entry.target;
+    //           const realSrc = img.getAttribute("data-src");
+    //           if (realSrc) img.src = realSrc;
+    //           img.removeAttribute("data-src");
+    //           observer.unobserve(img);
+    //         }
+    //       });
+    //     }, { rootMargin: "0px 0px 100px 0px" });
+    //     document.querySelectorAll('img[data-src]').forEach(img => { 
+    //       observer.observe(img);
+    //     });
+    //   }
+    //   else console.warn("This API is not supported by your browser, so you can't see the effect.");
+    // }
     {
+      const loadedImages = JSON.parse(
+        sessionStorage.getItem("loadedImages") || "[]"
+      );
+
       if (!!window.IntersectionObserver) {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              const realSrc = img.getAttribute("data-src");
-              if (realSrc) img.src = realSrc;
-              img.removeAttribute("data-src");
-              observer.unobserve(img);
-            }
-          });
-        }, { rootMargin: "0px 0px 100px 0px" });
-        document.querySelectorAll('img[data-src]').forEach(img => { 
-          observer.observe(img);
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                const realSrc = img.getAttribute("data-src");
+
+                if (realSrc) {
+                  img.src = realSrc;
+
+                  // Session Storage mein save karo
+                  if (!loadedImages.includes(realSrc)) {
+                    loadedImages.push(realSrc);
+                    sessionStorage.setItem(
+                      "loadedImages",
+                      JSON.stringify(loadedImages)
+                    );
+                  }
+                }
+
+                img.removeAttribute("data-src");
+                observer.unobserve(img);
+              }
+            });
+          },
+          { rootMargin: "0px 0px 500px 0px" }
+        );
+
+        document.querySelectorAll("img[data-src]").forEach((img) => {
+          const realSrc = img.getAttribute("data-src");
+
+          // Agar image pehle load ho chuki hai
+          if (loadedImages.includes(realSrc)) {
+            img.src = realSrc;
+            img.removeAttribute("data-src");
+          } else {
+            observer.observe(img);
+          }
         });
+      } else {
+        console.warn("This API is not supported by your browser, so you can't see the effect.");
       }
-      else console.warn("This API is not supported by your browser, so you can't see the effect.");
     }
 
     /* ==============================
