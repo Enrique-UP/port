@@ -14,20 +14,44 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
-
-
 export default function AdventureMoments() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const images = ["images/AdventureMoments/1.jpg", "images/AdventureMoments/2.jpg", "images/AdventureMoments/3.jpg", "images/AdventureMoments/4.jpg", "images/AdventureMoments/5.jpg", "images/AdventureMoments/6.jpg"];
+  const images = [
+    {
+      src: "images/AdventureMoments/1.jpg",
+      title: "Scuba Diving",
+    },
+    {
+      src: "images/AdventureMoments/2.jpg",
+      title: "Zip Lining",
+    },
+    {
+      src: "images/AdventureMoments/3.jpg",
+      title: "Quad Biking",
+    },
+    {
+      src: "images/AdventureMoments/4.jpg",
+      title: "Snow Tubing",
+    },
+    {
+      src: "images/AdventureMoments/5.jpg",
+      title: "Zip Lining",
+    },
+    {
+      src: "images/AdventureMoments/6.jpg",
+      title: "Sky Cycling",
+    },
+  ];
 
   const slides = images.map((img) => ({
-    src: img,
+    src: img.src,
+    description: img.title,
   }));
 
-  const handleClick = (img) => {
-    setIndex(images.indexOf(img));
+  const handleClick = (imageIndex) => {
+    setIndex(imageIndex);
     setOpen(true);
   };
 
@@ -42,40 +66,47 @@ export default function AdventureMoments() {
                 <p>Every adventure tells a different story</p>
               </hgroup>
             </div>{/* cols */}
+
             <div className="col-12">
               <ul>
+                {[0, 5].map((index, pos) => (
+                  pos === 0 ? (
+                    <li key={index}>
+                      <span>
+                        <img
+                          data-src={images[index].src}
+                          onClick={() => handleClick(index)}
+                        />
+                        <em>{images[index].title}</em>
+                      </span>
+                    </li>
+                  ) : null
+                ))}
+
                 <li>
-                  <span>
-                    <img data-src="images/AdventureMoments/1.jpg" onClick={() => handleClick(img1)} />
-                    <em>Scuba Diving</em>
-                  </span>
+                  {images.slice(1, 5).map((img, i) => (
+                    <span key={i}>
+                      <img
+                        data-src={img.src}
+                        onClick={() => handleClick(i + 1)}
+                      />
+                      <em>{img.title}</em>
+                    </span>
+                  ))}
                 </li>
+
                 <li>
                   <span>
-                    <img data-src="images/AdventureMoments/2.jpg" onClick={() => handleClick(img2)} />
-                    <em>Zip Lining</em>
-                  </span>
-                  <span>
-                    <img data-src="images/AdventureMoments/3.jpg" onClick={() => handleClick(img3)} />
-                    <em>Quad Biking</em>
-                  </span>
-                  <span>
-                    <img data-src="images/AdventureMoments/4.jpg" onClick={() => handleClick(img4)} />
-                    <em>Snow Tubing</em>
-                  </span>
-                  <span>
-                    <img data-src="images/AdventureMoments/5.jpg" onClick={() => handleClick(img5)} />
-                    <em>Zip Lining</em>
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <img data-src="images/AdventureMoments/6.jpg" onClick={() => handleClick(img6)} />
-                    <em>Sky Cycling</em>
+                    <img
+                      data-src={images[5].src}
+                      onClick={() => handleClick(5)}
+                    />
+                    <em>{images[5].title}</em>
                   </span>
                 </li>
               </ul>
             </div>{/* cols */}
+
             <div className="col-12 btns center mb0">
               <Link to="/lifestyle" data-aos="fade-right">Explore More</Link>
             </div>{/* cols */}
@@ -83,7 +114,6 @@ export default function AdventureMoments() {
         </div>{/* container */}
       </section>
 
-      {/* LIGHTBOX */}
       <Lightbox
         open={open}
         close={() => setOpen(false)}
