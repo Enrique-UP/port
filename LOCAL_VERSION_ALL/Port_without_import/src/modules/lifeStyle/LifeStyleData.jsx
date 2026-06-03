@@ -179,7 +179,7 @@ const LifeStyleData = [
       { title: "Met Budaun BJP MP Mrs. Sanghmitra Maurya, daughter of former minister Mr. Swami Prasad Maurya", date: "11 Jul 2021", img:"11jul2021" },
     ],
   },
-  { imgFdr: "25sep2021", title:"Old Fort, Delhi", date: "25 Sep 2021", items: 47 },
+  { imgFdr: "25sep2021", title:"Old Fort, Delhi", date: "25 Sep 2021", items: 33 },
   { imgFdr: "27nov2021", title:"Election Campaign", date: "27 Nov 2021", items: 2 },
   { imgFdr: "27mar2022", title:"Ghaziabad", date: "27 Mar 2022", items: 3 },
   {

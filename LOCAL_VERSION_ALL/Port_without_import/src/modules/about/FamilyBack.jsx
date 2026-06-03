@@ -30,7 +30,7 @@ export default function FamilyBack() {
   const img5_5 = "images/familyHome/aunt/6.jpg";
 
   const img6 = "images/lifeStyle/others/2010.jpg";
-  const img7 = "images/lifeStyle/19nov2019/1.jpg";
+  const img7 = "images/familyHome/legacy/7.jpg";
 
   const img8 = "images/familyHome/legacy/1.jpg";
   const img8_1 = "images/familyHome/legacy/2.jpg";
