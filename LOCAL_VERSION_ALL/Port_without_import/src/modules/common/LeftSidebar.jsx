@@ -5,16 +5,25 @@ import ScrollOffset from "./ScrollOffset";
 
 const InterestData = [
   { int : "Fashion & Styling", icon : "images/icons/style.png" },
-  { int : "Nature Sightseeing", icon : "&#xa051;" },
+  { int : "Road Trips & Nature Sightseeing", icon : "&#xa051;" },
   { int : "Photography", icon : "&#xa083;" },
   { int : "Food Lover", icon : "&#xa091;" },
-  { int : "Road Trips", icon : "&#xa092;" },
+  // { int : "Road Trips", icon : "&#xa092;" },
   { int : "Traveling", icon : "&#xa090;" },
   { int : "Biking", icon : "&#xa060;" },
   { int : "Car Driving", icon : "&#xa061;" },
   { int : "Camping", icon : "images/icons/camping.png" },
   { int : "Swimming", icon : "&#xa094;" },
-  { int : "Hiking/Trekking", icon : "images/icons/hikingTrekking.png" },
+  { int : "Hiking / Trekking", icon : "images/icons/hikingTrekking.png" },
+
+  
+  { int : "Boating & Rafting", icon : "images/icons/rafting.png" },
+  { int : "Wildlife Exploration (Jungle Safaris)", icon : "images/icons/safari.png" },
+  { int : "Exploring New Cities and Local Cultures", icon : "images/icons/city.png" },
+  { int : "Exploring Historical and Heritage Sites", icon : "&#xa071;" },
+  { int : "River, Lake, and Coastal Exploration", icon : "images/icons/river.png" },
+
+
   { int : "Games & Sports", icon : "images/icons/cricket.png" }, 
   { int : "Fitness & Athletics", icon : "images/icons/fitAth.png" },
   { int : "Interior Designing", icon : "images/icons/interiorDesign.png" }, 
@@ -60,14 +69,7 @@ export default function LeftSidebar() {
               <li><Link to="/contact">Contact Me</Link></li>
             </ul>
           </aside>
-          <aside className="about" data-aos="fade-right">
-            <img data-src="images/sideBar/about.jpg" />
-            <p>
-              <span>My Activities</span>
-              <i>I have a strong interest in cricket and politics, and I enjoy staying active through outdoor experiences, travel, and creative pursuits. I like exploring new places, meeting new people, and gaining new experiences. It helps me stay refreshed, focused, and balanced in life.</i>
-              <Link to="/#about" scroll={ScrollOffset}>Explore More</Link>
-            </p>
-          </aside>
+          
           <aside className="interests" data-aos="fade-right">
             <p className="hd">My Interests</p>
             <ul>

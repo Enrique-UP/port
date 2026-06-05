@@ -18,11 +18,13 @@
             a{color:var(--c3);font-weight: bold;display: block;}
         }
         &.interests{@extend %fc;
-            > ul{background: var(--g1);padding:16px;margin:0;gap:4px;display:grid;grid-template-columns: repeat(2, minmax(0, 1fr));;
-                > li{border:1px solid var(--b1);padding: 12px 4px;line-height: 1.1;gap: 8px;background: #fff;@extend %fc;text-align: center;
+            > ul{background: var(--g1);padding:16px;margin:0;gap:4px;
+                // display:grid;grid-template-columns: repeat(2, minmax(0, 1fr));
+                @extend %fc;
+                > li{border:1px solid var(--b1);padding: 8px 8px;line-height: 1.1;gap: 6px;background: #fff;display:flex;align-items:center;
                     > span{font-size: 14px;}
                 }
-                .icon{color:var(--c3);
+                .icon{color:var(--c3);flex-shrink:0;
                     > span{font-size: 22px;}
                     > img{display: flex;margin-inline: auto;height: 22px;}
                 }

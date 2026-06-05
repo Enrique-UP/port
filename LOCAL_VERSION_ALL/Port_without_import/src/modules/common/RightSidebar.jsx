@@ -7,7 +7,9 @@ import "swiper/css/navigation";
 import { Global, TeamName } from "./Global";
 import ReviewData from "../review/ReviewData";
 
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+
 import ScrollOffset from "./ScrollOffset";
 
 import LifeStyleMoments from "../lifeStyle/LifeStyleMoments";
@@ -31,10 +33,11 @@ const TeamData = [
 ];
 
 const ChildhoodData = [
-  { hd: "Head1", txt: "Txt1", img: "images/childhood/1.jpg" },
-  { hd: "Head2", txt: "Txt2", img: "images/childhood/2.jpg" },
-  { hd: "Head3", txt: "Txt3", img: "images/childhood/3.jpg" },
-  { hd: "Head4", txt: "Txt4", img: "images/childhood/4.jpg" }
+  { hd: "Sweet Memories", txt: "Forever in my heart", img: "images/childhood/1.jpg" },
+  { hd: "Wonder Years", txt: "The best days", img: "images/childhood/2.jpg" },
+  { hd: "Golden Moments", txt: "Pure childhood joy", img: "images/childhood/3.jpg" },
+  { hd: "Innocent Days", txt: "Carefree and happy", img: "images/childhood/4.jpg" },
+  
 ];
 
 const CommonTag = ({ img, hd, txt }) => {
@@ -79,6 +82,15 @@ export default function RightSidebar() {
             <span>Don't hesitate to call me</span>
             <i data-num={Global.num}></i>
           </a>
+        </aside>
+
+        <aside className="about" data-aos="fade-right">
+          <img data-src="images/sideBar/about.jpg" />
+          <p>
+            <span>My Activities</span>
+            <i>I have a strong interest in cricket and politics, and I enjoy staying active through outdoor experiences, travel, and creative pursuits. I like exploring new places, meeting new people, and gaining new experiences. It helps me stay refreshed, focused, and balanced in life.</i>
+            <Link to="/#about" scroll={ScrollOffset}>Explore More</Link>
+          </p>
         </aside>
 
         {/* Lifestyle */}
