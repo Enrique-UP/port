@@ -10,7 +10,7 @@ export default function ThankYou() {
       </Helmet>
       <Banner
         pageName="Thank You!" 
-        pageText="Lorem ipsum dolor sit amet consectetur adipisicing elit dolores distinctio tempora illo nostrum dignissimos dolore voluptate harum recusandae tempore minus"
+        pageText="Thanks for reaching out! I appreciate you taking the time to connect. I will review your message and get back to you shortly."
         otherImg="images/banners/home.jpg"
         showBreadcrumbs={false}
       />

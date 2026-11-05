@@ -40,9 +40,21 @@ export default function Header() {
     };
   }, [menuOpen, location]);
 
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsFixed(window.scrollY >= 40);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header ref={headerRef} className={menuOpen ? "active" : ""}>
+      {/* <header ref={headerRef} className={menuOpen ? "active" : ""}> */}
+      <header ref={headerRef} className={`${menuOpen ? "active" : ""} ${isFixed ? "fixed" : ""}`.trim()}>
         <div className="top">
           <div className="container">
             <div className="fw">
@@ -76,11 +88,13 @@ export default function Header() {
                     <a href={Global.fb} target="_blank"><i className="icon">&#xa019;</i></a>
                     <a href={Global.tw} target="_blank"><i className="icon">&#xa020;</i></a>
                     <a href={Global.lin} target="_blank"><i className="icon">&#xa021;</i></a>
+                    <a className="scl" href={Global.emailTag} target="_blank"><i className="icon">&#xa004;</i></a>
                   </span>
                   <span>
                     <a href={Global.ins} target="_blank"><i className="icon">&#xa023;</i></a>
                     <a href={Global.pnt} target="_blank"><i className="icon">&#xa024;</i></a>
                     <a href={Global.skp} target="_blank"><i className="icon">&#xa026;</i></a>
+                    <a className="scl" href={Global.numTel} target="_blank"><i className="icon">&#xa001;</i></a>
                   </span>
                 </p>
               </div>{/* follow */}

@@ -1,4 +1,20 @@
-header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: var(--hh);
+header{@extend %fc;background:#fff;height: var(--hh);position: relative;top:0;z-index: 9999;
+    &.fixed{position: fixed;
+        .top{display: none;}
+        .middle{
+            .follow{padding-block:8px;
+                > p{
+                    a{height:26px;
+                        &.scl{display:flex;}
+                    }
+                }
+            }
+            .logo img{width:100px;}
+        }
+        .bottom{
+            nav > ul > li > a{padding-block:10px;}
+        }
+    }
     > *{width: 100%;@extend %fc;}
     .top{background: var(--c2);padding-block:8px;
         .fw{display: flex;justify-content: space-between;column-gap: 12px;
@@ -11,13 +27,15 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
         .fw{display: flex;justify-content: flex-end;column-gap: 12px;position: relative;}
         .logo{display: flex;position: absolute;top:0;left:0;background: var(--c3);
             > a{display: flex;background: var(--c4);padding:20px 48px;}
-            img{width: 140px;}
+            img{width: 140px;@extend %trans;}
         }
         .follow{width: auto;display: flex;align-items: center;background: var(--c5);padding:16px;column-gap: 12px;color:#fff;
             > b{font-size: 20px;}
             > p{@extend %fc;gap:4px;
                 > span{display: flex;align-items: center;gap:4px;}
-                a{background: #fff;color:var(--f1);@extend %center;width: 32px;height: 32px;border-radius: 4px;}
+                a{background: #fff;color:var(--f1);@extend %center;width: 32px;height: 32px;border-radius: 4px;
+                    &.scl{display:none;}
+                }
             }
         }
 
@@ -88,17 +106,18 @@ header{@extend %fc;position: sticky;top:0;z-index: 9999;background:#fff;height: 
 }
 @media (max-width:575px){
     header .middle .logo > a{padding: 16px 24px;}
-    header .middle .logo img {width: 112px;}
-    header .bottom .fw {padding-left: 172px;}
+    header .middle .logo img {width: 100px;}
+    header .bottom .fw {padding-left: 160px;}
 
     header .middle .follow > b {font-size: 16px;}
     header .top .fw > a > span b{display: none;}
     header .middle .follow{padding: 8px;column-gap: 8px;}
     header .middle .follow > p a {width: 26px;height: 26px;}
     header .middle .follow > p, header .middle .follow > p > span{gap:2px;}
+    header .bottom .menu{padding-block:8px;}
     header .bottom .menu > b{font-size: 18px;}
 }
-@media (max-width:360px){
+@media (max-width:370px){
     header .middle .follow{padding: 4px;column-gap: 4px;}
     header .middle .follow > b{display: none;}
 }
